@@ -1,0 +1,181 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-design_design_choices.html 
+keywords: AFF C190, CIFS, NFS, iSCSI, FCP, SnapMirror, SnapVault, SnapRestore, SnapManager, SnapCenter, FabricPool 
+summary: 本節所列的技術是在架構設計階段選擇的。每項技術都能在FlexPod 《支援不限需求的基礎架構解決方案： 
+---
+= 設計選擇
+:allow-uri-read: 
+
+
+本節所列的技術是在架構設計階段選擇的。每項技術都能在FlexPod 《支援不限需求的基礎架構解決方案：
+
+
+
+== NetApp AFF 推出ONTAP 支援NetApp功能的C190系列產品
+
+本解決方案採用兩種最新的NetApp產品：NetApp AFF 解決方案C190系統和ONTAP 可靠性9.6軟體。
+
+
+
+=== C190系統AFF
+
+目標群組是想要以經濟實惠的價格、以All Flash技術將IT基礎架構現代化的客戶。此功能隨附全新的《支援功能的更新版產品的更新版（更新版）AFF ONTAP ：
+
+* CIFS、NFS、iSCSI和FCP
+* NetApp SnapMirror資料複寫軟體、NetApp SnapVault 還原軟體、NetApp SnapRestore 還原資料軟體、NetApp SnapManager 還原管理軟體產品套件、以及NetApp SnapCenter 還原軟體
+* 支援的技術FlexVol
+* 重複資料刪除、壓縮及壓縮
+* 資源隨需配置
+* 儲存QoS
+* NetApp RAID DP 技術
+* NetApp Snapshot技術
+* FabricPool
+
+
+下圖顯示兩種主機連線選項。
+
+下圖說明可插入SFP+模組的UTA 2連接埠。
+
+image:express-c-series-c190-design_image4.png["錯誤：缺少圖形影像"]
+
+下圖說明透過傳統RJ-45乙太網路纜線進行連線的10GBASE-T連接埠。
+
+image:express-c-series-c190-design_image5.png["錯誤：缺少圖形影像"]
+
+
+NOTE: 若為10GBASE-T連接埠選項、您必須擁有10GBASE-T型上行鏈路交換器。
+
+此產品僅提供960GB SSD。AFF您可以選擇四個擴充階段：
+
+* 8個960GB
+* 12x 960GB
+* 18倍960GB
+* 24倍960GB
+
+
+如需AFF 有關《The整套功能與功能的完整資訊、請參閱 https://www.netapp.com/us/products/entry-level-aff.aspx["NetApp AFF 《C190 All Flash Array》頁面"^]。
+
+
+
+=== 部分9.6軟體ONTAP
+
+NetApp AFF 功能完善的C190系統使用全新ONTAP 的功能完善的資料管理軟體。產業領先業界的企業資料管理軟體。ONTAP它結合了全新層級的簡易性與靈活度、以及強大的資料管理功能、儲存效率及領先業界的雲端整合。
+
+部分功能適用於《不只是用作解決方案的不只是用作解決方案的用作解決方案的用作解決方案。ONTAP FlexPod最重要的是NetApp對儲存效率的承諾、這可能是小型部署最重要的功能之一。特色NetApp儲存效率功能、例如重複資料刪除、壓縮、壓實及精簡配置、可在ONTAP 《支援資料的實作與精簡配置技術（NetApp Storage Eff間 效率）」中找到。NetApp WAFL 432KB系統一律會寫入4KB區塊、因此當區塊未使用其分配空間4KB時、壓實功能會將多個區塊合併成4KB區塊。下圖說明此程序。
+
+image:express-c-series-c190-design_image6.png["錯誤：缺少圖形影像"]
+
+現在、支援NVMe Volume選用512位元組區塊大小。ONTAP這項功能與VMware虛擬機器檔案系統（VMFS）搭配運作良好、而VMware虛擬機器檔案系統（VMFS）原生使用512位元組區塊。您可以保留預設的4K大小、也可以選擇設定512位元組區塊大小。
+
+其他功能增強ONTAP 功能包括：
+
+* * NetApp Aggregate Encryption（NAE）。* NAE會在Aggregate層級指派金鑰、因此會加密Aggregate中的所有磁碟區。此功能可在Aggregate層級加密及刪除重複資料的磁碟區。
+* * NetApp ONTAP FlexGroup 功能區增強*。在Intel®9.6中ONTAP 、您可以輕鬆重新命名FlexGroup 一個不重命名的功能區。不需要建立新的磁碟區來移轉資料。也可以使用ONTAP 《不受限的系統管理程式》或CLI來減少磁碟區大小。
+* *效能提升*效能提升*效能提升*效能提升9.6新增物件存放區作為雲端層的額外支援。FabricPool ONTAP清單中也加入了Google Cloud和Alibaba Cloud Object Storage Service（開放源碼）的支援。支援多個物件存放區、包括AWS S3、Azure Blob、IBM Cloud物件儲存、以及NetApp基於物件的儲存軟體。FabricPool StorageGRID
+* * SnapMirror增強功能。* ONTAP 在更新版本9.6中、新的Volume複寫關係預設會在離開來源陣列之前加密、並在SnapMirror目的地解密。
+
+
+
+
+== Cisco Nexus 3000系列
+
+Cisco Nexus 31108PC-V是以10Gbps SFP+為基礎的機架頂端（TOR）交換器、具備48個SFP+連接埠和6個QSFP28連接埠。每個SFP+連接埠均可以100Mbps、10Gbps運作、每個QSFP28連接埠均可以原生100Gbps或40Gbps模式或4x 10Gbps模式運作、提供靈活的移轉選項。此交換器是真正的無實體層交換器、經過最佳化、可實現低延遲和低功耗。
+
+Cisco Nexus 31108PC-V規格包含下列元件：
+
+* 在31108PC-V中、交換容量和轉送速率高達1.2Tbps
+* 48個SFP連接埠支援1和10 Gigabit乙太網路（10GbE）；6個QSFP28連接埠支援4個10GbE或40GbE（每個）或100GbE
+
+
+下圖說明Cisco Nexus 31108PC-V交換器。
+
+image:express-c-series-c190-design_image7.png["錯誤：缺少圖形影像"]
+
+如需Cisco Nexus 31108PC-V交換器的詳細資訊、請參閱 https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html["Cisco Nexus 3172PQ、3172TQ、3172TQ-332T、3172PQ-XL及3172TQ-XL交換器資料表"^]。
+
+
+
+== Cisco UCS C系列
+
+選擇Cisco UCS C系列機架伺服器作為FlexPod 不二之選、因為其多種組態選項可讓您根據FlexPod 特定需求量身打造、以利進行不二之快的部署。
+
+Cisco UCS C系列機架伺服器以符合業界標準的尺寸規格提供統一化運算、以降低TCO並提高敏捷度。
+
+Cisco UCS C系列機架伺服器具備下列優點：
+
+* 不受尺寸限制的Cisco UCS入門級產品
+* 簡化並快速部署應用程式
+* 將統一化運算創新技術與優勢延伸至機架伺服器
+* 以熟悉的機架套件提供獨特優勢、提升客戶選擇
+
+
+image:express-c-series-c190-design_image8.png["錯誤：缺少圖形影像"]
+
+上圖所示的Cisco UCS C220 M5機架伺服器、是業界用途最廣泛的通用企業基礎架構與應用程式伺服器之一。它是高密度的雙插槽機架伺服器、可為各種工作負載（包括虛擬化、協同作業和裸機應用程式）提供領先業界的效能與效率。Cisco UCS C系列機架伺服器可部署為獨立式伺服器或Cisco UCS的一部分、以充分利用Cisco標準化的統一化運算創新技術、協助客戶降低TCO並提高業務敏捷度。
+
+如需C220 M5伺服器的詳細資訊、請參閱 https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/datasheet-c78-739281.html["Cisco UCS C220 M5機架伺服器資料表"^]。
+
+
+
+=== Cisco UCS VIC 1457連線能力、適用於C220 M5機架伺服器
+
+下圖所示的Cisco UCS VIC 1457介面卡為四埠小型可插拔（SFP28）模組化主機板LAN（mLOM）卡、專為M5系列Cisco UCS C系列伺服器所設計。此卡支援10/25Gbps乙太網路或FCoE。此卡可向主機顯示符合PCIe標準的介面、並可動態設定為NIC或HBA。
+
+image:express-c-series-c190-design_image9.png["錯誤：缺少圖形影像"]
+
+如需Cisco UCS VIC 1457介面卡的完整資訊、請參閱 https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.html["Cisco UCS虛擬介面卡1400系列資料表"^]。
+
+
+
+== VMware vSphere 6.7U2
+
+VMware vSphere 6.7U2是搭配FlexPod 使用的Hypervisor選項之一。VMware vSphere可讓組織減少電力和散熱設備佔用空間、同時確認已購買的運算容量已充分運用。此外、VMware vSphere可在vSphere主機叢集（維護模式下為VMware Distributed Resource Scheduler、或是VMware DRS MM）之間、提供硬體故障保護（VMware High Availability或VMware HA）及運算資源負載平衡功能。
+
+由於VMware vSphere 6.7U2只會重新啟動核心、因此客戶無需重新啟動硬體、即可快速開機、載入vSphere ESXi。vSphere 6.7U2 vSphere用戶端（HTML5用戶端）有一些新的增強功能、例如開發人員中心的程式碼擷取和API瀏覽功能。透過程式碼擷取、您可以在vSphere用戶端中記錄行動、以提供簡單、可用的程式碼輸出。vSphere 6.7U2也包含維護模式中的DRS（DRS-MM）等新功能。
+
+VMware vSphere 6.7U2提供下列功能：
+
+* VMware正在淘汰外部VMware Platform Services Controller（PSC）部署模式。
+
+
+
+NOTE: 從下一次重大vSphere版本開始、外部PSC將不會成為可用選項。
+
+* 新的傳輸協定支援、可用於備份及還原vCenter伺服器應用裝置。將NFS和SMB作為支援的傳輸協定選項、總計最多7個（HTTP、HTTPS、FTP、FTPS、scp、 NFS和SMB）。
+* 使用內容庫時的新功能。當vCenter Server設定為增強連結模式時、即可在內容庫之間同步原生VM範本。
+* 更新至 https://blogs.vmware.com/vsphere/2019/04/vcenter-server-6-7-update-2-whats-new.html["用戶端外掛程式頁面"^]。
+* VMware vSphere Update Manager也為vSphere用戶端新增增強功能。您可以執行附加檢查法規遵循、並從單一畫面修正所有動作。
+
+
+如需VMware vSphere 6.7 U2的詳細資訊、請參閱 https://blogs.vmware.com/vsphere/2019/04/vcenter-server-6-7-update-2-whats-new.html["VMware vSphere部落格頁面"^]。
+
+如需VMware vCenter Server 6.7 U2更新的詳細資訊、請參閱 https://docs.vmware.com/en/VMware-vSphere/6.7/rn/vsphere-vcenter-server-67u2-release-notes.html["版本資訊"^]。
+
+
+NOTE: 雖然此解決方案已通過vSphere 6.7U2驗證、但它支援任何符合其他元件資格的vSphere版本 https://mysupport.netapp.com/matrix/["NetApp互通性對照表工具IMT （不含）"^]。NetApp建議您部署下一版vSphere、以進行修正及增強功能。
+
+
+
+== 開機架構
+
+支援的支援選項FlexPod 包括：
+
+* iSCSI SAN LUN
+* Cisco FlexFlash SD卡
+* 本機磁碟
+
+
+從iSCSI LUN啟動資料中心、因此也能使用iSCSI開機功能來強化解決方案的管理能力、以利支援支援不受限的功能。FlexPod FlexPod
+
+
+
+=== ESXi主機虛擬網路介面卡配置
+
+Cisco UCS VIC 1457有四個實體連接埠。此解決方案驗證包括使用ESXi主機的這四個實體連接埠。如果NIC數量較少或較多、則可能有不同的vmnic編號。
+
+在iSCSI開機實作中、iSCSI開機需要獨立的虛擬網路介面卡（vNIC）才能進行iSCSI開機。這些vNIC使用適當的光纖iSCSI VLAN做為原生VLAN、並附加至iSCSI開機VSwitches、如下圖所示。
+
+image:express-c-series-c190-design_image10.png["錯誤：缺少圖形影像"]
+
+link:express-c-series-c190-design_conclusion.html["下一步：結論。"]

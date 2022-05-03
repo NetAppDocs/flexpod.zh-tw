@@ -1,0 +1,399 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-deploy_cisco_nexus_3172p_deployment_procedure.html 
+keywords: cisco, nexus, deployment, vlans, switches, server, configuration 
+summary: 下節將詳細說明FlexPod 在SExpress環境中使用的Cisco Nexus 3172P交換器組態。 
+---
+= Cisco Nexus 3172P部署程序
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+下節將詳細說明FlexPod 在SExpress環境中使用的Cisco Nexus 3172P交換器組態。
+
+
+
+== Cisco Nexus 3172P交換器的初始設定
+
+下列程序說明如何設定Cisco Nexus交換器、以便在FlexPod 基礎版的選用功能中使用。
+
+
+NOTE: 本程序假設您使用的Cisco Nexus 3172P執行NX-OS軟體版本7.0（3）i7（5）。
+
+. 初次開機並連線至交換器的主控台連接埠時、Cisco NX-OS設定會自動啟動。此初始組態可處理基本設定、例如交換器名稱、mgmt0介面組態和安全Shell（SSH）設定。
+. 可透過多種方式設定支援的支援服務。FlexPod3172P交換器上的mgmt0介面可連線至現有的管理網路、或是3172P交換器的mgmt0介面可連線至背對背組態。不過、此連結無法用於外部管理存取、例如SSH流量。
++
+在本部署指南中FlexPod 、《Sf2 Express Cisco Nexus 3172P交換器》已連線至現有的管理網路。
+
+. 若要設定Cisco Nexus 3172P交換器、請開啟交換器電源、然後依照螢幕上的提示進行操作、如此處所示、進行兩個交換器的初始設定、並以適當的值取代交換器特定資訊。
++
+....
+This setup utility will guide you through the basic configuration of
+the system. Setup configures only enough connectivity for management
+of the system.
+*Note: setup is mainly used for configuring the system initially,
+when no configuration is present. So setup always assumes system
+defaults and not the current system configuration values.
+Press Enter at anytime to skip a dialog. Use ctrl-c at anytime
+to skip the remaining dialogs.
+Would you like to enter the basic configuration dialog (yes/no): y
+Do you want to enforce secure password standard (yes/no) [y]: y
+  Create another login account (yes/no) [n]: n
+  Configure read-only SNMP community string (yes/no) [n]: n
+  Configure read-write SNMP community string (yes/no) [n]: n
+  Enter the switch name : 3172P-B
+  Continue with Out-of-band (mgmt0) management configuration? (yes/no) [y]: y
+    Mgmt0 IPv4 address : <<var_switch_mgmt_ip>>
+    Mgmt0 IPv4 netmask : <<var_switch_mgmt_netmask>>
+  Configure the default gateway? (yes/no) [y]: y
+    IPv4 address of the default gateway : <<var_switch_mgmt_gateway>>
+  Configure advanced IP options? (yes/no) [n]: n
+  Enable the telnet service? (yes/no) [n]: n
+  Enable the ssh service? (yes/no) [y]: y
+    Type of ssh key you would like to generate (dsa/rsa) [rsa]: rsa
+    Number of rsa key bits <1024-2048> [1024]:  <enter>
+  Configure the ntp server? (yes/no) [n]: y
+    NTP server IPv4 address : <<var_ntp_ip>>
+  Configure default interface layer (L3/L2) [L2]: <enter>
+  Configure default switchport interface state (shut/noshut) [noshut]:  <enter>
+  Configure CoPP system profile (strict/moderate/lenient/dense) [strict]:  <enter>
+....
+. 然後您會看到組態摘要、系統會詢問您是否要編輯。如果您的組態正確、請輸入「n」。
++
+....
+Would you like to edit the configuration? (yes/no) [n]: n
+....
+. 接著系統會詢問您是否要使用此組態並加以儲存。如果是、請輸入「y」。
++
+....
+Use this configuration and save it? (yes/no) [y]: Enter
+....
+. 對Cisco Nexus交換器B重複此程序
+
+
+
+
+== 啟用進階功能
+
+Cisco NX-OS必須啟用某些進階功能、才能提供額外的組態選項。
+
+
+NOTE: 僅當您使用本文檔中介紹的背對背"mgmt0"選項時，才需要使用"interface-vlan-"功能。此功能可讓您將IP位址指派給介面VLAN（交換器虛擬介面）、以便與交換器進行頻內管理通訊（例如透過SSH）。
+
+. 要在Cisco Nexus交換器A和交換器B上啟用適當功能、請使用命令「（config t）」進入組態模式、然後執行下列命令：
++
+....
+feature interface-vlan
+feature lacp
+feature vpc
+....
++
+預設的連接埠通道負載平衡雜湊使用來源和目的地IP位址來判斷連接埠通道中介面的負載平衡演算法。除了來源和目的地IP位址之外、您還能為雜湊演算法提供更多輸入、藉此在連接埠通道的成員之間實現更好的發佈。出於同樣的原因、NetApp強烈建議將來源和目的地TCP連接埠新增至雜湊演算法。
+
+. 在組態模式（「config t」）中、輸入下列命令以設定Cisco Nexus交換器A和交換器B的全域連接埠通道負載平衡組態：
++
+....
+port-channel load-balance src-dst ip-l4port
+....
+
+
+
+
+== 執行全域擴充樹狀結構組態
+
+Cisco Nexus平台使用稱為「橋接保證」的新保護功能。橋接器保證可在不再執行擴充樹演算法時、透過持續轉送資料流量的裝置、協助防止單向連結或其他軟體故障。視平台而定、連接埠可置於多種狀態之一、包括網路或邊緣。
+
+NetApp建議設定橋接保證、以便在預設情況下、所有連接埠都被視為網路連接埠。此設定會強制網路管理員檢閱每個連接埠的組態。此外、也會顯示最常見的組態錯誤、例如無法辨識的邊緣連接埠、或是未啟用橋接保證功能的鄰近端口。此外、讓擴充樹區塊許多連接埠而非太少、更安全、因為這會允許預設的連接埠狀態來增強網路的整體穩定性。
+
+在新增伺服器、儲存設備和上行鏈路交換器時、請特別留意跨距樹狀結構的狀態、尤其是當它們不支援橋接保證時。在這種情況下、您可能需要變更連接埠類型、使連接埠成為作用中狀態。
+
+預設會在邊緣連接埠上啟用橋接傳輸協定資料單元（BPDU）保護、做為另一層保護。為了避免網路中發生迴圈、如果此介面上看到來自其他交換器的BPDU、此功能會關閉連接埠。
+
+在組態模式（「config t」）中、執行下列命令、在Cisco Nexus交換器A和交換器B上設定預設的擴充樹選項、包括預設連接埠類型和BPDU防護：
+
+....
+spanning-tree port type network default
+spanning-tree port type edge bpduguard default
+....
+
+
+== 定義VLAN
+
+在設定具有不同VLAN的個別連接埠之前、必須先在交換器上定義第2層VLAN。命名VLAN也是一種很好的做法、以便日後輕鬆進行疑難排解。
+
+在組態模式（「config t」）中、執行下列命令來定義及說明Cisco Nexus交換器A和交換器B上的第2層VLAN：
+
+....
+vlan <<nfs_vlan_id>>
+  name NFS-VLAN
+vlan <<iSCSI_A_vlan_id>>
+  name iSCSI-A-VLAN
+vlan <<iSCSI_B_vlan_id>>
+  name iSCSI-B-VLAN
+vlan <<vmotion_vlan_id>>
+  name vMotion-VLAN
+vlan <<vmtraffic_vlan_id>>
+  name VM-Traffic-VLAN
+vlan <<mgmt_vlan_id>>
+  name MGMT-VLAN
+vlan <<native_vlan_id>>
+  name NATIVE-VLAN
+exit
+....
+
+
+== 設定存取和管理連接埠說明
+
+就像為第2層VLAN指派名稱一樣、設定所有介面的說明有助於進行資源配置和疑難排解。
+
+在每個交換器的組態模式（「config t」）中、輸入FlexPod 下列適用於整個過程的埠說明：
+
+
+
+=== Cisco Nexus交換器A
+
+....
+int eth1/1
+  description AFF A220-A e0c
+int eth1/2
+  description AFF A220-B e0c
+int eth1/3
+  description UCS-Server-A: MLOM port 0
+int eth1/4
+  description UCS-Server-B: MLOM port 0
+int eth1/25
+  description vPC peer-link 3172P-B 1/25
+int eth1/26
+  description vPC peer-link 3172P-B 1/26
+int eth1/33
+  description AFF A220-A e0M
+int eth1/34
+  description UCS Server A: CIMC
+....
+
+
+=== Cisco Nexus交換器B
+
+....
+int eth1/1
+  description AFF A220-A e0d
+int eth1/2
+  description AFF A220-B e0d
+int eth1/3
+  description UCS-Server-A: MLOM port 1
+int eth1/4
+  description UCS-Server-B: MLOM port 1
+int eth1/25
+  description vPC peer-link 3172P-A 1/25
+int eth1/26
+  description vPC peer-link 3172P-A 1/26
+int eth1/33
+  description AFF A220-B e0M
+int eth1/34
+  description UCS Server B: CIMC
+....
+
+
+== 設定伺服器與儲存管理介面
+
+伺服器和儲存設備的管理介面通常只使用單一VLAN。因此、請將管理介面連接埠設定為存取連接埠。定義每個交換器的管理VLAN、並將擴充樹連接埠類型變更為EDGE。
+
+在組態模式（「config t」）中、輸入下列命令來設定伺服器和儲存設備的管理介面連接埠設定：
+
+
+
+=== Cisco Nexus交換器A
+
+....
+int eth1/33-34
+  switchport mode access
+  switchport access vlan <<mgmt_vlan>>
+  spanning-tree port type edge
+  speed 1000
+exit
+....
+
+
+=== Cisco Nexus交換器B
+
+....
+int eth1/33-34
+  switchport mode access
+  switchport access vlan <<mgmt_vlan>>
+  spanning-tree port type edge
+  speed 1000
+exit
+....
+
+
+== 執行虛擬連接埠通道全域組態
+
+虛擬連接埠通道（vPC）可讓實體連接至兩個不同Cisco Nexus交換器的連結、顯示為連接至第三個裝置的單一連接埠通道。第三個裝置可以是交換器、伺服器或任何其他網路裝置。vPC可提供第2層多重路徑、讓您增加頻寬、在節點之間啟用多個平行路徑、以及在有替代路徑的情況下、進行負載平衡流量、藉此建立備援。
+
+vPC具有下列優點：
+
+* 讓單一裝置在兩個上游裝置之間使用連接埠通道
+* 消除跨距樹狀傳輸協定封鎖的連接埠
+* 提供無迴圈拓撲
+* 使用所有可用的上行頻寬
+* 在連結或裝置故障時提供快速融合
+* 提供連結層級恢復能力
+* 協助提供高可用度
+
+
+vPC功能需要在兩個Cisco Nexus交換器之間進行一些初始設定、才能正常運作。如果使用後端對後端mgmt0組態、請使用介面上定義的位址、並使用ping來驗證它們是否可以通訊<<switch_A/B_mgmt0_ip_addr>>VRF管理命令。
+
+在組態模式（「config t」）中、執行下列命令來設定兩個交換器的vPC全域組態：
+
+
+
+=== Cisco Nexus交換器A
+
+....
+vpc domain 1
+ role priority 10
+  peer-keepalive destination <<switch_B_mgmt0_ip_addr>> source <<switch_A_mgmt0_ip_addr>> vrf management
+  peer-gateway
+  auto-recovery
+  ip arp synchronize
+int eth1/25-26
+  channel-group 10 mode active
+int Po10
+  description vPC peer-link
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan <<native_vlan_id>>
+  switchport trunk allowed vlan <<nfs_vlan_id>>,<<vmotion_vlan_id>>, <<vmtraffic_vlan_id>>, <<mgmt_vlan>, <<iSCSI_A_vlan_id>>, <<iSCSI_B_vlan_id>>
+  spanning-tree port type network
+  vpc peer-link
+  no shut
+exit
+copy run start
+....
+
+
+=== Cisco Nexus交換器B
+
+....
+vpc domain 1
+  peer-switch
+  role priority 20
+  peer-keepalive destination <<switch_A_mgmt0_ip_addr>> source <<switch_B_mgmt0_ip_addr>> vrf management
+  peer-gateway
+  auto-recovery
+  ip arp synchronize
+int eth1/25- 26
+  channel-group 10 mode active
+int Po10
+  description vPC peer-link
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan <<native_vlan_id>>
+  switchport trunk allowed vlan <<nfs_vlan_id>>,<<vmotion_vlan_id>>, <<vmtraffic_vlan_id>>, <<mgmt_vlan>>, <<iSCSI_A_vlan_id>>, <<iSCSI_B_vlan_id>>
+  spanning-tree port type network
+  vpc peer-link
+no shut
+exit
+copy run start
+....
+
+
+== 設定儲存連接埠通道
+
+NetApp儲存控制器可透過連結集合控制傳輸協定（LACP）、主動連線至網路。最好使用LACP、因為它會在交換器之間新增交涉和記錄功能。由於網路是針對vPC設定、因此這種方法可讓您從儲存設備建立雙主動式連線、以分隔實體交換器。每個控制器都有兩個連結可連結至每個交換器。不過、這四個連結都是同一個vPC和介面群組（IFGRP）的一部分。
+
+從組態模式（「config t」）、在每個交換器上執行下列命令、以設定個別介面、以及連接至NetApp AFF Ef2控制器的連接埠所產生的連接埠通道組態。
+
+. 在交換器A和交換器B上執行下列命令、以設定儲存控制器A的連接埠通道：
++
+....
+int eth1/1
+  channel-group 11 mode active
+int Po11
+  description vPC to Controller-A
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan <<native_vlan_id>>
+  switchport trunk allowed vlan <<nfs_vlan_id>>,<<mgmt_vlan_id>>,<<iSCSI_A_vlan_id>>, <<iSCSI_B_vlan_id>>
+  spanning-tree port type edge trunk
+  mtu 9216
+  vpc 11
+  no shut
+....
+. 在交換器A和交換器B上執行下列命令、以設定儲存控制器B的連接埠通道
++
+....
+int eth1/2
+  channel-group 12 mode active
+int Po12
+  description vPC to Controller-B
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan <<native_vlan_id>>
+  switchport trunk allowed vlan <<nfs_vlan_id>>,<<mgmt_vlan_id>>, <<iSCSI_A_vlan_id>>, <<iSCSI_B_vlan_id>>
+  spanning-tree port type edge trunk
+  mtu 9216
+  vpc 12
+  no shut
+exit
+copy run start
+....
++
+
+NOTE: 在本解決方案驗證中、使用了9000的MTU。不過、根據應用程式需求、您可以設定適當的MTU值。務必在FlexPod 整個解決方案中設定相同的MTU值。元件之間的MTU組態不正確、將會導致封包被丟棄、而這些封包也會被丟棄。
+
+
+
+
+
+== 設定伺服器連線
+
+Cisco UCS伺服器具有雙埠虛擬介面卡VIC1387、可用於資料流量、以及使用iSCSI啟動ESXi作業系統。這些介面設定為彼此容錯移轉、提供單一連結以外的額外備援。將這些連結分散到多個交換器、即使是交換器故障、伺服器也能維持正常運作。
+
+在組態模式（「config t」）中、執行下列命令來設定連接至每個伺服器之介面的連接埠設定。
+
+
+
+=== Cisco Nexus交換器A：Cisco UCS伺服器A與Cisco UCS伺服器B組態
+
+....
+int eth1/3-4
+  switchport mode trunk
+  switchport trunk native vlan <<native_vlan_id>>
+  switchport trunk allowed vlan <<iSCSI_A_vlan_id>>,<<nfs_vlan_id>>,<<vmotion_vlan_id>>,<<vmtraffic_vlan_id>>,<<mgmt_vlan_id>>
+  spanning-tree port type edge trunk
+  mtu9216
+  no shut
+exit
+copy run start
+....
+
+
+=== Cisco Nexus交換器B：Cisco UCS伺服器A與Cisco UCS伺服器B組態
+
+....
+int eth1/3-4
+  switchport mode trunk
+  switchport trunk native vlan <<native_vlan_id>>
+  switchport trunk allowed vlan <<iSCSI_B_vlan_id>>,<<nfs_vlan_id>>,<<vmotion_vlan_id>>,<<vmtraffic_vlan_id>>,<<mgmt_vlan_id>>
+  spanning-tree port type edge trunk
+  mtu 9216
+  no shut
+exit
+copy run start
+....
+在本解決方案驗證中、使用了9000的MTU。不過、根據應用程式需求、您可以設定適當的MTU值。務必在FlexPod 整個解決方案中設定相同的MTU值。元件之間的MTU組態不正確、會導致封包遭到丟棄、因此需要再次傳輸這些封包。這會影響解決方案的整體效能。
+
+若要透過新增其他Cisco UCS伺服器來擴充解決方案、請使用新增伺服器插入交換器A和B的交換器連接埠來執行先前的命令
+
+
+
+== 上行連結至現有的網路基礎架構
+
+視可用的網路基礎架構而定、有數種方法和功能可用來上行鏈路FlexPod 到整個環境。如果存在現有的Cisco Nexus環境、NetApp建議使用VPC將FlexPod 包含在該環境中的Cisco Nexus 3172P交換器上行鏈路至基礎架構。上行鏈路可能是10GbE基礎架構解決方案的10GbE上行鏈路、或是1GbE基礎架構解決方案的1GbE（若有需要）。上述程序可用來建立上行鏈路vPC至現有環境。完成組態設定後、請務必執行複本執行開始、將組態儲存在每個交換器上。
+
+link:express-c-series-aff220-deploy_netapp_storage_deployment_procedure_@part_1@.html["下一步：NetApp儲存部署程序（第1部分）"]

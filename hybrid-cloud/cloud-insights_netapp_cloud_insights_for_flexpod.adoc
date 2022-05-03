@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-insights_netapp_cloud_insights_for_flexpod.html 
+keywords: cloud, insights, flexpod, customer, value, technical, report, aff, storage, system 
+summary: 本技術報告中詳述的解決方案是NetApp Cloud Insights 支援服務的組態、可監控AFF 執行NetApp ONTAP 支援的NetApp可靠性儲存系統、而NetApp支援是FlexPod 以「Datacenter」解決方案的一部分來部署。 
+---
+= TR-4868：NetApp Cloud Insights 的《FlexPod 關於
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+NetApp的Alan Cowles
+
+與下列合作夥伴合作：image:cisco logo.png["錯誤：缺少圖形影像"]
+
+本技術報告中詳述的解決方案是NetApp Cloud Insights 支援服務的組態、可監控AFF 執行NetApp ONTAP 支援的NetApp可靠性儲存系統、而NetApp支援是FlexPod 以「Datacenter」解決方案的一部分來部署。
+
+
+
+== 客戶價值
+
+此處詳述的解決方案可為有興趣使用全功能監控解決方案的客戶、提供價值、讓ONTAP 他們能在混合雲環境中部署以供主儲存系統使用的功能完整。這包括FlexPod 使用NetApp AFF 功能和FAS 功能完善的儲存系統的各種功能。

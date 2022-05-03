@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-deploy_acknowledgments.html 
+keywords: acknowledgements, authors, support, contribution 
+summary: 作者想要肯定某些個人對此設計的支援與貢獻。 
+---
+= 感謝
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+作者感謝下列人員對此設計的支援與貢獻：
+
+* Paul Nonosfrid Onocray
+* Arvind Ramakrishnan
+

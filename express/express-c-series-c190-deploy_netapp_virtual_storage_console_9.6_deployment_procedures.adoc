@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_netapp_virtual_storage_console_9.6_deployment_procedures.html 
+keywords: virtual, storage, console, deployment, procedures, install, nfs, vaai 
+summary: 本節說明NetApp虛擬儲存主控台（VSC）的部署程序。 
+---
+= NetApp虛擬儲存主控台9.6部署程序
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節說明NetApp虛擬儲存主控台（VSC）的部署程序。
+
+
+
+== 安裝Virtual Storage Console 9.6
+
+若要使用開放式虛擬化格式（OVF）部署來安裝VSC 9.6軟體、請遵循下列步驟：
+
+. 移至vSphere Web Client >主機叢集>部署OVF範本。
+. 瀏覽至從NetApp支援網站下載的VSC OVF檔案。
++
+image:express-c-series-c190-deploy_image49.png["錯誤：缺少圖形影像"]
+
+. 輸入VM名稱、然後選取要部署的資料中心或資料夾。按一下「下一步」
++
+image:express-c-series-c190-deploy_image50.png["錯誤：缺少圖形影像"]
+
+. 選取FlexPod叢集ESXi叢集、然後按「Next（下一步）」。
+. 檢閱詳細資料、然後按「Next（下一步）」。
++
+image:express-c-series-c190-deploy_image51.png["錯誤：缺少圖形影像"]
+
+. 按一下「Accept（接受）」接受授權、然後按「Next（下一步）」
+. 選取精簡配置虛擬磁碟格式和其中一個NFS資料存放區。按一下「下一步」
++
+image:express-c-series-c190-deploy_image52.png["錯誤：缺少圖形影像"]
+
+. 從「Select Networks（選取網路）」中選擇目的地網路、然後按「Next（下一步）」。
++
+image:express-c-series-c190-deploy_image53.png["錯誤：缺少圖形影像"]
+
+. 在「自訂範本」中、輸入VSC管理員密碼、vCenter名稱或IP位址、以及其他組態詳細資料、然後按「下一步」。
++
+image:express-c-series-c190-deploy_image54.png["錯誤：缺少圖形影像"]
+
+. 檢閱輸入的組態詳細資料、然後按一下「Finish（完成）」以完成NetApp-VSC VM的部署。
+. 開啟NetApp-VSC VM並開啟VM主控台。
+. 在NetApp-VSC VM開機程序期間、您會看到安裝VMware Tools的提示。從vCenter選取NetApp-VSC VM > Guest OS > Install VMware Tools。
++
+image:express-c-series-c190-deploy_image55.png["錯誤：缺少圖形影像"]
+
+. 網路組態和vCenter登錄資訊是在OVF範本自訂期間提供。因此、在NetApp-VSC VM執行之後、VSC、vSphere API for Storage Aware（VASA）和VMware Storage Replication Adapter（SRA）會在vCenter中註冊。
+. 登出vCenter Client、然後重新登入。在主功能表中、確認已安裝NetApp VSC。
++
+image:express-c-series-c190-deploy_image56.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+== 下載並安裝NetApp NFS VAAI外掛程式
+
+若要下載並安裝NetApp NFS VAAI外掛程式、請完成下列步驟：
+
+. 下載適用於VMware的NetApp NFS外掛程式1.1.2。vib'檔案、並儲存至本機機器或管理主機。
+. 下載適用於VMware VAAI的NetApp NFS外掛程式：
++
+.. 前往 https://mysupport.netapp.com/NOW/download/software/nfs_plugin_vaai_esxi6/1.1.2/["軟體下載頁面"^]。
+.. 向下捲動並按一下適用於VMware VAAI的NetApp NFS外掛程式。
+.. 在vSphere Web用戶端的主畫面中、選取虛擬儲存主控台。
+.. 在「Virtual Storage Console」（虛擬儲存主控台）>「Settings」（設定）>「NFS VAAI Tools」（NFS VAAI工具）下、選擇「Select File」（選取檔案）並瀏覽至儲存下載外掛程式的位置、即可上傳NFS外掛程式。
++
+image:express-c-series-c190-deploy_image57.png["錯誤：缺少圖形影像"]
+
+
+
+. 按一下「上傳」、將外掛程式傳輸至vCenter。
+. 選取主機、然後選取NetApp VSC > Install NFS Plug-In for VMware VAAI。
++
+image:express-c-series-c190-deploy_image58.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+== 使用ESXi主機的最佳儲存設定
+
+VSC可針對所有連接至NetApp儲存控制器的ESXi主機、自動設定儲存相關設定。若要使用這些設定、請完成下列步驟：
+
+. 從主畫面選取vCenter >主機與叢集。針對每個ESXi主機、按一下滑鼠右鍵、然後選取「NetApp VSC」>「Set Recommended Values（設定建議值）」。
++
+image:express-c-series-c190-deploy_image59.png["錯誤：缺少圖形影像"]
+
+. 檢查您要套用至所選vSphere主機的設定。按一下「確定」以套用設定。
++
+image:express-c-series-c190-deploy_image60.png["錯誤：缺少圖形影像"]
+
++
+image:express-c-series-c190-deploy_image61.png["錯誤：缺少圖形影像"]
+
+. 套用這些設定後、重新啟動ESXi主機。
+

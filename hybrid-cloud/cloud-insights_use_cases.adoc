@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-insights_use_cases.html 
+keywords: target, cases, audience, cloud, insights, flexpod, ontap 
+summary: 本節列出本解決方案適用的目標對象和案例。 
+---
+= 使用案例
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本解決方案適用於下列使用案例：
+
+* 想要監控ONTAP 各種資源和使用率的組織、將其部署在FlexPod 作爲解決方案一部分的不支援儲存系統中。
+* 想要疑難排解問題並縮短FlexPod 解決利用AFF 其自身的VMware或FAS VMware系統解決方案所發生事件的時間的組織。
+* 對成本最佳化預測有興趣的組織、包括自訂儀表板、以提供浪費資源的詳細資訊、FlexPod 以及可在其支援的不實環境中實現成本節約效益的地方ONTAP 、包括使用不實功能。
+
+
+
+
+== 目標對象
+
+解決方案的目標對象包括下列群組：
+
+* IT高階主管與關注成本最佳化與營運持續性的人員。
+* 對資料中心或混合雲設計與管理感興趣的解決方案架構設計師。
+* 負責疑難排解和事件解決的技術支援工程師。
+
+
+您可以設定Cloud Insights 支援各種實用資料類型的功能、以協助規劃、疑難排解、維護及確保營運不中斷。藉FlexPod 由Cloud Insights 使用支援功能來監控「不受限的資料中心解決方案、並在易於整合的自訂儀表板中呈現彙總資料； 不僅可以預測部署中的資源何時可能需要擴充以滿足需求、也可以識別導致系統內部問題的特定應用程式或儲存磁碟區。這有助於確保所監控的基礎架構可預測且符合期望、讓組織得以根據定義的SLA交付、並視需要擴充基礎架構、免除浪費與額外成本。

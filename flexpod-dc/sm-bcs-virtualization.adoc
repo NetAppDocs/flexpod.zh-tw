@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/sm-bcs-virtualization.html 
+keywords: network connectivity, virtual networking, vm-host, affinity, groups, rules, vsphere ha heartbeat 
+summary: 在多站台FlexPod 的「VMware SMBC」解決方案中、單一VMware vCenter可管理整個解決方案的虛擬基礎架構資源。兩個資料中心的主機都參與橫跨兩個資料中心的單一VMware HA叢集。主機可存取NetApp SMBC解決方案、在這兩個站台都能存取具有定義的SMBC關係的儲存設備。 
+---
+= 解決方案驗證：虛擬化
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:sm-bcs-storage.html["先前版本：解決方案驗證-儲存設備。"]
+
+在多站台FlexPod 的「VMware SMBC」解決方案中、單一VMware vCenter可管理整個解決方案的虛擬基礎架構資源。兩個資料中心的主機都參與橫跨兩個資料中心的單一VMware HA叢集。主機可存取NetApp SMBC解決方案、在這兩個站台都能存取具有定義的SMBC關係的儲存設備。
+
+SMBC解決方案儲存設備符合VMware vSphere Metro Storage Cluster（VMSC）功能中的統一存取模式、以避免災難和停機。為獲得最佳虛擬機器效能、虛擬機器磁碟應裝載於本機NetApp AFF Are A250系統、以在正常運作下、將WAN連結的延遲和流量降至最低。
+
+在設計實作中、必須決定虛擬機器在兩個站台之間的分佈。您可以根據站台偏好和應用程式需求、決定這兩個站台之間的虛擬機器站台關聯性和應用程式發佈。VMware叢集VM/主機群組和VM/主機規則可用來設定VM/主機關聯性、以確保VM在所需站台的主機上執行。
+
+不過、允許VM在兩個站台上執行的組態、可確保VMware HA可在遠端站台主機上重新啟動VM、以提供解決方案恢復能力。為了讓虛擬機器能夠在兩個站台上執行、所有的iSCSI共享資料存放區都必須掛載在所有ESXi主機上、以確保站台之間的虛擬機器能夠順暢地執行VMotion作業。
+
+下圖顯示FlexPod 高層級的《Se-BC解決方案虛擬化檢視（包括VMware HA和VMSC功能）」、可為運算和儲存服務提供高可用度。主動式資料中心解決方案架構可在站台之間實現工作負載移動性、並提供DR/BC保護。
+
+image:sm-bcs-image39.png["錯誤：缺少圖形影像"]
+
+
+
+== 端點對端點網路連線能力
+
+此解決方案包括每個站台的支援基礎架構、站台之間的網路連線、以及部署在第三站台的支援中心、以符合所需的RPO和RTO目標。FlexPod FlexPod ONTAP下圖顯示每個站台的Cisco UCS B200M5伺服器與NetApp儲存設備之間的端點對端點網路連線能力、這些儲存設備具備站台內和站台之間的SM-BC功能。
+
+image:sm-bcs-image40.png["錯誤：缺少圖形影像"]
+
+本解決方案驗證的各個站台的架構均相同。FlexPod不過、此解決方案支援非對稱部署、FlexPod 如果符合要求、也可新增至現有的解決方案。
+
+延伸的第2層架構用於無縫的多站台資料架構、可在每個資料中心的連接埠傳輸Cisco UCS運算與NetApp儲存設備之間建立連線、以及在資料中心之間建立連線。連接埠通道組態和虛擬連接埠通道組態（若適用）用於運算、網路和儲存層之間的頻寬集合體和容錯能力、以及跨站台連結。因此、UCS刀鋒伺服器可連線及多重路徑存取本機與遠端NetApp儲存設備。
+
+
+
+== 虛擬網路
+
+叢集中的每個主機都使用相同的虛擬網路進行部署、無論其位置為何。此設計使用VMware虛擬交換器（vSwitch）和VMware虛擬分散式交換器（VDS）來分隔不同的流量類型。VMware vSwitch主要用於FlexPod 應用程式網路的VMware Infrastructure網路和VDS、但不需要。
+
+虛擬交換器（vSwitch、VDS）是以每個虛擬交換器兩個上行鏈路來部署；ESXi Hypervisor層級的上行鏈路稱為Cisco UCS軟體上的vmnics和虛擬NIC（vNIC）。vNIC是使用Cisco UCS服務設定檔、在每部伺服器的Cisco UCS VIC介面卡上建立。定義了六個vNIC、兩個用於vSwitch0、兩個用於vDS0、兩個用於vSwitch1、兩個用於iSCSI上行鏈路、如下圖所示。
+
+image:sm-bcs-image41.png["錯誤：缺少圖形影像"]
+
+vSwitch0是在VMware ESXi主機組態期間定義、其中包含FlexPod 用於管理的VMware Infrastructure管理VLAN和ESXi主機VMkernel（VMK）連接埠。對於任何需要的關鍵基礎架構管理虛擬機器、也會在vSwitch0上放置基礎架構管理虛擬機器連接埠群組。
+
+請務必將此類管理基礎架構虛擬機器放在vSwitch0上、而非VDS上、因為FlexPod 如果關閉或重新啟動該基礎架構、而且您嘗試在原本執行該管理虛擬機器的主機以外的主機上啟動該管理虛擬機器、 它可在vSwitch0的網路上正常開機。如果VMware vCenter是管理虛擬機器、則此程序特別重要。如果vCenter位於VDS上、然後移至另一台主機、然後開機、則在開機後、它將不會連線至網路。
+
+本設計使用兩個iSCSI開機VSwitches。Cisco UCS iSCSI開機需要獨立的vNIC才能進行iSCSI開機。這些vNIC使用適當網路的iSCSI VLAN做為原生VLAN、並附加至適當的iSCSI開機vSwitch。或者、您也可以部署新的VDS或使用現有的VDS、在VDS上部署iSCSI網路。
+
+
+
+== VM主機關聯群組與規則
+
+若要讓虛擬機器在兩個SM至BC站台的任何ESXi主機上執行、所有ESXi主機都必須從兩個站台掛載iSCSI資料存放區。如果所有ESXi主機都已正確掛載兩個站台的資料存放區、您可以使用vMotion在任何主機之間移轉虛擬機器、而且VM仍可維持對從這些資料存放區所建立之所有虛擬磁碟的存取權。
+
+對於使用本機資料存放區的虛擬機器、如果將虛擬磁碟移轉至遠端站台的主機、則其對虛擬磁碟的存取權會變成遠端存取權、因此會因為站台之間的實體距離而增加讀取作業延遲。因此、將虛擬機器保留在本機主機上、並使用站台的本機儲存設備、是最佳實務做法。
+
+使用VM/主機關聯機制、您可以使用VM/主機群組、為位於特定站台的虛擬機器和主機建立VM群組和主機群組。使用VM/主機規則、您可以指定要遵循的VM和主機原則。若要允許在站台維護或災難案例期間跨站台進行虛擬機器移轉、請使用「應該在群組中的主機上執行」原則規格、以獲得靈活度。
+
+下列螢幕快照顯示、站台A和站台B主機及VM會建立兩個主機群組和兩個VM群組
+
+image:sm-bcs-image42.png["錯誤：缺少圖形影像"]
+
+此外、下圖顯示使用「應該在群組中的主機上執行」原則、為站台A和站台B VM所建立的VM/主機規則、以便在其各自站台的主機上執行。
+
+image:sm-bcs-image43.png["錯誤：缺少圖形影像"]
+
+image:sm-bcs-image44.png["錯誤：缺少圖形影像"]
+
+
+
+== vSphere HA活動訊號
+
+VMware vSphere HA具有用於主機狀態驗證的活動訊號機制。主要的活動訊號機制是透過網路、次要活動訊號機制則是透過資料存放區。如果未收到訊次、則會ping預設閘道或手動設定的隔離位址、以決定是否與網路隔離。對於資料存放區活動訊號、VMware建議將活動訊號資料存放區從最少兩個增加到四個、以供延伸叢集使用。
+
+對於解決方案驗證、兩ONTAP 個不完整的叢集管理IP位址會用作隔離位址。此外、建議使用的vSphere HA進階選項「d s.s.centbeatDsPerHost」值為4、如下圖所示。
+
+image:sm-bcs-image45.png["錯誤：缺少圖形影像"]
+
+對於活動訊號資料存放區、請從叢集指定四個共用資料存放區、並自動補強、如下圖所示。
+
+image:sm-bcs-image46.png["錯誤：缺少圖形影像"]
+
+如需VMware HA叢集和VMware vSphere Metro儲存叢集的其他最佳實務做法和組態、請參閱 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html["建立及使用vSphere HA叢集"^]、 https://core.vmware.com/resource/vmware-vsphere-metro-storage-cluster-vmsc["VMware vSphere Metro儲存叢集（VMSC）"^] 和VMware KB https://kb.vmware.com/s/article/83370["NetApp ONTAP 功能搭配NetApp SnapMirror營運不中斷（SMBC）和VMware vSphere Metro儲存叢集（VMSC）"^]。
+
+link:sm-bcs-validated-scenarios.html["下一步：解決方案驗證-已驗證的案例。"]

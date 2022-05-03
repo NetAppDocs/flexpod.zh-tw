@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_meditech_modules_and_components.html 
+keywords: meditech, modules, components, application, function, type 
+summary: MEDITECH應用程式涵蓋數個模組和元件。 
+---
+= Meditech模組與元件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+MEDITECH應用程式涵蓋數個模組和元件。下表列出這些模組所涵蓋的功能。如需設定及部署這些模組的其他資訊、請參閱MEDITECH文件。
+
+|===
+| 功能 | 類型 
+
+
+| 連線能力  a| 
+* Web伺服器
+* 即時應用程式伺服器（WI–Web整合）
+* 測試應用程式伺服器（Wi-Fi）
+* SAML驗證伺服器（Wi-Fi）
+* SAML Proxy伺服器（Wi-Fi）
+* 資料庫伺服器
+
+
+
+
+| 基礎架構  a| 
+* 檔案伺服器
+* 背景工作用戶端
+* 連線伺服器
+* 交易伺服器
+
+
+
+
+| 掃描與歸檔  a| 
+* 映像伺服器
+
+
+
+
+| 資料儲存庫  a| 
+* SQL Server
+
+
+
+
+| 商業與臨床分析  a| 
+* 即時情報伺服器（BCA）
+* 測試情報伺服器（BCA）
+* 資料庫伺服器（BCA）
+
+
+
+
+| 家庭照護  a| 
+* 遠端站台解決方案
+* 連線能力
+* 基礎架構
+* 列印
+* 現場裝置
+* 掃描
+* 代管站台需求
+* 防火牆組態
+
+
+
+
+| 支援  a| 
+* 背景工作用戶端（CAs–用戶端存取授權）
+
+
+
+
+| 使用者裝置  a| 
+* 平板電腦
+* 固定裝置
+
+
+
+
+| 列印  a| 
+* 即時網路列印伺服器（必要；可能已經存在）
+* 測試網路列印伺服器（必要；可能已經存在）
+
+
+
+
+| 第三方需求  a| 
+* First Databank（FDB）MedKnowledge Framework v4.3
+
+
+|===

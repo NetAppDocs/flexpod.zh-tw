@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_solution_overview.html 
+keywords: flexpod, datacenter, technucal, specifications, platform, architecture 
+summary: 此平台是一種預先設計的最佳實務資料中心架構、建置於Cisco Unified Computing System（Cisco UCS）、Cisco Nexus系列交換器及NetApp儲存控制器（NetApp UC2或NetApp系統）上。FlexPod AFF FAS 
+---
+= TR-4036：FlexPod 《資料中心技術規格》
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Arvind Ramakrishnan和NetApp的Jyh-sen CHEN
+
+此平台是一種預先設計的最佳實務資料中心架構、建置於Cisco Unified Computing System（Cisco UCS）、Cisco Nexus系列交換器及NetApp儲存控制器（例如：NetApp、NetApp、FlexPod AFF ASA FAS
+
+適用於執行各種虛擬化Hypervisor、裸機作業系統和企業工作負載的平台。FlexPod不僅提供基礎組態、還能靈活調整規模及最佳化、以因應多種不同的使用案例和需求。FlexPod
+
+
+NOTE: 在您訂購完整FlexPod 的資訊完整組態之前、請參閱 http://www.netapp.com/us/technology/flexpod["融合式基礎架構FlexPod"^] 如需這些技術規格的最新版本、請參閱netapp.com網頁。
+
+link:dc-tech-spec_flexpod_platforms.html["下一步：FlexPod 支援各種平台。"]

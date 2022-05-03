@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: ontap-connector-for-intersight/ci-qsg_claim_targets.html 
+keywords: cisco, intersight, netapp, ontap, connector, claim, targets, active iq unified manager, AIQ UM 
+summary: 安裝Cisco Intersight assist之後、您就可以申請NetApp儲存設備和虛擬化設備。 
+---
+= 請款目標
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+安裝Cisco Intersight assist之後、您就可以申請NetApp儲存設備和虛擬化設備。返回* Intersight目標*頁面、並新增vCenter和NetApp Active IQ Unified Manager 的目標。如需報銷程序的詳細資訊、請觀看影片 https://tv.netapp.com/detail/video/6228080442001["透過Cisco Intersight assist索取目標。"^]
+
+
+NOTE: 請確定Active IQ Unified Manager 已啟用NetApp Sure（AIQ UM）API閘道。
+
+瀏覽至*「設定」>「一般」>「功能設定」*。
+
+image:ci-qsg_image7.png["已啟用NetApp AIQ UM API閘道的快照"]
+
+以下範例顯示NetApp AIQ UM目標是從Cisco Intersight申請的。
+
+
+NOTE: 當您宣稱NetApp AIQ UM目標時、Active IQ Unified Manager 所有由NetApp管理的叢集都會自動新增至Intersight。
+
+image:ci-qsg_image8.png["從Cisco Intersight宣告NetApp AIQ UM目標的快照"]

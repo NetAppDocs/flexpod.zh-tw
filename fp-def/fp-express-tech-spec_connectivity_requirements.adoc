@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_connectivity_requirements.html 
+keywords: connectivity, requirements, flexpod, express, aff, fas, e, series 
+summary: 本節說明FlexPod 不同版本的《不一樣》的連線需求。 
+---
+= 連線需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節說明FlexPod 不同版本的《不一樣》的連線需求。
+
+
+
+== 使用NetApp功能的不中斷連線需求FlexPod FAS
+
+使用NetApp功能的不中斷連線需求FlexPod 包括：FAS
+
+* 除了FAS Cisco UCS託管組態、儲存控制器必須直接連線至Cisco Nexus交換器、其中儲存控制器必須連線至光纖互連。
+* 核心FlexPod 不需在核心不整元件之間放置額外設備。
+* 需要虛擬連接埠通道（VPC）、才能將Cisco Nexus 3000/9000系列交換器連接至NetApp儲存控制器。
+* 雖然這不是必要的、但建議在整個環境中啟用巨型框架支援。
+
+
+
+
+== 使用NetApp E系列的不中斷連線需求FlexPod
+
+使用E系列的不中斷連線需求FlexPod 包括：
+
+* E系列儲存控制器必須直接連接至光纖互連。
+* 不應在核心FlexPod 的不含核心的元件之間直接放置額外的設備。
+* 網路互連和乙太網路交換器之間需要VPC。
+
+
+
+
+== 使用NetApp功能的不中斷連線需求FlexPod AFF
+
+使用NetApp功能的不中斷連線需求FlexPod 包括：AFF
+
+* 除了AFF Cisco UCS託管組態（儲存控制器連接至架構）之外、NetApp支援區儲存控制器必須直接連接至Cisco Nexus交換器。互連：
+* 核心FlexPod 不需在核心不整元件之間放置額外設備。
+* 需要虛擬連接埠通道（VPC）、才能將Cisco Nexus 3000/9000系列交換器連接至NetApp儲存控制器。
+* 雖然這不是必要的、但建議在整個環境中啟用巨型框架支援。
+

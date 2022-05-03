@@ -1,0 +1,180 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec__power_and_cabling_requirements.html 
+keywords: power, cabling, requirements, flexpod, express, cisco, ucs, minimum, cabling 
+summary: 本節說明FlexPod 功能和最低纜線需求、以利執行不需使用的功能。 
+---
+= 電源和纜線需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節說明FlexPod 功能和最低纜線需求、以利執行不需使用的功能。
+
+
+
+== 電力需求
+
+電力需求以美國為基礎規格並假設使用AC電源。其他國家/地區可能有不同的電力需求。大多數元件也提供直流電（DC）電源選項。如需所需最大電力的其他資料、以及其他詳細的電力資訊、請參閱每個硬體元件的詳細技術規格。
+
+如需詳細的Cisco UCS電源資料、請參閱 http://www.cisco.com/assets/cdc_content_elements/flash/dataCenter/cisco_ucs_power_calculator/["Cisco UCS電源計算機"^]。
+
+下表列出每個裝置所需的電源連接埠。
+
+|===
+| Cisco Nexus交換器 | 需要電源線 
+
+
+| Cisco Nexus 3048 | 每個Cisco Nexus 3000系列交換器2條C13/C14電源線 
+
+
+| Cisco Nexus 3524 | 每個Cisco Nexus 3000系列交換器2條C13/C14電源線 
+
+
+| Cisco Nexus 9396 | 每個Cisco Nexus 9000系列交換器2條C13/C14電源線 
+|===
+|===
+| Cisco UCS機箱 | 需要電源線 
+
+
+| Cisco UCS 5108 | 每個Cisco UCS機箱2個CAP-US615P-C19-US/CAP-US520-C19-US 
+|===
+|===
+| Cisco UCS B系列伺服器 | 需要電源線 
+
+
+| Cisco UCS B200 M4 | 不適用；刀鋒伺服器採用機箱 
+
+
+| Cisco UCS B420 M4 | 不適用；刀鋒伺服器採用機箱 
+
+
+| Cisco UCS B200 M5 | 不適用；刀鋒伺服器採用機箱 
+
+
+| Cisco UCS B480 M5 | 不適用；刀鋒伺服器採用機箱 
+|===
+|===
+| Cisco UCS C系列伺服器 | 需要電源連接埠 
+
+
+| Cisco UCS C220 M4 .3+| 每個Cisco UCS伺服器2條C13/C14電源線 
+
+
+| Cisco UCS C240 M4 
+
+
+| Cisco UCS C460 M4 Cisco UCS C220 M5 Cisco UCS C240 M5 Cisco UCS C480 M5 
+|===
+|===
+| NetApp FAS 產品控制器 | 所需電源連接埠（每個HA配對） 
+
+
+| FAS2554 | 2個C13/C14 
+
+
+| FAS2552 | 2個C13/C14 
+
+
+| FAS2520 | 2個C13/C14 
+
+
+| FAS8020 | 2個C13/C14 
+|===
+|===
+| E系列控制器 | 所需電源連接埠（每個HA配對） 
+
+
+| E2824 | 2 x C14/C20 
+|===
+|===
+| NetApp FAS 產品磁碟櫃 | 需要電源連接埠 
+
+
+| DS212C | 2個C13/C14 
+
+
+| DS224C | 2個C13/C14 
+
+
+| DS460C | 2個C13/C14 
+
+
+| DS2246 | 2個C13/C14 
+
+
+| DS4246 | 4個C13/C14 
+|===
+|===
+| E系列磁碟櫃 | 需要電源連接埠 
+
+
+| DE460C | 2 x C14/C20 
+
+
+| DE224C | 2 x C14/C20 
+
+
+| DE212C | 2 x C14/C20 
+|===
+
+
+== 最低纜線需求
+
+本節說明FlexPod 適用於不適用的不適用纜線需求。大多數FlexPod 的執行功能都需要額外的纜線、但數量會因部署規模和範圍而異。
+
+下表列出每個裝置所需的最低纜線數量。
+
+|===
+| Cisco Nexus 3000系列交換器 | 需要纜線 
+
+
+| Cisco Nexus 31108. .5+| 每個交換器至少有兩條10GbE光纖或雙軸纜線 
+
+
+| Cisco Nexus 3172PQ 
+
+
+| Cisco Nexus 3048 
+
+
+| Cisco Nexus 3524 
+
+
+| Cisco Nexus 9396 
+
+
+| DS212C |  
+
+
+| DS2246 .4+| SAS纜線數量取決於磁碟櫃的特定組態 
+
+
+| DS460C 
+
+
+| DS224C 
+
+
+| DS4246 
+
+
+| E2800  a| 
+* 每個控制器至少有一條Gigabit乙太網路（1GbE）纜線可供管理
+* 每個控制器至少有兩條10GbE纜線（適用於iSCSI）、或兩條FC纜線符合速度需求
+
+
+
+
+| DE460C | 每個磁碟櫃2條Mini-SAS HD纜線 
+
+
+| DE224C | 每個磁碟櫃2條Mini-SAS HD纜線 
+
+
+| DE212C | 每個磁碟櫃2條Mini-SAS HD纜線 
+|===

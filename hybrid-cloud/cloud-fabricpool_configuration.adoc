@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_configuration.html 
+keywords:  
+summary:  
+---
+= 組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+

@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: express/express-direct-attach-design_program_summary.html 
+keywords: express, datacenter, select, converged infrastructure, CVD, NVA, AFF A220, FAS 2750/2720, UCS Mini, UCS B200 M5, UCS VIC 1440/1480, Nexus 3000 Series Switches 
+summary: 以Cisco驗證設計或NetApp驗證架構的形式提供參考架構。FlexPod如果這些差異並未建立不受支援的組態、則允許根據特定CVD或NVA的客戶需求來進行差異。 
+---
+= 方案摘要
+:allow-uri-read: 
+
+
+此解決方案屬於融合式基礎架構方案的一部分。FlexPod FlexPod
+
+
+
+== 融合式基礎架構方案FlexPod
+
+以Cisco驗證設計（CVD）或NetApp驗證架構（NVA）的形式提供參考架構。FlexPod如果這些差異並未建立不受支援的組態、則允許根據特定CVD或NVA的客戶需求來進行差異。
+
+如下圖所示FlexPod 、此功能包含三種解決方案：FlexPod 《ExExpress》（英文）、FlexPod 《Extre Datacenter》（英文）和FlexPod 《ExSelect》（英文）：
+
+* *《*》《*》《*》《*》《*》《*》《*》《*》《*》《*》《*》《*》《* FlexPod
+* *《Datacenter》*提供最佳的多用途基礎、適用於各種工作負載和應用程式。FlexPod
+* *《選擇》*整合了《不二資料中心》的最佳功能、並針對特定應用程式量身打造基礎架構。FlexPod FlexPod
+
+
+下圖顯示解決方案的技術元件。
+
+image:express-direct-attach-design_image1.png["錯誤：缺少圖形影像"]
+
+
+
+== NetApp認證架構方案
+
+NVA方案為客戶提供通過驗證的NetApp解決方案架構。NVA提供具備下列特質的NetApp解決方案架構：
+
+* 經過徹底測試
+* 是規範性的
+* 將部署風險降至最低
+* 加速上市時間
+
+
+本指南詳細說明FlexPod 採用直接附加NetApp儲存設備的NetApp Express設計。以下各節列出本解決方案設計所使用的元件。
+
+
+
+=== 硬體元件
+
+* NetApp AFF 產品編號A220或FAS NetApp產品編號2750/2720
+* Cisco UCS Mini
+* Cisco UCS B200 M5
+* Cisco UCS VIC 1440/1480
+* Cisco Nexus 3000系列交換器
+
+
+
+
+=== 軟體元件
+
+* NetApp ONTAP 產品9.5
+* VMware vSphere 6.7U1.
+* Cisco UCS Manager 4.0（1b）
+* Cisco NXOS韌體7.0（3）I6（1）
+
+
+link:express-direct-attach-design_solution_overview.html["下一步：解決方案總覽。"]

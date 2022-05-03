@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-epic-performance_executive_summary.html 
+keywords: epic, performance, storage, efficiency, all, flash, fas, platform, ehr 
+summary: 為了展現NetApp All Flash FAS 的儲存效率與效能、NetApp進行了一項研究、以測量EHR在AFF VMware E300和AFF VMware A700系統上的效能表現。 
+---
+= 執行摘要
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+為了展現NetApp All Flash FAS 的儲存效率與效能、NetApp進行了一項研究、以測量EHR在AFF VMware E300和AFF VMware A700系統上的效能表現。NetApp測量AFF 執行ONTAP 《ESe 9.5》和AFF 執行ONTAP 《9.4》（每個執行Epic EHR工作負載）的《EHR》（《EHR）儲存控制器》的資料處理量、尖峰IOPS及平均延遲。以類似SPC-3測試的方式、啟用了所有內嵌儲存效率功能。
+
+我們在AFF 一個包含二十四個3.8TB SSD的Re A300叢集和AFF 一個包含四十八個3.8TB SSD的Re A700叢集上執行Epic Genio工作負載產生器。我們在一系列負載點測試叢集、將儲存設備提升至最高CPU使用率。在每個負載點、我們都收集有關儲存IOPS和延遲的資訊。
+
+NetApp在每次軟體升級時、均持續提升40%至50%的效能。效能強化的創新技術、因工作負載和傳輸協定而異。
+
+Epic效能測試顯示AFF 、將VMware叢集IOPS從低於1毫秒的75、000 IOPS提高至低於1毫秒的188、929 IOPS尖峰效能。對於所有IOPS低於或低於20、000 IOPS的負載點、我們能夠維持不超過1毫秒的一致儲存延遲。此外、Epic效能測試也證明AFF 、從低於1毫秒的75、000 IOPS叢集IOPS增加至低於1毫秒的31、000 IOPS尖峰效能。所有負載點的IOPS均低於320、000、因此我們能夠維持不超過1毫秒的一致儲存延遲。

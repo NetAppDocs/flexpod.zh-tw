@@ -1,0 +1,114 @@
+---
+sidebar: sidebar 
+permalink: healthcare/flexpod-genomics-solution-infrastructure-hardware-and-software-components.html 
+keywords: GATK, setup, validation, cabling, hardware, software 
+summary: 本節說明本解決方案所使用的解決方案基礎架構和軟體元件。 
+---
+= 解決方案基礎架構硬體與軟體元件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-genomics-benefits-of-deploying-genomic-workloads-on-flexpod.html["先前版本：將基因工作負載部署在FlexPod 架構上的優點。"]
+
+下圖說明FlexPod 用於網關設定與驗證的「不二」系統。我們使用 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html["採用VMware vSphere 7.0與NetApp的解決方案資料中心9.7 Cisco驗證設計（CVD）FlexPod ONTAP"^] 在設定過程中。
+
+image:flexpod-genomics-image6.png["錯誤：缺少圖形影像"]
+
+下圖說明FlexPod 了有關纜線的資訊。
+
+image:flexpod-genomics-image7.png["錯誤：缺少圖形影像"]
+
+下表列出在FlexPod 啟用功能的網關測試期間所使用的硬體元件。以下是 https://mysupport.netapp.com/matrix/["NetApp 互通性對照表工具"^] （部分）IMT 和 https://ucshcltool.cloudapps.cisco.com/public/["Cisco硬體相容清單（HCL）"^]。
+
+|===
+| 層級 | 產品系列 | 數量與模式 | 詳細資料 
+
+
+| 運算 | Cisco UCS 5108機箱 | 1或2 |  
+
+
+|  | Cisco UCS刀鋒伺服器 | 6個B200 M5 | 每個處理器具有2個20個以上核心、2.7GHz及128至384GB RAM 
+
+
+|  | Cisco UCS虛擬介面卡（VIC） | Cisco UCS 1440 | 請參閱 
+
+
+|  | 2個Cisco UCS Fabric互連 | 6332 | - 
+
+
+| 網路 | Cisco Nexus交換器 | 2倍Cisco Nexus 9332 | - 
+
+
+| 儲存網路 | 透過SMB/CIFS、NFS或iSCSI傳輸協定進行儲存存取的IP網路 | 與上述相同的網路交換器 | - 
+
+
+|  | 透過FC存取儲存設備 | 2個Cisco MDS 9148S | - 
+
+
+| 儲存設備 | NetApp AFF 產品豐富的NetApp解決方案：A700 All Flash儲存系統 | 1叢集 | 具有兩個節點的叢集 
+
+
+|  | 磁碟櫃 | 一個DS224C或NS224磁碟櫃 | 已裝滿24個磁碟機 
+
+
+|  | SSD | 24、1.2TB或更大容量 | - 
+|===
+下表列出基礎架構軟體。
+
+|===
+| 軟體 | 產品系列 | 版本或版本 | 詳細資料 
+
+
+| 多種 | Linux | RHEL 8.3 | - 
+
+
+|  | Windows | Windows Server 2012 R2（64位元） | - 
+
+
+|  | NetApp ONTAP | 部分9.8或更新版本ONTAP | - 
+
+
+|  | Cisco UCS光纖互連 | Cisco UCS Manager 4.1或更新版本 | - 
+
+
+|  | Cisco乙太網路3000或9000系列交換器 | 9000系列、7.0（3）i7（7）或更新版本適用於3000系列、9.2（4）或更新版本 | - 
+
+
+|  | Cisco FC：Cisco MDS 9132T | 8.4(1a)或更新版本 | - 
+
+
+|  | Hypervisor | VMware vSphere ESXi 7.0 | - 
+
+
+| 儲存設備 | Hypervisor管理系統 | VMware vCenter Server 7.0（vCSA）或更新版本 | - 
+
+
+| 網路 | NetApp虛擬儲存主控台（VSC） | VSC 9.7或更新版本 | - 
+
+
+|  | NetApp SnapCenter | 不含更新版本SnapCenter | - 
+
+
+|  | Cisco UCS Manager | 4.1(3c)或更新版本 |  
+
+
+| Hypervisor | ESXi |  |  
+
+
+| 管理 | Hypervisor管理系統VMware vCenter Server 7.0（vCSA）或更新版本 |  |  
+
+
+|  | NetApp虛擬儲存主控台（VSC） | VSC 9.7或更新版本 |  
+
+
+|  | NetApp SnapCenter | 不含更新版本SnapCenter |  
+
+
+|  | Cisco UCS Manager | 4.1(3c)或更新版本 |  
+|===
+link:flexpod-genomics-genomics---gatk-setup-and-execution.html["下一步：基因組學-網關設定與執行。"]

@@ -1,0 +1,126 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec__previous_architectures_and_equipment.html 
+keywords: architecture, equipment, previous, hardware, verified, small, medium, large, configuration 
+summary: 本節列出FlexPod 先前使用的《不實時速覽系統架構與硬體」。 
+---
+= 先前的架構與設備
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+NetApp是一款靈活的解決方案、可讓客戶同時使用Cisco和NetApp目前銷售的現有設備和新設備。FlexPod有時、Cisco和NetApp的特定設備機型會被指定為停產。
+
+即使這些機型已經不再提供、在銷售結束日期之前購買這些機型的客戶仍可在FlexPod 不支援的情況下使用該設備。
+
+此外FlexPod 、還會定期更新以將Cisco與NetApp的最新硬體與軟體介紹給FlexPod VMware Express解決方案。本節列出FlexPod 先前使用的《不實時速覽系統架構與硬體」。
+
+
+
+== 先前FlexPod 的不只是功能
+
+本節將說明先前FlexPod 的《不實時速報（Express）架構」。
+
+
+
+=== 不只是部分組態、更是部分組態FlexPod
+
+不只是部分、還包括下列元件：FlexPod
+
+* 兩台Cisco Nexus 3048交換器、採用備援組態
+* 至少兩部Cisco UCS C系列機架掛載伺服器
+* HA配對組組態中的兩個FAS2200或FAS2500系列控制器
+
+
+下圖說明FlexPod 了「示例」的「示例」小組態。
+
+image:fp-express-tech-spec_image4.png["錯誤：缺少圖形影像"]
+
+下圖說明FlexPod 了ExExpress媒體組態。
+
+image:fp-express-tech-spec_image5.png["錯誤：缺少圖形影像"]
+
+
+
+=== 不需要大規模組態FlexPod
+
+這個大規模的產品組態包括下列元件：FlexPod
+
+* 兩個Cisco Nexus 3500系列或Cisco Nexus 9300系列交換器、採用備援組態
+* 至少兩部Cisco UCS C系列機架掛載伺服器
+* HA配對組組態中有兩個FAS2552、FAS2554或FAS8020控制器（每個控制器需要兩個10GbE連接埠）
+* 一個具有任何支援磁碟類型的NetApp磁碟櫃（使用FAS8020時）
+
+
+下圖說明FlexPod 了整個過程中使用的功能。
+
+image:fp-express-tech-spec_image6.png["錯誤：缺少圖形影像"]
+
+
+
+=== 先前FlexPod 通過驗證的不完整架構
+
+仍FlexPod 支援先前通過驗證的支援架構。架構與部署文件包括：
+
+* link:http://www.netapp.com/us/media/nva-0016-flexpod-express.pdf["採用Cisco UCS C系列和NetApp FAS2500系列的支援FlexPod"]
+* link:http://www.netapp.com/us/media/nva-0020-deploy.pdf["採用VMware vSphere 6.0的VMware Express：小型和中型組態FlexPod"]
+* link:http://www.netapp.com/us/media/nva-0017-flexpod-express.pdf["VMware vSphere 6.0的VMware Express：大型組態FlexPod"]
+* link:http://www.netapp.com/us/media/nva-0021-deploy.pdf["採用Microsoft Windows Server 2012 R2 Hyper-V的示例：小型和中型組態FlexPod"]
+* link:http://www.netapp.com/us/media/tr-4350.pdf["採用Microsoft Windows Server 2012 R2 Hyper-V的RxExpress：大型組態FlexPod"]
+
+
+
+
+=== 先前的硬體
+
+下表列出先前FlexPod 的《不實時速覽系統架構」所使用的硬體。
+
+|===
+| 先前架構所使用的硬體 | 技術規格（若有） 
+
+
+| Cisco UCS C220 M3 | http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c220-m3-rack-server/data_sheet_c78-700626.html[] 
+
+
+| Cisco UCS C24 M3 | http://www.cisco.com/en/US/prod/collateral/ps10265/ps10493/data_sheet_c78-706103.html[] 
+
+
+| Cisco UCS C22 M3 | http://www.cisco.com/en/US/prod/collateral/ps10265/ps10493/data_sheet_c78-706101.html[] 
+
+
+| Cisco UCS C240 M3 | http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c240-m3-rack-server/data_sheet_c78-700629.html[] 
+
+
+| Cisco UCS C260 M2 | http://www.cisco.com/en/US/prod/collateral/ps10265/ps10493/c260m2_specsheet.pdf[] 
+
+
+| Cisco UCS C420 M3 | http://www.cisco.com/en/US/products/ps12770/index.html[] 
+
+
+| Cisco UCS C460 M2 | http://www.cisco.com/en/US/prod/collateral/ps10265/ps10493/ps11587/spec_sheet_c17-662220.pdf[] 
+
+
+| Cisco UCS B200 M3 | http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b200-m3-blade-server/data_sheet_c78-700625.html[] 
+
+
+| Cisco UCS B420 M3 | 不適用 
+
+
+| Cisco UCS B22 M3 | http://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/b22m3_specsheet.pdf[] 
+
+
+| Cisco Nexus 3524 | http://www.cisco.com/c/en/us/products/switches/nexus-3524-switch/index.html[] 
+
+
+| FAS2240 |  
+
+
+| FAS2220 | http://www.netapp.com/us/products/storage-systems/fas2200/fas2200-tech-specs.aspx[] 
+
+
+| DS4243 | 不適用 
+|===

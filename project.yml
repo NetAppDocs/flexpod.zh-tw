@@ -1,0 +1,90 @@
+---
+settings:
+  name: FlexPod
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: 解決方案文件FlexPod
+    url: "/index.html"
+  - section: fp-def
+  - section: flexpod-dc
+  - section: hybrid-cloud
+  - section: ent-db
+  - section: healthcare
+  - section: vdi
+  - section: modern-apps
+  - section: ms-apps
+  - section: express
+  - section: security
+  - section: ontap-connector-for-intersight
+  - section: infrastructure
+homepage:
+  tiles:
+  - title: "–從這裡開始FlexPod"
+    links:
+    - title: 新增功能
+      summary: ''
+      url: https://fieldportal.netapp.com/content/1668183
+    - title: 影片與示範
+      summary: ''
+      url: https://tv.netapp.com/search?q=FlexPod
+    - title: 部落格
+      summary: ''
+      url: https://blog.netapp.com/tag/Flexpod/
+  - title: AI與現代化資料分析功能FlexPod 、搭配
+    links:
+    - title: 新增功能
+      summary: ''
+      url: https://www.flexpod.com/solutions/use-cases/machine-learning/
+    - title: 影片與示範
+      summary: ''
+      url: https://tv.netapp.com/search?q=FlexPod%20AI
+    - title: 部落格
+      summary: ''
+      url: https://blog.netapp.com/tag/Flexpod/
+  - title: 商業應用程式與企業資料庫FlexPod
+    links:
+    - title: 影片與示範
+      summary: ''
+      url: https://tv.netapp.com/search?q=FlexPod%20SAP
+    - title: 部落格
+      summary: ''
+      url: https://blog.netapp.com/tag/Flexpod/
+  - title: 混合雲FlexPod 與功能
+    links:
+    - title: 新增功能
+      summary: ''
+      url: https://flexpod.com/solutions/use-cases/hybrid-cloud/
+    - title: 影片與示範
+      summary: ''
+      url: https://tv.netapp.com/search?q=FlexPod%20Hybrid%20Cloud
+    - title: 部落格
+      summary: ''
+      url: https://blog.netapp.com/tag/Flexpod/
+  - title: 適用於VDI FlexPod
+    links:
+    - title: 新增功能
+      summary: ''
+      url: https://www.flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/
+    - title: 影片與示範
+      summary: ''
+      url: https://tv.netapp.com/search?q=FlexPod%20VDI
+    - title: 部落格
+      summary: ''
+      url: https://blog.netapp.com/tag/Flexpod/
+  - title: 以功能為本的醫療照護FlexPod
+    links:
+    - title: 新增功能
+      summary: ''
+      url: https://flexpod.com/solutions/verticals/healthcare/
+    - title: 影片與示範
+      summary: ''
+      url: https://tv.netapp.com/search?q=FlexPod%20Healthcare
+    - title: 部落格
+      summary: ''
+      url: https://blog.netapp.com/tag/Healthcare/

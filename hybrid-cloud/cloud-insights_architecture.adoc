@@ -1,0 +1,133 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-insights_architecture.html 
+keywords: architecture, solution, technology, diagram, hardware, requirements, case, details, software, cloud, insights 
+summary: 在本節中、我們將複習FlexPod 一下「不經認證的資料中心整合式基礎架構」的架構、包括AFF 由「不經認證」監控的NetApp版A800系統Cloud Insights 。 
+---
+= 架構
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+在本節中、我們將複習FlexPod 一下「不經認證的資料中心整合式基礎架構」的架構、包括AFF 由「不經認證」監控的NetApp版A800系統Cloud Insights 。
+
+
+
+== 解決方案技術
+
+「VMware資料中心」解決方案包含下列最低元件、可提供高度可用、易於擴充、已驗證及支援的融合式基礎架構環境。FlexPod
+
+* 兩ONTAP 個NetApp動態儲存節點（一個HA配對）
+* 兩個Cisco Nexus資料中心網路交換器
+* 兩個Cisco MDS光纖交換器（FC部署選用）
+* 兩個Cisco UCS網路互連
+* 一個Cisco UCS刀鋒機箱、含兩個Cisco UCS B系列刀鋒伺服器
+
+
+或
+
+* 兩部Cisco UCS C系列機架安裝伺服器
+
+
+為了收集資料、組織必須在其所屬的「Datacenter」環境中、或是在可聯絡其收集資料之元件的位置、將「擷取單元」部署為虛擬或實體機器。Cloud Insights FlexPod您可以在執行多個受支援Windows或Linux作業系統的系統上安裝擷取單元軟體。下表列出此軟體的解決方案元件。
+
+|===
+| 作業系統 | 版本 
+
+
+| Microsoft Windows | 10. 
+
+
+| Microsoft Windows Server | 2012、2012 R2、2016、2019年 
+
+
+| Red Hat Enterprise Linux | 7.2–7.6 
+
+
+| CentOS | 7.2–7.6 
+
+
+| Oracle Enterprise Linux | 7.5 
+
+
+| DEBIAN | 9. 
+
+
+| Ubuntu | 18.04 LTS 
+|===
+
+
+== 架構圖
+
+下圖顯示解決方案架構。
+
+image:cloud-insights_image2.png["錯誤：缺少圖形影像"]
+
+
+
+== 硬體需求
+
+下表列出實作解決方案所需的硬體元件。在解決方案的任何特定實作中使用的硬體元件、可能會因客戶需求而異。
+
+|===
+| 硬體 | 數量 
+
+
+| Cisco Nexus 9336C-FX2 | 2. 
+
+
+| Cisco UCS 6454光纖互連 | 2. 
+
+
+| Cisco UCS 5108刀鋒機箱 | 1. 
+
+
+| Cisco UCS 2408光纖延伸器 | 2. 
+
+
+| Cisco UCS B200 M5刀鋒 | 2. 
+
+
+| NetApp AFF 產品-A800 | 2. 
+|===
+
+
+== 軟體需求
+
+下表列出實作解決方案所需的軟體元件。在解決方案的任何特定實作中使用的軟體元件、可能會因客戶需求而異。
+
+|===
+| 軟體 | 版本 
+
+
+| Cisco Nexus韌體 | 9.3（5） 
+
+
+| Cisco UCS版本 | 4.1(2a) 
+
+
+| NetApp ONTAP 產品版本 | 9.7 
+
+
+| NetApp Cloud Insights 產品版本 | 2020年9月、基礎版 
+
+
+| Red Hat Enterprise Linux | 7.6.7. 
+
+
+| VMware vSphere | 6.7U3 
+|===
+
+
+== 使用案例詳細資料
+
+本解決方案適用於下列使用案例：
+
+* 利用提供給NetApp Active IQ 的資料來分析環境、以評估儲存系統風險、並提出儲存最佳化建議。
+* 即時ONTAP 檢查系統統計資料、以疑難排解部署FlexPod 在「Real-Datacenter」解決方案中的「無法解決」儲存系統問題。
+* 產生自訂的儀表板、輕鬆監控ONTAP 部署FlexPod 在「Datacenter融合式基礎架構」中的各種顯示器儲存系統的特定興趣點。
+

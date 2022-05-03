@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-deploy_deployment_procedures_overview.html 
+keywords: vmware, vcenter, server, appliance, download 
+summary: 本文件詳細說明如何設定完全備援、高可用FlexPod 度的支援功能、以及配置多個Cisco UCS主機。 
+---
+= 部署程序
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本文件詳細說明如何設定完全備援且高度可用FlexPod 的Express系統。為了反映這種備援、每個步驟中所設定的元件都稱為元件A或元件B例如、控制器A和控制器B會識別本文件中所配置的兩個NetApp儲存控制器。交換器A和交換器B會識別一對Cisco Nexus交換器。
+
+此外、本文也說明配置多個Cisco UCS主機的步驟、這些主機會依序識別為伺服器A、伺服器B等。
+
+為了指出您應該在步驟中加入與環境相關的資訊、「」<<text >會顯示為命令結構的一部分。請參閱以下「VLAN create」命令範例：
+
+....
+Controller01>vlan create vif0 <<mgmt_vlan_id>>
+....
+本文件可讓您完整設定FlexPod 《支援不支援不支援的使用者介面》環境。在此程序中、您需要執行各種步驟、才能插入客戶專屬的命名慣例、IP位址和虛擬區域網路（VLAN）配置。下表說明部署所需的VLAN、如本指南所述。此表格可根據特定站台變數完成、並用於實作文件組態步驟。
+
+
+NOTE: 如果您使用不同的頻內和頻外管理VLAN、則必須在它們之間建立第3層路由。此驗證使用通用管理VLAN。
+
+|===
+| 名稱 | VLAN用途 | 用於驗證此文件的ID 
+
+
+| 管理VLAN | 管理介面的VLAN | 3437 
+
+
+| 原生VLAN | 指派無標記框架的VLAN | 2. 
+
+
+| NFS VLAN | NFS流量的VLAN | 3438 
+
+
+| VMware VMotion VLAN | 指定用於將虛擬機器從一部實體主機移至另一部實體主機的VLAN | 3441. 
+
+
+| 虛擬機器流量VLAN | 虛擬機器應用程式流量的VLAN | 3442. 
+
+
+| iSCSI-A-VLAN | 光纖A上iSCSI流量的VLAN | 3439 
+
+
+| iSCSI-B VLAN | 光纖B上iSCSI流量的VLAN | 3440 
+|===
+在整個設定過程中、需要使用VLAN編號FlexPod 。這些VLAN稱為「<<var_xxxx_vlan->>」、其中「XXXX」是VLAN的用途（例如iSCSI-A）。
+
+下表列出所建立的VMware虛擬機器。
+
+|===
+| 虛擬機器說明 | 主機名稱 
+
+
+| VMware vCenter Server |  
+|===

@@ -1,0 +1,54 @@
+---
+section: flexpod-dc
+title: 資料中心FlexPod
+entries:
+- title: 包含NetApp SnapMirror營運不中斷和功能不再是資料中心FlexPod ONTAP
+  type: solutions
+  entries:
+  - title: 簡介
+    url: "/flexpod-dc/sm-bcs-introduction.html"
+  - title: 解決方案FlexPod
+    url: "/flexpod-dc/sm-bcs-flexpod-sm-bc-solution.html"
+  - title: 解決方案驗證
+    entries:
+    - title: 總覽
+      url: "/flexpod-dc/sm-bcs-solution-validation_overview.html"
+    - title: 運算
+      url: "/flexpod-dc/sm-bcs-compute.html"
+    - title: 網路
+      url: "/flexpod-dc/sm-bcs-network.html"
+    - title: 儲存設備
+      url: "/flexpod-dc/sm-bcs-storage.html"
+    - title: 虛擬化
+      url: "/flexpod-dc/sm-bcs-virtualization.html"
+    - title: 已驗證的案例
+      url: "/flexpod-dc/sm-bcs-validated-scenarios.html"
+  - title: 結論
+    url: "/flexpod-dc/sm-bcs-conclusion.html"
+  - title: 何處可以找到其他資訊和版本歷程記錄
+    url: "/flexpod-dc/sm-bcs-where-to-find-additional-information-and-version-history.html"
+- title: 利用VMware vSphere 7.0、Cisco VXLAN單一站台架構和NetApp《VMware vCenter 9.7設計指南》來實現資料中心FlexPod
+    ONTAP
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi70_vxlan_evpn_design.html
+- title: VMware vSphere 7.0與NetApp VMware vCenter 9.7的資料中心FlexPod ONTAP
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html
+- title: 採用NetApp產品9.7、Cisco Intersight和VMware vSphere 6.7 U3的資料中心- FlexPod ONTAP
+    設計
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_dc_ontap_97_ucs_4_vmw_vs_67_U3_design.html
+- title: 利用NetApp產品9.7、Cisco Intersight和VMware vSphere 6.7 U3進行資料中心部署FlexPod ONTAP
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_dc_ontap_97_ucs_4_vmw_vs_67_U3.html
+- title: "《採用Cisco Intersight與NetApp的資料中心技術》《NetApp®》9.7設計指南》FlexPod ONTAP"
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_dc_ontap_97_ucs_4_vmw_vs_67_U3_design.html
+- title: 採用NetApp功能的資料中心9.6、Cisco UCS第4代、VMware vSphere 6.7U2（CVD）FlexPod ONTAP
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa_u2.html
+- title: 採用VMware vSphere 6.7 U1、Cisco UCS第4代及NetApp解決方案A系列的資料中心- FlexPod AFF 設計
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa_design.html
+- title: 利用VMware vSphere 6.7 U1、Cisco UCS第4代及NetApp解決方案A系列部署資料中心FlexPod AFF
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html
+- title: 推出適用於FlexPod NVMe的端點對端點NVMe
+  url: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741907.html
+- title: "《採用Cisco ACI Multi-Pod、NetApp《支援資料中心》、《VMware vSphere 6.7設計指南》FlexPod MetroCluster"
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi67_n9k_aci_metrocluster_design.html
+- title: "《採用Cisco ACI Multi-Pod、NetApp VMware vCenter及VMware vSphere 6.7部署指南的資料中心》FlexPod
+    MetroCluster"
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi67_n9k_aci_metrocluster.html

@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_deployment_and_configuration_overview.html 
+keywords: ontap, cisco, blade, ucs, rack, mount, server, cabling, diagram 
+summary: 本節詳細說明FlexPod 使用ONTAP NetApp或Cisco UCS刀鋒伺服器和機架安裝伺服器的環境中、有關進行不完整部署的儲存指南。 
+---
+= 總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本文件所提供的NetApp FlexPod 解決方案部署儲存指南涵蓋：
+
+* 使用本功能的環境ONTAP
+* 使用Cisco UCS刀鋒伺服器與機架掛載伺服器的環境
+
+
+本文件不涵蓋：
+
+* 詳細部署FlexPod 「資料中心」環境
++
+如需詳細資訊、請參閱 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["採用FC Cisco驗證設計的資料中心FlexPod"^] （CVD）。
+
+* MEDITECH軟體環境、參考架構及整合最佳實務準則的總覽。
++
+如需詳細資訊、請參閱 https://fieldportal.netapp.com/content/310932["TR-4300i：FAS 《適用於MEDITECH環境的NetApp Reale與All Flash儲存系統最佳實務做法指南》"^] （需要NetApp登入）。
+
+* 量化效能要求與規模調整指引。
++
+如需詳細資訊、請參閱 https://fieldportal.netapp.com/content/198446["TR-4190：適用於MEDITECH環境的NetApp規模調整準則"^]。
+
+* 使用NetApp SnapMirror技術來滿足備份和災難恢復要求。
+* 一般NetApp儲存部署指南。
+
+
+本節提供基礎架構部署最佳實務做法的組態範例、並列出各種基礎架構硬體和軟體元件、以及您可以使用的版本。
+
+
+
+== 佈線圖
+
+下圖說明MEDITECH部署的32GB FC/40GbE拓撲圖。
+
+image:ehr-meditech-deploy_image5.png["錯誤：缺少圖形影像"]
+
+請務必使用 http://mysupport.netapp.com/matrix/["互通性對照表工具IMT （不含）"^] 驗證是否支援所有版本的軟體和韌體。一節中的表格 link:ehr-meditech-deploy_meditech_modules_and_components.html["Meditech模組與元件"] 列出解決方案測試中使用的基礎架構硬體和軟體元件。
+
+link:ehr-meditech-deploy_base_infrastructure_configuration.html["下一步：基礎架構組態。"]

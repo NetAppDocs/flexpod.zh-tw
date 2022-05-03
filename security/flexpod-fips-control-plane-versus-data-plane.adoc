@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: security/flexpod-fips-control-plane-versus-data-plane.html 
+keywords: control plane, data plane 
+summary: 實作FIPS 140-2策略時、務必瞭解受到保護的內容。這種情況很容易分成兩個區域：控制面板和資料平面。 
+---
+= 控制面與資料面
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-fips-overview-of-fips-140-2.html["上一篇：FIPS 140-2概述。"]
+
+實作FIPS 140-2策略時、務必瞭解受到保護的內容。這很容易分成兩個領域：控制面板和資料平面。控制面板是指影響FlexPod 到元件在整個過程中的控制和操作的層面：例如、NetApp儲存控制器、Cisco Nexus交換器和Cisco UCS伺服器的管理存取。此層的保護是透過限制管理員可用來連線至裝置和進行變更的傳輸協定和密碼編譯密碼編譯器來提供。資料平面是指FlexPod 真實資訊、例如、在整個系統內的PHI。這是透過加密靜止的資料以確保使用中的密碼編譯模組符合標準來保護的。
+
+link:flexpod-fips-flexpod-cisco-ucs-compute-and-fips-140-2.html["下一步：FlexPod Cisco UCS運算與FIPS 140-2。"]

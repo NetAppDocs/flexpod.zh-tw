@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_minimum_hardware_requirements.html 
+keywords: minimum, hardware, requirements, switches, fabric, interconnects, servers, storage, controllers 
+summary: 「資料中心」組態具有最低的硬體需求、包括但不限於交換器、網路互連、伺服器和NetApp儲存控制器。FlexPod 
+---
+= 最低硬體需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+「資料中心」組態具有最低的硬體需求、包括但不限於交換器、網路互連、伺服器和NetApp儲存控制器。FlexPod
+
+您必須使用Cisco UCS伺服器。C系列和B系列伺服器均已用於通過驗證的設計。Cisco Nexus Fabric延伸器（FEXs）可搭配C系列伺服器選用。
+
+下列最低硬體需求為基礎：FlexPod
+
+* 備援組態中的兩個Cisco Nexus交換器。此組態可由Cisco Nexus 5000、7000或9000系列的兩個備援交換器組成。這兩個交換器應為同一機型、且應設定為相同的操作模式。
++
+如果您要部署ACI架構、則必須遵守下列額外要求：
+
++
+** 將Cisco Nexus 9000系列交換器部署在分葉式拓撲中。
+** 使用三個Cisco應用程式原則基礎架構控制器（APIC）。
+
+
+* 兩個Cisco UCS 6200、6300或6400系列光纖互連、採用備援組態。
+* Cisco UCS伺服器：
++
+** 如果解決方案使用B系列伺服器、則一個Cisco UCS 5108 B系列刀鋒伺服器機箱、外加兩個Cisco UCS B系列刀鋒伺服器、外加兩個2104、2204/8、2408或2304 I/O模組（IOM）。
+** 如果解決方案使用C系列伺服器、則有兩部Cisco UCS C系列機架伺服器。
++
+對於Cisco UCS C系列機架伺服器的大型部署、您可以選擇一對2232PP FEX模組。然而、2232PP並不是硬體需求。
+
+
+
+* 高可用度（HA）配對組態中的兩個NetApp儲存控制器：
++
+此組態可由任何支援的NetApp FAS 功能、AFF 功能區或ASA系列儲存控制器所組成。請參閱 https://hwu.netapp.com/["NetApp Hardware Universe"^] 申請取得支援FAS 的功能完整的功能表、包括支援的功能完整、AFF 功能完整、功能完整、功能完整ASA 、功能完整、功能完整。
+
++
+** HA組態需要每個控制器兩個備援介面才能存取資料；介面可以是FCoE、FC或10/25/100Gb乙太網路（GbE）。
+** 如果解決方案使用NetApp ONTAP 解決方案、則需要NetApp核准的叢集互連拓撲。如需詳細資訊、請參閱 https://hwu.netapp.com/Switch/Index["交換器"^] NetApp Hardware Universe 解決方案索引標籤。
+** 如果解決方案使用ONTAP 支援功能、則每個控制器至少需要兩個額外的10/25/100GbE連接埠、才能存取資料。
+** 對於具有兩個節點的叢集、您可以設定雙節點無交換器叢集。ONTAP
+** 對於具有兩個以上節點的叢集、需要一對叢集互連交換器。ONTAP
+
+
+* 一個具有任何支援磁碟類型的NetApp磁碟櫃。請參閱的「磁碟櫃」索引標籤 link:https://hwu.netapp.com/Shelves/Index?osTypeId=2032["NetApp Hardware Universe"^] 以取得目前支援的磁碟櫃模型清單。
+

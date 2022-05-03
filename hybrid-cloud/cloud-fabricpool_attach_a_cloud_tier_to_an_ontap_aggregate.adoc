@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_attach_a_cloud_tier_to_an_ontap_aggregate.html 
+keywords: attach, cloud, tier, ontap, aggregate, fabricpool, flexpod, ontap, cli, oncommand, system, manager 
+summary: 物件存放區新增至ONTAP 及由功能區識別之後、必須附加到集合體才能建立FabricPool 功能區。您可以使用OnCommand 「系統管理程式」或ONTAP 「系統資訊管理系統」CLI來完成這項工作。 
+---
+= 將雲端層附加ONTAP 到一個不協調的Aggregate
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+物件存放區新增至ONTAP 及由功能區識別之後、必須附加到集合體才能建立FabricPool 功能區。您可以使用OnCommand 「系統管理程式」或ONTAP 「系統資訊管理系統」CLI來完成這項工作。
+
+可將多種類型的物件存放區連線至叢集、但每個集合體只能附加一種類型的物件存放區。例如、一個Aggregate可以使用Google Cloud、另一個Aggregate可以使用Amazon S3、但無法同時附加一個Aggregate。
+
+
+NOTE: 將雲端層附加至Aggregate是一項永久性行動。雲端層無法從其附加的Aggregate中取消附加。
+
+
+
+== 系統管理程式OnCommand
+
+若要使用OnCommand NetApp System Manager將雲端層附加至集合體、請完成下列步驟：
+
+. 啟動OnCommand 《系統管理程式》。
+. 按一下「應用程式與層級」。
++
+image:cloud-fabricpool_image14.png["錯誤：缺少圖形影像"]
+
+. 按一下儲存層。
+. 按一下Aggregate。
+. 按一下「動作」、然後選取「附加雲端層」。
++
+image:cloud-fabricpool_image15.png["錯誤：缺少圖形影像"]
+
+. 選取雲端層。
+. 檢視及更新集合體上磁碟區的分層原則（選用）。根據預設、磁碟區分層原則設為「僅Snapshot」。
+. 按一下儲存。
+
+
+
+
+== CLI ONTAP
+
+若要使用ONTAP CLI將雲端層附加至Aggregate、請執行下列命令：
+
+....
+storage aggregate object-store attach
+-aggregate <name>
+-object-store-name <name>
+....
+範例：
+
+....
+storage aggregate object-store attach -aggregate aggr1 -object-store-name - aws_infra_fp_bk_1
+....
+link:cloud-fabricpool_set_volume_tiering_policy.html["下一步：設定磁碟區分層原則。"]

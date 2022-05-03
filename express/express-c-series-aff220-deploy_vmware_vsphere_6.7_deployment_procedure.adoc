@@ -1,0 +1,470 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-deploy_vmware_vsphere_6.7_deployment_procedure.html 
+keywords: vmware, vsphere, hosts, esxi, iscsi, cimc, cisco 
+summary: 本節提供在FlexPod VMware ESXi 6.7組態中安裝VMware ESXi 6.7的詳細程序。 
+---
+= VMware vSphere 6.7部署程序
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節提供在FlexPod VMware ESXi 6.7組態中安裝VMware ESXi 6.7的詳細程序。下列部署程序已自訂、以納入先前各節所述的環境變數。
+
+在這樣的環境中安裝VMware ESXi有多種方法。此程序使用CIMC介面的虛擬KVM主控台和虛擬媒體功能、以供Cisco UCS C系列伺服器將遠端安裝媒體對應至每個個別伺服器。
+
+
+NOTE: 此程序必須針對Cisco UCS伺服器A和Cisco UCS伺服器B完成
+
+對於新增至叢集的任何其他節點、必須完成此程序。
+
+
+
+== 登入Cisco UCS C系列獨立式伺服器的CIMC介面
+
+下列步驟詳細說明Cisco UCS C系列獨立伺服器登入CIMC介面的方法。您必須登入CIMC介面才能執行虛擬KVM、讓系統管理員能夠透過遠端媒體開始安裝作業系統。
+
+
+
+=== 所有主機
+
+. 瀏覽至網頁瀏覽器、然後輸入Cisco UCS C系列的CIMC介面IP位址。此步驟會啟動CIMC GUI應用程式。
+. 使用管理使用者名稱和認證登入CIMC UI。
+. 在主功能表中、選取伺服器索引標籤。
+. 按一下啟動KVM主控台。
++
+image:express-c-series-aff220-deploy_image21.png["錯誤：缺少圖形影像"]
+
+. 從虛擬KVM主控台選取虛擬媒體索引標籤。
+. 選取地圖CD / DVD。
++
+
+NOTE: 您可能需要先按一下「啟動虛擬裝置」。如果出現提示、請選取「接受此工作階段」。
+
+. 瀏覽至VMware ESXi 6.7安裝程式ISO映像檔、然後按一下「Open（開啟）」。按一下「對應裝置」。
+. 選取「Power（電源）」功能表、然後選擇「Power Cycle System（Cold Boot）（系統關機後再開機按一下是。
+
+
+
+
+== 安裝VMware ESXi
+
+下列步驟說明如何在每個主機上安裝VMware ESXi。
+
+
+
+=== 下載ESXi 6.7 Cisco自訂映像
+
+. 瀏覽至 https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/6_7["VMware vSphere下載頁面"^] 適用於自訂ISO。
+. 按一下「適用於ESXi 6.7 GA安裝CD的Cisco自訂映像」旁的「移至下載」。
+. 下載Cisco Custom Image for ESXi 6.7 GA Install CD（ISO）。
+
+
+
+
+=== 所有主機
+
+. 系統開機時、機器會偵測是否有VMware ESXi安裝媒體。
+. 從顯示的功能表中選取VMware ESXi安裝程式。
++
+安裝程式會載入。這需要幾分鐘的時間。
+
+. 安裝程式載入完成後、按Enter繼續安裝。
+. 閱讀完終端使用者授權合約後、請接受該合約、然後按F11繼續安裝。
+. 選取先前設定為ESXi安裝磁碟的NetApp LUN、然後按Enter繼續安裝。
++
+image:express-c-series-aff220-deploy_image22.png["錯誤：缺少圖形影像"]
+
+. 選取適當的鍵盤配置、然後按Enter。
+. 輸入並確認root密碼、然後按Enter。
+. 安裝程式會警告您、磁碟區上已移除現有的分割區。按F11繼續安裝。伺服器會在安裝ESXi之後重新開機。
+
+
+
+
+== 設定VMware ESXi主機管理網路
+
+下列步驟說明如何為每個VMware ESXi主機新增管理網路。
+
+
+
+=== 所有主機
+
+. 伺服器完成重新開機後、輸入選項以按F2來自訂系統。
+. 以root登入、做為登入名稱、以及先前在安裝程序中輸入的root密碼。
+. 選取「設定管理網路」選項。
+. 選取「Network Adapters（網路卡）」、然後按Enter。
+. 為vSwitch0選取所需的連接埠。按Enter。
++
+
+NOTE: 在CIMC中選取對應於eth0和eth1的連接埠。
+
++
+image:express-c-series-aff220-deploy_image23.png["錯誤：缺少圖形影像"]
+
+. 選取「VLAN（選用）」、然後按Enter。
+. 輸入VLAN ID：\<<mgmt_vlan_id>>'。按Enter。
+. 從Configure Management Network（設定管理網路）功能表中、選取「IPv6 Configuration」（IPV4組態）以設定管理介面的IP位址。按Enter。
+. 使用箭頭鍵反白顯示「Set Static IPv4 Address（設定靜態IPv6位址）」、然後使用空格鍵選取此選項。
+. 輸入用於管理VMware ESXi主機的IP位址：\<<ESXi_host_mgmt_ip>>_`。
+. 輸入VMware ESXi主機的子網路遮罩：\<ESXi_host_mgmt_netmask>.'
+. 輸入VMware ESXi主機的預設閘道：\<<ESXi_host_mgmt_gateway>>_`。
+. 按Enter接受IP組態的變更。
+. 進入IPv6組態功能表。
+. 使用空格鍵取消選取「Enable IPv6（重新啟動必要）」（啟用IPv6（重新啟動））選項、以停用IPv6。按Enter。
+. 進入功能表以設定DNS設定。
+. 由於IP位址是手動指派的、因此也必須手動輸入DNS資訊。
+. 輸入主DNS伺服器的IP位址<<nameserver_ip>>」
+. （選用）輸入次要DNS伺服器的IP位址。
+. 輸入VMware ESXi主機名稱的FQDN：<<esxi_host_fqdn>>」
+. 按Enter接受DNS組態的變更。
+. 按Esc鍵退出「設定管理網路」子功能表。
+. 按Y確認變更、然後重新啟動伺服器。
+. 按Esc鍵登出VMware主控台。
+
+
+
+
+== 設定ESXi主機
+
+您需要下表中的資訊來設定每個ESXi主機。
+
+|===
+| 詳細資料 | 價值 
+
+
+| ESXi主機名稱 |  
+
+
+| ESXi主機管理IP |  
+
+
+| ESXi主機管理遮罩 |  
+
+
+| ESXi主機管理閘道 |  
+
+
+| ESXi主機NFS IP |  
+
+
+| ESXi主機NFS遮罩 |  
+
+
+| ESXi主機NFS閘道 |  
+
+
+| ESXi主機vMotion IP |  
+
+
+| ESXi主機vMotion遮罩 |  
+
+
+| ESXi主機vMotion閘道 |  
+
+
+| ESXi主機iSCSI-A IP |  
+
+
+| ESXi主機iSCSI遮罩 |  
+
+
+| ESXi主機iSCSI閘道 |  
+
+
+| ESXi主機iSCSI-B IP |  
+
+
+| ESXi主機iSCSI-B遮罩 |  
+
+
+| ESXi主機iSCSI-B閘道 |  
+|===
+
+
+=== 登入ESXi主機
+
+. 在網頁瀏覽器中開啟主機的管理IP位址。
+. 使用root帳戶和您在安裝過程中指定的密碼登入ESXi主機。
+. 閱讀有關VMware客戶體驗改善方案的聲明。選取適當的回應後、按一下「OK（確定）」。
+
+
+
+
+=== 設定iSCSI開機
+
+. 選取左側的「Networking（網路）」。
+. 在右側、選取「Virtual Switches（虛擬交換器）」索引標籤。
++
+image:express-c-series-aff220-deploy_image24.png["錯誤：缺少圖形影像"]
+
+. 按一下「iScsiBootvSwitch」。
+. 選取「編輯設定」。
+. 將MTU變更為9000、然後按一下「Save（儲存）」。
+. 按一下左側導覽窗格中的「Networking（網路）」、返回「Virtual Switches（虛擬交換器）」索引標
+. 按一下新增標準虛擬交換器。
+. 提供名稱「iScsiBootvSwitch-B」作為vSwitch名稱。
++
+** 將MTU設為9000。
+** 從Uplink 1選項中選取vmnic3。
+** 按一下「新增」
++
+
+NOTE: 在此組態中、vmnic2和vmnic3用於iSCSI開機。如果ESXi主機中有其他NIC、則可能有不同的vmnic編號。若要確認哪些NIC用於iSCSI開機、請將CIMC中iSCSI vNIC上的MAC位址與ESXi中的vmnics配對。
+
+
+
+. 在中央窗格中、選取[VMkernel NIC（VMkernel NIC）]索引標籤。
+. 選取新增VMkernel NIC。
++
+** 指定新的連接埠群組名稱「iScsiBootPG-B」。
+** 選取虛擬交換器的iScsiBootvSwitch-B。
+** 在VLAN ID中輸入「\<<iscsib_vlan_id>>」。
+** 將MTU變更為9000。
+** 展開「IPv4設定」。
+** 選取「靜態組態」。
+** 在「Address（位址）」中輸入「<<var_hosta_iscsib_ip>>」。
+** 輸入「」<<var_hosta_iscsib_mask>>表示子網路遮罩。
+** 按一下「建立」。
++
+image:express-c-series-aff220-deploy_image25.png["錯誤：缺少圖形影像"]
+
++
+
+NOTE: 將「iScsiBootPG - A」上的MTU設為9000
+
+
+
+
+
+
+
+=== 設定iSCSI多重路徑
+
+若要在ESXi主機上設定iSCSI多重路徑、請完成下列步驟：
+
+. 在左側導覽窗格中選取儲存設備。按一下介面卡。
+. 選取iSCSI軟體介面卡、然後按一下「Configure iSCSI（設定iSCSI）」。
++
+image:express-c-series-aff220-deploy_image26.png["錯誤：缺少圖形影像"]
+
+. 按一下「動態目標」下的「新增動態目標」。
++
+image:express-c-series-aff220-deploy_image27.png["錯誤：缺少圖形影像"]
+
+. 輸入IP位址「iSCSI_lif01a」。
++
+** 重複執行IP位址「iSCSI_lif01b」、「iSCSI_lif02a」和「iSCSI_lif02b」。
+** 按一下儲存組態。
++
+image:express-c-series-aff220-deploy_image28.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+
+NOTE: 您可以在NetApp叢集上執行「network interface show」命令、或查看OnCommand 「NetApp System Manager」中的「Network Interfaces」（網路介面）索引標籤、找到iSCSI LIF IP位址。
+
+
+
+=== 設定ESXi主機
+
+. 在左側導覽窗格中、選取「Networking（網路）」。
+. 選取vSwitch0。
++
+image:express-c-series-aff220-deploy_image29.png["錯誤：缺少圖形影像"]
+
+. 選取編輯設定。
+. 將MTU變更為9000。
+. 展開「NIC Teaming（NIC群組）」、並確認vmnic0和vmnic1均設定為作用中。
+
+
+
+
+=== 設定連接埠群組和VMkernel NIC
+
+. 在左側導覽窗格中、選取「Networking（網路）」。
+. 以滑鼠右鍵按一下「連接埠群組」索引標籤
++
+image:express-c-series-aff220-deploy_image30.png["錯誤：缺少圖形影像"]
+
+. 在VM Network上按一下滑鼠右鍵、然後選取Edit（編輯）。將VLAN ID變更為「」。
+. 按一下新增連接埠群組。
++
+** 將連接埠群組命名為「GMT-Network」。
+** 輸入「\<<mgmt_vlan->>」作為VLAN ID。
+** 確定已選取vSwitch0。
+** 按一下「新增」
+
+
+. 單擊[VMkernel NIC（VMkernel NIC）]選項卡
++
+image:express-c-series-aff220-deploy_image31.png["錯誤：缺少圖形影像"]
+
+. 選取新增VMkernel NIC。
++
+** 選取「新增連接埠群組」。
+** 將連接埠群組命名為「NFS-Network」。
+** 輸入「<nfs_vlan_id>>'作為VLAN ID。
+** 將MTU變更為9000。
+** 展開「IPv4設定」。
+** 選取「靜態組態」。
+** 在「Address（位址）」中輸入「\<<var_hosta_nfs_ip>>」。
+** 輸入「」<<var_hosta_nfs_mask>>表示子網路遮罩。
+** 按一下「建立」。
++
+image:express-c-series-aff220-deploy_image32.png["錯誤：缺少圖形影像"]
+
+
+
+. 重複此程序以建立VMotion VMkernel連接埠。
+. 選取新增VMkernel NIC。
++
+.. 選取「新增連接埠群組」。
+.. 將連接埠群組命名為vMotion。
+.. 在VLAN ID中輸入「\<<VMotion_vlan_id>>」。
+.. 將MTU變更為9000。
+.. 展開「IPv4設定」。
+.. 選取「靜態組態」。
+.. 在「Address（位址）」中輸入「\<<var_hosta_vMotion _ip>>」。
+.. 輸入「」<<var_hosta_vMotion遮罩>>'作為子網路遮罩。
+.. 確保在「IPv4設定」之後選取「vMotion」核取方塊。
++
+image:express-c-series-aff220-deploy_image33.png["錯誤：缺少圖形影像"]
+
++
+
+NOTE: 有許多方法可以設定ESXi網路、包括在授權允許的情況下使用VMware vSphere分散式交換器。如果需要替代的網路組態FlexPod 來滿足業務需求、則支援使用此功能。
+
+
+
+
+
+
+
+==== 掛載第一個資料存放區
+
+第一個要掛載的資料存放區是用於虛擬機器的infra_datastore_1資料存放區、以及用於虛擬機器交換檔案的infra_swap資料存放區。
+
+. 按一下左導覽窗格中的「Storage（儲存設備）」、然後按一下「New Datastore（新增
++
+image:express-c-series-aff220-deploy_image34.png["錯誤：缺少圖形影像"]
+
+. 選取「掛載NFS資料存放區」。
++
+image:express-c-series-aff220-deploy_image35.png["錯誤：缺少圖形影像"]
+
+. 接著、在「提供NFS掛載詳細資料」頁面中輸入下列資訊：
++
+** 名稱：「infra_datastore_1」
+** NFS伺服器：`\<<var_nodea_nfs_lif>>.'
+** 共用：/infra_datastore_1
+** 確定已選取NFS 3。
+
+
+. 按一下「完成」。您可以在「近期工作」窗格中看到工作完成。
+. 重複此程序以掛載infra_swap資料存放區：
++
+** 名稱：「inba_swap」
+** NFS伺服器：`\<<var_nodea_nfs_lif>>.'
+** 分享：「/inforb_swap」
+** 確定已選取NFS 3。
+
+
+
+
+
+
+=== 設定NTP
+
+若要為ESXi主機設定NTP、請完成下列步驟：
+
+. 按一下左側導覽窗格中的「Manage（管理）」。選取右窗格中的「System（系統）」、然後按一下「Time & Date（時間與日期）」
++
+image:express-c-series-aff220-deploy_image36.png["錯誤：缺少圖形影像"]
+
+. 選取使用網路時間傳輸協定（啟用NTP用戶端）。
+. 選取「以主機啟動並停止」作為NTP服務啟動原則。
+. 輸入「\<<var_ntp >>」作為NTP伺服器。您可以設定多個NTP伺服器。
+. 按一下儲存。
++
+image:express-c-series-aff220-deploy_image37.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 移動虛擬機器交換檔位置
+
+這些步驟提供移動虛擬機器交換檔位置的詳細資料。
+
+. 按一下左側導覽窗格中的「Manage（管理）」。在右窗格中選取「系統」、然後按一下「交換」。
++
+image:express-c-series-aff220-deploy_image38.png["錯誤：缺少圖形影像"]
+
+. 按一下「編輯設定」。從資料存放區選項中選取infra_swap。
++
+image:express-c-series-aff220-deploy_image39.png["錯誤：缺少圖形影像"]
+
+. 按一下儲存。
+
+
+
+
+=== 安裝適用於VMware VAAI的NetApp NFS外掛程式1.0.20
+
+若要安裝適用於VMware VAAI的NetApp NFS外掛程式1.0.20、請完成下列步驟。
+
+. 輸入下列命令、確認VAAI已啟用：
++
+....
+esxcfg-advcfg -g /DataMover/HardwareAcceleratedMove
+esxcfg-advcfg -g /DataMover/HardwareAcceleratedInit
+....
++
+如果啟用VAAI、這些命令會產生下列輸出：
+
++
+....
+~ #  esxcfg-advcfg -g /DataMover/HardwareAcceleratedMove
+Value of HardwareAcceleratedMove is 1
+~ # esxcfg-advcfg -g /DataMover/HardwareAcceleratedInit
+Value of HardwareAcceleratedInit is 1
+....
+. 如果未啟用VAAI、請輸入下列命令以啟用VAAI：
++
+....
+esxcfg-advcfg -s 1 /DataMover/HardwareAcceleratedInit
+esxcfg-advcfg -s 1 /DataMover/HardwareAcceleratedMove
+....
++
+這些命令會產生下列輸出：
+
++
+....
+~ # esxcfg-advcfg -s 1 /Data Mover/HardwareAcceleratedInit
+Value of HardwareAcceleratedInit is 1
+~ #  esxcfg-advcfg -s 1 /DataMover/HardwareAcceleratedMove
+Value of HardwareAcceleratedMove is 1
+....
+. 下載適用於VMware VAAI的NetApp NFS外掛程式：
++
+.. 前往 https://mysupport.netapp.com/NOW/download/software/nfs_plugin_vaai_esxi6/1.1.2/["軟體下載頁面"^]。
+.. 向下捲動並按一下適用於VMware VAAI的NetApp NFS外掛程式。
+.. 選取ESXi平台。
+.. 下載最新外掛程式的離線套裝組合（.zip）或線上套裝組合（.vib）。
+
+
+. 使用ESX CLI在ESXi主機上安裝外掛程式。
+. 重新開機ESXi主機。
++
+image:express-c-series-aff220-deploy_image40.png["錯誤：缺少圖形影像"]
+
+
+
+link:express-c-series-aff220-deploy_install_vmware_vcenter_server_6.7.html["下一步：安裝VMware vCenter Server 6.7"]

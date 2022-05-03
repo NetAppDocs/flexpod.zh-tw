@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_legacy_equipment.html 
+keywords: legacy, equipment, legacy, storage, controller, fas, disk, shelf 
+summary: 本節列出NetApp舊版磁碟櫃、FAS 支援功能的控制器和儲存控制器選項。 
+---
+= 老舊設備
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+下表列出NetApp舊版儲存控制器選項。
+
+|===
+| 儲存控制器 | 零件編號FAS | 技術規格 
+
+
+| FAS2520 | 根據所選的個別選項 | http://www.netapp.com/us/products/storage-systems/fas2500/fas2500-tech-specs.aspx[] 
+
+
+| FAS2552 | 根據所選的個別選項 | http://www.netapp.com/us/products/storage-systems/fas2500/fas2500-tech-specs.aspx[] 
+
+
+| FAS2554 | 根據所選的個別選項 | http://www.netapp.com/us/products/storage-systems/fas2500/fas2500-tech-specs.aspx[] 
+
+
+| FAS8020 | 根據所選的個別選項 | http://www.netapp.com/us/products/storage-systems/fas8000/fas8000-tech-specs.aspx[] 
+|===
+下表列出適用於NetApp FAS 的NetApp舊版磁碟櫃選項。
+
+|===
+| 磁碟櫃 | 產品編號 | 技術規格 
+
+
+| DE1600 | E-X5682A-DM-0E-R6-C | link:http://www.netapp.com/us/products/storage-systems/e2800/e2800-tech-specs.aspx["NetApp Hardware Universe 支援磁碟櫃技術規格磁碟機"] 
+
+
+| DE5600 | E-X4041A-12-R6 | link:http://www.netapp.com/us/products/storage-systems/e2800/e2800-tech-specs.aspx["NetApp Hardware Universe 支援磁碟櫃技術規格磁碟機"] 
+
+
+| DE6600 | X-48564-00-R6 | link:http://www.netapp.com/us/products/storage-systems/e2800/e2800-tech-specs.aspx["NetApp Hardware Universe 支援磁碟櫃技術規格磁碟機"] 
+|===
+
+
+== NetApp老FAS 舊版的支援控制器
+
+下表列出舊版NetApp FAS 知識型控制器選項。
+
+|===
+| 目前的元件 | FAS2554 | FAS2552 | FAS2520 
+
+
+| 組態 | 4U機箱內有2個控制器 | 2U機箱內有2個控制器 | 2U機箱內有2個控制器 
+
+
+| 最大原始容量 | 576TB | 509TB | 336TB 
+
+
+| 內部磁碟機 | 24 | 24 | 12. 
+
+
+| 磁碟機數量上限（內部與外部） | 144. | 144. | 84. 
+
+
+| 最大Volume大小 3+| 60TB 
+
+
+| 最大Aggregate大小 3+| 120TB 
+
+
+| LUN的最大數量 3+| 每個控制器2、048個 
+
+
+| 支援儲存網路 2+| iSCSI、FC、FCoE、NFS和CIFS | iSCSI、NFS和CIFS 
+
+
+| NetApp FlexVol 的最大資料量 3+| 每個控制器1、000個 
+
+
+| NetApp Snapshot複本的最大數量 3+| 每個控制器255000 
+|===
+
+NOTE: 如需NetApp FAS 的更多資訊、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2032["「模型」區段FAS"^] 在整個過程中、Hardware Universe

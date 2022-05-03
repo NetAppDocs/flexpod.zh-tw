@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-insights_additional_information.html 
+keywords: additional, information, product, documentation, cloud, insights 
+summary: 若要深入瞭解本文所述資訊、請檢閱下列網站 
+---
+= 其他資訊
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+若要深入瞭解本文件所述資訊、請檢閱下列網站：
+
+* Cisco產品文件
++
+https://www.cisco.com/c/en/us/support/index.html["https://www.cisco.com/c/en/us/support/index.html"^]
+
+* 資料中心FlexPod
++
+https://www.flexpod.com["https://www.flexpod.com"^]
+
+* NetApp Cloud Insights
++
+https://cloud.netapp.com/cloud-insights["https://cloud.netapp.com/cloud-insights"^]
+
+* NetApp 產品文件
++
+https://docs.netapp.com["https://docs.netapp.com"^]
+
+

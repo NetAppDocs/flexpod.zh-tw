@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: express/express-direct-attach-aff220-deploy_technology_requirements.html 
+keywords: technology, requirements, flexpod, express, hardware, software, hypervisor, nodes 
+summary: 不只是使用不需要的功能、更需要搭配軟硬體元件。FlexPod此外、還會說明在系統中新增Hypervisor節點所需的硬體元件（單位為兩個）FlexPod 。 
+---
+= 技術需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+不只是使用不需要的功能、更需要搭配軟硬體元件。FlexPod此外、還會說明在系統中新增Hypervisor節點所需的硬體元件（單位為兩個）FlexPod 。
+
+
+
+== 硬體需求
+
+無論選擇何種Hypervisor、所有FlexPod 的SESHExpress組態都使用相同的硬體。因此、即使業務需求改變、也能在相同FlexPod 的SExpress硬體上執行任一Hypervisor。
+
+下表列出所有FlexPod 的Express組態所需的硬體元件。
+
+|===
+| 硬體 | 數量 
+
+
+| VA220 HA配對AFF | 1. 
+
+
+| Cisco UCS B200 M5伺服器 | 2. 
+
+
+| Cisco Nexus 31108PCV交換器 | 2. 
+
+
+| Cisco UCS虛擬介面卡（VIC）1440、適用於Cisco UCS B200 M5伺服器 | 2. 
+
+
+| Cisco UCS Mini搭配兩個整合式UCS FI-M-6324光纖互連 | 1. 
+|===
+
+
+== 軟體需求
+
+下表列出實作FlexPod 《介紹》解決方案架構所需的軟體元件。
+
+|===
+| 軟體 | 版本 | 詳細資料 
+
+
+| Cisco UCS Manager | 4.0（1b） | 適用於Cisco UCS Fabric Interconnect FA-6324UP 
+
+
+| Cisco刀鋒伺服器軟體 | 4.0（1b） | 適用於Cisco UCS B200 M5伺服器 
+
+
+| Cisco nenic驅動程式 | 1.0.25.0 | 適用於Cisco VIC 1440介面卡 
+
+
+| Cisco NX-OS | 7.0（3）I6（1） | 適用於Cisco Nexus 31108PCV交換器 
+
+
+| NetApp ONTAP | 9.5. | 適用於VA220控制器AFF 
+|===
+下表列出FlexPod 在VMware vSphere上實作所有VMware vSphere所需的軟體。
+
+|===
+| 軟體 | 版本 
+
+
+| VMware vCenter Server設備 | 6.7U1. 
+
+
+| VMware vSphere ESXi Hypervisor | 6.7U1. 
+|===

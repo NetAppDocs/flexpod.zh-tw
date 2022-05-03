@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: ontap-connector-for-intersight/introduction.html 
+keywords: netapp, cisco, ontap, intersight, flexpod, infrastructure, solution, storage, compute, VMware, virtualization, monitor, orchestrate, automate 
+summary: NetApp與Cisco攜手合作、提供Cisco Intersight、這是FlexPod 一套單一窗格的視覺系統、可檢視整個過程。 
+---
+= 簡介
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+NetApp與Cisco攜手合作、提供Cisco Intersight、這是FlexPod 一套單一窗格的視覺系統、可檢視整個過程。這項簡化的整合功能可為FlexPod 整個基礎架構和FlexPod 解決方案中的所有元件、打造統一化的管理平台。Cisco Intersight可讓您監控NetApp儲存設備、Cisco運算和VMware庫存。它也能讓您協調或自動化工作流程、以同時完成儲存和虛擬化工作。
+
+如需詳細資訊、請參閱 https://www.netapp.com/pdf.html?item=/media/25001-tr-4883.pdf["TR 4883：FlexPod 使用ONTAP NetApp 9.8的「資料中心」ONTAP 、適用於Cisco Intersight的「資料中心」、以及Cisco Intersight託管模式"^]。

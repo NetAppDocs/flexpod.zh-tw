@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_netapp_ontap.html 
+keywords: ontap, fas, aff, system, datacenter, techincal, specifications, flexpod, software 
+summary: NetApp ONTAP 支援軟體安裝在每FAS 個NetApp功能或AFF 功能完善的系統上。通過驗證、可搭配使用支援不中斷營運、不中斷營運升級、以及敏捷資料基礎架構的支援、藉以提供可高度擴充的儲存架構。FlexPod ONTAP 
+---
+= NetApp ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+NetApp ONTAP 支援軟體安裝在所有NetApp FAS 的NetApp產品、AFF 包括功能、功能及AFF 功能。ASA通過驗證、可搭配使用支援不中斷營運、不中斷營運升級、以及敏捷資料基礎架構的支援、藉以提供可高度擴充的儲存架構。FlexPod ONTAP
+
+如需ONTAP 更多關於效能的資訊、請參閱 http://www.netapp.com/us/products/data-management-software/ontap.aspx["資料管理軟體ONTAP"^] 產品頁面。

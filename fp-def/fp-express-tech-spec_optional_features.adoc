@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec__optional_features.html 
+keywords: optional, features, iscsi, boot, option, flexpod, express configuration, cisco, mini, aff, fas 
+summary: 本節將說明FlexPod 選用的功能以供選用。 
+---
+= 選用功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節將說明FlexPod 選用的功能以供選用。
+
+
+
+== iSCSI開機選項
+
+此支援架構使用iSCSI開機。FlexPodiSCSI開機選項的最低需求包括：
+
+* 在NetApp儲存控制器上啟動的iSCSI授權/功能
+* NetApp儲存控制器HA配對中每個節點上都有一個雙埠10Gbps乙太網路介面卡
+* Cisco UCS伺服器中能夠開機的介面卡
+
+
+
+
+== 組態選項
+
+本節將提供FlexPod 更多有關在支援以支援功能為基礎的支援架構中所需和驗證組態的資訊。
+
+
+
+=== 採用Cisco UCS C系列與功能不全C190系列的支援FlexPod AFF
+
+下圖說明FlexPod 採用Cisco UCS C系列和AFF 整套解決方案的《The RescExpress》。此解決方案同時支援兩個10GbE上行鏈路。
+
+image:fp-express-tech-spec_image2.png["錯誤：缺少圖形影像"]
+
+如需此組態的詳細資訊、請參閱FlexPod 《使用VMware vSphere 6.7和NetApp AFF VMware vCenter C190 NVA部署指南》（進行中）。
+
+
+
+=== 以Cisco UCS Mini和VA220及NetApp 2750/2720提供的Express FlexPod AFF FAS
+
+下圖說明FlexPod 採用Cisco UCS託管組態的Risco-Express。
+
+image:fp-express-tech-spec_image3.png["錯誤：缺少圖形影像"]
+
+如需此組態的詳細資訊、請參閱 https://www.netapp.com/us/media/nva-1131-deploy.pdf["採用VMware vSphere 6.7U1與NetApp VMware Infrastructure A220的VMware Express搭配直接附加IP型儲存設備FlexPod AFF"^]。

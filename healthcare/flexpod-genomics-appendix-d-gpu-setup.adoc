@@ -1,0 +1,202 @@
+---
+sidebar: sidebar 
+permalink: healthcare/flexpod-genomics-appendix-d-gpu-setup.html 
+keywords: gpu, setup, cvd, nvidia, tesla 
+summary: 在發佈時、網關工具並未原生支援內部部署的GPU型執行。提供下列設定與指引、讓讀者瞭解FlexPod 使用GATE PCIe夾層卡的後置NVIDIA Tesla P6 GPU使用時、如何簡單易用。 
+---
+= GPU設定
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-genomics-appendix-c.html["上一篇：使用Cromwell引擎執行網關的輸出。"]
+
+在發佈時、網關工具並未原生支援內部部署的GPU型執行。提供下列設定與指引、讓讀者瞭解FlexPod 使用GATE PCIe夾層卡的後置NVIDIA Tesla P6 GPU使用時、如何簡單易用。
+
+我們使用下列Cisco驗證設計（CVD）做為參考架構和最佳實務指南、來設定FlexPod 「不支援」環境、以便執行使用GPU的應用程式。
+
+* https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_480ml_aiml_deployment.pdf["適用於AI/ML的Datacenter搭配Cisco UCS 480 ML、可進行深度學習FlexPod"^]
+
+
+以下是此設定的一組重點摘要：
+
+. 我們在UCS B200 M5伺服器的夾層插槽中使用PCIe NVIDIA Tesla P6 GPU。
++
+image:flexpod-genomics-image18.png["錯誤：缺少圖形影像"]
+
++
+image:flexpod-genomics-image19.png["錯誤：缺少圖形影像"]
+
+. 在此設定中、我們已在NVIDIA合作夥伴入口網站上註冊、並取得評估授權（也稱為授權）、以便在運算模式下使用GPU。
+. 我們已從NVIDIA合作夥伴網站下載所需的NVIDIA vGPU軟體。
+. 我們從NVIDIA合作夥伴網站下載了「*。bin」檔案。
+. 我們安裝了NVIDIA vGPU授權伺服器、並使用從NVIDIA合作夥伴網站下載的「*。bin」檔案、將授權新增至授權伺服器。
+. 請務必在NVIDIA合作夥伴入口網站上、針對您的部署選擇正確的NVIDIA vGPU軟體版本。在此設定中、我們使用的是460.73.02版驅動程式。
+. 此命令會安裝 https://docs.omniverse.nvidia.com/prod_deployment/prod_deployment/installing-vgpu-manager.html["NVIDIA vGPU管理程式"^] 在ESXi中。
++
+....
+[root@localhost:~] esxcli software vib install -v /vmfs/volumes/infra_datastore_nfs/nvidia/vib/NVIDIA_bootbank_NVIDIA-VMware_ESXi_7.0_Host_Driver_460.73.02-1OEM.700.0.0.15525992.vib
+Installation Result
+Message: Operation finished successfully.
+Reboot Required: false
+VIBs Installed: NVIDIA_bootbank_NVIDIA-VMware_ESXi_7.0_Host_Driver_460.73.02-1OEM.700.0.0.15525992
+VIBs Removed:
+VIBs Skipped:
+....
+. 重新開機ESXi伺服器之後、請執行下列命令來驗證安裝並檢查GPU的健全狀況。
++
+....
+[root@localhost:~] nvidia-smi
+Wed Aug 18 21:37:19 2021
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.73.02    Driver Version: 460.73.02    CUDA Version: N/A      |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla P6            On   | 00000000:D8:00.0 Off |                    0 |
+| N/A   35C    P8     9W /  90W |  15208MiB / 15359MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A   2812553    C+G   RHEL01                          15168MiB |
++-----------------------------------------------------------------------------+
+[root@localhost:~]
+....
+. 使用vCenter、 https://blogs.vmware.com/apps/2018/09/using-gpus-with-virtual-machines-on-vsphere-part-2-vmdirectpath-i-o.html["設定"^] 圖形裝置設定為「Shared Direct（共享直接）」。
++
+image:flexpod-genomics-image20.png["錯誤：缺少圖形影像"]
+
++
+image:flexpod-genomics-image21.png["錯誤：缺少圖形影像"]
+
+. 確定RedHat VM已停用安全開機。
+. 確定VM Boot Options韌體已設定為EFI.. https://docs.vmware.com/en/VMware-vSphere-Bitfusion/3.0/Install-Guide/GUID-2005A8C6-4FDC-46DF-BB6B-989F6E91F3E2.html["參考資料"^]）。
++
+image:flexpod-genomics-image22.png["錯誤：缺少圖形影像"]
+
+. 請確定下列「PARAMS」已新增至「VM選項」進階「編輯組態」。「pciPassThree.64bitMMIOSIezeGB」參數的值取決於GPU記憶體和指派給VM的GPU數量。例如：
++
+.. 如果VM被指派4 x 32GB V100 GPU、則此值應為128。
+.. 如果VM被指派4 x 16GB p6 GPU、則此值應為64。
++
+image:flexpod-genomics-image23.png["錯誤：缺少圖形影像"]
+
++
+image:flexpod-genomics-image24.png["錯誤：缺少圖形影像"]
+
+
+
+. 在vCenter中將vGPU新增為新的PCI裝置至虛擬機器時、請務必選取NVIDIA GRID vGPU作為PCI裝置類型。
+. 選擇適合使用GPU、GPU記憶體及使用目的的正確GPU設定檔：例如、圖形與運算。
++
+image:flexpod-genomics-image25.png["錯誤：缺少圖形影像"]
+
+. 在RedHat Linux VM上、您可以執行下列命令來安裝NVIDIA驅動程式：
++
+....
+[root@genomics1 genomics]#sh NVIDIA-Linux-x86_64-460.73.01-grid.run
+....
+. 執行下列命令、確認報告的vGPU設定檔正確無誤：
++
+....
+[root@genomics1 genomics]# nvidia-smi –query-gpu=gpu_name –format=csv,noheader –id=0 | sed -e ‘s/ /-/g’
+GRID-P6-16C
+[root@genomics1 genomics]#
+....
+. 重新開機後、請確認報告的NVIDIA vGPU與驅動程式版本是否正確。
++
+....
+[root@genomics1 genomics]# nvidia-smi
+Wed Aug 18 20:30:56 2021
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.73.01    Driver Version: 460.73.01    CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID P6-16C         On   | 00000000:02:02.0 Off |                  N/A |
+| N/A   N/A    P8    N/A /  N/A |   2205MiB / 16384MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      8604      G   /usr/libexec/Xorg                  13MiB |
++-----------------------------------------------------------------------------+
+[root@genomics1 genomics]#
+....
+. 請確定已在vGPU網格組態檔的VM上設定授權伺服器IP。
++
+.. 複製範本。
++
+....
+[root@genomics1 genomics]# cp /etc/nvidia/gridd.conf.template /etc/nvidia/gridd.conf
+....
+.. 編輯檔案「/etc/nvidia/Rid.conf」、新增授權伺服器IP位址、並將功能類型設為1。
++
+....
+ ServerAddress=192.168.169.10
+....
++
+....
+ FeatureType=1
+....
+
+
+. 重新啟動VM之後、您應該會在授權伺服器的授權用戶端下看到一個項目、如下所示。
++
+image:flexpod-genomics-image26.png["錯誤：缺少圖形影像"]
+
+. 如需下載網關軟體的詳細資訊、請參閱解決方案設定一節。
+. 在GK能夠在內部部署使用GPU之後、工作流程說明語言為*。WDL具有如下所示的執行時間屬性。
++
+....
+task ValidateBAM {
+  input {
+    # Command parameters
+    File input_bam
+    String output_basename
+    String? validation_mode
+    String gatk_path
+    # Runtime parameters
+    String docker
+    Int machine_mem_gb = 4
+    Int addtional_disk_space_gb = 50
+  }
+  Int disk_size = ceil(size(input_bam, "GB")) + addtional_disk_space_gb
+  String output_name = "${output_basename}_${validation_mode}.txt"
+  command {
+    ${gatk_path} \
+      ValidateSamFile \
+      --INPUT ${input_bam} \
+      --OUTPUT ${output_name} \
+      --MODE ${default="SUMMARY" validation_mode}
+  }
+  runtime {
+    gpuCount: 1
+    gpuType: "nvidia-tesla-p6"
+    docker: docker
+    memory: machine_mem_gb + " GB"
+    disks: "local-disk " + disk_size + " HDD"
+  }
+  output {
+    File validation_report = "${output_name}"
+  }
+}
+....
+
+
+link:flexpod-genomics-conclusion.html["下一步：結論。"]

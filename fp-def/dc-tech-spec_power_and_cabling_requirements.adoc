@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_power_and_cabling_requirements.html 
+keywords: power, cabling, requirements, minimum, techincal, datacenter, specifications 
+summary: 供應電源和纜線的需求最低。FlexPod 
+---
+= 電源和纜線需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+供應電源和纜線的需求最低。FlexPod
+
+
+
+== 電力需求
+
+根據安裝「支援資料中心」組態的位置、FlexPod 對「支援資料中心」的電源需求各有不同FlexPod 。
+
+如需所需最大電力的詳細資料、以及其他詳細電力資訊、請參閱本節所列每個硬體元件的技術規格 link:dc-tech-spec_technical_specifications_and_references.html["技術規格與參考資料：硬體元件"]。
+
+如需詳細的Cisco UCS電源資料、請參閱 http://www.cisco.com/assets/cdc_content_elements/flash/dataCenter/cisco_ucs_power_calculator/["Cisco UCS電源計算機"^]。
+
+如需NetApp儲存控制器電源資料、請參閱 http://hwu.netapp.com/Controller/Index?platformTypeId=6780858["NetApp Hardware Universe"^]。在「Platforms（平台）」下、選取您要用於組態的儲存平台（FAS/V系列或AFF VMware）。選取ONTAP 「版本與儲存控制器」、然後按一下「顯示結果」按鈕。
+
+
+
+== 最低纜線需求
+
+每FlexPod 次部署「Datacenter」時、所需的纜線和介面卡數量和類型會有所不同。纜線類型、收發器類型和編號是在設計過程中根據您的需求而決定。下表列出所需的最低纜線數量。
+
+|===
+| 硬體 | 機型編號 | 需要纜線 
+
+
+| Cisco UCS機箱 | Cisco UCS 5108 | 每個Cisco UCS 2104XP、2204XP或2208XP模組至少兩條雙軸纜線 
+
+
+.6+| Cisco UCS Fabric互連 | Cisco UCS 6248UP  a| 
+* 兩條Cat5e纜線、用於管理連接埠
+* 兩條Cat5e纜線、適用於每對光纖互連的L1、L2互連
+* 每個光纖互連至少四條雙軸纜線
+* 每個光纖互連至少四條FC纜線
+
+
+
+
+| Cisco UCS 6296UP 
+
+
+| Cisco UCS 6332-16UP 
+
+
+| Cisco UCS 6454. 
+
+
+| Cisco UCS 6332  a| 
+* 兩條Cat5e纜線、用於管理連接埠
+* 兩條Cat5e纜線、適用於每對光纖互連的L1、L2互連
+* 每個光纖互連至少四條雙軸纜線
+
+
+
+
+| Cisco UCS 6324  a| 
+* 兩個10/100/1000Mbps管理連接埠
+* 每個光纖互連至少兩條雙軸纜線
+
+
+
+
+.2+| Cisco Nexus 5000與7000系列交換器 | Cisco Nexus 5000系列  a| 
+* 每個交換器至少有兩條10GbE光纖或雙軸纜線
+* 每個交換器至少有兩條FC纜線（如果需要FC/FCoE連線）
+
+
+
+
+| Cisco Nexus 7000系列 
+
+
+| Cisco Nexus 9000系列交換器 | Cisco Nexus 9000系列 | 每個交換器至少有兩條10GbE纜線 
+
+
+.2+| NetApp FAS 產品控制器 | A系列AFF  a| 
+* 每個儲存控制器一對SAS或SATA纜線
+* 每個控制器至少有兩條FC纜線（如果使用舊FC）
+* 每個控制器至少兩條10GbE纜線
+* 每個控制器至少有一條GbE纜線可供管理
+* 對於零組件、每對叢集互連交換器需要八條短雙軸纜線ONTAP
+
+
+
+
+| 支援FAS 
+
+
+.4+| NetApp磁碟櫃 | DS212C .3+| 每個磁碟櫃有兩條SAS、SATA或FC纜線 
+
+
+| DS224C 
+
+
+| DS460C 
+
+
+| NS224 | 每個磁碟櫃兩條100Gbps銅線 
+|===

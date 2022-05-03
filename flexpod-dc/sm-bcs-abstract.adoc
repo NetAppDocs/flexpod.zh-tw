@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: sm-bcs-abstract.html 
+keywords:  
+summary:  
+---
+= 摘要
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+利用NetApp SnapMirror營運不中斷（SMBC）和NetApp SnapMirror 9.10解決方案、除了單點故障案例之外、還能保護關鍵業務資料免受站台故障的影響。FlexPod ONTAP本技術報告概述FlexPod 了《整套解決方案》及其解決方案元件、並強調解決方案的一些組態和驗證層面。

@@ -1,0 +1,148 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/sm-bcs-compute.html 
+keywords: compute, connectivity, service profiles, san boot 
+summary: 適用於整個過程的運算組態FlexPod 是以典型FlexPod 的解決方案最佳實務做法為準。下列各節將重點介紹驗證所使用的部分連線能力和組態。同時也強調一些與SM至BC相關的考量、以提供實作參考資料和指引。 
+---
+= 解決方案驗證-運算
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:sm-bcs-solution-validation_overview.html["前置作業：解決方案驗證-總覽。"]
+
+適用於整個過程的運算組態FlexPod 是以典型FlexPod 的解決方案最佳實務做法為準。下列各節將重點介紹驗證所使用的部分連線能力和組態。同時也強調一些與SM至BC相關的考量、以提供實作參考資料和指引。
+
+
+
+== 連線能力
+
+UCS VIC卡可透過UCS 5108機箱背板連線、提供UCS B200刀鋒伺服器與IOM之間的連線能力。用於驗證的UCS 2204XP Fabric延伸器各有16個10G連接埠、可連接至八個半寬刀鋒伺服器、例如每個伺服器兩個。若要增加伺服器連線頻寬、可新增額外的夾層式VIC、將伺服器連線至另一種UCS 2408 IOM、以提供四個10G連線至每個伺服器。
+
+image:sm-bcs-image17.png["錯誤：缺少圖形影像"]
+
+UCS 5108機箱與用於驗證的UCS 6454 FIs之間的連線能力、是由使用四個10G連線的IOM 2204XP所提供。這些連線的FI連接埠1到4均設定為伺服器連接埠。將FI連接埠25至28設定為網路上行鏈路連接埠、連接至本機站台的Nexus交換器A和B。下圖與表格提供UCS 6454 FIs連接UCS 5108機箱與Nexus交換器的連線圖與連接埠連線詳細資料。
+
+image:sm-bcs-image18.png["錯誤：缺少圖形影像"]
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+| UCS 6454 FI A | 1. | IOM A | 1. 
+
+
+|  | 2. |  | 2. 
+
+
+|  | 3. |  | 3. 
+
+
+|  | 4. |  | 4. 
+
+
+|  | 25 | Nexus A | 1/13/1 
+
+
+|  | 26 |  | 1/13/2 
+
+
+|  | 27 | Nexus B | 1/13/3. 
+
+
+|  | 28.28 |  | 1/13/4 
+
+
+|  | L1 | UCS 6454 FI B | L1 
+
+
+|  | L2 |  | L2 
+
+
+| UCS 6454 FI B | 1. | IOM B | 1. 
+
+
+|  | 2. |  | 2. 
+
+
+|  | 3. |  | 3. 
+
+
+|  | 4. |  | 4. 
+
+
+|  | 25 | Nexus A | 1/13/3. 
+
+
+|  | 26 |  | 1/13/4 
+
+
+|  | 27 | Nexus B | 1/13/1 
+
+
+|  | 28.28 |  | 1/13/2 
+
+
+|  | L1 | UCS 6454 FI A | L1 
+
+
+|  | L2 |  | L2 
+|===
+
+NOTE: 上述連線與站台A和站台B相似、儘管站台A使用Nexus 9336C-FX2switches、站台B使用Nexus 3232C交換器。Nexus to FI連線使用40g至4x10G中斷纜線。Nexus交換器的FI連線會利用連接埠通道、而虛擬連接埠通道則會在Nexus交換器上進行設定、以集合每個FI的連線。
+
+
+NOTE: 使用不同的IOM、FI和Nexus交換器元件組合時、請務必使用適當的纜線和連接埠速度來搭配環境。
+
+
+NOTE: 您可以使用支援較高速連線或更多連線的元件來增加頻寬。透過新增支援元件的額外連線、即可實現額外的備援。
+
+
+
+== 服務設定檔
+
+採用UCS Manager（UCSM）或Cisco Intersight管理的光纖互連的刀鋒伺服器機箱、可以使用UCCSM和Intersight伺服器設定檔中的服務設定檔來抽象化伺服器。此驗證使用UCSM和服務設定檔來簡化伺服器管理。透過服務設定檔、只要將原始服務設定檔與新硬體建立關聯、即可更換或升級伺服器。
+
+所建立的服務設定檔可支援下列VMware ESXi主機：
+
+* SAN使用AFF iSCSI傳輸協定、從任一站台的支援範本A250儲存設備開機。
+* 針對下列伺服器建立六個vNIC：
++
+** 兩個備援vNIC（vSwitch0-A和vSwitch0-B）可傳輸頻內管理流量。或者、這些vNIC也可用於不受SMBC保護的NFS傳輸協定資料。
+** vSphere分散式交換器使用兩個備援VNIC（VDS A和VDS B）來承載VMware VMotion和其他應用程式流量。
+** iSCSI使用iSCSI -虛擬交換器來存取iSCSI路徑的iSCSI -虛擬NIC。
+** iSCSI-B vNIC由iSCSI-B vSwitch用於提供對iSCSI-B路徑的存取。
+
+
+
+
+
+
+== SAN開機
+
+對於iSCSI SAN開機組態、iSCSI開機參數會設定為允許iSCSI從兩個iSCSI架構開機。為了因應在主要叢集無法使用時、從次要叢集提供iSCSI SAN開機LUN的SM至BC容錯移轉案例、iSCSI靜態目標組態應同時包含站台A和站台B的目標此外、若要將開機LUN的可用度最大化、請將iSCSI開機參數設定設為從所有儲存控制器開機。
+
+iSCSI靜態目標可在「設定iSCSI開機參數」對話方塊下的服務設定檔範本開機原則中設定、如下圖所示。建議的iSCSI開機參數設定組態如下表所示、可實作上述的開機策略以達到高可用度。
+
+image:sm-bcs-image19.png["錯誤：缺少圖形影像"]
+
+|===
+| iSCSI架構 | 優先順序 | iSCSI目標 | iSCSI LIF 
+
+
+| iSCSI A | 1. | 站台A iSCSI目標 | 站台A控制器1 iSCSI A LIF 
+
+
+|  | 2. | 站台B iSCSI目標 | 站台B控制器2 iSCSI A LIF 
+
+
+| iSCSI B | 1. | 站台B iSCSI目標 | 站台B控制器1 iSCSI B LIF 
+
+
+|  | 2. | 站台A iSCSI目標 | 站台A控制器2 iSCSI B LIF 
+|===
+link:sm-bcs-network.html["下一步：解決方案驗證-網路。"]

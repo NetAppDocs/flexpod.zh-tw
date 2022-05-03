@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-epic-deploy_infrastructure_hardware_and_software_components.html 
+keywords: infrastructure, hardware, software, components, firmware, imt 
+summary: 請務必使用互通性對照表工具IMT （英文）來驗證是否支援所有版本的軟體和韌體。 
+---
+= 基礎架構硬體與軟體元件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+請務必使用 http://mysupport.netapp.com/matrix/["互通性對照表工具IMT （不含）"^] 驗證是否支援所有版本的軟體和韌體。下表列出測試所用的基礎架構硬體和軟體元件。
+
+|===
+| 層級 | 產品系列 | 版本或版本 | 詳細資料 
+
+
+| 運算 | Cisco UCS 5108 |  | 單一機箱 
+
+
+|  | Cisco UCS刀鋒伺服器 | 4 x B200 M5 | 每個CPU核心18個、RAM 768GB BIOS 2.2(8)） 
+
+
+|  | Cisco UCS VIC | 4個UCS 1340 | VMware ESXi fNIC FC驅動程式：1.6.0.34 VMware ESXi eNIC乙太網路驅動程式：1.0.6.0 
+
+
+|  | 2個Cisco UCS FI | 6332-16UP搭配Cisco UCSM 3.2（2f） |  
+
+
+| 網路 | Cisco乙太網路交換器 | 7.0（3）i7（2） | 2個Cisco Nexus 9372PX-E 
+
+
+| 儲存網路 | iSCSI：使用N9k的IP解決方案 |  | FI與UCS機箱 
+
+
+|  | FC：Cisco MDS 9148S | 8.2（2） | 兩個Cisco 9148S交換器 
+
+
+| 儲存設備 | 2個NetApp AFF 產品系列A700s | 部分9.3 GA ONTAP | 1個雙節點叢集 
+
+
+|  | 2個DS224C磁碟櫃 |  |  
+
+
+|  | SSD | 48 x 960GB |  
+
+
+| 軟體 | Hypervisor | VMware vSphere ESXi 6.5 U1. |  
+
+
+|  | VM | RHEL 7.4 |  
+
+
+|  | Hypervisor管理系統 | VMware vCenter Server 6.5 U1（VCSA） | vCenter Server設備 
+
+
+|  | NetApp虛擬儲存主控台 | VSC 7.0P1 |  
+
+
+|  | SnapCenter | 版本4.0 SnapCenter |  
+
+
+|  | Cisco UCS Manager | 3.2（2f）* |  
+|===
+link:ehr-epic-deploy_base_infrastructure_configuration.html["下一步：基礎架構組態。"]

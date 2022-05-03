@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_connectivity_requirements.html 
+keywords: connectivity, requirements, cisco, ucs, fabric, interconnect, uplink, direct, san 
+summary: 以下列出FlexPod 有關整合功能組態的連線需求。 
+---
+= 連線需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+這個組態具有下列連線需求：FlexPod
+
+* 所有元件都需要個別的100Mbps乙太網路/1Gb乙太網路頻外管理網路。
+* NetApp建議您在整個環境中啟用巨型框架支援、但不需要。
+* Cisco UCS Fabric互連應用裝置連接埠建議僅用於iSCSI和NAS連線。
+* 核心FlexPod 不需在核心不整組件之間放置額外的設備。
+
+
+上行鏈路連線：
+
+* NetApp儲存控制器上的連接埠必須連接至Cisco Nexus 5000、7000或9000系列交換器、才能支援虛擬連接埠通道（VPC）。
+* 從Cisco Nexus 5000、7000或9000系列交換器、到NetApp儲存控制器、都需要VPC。
+* 從Cisco Nexus 5000、7000或9000系列交換器到光纖互連、均需要VPC。
+* VPC至少需要兩個連線。vPC內的連線數量可根據應用程式負載和效能需求來增加。
+
+
+直接連線：
+
+* 可將直接連接至光纖互連的NetApp儲存控制器連接埠分組、以啟用連接埠通道。此組態不支援VPC。
+* 建議使用FCoE連接埠通道來進行端點對端點FCoE設計。
+
+
+SAN開機：
+
+* 支援使用iSCSI、FC或FCoE傳輸協定的SAN開機架構為設計核心。FlexPod使用從SAN開機技術、可為資料中心基礎架構提供最靈活的組態、並在每個基礎架構元件中提供豐富的功能。雖然從SAN開機是最有效率的組態、但從本機伺服器儲存設備開機是有效且受支援的組態。
+* 不支援透過FC-NVMe進行SAN開機。
+

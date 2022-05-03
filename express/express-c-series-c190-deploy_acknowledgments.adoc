@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_acknowledgments.html 
+keywords: author, acknowledgements, express, c, series, c190, deployment, flexpod 
+summary: 作者感謝John George對這項設計的支援與貢獻。 
+---
+= 感謝
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+作者感謝John George對這項設計的支援與貢獻。

@@ -1,0 +1,191 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-epic-deploy_where_to_find_additional_information_overview.html 
+keywords: additional, information, flexpod, deployment, epic, ehr 
+summary: 若要深入瞭解本文所述資訊、請參閱下列文件或網站。 
+---
+= 何處可找到其他資訊
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+若要深入瞭解本文所述資訊、請參閱下列文件或網站：
+
+
+
+== 設計區FlexPod
+
+* 設計區FlexPod
++
+https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html["https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html"^]
+
+* 利用NetApp功能、vSphere 6.5U1及Cisco UCS Manager、搭配FC儲存設備（MDS交換器）的資料中心FlexPod AFF
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html"^]
+
+* Cisco UCS採用Epic的最佳實務做法
++
+https://www.cisco.com/c/dam/en_us/solutions/industries/healthcare/Epic_on_UCS_tech_brief_FNL.pdf["https://www.cisco.com/c/dam/en_us/solutions/industries/healthcare/Epic_on_UCS_tech_brief_FNL.pdf"^]
+
+
+
+
+
+== NetApp技術報告
+
+* TR-3929：重新分配最佳實務做法指南
++
+https://fieldportal.netapp.com/content/192896["https://fieldportal.netapp.com/content/192896"^]
+
+* TR-3987：適用於InterSystems Cach é 的SnapCreator Framework外掛程式
++
+https://fieldportal.netapp.com/content/248308["https://fieldportal.netapp.com/content/248308"^]
+
+* TR-3928：NetApp Epic最佳實務做法
++
+https://fieldportal.netapp.com/?oparams=68646["https://fieldportal.netapp.com/?oparams=68646"^]
+
+* TR-4017：FC SAN最佳實務做法
++
+http://media.netapp.com/documents/tr-4017.pdf["http://media.netapp.com/documents/tr-4017.pdf"^]
+
+* TR-3446：SnapMirror非同步概述與最佳實務做法指南
++
+http://media.netapp.com/documents/tr-3446.pdf["http://media.netapp.com/documents/tr-3446.pdf"^]
+
+
+
+
+
+== 本文檔 ONTAP
+
+* NetApp 產品文件
++
+https://www.netapp.com/us/documentation/index.aspx["https://www.netapp.com/us/documentation/index.aspx"^]
+
+* vSphere的虛擬儲存主控台（VSC）文件
++
+https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30048["https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30048"^]
+
+* 供應說明文件中心 ONTAP
++
+http://docs.netapp.com/ontap-9/index.jsp["http://docs.netapp.com/ontap-9/index.jsp"^]
+
+* 《FC Express ESXi指南》
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-fc-esx-cpg/home.html["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-fc-esx-cpg/home.html"^]
+
+* 所有ONTAP 的VMware 9.3文件
++
+https://mysupport.netapp.com/documentation/docweb/index.html?productID=62579["https://mysupport.netapp.com/documentation/docweb/index.html?productID=62579"^]
+
++
+** 軟體設定指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ssg/home.html?lang=dot-cm-ssg["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ssg/home.html?lang=dot-cm-ssg"^]
+
+** 磁碟與Aggregate Power Guide
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html?lang=dot-cm-psmg["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html?lang=dot-cm-psmg"^]
+
+** SAN管理指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html?lang=dot-cm-sanag["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html?lang=dot-cm-sanag"^]
+
+** SAN組態指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanconf/home.html?lang=dot-cm-sanconf["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanconf/home.html?lang=dot-cm-sanconf"^]
+
+** 《Red Hat Enterprise Linux Express FC組態指南》
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-fc-rhel-cg/home.html?lang=exp-fc-rhel-cg["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-fc-rhel-cg/home.html?lang=exp-fc-rhel-cg"^]
+
+** 《FC Configuration for Windows Express Guide》（Windows Express FC組態指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-fc-cpg/home.html?lang=exp-fc-cpg["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-fc-cpg/home.html?lang=exp-fc-cpg"^]
+
+** FC SAN最佳AFF 化版的《安裝指南》
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.cdot-fcsan-optaff-sg/home.html?lang=cdot-fcsan-optaff-sg["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.cdot-fcsan-optaff-sg/home.html?lang=cdot-fcsan-optaff-sg"^]
+
+** 高可用度組態指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html?lang=dot-cm-hacg["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html?lang=dot-cm-hacg"^]
+
+** 邏輯儲存管理指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html?lang=dot-cm-vsmg["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html?lang=dot-cm-vsmg"^]
+
+** 效能管理電源指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html?lang=pow-perf-mon["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html?lang=pow-perf-mon"^]
+
+** SMB/CIFS組態電源指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-cifs-cg/home.html?lang=pow-cifs-cg["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-cifs-cg/home.html?lang=pow-cifs-cg"^]
+
+** SMB/CIFS參考資料
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.cdot-famg-cifs/home.html?lang=cdot-famg-cifs["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.cdot-famg-cifs/home.html?lang=cdot-famg-cifs"^]
+
+** 資料保護電源指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-dap/home.html?lang=pow-dap["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-dap/home.html?lang=pow-dap"^]
+
+** 資料保護磁帶備份與恢復指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ptbrg/home.html?lang=dot-cm-ptbrg["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ptbrg/home.html?lang=dot-cm-ptbrg"^]
+
+** NetApp加密電源指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html?lang=pow-nve["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html?lang=pow-nve"^]
+
+** 網路管理指南
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-nmg/home.html?lang=dot-cm-nmg["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-nmg/home.html?lang=dot-cm-nmg"^]
+
+** 命令：ONTAP 手冊頁參考資料、適用於《》。9.3
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-930/home.html?lang=dot-cm-cmpr-930["http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-930/home.html?lang=dot-cm-cmpr-930"^]
+
+
+
+
+
+
+
+== Cisco Nexus、MDS、Cisco UCS和Cisco UCS Manager指南
+
+* Cisco UCS伺服器總覽
++
+https://www.cisco.com/c/en/us/products/servers-unified-computing/index.html["https://www.cisco.com/c/en/us/products/servers-unified-computing/index.html"^]
+
+* Cisco UCS刀鋒伺服器總覽
++
+https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/index.html["https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/index.html"^]
+
+* Cisco UCS B200 M5資料表
++
+https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/index.html["https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/index.html"^]
+
+* Cisco UCS Manager總覽
++
+https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-manager/index.html["https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-manager/index.html"^]
+
+* Cisco UCS Manager 3.2(3a)基礎架構產品組合（需要Cisco.com授權）
++
+https://software.cisco.com/download/home/283612660/type/283655658/release/3.2%25283a%2529["https://software.cisco.com/download/home/283612660/type/283655658/release/3.2%25283a%2529"^]
+
+* Cisco Nexus 9300平台交換器
++
+https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-736967.html["https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-736967.html"^]
+
+* Cisco MDS 9148S FC交換器
++
+https://www.cisco.com/c/en/us/products/storage-networking/mds-9148s-16g-multilayer-fabric-switch/index.html["https://www.cisco.com/c/en/us/products/storage-networking/mds-9148s-16g-multilayer-fabric-switch/index.html"^]
+
+

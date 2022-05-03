@@ -1,0 +1,119 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/sm-bcs-solution-validation_overview.html 
+keywords: validation topology, hardware, software, compute, connectivity, service, profiles, san boot, Port channel, virtual port channel 
+summary: 《》《產品介紹》的設計與實作細節、取決於具體的情況組態與解決方案目標。FlexPod FlexPod定義一般營運持續性需求後、FlexPod 即可透過實作全新解決方案與兩FlexPod 個全新的版本、在FlexPod 另一個站台新增一個版本的更新版、以與現有FlexPod 的版本進行配對、或是將兩FlexPod 個現有的版本系統配對、來建立此功能。 
+---
+= 解決方案驗證-總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:sm-bcs-flexpod-sm-bc-solution.html["上一篇：FlexPod 《解決方案："]
+
+《》《產品介紹》的設計與實作細節、取決於具體的情況組態與解決方案目標。FlexPod FlexPod定義一般營運持續性需求後、FlexPod 即可透過實作全新解決方案與兩FlexPod 個全新的版本、在FlexPod 另一個站台新增一個版本的更新版、以與現有FlexPod 的版本進行配對、或是將兩FlexPod 個現有的版本系統配對、來建立此功能。
+
+由於此解決方案的組態本質上靈活、因此所有支援的支援的元件組態和元件都可以使用。FlexPod FlexPod本節的其餘部分提供針對VMware虛擬基礎架構解決方案執行實作驗證的相關資訊。除了與SM - BC相關的部分、實作作業遵循標準FlexPod 的功能介紹部署程序。請參閱適用於FlexPod 您的特定組態的可用的功能介紹、以瞭解FlexPod 一般的功能介紹詳細資訊。
+
+
+
+== 驗證拓撲
+
+為了驗證FlexPod 支援的NetApp、Cisco和VMware技術元件、我們會使用此解決方案來驗證。此解決方案採用NetApp AFF 的ArseS2550 HA配對、在ONTAP 站台A執行2個Cisco Nexus 9336C-FX2交換器、在站台B執行2個Cisco Nexus 3232C交換器、在兩個站台上執行Cisco UCS 6454 FIs、 以及三部Cisco UCS B200 M5伺服器、每個站台執行VMware vSphere 7.0u2、並由UCS Manager和VMware vCenter伺服器管理。下圖顯示元件層級的解決方案驗證拓撲、其中兩FlexPod 個執行於站台A的支援系統、以及站台B的連接器、其連接的是擴充的第2層站台間連結、ONTAP 以及執行於站台C的支援器
+
+image:sm-bcs-image16.png["錯誤：缺少圖形影像"]
+
+
+
+== 硬體與軟體
+
+下表列出用於解決方案驗證的硬體與軟體。請務必注意、Cisco、NetApp及VMware均有互通性對照表、可用來判斷FlexPod 是否支援任何特定的實作VMware：
+
+* http://support.netapp.com/matrix/["http://support.netapp.com/matrix/"^]
+* http://www.cisco.com/web/techdoc/ucs/interoperability/matrix/matrix.html["Cisco UCS硬體與軟體互通性工具"^]
+* http://www.vmware.com/resources/compatibility/search.php["http://www.vmware.com/resources/compatibility/search.php"^]
+
+
+|===
+| 類別 | 元件 | 軟體版本 | 數量 
+
+
+| 運算 | Cisco UCS Fabric互連6454. | 4.2（1f） | 4（每個站台2個） 
+
+
+|  | Cisco UCS B200 M5伺服器 | 4.2（1f） | 6個（每個站台3個） 
+
+
+|  | Cisco UCS IOM 2204XP | 4.2（1f） | 4（每個站台2個） 
+
+
+|  | Cisco VIC 1440（PID：UCSA-MLOM-40G-04） | 5.2(1a) | 2（每個站台1個） 
+
+
+|  | Cisco VIC 1340（PID：UCSA-MLOM-40G-03） | 4.5(1a) | 4（每個站台2個） 
+
+
+| 網路 | Cisco Nexus 9336C-FX2 | 9.3（6） | 2（站台A） 
+
+
+|  | Cisco Nexus 3232C | 9.3（6） | 2（站台B） 
+
+
+| 儲存設備 | NetApp AFF 產品-A250 | 9.10.1 | 4（每個站台2個） 
+
+
+|  | NetApp系統經理 | 9.10.1 | 2（每個站台1個） 
+
+
+|  | NetApp Active IQ Unified Manager | 9.10. | 1. 
+
+
+|  | 適用於VMware vSphere的NetApp ONTAP 產品開發工具 | 9.10. | 1. 
+
+
+|  | 適用於VMware vSphere的NetApp SnapCenter 功能外掛程式 | 4.6% | 1. 
+
+
+|  | NetApp ONTAP 產品資訊 | 1.3 | 1. 
+
+
+|  | NAbox | 3.0.2 | 1. 
+
+
+|  | NetApp Harvest | 21.11.1-1. | 1. 
+
+
+| 虛擬化 | VMware ESXi | 7.0U2 | 6個（每個站台3個） 
+
+
+|  | VMware ESXi Nenic乙太網路驅動程式 | 1.0.35.0 | 6個（每個站台3個） 
+
+
+|  | VMware vCenter | 7.0U2 | 1. 
+
+
+|  | 適用於VMware VAAI的NetApp NFS外掛程式 | 2.0 | 6個（每個站台3個） 
+
+
+| 測試 | Microsoft Windows | 2022年 | 1. 
+
+
+|  | Microsoft SQL Server | 2019年 | 1. 
+
+
+|  | Microsoft SQL Server Management Studio | 18.10. | 1. 
+
+
+|  | HammerDB | 4.3 | 1. 
+
+
+|  | Microsoft Windows | 10. | 6個（每個站台3個） 
+
+
+|  | IOMMeter | 1.1.0 | 6個（每個站台3個） 
+|===
+link:sm-bcs-compute.html["下一步：解決方案驗證-運算。"]

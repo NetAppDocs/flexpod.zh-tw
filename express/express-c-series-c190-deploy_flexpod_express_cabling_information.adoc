@@ -1,0 +1,131 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_flexpod_express_cabling_information.html 
+keywords: flexpod, express, cabling, information, storage, controller, switch, cisco, nexus 
+summary: 此參考驗證的纜線連接方式如下圖與表格所示。 
+---
+= 資訊FlexPod
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+此參考驗證的纜線連接方式如下圖與表格所示。
+
+此圖顯示參考驗證纜線。
+
+image:express-c-series-c190-deploy_image3.png["錯誤：缺少圖形影像"]
+
+下表列出Cisco Nexus交換器31108PC-V-A的纜線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+.10+| Cisco Nexus交換器31108PC-V A | eth1/1. | NetApp AFF 解決方案C190儲存控制器A | e0c 
+
+
+| eth1/2 | NetApp AFF 解決方案C190儲存控制器B | e0c 
+
+
+| eth1/3. | Cisco UCS C220 C系列獨立式伺服器A | MLOM0 
+
+
+| eth1/4. | Cisco UCS C220 C系列獨立式伺服器B | MLOM0 
+
+
+| eth1/5. | Cisco UCS C220 C系列獨立式伺服器A | MLOM1 
+
+
+| eth1/6. | Cisco UCS C220 C系列獨立式伺服器B | MLOM1 
+
+
+| eth1/25 | Cisco Nexus交換器31108PC-V B | eth1/25 
+
+
+| eth1/26 | Cisco Nexus交換器31108PC-V B | eth1/26 
+
+
+| eth1/33 | NetApp AFF 解決方案C190儲存控制器A | e0M 
+
+
+| eth1/34 | Cisco UCS C220 C系列獨立式伺服器A | CIMC（FEX135/1/25） 
+|===
+下表列出Cisco Nexus交換器31108PC-V-B的纜線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+.10+| Cisco Nexus交換器31108PC-V B | eth1/1. | NetApp AFF 解決方案C190儲存控制器A | e0d 
+
+
+| eth1/2 | NetApp AFF 解決方案C190儲存控制器B | e0d 
+
+
+| eth1/3. | Cisco UCS C220 C系列獨立式伺服器A | MLOM2 
+
+
+| eth1/4. | Cisco UCS C220 C系列獨立式伺服器B | MLOM2 
+
+
+| eth1/5. | Cisco UCS C220 C系列獨立式伺服器A | MLOM3 
+
+
+| eth1/6. | Cisco UCS C220 C系列獨立式伺服器B | MLOM3 
+
+
+| eth1/25 | Cisco Nexus交換器31108 A | eth1/25 
+
+
+| eth1/26 | Cisco Nexus交換器31108 A | eth1/26 
+
+
+| eth1/33 | NetApp AFF 解決方案C190儲存控制器B | e0M 
+
+
+| eth1/34 | Cisco UCS C220 C系列獨立式伺服器B | CIMC（FEX135/1/26） 
+|===
+下表列出NetApp AFF NetApp NetApp NetApp NetApp C190儲存控制器A的纜線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+.5+| NetApp AFF 解決方案C190儲存控制器A | e0a | NetApp AFF 解決方案C190儲存控制器B | e0a 
+
+
+| e0b. | NetApp AFF 解決方案C190儲存控制器B | e0b. 
+
+
+| e0c | Cisco Nexus交換器31108PC-V A | eth1/1. 
+
+
+| e0d | Cisco Nexus交換器31108PC-V B | eth1/1. 
+
+
+| e0M | Cisco Nexus交換器31108PC-V A | eth1/33 
+|===
+下表列出NetApp AFF NetApp NetApp NetApp NetApp C190儲存控制器B的纜線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+.5+| NetApp AFF 解決方案C190儲存控制器B | e0a | NetApp AFF 解決方案C190儲存控制器A | e0a 
+
+
+| e0b. | NetApp AFF 解決方案C190儲存控制器A | e0b. 
+
+
+| e0c | Cisco Nexus交換器31108PC-V A | eth1/2 
+
+
+| e0d | Cisco Nexus交換器31108PC-V B | eth1/2 
+
+
+| e0M | Cisco Nexus交換器31108PC-V B | eth1/33 
+|===

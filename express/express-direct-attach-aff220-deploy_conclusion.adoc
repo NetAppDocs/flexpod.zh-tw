@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: express/express-direct-attach-aff220-deploy_conclusion.html 
+keywords: flexpod, express, vmware, direct, attached, storage 
+summary: 藉由提供使用領先業界元件的驗證設計、支援簡單有效的解決方案。FlexPod 
+---
+= 結論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+藉由提供使用領先業界元件的驗證設計、支援簡單有效的解決方案。FlexPod藉由增加額外元件來擴充、FlexPod 即可針對特定業務需求量身打造。設計過程中考慮到中小企業、ROBO及其他需要專屬解決方案的企業。FlexPod

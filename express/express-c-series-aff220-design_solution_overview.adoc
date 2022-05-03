@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-design_solution_overview.html 
+keywords: NetApp ONTAP 9.4, NetApp AFF A220, VMware vSphere 6.7, Target audience, 
+summary: 以執行混合式虛擬化工作負載為設計目標。FlexPod它的目標對象為遠端辦公室和分公司、以及中小型企業。對於想要實作專屬解決方案的大型企業而言、這也是最理想的選擇。這個全新FlexPod 的解決方案適用於不支援的功能、新增了NetApp ONTAP VMware vCenter 9.4、NetApp AFF 還原A220和VMware vSphere 6.7等新技術。 
+---
+= 解決方案總覽
+:allow-uri-read: 
+
+
+以執行混合式虛擬化工作負載為設計目標。FlexPod它的目標對象為遠端辦公室和分公司、以及中小型企業。對於想要實作專屬解決方案的大型企業而言、這也是最理想的選擇。這個全新FlexPod 的解決方案適用於不支援的功能、新增了NetApp ONTAP VMware vCenter 9.4、NetApp AFF 還原A220和VMware vSphere 6.7等新技術。
+
+下圖顯示FlexPod 包含在《ExExpress解決方案」中的硬體元件。
+
+image:express-c-series-aff220-design_image3.png["錯誤：缺少圖形影像"]
+
+
+
+== 目標對象
+
+本文件適用於想要善用專為提高IT效率及推動IT創新所打造基礎架構的使用者。本文件的對象包括但不限於銷售工程師、現場顧問、專業服務人員、IT經理、 合作夥伴工程師與客戶。
+
+
+
+== 解決方案技術
+
+本解決方案採用NetApp、Cisco及VMware的最新技術。本解決方案採用全新NetApp AFF S3220系統、可執行ONTAP VMware vSphere 6.7的S得9.4軟體、雙Cisco Nexus 3172P交換器、以及Cisco UCS C220 M5機架伺服器。這套通過驗證的解決方案採用10-Gigabit乙太網路（10GbE）技術。下圖為總覽。同時新增兩個Hypervisor節點、FlexPod 以配合組織不斷演變的業務需求、同時提供擴充指南。
+
+image:express-c-series-aff220-design_image4.png["錯誤：缺少圖形影像"]
+
+
+NOTE: 40GbE未通過驗證、但它是受支援的基礎架構。
+
+link:express-c-series-aff220-design_technology_requirements.html["下一步：技術需求。"]

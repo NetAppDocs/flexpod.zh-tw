@@ -1,0 +1,48 @@
+---
+section: security
+title: 功能與安全性FlexPod
+entries:
+- title: 解決方案FlexPod
+  type: solutions
+  entries:
+  - title: 什麼是勒索軟體？
+    url: "/security/security-ransomware_what_is_ransomware.html"
+  - title: 概述FlexPod
+    url: "/security/security-ransomware_flexpod_overview.html"
+  - title: 勒索軟體保護措施
+    url: "/security/security-ransomware_ransomware_protection_measures.html"
+  - title: 保護FlexPod 及恢復資料不受影響
+    url: "/security/security-ransomware_protect_and_recover_data_on_flexpod.html"
+  - title: 無需支付Ransom費用、即可繼續營運
+    url: "/security/security-ransomware_continue_business_operations_without_paying_ransom.html"
+  - title: 結論
+    url: "/security/security-ransomware_conclusion.html"
+  - title: 感謝
+    url: "/security/security-ransomware_acknowledgements.html"
+  - title: 其他資訊
+    url: "/security/security-ransomware_additional_information.html"
+- title: FIPS 140-2 FlexPod 安全性認證的醫療解決方案
+  type: solutions
+  entries:
+  - title: 簡介
+    url: "/security/flexpod-fips-introduction.html"
+  - title: 醫療網路安全威脅
+    url: "/security/flexpod-fips-cybersecurity-threats-in-healthcare.html"
+  - title: FIPS 140-2總覽
+    url: "/security/flexpod-fips-overview-of-fips-140-2.html"
+  - title: 控制面與資料面
+    url: "/security/flexpod-fips-control-plane-versus-data-plane.html"
+  - title: Cisco UCS運算與FIPS 140-2 FlexPod
+    url: "/security/flexpod-fips-flexpod-cisco-ucs-compute-and-fips-140-2.html"
+  - title: Cisco網路與FIPS 140-2 FlexPod
+    url: "/security/flexpod-fips-flexpod-cisco-networking-and-fips-140-2.html"
+  - title: NetApp的不二儲存和FIPS 140-2 FlexPod ONTAP
+    url: "/security/flexpod-fips-flexpod-netapp-ontap-storage-and-fips-140-2.html"
+  - title: 解決方案優勢FlexPod ：融合式基礎架構
+    url: "/security/flexpod-fips-solution-benefits-of-flexpod-converged-infrastructure.html"
+  - title: 其他FlexPod 的安全考量
+    url: "/security/flexpod-fips-additional-flexpod-security-consideration.html"
+  - title: 結論
+    url: "/security/flexpod-fips-conclusion.html"
+  - title: 知識庫、版本歷程記錄、以及何處可以找到其他資訊
+    url: "/security/flexpod-fips-where-to-find-additional-information.html"

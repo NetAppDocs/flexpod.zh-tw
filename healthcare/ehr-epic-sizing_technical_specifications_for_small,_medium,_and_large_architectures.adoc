@@ -1,0 +1,192 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-epic-sizing_technical_specifications_for_small,_medium,_and_large_architectures.html 
+keywords: technical, specifications, architecture, components, software, epic 
+summary: 此產品的設計可提供靈活的基礎架構、涵蓋許多不同的元件和軟體版本。FlexPod 
+---
+= 小型、中型和大型架構的技術規格
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+此產品的設計可提供靈活的基礎架構、涵蓋許多不同的元件和軟體版本。FlexPod使用 https://fieldportal.netapp.com/content/443847["TR-4036：FlexPod 《技術規格》"^] 作為建置或組裝有效FlexPod 的功能表組態的指南。詳細的組態只是FlexPod 關於功能性的最低要求、僅供參考。可視不同環境和使用案例的需求、在隨附的產品系列中加以擴充。
+
+下表列出Epic正式作業資料庫工作負載的容量組態。列出的總容量可滿足所有Epic元件的需求。
+
+|===
+|  | 小 | 中 | 大 
+
+
+| 平台 | 一AFF 組人民幣300 HA配對 | 一AFF 組人民幣300 HA配對 | 一AFF 組人民幣300 HA配對 
+
+
+| 磁碟櫃 | 24 x 3.8TB | 48 x 3.8TB | 96 x 3.8TB 
+
+
+| EPIC資料庫大小 | 3至20TB | 20TB-40TB | 大於40TB 
+
+
+| IOPS總計 | 22、000 | 50、000 | 125000 
+
+
+| 原始 | 92.16TB | 184.32TB | 368.64TB 
+
+
+| 可用容量 | 65.02TiB | 134.36TiB | 269.51 TiB 
+
+
+| 有效容量（2：1儲存效率） | 130.04TiB | 268.71 TiB | 539.03TiB 
+|===
+只AFF 要搭配單一的一套解決方案即可輕鬆滿足EPIC正式作業工作負載。利用支援更多共享工作負載的空間、即可將多達200k IOPs的支援能力提升至可滿足大型Epic部署需求的高達200萬個IOP。AFF
+
+某些客戶環境可能會同時執行多個Epic正式作業工作負載、或只是要求更高的IOP。在這種情況下、請與NetApp客戶團隊合作、根據所需的IOPs和容量來調整儲存系統的規模、並提供適當的平台來服務工作負載。有客戶在AFF 一對用作AreA700 HA的系統上執行多個Epic環境。
+
+下表列出小型、中型和大型組態所需的標準軟體。
+
+|===
+| 軟體 | 產品系列 | 版本或版本 
+
+
+| 儲存設備 | Data ONTAP | 部分9.3 GA ONTAP 
+
+
+.3+| 網路 | Cisco UCS® | Cisco UCS Manager 3.2（2f） 
+
+
+| Cisco乙太網路交換器 | 7.0（3）i7（2） 
+
+
+| Cisco FC：Cisco MDS 9132T | 8.2（2） 
+
+
+.2+| Hypervisor | Hypervisor | VMware vSphere ESXi 6.5 U1. 
+
+
+| VM | RHEL 7.4 
+
+
+.4+| 管理 | Hypervisor管理系統 | VMware vCenter Server 6.5 U1（VCSA） 
+
+
+| NetApp虛擬儲存主控台 | VSC 7.0P1 
+
+
+| SnapCenter | 版本4.0 SnapCenter 
+
+
+| Cisco UCS Manager | 3.2（2f）或更新版本 
+|===
+下表列出小型組態基礎架構元件。
+
+|===
+| 層級 | 產品系列 | 數量與模式 | 詳細資料 
+
+
+.4+| 運算 | Cisco UCS 5108機箱 | 二 | 根據支援使用者所需的刀鋒數量 
+
+
+| Cisco UCS刀鋒伺服器 | 4 x B200 M5 | 每個系統各有2個18核心、2.7GHz和384GB BIOS 3.2（2f） 
+
+
+| Cisco UCS VIC | 4個UCS 1340 | VMware ESXi fNIC FC驅動程式：1.6.0.34 VMware ESXi eNIC乙太網路驅動程式：1.0.6.0（請參閱對照表） 
+
+
+| 2個Cisco UCS FI | 6332-16UP搭配Cisco UCS Manager 3.2（2f） |  
+
+
+| 網路 | Cisco乙太網路交換器 |  | 2個Cisco Nexus 93180YC-FX 
+
+
+.2+| 儲存網路 | 用於BLOB儲存設備的IP網路N9k |  | FI與UCS機箱 
+
+
+| FC：Cisco MDS 9132T |  | 兩個Cisco 9132T交換器 
+
+
+.3+| 儲存設備 | NetApp AFF 解決方案 | 1個HA配對 | 1個雙節點叢集 
+
+
+| DS224C磁碟櫃 | 1個DS224C磁碟櫃（已裝滿24個磁碟機） | 一個已滿的磁碟櫃 
+
+
+| SSD | 24 x 3.8TB |  
+|===
+容量為3.8TB SSD磁碟機的單一磁碟櫃、應該足以滿足大多數規模較小的Epic客戶部署需求。不過、對於共享的工作負載、可能需要更多磁碟容量。您必須相應調整容量大小。
+
+下表列出中型組態基礎架構元件。
+
+|===
+| 層級 | 產品系列 | 數量與模式 | 詳細資料 
+
+
+.4+| 運算 | Cisco UCS 5108機箱 | 四 | 根據支援使用者所需的刀鋒數量 
+
+
+| Cisco UCS刀鋒伺服器 | 4 x B200 M5 | 每個具有2個18核心、2.7GHz/3.0GHz和384GB 4插槽、適用於快取DB BIOS 3.2（2f） 
+
+
+| Cisco UCS VIC | 4個UCS 1340 | VMware ESXi fNIC FC驅動程式：1.6.0.34 VMware ESXi eNIC乙太網路驅動程式：1.0.6.0（請參閱對照表） 
+
+
+| 2個Cisco UCS FI | 6332-16UP搭配Cisco UCS Manager 3.2（2f） |  
+
+
+| 網路 | Cisco乙太網路交換器 |  | 2個Cisco Nexus 93180YC-FX 
+
+
+.2+| 儲存網路 | IP網路：適用於BLOB儲存設備的Cisco N9k |  | FI與Cisco UCS機箱 
+
+
+| FC：Cisco MDS 9132T |  | 兩個Cisco 9132T交換器 
+
+
+.3+| 儲存設備 | NetApp AFF 解決方案 | 2個HA配對 | 2個雙節點叢集、適用於所有Epic工作負載（正式作業、報告、Clarity、VMware、Citrix、 CIFS等） 
+
+
+| DS224C磁碟櫃 | 2個DS224C磁碟櫃 | 2個已滿的磁碟櫃 
+
+
+| SSD | 48 x 3.8TB |  
+|===
+四個3.8TB SSD磁碟機的磁碟櫃、幾乎可滿足所有中型Epic客戶部署需求。不過、請根據所需容量來評估您的磁碟容量需求和大小。
+
+下表列出大型組態基礎架構元件。
+
+|===
+| 層級 | 產品系列 | 數量與模式 | 詳細資料 
+
+
+.4+| 運算 | Cisco UCS 5108機箱 | 8. |  
+
+
+| Cisco UCS刀鋒伺服器 | 4 x B200 M5 | 每個系統各有2個24核心、2.7GHz和576GB BIOS 3.2（2f） 
+
+
+| Cisco UCS VIC | 4個UCS 1340 | VMware ESXi fNIC FC驅動程式：1.6.0.34 VMware ESXi eNIC乙太網路驅動程式：1.0.6.0（請參閱對照表） 
+
+
+| 2個Cisco UCS FI | 6332-16UP搭配Cisco UCS Manager 3.2（2f） |  
+
+
+| 網路 | Cisco乙太網路交換器 |  | 2個Cisco Nexus 93180YC-FX 
+
+
+.2+| 儲存網路 | IP網路：適用於BLOB儲存設備的Cisco N9k |  |  
+
+
+| FC：Cisco MDS 9706 |  | 兩個Cisco 9706交換器 
+
+
+.3+| 儲存設備 | NetApp AFF 解決方案 | 3個HA配對 | 3個雙節點叢集、適用於Epic工作負載（Prod、Report、Clarity、VMware、Citrix、 CIFS等） 
+
+
+| DS224C磁碟櫃 | 4個DS224C磁碟櫃 | 4個已滿的磁碟櫃 
+
+
+| SSD | 96 x 3.8TB |  
+|===
+某些客戶環境可能會同時執行多個Epic正式作業工作負載、或者只是需要更高的IOPS需求。在這種情況下、請與NetApp客戶團隊合作、根據所需的IOPS和容量來調整儲存系統的規模、並決定適當的平台來處理工作負載。有客戶在AFF 一對用作AreA700 HA的系統上執行多個Epic環境。

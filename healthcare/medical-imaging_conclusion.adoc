@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: healthcare/medical-imaging_conclusion.html 
+keywords: medical, imaging, flexpod, healthcare, organization, productivity, conclusion 
+summary: 透過在功能完善的醫療影像環境中運作FlexPod 、您的醫療機構可以預期員工生產力會有所提升、資金與營運費用也會減少。 
+---
+= 結論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+透過在功能完善的醫療影像環境中運作FlexPod 、您的醫療機構可以預期員工生產力會有所提升、資金與營運費用也會減少。透過Cisco與NetApp的策略合作夥伴關係、提供經過預先驗證、嚴格測試的融合式基礎架構。FlexPod其設計與設計旨在提供可預測的低延遲系統效能與高可用度。這種方法可為醫療影像系統的使用者帶來優異的使用者體驗、並為其提供最佳的回應時間。
+
+醫療影像系統的不同元件需要在SMB/CIFS、NFS、ext4和NTFS檔案系統中儲存資料。因此、您的基礎架構必須透過NFS、SMB/CIFS和SAN傳輸協定來提供資料存取。NetApp儲存系統可從單一儲存陣列支援這些傳輸協定。
+
+高可用度、儲存效率、Snapshot複製型排程快速備份、快速還原作業、災難恢復的資料複寫、FlexPod 以及支援業界領先的資料儲存與管理系統。

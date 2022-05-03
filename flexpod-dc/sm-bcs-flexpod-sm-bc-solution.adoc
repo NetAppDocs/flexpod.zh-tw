@@ -1,0 +1,201 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/sm-bcs-flexpod-sm-bc-solution.html 
+keywords: overview, requirements, components, compute, server, intelligent fabric module 
+summary: 從高層面來看FlexPod 、一套由兩FlexPod 個位元組組成的NetApp解決方案、位於兩個站台之間、彼此相距一段距離、彼此相連、彼此配對、提供高可用度、高度靈活且高度可靠的資料中心解決方案、即使發生站台故障、也能提供營運不中斷。 
+---
+= 解決方案FlexPod
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:sm-bcs-introduction.html["上一篇：簡介。"]
+
+
+
+== 解決方案總覽
+
+從高層面來看FlexPod 、一套由兩FlexPod 個位元組組成的NetApp解決方案、位於兩個站台之間、彼此相距一段距離、彼此相連、彼此配對、提供高可用度、高度靈活且高度可靠的資料中心解決方案、即使發生站台故障、也能提供營運不中斷。
+
+除了部署兩FlexPod 個全新的支援基礎架構來建立FlexPod 一套功能更新的解決方案之外、您也可以在FlexPod 兩個現有的支援中心基礎架構上實作解決方案、這些基礎架構與SM - BC相容、或是新增FlexPod 一個用於對等FlexPod 的更新程式來搭配現有的功能。
+
+在組態上、不需要完全相同的兩個位向SM - BC解決方案中的不二個系統。FlexPod FlexPod不過、兩ONTAP 個Sof the Same叢集必須是相同的儲存系列、兩AFF 個是隻用作顯示或ASA 顯示兩個顯示系統、但不一定是相同的硬體機型。SM - BC解決方案不支援FAS 不支援的功能。
+
+這兩FlexPod 個站台需要網路連線能力、才能符合解決方案頻寬和服務品質要求、ONTAP 而且在站台之間的往返延遲時間不超過10毫秒（10毫秒）、這是根據《市場營運指南》解決方案的要求。在這個驗證過程中、這兩個站台透過同一個實驗室中的第2層延伸網路互連、以利FlexPod 驗證此解決方案。FlexPod
+
+NetApp ONTAP 的NetApp解決方案可在兩個NetApp儲存叢集之間提供同步複寫、以便在園區或都會區提供高可用度和災難恢復功能。部署在第三站台的支援程式可監控解決方案、並在發生站台災難時自動容錯移轉。ONTAP下圖提供解決方案元件的高層級檢視。
+
+image:sm-bcs-image4.png["錯誤：缺少圖形影像"]
+
+有了FlexPod VMware SMBC解決方案、您就能在分散式且整合的基礎架構上部署VMware vSphere型私有雲。整合式解決方案可將多個站台協調為單一解決方案基礎架構、以保護資料服務免受各種單點故障情況和完整站台故障的影響。
+
+本技術報告重點介紹FlexPod 了關於整套解決方案的端點對端點設計考量。我們鼓勵從業者參考FlexPod 各個版本的CVD和NVAS中提供的資訊、以瞭解FlexPod 更多的解決方案實作詳細資料。
+
+雖然此解決方案已通過部署兩FlexPod 個以FlexPod CVD所述之最佳實務為基礎的功能驗證、但仍需考慮SMBC解決方案的需求。本報告所討論的已部署FlexPod 的功能完善的解決方案已通過驗證、可在各種故障情況下提供恢復能力和容錯能力、以及模擬站台故障案例。
+
+
+
+== 解決方案需求
+
+此解決方案旨在滿足下列關鍵需求：FlexPod
+
+* 在資料中心（站台）發生完整故障時、業務關鍵應用程式和資料服務的營運不中斷
+* 靈活的分散式工作負載配置、跨資料中心提供工作負載移動性
+* 在正常作業期間、虛擬機器資料可從同一個資料中心站台在本機存取的站台相似性
+* 當站台發生故障時、可快速恢復、資料不會遺失
+
+
+
+
+== 解決方案元件
+
+
+
+=== Cisco運算元件
+
+Cisco UCS是整合式運算基礎架構、可提供統一化運算資源、統一化架構及統一化管理。它可讓公司自動化及加速應用程式的部署、包括虛擬化和裸機工作負載。Cisco UCS可支援多種部署使用案例、包括遠端和分公司位置、資料中心和混合雲使用案例。根據特定的解決方案需求、FlexPod Cisco運算實作可在不同規模上運用各種元件。以下小節提供一些UCS元件的其他資訊。
+
+
+
+==== UCS伺服器與運算節點
+
+下圖顯示UCS伺服器元件的一些範例、包括UCS C系列機架伺服器、含B系列刀鋒伺服器的UCS 5108機箱、以及含X系列運算節點的全新UCS X958機箱。Cisco UCS C系列機架伺服器採用單一和雙機架單元（RU）尺寸規格、搭載Intel和AMD CPU、並提供各種CPU速度和核心、記憶體和I/O選項。Cisco UCS B系列刀鋒伺服器和新的X系列運算節點也提供各種CPU、記憶體和I/O選項、FlexPod 而且在整個過程中、均可在支援這些選項的過程中獲得支援、以滿足各種不同的業務需求。
+
+image:sm-bcs-image5.png["錯誤：缺少圖形影像"]
+
+除了本圖所示的最新一代C220/C225/C240/C245 m6機架伺服器、B200 m6刀鋒伺服器和X210c運算節點之外、如果仍支援前幾代機架和刀鋒伺服器、也可以使用它們。
+
+
+
+==== I/O模組與智慧型光纖模組
+
+I/O模組（IOM）/光纖延伸器和智慧型光纖模組（IFM）分別為Cisco UCS 5108刀鋒伺服器機箱和Cisco UCS X958 X系列機箱提供統一的網路連線。
+
+第四代UCS IOM 2408有八個25 G統一化乙太網路連接埠、可將UCS 5108機箱與Fabric Interconnect（FI）連接。每部2408都有四個10-G背板乙太網路連線、透過中間板連線至機箱中的每個刀鋒伺服器。
+
+UCSX 9108 25G IFM有八個25-G統一化乙太網路連接埠、可將UCS X958機箱中的刀鋒伺服器與光纖互連連接。每個9108都有四個25 G連線、分別連接至X9108機箱中的每個UCS X210 c運算節點。9108 IFM也能與光纖互連搭配運作、以管理機箱環境。
+
+下圖說明UCS 5108機箱的UCS 2408和較早的IOM世代、以及X958機箱的9108 IFM。
+
+image:sm-bcs-image6.png["錯誤：缺少圖形影像"]
+
+
+
+==== UCS光纖互連
+
+Cisco UCS Fabric Interconnects（FIS）可為整個Cisco UCS提供連線與管理功能。系統的FI通常部署為雙主動/主動配對、將所有元件整合至Cisco UCS Manager或Cisco Intersight所控制的單一高可用度管理網域。Cisco UCS FIs為系統提供單一統一化架構、具備低延遲和無損、直通交換功能、使用一組纜線即可支援LAN、SAN和管理流量。
+
+第四代Cisco UCS FIS有兩種不同的產品：UCS FI 6454和64108。其中包括支援10/25 Gbps乙太網路連接埠、1/10/25-Gbps乙太網路連接埠、40/100-Gbps乙太網路向上連結連接埠、以及可支援10/25 Gigabit乙太網路或8/16/32-Gbps光纖通道的統一化連接埠。下圖顯示第四代Cisco UCS FI、以及也支援的第三代機型。
+
+image:sm-bcs-image7.png["錯誤：缺少圖形影像"]
+
+
+NOTE: 為了支援Cisco UCS X系列機箱、需要在Intersight託管模式（IMM),中設定第四代架構互連。不過、Cisco UCS 5108 B系列機箱可在射出機模式和UCSM託管模式下支援。
+
+
+NOTE: UCS FI 6324使用IOM尺寸規格、並內嵌於UCS Mini機箱中、適用於僅需小型UCS網域的部署。
+
+
+
+==== UCS虛擬介面卡
+
+Cisco UCS虛擬介面卡（VIC）可統一化機架與刀鋒伺服器的系統管理、LAN與SAN連線。它最多可支援256個虛擬裝置、例如虛擬網路介面卡（vNIC）或使用Cisco SingleConnect技術的虛擬主機匯流排介面卡（vHBA）。虛擬化之後、VIC卡可大幅簡化網路連線、並減少部署解決方案所需的網路介面卡、纜線和交換器連接埠數量。下圖顯示適用於B系列和C系列伺服器及X系列運算節點的部分Cisco UCS VIC。
+
+image:sm-bcs-image8.png["錯誤：缺少圖形影像"]
+
+不同的介面卡機型支援不同的刀鋒伺服器和機架伺服器、其連接埠數、連接埠速度、以及模組化主機板上LAN（mLOM）、夾層卡和PCIe介面的尺寸規格。介面卡可支援10/25/40/100-G乙太網路和乙太網路光纖通道（FCoE）的某些組合。他們採用Cisco的整合式網路卡（CNA）技術、支援全方位的功能集、並簡化介面卡管理與應用程式部署。例如、VIC支援Cisco Data Center Virtual Machine Fabric Extender（VM-FEX）技術、可將Cisco UCS網路互連連接埠延伸至虛擬機器、進而簡化伺服器虛擬化部署。
+
+結合了mLOM、夾層、連接埠擴充器和橋接卡組態中的Cisco VIC、您可以充分利用刀鋒伺服器可用的頻寬和連線能力。例如、使用VIC 14825（mLOM）和14425（夾層）上的兩個25-G連結、以及X210c運算節點上的14000（橋接卡）、組合的VIC頻寬為2 x 50-G + 2 x 50-G、 或每架Fabric /IFM 100公克、雙IFM組態的每部伺服器總計200公克。
+
+如需Cisco UCS產品系列、技術規格及文件的詳細資訊、請參閱 https://www.cisco.com/c/en/us/products/servers-unified-computing/index.html["Cisco UCS"^] 網站以取得資訊。
+
+
+
+=== Cisco交換元件
+
+
+
+==== Nexus交換器
+
+支援Cisco Nexus系列交換器、提供乙太網路交換架構、用於Cisco UCS與NetApp儲存控制器之間的通訊。FlexPod所有目前支援的Cisco Nexus交換器機型、包括Cisco Nexus 3000、5000、7000和9000系列、均支援FlexPod 進行此功能的部署。
+
+選擇交換器模式進行FlexPod 支援時、需要考量許多因素、例如效能、連接埠速度、連接埠密度、交換延遲、 以及ACI和VXLAN等傳輸協定支援、以達成您的設計目標、以及交換器的支援時間範圍。
+
+許多近期FlexPod 的SesfCVD驗證使用Cisco Nexus 9000系列交換器、例如Nexus 9336C-FX2和Nexus 93180YC-FX3、以精巧的1U尺寸規格提供高效能的40/100g和10//25G連接埠、低延遲和優異的電源效率。可透過上行鏈路連接埠和中斷纜線來支援更多速度。下圖顯示一些Cisco Nexus 9k和3k交換器、包括用於此驗證的Nexus 9336C-FX2和Nexus 3232C。
+
+image:sm-bcs-image9.png["錯誤：缺少圖形影像"]
+
+請參閱 https://www.cisco.com/c/en/us/products/switches/data-center-switches/index.html["Cisco資料中心交換器"^] 如需可用Nexus交換器及其規格與文件的詳細資訊、
+
+
+
+==== MDS交換器
+
+Cisco MDS 9100/9200/9300s Fabric交換器是FlexPod 支援此架構的選用元件。這些交換器非常可靠、高度靈活、安全、而且能夠清楚掌握網路中的流量。下圖顯示MDS交換器的一些範例、可用來建置備援FC SAN架構、以利FlexPod 滿足應用程式和業務需求。
+
+image:sm-bcs-image10.png["錯誤：缺少圖形影像"]
+
+Cisco MDS 9132T/9148T/9396T高效能32G多層光纖交換器不但符合成本效益、而且極為可靠、靈活且可擴充。進階儲存網路功能的管理十分簡單、可與整個Cisco MDS 9000系列產品組合相容、提供可靠的SAN實作。
+
+這款次世代硬體平台內建最先進的SAN分析與遙測功能。從檢查訊框標頭擷取的遙測資料可串流至分析視覺化平台、包括Cisco Data Center Network Manager。支援16G FC的MDS交換器（例如MDS 9148S）也在FlexPod 支援中。此外、除了FC傳輸協定之外、支援FCoE和FCIP傳輸協定的多服務MDS交換器（例如MDS 9250i）也屬於FlexPod 整套解決方案。
+
+在半模組化MDS交換器（例如9132T和9396T）上、可新增額外的連接埠擴充模組和連接埠授權、以支援額外的裝置連線功能。在固定交換器（例如91485T）上、可視需要新增額外的連接埠授權。這種隨需付費的靈活度提供營運費用元件、有助於降低MDS交換器型SAN基礎架構的實作與運作所需的資本支出。
+
+請參閱 https://www.cisco.com/c/en/us/products/storage-networking/index.html["Cisco MDS Fabric交換器"^] 如需可用MDS Fabric交換器的詳細資訊、請參閱 https://mysupport.netapp.com/matrix/["NetApp IMT"^] 和 https://ucshcltool.cloudapps.cisco.com/public/["Cisco硬體與軟體相容清單"^] 以取得受支援SAN交換器的完整清單。
+
+
+
+=== NetApp元件
+
+需要備援的NetApp AFF 功能或ASA 功能不全的控制器來執行ONTAP 功能不全的軟體9.8或更新版本、才能建立FlexPod 一套功能不全的解決方案。最新ONTAP 版的VMware版本（目前為9.10.1）建議用於SMBC部署、以充分利用不斷ONTAP 的創新技術、效能和品質改善、以及針對SMBC支援增加的最大物件數。
+
+NetApp AFF 的功能性與ASA 功能性控制器具備領先業界的效能與創新技術、可提供企業級資料保護與功能豐富的資料管理功能。支援端點對端點NVMe技術的支援包括NVMe附加SSD和NVMe over Fibre Channel（NVMe / FC）前端主機連線。AFF ASA您可以採用NVMe型/ FC型SAN基礎架構、藉此改善工作負載處理量並減少I/O延遲。不過、NVMe / FC型資料存放區目前只能用於未受SM - BC保護的工作負載、因為SM - BC解決方案目前僅支援iSCSI和FC傳輸協定。
+
+NetApp AFF 的功能性與ASA 功能性儲存控制器也為客戶提供混合雲基礎、讓客戶充分發揮NetApp Data Fabric所提供的無縫資料移動能力。有了Data Fabric、您就能輕鬆從產生資料的邊緣、到使用資料的核心、再到雲端、充分利用隨需彈性運算、AI和ML功能、獲得可行的商業洞見。
+
+如下圖所示、NetApp提供各種儲存控制器和磁碟櫃、以滿足您的效能和容量需求。請參閱下表以取得產品頁面的連結、以取得有關NetApp AFF 功能與ASA 規格的資訊。
+
+image:sm-bcs-image11.png["錯誤：缺少圖形影像"]
+
+|===
+| 產品系列 | 技術規格 
+
+
+| 產品系列AFF | link:https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62247["系列文件AFF"^] 
+
+
+| 產品系列ASA | link:https://docs.netapp.com/allsan/index.jsp["系列文件ASA"^] 
+|===
+請參閱 https://www.netapp.com/data-storage/disk-shelves-storage-media/["NetApp磁碟櫃與儲存媒體文件"^] 和 https://hwu.netapp.com/["NetApp Hardware Universe"^] 以取得每種儲存控制器機型的磁碟櫃和支援磁碟櫃詳細資料。
+
+
+
+== 解決方案拓撲
+
+解決方案在拓撲結構上具有彈性、可擴充或橫向擴充、以滿足不同的解決方案需求。FlexPod如果解決方案需要營運不中斷保護、而且只需要最少的運算和儲存資源、就可以使用簡單的解決方案拓撲、如下圖所示。這種簡單的拓撲使用UCS C系列機架伺服器和AFF/ASA控制器、在控制器中使用SSD、而不需要額外的磁碟櫃。
+
+image:sm-bcs-image12.png["錯誤：缺少圖形影像"]
+
+備援的運算、網路和儲存元件均以元件之間的備援連線功能相互連結。此高可用度設計可提供解決方案恢復能力、並可讓IT承受單點故障情況。多站台設計與ONTAP NetApp之間的同步資料複寫關係、即使單一站台儲存設備故障、仍能提供業務關鍵資料服務。
+
+資料中心與都會區分公司之間的公司可能會使用非對稱部署拓撲、如下圖所示。對於這種不對稱設計、資料中心需要更高的效能FlexPod 、以及更多的運算和儲存資源。不過、分公司的需求較低、FlexPod 而且可以由更小的地方滿足。
+
+image:sm-bcs-image13.png["錯誤：缺少圖形影像"]
+
+對於運算與儲存資源需求較高的公司及多個站台、以VXLAN為基礎的多站台網路架構可讓多個站台擁有無縫網路架構、以利應用程式移動性、讓應用程式能從任何站台提供服務。
+
+現有的解決方案可能是使用Cisco UCS 5108機箱和B系列刀鋒伺服器、而這些伺服器必須受到新的實例保護。FlexPod FlexPod新FlexPod 的鏡像執行個體可使用最新的UCS X958機箱、搭配由Cisco Intersight管理的X210 c運算節點、如下圖所示。在這種情況下FlexPod 、每個站台的「支援」系統都會連接到較大的資料中心架構、而站台則是透過互連網路連線、形成VXLAN多站台架構。
+
+image:sm-bcs-image14.png["錯誤：缺少圖形影像"]
+
+對於在都會區內擁有資料中心和多個分公司的公司而言、所有這些都需要妥善保護、才能維持營運不中斷、 可實作下圖所示的《支援SM至BC部署拓撲》、以保護關鍵應用程式和資料服務、使所有分公司的RPO達到零、RTO目標幾乎為零。FlexPod
+
+image:sm-bcs-image15.png["錯誤：缺少圖形影像"]
+
+對於這種部署模式、每個分公司都會與資料中心建立所需的SMBC關係和一致性群組。您必須考量支援的SM至BC物件限制、因此整體一致性群組關係和端點數不會超過資料中心所支援的上限。
+
+link:sm-bcs-solution-validation_overview.html["下一步：解決方案驗證總覽。"]

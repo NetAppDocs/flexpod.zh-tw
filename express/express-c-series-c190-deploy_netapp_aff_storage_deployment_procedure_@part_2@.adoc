@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_netapp_aff_storage_deployment_procedure_@part_2@.html 
+keywords: aff, storage, deployment, procedure, create, iscsi, igroups, ontap, san, boot 
+summary: 若要建立igroup、請從叢集管理節點SSH連線執行下列命令。 
+---
+= NetApp AFF 產品區儲存部署程序（第2部分）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== 設定ONTAP 不支援SAN開機儲存設備
+
+
+
+=== 建立iSCSI igroup
+
+
+NOTE: 您需要從伺服器組態取得iSCSI啟動器IQN才能執行此步驟。
+
+若要建立igroup、請從叢集管理節點SSH連線執行下列命令。若要檢視此步驟中建立的三個igroup、請執行「igroup show」命令。
+
+....
+igroup create –vserver Infra-SVM –igroup VM-Host-Infra-A –protocol iscsi –ostype vmware –initiator <<var_vm_host_infra_a_iSCSI-A_vNIC_IQN>>,<<var_vm_host_infra_a_iSCSI-B_vNIC_IQN>>
+igroup create –vserver Infra-SVM –igroup VM-Host-Infra-B –protocol iscsi –ostype vmware –initiator <<var_vm_host_infra_b_iSCSI-A_vNIC_IQN>>,<<var_vm_host_infra_b_iSCSI-B_vNIC_IQN>>
+....
+
+NOTE: 新增其他Cisco UCS C系列伺服器時、必須完成此步驟。
+
+
+
+== 將開機LUN對應至igroup
+
+....
+To map boot LUNs to igroups, run the following commands from the cluster management SSH connection:
+lun map –vserver Infra-SVM –volume esxi_boot –lun VM-Host-Infra-A –igroup VM-Host-Infra-A –lun-id 0
+lun map –vserver Infra-SVM –volume esxi_boot –lun VM-Host-Infra-B –igroup VM-Host-Infra-B –lun-id 0
+....
+
+NOTE: 新增其他Cisco UCS C系列伺服器時、必須完成此步驟。
+
+link:express-c-series-c190-design_vmware_vsphere_6.7u2_deployment_procedure.html["下一步：VMware vSphere 6.7U2部署程序"]

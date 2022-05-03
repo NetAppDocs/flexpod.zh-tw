@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_base_infrastructure_configuration.html 
+keywords: base, infrastructure, configuration, network, storage, connections, software, host 
+summary: 必須具備下列網路連線、儲存連線和軟體、才能設定基礎架構。 
+---
+= 基礎架構組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== 網路連線能力
+
+在您設定基礎架構之前、必須先建立下列網路連線：
+
+* 整合使用連接埠通道和虛擬連接埠通道（VPC）的連結、可實現更高頻寬和高可用度的設計：
++
+** VPC用於Cisco FI與Cisco Nexus交換器之間。
+** 每部伺服器都有虛擬網路介面卡（vNIC）、可與Unified Fabric進行備援連線。NIC容錯移轉用於FI之間的備援。
+** 每部伺服器都有虛擬主機匯流排介面卡（vHBA）、可與統一化架構進行備援連線。
+
+
+* Cisco UCS FI會依建議設定為終端主機模式、以動態方式將vNIC固定至上行鏈路交換器。
+
+
+
+
+== 儲存連線能力
+
+在您設定基礎架構之前、必須先建立下列儲存連線：
+
+* 儲存連接埠介面群組（ifGroups、vPC）
+* 10Gb連結至交換器N9K-A
+* 10Gb連結至交換器N9K-B
+* 頻內管理（主動-被動結合）：
++
+** 1GB管理交換器N9K-A連結
+** 1GB連結至管理交換器N9K-B
+
+
+* 透過Cisco MDS交換器提供32GB FC端點對端點連線能力；已設定單一啟動器分區
+* FC SAN開機可完全實現無狀態運算；伺服器是從裝載AFF 於該支援叢集的開機磁碟區中的LUN開機
+* 所有MEDITECH工作負載均裝載在分散在儲存控制器節點上的FC LUN上
+
+
+
+
+== 主機軟體
+
+必須安裝下列軟體：
+
+* ESXi安裝在Cisco UCS刀鋒伺服器上
+* VMware vCenter已安裝並設定（所有主機均已在vCenter中註冊）
+* 已在VMware vCenter中安裝並註冊VSC
+* 已設定NetApp叢集
+
+
+link:ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html["下一步：Cisco UCS刀鋒伺服器與交換器組態。"]

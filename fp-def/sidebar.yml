@@ -1,0 +1,78 @@
+---
+section: fp-def
+title: 可解析度FlexPod
+entries:
+- title: 部分技術規格FlexPod
+  type: solutions
+  entries:
+  - title: 總覽
+    url: "/fp-def/fp-express-tech-spec_overview.html"
+  - title: 平台FlexPod
+    url: "/fp-def/fp-express-tech-spec_flexpod_platforms.html"
+  - title: "《規則》FlexPod"
+    url: "/fp-def/fp-express-tech-spec_flexpod_rules.html"
+  - title: 支援FlexPod 或驗證的支援功能
+    url: "/fp-def/fp-express-tech-spec_supported_versus_validated_flexpod_configurations.html"
+  - title: 儲存軟體
+    url: "/fp-def/fp-express-tech-spec_storage_software.html"
+  - title: 最低硬體需求
+    url: "/fp-def/fp-express-tech-spec_minimum_hardware_requirements.html"
+  - title: 最低軟體需求
+    url: "/fp-def/fp-express-tech-spec_minimum_software_requirements.html"
+  - title: 連線需求
+    url: "/fp-def/fp-express-tech-spec_connectivity_requirements.html"
+  - title: 其他需求
+    url: "/fp-def/fp-express-tech-spec_other_requirements.html"
+  - title: 選用功能
+    url: "/fp-def/fp-express-tech-spec__optional_features.html"
+  - title: Cisco元件
+    url: "/fp-def/fp-express-tech-spec__cisco_components.html"
+  - title: NetApp元件
+    url: "/fp-def/fp-express-tech-spec__netapp_components.html"
+  - title: 電源與佈線需求
+    url: "/fp-def/fp-express-tech-spec__power_and_cabling_requirements.html"
+  - title: 技術規格與參考資料
+    url: "/fp-def/fp-express-tech-spec__technical_specifications_and_references.html"
+  - title: 先前的架構與設備
+    url: "/fp-def/fp-express-tech-spec__previous_architectures_and_equipment.html"
+  - title: 老舊設備
+    url: "/fp-def/fp-express-tech-spec_legacy_equipment.html"
+  - title: 其他資訊
+    url: "/fp-def/fp-express-tech-spec_additional_information.html"
+- title: 資料中心技術規格FlexPod
+  type: solutions
+  entries:
+  - title: 總覽
+    url: "/fp-def/dc-tech-spec_solution_overview.html"
+  - title: 支援各種平台FlexPod
+    url: "/fp-def/dc-tech-spec_flexpod_platforms.html"
+  - title: 範例FlexPod
+    url: "/fp-def/dc-tech-spec_flexpod_rules.html"
+  - title: 支援FlexPod 的或已驗證的支援的支援的
+    url: "/fp-def/dc-tech-spec_supported_versus_validated_flexpod_configurations.html"
+  - title: NetApp ONTAP
+    url: "/fp-def/dc-tech-spec_netapp_ontap.html"
+  - title: Cisco Nexus交換操作模式
+    url: "/fp-def/dc-tech-spec_cisco_nexus_switching_modes_of_operation.html"
+  - title: 最低硬體需求
+    url: "/fp-def/dc-tech-spec_minimum_hardware_requirements.html"
+  - title: 最低軟體需求
+    url: "/fp-def/dc-tech-spec_minimum_software_requirements.html"
+  - title: 連線需求
+    url: "/fp-def/dc-tech-spec_connectivity_requirements.html"
+  - title: 其他需求
+    url: "/fp-def/dc-tech-spec_other_requirements.html"
+  - title: 選用功能
+    url: "/fp-def/dc-tech-spec_optional_features.html"
+  - title: Cisco元件
+    url: "/fp-def/dc-tech-spec_cisco_components.html"
+  - title: NetApp元件
+    url: "/fp-def/dc-tech-spec_netapp_components.html"
+  - title: 電源和纜線需求
+    url: "/fp-def/dc-tech-spec_power_and_cabling_requirements.html"
+  - title: 技術規格與參考資料
+    url: "/fp-def/dc-tech-spec_technical_specifications_and_references.html"
+  - title: 老舊設備
+    url: "/fp-def/dc-tech-spec_legacy_equipment.html"
+  - title: 何處可找到其他資訊
+    url: "/fp-def/dc-tech-spec_where_to_find_additional_information.html"

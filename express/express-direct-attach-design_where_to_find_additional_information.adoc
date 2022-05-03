@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: express/express-direct-attach-design_where_to_find_additional_information.html 
+keywords:  
+summary:  
+---
+= 何處可找到其他資訊
+:allow-uri-read: 
+
+
+若要深入瞭解本文所述資訊、請參閱下列文件與網站：
+
+* NVA-1131-Deploy：FlexPod 使用VMware vSphere 6.7UI的VMware Infrastructure Express和採用AFF 直接附加IP型儲存NVA部署的NetApp VMware Infrastructure A220
++
+https://www.netapp.com/us/media/nva-1131-deploy.pdf["https://www.netapp.com/us/media/nva-1131-deploy.pdf"^]
+
+* 系統文件中心AFF FAS
++
+http://docs.netapp.com/platstor/index.jsp["http://docs.netapp.com/platstor/index.jsp"^]
+
+* 供應說明文件中心 ONTAP
++
+http://docs.netapp.com/ontap-9/index.jsp["http://docs.netapp.com/ontap-9/index.jsp"^]
+
+* NetApp 產品文件
++
+https://docs.netapp.com["https://docs.netapp.com"^]
+
+

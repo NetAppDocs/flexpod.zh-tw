@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_add_a_cloud_tier_to_ontap.html 
+keywords: add, cloud, tier, ontap, aggregate, storage, fabricpool, flexpod, ontap, cli, oncommand, manager 
+summary: 物件存放區必須先新增至集合體、ONTAP 並由資訊技術辨識、方可附加至集合體。此工作可透過OnCommand 《系統管理程式》或ONTAP 《系統資訊管理系統》CLI完成。 
+---
+= 新增雲端階層至ONTAP 架構
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+物件存放區必須先新增至集合體、ONTAP 並由資訊技術辨識、方可附加至集合體。此工作可透過OnCommand 《系統管理程式》或ONTAP 《系統資訊管理系統》CLI完成。
+
+支援Amazon S3、IBM Object Cloud Storage及Microsoft Azure Blob Storage物件儲存為雲端層。FabricPool
+
+您需要下列資訊：
+
+* 伺服器名稱（FQDN）、例如「3.amazonaws.com」
+* 存取金鑰ID
+* 秘密金鑰
+* Container名稱（Bucket名稱）
+
+
+
+
+== 系統管理程式OnCommand
+
+若要使用OnCommand NetApp System Manager新增雲端層、請完成下列步驟：
+
+. 啟動OnCommand 《系統管理程式》。
+. 按一下儲存設備。
+. 按一下「Aggregate & Disk」
+. 按一下雲端分層。
+. 選取物件存放區提供者。
+. 填寫物件存放區提供者所需的文字欄位。
++
+在Container Name（容器名稱）欄位中、輸入物件存放區的儲存區或容器名稱。
+
+. 按一下「儲存並附加Aggregate」。
+
+
+image:cloud-fabricpool_image13.png["錯誤：缺少圖形影像"]
+
+
+
+== CLI ONTAP
+
+若要使用ONTAP CLI新增雲端層、請輸入下列命令：
+
+....
+object-store config create
+-object-store-name <name>
+-provider-type <AWS>
+-port <443/8082> (AWS)
+-server <name>
+-container-name <bucket-name>
+-access-key <string>
+-secret-password <string>
+-ssl-enabled true
+-ipspace default
+....
+link:cloud-fabricpool_attach_a_cloud_tier_to_an_ontap_aggregate.html["下一步：將雲端層附加ONTAP 到一個不二的集合體。"]

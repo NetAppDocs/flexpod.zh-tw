@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_initiator_group_configuration.html 
+keywords: initiator, group, configuration, fc, data, network, protocol, igroups 
+summary: 使用FC作為資料網路傳輸協定時、請在每個儲存控制器上建立兩個啟動器群組（igroup）。第一個igroup包含裝載MEDITECH主機VM的VMware ESXi伺服器上FC主機介面卡的WWPN（適用於MEDITECH的igroup）。 
+---
+= 啟動器群組組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+使用FC作為資料網路傳輸協定時、請在每個儲存控制器上建立兩個啟動器群組（igroup）。第一個igroup包含裝載MEDITECH主機VM的VMware ESXi伺服器上FC主機介面卡的WWPN（適用於MEDITECH的igroup）。
+
+您必須根據環境設定來設定MEDITECH igroup作業系統類型。例如：
+
+* 對於安裝在Windows Server環境裸機伺服器硬體上的應用程式、請使用igroup作業系統類型「Windows」。
+* 對於使用VMware vSphere Hypervisor進行虛擬化的應用程式、請使用igroup作業系統類型「VMware」。
+
+
+
+NOTE: igroup的作業系統類型可能與LUN的作業系統類型不同。例如、對於虛擬化的MEDITECH主機、您應該將igroup作業系統類型設為「VMware」。對於虛擬化MEDITECH主機所使用的LUN、您應該將作業系統類型設為「Windows 2008或更新版本」。使用此設定是因為MEDITECH主機作業系統是Windows Server 2008 R2 64位元企業版。
+
+若要判斷作業系統類型的正確值、請參閱中的「LUN igroup Create」（LUN igroup建立）和「LUN Create」（LUN建立）章節 https://library.netapp.com/ecm/ecm_download_file/ECMP1366832["叢集Data ONTAP 式的8.2命令：手動頁面參考"^]。
+
+link:ehr-meditech-deploy_lun_mappings.html["下一步：LUN對應。"]

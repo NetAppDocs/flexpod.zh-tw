@@ -1,0 +1,198 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html 
+keywords: cisco, ucs, blade, server, switch, configuration, nexus, mds 
+summary: 本文件針對FlexPod MEDITECH軟體的基本需求組態、提供詳細的指引。在本節中、我們提供一些高階步驟、以及一些範例、協助您準備FlexPod 好支援此功能的Cisco UCS運算平台元素。 
+---
+= Cisco UCS刀鋒伺服器與交換器組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+適用於MEDITECH軟體的支援功能、是專為每個層級的容錯設計。FlexPod系統中沒有單點故障。為獲得最佳效能、Cisco建議使用熱備援刀鋒伺服器。
+
+本文件針對FlexPod MEDITECH軟體的基本需求組態、提供詳細的指引。在本節中、我們提供一些高階步驟、以及一些範例、協助您準備FlexPod 好支援此功能的Cisco UCS運算平台元素。本指南的先決條件是FlexPod 、根據中的指示、將該等支援組態機架安裝、供電及連接纜線 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["利用VMware vSphere 6.5 Update 1、NetApp解決方案A系列和Cisco UCS Manager 3.2、搭配光纖通道儲存設備的資料中心FlexPod AFF"^]CVD：
+
+
+
+== Cisco Nexus交換器組態
+
+為解決方案部署了Cisco Nexus 9300系列乙太網路交換器的容錯配對。您應該依照中所述來連接這些交換器 link:ehr-meditech-deploy_deployment_and_configuration_overview.html#cabling-diagram["佈線圖"] 區段。Cisco Nexus組態有助於確保乙太網路流量傳輸已針對MEDITECH應用程式最佳化。
+
+. 完成初始設定與授權之後、請執行下列命令、在兩個交換器上設定全域組態參數：
++
+....
+spanning-tree port type network default
+spanning-tree port type edge bpduguard default
+spanning-tree port type edge bpdufilter default
+port-channel load-balance src-dst l4port
+ntp server <global-ntp-server-ip> use-vrf management
+ntp master 3
+ip route 0.0.0.0/0 <ib-mgmt-vlan-gateway>
+copy run start
+....
+. 使用全域組態模式在每台交換器上建立解決方案的VLAN：
++
+....
+vlan <ib-mgmt-vlan-id>
+name IB-MGMT-VLAN
+vlan <native-vlan-id>
+name Native-VLAN
+vlan <vmotion-vlan-id>
+name vMotion-VLAN
+vlan <vm-traffic-vlan-id>
+name VM-Traffic-VLAN
+vlan <infra-nfs-vlan-id>
+name Infra-NFS-VLAN
+exit
+copy run start
+....
+. 建立網路時間傳輸協定（NTP）發佈介面、連接埠通道、連接埠通道參數、以及連接埠說明、以進行每個的疑難排解 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["利用VMware vSphere 6.5 Update 1、NetApp解決方案A系列和Cisco UCS Manager 3.2、搭配光纖通道儲存設備的資料中心FlexPod AFF"^]CVD：
+
+
+
+
+== Cisco MDS 9132T組態
+
+Cisco MDS 9100系列FC交換器可在NetApp AFF 人民幣200或AFF 人民幣300控制器與Cisco UCS運算架構之間提供備援的32GB FC連線。您應該按照中所述連接纜線 link:ehr-meditech-deploy_deployment_and_configuration_overview.html#cabling-diagram["佈線圖"] 區段。
+
+. 從每個MDS交換器的主控台執行下列命令、以啟用解決方案所需的功能：
++
+....
+configure terminal
+feature npiv
+feature fport-channel-trunk
+....
+. 根據FlexPod 中的「Cisco MDS交換器組態」一節、設定個別連接埠、連接埠通道及說明 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["採用FC Cisco驗證設計的資料中心FlexPod"^]。
+. 若要為解決方案建立必要的虛擬SAN（VSAN）、請在全域組態模式中完成下列步驟：
++
+.. 對於Fabric - A MDS交換器、請執行下列命令：
++
+....
+vsan database
+vsan <vsan-a-id>
+vsan <vsan-a-id> name Fabric-A
+exit
+zone smart-zoning enable vsan <vsan-a-id>
+vsan database
+vsan <vsan-a-id> interface fc1/1
+vsan <vsan-a-id> interface fc1/2
+vsan <vsan-a-id> interface port-channel110
+vsan <vsan-a-id> interface port-channel112
+....
++
+命令最後兩行中的連接埠通道編號是使用參考文件來配置個別連接埠、連接埠通道和說明時所建立的。
+
+.. 對於Fabric B MDS交換器、請執行下列命令：
++
+....
+vsan database
+vsan <vsan-b-id>
+vsan <vsan-b-id> name Fabric-B
+exit
+zone smart-zoning enable vsan <vsan-b-id>
+vsan database
+vsan <vsan-b-id> interface fc1/1
+vsan <vsan-b-id> interface fc1/2
+vsan <vsan-b-id> interface port-channel111
+vsan <vsan-b-id> interface port-channel113
+....
++
+命令最後兩行中的連接埠通道編號是使用參考文件來配置個別連接埠、連接埠通道和說明時所建立的。
+
+
+
+. 對於每個FC交換器、請使用參考文件中的詳細資料、建立裝置別名、使每個裝置的識別方式更為直覺化、以利後續作業。
+. 最後、請使用步驟4中針對每個MDS交換器建立的裝置別名來建立FC區域、如下所示：
++
+.. 對於Fabric - A MDS交換器、請執行下列命令：
++
+....
+configure terminal
+zone name VM-Host-Infra-01-A vsan <vsan-a-id>
+member device-alias VM-Host-Infra-01-A init
+member device-alias Infra-SVM-fcp_lif01a target
+member device-alias Infra-SVM-fcp_lif02a target
+exit
+zone name VM-Host-Infra-02-A vsan <vsan-a-id>
+member device-alias VM-Host-Infra-02-A init
+member device-alias Infra-SVM-fcp_lif01a target
+member device-alias Infra-SVM-fcp_lif02a target
+exit
+zoneset name Fabric-A vsan <vsan-a-id>
+member VM-Host-Infra-01-A
+member VM-Host-Infra-02-A
+exit
+zoneset activate name Fabric-A vsan <vsan-a-id>
+exit
+show zoneset active vsan <vsan-a-id>
+....
+.. 對於Fabric B MDS交換器、請執行下列命令：
++
+....
+configure terminal
+zone name VM-Host-Infra-01-B vsan <vsan-b-id>
+member device-alias VM-Host-Infra-01-B init
+member device-alias Infra-SVM-fcp_lif01b target
+member device-alias Infra-SVM-fcp_lif02b target
+exit
+zone name VM-Host-Infra-02-B vsan <vsan-b-id>
+member device-alias VM-Host-Infra-02-B init
+member device-alias Infra-SVM-fcp_lif01b target
+member device-alias Infra-SVM-fcp_lif02b target
+exit
+zoneset name Fabric-B vsan <vsan-b-id>
+member VM-Host-Infra-01-B
+member VM-Host-Infra-02-B
+exit
+zoneset activate name Fabric-B vsan <vsan-b-id>
+exit
+show zoneset active vsan <vsan-b-id>
+....
+
+
+
+
+
+
+== Cisco UCS組態指南
+
+Cisco UCS可讓您身為MEDITECH客戶、善用網路、儲存設備和運算領域的主題專家、建立符合您特定需求的原則和範本。建立這些原則和範本之後、就能將其整合到服務設定檔中、以提供一致、可重複、可靠且快速的Cisco刀鋒伺服器和機架伺服器部署。
+
+Cisco UCS提供三種方法來管理Cisco UCS系統、稱為網域：
+
+* Cisco UCS Manager HTML5 GUI
+* Cisco UCS CLI
+* 適用於多網域環境的Cisco UCS Central
+
+
+下圖顯示Cisco UCS Manager中SAN節點的範例擷取畫面。
+
+image:ehr-meditech-deploy_image6.png["錯誤：缺少圖形影像"]
+
+在較大型的部署中、可在主要MEDITECH功能元件層級建置獨立的Cisco UCS網域、以達到更高的容錯能力。
+
+在具有兩個或更多資料中心的高容錯設計中、Cisco UCS Central在設定全域原則和全域服務設定檔、以確保整個企業的主機之間一致性方面扮演著關鍵角色。
+
+若要設定Cisco UCS運算平台、請完成下列程序。在Cisco UCS 5108 AC刀鋒機箱中安裝Cisco UCS B200 M5刀鋒伺服器之後、請執行這些程序。此外、您還必須符合中所述的佈線需求 link:ehr-meditech-deploy_deployment_and_configuration_overview.html#cabling-diagram["佈線圖"] 區段。
+
+. 將Cisco UCS Manager韌體升級至3.2版（2f）或更新版本。
+. 設定網域的報告、Cisco主選項功能及NTP設定。
+. 在每個Fabric互連上設定伺服器和上行鏈路連接埠。
+. 編輯機箱探索原則。
+. 建立位址集區以進行頻外管理、通用唯一識別碼（UID）、MAC位址、伺服器、全球節點名稱（WWNN）和全球連接埠名稱（WWPN）。
+. 建立乙太網路和FC上行鏈路連接埠通道和VSAN。
+. 建立SAN連線、網路控制、伺服器集區資格鑑定、電源控制、伺服器BIOS、 和預設維護。
+. 建立vNIC和vHBA範本。
+. 建立vMedia和FC開機原則。
+. 為每個MEDITECH平台元素建立服務設定檔範本和服務設定檔。
+. 將服務設定檔與適當的刀鋒伺服器建立關聯。
+
+
+如需設定Cisco UCS服務設定檔FlexPod 中每個關鍵元素以利執行各項功能的詳細步驟、請參閱 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["利用VMware vSphere 6.5 Update 1、NetApp解決方案A系列和Cisco UCS Manager 3.2、搭配光纖通道儲存設備的資料中心FlexPod AFF"^]CVD文件。
+
+link:ehr-meditech-deploy_esxi_configuration_best_practices.html["下一步：ESXi組態最佳實務做法。"]

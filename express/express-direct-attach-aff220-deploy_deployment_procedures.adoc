@@ -1,0 +1,3335 @@
+---
+sidebar: sidebar 
+permalink: express/express-direct-attach-aff220-deploy_deployment_procedures.html 
+keywords: deployment, procedures, configure, flexpod, express, ip, based, storage, vmware, vsphere, setup, cisco, ucs, vcenter 
+summary: 本文件詳細說明如何設定完全備援且高度可用FlexPod 的Express系統。 
+---
+= 部署程序
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本文件詳細說明如何設定完全備援且高度可用FlexPod 的Express系統。為了反映這種備援、每個步驟中所設定的元件都稱為元件A或元件B例如、控制器A和控制器B會識別本文件中所配置的兩個NetApp儲存控制器。交換器A和交換器B會識別一對Cisco Nexus交換器。Fabric互連A和Fabric互連B是兩個整合式Nexus Fabric互連。
+
+此外、本文也說明配置多個Cisco UCS主機的步驟、這些主機會依序識別為伺服器A、伺服器B等。
+
+為了指出您應該在步驟中加入與環境相關的資訊、「」<<text >會顯示為命令結構的一部分。請參閱以下「VLAN create」命令範例：
+
+....
+Controller01>vlan create vif0 <<mgmt_vlan_id>>
+....
+本文件可讓您完整設定FlexPod 《支援不支援不支援的使用者介面》環境。在此程序中、您需要執行各種步驟、才能插入客戶專屬的命名慣例、IP位址和虛擬區域網路（VLAN）配置。下表說明部署所需的VLAN、如本指南所述。此表格可根據特定站台變數完成、並用於實作文件組態步驟。
+
+
+NOTE: 如果您使用不同的頻內和頻外管理VLAN、則必須在它們之間建立第3層路由。此驗證使用通用管理VLAN。
+
+|===
+| VLAN名稱 | VLAN用途 | 用於驗證此文件的ID 
+
+
+| 管理VLAN | 管理介面的VLAN | 18 
+
+
+| 原生VLAN | 指派無標記框架的VLAN | 2. 
+
+
+| NFS VLAN | NFS流量的VLAN | 104. 
+
+
+| VMware VMotion VLAN | 指定用於將虛擬機器（VM）從一部實體主機移至另一部主機的VLAN | 103 
+
+
+| VM流量VLAN | VM應用程式流量的VLAN | 102. 
+
+
+| iSCSI-A-VLAN | 光纖A上iSCSI流量的VLAN | 124 
+
+
+| iSCSI-B VLAN | 光纖B上iSCSI流量的VLAN | 125. 
+|===
+在整個設定過程中、需要使用VLAN編號FlexPod 。這些VLAN稱為「<<var_xxxx_vlan->>」、其中「XXXX」是VLAN的用途（例如iSCSI-A）。
+
+下表列出所建立的VMware VM。
+
+|===
+| VM說明 | 主機名稱 
+
+
+| VMware vCenter Server | Seahawks-vcsa.cie.netapp.com 
+|===
+
+
+== Cisco Nexus 31108PCV部署程序
+
+本節詳細說明FlexPod 在ExExpress環境中使用的Cisco Nexus 31308PCV交換器組態。
+
+
+
+=== Cisco Nexus 31108PCV交換器的初始設定
+
+本程序說明如何設定Cisco Nexus交換器、以便在FlexPod 基礎版的Express環境中使用。
+
+
+NOTE: 本程序假設您使用的Cisco Nexus 31108PCV執行NX-OS軟體版本7.0（3）I6（1）。
+
+. 初次開機並連線至交換器的主控台連接埠時、Cisco NX-OS設定會自動啟動。此初始組態可處理基本設定、例如交換器名稱、mgmt0介面組態和安全Shell（SSH）設定。
+. 可透過多種方式設定支援的支援服務。FlexPod在任何現有的管理網路上、都可以連接任何31108PCV交換器上的mgmt0介面、或是以後端對後端組態連接任何31108PCV交換器的mgmt0介面。不過、此連結無法用於外部管理存取、例如SSH流量。
++
+在本部署指南中FlexPod 、《Cisco Nexus 31108PCV交換器》連接至現有的管理網路。
+
+. 若要設定Cisco Nexus 31108PCV交換器、請開啟交換器電源、並依照畫面上的提示進行操作、如此處所示、進行兩個交換器的初始設定、以適當的值取代交換器特定資訊。
++
+....
+This setup utility will guide you through the basic configuration of the system. Setup configures only enough connectivity for management of the system.
+....
++
+....
+*Note: setup is mainly used for configuring the system initially, when no configuration is present. So setup always assumes system defaults and not the current system configuration values.
+Press Enter at anytime to skip a dialog. Use ctrl-c at anytime to skip the remaining dialogs.
+Would you like to enter the basic configuration dialog (yes/no): y
+Do you want to enforce secure password standard (yes/no) [y]: y
+Create another login account (yes/no) [n]: n
+Configure read-only SNMP community string (yes/no) [n]: n
+Configure read-write SNMP community string (yes/no) [n]: n
+Enter the switch name : 31108PCV-A
+Continue with Out-of-band (mgmt0) management configuration? (yes/no) [y]: y
+Mgmt0 IPv4 address : <<var_switch_mgmt_ip>>
+Mgmt0 IPv4 netmask : <<var_switch_mgmt_netmask>>
+Configure the default gateway? (yes/no) [y]: y
+IPv4 address of the default gateway : <<var_switch_mgmt_gateway>>
+Configure advanced IP options? (yes/no) [n]: n
+Enable the telnet service? (yes/no) [n]: n
+Enable the ssh service? (yes/no) [y]: y
+Type of ssh key you would like to generate (dsa/rsa) [rsa]: rsa
+Number of rsa key bits <1024-2048> [1024]: <enter>
+Configure the ntp server? (yes/no) [n]: y
+NTP server IPv4 address : <<var_ntp_ip>>
+Configure default interface layer (L3/L2) [L2]: <enter>
+Configure default switchport interface state (shut/noshut) [noshut]: <enter>
+Configure CoPP system profile (strict/moderate/lenient/dense) [strict]: <enter>
+....
+. 系統會顯示組態摘要、並詢問您是否要編輯組態。如果您的組態正確、請輸入「n」。
++
+....
+Would you like to edit the configuration? (yes/no) [n]: no
+....
+. 接著系統會詢問您是否要使用此組態並加以儲存。如果是、請輸入「y」。
++
+....
+Use this configuration and save it? (yes/no) [y]: Enter
+....
+. 針對Cisco Nexus交換器B重複步驟1到5
+
+
+
+
+=== 啟用進階功能
+
+Cisco NX-OS必須啟用某些進階功能、才能提供額外的組態選項。
+
+. 要在Cisco Nexus交換器A和交換器B上啟用適當功能、請使用命令「（config t）」進入組態模式、然後執行下列命令：
++
+....
+feature interface-vlan
+feature lacp
+feature vpc
+....
++
+
+NOTE: 預設的連接埠通道負載平衡雜湊使用來源和目的地IP位址來判斷連接埠通道中介面的負載平衡演算法。除了來源和目的地IP位址之外、您還能為雜湊演算法提供更多輸入、藉此在連接埠通道的成員之間實現更好的發佈。出於同樣的原因、NetApp強烈建議將來源和目的地TCP連接埠新增至雜湊演算法。
+
+. 在組態模式「（config t）」中、執行下列命令、在Cisco Nexus交換器A和交換器B上設定全域連接埠通道負載平衡組態：
++
+....
+port-channel load-balance src-dst ip-l4port
+....
+
+
+
+
+=== 執行全域擴充樹狀結構組態
+
+Cisco Nexus平台使用稱為「橋接保證」的新保護功能。橋接器保證可在不再執行擴充樹演算法時、透過持續轉送資料流量的裝置、協助防止單向連結或其他軟體故障。視平台而定、連接埠可置於多種狀態之一、包括網路或邊緣。
+
+NetApp建議設定橋接保證、以便在預設情況下、所有連接埠都被視為網路連接埠。此設定會強制網路管理員檢閱每個連接埠的組態。此外、也會顯示最常見的組態錯誤、例如無法辨識的邊緣連接埠、或是未啟用橋接保證功能的鄰近端口。此外、讓擴充樹區塊許多連接埠而非太少、更安全、因為這會允許預設的連接埠狀態來增強網路的整體穩定性。
+
+在新增伺服器、儲存設備和上行鏈路交換器時、請特別留意跨距樹狀結構的狀態、尤其是當它們不支援橋接保證時。在這種情況下、您可能需要變更連接埠類型、使連接埠成為作用中狀態。
+
+預設會在邊緣連接埠上啟用橋接傳輸協定資料單元（BPDU）保護、做為另一層保護。為了避免網路中發生迴圈、如果此介面上看到來自其他交換器的BPDU、此功能會關閉連接埠。
+
+在組態模式（「config t」）中、執行下列命令、在Cisco Nexus交換器A和交換器B上設定預設的擴充樹選項、包括預設連接埠類型和BPDU防護：
+
+....
+spanning-tree port type network default
+spanning-tree port type edge bpduguard default
+....
+
+
+=== 定義VLAN
+
+在設定具有不同VLAN的個別連接埠之前、必須先在交換器上定義第2層VLAN。命名VLAN也是一種很好的做法、以便日後輕鬆進行疑難排解。
+
+在組態模式（「config t」）中、執行下列命令來定義及說明Cisco Nexus交換器A和交換器B上的第2層VLAN：
+
+....
+vlan <<nfs_vlan_id>>
+  name NFS-VLAN
+vlan <<iSCSI_A_vlan_id>>
+  name iSCSI-A-VLAN
+vlan <<iSCSI_B_vlan_id>>
+  name iSCSI-B-VLAN
+vlan <<vmotion_vlan_id>>
+  name vMotion-VLAN
+vlan <<vmtraffic_vlan_id>>
+  name VM-Traffic-VLAN
+vlan <<mgmt_vlan_id>>
+  name MGMT-VLAN
+vlan <<native_vlan_id>>
+  name NATIVE-VLAN
+exit
+....
+
+
+=== 設定存取和管理連接埠說明
+
+就像為第2層VLAN指派名稱一樣、設定所有介面的說明有助於進行資源配置和疑難排解。
+
+在每個交換器的組態模式（「config t」）中、輸入FlexPod 下列適用於整個過程的埠說明：
+
+
+
+==== Cisco Nexus交換器A
+
+....
+int eth1/1
+  description AFF A220-A e0M
+int eth1/2
+  description Cisco UCS FI-A mgmt0
+int eth1/3
+  description Cisco UCS FI-A eth1/1
+int eth1/4
+  description Cisco UCS FI-B eth1/1
+int eth1/13
+  description vPC peer-link 31108PVC-B 1/13
+int eth1/14
+  description vPC peer-link 31108PVC-B 1/14
+....
+
+
+==== Cisco Nexus交換器B
+
+....
+int eth1/1
+  description AFF A220-B e0M
+int eth1/2
+  description Cisco UCS FI-B mgmt0
+int eth1/3
+  description Cisco UCS FI-A eth1/2
+int eth1/4
+  description Cisco UCS FI-B eth1/2
+int eth1/13
+  description vPC peer-link 31108PVC-B 1/13
+int eth1/14
+  description vPC peer-link 31108PVC-B 1/14
+....
+
+
+=== 設定伺服器與儲存管理介面
+
+伺服器和儲存設備的管理介面通常只使用單一VLAN。因此、請將管理介面連接埠設定為存取連接埠。定義每個交換器的管理VLAN、並將擴充樹連接埠類型變更為EDGE。
+
+在組態模式（「config t」）中、執行下列命令來設定伺服器和儲存設備的管理介面連接埠設定：
+
+
+
+==== Cisco Nexus交換器A
+
+....
+int eth1/1-2
+  switchport mode access
+  switchport access vlan <<mgmt_vlan>>
+  spanning-tree port type edge
+  speed 1000
+exit
+....
+
+
+==== Cisco Nexus交換器B
+
+....
+int eth1/1-2
+  switchport mode access
+  switchport access vlan <<mgmt_vlan>>
+  spanning-tree port type edge
+  speed 1000
+exit
+....
+
+
+=== 新增NTP發佈介面
+
+
+
+==== Cisco Nexus交換器A
+
+在全域組態模式中、執行下列命令。
+
+....
+interface Vlan<ib-mgmt-vlan-id>
+ip address <switch-a-ntp-ip>/<ib-mgmt-vlan-netmask-length>
+no shutdown
+exitntp peer <switch-b-ntp-ip> use-vrf default
+....
+
+
+==== Cisco Nexus交換器B
+
+在全域組態模式中、執行下列命令。
+
+....
+interface Vlan<ib-mgmt-vlan-id>
+ip address <switch- b-ntp-ip>/<ib-mgmt-vlan-netmask-length>
+no shutdown
+exitntp peer <switch-a-ntp-ip> use-vrf default
+....
+
+
+=== 執行虛擬連接埠通道全域組態
+
+虛擬連接埠通道（vPC）可讓實體連接至兩個不同Cisco Nexus交換器的連結、顯示為連接至第三個裝置的單一連接埠通道。第三個裝置可以是交換器、伺服器或任何其他網路裝置。vPC可提供第2層多重路徑、讓您增加頻寬、在節點之間啟用多個平行路徑、以及在有替代路徑的情況下、進行負載平衡流量、藉此建立備援。
+
+vPC具有下列優點：
+
+* 讓單一裝置在兩個上游裝置之間使用連接埠通道
+* 消除跨距樹狀傳輸協定封鎖的連接埠
+* 提供無迴圈拓撲
+* 使用所有可用的上行頻寬
+* 在連結或裝置故障時提供快速融合
+* 提供連結層級恢復能力
+* 協助提供高可用度
+
+
+vPC功能需要在兩個Cisco Nexus交換器之間進行一些初始設定、才能正常運作。如果使用後端對後端mgmt0組態、請使用介面上定義的位址、並使用ping '\<<switch_a_mgmt0_ip_addr>>VRF管理命令來驗證它們是否可以通訊。
+
+在組態模式（「config t」）中、執行下列命令來設定兩個交換器的vPC全域組態：
+
+
+
+==== Cisco Nexus交換器A
+
+....
+vpc domain 1
+ role priority 10
+peer-keepalive destination <<switch_B_mgmt0_ip_addr>> source <<switch_A_mgmt0_ip_addr>> vrf management
+  peer-gateway
+  auto-recovery
+  ip arp synchronize
+  int eth1/13-14
+  channel-group 10 mode active
+int Po10description vPC peer-link
+switchport
+switchport mode trunkswitchport trunk native vlan <<native_vlan_id>>
+switchport trunk allowed vlan <<nfs_vlan_id>>,<<vmotion_vlan_id>>, <<vmtraffic_vlan_id>>, <<mgmt_vlan>, <<iSCSI_A_vlan_id>>, <<iSCSI_B_vlan_id>> spanning-tree port type network
+vpc peer-link
+no shut
+exit
+int Po13
+description vPC ucs-FI-A
+switchport mode trunk
+switchport trunk native vlan <<native_vlan_id>>
+switchport trunk allowed vlan <<vmotion_vlan_id>>, <<vmtraffic_vlan_id>>, <<mgmt_vlan>> spanning-tree port type network
+mtu 9216
+vpc 13
+no shut
+exit
+int eth1/3
+  channel-group 13 mode active
+int Po14
+description vPC ucs-FI-B
+switchport mode trunk
+switchport trunk native vlan <<native_vlan_id>>
+switchport trunk allowed vlan <<vmotion_vlan_id>>, <<vmtraffic_vlan_id>>, <<mgmt_vlan>> spanning-tree port type network
+mtu 9216
+vpc 14
+no shut
+exit
+int eth1/4
+  channel-group 14 mode active
+copy run start
+....
+
+
+==== Cisco Nexus交換器B
+
+....
+vpc domain 1
+peer-switch
+role priority 20
+peer-keepalive destination <<switch_A_mgmt0_ip_addr>> source <<switch_B_mgmt0_ip_addr>> vrf management
+  peer-gateway
+  auto-recovery
+  ip arp synchronize
+  int eth1/13-14
+  channel-group 10 mode active
+int Po10
+description vPC peer-link
+switchport
+switchport mode trunk
+switchport trunk native vlan <<native_vlan_id>>
+switchport trunk allowed vlan <<nfs_vlan_id>>,<<vmotion_vlan_id>>, <<vmtraffic_vlan_id>>, <<mgmt_vlan>>, <<iSCSI_A_vlan_id>>, <<iSCSI_B_vlan_id>> spanning-tree port type network
+vpc peer-link
+no shut
+exit
+int Po13
+description vPC ucs-FI-A
+switchport mode trunk
+switchport trunk native vlan <<native_vlan_id>>
+switchport trunk allowed vlan <<vmotion_vlan_id>>, <<vmtraffic_vlan_id>>, <<mgmt_vlan>> spanning-tree port type network
+mtu 9216
+vpc 13
+no shut
+exit
+int eth1/3
+  channel-group 13 mode active
+int Po14
+description vPC ucs-FI-B
+switchport mode trunk
+switchport trunk native vlan <<native_vlan_id>>
+switchport trunk allowed vlan <<vmotion_vlan_id>>, <<vmtraffic_vlan_id>>, <<mgmt_vlan>> spanning-tree port type network
+mtu 9216
+vpc 14
+no shut
+exit
+int eth1/4
+  channel-group 14 mode active
+copy run start
+....
+
+NOTE: 在本解決方案驗證中、使用的傳輸單元上限為9000。不過、根據應用程式需求、您可以設定適當的MTU值。務必在FlexPod 整個解決方案中設定相同的MTU值。元件之間的MTU組態不正確、會導致封包遭到丟棄。
+
+
+
+=== 上行連結至現有的網路基礎架構
+
+視可用的網路基礎架構而定、有數種方法和功能可用來上行鏈路FlexPod 到整個環境。如果存在現有的Cisco Nexus環境、NetApp建議使用VPC、將FlexPod 包含在該架構中的Cisco Nexus 31108PVc交換器上行鏈路至基礎架構。上行鏈路可以是10GbE基礎架構解決方案的10GbE上行鏈路、或是1GbE基礎架構解決方案的1GbE（若有需要）。上述程序可用來建立上行鏈路vPC至現有環境。完成組態設定後、請務必執行複本執行開始、將組態儲存在每個交換器上。
+
+
+
+== NetApp儲存部署程序（第1部分）
+
+本節說明NetApp AFF 的NetApp解決方案儲存部署程序。
+
+
+
+=== NetApp儲存控制器AFF2xx系列安裝
+
+
+
+==== NetApp Hardware Universe
+
+。 https://hwu.netapp.com/Home/Index["NetApp Hardware Universe"^] （HWU）應用程式可為任何特定ONTAP 版本提供支援的硬體和軟體元件。它提供ONTAP 目前由支援的所有NetApp儲存設備的組態資訊。同時也提供元件相容性的表格。
+
+確認ONTAP 您想要使用的硬體和軟體元件是否支援您打算安裝的版本的更新：
+
+. 存取 http://hwu.netapp.com/Home/Index["HWU"^] 應用程式以檢視系統組態指南。選取「比較儲存系統」索引標籤、即可檢視ONTAP 不同版本的還原軟體與符合您所需規格的NetApp儲存設備之間的相容性。
+. 或者、若要依儲存設備比較元件、請按一下「比較儲存系統」。
+
+
+|===
+| 控制器AFF2XX系列先決條件 
+
+
+| 若要規劃儲存系統的實體位置、請參閱下列各節：電氣需求支援的電源線內建連接埠和纜線 
+|===
+
+
+==== 儲存控制器
+
+請遵循中控制器的實體安裝程序 https://library-clnt.dmz.netapp.com/documentation/docweb/index.html?productID=62331&language=en-US["VA220文件AFF"^]。
+
+
+
+=== NetApp ONTAP 產品9.5
+
+
+
+==== 組態工作表
+
+執行設定指令碼之前、請先完成產品手冊中的組態工作表。組態工作表可在中找到 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ssg/home.html["《軟件安裝指南》（英文）ONTAP"^] （可在中取得 http://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"^]）。下表說明ONTAP 了安裝及組態資訊的功能。
+
+
+NOTE: 此系統是以雙節點無交換式叢集組態設定。
+
+|===
+| 叢集詳細資料 | 叢集詳細資料值 
+
+
+| 叢集節點A IP位址 | \<<var_nodea_mgmt_ip>> 
+
+
+| 叢集節點A網路遮罩 | \<<var_nodea_mgmt_mask>> 
+
+
+| 叢集節點A閘道 | \<<var_nodea_mgmt_gateway>> 
+
+
+| 叢集節點A名稱 | \<<var_nodeA>> 
+
+
+| 叢集節點B IP位址 | \<<var_nodeB_mgmt_ip>> 
+
+
+| 叢集節點B網路遮罩 | \<<var_nodeB_mgmt_mask>> 
+
+
+| 叢集節點B閘道 | \<<var_nodeB_mgmt_gateway>> 
+
+
+| 叢集節點B名稱 | \<<var_nodeB>> 
+
+
+| S29.5 URL ONTAP | \<<var_url_boot_software>> 
+
+
+| 叢集名稱 | \<<var_clustername>> 
+
+
+| 叢集管理IP位址 | \<<var_clustermmgmt_ip>> 
+
+
+| 叢集B閘道 | \<<var_clustermmgmt_gateway>> 
+
+
+| 叢集B網路遮罩 | \<<var_clustermmgmt_mask>> 
+
+
+| 網域名稱 | \<<var_domain_name>> 
+
+
+| DNS伺服器IP（您可以輸入多個） | \<<var_DNs_server_ip>> 
+
+
+| NTP伺服器A IP | << switch-A-ntp >> 
+
+
+| NTP伺服器B IP | <<switch-b-ntp IP >> 
+|===
+
+
+==== 設定節點A
+
+若要設定節點A、請完成下列步驟：
+
+. 連接至儲存系統主控台連接埠。您應該會看到Loader-A提示。但是、如果儲存系統處於重新開機迴圈、請在看到以下訊息時按Ctrl-C退出自動開機迴圈：
++
+....
+Starting AUTOBOOT press Ctrl-C to abort...
+....
+. 允許系統開機。
++
+....
+autoboot
+....
+. 按Ctrl-C進入「開機」功能表。
++
+如果ONTAP 是的話9.5不是要開機的軟體版本、請繼續執行下列步驟以安裝新軟體。如果ONTAP 是的話9.5是要開機的版本、請選取選項8和y以重新開機節點。接著、繼續執行步驟14。
+
+. 若要安裝新軟體、請選取選項「7」。
+. 輸入「y」執行升級。
+. 選取「e0M」作為您要下載的網路連接埠。
+. 輸入「y」立即重新開機。
+. 在各自的位置輸入e0M的IP位址、網路遮罩和預設閘道。
++
+....
+<<var_nodeA_mgmt_ip>> <<var_nodeA_mgmt_mask>> <<var_nodeA_mgmt_gateway>>
+....
+. 輸入找到軟體的URL。
++
+
+NOTE: 此Web伺服器必須可Ping。
+
+. 按Enter輸入使用者名稱、表示沒有使用者名稱。
+. 輸入「y」將新安裝的軟體設為預設值、以供後續重新開機使用。
+. 輸入「y」重新啟動節點。
++
+安裝新軟體時、系統可能會執行BIOS和介面卡的韌體升級、導致重新開機、並在Loader-A提示下停止可能。如果發生這些動作、系統可能會偏離此程序。
+
+. 按Ctrl-C進入「開機」功能表。
+. 選擇選項「4」以進行「乾淨組態」和「初始化所有磁碟」。
+. 輸入「y」將磁碟歸零、重設組態、然後安裝新的檔案系統。
+. 輸入「y」以清除磁碟上的所有資料。
++
+根Aggregate的初始化與建立可能需要90分鐘以上才能完成、視所連接的磁碟數量和類型而定。初始化完成後、儲存系統會重新開機。請注意、SSD初始化所需時間大幅縮短。您可以在節點A的磁碟歸零時繼續進行節點B組態。
+
+. 節點A正在初始化時、請開始設定節點B
+
+
+
+
+==== 設定節點B
+
+若要設定節點B、請完成下列步驟：
+
+. 連接至儲存系統主控台連接埠。您應該會看到Loader-A提示。但是、如果儲存系統處於重新開機迴圈、請在看到以下訊息時按Ctrl-C退出自動開機迴圈：
++
+....
+Starting AUTOBOOT press Ctrl-C to abort...
+....
+. 按Ctrl-C進入「開機」功能表。
++
+....
+autoboot
+....
+. 出現提示時、請按Ctrl-C。
++
+如果ONTAP 是的話9.5不是要開機的軟體版本、請繼續執行下列步驟以安裝新軟體。如果ONTAP 正在開機的版本為「版本9.4」、請選取選項8和y以重新開機節點。接著、繼續執行步驟14。
+
+. 若要安裝新軟體、請選取選項7。
+. 輸入「y」執行升級。
+. 選取「e0M」作為您要下載的網路連接埠。
+. 輸入「y」立即重新開機。
+. 在各自的位置輸入e0M的IP位址、網路遮罩和預設閘道。
++
+....
+<<var_nodeB_mgmt_ip>> <<var_nodeB_mgmt_ip>><<var_nodeB_mgmt_gateway>>
+....
+. 輸入找到軟體的URL。
++
+
+NOTE: 此Web伺服器必須可Ping。
+
++
+....
+<<var_url_boot_software>>
+....
+. 按Enter輸入使用者名稱、表示沒有使用者名稱
+. 輸入「y」將新安裝的軟體設為預設值、以供後續重新開機使用。
+. 輸入「y」重新啟動節點。
++
+安裝新軟體時、系統可能會執行BIOS和介面卡的韌體升級、導致重新開機、並在Loader-A提示下停止可能。如果發生這些動作、系統可能會偏離此程序。
+
+. 按Ctrl-C進入「開機」功能表。
+. 選取選項4進行「乾淨組態」和「初始化所有磁碟」。
+. 輸入「y」將磁碟歸零、重設組態、然後安裝新的檔案系統。
+. 輸入「y」以清除磁碟上的所有資料。
++
+根Aggregate的初始化與建立可能需要90分鐘以上才能完成、視所連接的磁碟數量和類型而定。初始化完成後、儲存系統會重新開機。請注意、SSD初始化所需時間大幅縮短。
+
+
+
+
+
+=== 繼續節點A組態和叢集組態
+
+從連接至儲存控制器A（節點A）主控台連接埠的主控台連接埠程式、執行節點設定指令碼。當第一次在節點上啟動時、會出現此指令碼ONTAP 。
+
+節點和叢集設定程序ONTAP 在更新版9.5中略有變更。叢集設定精靈現在用於設定叢集中的第一個節點、而System Manager則用於設定叢集。
+
+. 依照提示設定節點A
++
+....
+Welcome to the cluster setup wizard.
+You can enter the following commands at any time:
+  "help" or "?" - if you want to have a question clarified,
+  "back" - if you want to change previously answered questions, and
+  "exit" or "quit" - if you want to quit the cluster setup wizard.
+     Any changes you made before quitting will be saved.
+You can return to cluster setup at any time by typing "cluster setup".
+To accept a default or omit a question, do not enter a value.
+This system will send event messages and periodic reports to NetApp Technical Support. To disable this feature, enter
+autosupport modify -support disable
+within 24 hours.
+Enabling AutoSupport can significantly speed problem determination and resolution should a problem occur on your system.
+For further information on AutoSupport, see: http://support.netapp.com/autosupport/
+Type yes to confirm and continue {yes}: yes
+Enter the node management interface port [e0M]:
+Enter the node management interface IP address: <<var_nodeA_mgmt_ip>>
+Enter the node management interface netmask: <<var_nodeA_mgmt_mask>>
+Enter the node management interface default gateway: <<var_nodeA_mgmt_gateway>>
+A node management interface on port e0M with IP address <<var_nodeA_mgmt_ip>> has been created.
+Use your web browser to complete cluster setup by accessing
+https://<<var_nodeA_mgmt_ip>>
+Otherwise, press Enter to complete cluster setup using the command line interface:
+....
+. 瀏覽至節點管理介面的IP位址。
++
+
+NOTE: 也可以使用CLI執行叢集設定。本文件說明使用NetApp System Manager引導式設定的叢集設定。
+
+. 按一下引導式設定以設定叢集。
+. 輸入「」<<var_clustername>>作為叢集名稱、輸入「」<<var_nodeA>>」、然後針對您要設定的每個節點輸入「」。輸入您要用於儲存系統的密碼。選取「無交換器叢集」作為叢集類型。輸入叢集基礎授權。
+. 您也可以輸入叢集、NFS和iSCSI的功能授權。
+. 您會看到一則狀態訊息、指出正在建立叢集。此狀態訊息會循環顯示多個狀態。此程序需要幾分鐘的時間。
+. 設定網路。
++
+.. 取消選取「IP位址範圍」選項。
+.. 在「Cluster Management IP Address（叢集管理IP位址）」欄位中輸入「\<<var_clustermmgmt_ip>>」、在「Netmask（子網路遮罩）」欄位中輸入「\<<var_mgmt_clustergateway>>」、並在「Gateway（閘道）」欄位中輸入「\<<var_mgmt_clustergateway>>」。使用Port（連接埠）欄位中的...選取器選取節點A的e0M
+.. 節點A的節點管理IP已填入。在節點B中輸入「\<<var_nodea_mgmt_ip>>」
+.. 在DNS Domain Name（DNS網域名稱）欄位中輸入「」。在DNS Server IP Address（DNS伺服器IP位址）欄位中輸入「\<<var_DNs_server_ip>>」。
++
+您可以輸入多個DNS伺服器IP位址。
+
+.. 在「Primary NTP Server（主要NTP伺服器）」欄位中輸入「\<<switch-A-ntp－ip>>」。
++
+您也可以輸入替代NTP伺服器為「\<<switch- b-ntp - ip>>」。
+
+
+
+. 設定支援資訊。
++
+.. 如果您的環境需要Proxy才能存取AutoSupport 功能、請在Proxy URL中輸入URL。
+.. 輸入事件通知的SMTP郵件主機和電子郵件地址。
++
+您至少必須先設定事件通知方法、才能繼續進行。您可以選擇任何方法。
+
+
+
+. 當表示叢集組態已完成時、請按一下管理叢集以設定儲存設備。
+
+
+
+
+=== 繼續儲存叢集組態
+
+儲存節點和基礎叢集的組態設定完成後、您可以繼續設定儲存叢集。
+
+
+
+==== 歸零所有備用磁碟
+
+若要將叢集中的所有備用磁碟歸零、請執行下列命令：
+
+....
+disk zerospares
+....
+
+
+==== 設定內建UTA2連接埠特性設定
+
+. 執行「ucadmin show」命令來驗證目前的模式和目前的連接埠類型。
++
+....
+AFFA220-Clus::> ucadmin show
+                       Current  Current    Pending  Pending    Admin
+Node          Adapter  Mode     Type       Mode     Type       Status
+------------  -------  -------  ---------  -------  ---------  -----------
+AFFA220-Clus-01
+              0c       cna      target     -        -          offline
+AFFA220-Clus-01
+              0d       cna      target     -        -          offline
+AFFA220-Clus-01
+              0e       cna      target     -        -          offline
+AFFA220-Clus-01
+              0f       cna      target     -        -          offline
+AFFA220-Clus-02
+              0c       cna      target     -        -          offline
+AFFA220-Clus-02
+              0d       cna      target     -        -          offline
+AFFA220-Clus-02
+              0e       cna      target     -        -          offline
+AFFA220-Clus-02
+              0f       cna      target     -        -          offline
+8 entries were displayed.
+....
+. 驗證使用中連接埠的目前模式為「cna」、且目前類型設定為「target」。如果沒有、請執行下列命令來變更連接埠特性設定：
++
+....
+ucadmin modify -node <home node of the port> -adapter <port name> -mode cna -type target
+....
++
+連接埠必須離線才能執行上一個命令。若要使連接埠離線、請執行下列命令：
+
++
+....
+network fcp adapter modify -node <home node of the port> -adapter <port name> -state down
+....
++
+
+NOTE: 如果您變更了連接埠特性設定、則必須重新啟動每個節點、變更才會生效。
+
+
+
+
+
+==== 啟用Cisco探索傳輸協定
+
+若要在NetApp儲存控制器上啟用Cisco探索傳輸協定（CDP）、請執行下列命令：
+
+....
+node run -node * options cdpd.enable on
+....
+
+
+==== 在所有乙太網路連接埠上啟用連結層探索傳輸協定
+
+執行下列命令、在儲存設備和網路交換器之間交換連結層探索傳輸協定（LLDP）鄰近資訊。此命令可在叢集中所有節點的所有連接埠上啟用LLDP。
+
+....
+node run * options lldp.enable on
+....
+
+
+==== 重新命名管理邏輯介面
+
+若要重新命名管理邏輯介面（LIF）、請完成下列步驟：
+
+. 顯示目前的管理LIF名稱。
++
+....
+network interface show –vserver <<clustername>>
+....
+. 重新命名叢集管理LIF。
++
+....
+network interface rename –vserver <<clustername>> –lif cluster_setup_cluster_mgmt_lif_1 –newname cluster_mgmt
+....
+. 重新命名節點B管理LIF。
++
+....
+network interface rename -vserver <<clustername>> -lif cluster_setup_node_mgmt_lif_AFF A220_A_1 - newname AFF A220-01_mgmt1
+....
+
+
+
+
+==== 設定叢集管理的自動還原
+
+在叢集管理介面上設定「自動回復」參數。
+
+....
+network interface modify –vserver <<clustername>> -lif cluster_mgmt –auto-revert true
+....
+
+
+==== 設定服務處理器網路介面
+
+若要為每個節點上的服務處理器指派靜態IPv6位址、請執行下列命令：
+
+....
+system service-processor network modify –node <<var_nodeA>> -address-family IPv4 –enable true – dhcp none –ip-address <<var_nodeA_sp_ip>> -netmask <<var_nodeA_sp_mask>> -gateway <<var_nodeA_sp_gateway>>
+system service-processor network modify –node <<var_nodeB>> -address-family IPv4 –enable true – dhcp none –ip-address <<var_nodeB_sp_ip>> -netmask <<var_nodeB_sp_mask>> -gateway <<var_nodeB_sp_gateway>>
+....
+
+NOTE: 服務處理器IP位址應與節點管理IP位址位於相同的子網路中。
+
+
+
+==== 在ONTAP 不支援的情況下啟用儲存容錯移轉
+
+若要確認已啟用儲存容錯移轉、請在容錯移轉配對中執行下列命令：
+
+. 驗證儲存容錯移轉的狀態。
++
+....
+storage failover show
+....
++
+無論是「」或「」、「」、「」都必須能夠執行接管。如果節點可以執行接管、請前往步驟3。
+
+. 在兩個節點之一上啟用容錯移轉。
++
+....
+storage failover modify -node <<var_nodeA>> -enabled true
+....
+. 驗證雙節點叢集的HA狀態。
++
+
+NOTE: 此步驟不適用於具有兩個以上節點的叢集。
+
++
+....
+cluster ha show
+....
+. 如果已設定高可用度、請前往步驟6。如果已設定高可用度、您會在發出命令時看到下列訊息：
++
+....
+High Availability Configured: true
+....
+. 僅為雙節點叢集啟用HA模式。
++
+請勿針對具有兩個以上節點的叢集執行此命令、因為它會導致容錯移轉問題。
+
++
+....
+cluster ha modify -configured true
+Do you want to continue? {y|n}: y
+....
+. 確認硬體輔助已正確設定、並視需要修改合作夥伴IP位址。
++
+....
+storage failover hwassist show
+....
++
+「Keeping Alive Status：錯誤：Not receive hwassist Keeping Alive alerts from Partner（保持活動狀態：錯誤：未收到合作夥伴的HWassist Keepive警示）」訊息表示未設定硬體輔助。執行下列命令以設定硬體輔助。
+
++
+....
+storage failover modify –hwassist-partner-ip <<var_nodeB_mgmt_ip>> -node <<var_nodeA>>
+storage failover modify –hwassist-partner-ip <<var_nodeA_mgmt_ip>> -node <<var_nodeB>>
+....
+
+
+
+
+==== 在ONTAP 支援範圍內建立巨型框架MTU廣播網域
+
+若要建立MTU為9000的資料廣播網域、請執行下列命令：
+
+....
+broadcast-domain create -broadcast-domain Infra_NFS -mtu 9000
+broadcast-domain create -broadcast-domain Infra_iSCSI-A -mtu 9000
+broadcast-domain create -broadcast-domain Infra_iSCSI-B -mtu 9000
+....
+
+
+==== 從預設廣播網域移除資料連接埠
+
+10GbE資料連接埠用於iSCSI/NFS流量、這些連接埠應從預設網域中移除。不使用連接埠e0e和e0f、也應從預設網域中移除。
+
+若要從廣播網域移除連接埠、請執行下列命令：
+
+....
+broadcast-domain remove-ports -broadcast-domain Default -ports <<var_nodeA>>:e0c, <<var_nodeA>>:e0d, <<var_nodeA>>:e0e, <<var_nodeA>>:e0f, <<var_nodeB>>:e0c, <<var_nodeB>>:e0d, <<var_nodeA>>:e0e, <<var_nodeA>>:e0f
+....
+
+
+==== 停用UTA2連接埠上的流程控制
+
+在連接至外部裝置的所有UTA2連接埠上、停用流程控制是NetApp的最佳實務做法。若要停用流程控制、請執行下列命令：
+
+....
+net port modify -node <<var_nodeA>> -port e0c -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier. Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeA>> -port e0d -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier. Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeA>> -port e0e -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier. Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeA>> -port e0f -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier. Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeB>> -port e0c -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier. Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeB>> -port e0d -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier. Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeB>> -port e0e -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier. Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeB>> -port e0f -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier. Do you want to continue? {y|n}: y
+....
+
+NOTE: Cisco UCS Mini直接連線ONTAP 至不支援LACP。
+
+
+
+==== 在NetApp ONTAP 產品架構中設定巨型框架
+
+若要將ONTAP 靜態網路連接埠設定為使用巨型框架（通常MTU為9、000位元組）、請從叢集Shell執行下列命令：
+
+....
+AFF A220::> network port modify -node node_A -port e0e -mtu 9000
+Warning: This command will cause a several second interruption of service on this network port.
+Do you want to continue? {y|n}: y
+AFF A220::> network port modify -node node_B -port e0e -mtu 9000
+Warning: This command will cause a several second interruption of service on this network port.
+Do you want to continue? {y|n}: y
+AFF A220::> network port modify -node node_A -port e0f -mtu 9000
+Warning: This command will cause a several second interruption of service on this network port.
+Do you want to continue? {y|n}: y
+AFF A220::> network port modify -node node_B -port e0f -mtu 9000
+Warning: This command will cause a several second interruption of service on this network port.
+Do you want to continue? {y|n}: y
+....
+
+
+==== 在ONTAP 不支援的環境中建立VLAN
+
+若要在ONTAP 不支援的情況下建立VLAN、請完成下列步驟：
+
+. 建立NFS VLAN連接埠、並將其新增至資料廣播網域。
++
+....
+network port vlan create –node <<var_nodeA>> -vlan-name e0e-<<var_nfs_vlan_id>>
+network port vlan create –node <<var_nodeA>> -vlan-name e0f-<<var_nfs_vlan_id>>
+network port vlan create –node <<var_nodeB>> -vlan-name e0e-<<var_nfs_vlan_id>>
+network port vlan create –node <<var_nodeB>> -vlan-name e0f-<<var_nfs_vlan_id>>
+broadcast-domain add-ports -broadcast-domain Infra_NFS -ports <<var_nodeA>>: e0e- <<var_nfs_vlan_id>>, <<var_nodeB>>: e0e-<<var_nfs_vlan_id>> , <<var_nodeA>>:e0f- <<var_nfs_vlan_id>>, <<var_nodeB>>:e0f-<<var_nfs_vlan_id>>
+....
+. 建立iSCSI VLAN連接埠、並將其新增至資料廣播網域。
++
+....
+network port vlan create –node <<var_nodeA>> -vlan-name e0e-<<var_iscsi_vlan_A_id>>
+network port vlan create –node <<var_nodeA>> -vlan-name e0f-<<var_iscsi_vlan_B_id>>
+network port vlan create –node <<var_nodeB>> -vlan-name e0e-<<var_iscsi_vlan_A_id>>
+network port vlan create –node <<var_nodeB>> -vlan-name e0f-<<var_iscsi_vlan_B_id>>
+broadcast-domain add-ports -broadcast-domain Infra_iSCSI-A -ports <<var_nodeA>>: e0e- <<var_iscsi_vlan_A_id>>,<<var_nodeB>>: e0e-<<var_iscsi_vlan_A_id>>
+broadcast-domain add-ports -broadcast-domain Infra_iSCSI-B -ports <<var_nodeA>>: e0f- <<var_iscsi_vlan_B_id>>,<<var_nodeB>>: e0f-<<var_iscsi_vlan_B_id>>
+....
+. 建立管理VLAN連接埠。
++
+....
+network port vlan create –node <<var_nodeA>> -vlan-name e0m-<<mgmt_vlan_id>>
+network port vlan create –node <<var_nodeB>> -vlan-name e0m-<<mgmt_vlan_id>>
+....
+
+
+
+
+==== 在ONTAP 功能不全的環境中建立集合體
+
+包含根磁碟區的Aggregate會在ONTAP 執行功能不全的設定程序時建立。若要建立其他Aggregate、請判斷Aggregate名稱、要在其中建立集合體的節點、以及其中包含的磁碟數目。
+
+若要建立Aggregate、請執行下列命令：
+
+....
+aggr create -aggregate aggr1_nodeA -node <<var_nodeA>> -diskcount <<var_num_disks>>
+aggr create -aggregate aggr1_nodeB -node <<var_nodeB>> -diskcount <<var_num_disks>>
+....
+在組態中保留至少一個磁碟（選取最大的磁碟）作為備援磁碟。最佳實務做法是每種磁碟類型和大小至少要有一個備援磁碟機。
+
+從五個磁碟開始、您可以在需要額外儲存設備時、將磁碟新增至集合體。
+
+在磁碟零位調整完成之前、無法建立集合體。執行「aggr show」命令以顯示集合建立狀態。在「aggr1_nodeA」上線之前、請勿繼續。
+
+
+
+==== 在ONTAP 中設定時區
+
+若要設定時間同步並設定叢集上的時區、請執行下列命令：
+
+....
+timezone <<var_timezone>>
+....
+
+NOTE: 例如、美國東部的時區為「America/New_York」。開始輸入時區名稱後、按下分頁鍵查看可用選項。
+
+
+
+==== 在ONTAP SURE中設定SNMP
+
+若要設定SNMP、請完成下列步驟：
+
+. 設定SNMP基本資訊、例如位置和聯絡人。在輪詢時、此資訊會顯示為SNMP中的「最重要位置」和「最重要聯絡人」變數。
++
+....
+snmp contact <<var_snmp_contact>>
+snmp location “<<var_snmp_location>>”
+snmp init 1
+options snmp.enable on
+....
+. 設定SNMP設陷以傳送至遠端主機。
++
+....
+snmp traphost add <<var_snmp_server_fqdn>>
+....
+
+
+
+
+==== 在ONTAP 功能不均的情況下設定SNMPv1
+
+若要設定SNMPv1、請設定稱為社群的共用秘密純文字密碼。
+
+....
+snmp community add ro <<var_snmp_community>>
+....
+
+NOTE: 請謹慎使用「全部刪除NMP社群」命令。如果其他監控產品使用社群字串、此命令會移除這些字串。
+
+
+
+==== 在ONTAP 功能不均的情況下設定v3
+
+v3要求您定義及設定使用者進行驗證。若要設定v3、請完成下列步驟：
+
+. 執行「安全性snmpusers'」命令以檢視引擎ID。
+. 建立名為「shnmpv3user"的使用者。
++
+....
+security login create -username snmpv3user -authmethod usm -application snmp
+....
+. 輸入驗證實體的引擎ID、然後選取「md5」作為驗證傳輸協定。
+. 出現提示時、請輸入驗證傳輸協定的最小長度為8個字元的密碼。
+. 選擇「des」作為隱私權傳輸協定。
+. 出現提示時、請為隱私權傳輸協定輸入八個字元的最小長度密碼。
+
+
+
+
+==== 在AutoSupport 不支援的情況下設定支援HTTPS ONTAP
+
+NetApp AutoSupport 解決方案工具會透過HTTPS將支援摘要資訊傳送給NetApp。若要設定AutoSupport 靜態、請執行下列命令：
+
+....
+system node autosupport modify -node * -state enable –mail-hosts <<var_mailhost>> -transport https -support enable -noteto <<var_storage_admin_email>>
+....
+
+
+==== 建立儲存虛擬機器
+
+若要建立基礎架構儲存虛擬機器（SVM）、請完成下列步驟：
+
+. 執行「vserver create」命令。
++
+....
+vserver create –vserver Infra-SVM –rootvolume rootvol –aggregate aggr1_nodeA –rootvolume- security-style unix
+....
+. 將資料Aggregate新增至NetApp VSC的基礎架構VM Aggregate清單。
++
+....
+vserver modify -vserver Infra-SVM -aggr-list aggr1_nodeA,aggr1_nodeB
+....
+. 從SVM移除未使用的儲存傳輸協定、留下NFS和iSCSI。
++
+....
+vserver remove-protocols –vserver Infra-SVM -protocols cifs,ndmp,fcp
+....
+. 在基礎架構SVM SVM中啟用並執行NFS傳輸協定。
++
+....
+nfs create -vserver Infra-SVM -udp disabled
+....
+. 開啟NetApp NFS VAAI外掛程式的「VM vStorage」參數。然後、確認NFS已設定完成。
++
+....
+vserver nfs modify –vserver Infra-SVM –vstorage enabled
+vserver nfs show
+....
++
+
+NOTE: 命令會在命令列中以「vserver」為前置、因為SVM先前稱為伺服器
+
+
+
+
+
+==== 在ONTAP SURE中設定NFSv3
+
+下表列出完成此組態所需的資訊。
+
+|===
+| 詳細資料 | 詳細資料值 
+
+
+| ESXi裝載NFS IP位址 | \<<var_esxi_Hosta_nfs_ip>> 
+
+
+| ESXi主機B NFS IP位址 | \<<var_esxi_hostb_nfs_ip>> 
+|===
+若要在SVM上設定NFS、請執行下列命令：
+
+. 在預設匯出原則中為每個ESXi主機建立規則。
+. 針對所建立的每個ESXi主機、指派規則。每個主機都有自己的規則索引。第一部ESXi主機的規則索引為1、第二部ESXi主機的規則索引為2、依此類推。
++
+....
+vserver export-policy rule create –vserver Infra-SVM -policyname default –ruleindex 1 –protocol nfs -clientmatch <<var_esxi_hostA_nfs_ip>> -rorule sys –rwrule sys -superuser sys –allow-suid falsevserver export-policy rule create –vserver Infra-SVM -policyname default –ruleindex 2 –protocol nfs -clientmatch <<var_esxi_hostB_nfs_ip>> -rorule sys –rwrule sys -superuser sys –allow-suid false
+vserver export-policy rule show
+....
+. 將匯出原則指派給基礎架構SVM根Volume。
++
+....
+volume modify –vserver Infra-SVM –volume rootvol –policy default
+....
++
+
+NOTE: 如果您選擇在設定vSphere之後安裝匯出原則、NetApp VSC會自動處理匯出原則。如果未安裝、則必須在新增其他Cisco UCS B系列伺服器時建立匯出原則規則。
+
+
+
+
+
+==== 在ONTAP 不支援的環境中建立iSCSI服務
+
+若要建立iSCSI服務、請完成下列步驟：
+
+. 在SVM上建立iSCSI服務。此命令也會啟動iSCSI服務、並設定SVM的iSCSI合格名稱（IQN）。確認iSCSI已設定。
++
+....
+iscsi create -vserver Infra-SVM
+iscsi show
+....
+
+
+
+
+==== 在SVM根磁碟區ONTAP 建立負載共享鏡像
+
+若要在ONTAP 效益管理系統中建立SVM根磁碟區的負載共享鏡像、請完成下列步驟：
+
+. 在每個節點上建立一個磁碟區、做為基礎架構SVM根磁碟區的負載共用鏡像。
++
+....
+volume create –vserver Infra_Vserver –volume rootvol_m01 –aggregate aggr1_nodeA –size 1GB –type DPvolume create –vserver Infra_Vserver –volume rootvol_m02 –aggregate aggr1_nodeB –size 1GB –type DP
+....
+. 建立每15分鐘更新一次根磁碟區鏡射關係的工作排程。
++
+....
+job schedule interval create -name 15min -minutes 15
+....
+. 建立鏡射關係。
++
+....
+snapmirror create -source-path Infra-SVM:rootvol -destination-path Infra-SVM:rootvol_m01 -type LS -schedule 15min
+snapmirror create -source-path Infra-SVM:rootvol -destination-path Infra-SVM:rootvol_m02 -type LS -schedule 15min
+....
+. 初始化鏡射關係、並確認已建立鏡射關係。
++
+....
+snapmirror initialize-ls-set -source-path Infra-SVM:rootvol snapmirror show
+....
+
+
+
+
+==== 設定ONTAP HTTPS存取功能
+
+若要設定儲存控制器的安全存取、請完成下列步驟：
+
+. 提高存取憑證命令的權限等級。
++
+....
+set -privilege diag
+Do you want to continue? {y|n}: y
+....
+. 一般而言、自我簽署的憑證已經就緒。執行下列命令來驗證憑證：
++
+....
+security certificate show
+....
+. 對於顯示的每個SVM、憑證一般名稱應與SVM的DNS完整網域名稱（FQDN）相符。這四個預設憑證應該刪除、並由自我簽署的憑證或憑證授權單位的憑證來取代。
++
+在建立憑證之前刪除過期的憑證是最佳做法。執行「安全憑證刪除」命令、刪除過期的憑證。在下列命令中、使用分頁完成功能來選取及刪除每個預設憑證。
+
++
+....
+security certificate delete [TAB] ...
+Example: security certificate delete -vserver Infra-SVM -common-name Infra-SVM -ca Infra-SVM - type server -serial 552429A6
+....
+. 若要產生及安裝自我簽署的憑證、請以一次性命令的形式執行下列命令。為基礎架構虛擬機器和叢集SVM產生伺服器憑證。同樣地、請使用分頁完成功能來協助完成這些命令。
++
+....
+security certificate create [TAB] ...
+Example: security certificate create -common-name infra-svm.netapp.com -type server -size 2048 - country US -state "North Carolina" -locality "RTP" -organization "NetApp" -unit "FlexPod" -email- addr "abc@netapp.com" -expire-days 365 -protocol SSL -hash-function SHA256 -vserver Infra-SVM
+....
+. 若要取得下列步驟所需參數的值、請執行「安全憑證show」命令。
+. 啟用剛使用「伺服器啟用的true」和「用戶端啟用的假」參數建立的每個憑證。同樣地、請使用標籤完成。
++
+....
+security ssl modify [TAB] ...
+Example: security ssl modify -vserver Infra-SVM -server-enabled true -client-enabled false -ca infra-svm.netapp.com -serial 55243646 -common-name infra-svm.netapp.com
+....
+. 設定並啟用SSL和HTTPS存取、以及停用HTTP存取。
++
+....
+system services web modify -external true -sslv3-enabled true
+Warning: Modifying the cluster configuration will cause pending web service requests to be interrupted as the web servers are restarted.
+Do you want to continue {y|n}: y
+System services firewall policy delete -policy mgmt -service http -vserver <<var_clustername>>
+....
++
+
+NOTE: 有些命令會傳回錯誤訊息、指出該項目不存在、這是正常現象。
+
+. 回復至管理權限層級、然後建立設定、讓SVM可供網路使用。
++
+....
+set –privilege admin
+vserver services web modify –name spi|ontapi|compat –vserver * -enabled true
+....
+
+
+
+
+==== 在FlexVol 功能不全的環境中建立NetApp的功能ONTAP
+
+若要建立NetApp FlexVol Ise®磁碟區、請輸入磁碟區名稱、大小及其存在的集合體。建立兩個VMware資料存放區磁碟區和一個伺服器開機磁碟區。
+
+....
+volume create -vserver Infra-SVM -volume infra_datastore_1 -aggregate aggr1_nodeA -size 500GB - state online -policy default -junction-path /infra_datastore_1 -space-guarantee none -percent- snapshot-space 0
+volume create -vserver Infra-SVM -volume infra_datastore_2 -aggregate aggr1_nodeB -size 500GB - state online -policy default -junction-path /infra_datastore_2 -space-guarantee none -percent- snapshot-space 0
+....
+....
+volume create -vserver Infra-SVM -volume infra_swap -aggregate aggr1_nodeA -size 100GB -state online -policy default -juntion-path /infra_swap -space-guarantee none -percent-snapshot-space 0 -snapshot-policy none
+volume create -vserver Infra-SVM -volume esxi_boot -aggregate aggr1_nodeA -size 100GB -state online -policy default -space-guarantee none -percent-snapshot-space 0
+....
+
+
+==== 在ONTAP 支援功能方面啟用重複資料刪除技術
+
+若要一天在適當的磁碟區上啟用重複資料刪除功能、請執行下列命令：
+
+....
+volume efficiency modify –vserver Infra-SVM –volume esxi_boot –schedule sun-sat@0
+volume efficiency modify –vserver Infra-SVM –volume infra_datastore_1 –schedule sun-sat@0
+volume efficiency modify –vserver Infra-SVM –volume infra_datastore_2 –schedule sun-sat@0
+....
+
+
+==== 在ONTAP 功能不均的情況下建立LUN
+
+若要建立兩個開機邏輯單元編號（LUN）、請執行下列命令：
+
+....
+lun create -vserver Infra-SVM -volume esxi_boot -lun VM-Host-Infra-A -size 15GB -ostype vmware - space-reserve disabled
+lun create -vserver Infra-SVM -volume esxi_boot -lun VM-Host-Infra-B -size 15GB -ostype vmware - space-reserve disabled
+....
+
+NOTE: 新增額外的Cisco UCS C系列伺服器時、必須建立額外的開機LUN。
+
+
+
+==== 在ONTAP 不支援的環境中建立iSCSI LIF
+
+下表列出完成此組態所需的資訊。
+
+|===
+| 詳細資料 | 詳細資料值 
+
+
+| 儲存節點A iSCSI LIF01A | \<<var_nodea_iscs_lif01a_ip>> 
+
+
+| 儲存節點A iSCSI LIF01A網路遮罩 | \<<var_nodea_iscs_lif01a_mask>> 
+
+
+| 儲存節點A iSCSI LIF01B | \<<var_nodea_iscs_lif01b_ip>> 
+
+
+| 儲存節點A iSCSI LIF01B網路遮罩 | \<<var_nodea_iscs_lif01b_mask>> 
+
+
+| 儲存節點B iSCSI LIF01A | \<<var_nodeB_iscs_lif01a_ip>> 
+
+
+| 儲存節點B iSCSI LIF01A網路遮罩 | \<<var_nodeB_iscs_lif01a_mask>> 
+
+
+| 儲存節點B iSCSI LIF01B | \<<var_nodeB_iscs_lif01b_ip>> 
+
+
+| 儲存節點B iSCSI LIF01B網路遮罩 | \<<var_nodeB_iscs_lif01b_mask>> 
+|===
+. 在每個節點上建立四個iSCSI生命期、兩個。
++
+....
+network interface create -vserver Infra-SVM -lif iscsi_lif01a -role data -data-protocol iscsi - home-node <<var_nodeA>> -home-port e0e-<<var_iscsi_vlan_A_id>> -address <<var_nodeA_iscsi_lif01a_ip>> -netmask <<var_nodeA_iscsi_lif01a_mask>> –status-admin up – failover-policy disabled –firewall-policy data –auto-revert false
+network interface create -vserver Infra-SVM -lif iscsi_lif01b -role data -data-protocol iscsi - home-node <<var_nodeA>> -home-port e0f-<<var_iscsi_vlan_B_id>> -address <<var_nodeA_iscsi_lif01b_ip>> -netmask <<var_nodeA_iscsi_lif01b_mask>> –status-admin up – failover-policy disabled –firewall-policy data –auto-revert false
+network interface create -vserver Infra-SVM -lif iscsi_lif02a -role data -data-protocol iscsi - home-node <<var_nodeB>> -home-port e0e-<<var_iscsi_vlan_A_id>> -address <<var_nodeB_iscsi_lif01a_ip>> -netmask <<var_nodeB_iscsi_lif01a_mask>> –status-admin up – failover-policy disabled –firewall-policy data –auto-revert false
+network interface create -vserver Infra-SVM -lif iscsi_lif02b -role data -data-protocol iscsi - home-node <<var_nodeB>> -home-port e0f-<<var_iscsi_vlan_B_id>> -address <<var_nodeB_iscsi_lif01b_ip>> -netmask <<var_nodeB_iscsi_lif01b_mask>> –status-admin up – failover-policy disabled –firewall-policy data –auto-revert false
+network interface show
+....
+
+
+
+
+==== 建立ONTAP NFS LIF
+
+下表列出完成此組態所需的資訊。
+
+|===
+| 詳細資料 | 詳細資料值 
+
+
+| 儲存節點A NFS LIF 01 A IP | \<<var_nodea_nfs_lif_01_a_ip>> 
+
+
+| 儲存節點NFS LIF 01網路遮罩 | \<<var_nodea_nfs_lif_01_a_mask>> 
+
+
+| 儲存節點A NFS LIF 01 b IP | \<<var_nodea_nfs_lif_01_b_ip>> 
+
+
+| 儲存節點a NFS LIF 01 b網路遮罩 | \<<var_nodea_nfs_lif_01_b_mask>> 
+
+
+| 儲存節點B NFS LIF 02 A IP | \<<var_nodeB_nfs_lif_02_a_ip>> 
+
+
+| 儲存節點B NFS LIF 02 A網路遮罩 | \<<var_nodeB_nfs_lif_02_a_mask>> 
+
+
+| 儲存節點B NFS LIF 02 b IP | \<<var_nodeB_nfs_lif_02_b_ip>> 
+
+
+| 儲存節點B NFS LIF 02 b網路遮罩 | \<<var_nodeB_nfs_lif_02_b_mask>> 
+|===
+. 建立NFS LIF。
++
+....
+network interface create -vserver Infra-SVM -lif nfs_lif01_a -role data -data-protocol nfs -home- node <<var_nodeA>> -home-port e0e-<<var_nfs_vlan_id>> –address <<var_nodeA_nfs_lif_01_a_ip>> - netmask << var_nodeA_nfs_lif_01_a_mask>> -status-admin up –failover-policy broadcast-domain-wide – firewall-policy data –auto-revert true
+network interface create -vserver Infra-SVM -lif nfs_lif01_b -role data -data-protocol nfs -home- node <<var_nodeA>> -home-port e0f-<<var_nfs_vlan_id>> –address <<var_nodeA_nfs_lif_01_b_ip>> - netmask << var_nodeA_nfs_lif_01_b_mask>> -status-admin up –failover-policy broadcast-domain-wide – firewall-policy data –auto-revert true
+network interface create -vserver Infra-SVM -lif nfs_lif02_a -role data -data-protocol nfs -home- node <<var_nodeB>> -home-port e0e-<<var_nfs_vlan_id>> –address <<var_nodeB_nfs_lif_02_a_ip>> - netmask << var_nodeB_nfs_lif_02_a_mask>> -status-admin up –failover-policy broadcast-domain-wide – firewall-policy data –auto-revert true
+network interface create -vserver Infra-SVM -lif nfs_lif02_b -role data -data-protocol nfs -home- node <<var_nodeB>> -home-port e0f-<<var_nfs_vlan_id>> –address <<var_nodeB_nfs_lif_02_b_ip>> - netmask << var_nodeB_nfs_lif_02_b_mask>> -status-admin up –failover-policy broadcast-domain-wide – firewall-policy data –auto-revert true
+network interface show
+....
+
+
+
+
+==== 新增基礎架構SVM管理員
+
+下表列出完成此組態所需的資訊。
+
+|===
+| 詳細資料 | 詳細資料值 
+
+
+| Vsmgmt IP | \<<var_svm_mgmt_ip>> 
+
+
+| Vsmgmt網路遮罩 | \<<var_svm_mgmt_mask>> 
+
+
+| Vsmgmt預設閘道 | \<<var_svm_mgmt_gateway>> 
+|===
+若要將基礎架構SVM管理員和SVM管理LIF新增至管理網路、請完成下列步驟：
+
+. 執行下列命令：
++
+....
+network interface create –vserver Infra-SVM –lif vsmgmt –role data –data-protocol none –home-node <<var_nodeB>> -home-port e0M –address <<var_svm_mgmt_ip>> -netmask <<var_svm_mgmt_mask>> - status-admin up –failover-policy broadcast-domain-wide –firewall-policy mgmt –auto-revert true
+....
++
+
+NOTE: 此處的SVM管理IP應與儲存叢集管理IP位於相同的子網路中。
+
+. 建立預設路由、以允許SVM管理介面到達外部環境。
++
+....
+network route create –vserver Infra-SVM -destination 0.0.0.0/0 –gateway <<var_svm_mgmt_gateway>> network route show
+....
+. 設定SVM「vsadmin」使用者的密碼、然後解除鎖定使用者。
++
+....
+security login password –username vsadmin –vserver Infra-SVM
+Enter a new password: <<var_password>>
+Enter it again: <<var_password>>
+security login unlock –username vsadmin –vserver
+....
+
+
+
+
+== Cisco UCS伺服器組態
+
+
+
+=== Cisco UCS基礎FlexPod
+
+執行Cisco UCS 6324的初始設定FlexPod 、以利支援各種環境的互連架構。
+
+本節提供使用FlexPod Cisco UCS Manger設定Cisco UCS以在功能豐富的環境中使用的詳細程序。
+
+
+
+=== Cisco UCS網路互連6324 A
+
+Cisco UCS使用存取層網路和伺服器。這款高效能的新一代伺服器系統、可為資料中心提供高度的工作負載敏捷度與擴充性。
+
+Cisco UCS Manager 4.0(1b)支援6324 Fabric互連、可將Fabric互連整合至Cisco UCS機箱、並針對較小的部署環境提供整合式解決方案。Cisco UCS Mini可簡化系統管理、並為低規模部署節省成本。
+
+硬體與軟體元件支援Cisco的統一化架構、可在單一整合式網路卡上執行多種類型的資料中心流量。
+
+
+
+=== 初始系統設定
+
+第一次存取Cisco UCS網域中的網路互連時、設定精靈會提示您輸入設定系統所需的下列資訊：
+
+* 安裝方法（GUI或CLI）
+* 設定模式（從完整系統備份或初始設定還原）
+* 系統組態類型（獨立式或叢集組態）
+* 系統名稱
+* 管理密碼
+* 管理連接埠的IPV4位址和子網路遮罩、或IPv6位址和前置碼
+* 預設閘道IPV4或IPv6位址
+* DNS伺服器的IPV4或IPv6位址
+* 預設網域名稱
+
+
+下表列出在Fabric Interconnect A上完成Cisco UCS初始組態所需的資訊
+
+|===
+| 詳細資料 | 詳細資料/價值 
+
+
+| 系統名稱  | \<<var_UCS叢集名稱>> 
+
+
+| 管理密碼 | \<<var_password >> 
+
+
+| 管理IP位址：網路互連A | \<<var_ucsa_mgmt_ip>> 
+
+
+| 管理網路遮罩：網路互連a | \<<var_ucsa_mgmt_mask>> 
+
+
+| 預設閘道：網路互連A | \<<var_ucsa_mgmt_gateway>> 
+
+
+| 叢集IP位址 | \<<var_UCS叢集_ip>> 
+
+
+| DNS伺服器IP位址 | \<<var_nameserver_ip>> 
+
+
+| 網域名稱 | \<<var_domain_name>> 
+|===
+若要設定Cisco UCS以供FlexPod 在不完整的環境中使用、請完成下列步驟：
+
+. 連接至第一個Cisco UCS 6324 Fabric InterConnect A的主控台連接埠
++
+....
+Enter the configuration method. (console/gui) ? console
+
+  Enter the setup mode; setup newly or restore from backup. (setup/restore) ? setup
+
+  You have chosen to setup a new Fabric interconnect. Continue? (y/n): y
+
+  Enforce strong password? (y/n) [y]: Enter
+
+  Enter the password for "admin":<<var_password>>
+  Confirm the password for "admin":<<var_password>>
+
+  Is this Fabric interconnect part of a cluster(select 'no' for standalone)? (yes/no) [n]: yes
+
+  Enter the switch fabric (A/B) []: A
+
+  Enter the system name: <<var_ucs_clustername>>
+
+  Physical Switch Mgmt0 IP address : <<var_ucsa_mgmt_ip>>
+
+  Physical Switch Mgmt0 IPv4 netmask : <<var_ucsa_mgmt_mask>>
+
+  IPv4 address of the default gateway : <<var_ucsa_mgmt_gateway>>
+
+  Cluster IPv4 address : <<var_ucs_cluster_ip>>
+
+  Configure the DNS Server IP address? (yes/no) [n]: y
+
+       DNS IP address : <<var_nameserver_ip>>
+
+  Configure the default domain name? (yes/no) [n]: y
+Default domain name: <<var_domain_name>>
+
+  Join centralized management environment (UCS Central)? (yes/no) [n]: no
+
+ NOTE: Cluster IP will be configured only after both Fabric Interconnects are initialized. UCSM will be functional only after peer FI is configured in clustering mode.
+
+  Apply and save the configuration (select 'no' if you want to re-enter)? (yes/no): yes
+  Applying configuration. Please wait.
+
+  Configuration file - Ok
+....
+. 檢閱主控台顯示的設定。如果正確、請回答「是」以套用並儲存組態。
+. 等待登入提示、確認組態已儲存。
+
+
+下表列出在Fabric Interconnect B上完成Cisco UCS初始組態所需的資訊
+
+|===
+| 詳細資料 | 詳細資料/價值 
+
+
+| 系統名稱  | \<<var_UCS叢集名稱>> 
+
+
+| 管理密碼 | \<<var_password >> 
+
+
+| 管理IP位址- FI B | \<<var_UCSb_mgmt_ip>> 
+
+
+| 管理Netmask-FI B | \<<var_UCSb_mgmt_mask>> 
+
+
+| 預設閘道- FI B | \<<var_UCSb_mgmt_gateway>> 
+
+
+| 叢集IP位址 | \<<var_UCS叢集_ip>> 
+
+
+| DNS伺服器IP位址 | \<<var_nameserver_ip>> 
+
+
+| 網域名稱 | \<<var_domain_name>> 
+|===
+. 連接至第二個Cisco UCS 6324 Fabric InterConnect B上的主控台連接埠
++
+....
+ Enter the configuration method. (console/gui) ? console
+
+  Installer has detected the presence of a peer Fabric interconnect. This Fabric interconnect will be added to the cluster. Continue (y/n) ? y
+
+  Enter the admin password of the peer Fabric interconnect:<<var_password>>
+    Connecting to peer Fabric interconnect... done
+    Retrieving config from peer Fabric interconnect... done
+    Peer Fabric interconnect Mgmt0 IPv4 Address: <<var_ucsb_mgmt_ip>>
+    Peer Fabric interconnect Mgmt0 IPv4 Netmask: <<var_ucsb_mgmt_mask>>
+    Cluster IPv4 address: <<var_ucs_cluster_address>>
+
+    Peer FI is IPv4 Cluster enabled. Please Provide Local Fabric Interconnect Mgmt0 IPv4 Address
+
+  Physical Switch Mgmt0 IP address : <<var_ucsb_mgmt_ip>>
+
+
+  Apply and save the configuration (select 'no' if you want to re-enter)? (yes/no): yes
+  Applying configuration. Please wait.
+
+  Configuration file - Ok
+....
+. 等待登入提示確認組態已儲存。
+
+
+
+
+=== 登入Cisco UCS Manager
+
+若要登入Cisco Unified Computing System（UCS）環境、請完成下列步驟：
+
+. 開啟網頁瀏覽器、然後瀏覽至Cisco UCS Fabric互連叢集位址。
++
+在配置Cisco UCS Manager的第二個Fabric互連之後、您可能需要等待至少5分鐘。
+
+. 按一下「Launch UCS Manager（啟動UCS管理程式）」連結以啟動Cisco UCS Manager。
+. 接受必要的安全性憑證。
+. 出現提示時、輸入admin作為使用者名稱、然後輸入管理員密碼。
+. 按一下登入以登入Cisco UCS Manager。
+
+
+
+
+=== Cisco UCS Manager軟體版本4.0（1b）
+
+本文件假設使用Cisco UCS Manager軟體版本4.0（1b）。若要升級Cisco UCS Manager軟體和Cisco UCS 6324 Fabric互連軟體、請參閱  https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html["Cisco UCS Manager安裝與升級指南。"^]
+
+
+
+=== 設定Cisco UCS Call Home
+
+Cisco強烈建議您在Cisco UCS Manager中設定「呼叫首頁」。設定「呼叫中心」可加速支援案例的解決。若要設定「來電主頁」、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的「管理」。
+. 選取「全部」>「通訊管理」>「撥打住家電話」。
+. 將狀態變更為「開啟」。
+. 根據您的管理偏好填寫所有欄位、然後按一下「Save changes and OK（儲存變更並確定）」以完成「Call Home（呼叫主頁）」的設定。
+
+
+
+
+=== 新增IP位址區塊以供鍵盤、視訊和滑鼠存取
+
+若要在Cisco UCS環境中建立頻內伺服器鍵盤、視訊、滑鼠（KVM）存取的IP位址區塊、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的LAN。
+. 展開「資源池」>「根」>「IP資源池」。
+. 在IP Pool ext-mgmt上按一下滑鼠右鍵、然後選取Create Block of ipv4 Addresses。
+. 輸入區塊的起始IP位址、所需的IP位址數目、以及子網路遮罩和閘道資訊。
++
+image:express-direct-attach-aff220-deploy_image7.png["錯誤：缺少圖形影像"]
+
+. 按一下「確定」以建立區塊。
+. 在確認訊息中按一下「OK（確定）」。
+
+
+
+
+=== 將Cisco UCS同步至NTP
+
+若要將Cisco UCS環境與Nexus交換器中的NTP伺服器同步、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的「管理」。
+. 展開All（全部）> Time Zone Management（時區管理）。
+. 選取時區。
+. 在「內容」窗格中、於「時區」功能表中選取適當的時區。
+. 按一下儲存變更、然後按一下確定。
+. 按一下新增NTP伺服器。
+. 輸入「<switch-A-ntp-ip>或<Nexus A-mgmt-ip>'」、然後按一下「OK（確定）」。按一下「確定」。
++
+image:express-direct-attach-aff220-deploy_image8.png["錯誤：缺少圖形影像"]
+
+. 按一下新增NTP伺服器。
+. 輸入「<switch-b-ntp-ip>'或<Nexus B-mgmt-ip>'、然後按一下「OK（確定）」。按一下確認上的「OK（確定）」。
++
+image:express-direct-attach-aff220-deploy_image9.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 編輯機箱探索原則
+
+設定探索原則可簡化Cisco UCS B系列機箱的新增作業、以及其他架構延伸器的新增作業、以進一步提升Cisco UCS C系列連線能力。若要修改機箱探索原則、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的「Equipment（設備）」、然後在第二份清單中選取「Equipment（設備）」。
+. 在右窗格中、選取原則索引標籤。
+. 在「Global Policies（全球政策）」下、將「Chassis/FEX Discovery Policy（機箱/ FEX探索政策）」設定為符合機箱或光纖擴充器（FEXes）與光纖互連之間纜線的最小上行鏈路連接埠數量。
+. 將連結群組偏好設定設為連接埠通道。如果正在設定的環境包含大量的多點傳送流量、請將多點傳送硬體雜湊設定設為已啟用。
+. 按一下儲存變更。
+. 按一下「確定」。
+
+
+
+
+=== 啟用伺服器、上行鏈路和儲存連接埠
+
+若要啟用伺服器和上行鏈路連接埠、請完成下列步驟：
+
+. 在Cisco UCS Manager的導覽窗格中、選取設備索引標籤。
+. 展開「Equipment（設備）」>「Fabric Interconnects（光纖互連）」>「Fabric Interconnect A（光纖互連
+. 展開乙太網路連接埠。
+. 選取連接至Cisco Nexus 31108交換器的連接埠1和2、按一下滑鼠右鍵、然後選取「Configure as Uplink Port（設定為上行鏈路連接埠）」。
+. 按一下「Yes（是）」以確認上行鏈路連接埠、然後按一下「OK
+. 選取連接至NetApp儲存控制器的連接埠3和4、按一下滑鼠右鍵、然後選取「Configure as Appliance Port（設定為應用裝置連接埠）」。
+. 按一下「是」確認應用裝置連接埠。
+. 在Configure as Appliance Port（設定為應用裝置連接埠）視窗中、按一下OK（確定） 
+. 按一下「確定」以確認。
+. 在左窗格中、選取「Fabric Interconnect A（光纖互連A）」下的「固定模組」 
+. 在「Ethernet Portes（乙太網路連接埠）」索引標籤中、確認「If role（如果角色）」欄中的連接埠已正確設定。如果擴充性連接埠上已設定任何連接埠C系列伺服器、請按一下該連接埠以驗證連接埠的連線能力。
++
+image:express-direct-attach-aff220-deploy_image10.png["錯誤：缺少圖形影像"]
+
+. 展開「Equipment（設備）」>「Fabric Interconnects（光纖互連）」>「Fabric Interconnect B（光纖互連
+. 展開乙太網路連接埠。
+. 選取連接至Cisco Nexus 31108交換器的乙太網路連接埠1和2、按一下滑鼠右鍵、然後選取「Configure as Uplink Port（設定為上行鏈路連接埠）」。
+. 按一下「Yes（是）」以確認上行鏈路連接埠、然後按一下「OK
+. 選取連接至NetApp儲存控制器的連接埠3和4、按一下滑鼠右鍵、然後選取「Configure as Appliance Port（設定為應用裝置連接埠）」。
+. 按一下「是」確認應用裝置連接埠。
+. 在Configure as Appliance Port（設定為應用裝置連接埠）視窗中、按一下OK（確定）
+. 按一下「確定」以確認。
+. 在左窗格中、選取「Fabric Interconnect B（光纖互連B）」下的「固定模組」 
+. 在「Ethernet Portes（乙太網路連接埠）」索引標籤中、確認「If role（如果角色）」欄中的連接埠已正確設定。如果擴充性連接埠上已設定任何連接埠C系列伺服器、請按一下該連接埠來驗證連接埠的連線能力。
++
+image:express-direct-attach-aff220-deploy_image11.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 建立Cisco Nexus 31108交換器的上行鏈路連接埠通道
+
+若要在Cisco UCS環境中設定必要的連接埠通道、請完成下列步驟：
+
+. 在Cisco UCS Manager中、選取導覽窗格中的LAN索引標籤。
++
+
+NOTE: 在此程序中、建立了兩個連接埠通道：一個從Fabric A連接至Cisco Nexus 31108交換器、另一個從Fabric B連接至Cisco Nexus 31108交換器。如果您使用的是標準交換器、請相應地修改此程序。如果您在Fabric Interconnects上使用1 Gigabit乙太網路（1GbE）交換器和GLC-T SFP、則Fabric Interconnects中乙太網路連接埠1/1和1/2的介面速度必須設定為1Gbps。
+
+. 在LAN > LAN Cloud下、展開Fabric A樹狀結構。
+. 在連接埠通道上按一下滑鼠右鍵。
+. 選取建立連接埠通道。
+. 輸入13作為連接埠通道的唯一ID。
+. 輸入vPC-13-Nexus作為連接埠通道名稱。
+. 按一下「下一步」
++
+image:express-direct-attach-aff220-deploy_image12.png["錯誤：缺少圖形影像"]
+
+. 選取要新增至連接埠通道的下列連接埠：
++
+.. 插槽ID 1和連接埠1
+.. 插槽ID 1和連接埠2
+
+
+. 按一下>>將連接埠新增至連接埠通道。
+. 按一下「Finish（完成）」以建立連接埠通道。按一下「確定」。
+. 在「連接埠通道」下、選取新建立的連接埠通道。
++
+連接埠通道的整體狀態應為「up」（正常）。
+
+. 在導覽窗格的「LAN」>「LAN Cloud」下、展開「Fabric B」樹狀結構。
+. 在連接埠通道上按一下滑鼠右鍵。
+. 選取建立連接埠通道。
+. 輸入14作為連接埠通道的唯一ID。
+. 輸入vPC-14-Nexus作為連接埠通道名稱。按一下「下一步」
+. 選取要新增至連接埠通道的下列連接埠：
++
+.. 插槽ID 1和連接埠1
+.. 插槽ID 1和連接埠2
+
+
+. 按一下>>將連接埠新增至連接埠通道。
+. 按一下「Finish（完成）」以建立連接埠通道。按一下「確定」。
+. 在「連接埠通道」下、選取新建立的連接埠通道。
+. 連接埠通道的整體狀態應為「up」（正常）。
+
+
+
+
+=== 建立組織（選用）
+
+組織用於組織資源、並限制對IT組織內各種群組的存取、進而實現多租戶共享運算資源。
+
+
+NOTE: 雖然本文件並未假設組織使用、但本程序提供建立組織的指示。
+
+若要在Cisco UCS環境中設定組織、請完成下列步驟：
+
+. 在Cisco UCS Manager中、從視窗頂端工具列的「New（新增）」功能表中、選取「Create Organization（建立組織）」。
+. 輸入組織名稱。
+. 選用：輸入組織的說明。按一下「確定」。
+. 在確認訊息中按一下「OK（確定）」。
+
+
+
+
+=== 設定儲存應用裝置連接埠和儲存VLAN
+
+若要設定儲存應用裝置連接埠和儲存VLAN、請完成下列步驟：
+
+. 在Cisco UCS Manager中、選取LAN索引標籤。
+. 展開應用裝置雲端。
+. 在應用裝置雲端下的VLAN上按一下滑鼠右鍵。
+. 選取「建立VLAN」。
+. 輸入NFS-VLAN做為基礎架構NFS VLAN的名稱。
+. 保持選取「Common（一般）」/「Global（全
+. 輸入「」<<var_nfs_vlan_id>>作為VLAN ID。
+. 將「Sharing Type（共用類型）」設為「None（無
++
+image:express-direct-attach-aff220-deploy_image13.jpeg["錯誤：缺少圖形影像"]
+
+. 按一下「確定」、然後再按一下「確定」以建立VLAN。
+. 在應用裝置雲端下的VLAN上按一下滑鼠右鍵。
+. 選取「建立VLAN」。
+. 輸入isciSCSI-A-VLAN作為基礎架構iSCSI Fabric A VLAN的名稱。
+. 保持選取「Common（一般）」/「Global（全
+. 在VLAN ID中輸入「\<<var_iscsiscsa-a_vlan_id>>」。
+. 按一下「確定」、然後再按一下「確定」以建立VLAN。
+. 在應用裝置雲端下的VLAN上按一下滑鼠右鍵。
+. 選取「建立VLAN」。
+. 輸入isciSCSI-B-VLAN作為基礎架構iSCSI Fabric B VLAN的名稱。
+. 保持選取「Common（一般）」/「Global（全
+. 在VLAN ID中輸入「\<<var_iSCSI-b_vlan_id>>_'。
+. 按一下「確定」、然後再按一下「確定」以建立VLAN。
+. 在應用裝置雲端下的VLAN上按一下滑鼠右鍵。
+. 選取「建立VLAN」。
+. 輸入Native VLAN做為原生VLAN的名稱。
+. 保持選取「Common（一般）」/「Global（全
+. 在VLAN ID中輸入「」。
+. 按一下「確定」、然後再按一下「確定」以建立VLAN。
++
+image:express-direct-attach-aff220-deploy_image14.png["錯誤：缺少圖形影像"]
+
+. 在導覽窗格的「LAN」>「Policies」下、展開「Appliance」、然後在「Network Control Policies」（網路控制原則）上按一下滑鼠右鍵。
+. 選取「建立網路控制原則」。
+. 將原則命名為「Enable_CDP_LLPD」、然後選取CDP旁的「已啟用」。
+. 啟用LLDP的傳輸和接收功能。
++
+image:express-direct-attach-aff220-deploy_image15.png["錯誤：缺少圖形影像"]
+
+. 按一下「確定」、然後再按一下「確定」以建立原則。
+. 在導覽窗格的「LAN」>「應用裝置雲端」下、展開「Fabric A」樹狀結構。
+. 展開介面。
+. 選取應用裝置介面1/3。
+. 在「User Label（使用者標籤）」欄位中、輸入指出儲存控制器連接埠的資訊、例如「<storage _controller _01_name>:e0e」。按一下「Save changes and OK（儲存變更並確定
+. 選取「Enable（啟用）CDP網路控制原則」、然後選取「Save changes（儲存變更）」和「OK（確定）」。
+. 在VLAN下、選取isciSCSI-A-VLAN、NFS VLAN和原生VLAN。將Native VLAN設為原生VLAN。清除預設的VLAN選擇。
+. 按一下「Save changes and OK（儲存變更並確定
++
+image:express-direct-attach-aff220-deploy_image16.png["錯誤：缺少圖形影像"]
+
+. 在「Fabric A（結構A）」下選取「Appliance介面1/4
+. 在「User Label（使用者標籤）」欄位中、輸入指出儲存控制器連接埠的資訊、例如「<storage _controller _02_name>:e0e」。按一下「Save changes and OK（儲存變更並確定
+. 選取「Enable（啟用）CDP網路控制原則」、然後選取「Save changes（儲存變更）」和「OK（確定）」。
+. 在VLAN下、選取isciSCSI-A-VLAN、NFS VLAN和原生VLAN。
+. 將Native VLAN設為原生VLAN。 
+. 清除預設的VLAN選擇。
+. 按一下「Save changes and OK（儲存變更並確定
+. 在導覽窗格的「LAN」>「應用裝置雲端」下、展開「Fabric B」樹狀結構。
+. 展開介面。
+. 選取應用裝置介面1/3。
+. 在「User Label（使用者標籤）」欄位中、輸入指出儲存控制器連接埠的資訊、例如「<storage _controller _01_name>:e0f'（儲存控制器名稱>:e0f）」。按一下「Save changes and OK（儲存變更並確定
+. 選取「Enable（啟用）CDP網路控制原則」、然後選取「Save changes（儲存變更）」和「OK（確定）」。
+. 在「VLAN」下、選取「iSCSI-B-VLAN」、「NFS VLAN」和「原生VLAN」。將Native VLAN設為原生VLAN。取消選取預設VLAN。
++
+image:express-direct-attach-aff220-deploy_image17.png["錯誤：缺少圖形影像"]
+
+. 按一下「Save changes and OK（儲存變更並確定
+. 在「Fabric B」下選取「Appliance介面1/4」
+. 在「User Label（使用者標籤）」欄位中、輸入指出儲存控制器連接埠的資訊、例如「<storage _controller _02_name>:e0f'（儲存控制器名稱>:e0f）」。按一下「Save changes and OK（儲存變更並確定
+. 選取「Enable（啟用）CDP網路控制原則」、然後選取「Save changes（儲存變更）」和「OK（確定）」。
+. 在「VLAN」下、選取「iSCSI-B-VLAN」、「NFS VLAN」和「原生VLAN」。將Native VLAN設為原生VLAN。取消選取預設VLAN。
+. 按一下「Save changes and OK（儲存變更並確定
+
+
+
+
+=== 在Cisco UCS架構中設定巨型框架
+
+若要在Cisco UCS網路中設定巨型框架並啟用服務品質、請完成下列步驟：
+
+. 在Cisco UCS Manager的導覽窗格中、按一下LAN索引標籤。
+. 選取「LAN」>「LAN Cloud」>「QoS System Class」。
+. 在右窗格中、按一下「General（一般）」索引標籤。
+. 在「盡力」列的MTU欄下方方塊中、輸入9216。
++
+image:express-direct-attach-aff220-deploy_image18.png["錯誤：缺少圖形影像"]
+
+. 按一下儲存變更。
+. 按一下「確定」。
+
+
+
+
+=== 認可Cisco UCS機箱
+
+若要確認所有Cisco UCS機箱、請完成下列步驟：
+
+. 在Cisco UCS Manager中、選取設備索引標籤、然後展開右側的設備索引標籤。
+. 展開「設備」>「機箱」。
+. 在「Actions for Chassis 1（機箱1的動作）」中、選取「Acknowledge
+. 按一下「OK（確定）」、然後按一下「OK（確定）」以完成確認機箱
+. 按一下「Close（關閉）」以關閉「Properties（內容）」
+
+
+
+
+=== 載入Cisco UCS 4.0（1b）韌體映像
+
+若要將Cisco UCS Manager軟體和Cisco UCS Fabric互連軟體升級至4.0版（1b）、請參閱 https://www.cisco.com/en/US/products/ps10281/prod_installation_guides_list.html["Cisco UCS Manager安裝與升級指南"^]。
+
+
+
+=== 建立主機韌體套件
+
+韌體管理原則可讓系統管理員針對特定的伺服器組態選取對應的套件。這些原則通常包括介面卡、BIOS、主機板控制器、FC介面卡、主機匯流排介面卡（HBA）選項ROM和儲存控制器內容等套件。
+
+若要在Cisco UCS環境中建立特定伺服器組態的韌體管理原則、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的「Servers（伺服器）」。
+. 選取「原則」>「根」。
+. 展開主機韌體套件。
+. 選取「預設」。
+. 在「動作」窗格中、選取「修改套件版本」。
+. 為兩個刀鋒封裝選取版本4.0(1b)。
++
+image:express-direct-attach-aff220-deploy_image19.png["錯誤：缺少圖形影像"]
+
+. 按一下「確定」、然後再按一下「確定」以修改主機韌體套件。
+
+
+
+
+=== 建立MAC位址集區
+
+若要為Cisco UCS環境設定必要的MAC位址集區、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的LAN。
+. 選取「資源池」>「根目錄」。
++
+在此程序中、會建立兩個MAC位址集區、每個交換網路一個。
+
+. 在根組織下的MAC Pool上按一下滑鼠右鍵。
+. 選取「建立MAC集區」以建立MAC位址集區。
+. 輸入「MAC位址集區A」作為MAC位址集區的名稱。
+. 選用：輸入MAC集區的說明。
+. 選取連續作為指派順序選項。按一下「下一步」
+. 按一下「新增」
+. 指定起始MAC位址。
++
+
+NOTE: 對於此解決方案、建議將0A放在起始MAC位址的下一個到最後一個八位元組中、以將所有的MAC位址識別為結構A位址。FlexPod在我們的範例中、我們也舉出了內嵌Cisco UCS網域編號資訊的範例、提供我們00：25：B5：32：0A：00做為第一個MAC位址。
+
+. 指定一個足以支援可用刀鋒伺服器或伺服器資源的MAC位址集區大小。按一下「確定」。
++
+image:express-direct-attach-aff220-deploy_image20.png["錯誤：缺少圖形影像"]
+
+. 按一下「完成」。
+. 在確認訊息中、按一下確定。
+. 在根組織下的MAC Pool上按一下滑鼠右鍵。
+. 選取「建立MAC集區」以建立MAC位址集區。
+. 輸入「MAC位址池B」作為MAC位址池的名稱。
+. 選用：輸入MAC集區的說明。
+. 選取連續作為指派順序選項。按一下「下一步」
+. 按一下「新增」
+. 指定起始MAC位址。
++
+
+NOTE: 對於此解決方案、建議將0B放在起始MAC位址的最後一個八位元組旁、以將此集區中的所有MAC位址識別為網路B位址。FlexPod我們再次舉個例子、也將Cisco UCS網域號碼資訊內嵌在內、提供我們00：25：B5：32：0B：00做為第一個MAC位址。
+
+. 指定一個足以支援可用刀鋒伺服器或伺服器資源的MAC位址集區大小。按一下「確定」。
+. 按一下「完成」。
+. 在確認訊息中、按一下確定。
+
+
+
+
+=== 建立iSCSI IQN集區
+
+若要為Cisco UCS環境設定必要的IQN集區、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的SAN。
+. 選取「資源池」>「根目錄」。
+. 在IQN Pool上按一下滑鼠右鍵。
+. 選取「Create IQN Suffix Pool」（建立IQN後置資源池）以建立IQN資源池。
+. 輸入IQN-Pool作為IQN集區的名稱。
+. 選用：輸入IQN集區的說明。
+. 輸入「iqn.1992-08.com.cisco`」作為前置詞。
+. 為指派順序選取「連續」。按一下「下一步」
+. 按一下「新增」
+. 輸入「UCS主機」作為字尾。
++
+
+NOTE: 如果使用多個Cisco UCS網域、可能需要使用更具體的IQN後置碼。
+
+. 在「寄件者」欄位中輸入1。
+. 指定IQN區塊的大小、足以支援可用的伺服器資源。按一下「確定」。
++
+image:express-direct-attach-aff220-deploy_image21.png["錯誤：缺少圖形影像"]
+
+. 按一下「完成」。
+
+
+
+
+=== 建立iSCSI啟動器IP位址集區
+
+若要為Cisco UCS環境設定必要的IP集區iSCSI開機、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的LAN。
+. 選取「資源池」>「根目錄」。
+. 在IP Pool上按一下滑鼠右鍵。
+. 選取「Create IP Pool（建立IP集區）
+. 輸入isciSCSI-ip-Pool-A作為IP Pool的名稱。
+. 選用：輸入IP集區的說明。
+. 選取工作分派順序的連續順序。按一下「下一步」
+. 按一下「新增」以新增IP位址區塊。
+. 在「從」欄位中、輸入要指派為iSCSI IP位址的範圍開頭。
+. 將大小設定為足以容納伺服器的位址。按一下「確定」。
+. 按一下「下一步」
+. 按一下「完成」。
+. 在IP Pool上按一下滑鼠右鍵。
+. 選取「Create IP Pool（建立IP集區）
+. 輸入isciSCSI-ip-Pool-B作為IP Pool的名稱。
+. 選用：輸入IP集區的說明。
+. 選取工作分派順序的連續順序。按一下「下一步」
+. 按一下「新增」以新增IP位址區塊。
+. 在「從」欄位中、輸入要指派為iSCSI IP位址的範圍開頭。
+. 將大小設定為足以容納伺服器的位址。按一下「確定」。
+. 按一下「下一步」
+. 按一下「完成」。
+
+
+
+
+=== 建立UUID後置資源池
+
+若要為Cisco UCS環境設定必要的通用唯一識別碼（UUID）後置資源池、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的「Servers（伺服器）」。
+. 選取「資源池」>「根目錄」。
+. 在UUID後置資源池上按一下滑鼠右鍵。
+. 選取「Create UUID Suffix Pool（建立UUID後置
+. 輸入UUID資源池作為UUID尾碼資源池的名稱。
+. 選用：輸入UUID尾碼集區的說明。
+. 保留導出選項的前置詞。
+. 選取「連續」作為指派順序。
+. 按一下「下一步」
+. 按一下「新增」以新增一個UUID區塊。
+. 將「寄件者」欄位保留為預設設定。
+. 指定一個足以支援可用刀鋒或伺服器資源的UUID區塊大小。按一下「確定」。
+. 按一下「完成」。
+. 按一下「確定」。
+
+
+
+
+=== 建立伺服器集區
+
+若要為Cisco UCS環境設定必要的伺服器集區、請完成下列步驟：
+
+
+NOTE: 請考慮建立獨特的伺服器集區、以達到環境所需的精細度。
+
+. 在Cisco UCS Manager中、按一下左側的「Servers（伺服器）」。
+. 選取「資源池」>「根目錄」。
+. 在伺服器集區上按一下滑鼠右鍵
+. 選取「建立伺服器集區」。
+. 輸入「Infra-Pool」作為伺服器集區的名稱。
+. 選用：輸入伺服器集區的說明。按一下「下一步」
+. 選取兩部（或多部）伺服器用於VMware管理叢集、然後按一下>>將其新增至「Infra-Pool」（伺服器資源池）。
+. 按一下「完成」。
+. 按一下「確定」。
+
+
+
+
+=== 為Cisco探索傳輸協定和連結層探索傳輸協定建立網路控制原則
+
+若要建立Cisco探索傳輸協定（CDP）和連結層探索傳輸協定（LLDP）的網路控制原則、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的LAN。
+. 選取「原則」>「根」。
+. 用滑鼠右鍵按一下「網路控制原則」。
+. 選取「建立網路控制原則」。
+. 輸入「啟用- CDP-LLDP原則名稱」。
+. 對於CDP、請選取「已啟用」選項。
+. 對於LLDP、向下捲動並選取「已啟用」以同時傳輸和接收。
+. 按一下「確定」以建立網路控制原則。按一下「確定」。
++
+image:express-direct-attach-aff220-deploy_image22.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 建立電源控制原則
+
+若要為Cisco UCS環境建立電源控制原則、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的「Servers（伺服器）」索引標籤。
+. 選取「原則」>「根」。
+. 以滑鼠右鍵按一下「電源控制原則」。
+. 選取建立電源控制原則。
+. 輸入No-Power-Cap作為電源控制原則名稱。
+. 將電源上限設定變更為無上限。
+. 按一下「確定」以建立電源控制原則。按一下「確定」。
++
+image:express-direct-attach-aff220-deploy_image23.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 建立伺服器集區限制條件原則（選用）
+
+若要為Cisco UCS環境建立選用的伺服器集區限制條件原則、請完成下列步驟：
+
+
+NOTE: 此範例為採用Intel E2660 v4 Xeon Broadwell處理器的Cisco UCS B系列伺服器建立原則。
+
+. 在Cisco UCS Manager中、按一下左側的「Servers（伺服器）」。
+. 選取「原則」>「根」。
+. 選取"伺服器集區原則限制條件"。
+. 選取「建立伺服器集區原則限制條件」或「新增」。
+. 請將政策命名為Intel。
+. 選取「Create CPU/Cores re資格」。
+. 選取Xeon做為處理器/架構。
+. 輸入「<UCS CPU - PID>」作為處理序ID（PID）。
+. 按一下「確定」以建立「CPU /核心」限制條件。
+. 按一下「確定」建立原則、然後按一下「確定」進行確認。
++
+image:express-direct-attach-aff220-deploy_image24.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 建立伺服器BIOS原則
+
+若要為Cisco UCS環境建立伺服器BIOS原則、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的「Servers（伺服器）」。
+. 選取「原則」>「根」。
+. 在BIOS原則上按一下滑鼠右鍵。
+. 選取「建立BIOS原則」。
+. 輸入VM主機作為BIOS原則名稱。
+. 將Quiet Boot設定變更為停用。
+. 將「一致的裝置命名」變更為「已啟用」。
++
+image:express-direct-attach-aff220-deploy_image25.png["錯誤：缺少圖形影像"]
+
+. 選取「處理器」索引標籤、然後設定下列參數：
++
+** 處理器C狀態：已停用
+** 處理器c1E：已停用
+** 處理器C3報告：已停用
+** 處理器C7報告：已停用
++
+image:express-direct-attach-aff220-deploy_image26.png["錯誤：缺少圖形影像"]
+
+
+
+. 向下捲動至其餘的處理器選項、然後設定下列參數：
++
+** 能源效能：效能
+** 頻率地板置換：已啟用
+** DRAM時鐘節流：效能
++
+image:express-direct-attach-aff220-deploy_image27.png["錯誤：缺少圖形影像"]
+
+
+
+. 按一下「RAS記憶體」、然後設定下列參數：
++
+** 低電壓DDR模式：效能模式
++
+image:express-direct-attach-aff220-deploy_image28.png["錯誤：缺少圖形影像"]
+
+
+
+. 按一下「Finish（完成）」以建立BIOS原則。
+. 按一下「確定」。
+
+
+
+
+=== 更新預設維護原則
+
+若要更新預設維護原則、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的「Servers（伺服器）」。
+. 選取「原則」>「根」。
+. 選取「維護原則」>「預設」。
+. 將重新開機原則變更為使用者Ack。
+. 選取「下次開機時」、將維護時間委派給伺服器管理員。
++
+image:express-direct-attach-aff220-deploy_image29.png["錯誤：缺少圖形影像"]
+
+. 按一下儲存變更。
+. 按一下「確定」以接受變更。
+
+
+
+
+=== 建立vNIC範本
+
+若要為Cisco UCS環境建立多個虛擬網路介面卡（vNIC）範本、請完成本節所述的程序。
+
+
+NOTE: 總共會建立四個vNIC範本。
+
+
+
+==== 建立基礎架構vNIC
+
+若要建立基礎架構vNIC、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的LAN。
+. 選取「原則」>「根」。
+. 在vNIC範本上按一下滑鼠右鍵。
+. 選取「Create vNIC Template（建立vNIC範本）
+. 輸入「ite-XX-vNIC」作為vNIC範本名稱。
+. 選取「更新範本」作為「範本類型」。
+. 若為Fabric ID、請選取Fabric A
+. 確保未選取「Enable Failover（啟用容錯移轉）」選項。
+. 為備援類型選取主要範本。
+. 將對等備援範本保留設定為「<未設定>」。
+. 在「Target」（目標）下、確定只選取「Adapter」（介面卡）選項。
+. 將「Native VLAN」設為原生VLAN。
+. 選取「vNIC名稱」作為「CDN來源」。
+. 對於MTU、請輸入9000。
+. 在「允許的VLAN」下、選取「Native VLAN、Site-XX-IB-Mgmt、Site-XX-NFS、Site-XX-VM-Traffic」、 和Site-XX-vMotion。使用Ctrl鍵進行此多重選擇。
+. 按一下選取。這些VLAN現在應該會出現在選取的VLAN之下。
+. 在MAC Pool（MAC池）列表中，選擇"MAC_Pool_A"（MAC_Pool_A）。
+. 在「網路控制原則」清單中、選取「Pool-A」
+. 在「網路控制原則」清單中、選取「啟用- CDP-LLDP」。
+. 按一下「確定」以建立vNIC範本。
+. 按一下「確定」。
++
+image:express-direct-attach-aff220-deploy_image30.png["錯誤：缺少圖形影像"]
+
+
+
+若要建立次要備援範本Infra-B、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的LAN。
+. 選取「原則」>「根」。
+. 在vNIC範本上按一下滑鼠右鍵。
+. 選取「Create vNIC Template（建立vNIC範本）
+. 輸入「ite-XX-vnic_B」作為vNIC範本名稱。
+. 選取「更新範本」作為「範本類型」。
+. 若為Fabric ID、請選取Fabric B
+. 選取「啟用容錯移轉」選項。
++
+
+NOTE: 選取容錯移轉是改善連結容錯移轉時間的關鍵步驟、方法是在硬體層級處理、並防止虛擬交換器無法偵測到任何可能的NIC故障。
+
+. 為備援類型選取主要範本。
+. 將對等備援範本保留設定為「vNIC模板_A」。
+. 在「Target」（目標）下、確定只選取「Adapter」（介面卡）選項。
+. 將「Native VLAN」設為原生VLAN。
+. 選取「vNIC名稱」作為「CDN來源」。
+. 對於MTU、請輸入「9000」。
+. 在「允許的VLAN」下、選取「Native VLAN、Site-XX-IB-Mgmt、Site-XX-NFS、Site-XX-VM-Traffic」、 和Site-XX-vMotion。使用Ctrl鍵進行此多重選擇。
+. 按一下選取。這些VLAN現在應該會出現在選取的VLAN之下。
+. 在MAC Pool（MAC池）列表中，選擇"MAC_Pool_B"（MAC_Pool_B）。
+. 在「網路控制原則」清單中、選取「Pool-B」
+. 在「網路控制原則」清單中、選取「啟用- CDP-LLDP」。 
+. 按一下「確定」以建立vNIC範本。
+. 按一下「確定」。
++
+image:express-direct-attach-aff220-deploy_image31.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+==== 建立iSCSI vNIC
+
+若要建立iSCSI vNIC、請完成下列步驟：
+
+. 選取左側的LAN。
+. 選取「原則」>「根」。
+. 在vNIC範本上按一下滑鼠右鍵。
+. 選取「Create vNIC Template（建立vNIC範本） 
+. 輸入「ite-01-iscsa_a」作為vNIC範本名稱。
+. 選取「Fabric A.」請勿選取「啟用容錯移轉」選項。 
+. 將備援類型設為無備援。
+. 在「Target」（目標）下、確定只選取「Adapter」（介面卡）選項。
+. 選取「更新範本類型」。
+. 在「VLANs」下、選取「Only Site-01-iscsa_a_vlan（僅站台- 01-iscsa_a_VLAN）
+. 選取「站台- 01-iscsa_vlan」作為原生VLAN。
+. 保留為「CDN來源」設定的vNIC名稱。 
+. 在MTU之下、輸入9000。 
+. 從「MAC Pool」（MAC集區）清單中、選取「MMAC Pool - A」（MAC集區A
+. 從「網路控制原則」清單中、選取「啟用- CDP-LLDP」。
+. 按一下「確定」以完成vNIC範本的建立。
+. 按一下「確定」。
++
+image:express-direct-attach-aff220-deploy_image32.png["錯誤：缺少圖形影像"]
+
+. 選取左側的LAN。
+. 選取「原則」>「根」。
+. 在vNIC範本上按一下滑鼠右鍵。
+. 選取「Create vNIC Template（建立vNIC範本）
+. 輸入「ite-01-iscs_B」作為vNIC範本名稱。
+. 選取「Fabric B.」請勿選取「啟用容錯移轉」選項。
+. 將備援類型設為無備援。
+. 在「Target」（目標）下、確定只選取「Adapter」（介面卡）選項。
+. 選取「更新範本類型」。
+. 在「VLAN」下、只選取「ite-01-iscs_B_VLAN」。
+. 選取「ite-01-iscsit_b_vlan」作為原生VLAN。
+. 保留為「CDN來源」設定的vNIC名稱。
+. 在MTU之下、輸入9000。
+. 從MAC Pool（MAC池）列表中選擇"空調 池B（MAC-Pool-B）"。 
+. 從「網路控制原則」清單中、選取「啟用- CDP-LLDP」。
+. 按一下「確定」以完成vNIC範本的建立。
+. 按一下「確定」。
++
+image:express-direct-attach-aff220-deploy_image33.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 為iSCSI開機建立LAN連線原則
+
+此程序適用於兩個iSCSI LIF位於叢集節點1（「iSCSI_lif01a」和「iSCSI_lif01b」）上的Cisco UCS環境、而兩個iSCSI LIF位於叢集節點2（「iSCSI_lif02a」和「iSCSI_lif02b」）上。此外、假設A lifs連接至Fabric A（Cisco UCS 6324 A）、而B lifs則連接至Fabric B（Cisco UCS 6324 B）。
+
+若要設定必要的基礎架構LAN連線原則、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的LAN。
+. 選取「LAN」>「Policies」>「root」。
+. 以滑鼠右鍵按一下「LAN連線原則」。
+. 選取「建立LAN連線原則」。
+. 輸入「ite-XX-Fabric」作為原則名稱。
+. 按一下上方的「Add（新增）」選項以新增vNIC。
+. 在Create vNIC（創建vNIC）對話框中，輸入"ite-01-vNIC－a"作爲vNIC的名稱。
+. 選取「使用vNIC範本」選項。
+. 在vNIC範本清單中、選取「vNIC範本」。
+. 從介面卡原則下拉式清單中、選取VMware。
+. 按一下「確定」、將此vNIC新增至原則。
++
+image:express-direct-attach-aff220-deploy_image34.png["錯誤：缺少圖形影像"]
+
+. 按一下上方的「Add（新增）」選項以新增vNIC。
+. 在Create vNIC（建立vNIC）對話方塊中、輸入「ite-01-vNIC - B」作為vNIC的名稱。
+. 選取「使用vNIC範本」選項。
+. 在vNIC範本清單中、選取「vNIC範本B」。
+. 從介面卡原則下拉式清單中、選取VMware。
+. 按一下「確定」、將此vNIC新增至原則。
+. 按一下上方的「Add（新增）」選項以新增vNIC。
+. 在Create vNIC（建立vNIC）對話方塊中、輸入「ite-01-iscsit-A」作為vNIC的名稱。
+. 選取「使用vNIC範本」選項。
+. 在vNIC Template（vNIC範本）清單中、選取「ite-01-iscsi－a」。
+. 從介面卡原則下拉式清單中、選取VMware。
+. 按一下「確定」、將此vNIC新增至原則。
+. 按一下上方的「Add（新增）」選項以新增vNIC。
+. 在Create vNIC（建立vNIC）對話方塊中、輸入「ite-01-iscsit-B」作為vNIC的名稱。
+. 選取「使用vNIC範本」選項。
+. 在vNIC Template（vNIC範本）清單中、選取「ite-01-isciSCSI-B」。
+. 從介面卡原則下拉式清單中、選取VMware。
+. 按一下「確定」、將此vNIC新增至原則。
+. 展開「Add iSCSI vNIC（新增iSCSI vNIC）」選項。
+. 按一下「Add iSCSI vNIC（新增iSCSI vNIC）」空間中的「Add（新增）」選項、以新增iSCSI vNIC。
+. 在Create iSCSI vNIC（建立iSCSI vNIC）對話方塊中、輸入「ite-01-iscsit-A」作為vNIC的名稱。
+. 選取「Overlay vNIC」為「ite-01-iscsi－a」。
+. 將iSCSI介面卡原則選項保留為「Not Set（未設定）」。
+. 選擇VLAN為「ite-01-iscsi站台A」（原生）。
+. 選取「無」（預設使用）作為MAC位址指派。
+. 按一下「確定」、將iSCSI vNIC新增至原則。
++
+image:express-direct-attach-aff220-deploy_image35.png["錯誤：缺少圖形影像"]
+
+. 按一下「Add iSCSI vNIC（新增iSCSI vNIC）」空間中的「Add（新增）」選項、以新增iSCSI vNIC。
+. 在Create iSCSI vNIC（建立iSCSI vNIC）對話方塊中、輸入「ite-01-iscsit-B」作為vNIC的名稱。
+. 選取「Overlay vNIC」為「Site-01-isciSCSI-B」
+. 將iSCSI介面卡原則選項保留為「Not Set（未設定）」。
+. 選擇VLAN為「ite-01-isciSCSI-Site-B」（原生）。
+. 選取「無（預設使用）」作為「MAC位址指派」。
+. 按一下「確定」、將iSCSI vNIC新增至原則。
+. 按一下儲存變更。
++
+image:express-direct-attach-aff220-deploy_image36.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+==== 建立VMware ESXi 6.7U1安裝開機的vMedia原則
+
+在NetApp Data ONTAP 的「VMware」設定步驟中、需要HTTP Web伺服器、用來裝載NetApp Data ONTAP VMware及VMware軟體。此處建立的vMedia原則會對應VMware ESXi 6。7U1 ISO至Cisco UCS伺服器、以啟動ESXi安裝。若要建立此原則、請完成下列步驟：
+
+. 在Cisco UCS Manager中、選取左側的伺服器。
+. 選取「原則」>「根」。
+. 選取vMedia原則。
+. 按一下「新增」以建立新的vMedia原則。
+. 將原則命名為ESXi - 6.7U1-HTTP。
+. 在「Description（說明）」欄位中輸入「Mounts ISO for ESXi 6.7U1」。
+. 如果掛載失敗、請選取「是」。
+. 按一下「新增」
+. 將掛載項目命名為ESXi 6.7U1-HTTP。
+. 選取「客戶盡職審查裝置類型」。
+. 選取HTTP傳輸協定。
+. 輸入Web伺服器的IP位址。
++
+
+NOTE: DNS伺服器IP未早於KVM IP輸入、因此必須輸入Web伺服器的IP、而非主機名稱。
+
+. 輸入「VMware-VMv遮 板安裝程式-6.7.0.Update 01-10302608.x86_64 .ISO」作為遠端檔案名稱。
++
+此VMware ESXi 6.7U1 ISO可從下載 https://my.vmware.com/group/vmware/details?downloadGroup=ESXI650A&productId=614["VMware下載"^]。
+
+. 在「遠端路徑」欄位中輸入ISO檔案的Web伺服器路徑。
+. 按一下「確定」以建立vMedia掛載。
+. 按一下「確定」、然後再按一下「確定」以完成建立vMedia原則。
++
+對於新增至Cisco UCS環境的任何新伺服器、可使用vMedia服務設定檔範本來安裝ESXi主機。首次開機時、主機會開機進入ESXi安裝程式、因為SAN掛載的磁碟是空的。安裝ESXi之後、只要開機磁碟可供存取、就不會參考vMedia。
+
++
+image:express-direct-attach-aff220-deploy_image37.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 建立iSCSI開機原則
+
+本節中的程序適用於Cisco UCS環境、其中兩個iSCSI邏輯介面（lifs）位於叢集節點1（「iscsi_lif01a」和「iscsi_lif01b」）、兩個iSCSI lifs位於叢集節點2（「iscsi_lif02a」和「iscsiSCSI_lif02b」）。此外、假設A lifs連接至Fabric A（Cisco UCS Fabric Interconnect A）、而B lifs則連接至Fabric B（Cisco UCS Fabric Interconnect B）。
+
+
+NOTE: 在此程序中設定一個開機原則。原則會將主要目標設定為「iscsi_lif01a」。
+
+若要為Cisco UCS環境建立開機原則、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的「Servers（伺服器）」。
+. 選取「原則」>「根」。
+. 在開機原則上按一下滑鼠右鍵。
+. 選取建立開機原則。
+. 輸入「ite-01-Fabric」作為開機原則的名稱。
+. 選用：輸入開機原則的說明。
+. 保持「重新開機時變更順序」選項為清除狀態。
+. 開機模式為傳統模式。
+. 展開「本機裝置」下拉式功能表、然後選取「新增遠端CD/DVD」。
+. 展開iSCSI vNIC下拉式功能表、然後選取Add iSCSI Boot（新增iSCSI開機）。
+. 在Add iSCSI Boot（新增iSCSI開機）對話方塊中、輸入「ite-01-iscsi－a」。按一下「確定」。
+. 選取新增iSCSI開機。
+. 在Add iSCSI Boot（新增iSCSI開機）對話方塊中、輸入「ite-01-isciSCSI-B」。按一下「確定」。
+. 按一下「確定」以建立原則。
++
+image:express-direct-attach-aff220-deploy_image38.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 建立服務設定檔範本
+
+在此程序中、會為Fabric A開機建立一個基礎架構ESXi主機的服務設定檔範本。
+
+若要建立服務設定檔範本、請完成下列步驟：
+
+. 在Cisco UCS Manager中、按一下左側的「Servers（伺服器）」。
+. 選取「服務設定檔範本」>「root」。
+. 在root上按一下滑鼠右鍵。
+. 選取「建立服務設定檔範本」以開啟「建立服務設定檔範本」精靈。
+. 輸入「VM-Host-Infra-iSCSI-A」作為服務設定檔範本的名稱。此服務設定檔範本已設定為從Fabric A上的儲存節點1開機
+. 選取更新範本選項。
+. 在UUID下、選取「UUUID_Pool」作為UUID資源池。按一下「下一步」
++
+image:express-direct-attach-aff220-deploy_image39.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+==== 設定儲存資源配置
+
+若要設定儲存資源配置、請完成下列步驟：
+
+. 如果您的伺服器沒有實體磁碟、請按一下「本機磁碟組態原則」、然後選取「SAN開機本機儲存原則」。否則、請選取預設的本機儲存原則。
+. 按一下「下一步」
+
+
+
+
+==== 設定網路選項
+
+若要設定網路選項、請完成下列步驟：
+
+. 保留動態vNIC連線原則的預設設定。
+. 選取「使用連線原則」選項以設定LAN連線。
+. 從「LAN連線原則」下拉式功能表中選取「iSCSI開機」。
+. 在「啟動器名稱指派」中選取「IQN_Pool」。按一下「下一步」
++
+image:express-direct-attach-aff220-deploy_image40.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+==== 設定SAN連線能力
+
+若要設定SAN連線、請完成下列步驟：
+
+. 對於vHBA、請針對您要如何設定SAN連線、選取「否」。選項。
+. 按一下「下一步」
+
+
+
+
+==== 設定分區
+
+若要設定分區、只要按「Next（下一步）」即可。
+
+
+
+==== 設定vNIC / HBA放置位置
+
+若要設定vNIC / HBA放置位置、請完成下列步驟：
+
+. 從「Select Placement（選擇放置）」下拉式清單中、將放置原則保留為「Let System Perform Placement（讓系統執行放置）」。
+. 按一下「下一步」
+
+
+
+
+==== 設定vMedia原則
+
+若要設定vMedia原則、請完成下列步驟：
+
+. 請勿選取vMedia原則。
+. 按一下「下一步」
+
+
+
+
+==== 設定伺服器開機順序
+
+若要設定伺服器開機順序、請完成下列步驟：
+
+. 選取「Boot-Fabric - A」作為開機原則。
++
+image:express-direct-attach-aff220-deploy_image41.png["錯誤：缺少圖形影像"]
+
+. 在Boor訂單中、選取「ite-01 - iscsi - a」。
+. 按一下「設定iSCSI開機參數」。
+. 在「Set iSCSI Boot Parameters」（設定iSCSI開機參數）對話方塊中、將「驗證設定檔」選項保留為「Not Set」（未設定）、除非您已獨立建立適合您環境的驗證設定檔選項。
+. 保留「啟動器名稱指派」對話方塊、不要設定為使用先前步驟中定義的單一服務設定檔啟動器名稱。
+. 將「iSCSI_IP_Pool_A」設為啟動器IP位址原則。
+. 選取iSCSI Static Target Interface（iSCSI靜態目標介面）選項。
+. 按一下「新增」
+. 輸入iSCSI目標名稱。若要取得Infra-SVM的iSCSI目標名稱、請登入儲存叢集管理介面、然後執行「iSCSI show」命令。
++
+image:express-direct-attach-aff220-deploy_image42.png["錯誤：缺少圖形影像"]
+
+. 在「IPV4位址」欄位中輸入「iscsit_lif_02A」的IP位址。
++
+image:express-direct-attach-aff220-deploy_image43.png["錯誤：缺少圖形影像"]
+
+. 按一下「確定」以新增iSCSI靜態目標。
+. 按一下「新增」
+. 輸入iSCSI目標名稱。
+. 在「IPV4位址」欄位中輸入IP位址「iSCSI_Lif_01a」。
++
+image:express-direct-attach-aff220-deploy_image44.png["錯誤：缺少圖形影像"]
+
+. 按一下「確定」以新增iSCSI靜態目標。
++
+image:express-direct-attach-aff220-deploy_image45.png["錯誤：缺少圖形影像"]
+
++
+
+NOTE: 將目標IP放入儲存節點02 IP為優先、儲存節點01為IP秒。這是假設開機LUN位於節點01上。如果使用此程序中的順序、則主機會使用節點01的路徑來開機。
+
+. 在「Boot Order（開機順序）」中、選取「iSCSI-B-vNIC（iSCSI-B vNIC）
+. 按一下「設定iSCSI開機參數」。
+. 在「Set iSCSI Boot Parameters」（設定iSCSI開機參數）對話方塊中、將「驗證設定檔」選項保留為「Not Set」（未設定）、除非您已獨立建立適合您環境的驗證設定檔選項。
+. 保留「啟動器名稱指派」對話方塊、不要設定為使用先前步驟中定義的單一服務設定檔啟動器名稱。
+. 將「iSCSI_IP_Pool_B」設為啟動器IP位址原則。
+. 選取iSCSI靜態目標介面選項。
+. 按一下「新增」
+. 輸入iSCSI目標名稱。若要取得Infra-SVM的iSCSI目標名稱、請登入儲存叢集管理介面、然後執行「iSCSI show」命令。
++
+image:express-direct-attach-aff220-deploy_image42.png["錯誤：缺少圖形影像"]
+
+. 在「IPV4位址」欄位中輸入「iscsit_lif_02B」的IP位址。
++
+image:express-direct-attach-aff220-deploy_image46.png["錯誤：缺少圖形影像"]
+
+. 按一下「確定」以新增iSCSI靜態目標。
+. 按一下「新增」
+. 輸入iSCSI目標名稱。
+. 在「IPV4位址」欄位中輸入「iscsit_lif_01b」的IP位址。
++
+image:express-direct-attach-aff220-deploy_image47.png["錯誤：缺少圖形影像"]
+
+. 按一下「確定」以新增iSCSI靜態目標。
++
+image:express-direct-attach-aff220-deploy_image48.png["錯誤：缺少圖形影像"]
+
+. 按一下「下一步」
+
+
+
+
+==== 設定維護原則
+
+若要設定維護原則、請完成下列步驟：
+
+. 將維護原則變更為預設值。
++
+image:express-direct-attach-aff220-deploy_image49.png["錯誤：缺少圖形影像"]
+
+. 按一下「下一步」
+
+
+
+
+==== 設定伺服器指派
+
+若要設定伺服器指派、請完成下列步驟：
+
+. 在"資源池指派"清單中選取"資源池"。
+. 選取「關機」作為設定檔與伺服器相關聯時要套用的電源狀態。
+. 展開頁面底部的「韌體管理」、然後選取預設原則。
++
+image:express-direct-attach-aff220-deploy_image50.png["錯誤：缺少圖形影像"]
+
+. 按一下「下一步」
+
+
+
+
+==== 設定作業原則
+
+若要設定作業原則、請完成下列步驟：
+
+. 從BIOS原則下拉式清單中、選取VM主機。
+. 展開電源控制原則組態、然後從「電源控制原則」下拉式清單中選取「無電源上限」。
++
+image:express-direct-attach-aff220-deploy_image51.png["錯誤：缺少圖形影像"]
+
+. 按一下「完成」以建立服務設定檔範本。
+. 在確認訊息中按一下「OK（確定）」。
+
+
+
+
+=== 建立啟用vMedia的服務設定檔範本
+
+若要建立啟用vMedia的服務設定檔範本、請完成下列步驟：
+
+. 連線至UCS Manager、然後按一下左側的「Servers（伺服器）」。
+. 選取「服務設定檔範本」>「根目錄」>「服務範本VM主機-主機-基礎架構- iSCSI - A」
+. 以滑鼠右鍵按一下VM-Host-Infra-iSCSI-A、然後選取「Create a Clone（建立複製）」。
+. 將複本命名為「VM主機-基礎架構- iSCSI -虛擬機器」。
+. 選取新建立的VM-Host-Infra-iSCSI-A-VM、然後選取右側的vMedia Policy索引標籤。
+. 按一下「修改vMedia原則」。
+. 選取ESXi 6。7U1-HTTP vMedia原則、然後按一下「OK（確定）」。
+. 按一下「確定」以確認。
+
+
+
+
+=== 建立服務設定檔
+
+若要從服務設定檔範本建立服務設定檔、請完成下列步驟：
+
+. 連線至Cisco UCS Manager、然後按一下左側的「Servers（伺服器）」。
+. 展開「Servers（伺服器）」>「Service Profile Template（服務設定檔範本）」>「root（根）」>「
+. 在「Actions（動作）」中、按一下「Create Service Profile from Template（從範本建立服務設定檔）」、然後參加
++
+.. 輸入「ite-01-Infra-0」作為命名前置詞。
+.. 輸入「2」作為要建立的執行個體數目。
+.. 選取root作為組織。
+.. 按一下「確定」以建立服務設定檔。
++
+image:express-direct-attach-aff220-deploy_image52.png["錯誤：缺少圖形影像"]
+
+
+
+. 在確認訊息中按一下「OK（確定）」。
+. 驗證是否已建立服務設定檔「ite-01-Infra-01」和「ite-01-Infra-02」。
++
+
+NOTE: 服務設定檔會自動與指派的伺服器集區中的伺服器建立關聯。
+
+
+
+
+
+== 儲存組態第2部分：開機LUN和啟動器群組
+
+
+
+=== 安裝程式ONTAP
+
+
+
+==== 建立啟動器群組
+
+若要建立啟動器群組（igroup）、請完成下列步驟：
+
+. 從叢集管理節點SSH連線執行下列命令：
++
+....
+igroup create –vserver Infra-SVM –igroup VM-Host-Infra-01 –protocol iscsi –ostype vmware –initiator <vm-host-infra-01-iqn>
+igroup create –vserver Infra-SVM –igroup VM-Host-Infra-02 –protocol iscsi –ostype vmware –initiator <vm-host-infra-02-iqn>
+igroup create –vserver Infra-SVM –igroup MGMT-Hosts –protocol iscsi –ostype vmware –initiator <vm-host-infra-01-iqn>, <vm-host-infra-02-iqn>
+....
++
+
+NOTE: 請使用表1和表2所列的值取得IQN資訊。
+
+. 若要檢視剛建立的三個igroup、請執行「igroup show」命令。
+
+
+
+
+==== 將開機LUN對應至igroup
+
+若要將開機LUN對應至igroup、請完成下列步驟：
+
+. 在儲存叢集管理SSH連線中、執行下列命令： 
++
+....
+lun map –vserver Infra-SVM –volume esxi_boot –lun VM-Host-Infra- A –igroup VM-Host-Infra-01 –lun-id 0lun map –vserver Infra-SVM –volume esxi_boot –lun VM-Host-Infra- B –igroup VM-Host-Infra-02 –lun-id 0
+....
+
+
+
+
+== VMware vSphere 6.7U1部署程序
+
+本節提供在FlexPod VMware ESXi 6.7U1組態中安裝VMware ESXi的詳細程序。程序完成後、系統會配置兩部已開機的ESXi主機。
+
+在VMware環境中安裝ESXi有幾種方法。這些程序著重於如何使用Cisco UCS Manager內建的KVM主控台和虛擬媒體功能、將遠端安裝媒體對應至個別伺服器、並連線至其開機LUN。
+
+
+
+=== 下載適用於ESXi 6.7U1的Cisco自訂映像
+
+如果尚未下載VMware ESXi自訂映像、請完成下列步驟以完成下載：
+
+. 按一下下列連結：https://my.vmware.com/group/vmware/details?downloadGroup=OEM-ESXI67U1-CISCO&productId=742[VMware vSphere Hypervisor（ESXi）6.7U1.
+. 您需要的是使用者ID和密碼 https://www.vmware.com/["vmware.com"^] 下載此軟體。
+. 下載.'ISO'檔案。
+
+
+
+
+==== Cisco UCS Manager
+
+Cisco UCS IP KVM可讓系統管理員透過遠端媒體開始安裝作業系統。必須登入Cisco UCS環境才能執行IP KVM。
+
+若要登入Cisco UCS環境、請完成下列步驟：
+
+. 開啟網頁瀏覽器、然後輸入Cisco UCS叢集位址的IP位址。此步驟會啟動Cisco UCS Manager應用程式。
+. 按一下HTML下的Launch UCS Manager（啟動UCS管理程式）連結、啟動HTML 5 UCS Manager GUI。
+. 如果系統提示您接受安全性憑證、請視需要接受。
+. 出現提示時、輸入「admin」作為使用者名稱、然後輸入管理密碼。
+. 若要登入Cisco UCS Manager、請按一下登入。
+. 在主功能表中、按一下左側的「Servers（伺服器）」。
+. 選取「Servers（伺服器）」>「Service Profiles（服務設定檔）」>「root（根）」>「VM主機-Infra-01」。
+. 在「VM主機-Infra-01」上按一下滑鼠右鍵、然後選取「KVM主控台」。
+. 依照提示啟動Java型KVM主控台。
+. 選取「Servers（伺服器）」>「Service Profiles（服務設定檔）」>「root（根）」>「VM主機-Infra-02」。
+. 在「VM主機-Infra-02」上按一下滑鼠右鍵。並選取KVM主控台。
+. 依照提示啟動Java型KVM主控台。
+
+
+
+
+==== 設定VMware ESXi安裝
+
+ESXi裝載VM主機-Infra-01和VM主機-Infra-02
+
+若要為伺服器做好作業系統安裝準備、請在每個ESXi主機上完成下列步驟：
+
+. 在KVM視窗中、按一下「Virtual Media（虛擬媒體）」。
+. 按一下「啟動虛擬裝置」。
+. 如果系統提示您接受未加密的KVM工作階段、請視需要接受。
+. 按一下「Virtual Media（虛擬媒體）」、然後選取「Map CD/DVD（對應CD/DVD
+. 瀏覽至ESXi安裝程式ISO映像檔、然後按一下「Open（開啟）」。
+. 按一下「對應裝置」。 
+. 按一下KVM索引標籤以監控伺服器開機。
+
+
+*安裝ESXi*
+
+ESXi裝載VM主機-Infra-01和VM主機-Infra-02
+
+若要將VMware ESXi安裝至主機的iSCSI可開機LUN、請在每個主機上完成下列步驟：
+
+. 選取「Boot Server（開機伺服器）」並按一下「OK（確定）」、然後再按一下「確定」。
+. 重新開機時、機器會偵測ESXi安裝媒體是否存在。從顯示的開機功能表中選取ESXi安裝程式。
+. 安裝程式載入完成後、請按Enter繼續安裝。
+. 閱讀並接受終端使用者授權合約（EULA）。按F11接受並繼續。
+. 選取先前設定為ESXi安裝磁碟的LUN、然後按Enter繼續安裝。
+. 選取適當的鍵盤配置、然後按Enter。
+. 輸入並確認root密碼、然後按Enter。
+. 安裝程式會發出警告、指出所選磁碟將重新分割。按F11繼續安裝。
+. 安裝完成後、選取Virtual Media（虛擬媒體）索引標籤、然後清除ESXi安裝媒體旁的P標記。按一下是。
++
+
+NOTE: ESXi安裝映像必須取消對應、以確保伺服器重新開機進入ESXi、而非安裝程式。
+
+. 安裝完成後、按Enter重新啟動伺服器。
+. 在Cisco UCS Manager中、將目前的服務設定檔繫結至非vMedia服務設定檔範本、以避免透過HTTP掛載ESXi安裝ISO。
+
+
+
+
+==== 設定ESXi主機的管理網路
+
+管理主機時、必須為每部VMware主機新增管理網路。若要新增VMware主機的管理網路、請在每個ESXi主機上完成下列步驟：
+
+ESXi主機VM-Host-Infra-01和VM-Host-Infra-02
+
+若要設定每個ESXi主機存取管理網路、請完成下列步驟：
+
+. 伺服器完成重新開機後、按F2自訂系統。
+. 以「root」身分登入、輸入對應的密碼、然後按Enter登入。
+. 選取疑難排解選項、然後按Enter。
+. 選取「Enable ESXi Shell（啟用ESXi Shell）」、然後按Enter。
+. 選取「Enable SSH（啟用SSH）」、然後按Enter。
+. 按Esc退出疑難排解選項功能表。
+. 選取「Configure Management Network（設定管理網路）」選項、然後按Enter。
+. 選取「Network Adapters（網路卡）」、然後按Enter。
+. 確認「硬體標籤」欄位中的數字與「裝置名稱」欄位中的數字相符。
+. 按Enter。
++
+image:express-direct-attach-aff220-deploy_image53.png["錯誤：缺少圖形影像"]
+
+. 選取「VLAN（選用）」選項、然後按Enter。
+. 輸入「<IB-mgmt-vlan-id>'」、然後按Enter。
+. 選取「IPv4組態」、然後按Enter。
+. 使用空格鍵選取「Set Static IPv4 Address and Network Configuration」（設定靜態IPv6位址和網路組態）選項。
+. 輸入用於管理第一部ESXi主機的IP位址。
+. 輸入第一部ESXi主機的子網路遮罩。
+. 輸入第一個ESXi主機的預設閘道。
+. 按Enter接受IP組態的變更。
+. 選取「DNS組態」選項、然後按Enter。
++
+
+NOTE: 由於IP位址是手動指派的、因此也必須手動輸入DNS資訊。
+
+. 輸入主要DNS伺服器的IP位址。
+. 選用：輸入次要DNS伺服器的IP位址。
+. 輸入第一個ESXi主機的FQDN。
+. 按Enter接受DNS組態的變更。
+. 按Esc退出「設定管理網路」功能表。
+. 選取「測試管理網路」以確認管理網路設定正確、然後按Enter。
+. 按Enter執行測試、測試完成後再按Enter鍵、如果發生故障、請檢閱環境。
+. 再次選取「Configure Management Network（設定管理網路）」、然後按Enter。
+. 選取「IPv6組態」選項、然後按Enter。
+. 使用空格鍵選取「停用IPv6（需要重新啟動）」、然後按Enter。
+. 按Esc退出Configure Management Network子功能表。
+. 按Y確認變更、然後重新啟動ESXi主機。
+
+
+
+
+==== 重設VMware ESXi主機VMkernel連接埠vmk0 MAC位址（選用）
+
+ESXi主機VM-Host-Infra-01和VM-Host-Infra-02
+
+根據預設、管理VMkernel連接埠vmk0的MAC位址與放置管理VMkernel連接埠的乙太網路連接埠MAC位址相同。如果ESXi主機的開機LUN重新對應至具有不同MAC位址的不同伺服器、則除非ESXi系統組態重設、否則會發生MAC位址衝突、因為vmk0會保留指派的MAC位址。若要將vmk0的MAC位址重設為VMware指派的隨機MAC位址、請完成下列步驟：
+
+. 在ESXi主功能表畫面中、按Ctrl-Alt-F1存取VMware主控台命令列介面。在UCSM KVM中、Ctrl-Alt-F1會出現在靜態巨集清單中。
+. 以root身分登入。
+. 輸入「esxcfg-vmknic–l」以取得vmk0介面的詳細清單。vmk0應為管理網路連接埠群組的一部分。請注意vmk0的IP位址和網路遮罩。
+. 若要移除vmk0、請輸入下列命令：
++
+....
+esxcfg-vmknic –d “Management Network”
+....
+. 若要以隨機MAC位址再次新增vmk0、請輸入下列命令：
++
+....
+esxcfg-vmknic –a –i <vmk0-ip> -n <vmk0-netmask> “Management Network””.
+....
+. 確認再次以隨機MAC位址新增vmk0
++
+....
+esxcfg-vmknic –l
+....
+. 輸入「exit」以登出命令列介面。
+. 按Ctrl-Alt-F2返回ESXi主控台功能表介面。
+
+
+
+
+==== 使用VMware主機用戶端登入VMware ESXi主機
+
+ESXi主機VM-Host-Infra-01
+
+若要使用VMware主機用戶端登入VM-Host-Infra-01 ESXi主機、請完成下列步驟：
+
+. 在管理工作站上開啟網頁瀏覽器、然後瀏覽至「VM-Host-Infra-01」管理IP位址。
+. 按一下「開啟VMware主機用戶端」。
+. 輸入「root」作為使用者名稱。
+. 輸入root密碼。
+. 按一下登入以連線。
+. 重複此程序、在個別的瀏覽器標籤或視窗中登入「VM主機-Infra-02」。
+
+
+
+
+==== 安裝適用於Cisco虛擬介面卡（VIC）的VMware驅動程式
+
+下載下列VMware VIC驅動程式的離線套件、並將其解壓縮至管理工作站：
+
+* Nenic驅動程式版本1.0.25.0
+
+
+
+
+==== ESXi裝載VM主機-Infra-01和VM主機-Infra-02
+
+若要在ESXi主機VM-Host-InfrA-01和VM-Host-InfrA-02上安裝VMware VIC驅動程式、請完成下列步驟：
+
+. 從每個主機用戶端選取儲存設備。
+. 以滑鼠右鍵按一下「datastore1」、然後選取「瀏覽」
+. 在資料存放區瀏覽器中、按一下上傳。
+. 瀏覽至下載VIC驅動程式的儲存位置、然後選取VMW-ESX-6.7.0-nenic -1.0.25.0-offline _bundle-11271332.zip。
+. 在資料存放區瀏覽器中、按一下上傳。
+. 按一下「開啟」將檔案上傳至數據流1。
+. 確定檔案已上傳至兩個ESXi主機。
+. 如果每個主機尚未進入維護模式、請將其置於維護模式。
+. 從Shell連線或保固終端機透過ssh連線至每個ESXi主機。
+. 以root密碼登入。
+. 在每個主機上執行下列命令：
++
+....
+esxcli software vib update -d /vmfs/volumes/datastore1/VMW-ESX-6.7.0-nenic-1.0.25.0-offline_bundle-11271332.zip
+reboot
+....
+. 重新開機完成後、登入每個主機上的主機用戶端、然後結束維護模式。
+
+
+
+
+==== 設定VMkernel連接埠和虛擬交換器
+
+ESXi主機VM-Host-Infra-01和VM-Host-Infra-02
+
+若要在ESXi主機上設定VMkernel連接埠和虛擬交換器、請完成下列步驟：
+
+. 從主機用戶端選取左側的「Networking（網路）」。
+. 在中央窗格中、選取虛擬交換器索引標籤。
+. 選取vSwitch0。
+. 選取「編輯設定」。
+. 將MTU變更為9000。
+. 展開NIC群組。
+. 在「容錯移轉順序」區段中、選取vmnic1、然後按一下「標記為使用中」。
+. 驗證vmnic1現在的狀態是否為「Active（作用中）」。
+. 按一下儲存。
+. 選取左側的「Networking（網路）」。
+. 在中央窗格中、選取虛擬交換器索引標籤。
+. 選取「iScsiBootvSwitch」。
+. 選取「編輯設定」。
+. 將MTU變更為9000
+. 按一下儲存。
+. 選取[VMkernel NIC（VMkernel NIC）]索引標籤。
+. 選取vmk1 iScsiBootPG。
+. 選取「編輯設定」。
+. 將MTU變更為9000。
+. 展開「IPv4設定」、並將IP位址變更為UCS isciSCSI-ip-Pool-A以外的位址
++
+
+NOTE: 為避免IP位址衝突、如果應重新指派Cisco UCS iSCSI IP集區位址、建議在iSCSI VMkernel連接埠的同一子網路中使用不同的IP位址。
+
+. 按一下儲存。
+. 選取虛擬交換器索引標籤。
+. 選取新增標準虛擬交換器。
+. 提供vSwitch名稱的「iScsciBootvSwitch-B」名稱。
+. 將MTU設為9000。
+. 從Uplink 1下拉式功能表中選取vmnic3。
+. 按一下「新增」
+. 在中央窗格中、選取[VMkernel NIC（VMkernel NIC）]索引標籤。
+. 選取新增VMkernel NIC
+. 指定新連接埠群組名稱iScsiBootPG-B
+. 針對虛擬交換器選取iScscBootvSwitch-B。
+. 將MTU設為9000。請勿輸入VLAN ID。
+. 選取「Static」（靜態）作為IPv4設定、然後展開選項、在「Configuration」（組態）中提供「Address」（位址）和「Subnet Maskes」（子網路
++
+
+NOTE: 為了避免IP位址衝突、如果Cisco UCS iSCSI IP集區位址應重新指派、建議在同一個子網路中使用不同的IP位址來連接iSCSI VMkernel連接埠。
+
+. 按一下「建立」。
+. 在左側、選取網路、然後選取連接埠群組索引標籤。
+. 在中央窗格中、以滑鼠右鍵按一下VM Network、然後選取移除。
+. 按一下「移除」以完成移除連接埠群組。
+. 在中央窗格中、選取新增連接埠群組。
+. 將連接埠群組命名為「Management Network」（管理網路）、並在「VLAN ID」欄位中輸入「<IB-mgmt-vlan-id>'」、並確定已選取「Virtual Switch vSwitch0」（虛擬交換器vSwitch0）。
+. 按一下「Add（新增）」完成IB管理網路的編輯。
+. 在頂端選取[VMkernel NIC（VMkernel NIC）]索引標籤。
+. 單擊Add VMkernel NIC（添加VMkernel NIC）。
+. 針對新連接埠群組、輸入vMotion。
+. 對於虛擬交換器、請選取vSwitch0 selected。
+. 在VLAN ID中輸入「<vMotion - vlan-id>'」。
+. 將MTU變更為9000。
+. 選取「Static IPV4 settings（靜態IPV4設定）」並展開「IPV4 settings
+. 輸入ESXi主機vMotion IP位址和網路遮罩。
+. 選取vMotion堆疊TCP/IP堆疊。
+. 選取「服務」下的「vMotion」。
+. 按一下「建立」。
+. 單擊Add VMkernel NIC（添加VMkernel NIC）。
+. 針對新連接埠群組、輸入nfs_Share。
+. 對於虛擬交換器、請選取vSwitch0 selected。
+. 輸入「<基礎 架構NFS VLAN ID」作為VLAN ID
+. 將MTU變更為9000。
+. 選取「Static IPV4 settings（靜態IPV4設定）」並展開「IPV4 settings
+. 輸入ESXi主機基礎架構NFS IP位址和網路遮罩。
+. 請勿選擇任何服務。
+. 按一下「建立」。
+. 選取虛擬交換器索引標籤、然後選取vSwitch0。vSwitch0 VMkernel NIC的內容應類似於下列範例：
++
+image:express-direct-attach-aff220-deploy_image54.png["錯誤：缺少圖形影像"]
+
+. 選取[VMkernel NIC（VMkernel NIC）]索引標籤以確認已設定的虛擬介面卡。列出的介面卡應類似下列範例：
++
+image:express-direct-attach-aff220-deploy_image55.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+==== 設定iSCSI多重路徑
+
+ESXi裝載VM主機-Infra-01和VM主機-Infra-02
+
+若要在ESXi主機VM-Host-Infra-01和VM-Host-Infra-02上設定iSCSI多重路徑、請完成下列步驟：
+
+. 從每個主機用戶端選取左側的儲存設備。
+. 在中央窗格中、按一下「介面卡」。
+. 選取iSCSI軟體介面卡、然後按一下「Configure iSCSI（設定iSCSI）」。
++
+image:express-direct-attach-aff220-deploy_image56.png["錯誤：缺少圖形影像"]
+
+. 按一下[動態目標]底下的[新增動態目標]。
+. 輸入IP位址「iSCSI_lif01a」。
+. 重複輸入下列IP位址：「iscsa_lif01b」、「iscsa_lif02a」和「iscsiscs_lif02b」。
+. 按一下儲存組態。
++
+image:express-direct-attach-aff220-deploy_image57.png["錯誤：缺少圖形影像"]
+
++
+若要取得所有「iscsa_lif' IP位址、請登入NetApp儲存叢集管理介面、然後執行「network interface show」命令。
+
++
+
+NOTE: 主機會自動重新掃描儲存介面卡、並將目標新增至靜態目標。
+
+
+
+
+
+==== 掛載必要的資料存放區
+
+ESXi裝載VM主機-Infra-01和VM主機-Infra-02
+
+若要掛載必要的資料存放區、請在每個ESXi主機上完成下列步驟：
+
+. 從主機用戶端選取左側的儲存設備。
+. 在中央窗格中、選取資料存放區。
+. 在中央窗格中、選取新增資料存放區以新增資料存放區。
+. 在「New datastore（新資料存放區）」對話方塊中、選取「Mount NFS datastore（掛載NFS資料存放
++
+image:express-direct-attach-aff220-deploy_image58.png["錯誤：缺少圖形影像"]
+
+. 在「提供NFS掛載詳細資料」頁面上、完成下列步驟：
++
+.. 輸入「infra_datastore_1」作為資料存放區名稱。
+.. 輸入NFS伺服器的「nfs_lif01_a」LIF IP位址。
+.. 輸入「/infra_datastore_1」作為NFS共用。
+.. 將NFS版本設為NFS 3。
+.. 按一下「下一步」
++
+image:express-direct-attach-aff220-deploy_image59.png["錯誤：缺少圖形影像"]
+
+
+
+. 按一下「完成」。資料存放區現在應該會出現在資料存放區清單中。
+. 在中央窗格中、選取新增資料存放區以新增資料存放區。
+. 在「New Datastore（新資料存放區）」對話方塊中、選取「Mount NFS Datastore（掛載NFS資料存放區）
+. 在「提供NFS掛載詳細資料」頁面上、完成下列步驟：
++
+.. 輸入「infra_datastore_2」作為資料存放區名稱。
+.. 輸入NFS伺服器的「nfs_lif02_a' LIF」IP位址。
+.. 輸入「/infra_datastore_2」作為NFS共用。
+.. 將NFS版本設為NFS 3。
+.. 按一下「下一步」
+
+
+. 按一下「完成」。資料存放區現在應該會出現在資料存放區清單中。
++
+image:express-direct-attach-aff220-deploy_image60.jpeg["錯誤：缺少圖形影像"]
+
+. 在兩個ESXi主機上裝載兩個資料存放區。
+
+
+
+
+==== 在ESXi主機上設定NTP
+
+ESXi裝載VM主機-Infra-01和VM主機-Infra-02
+
+若要在ESXi主機上設定NTP、請在每個主機上完成下列步驟：
+
+. 從主機用戶端選取左側的「Manage（管理）」。
+. 在中心窗格中、選取時間與日期索引標籤。
+. 按一下「編輯設定」。
+. 確定已選取「Use Network Time Protocol（enable NTP client）（使用網路時間傳輸協定（啟用NTP用戶端））」。
+. 使用下拉式功能表選取「Start（開始）」、然後「Stop with Host（停止主機）」。
+. 在NTP伺服器方塊中輸入兩個Nexus交換器NTP位址、並以英文分隔。
++
+image:express-direct-attach-aff220-deploy_image61.png["錯誤：缺少圖形影像"]
+
+. 按一下「儲存」以儲存組態變更。
+. 選取「動作」>「NTP服務」>「啟動」。
+. 確認NTP服務現在正在執行、而且時鐘現在設定為大約正確的時間
++
+
+NOTE: NTP伺服器的時間可能與主機時間稍有不同。
+
+
+
+
+
+==== 設定ESXi主機交換
+
+ESXi裝載VM主機-Infra-01和VM主機-Infra-02
+
+若要在ESXi主機上設定主機交換、請在每個主機上執行下列步驟：
+
+. 按一下左側導覽窗格中的「Manage（管理）」。在右窗格中選取「System（系統）」、然後按一下「Swap（
++
+image:express-direct-attach-aff220-deploy_image62.png["錯誤：缺少圖形影像"]
+
+. 按一下「編輯設定」。從資料存放區選項中選取「infra_swap」。
++
+image:express-direct-attach-aff220-deploy_image63.png["錯誤：缺少圖形影像"]
+
+. 按一下儲存。
+
+
+
+
+==== 安裝適用於VMware VAAI的NetApp NFS外掛程式1.1.2
+
+安裝NetApp NFS外掛程式1。1.2若為VMware VAAI、請完成下列步驟。
+
+. 下載適用於VMware VAAI的NetApp NFS外掛程式：
++
+.. 前往 https://mysupport.netapp.com/NOW/download/software/nfs_plugin_vaai_esxi6/1.1.2/["NetApp軟體下載頁面"^]。
+.. 向下捲動並按一下適用於VMware VAAI的NetApp NFS外掛程式。
+.. 選取ESXi平台。
+.. 下載最新外掛程式的離線套裝組合（.zip）或線上套裝組合（.vib）。
+
+
+. 適用於VMware VAAI的NetApp NFS外掛程式正在等待IMT 通過ONTAP VMware 9.5的資格鑑定、互通性詳細資料將會張貼到NetApp IMT 更新版。
+. 使用ESX CLI在ESXi主機上安裝外掛程式。
+. 重新開機ESXi主機。
+
+
+
+
+== 安裝VMware vCenter Server 6.7
+
+本節提供在FlexPod VMware vCenter Server 6.7以VMware Express組態安裝的詳細程序。
+
+
+NOTE: VMware vCenter Server Appliance（VCSA）是由VMware vCenter Express提供。FlexPod
+
+
+
+=== 安裝VMware vCenter伺服器應用裝置
+
+若要安裝VCSA、請完成下列步驟：
+
+. 下載VCSA。管理ESXi主機時、按一下「Get vCenter Server（取得vCenter伺服器）」圖示、即可存取下載連結。
++
+image:express-direct-attach-aff220-deploy_image64.png["錯誤：缺少圖形影像"]
+
+. 從VMware網站下載VCSA。
++
+
+NOTE: 雖然支援可安裝Microsoft Windows vCenter Server、但VMware建議新部署使用VCSA。
+
+. 掛載ISO映像。
+. 瀏覽至「vcsa-ui-installer」>「win32」目錄。按兩下「installer.exe」。
+. 按一下「安裝」。
+. 按一下「簡介」頁面上的「下一步」。
+. 接受EULA。
+. 選取「內嵌平台服務控制器」作為部署類型。
++
+image:express-direct-attach-aff220-deploy_image65.png["錯誤：缺少圖形影像"]
+
++
+如有需要、FlexPod 也支援外部平台服務控制器部署、作為支援的部分。
+
+. 在「設備部署目標」頁面上、輸入您已部署ESXi主機的IP位址、root使用者名稱和root密碼。按一下「下一步」
++
+image:express-direct-attach-aff220-deploy_image66.png["錯誤：缺少圖形影像"]
+
+. 輸入VCSA做為VM名稱、並輸入要用於VCSA的root密碼、即可設定應用裝置VM。按一下「下一步」
++
+image:express-direct-attach-aff220-deploy_image67.png["錯誤：缺少圖形影像"]
+
+. 選擇最適合您環境的部署規模。按一下「下一步」
++
+image:express-direct-attach-aff220-deploy_image68.png["錯誤：缺少圖形影像"]
+
+. 選取「infra_datastore_1」資料存放區。按一下「下一步」
++
+image:express-direct-attach-aff220-deploy_image69.png["錯誤：缺少圖形影像"]
+
+. 在「Configure Network Settings（設定網路設定）」頁面中輸入下列資訊、然後按「Next（下一步）」。
++
+.. 選取「管理網路」作為您的網路。
+.. 輸入要用於VCSA的FQDN或IP。
+.. 輸入要使用的IP位址。
+.. 輸入要使用的子網路遮罩。
+.. 輸入預設閘道。
+.. 輸入DNS伺服器。
++
+image:express-direct-attach-aff220-deploy_image70.png["錯誤：缺少圖形影像"]
+
+
+
+. 在「準備完成階段1」頁面上、確認您輸入的設定正確無誤。按一下「完成」。
++
+VCSA現已安裝。此程序需要幾分鐘的時間。
+
+. 階段1完成後、會出現一則訊息、表示已完成。按一下「Continue（繼續）」以開始階段2組態。
++
+image:express-direct-attach-aff220-deploy_image71.png["錯誤：缺少圖形影像"]
+
+. 在「第2階段簡介」頁面上、按「下一步」。
+. 輸入「<<var_ntP_id>>'作為NTP伺服器位址。您可以輸入多個NTP IP位址。
++
+如果您打算使用vCenter Server高可用度、請確定已啟用SSH存取。
+
+. 設定SSO網域名稱、密碼和網站名稱。按一下「下一步」
++
+請記錄這些值以供參考、尤其是當您偏離「vSphere.local」網域名稱時。
+
+. 如有需要、請參加VMware客戶體驗方案。按一下「下一步」
+. 檢視設定摘要。按一下「Finish（完成）」或使用「Back（上一步）」按鈕編輯設定。
+. 此時會出現一則訊息、指出您無法在安裝啟動後暫停或停止完成安裝。按一下「確定」以繼續。
++
+應用裝置設定會繼續進行。這需要幾分鐘的時間。
+
++
+此時會出現一則訊息、指出設定成功。
+
++
+
+NOTE: 安裝程式可點選用來存取vCenter Server的連結。
+
+
+
+
+
+==== 設定VMware vCenter Server 6.7和vSphere叢集
+
+若要設定VMware vCenter Server 6.7和vSphere叢集、請完成下列步驟：
+
+. 瀏覽至\https://\<<FQDN或vCenter的IP >/vSphere-client/。
+. 按一下「啟動vSphere Client」。
+. 使用使用者名稱管理器@vple.hil登入、以及您在VCSA設定程序中輸入的SSO密碼。
+. 在vCenter名稱上按一下滑鼠右鍵、然後選取「New Datacenter（新增資料中心）」
+. 輸入資料中心名稱、然後按一下「確定」。
+
+
+*建立vSphere叢集。*
+
+若要建立vSphere叢集、請完成下列步驟：
+
+. 在新建立的資料中心上按一下滑鼠右鍵、然後選取「New Cluster（新增叢集）」。
+. 輸入叢集名稱。
+. 選取並啟用DRS和vSphere HA選項。
+. 按一下「確定」。
++
+image:express-direct-attach-aff220-deploy_image72.png["錯誤：缺少圖形影像"]
+
+
+
+*將ESXi主機新增至叢集*
+
+若要將ESXi主機新增至叢集、請完成下列步驟：
+
+. 在叢集的「動作」功能表中選取「新增主機」。
++
+image:express-direct-attach-aff220-deploy_image73.png["錯誤：缺少圖形影像"]
+
+. 若要將ESXi主機新增至叢集、請完成下列步驟：
++
+.. 輸入主機的IP或FQDN。按一下「下一步」
+.. 輸入root使用者名稱和密碼。按一下「下一步」
+.. 按一下「是」以VMware憑證伺服器簽署的憑證取代主機的憑證。
+.. 按一下「主機摘要」頁面上的「下一步」。
+.. 按一下綠色+圖示、將授權新增至vSphere主機。
++
+
+NOTE: 如有需要、可於稍後完成此步驟。
+
+.. 按一下「Next（下一步）」以停用鎖定模式。
+.. 按一下VM位置頁面上的Next（下一步）。
+.. 檢閱「準備好完成」頁面。使用「上一步」按鈕進行任何變更、或選取「完成」。
+
+
+. 對Cisco UCS主機B重複步驟1和2
++
+若有任何額外的主機新增FlexPod 至不完整的功能組態、則必須完成此程序。
+
+
+
+
+
+==== 在ESXi主機上設定coredump
+
+適用於iSCSI開機主機的ESXi傾印收集器設定
+
+使用VMware iSCSI軟體啟動器以iSCSI開機的ESXi主機、必須設定為執行核心傾印至屬於vCenter一部分的ESXi傾印收集器。vCenter Appliance預設不會啟用傾印收集器。此程序應在vCenter部署區段結束時執行。若要設定ESXi傾印收集器、請遵循下列步驟：
+
+. 以mailto：administrator@vsphere.1[administrator@vsphere.er@vsphere.erl]登入vSphere Web Client、然後選取「Home（首頁）」。
+. 在中央窗格中、按一下系統組態。
+. 在左窗格中、選取「服務」。
+. 在「服務」下、按一下「VMware vSphere ESXi傾印收集器」。
+. 在中央窗格中、按一下綠色的「開始」圖示以啟動服務。
+. 在「動作」功能表中、按一下「編輯啟動類型」。
+. 選取自動。
+. 按一下「確定」。
+. 使用ssh做為root來連線至每個ESXi主機。
+. 執行下列命令：
++
+....
+esxcli system coredump network set –v vmk0 –j <vcenter-ip>
+esxcli system coredump network set –e true
+esxcli system coredump network check
+....
++
+執行最後一個命令後、會出現「已驗證已設定的netdump伺服器正在執行」訊息。
+
++
+
+NOTE: 若有任何額外的主機新增FlexPod 至不景速查系統、則必須完成此程序。
+
+

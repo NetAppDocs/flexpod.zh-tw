@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-design_where_to_find_additional_information.html 
+keywords: references 
+summary: 若要深入瞭解本文所述資訊、請參閱本頁所列的文件與網站。 
+---
+= 何處可找到其他資訊
+:allow-uri-read: 
+
+
+若要深入瞭解本文件所述資訊、請參閱下列文件與網站：
+
+* 系統文件中心AFF FAS
++
+https://docs.netapp.com/platstor/index.jsp["https://docs.netapp.com/platstor/index.jsp"^]
+
+* 「文件資源」頁面AFF
++
+https://www.netapp.com/us/documentation/all-flash-fas.aspx["https://www.netapp.com/us/documentation/all-flash-fas.aspx"^]
+
+* 使用VMware vSphere 6.7和NetApp的VMware Express《更新部署指南》（進行中）FlexPod AFF
+* NetApp文件
++
+https://docs.netapp.com["https://docs.netapp.com"^]
+
+

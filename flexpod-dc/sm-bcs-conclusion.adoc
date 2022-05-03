@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/sm-bcs-conclusion.html 
+keywords: conclusion 
+summary: 採用SM至BC的《支援核心資料中心》採用主動式資料中心設計、FlexPod 可為業務關鍵工作負載提供營運不中斷和災難恢復功能。此解決方案通常會將兩個資料中心互連、分別部署在不同地理位置的都會區。NetApp SMBC解決方案使用同步複寫功能、保護關鍵業務資料服務、避免站台故障。解決方案要求兩FlexPod 個仰賴不超過10毫秒的往返網路延遲。 
+---
+= 結論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:sm-bcs-validated-scenarios.html["先前版本：解決方案驗證-已驗證的案例。"]
+
+採用SM至BC的《支援核心資料中心》採用主動式資料中心設計、FlexPod 可為業務關鍵工作負載提供營運不中斷和災難恢復功能。此解決方案通常會將兩個資料中心互連、分別部署在不同地理位置的都會區。NetApp SMBC解決方案使用同步複寫功能、保護關鍵業務資料服務、避免站台故障。解決方案要求兩FlexPod 個仰賴不超過10毫秒的往返網路延遲。
+
+部署在第三站台的NetApp ONTAP 支援中心會監控SMBC解決方案、並在偵測到站台災難時自動容錯移轉。VMware vCenter搭配VMware HA和延伸的VMware vSphere Metro儲存叢集組態、可與NetApp SMBC無縫搭配運作、讓解決方案達到理想的零RPO和接近零的RTO目標。
+
+如果現有的支援需求符合、也可以在現有的支援基礎架構上部署此解決方案、或是在現有的支援中心中加入額外的支援解決方案、以達成營運不中斷的目標。FlexPod FlexPod FlexPod FlexPodNetApp和Cisco提供其他管理、監控和自動化工具、例如Cisco Intersight、Ansible和HashiCorp Terraform-based Automation、讓您輕鬆監控解決方案、深入瞭解其作業、並將其部署和作業自動化。
+
+從業務關鍵應用程式（例如Microsoft SQL Server）的觀點來看、即使ONTAP 站台儲存設備中斷、位於VMware資料存放區上的資料庫仍可繼續使用、並以VMware的VMware資料存放區為基礎、受到VMware的支援。驗證測試期間、資料庫所在的儲存叢集停電後、將會發生SM至BC CG關係的容錯移轉、Microsoft SQL Server交易也會在不中斷應用程式的情況下恢復。
+
+利用應用程式精細的資料保護功能、ONTAP 即可為業務關鍵應用程式建立起穩健的RPO關係、以滿足零RPO和近乎零的RTO需求。為了讓Microsoft SQL Server應用程式所在的VMware叢集能夠在站台儲存設備中斷後繼續運作、每個站台ESXi主機的開機LUN也會受到SM至BC CG關係的保護。
+
+利用NetApp的靈活度與擴充性FlexPod 、您可以從適當規模的基礎架構開始著手、隨著業務需求的變化而不斷成長與發展。這項經過驗證的設計可讓您在分散式與整合式基礎架構上、可靠地部署VMware vSphere型私有雲、進而提供可靈活因應許多單點故障案例的解決方案、以及可保護關鍵業務資料服務的站台故障。
+
+link:sm-bcs-where-to-find-additional-information-and-version-history.html["下一步：何處可以找到其他資訊和版本歷程記錄。"]

@@ -1,0 +1,128 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-epic-performance_test_methodology.html 
+keywords: test, methodology, generationio, tool, genio, storage, harware, software, vms 
+summary: Epic使用GenerationIO工具（Genio）來驗證儲存設備是否已準備就緒。本測試著重於效能、將儲存設備推向極限、並透過在需求失敗之前向上擴充來判斷儲存控制器的保留空間。 
+---
+= 測試方法
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== 測試計畫
+
+Epic使用GenerationIO工具（Genio）來驗證儲存設備是否已準備就緒。本測試著重於效能、將儲存設備推向極限、並透過在需求失敗之前向上擴充來判斷儲存控制器的保留空間。
+
+此處執行的測試著重於判斷保留空間、以及使用調適性服務品質（AQO）來保護重要的Epic工作負載。為了進行驗證、兩部伺服器均使用Genio載入儲存控制器上的I/O磁碟機。AFF三部伺服器均搭載Genio、可在AFF 全部三部伺服器上驅動I/O、並將其安裝於整個過程的整個過程中。由於伺服器效能限制、使用三部伺服器、AFF 而使用三部伺服器才能實現VMware的VMware產品。
+
+
+
+== 測試環境
+
+
+
+=== 硬體與軟體
+
+在本研究中、我們在執行Cisco UCS B200-M5S的VMware ESXi 6.5上、設定了三個Red Hat Linux虛擬機器（VM）。我們AFF 使用伺服器端的16Gb FC和儲存端的16Gb FC、將ESXi主機連線至採用Cisco MDS系列交換器的支援中心節點。根據NetApp佈線最佳實務做法、將NetApp A700節點連接至一個配備3.8TB SSD的DS2446磁碟櫃。AFF
+
+下表列出Epic效能測試組態所使用的硬體與軟體元件。
+
+下表列出Epic Test硬體與軟體元件。
+
+|===
+| 硬體與軟體元件 | 詳細資料 
+
+
+| 適用於VM的作業系統 | RHEL 7.4 VM 
+
+
+| 刀鋒伺服器上的作業系統 | VMware ESXi 6.5 
+
+
+| 實體伺服器 | Cisco UCS B200 M5 x 3 
+
+
+| 每個伺服器的處理器數量 | 兩個20核心Intel Xeon Gold 6148 2.4Ghz 
+
+
+| 每個伺服器的實體記憶體 | 768GB 
+
+
+| FC網路 | 16Gb FC搭配多重路徑 
+
+
+| FC HBA | Cisco UCS VIC 1340上的FC vHBA 
+
+
+| 專屬的公有1GbE連接埠、可用於叢集管理 | 兩個Intel 1350GbE連接埠 
+
+
+| 16GB FC交換器 | Cisco MDS 9148 
+
+
+| 40GbE交換器 | Cisco Nexus 9332交換器 
+|===
+下表列出NetApp AFF 的NetApp E系列A700和AFF E系列資料系統的硬體與軟體。
+
+|===
+| 硬體與軟體元件 | 詳細資料AFF | 詳細資料AFF 
+
+
+| 儲存系統 | 配置為高可用度（HA）雙主動式配對的部分A700控制器AFF | 將VA300控制器設定為高可用度（HA）雙主動配對AFF 
+
+
+| 版本ONTAP | 9.4 | 9.5. 
+
+
+| 磁碟機總數 | 36 | 24 
+
+
+| 磁碟機大小 | 3.8TB | 3.8TB 
+
+
+| 磁碟機類型 | SSD | SSD 
+
+
+| FC目標連接埠 | 八個16GB連接埠（每個節點四個） | 八個16GB連接埠（每個節點四個） 
+
+
+| 乙太網路連接埠 | 四個10Gb連接埠（每個節點兩個） | 四個10Gb連接埠（每個節點兩個） 
+
+
+| 儲存虛擬機器（SVM） | 在兩個節點集合體之間建立一個SVM | 在兩個節點集合體之間建立一個SVM 
+
+
+| 乙太網路邏輯介面（LIF） | 四個1Gb管理生命期（每個節點兩個連接至獨立的私有VLAN） | 四個1Gb管理生命期（每個節點兩個連接至獨立的私有VLAN） 
+
+
+| FC生命 | 四個16GB資料量 | 四個16GB資料量 
+|===
+下表列出了NetApp AFF 的Ar主機 名A700和AFF Ar主機 名A300儲存系統配置。
+
+|===
+| 儲存配置 | 詳細資料AFF | 詳細資料AFF 
+
+
+| SVM | 適用於Epic應用程式資料庫的單一SVM | 適用於Epic應用程式資料庫的單一SVM 
+
+
+| 集合體 | 每個20TB | 每個30TB 
+
+
+| 用於正式作業的Volume | 每個RHEL VM有16個342GB磁碟區 | 每個RHEL VM有16個512GB磁碟區 
+
+
+| 用於正式作業的LUN | 16個307GB LUN、每個磁碟區一個 | 16個460GB LUN、每個磁碟區一個 
+
+
+| 用於日誌的磁碟區 | 每個RHEL VM兩個95Gb磁碟區 | 每個RHEL VM兩個240GB磁碟區 
+
+
+| LUN以供日誌使用 | 兩個75Gb LUN、每個磁碟區一個 | 兩個190Gb LUN、每個磁碟區一個 
+|===

@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_where_to_find_additional_information.html 
+keywords: additional, information, flexpod, cloud, fabricpool 
+summary: 若要深入瞭解本文所述資訊、請檢閱下列文件和/或網站。 
+---
+= 何處可找到其他資訊
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+若要深入瞭解本文所述資訊、請檢閱下列文件和 / 或網站：
+
+* 最佳實務做法FabricPool
++
+http://www.netapp.com/us/media/tr-4598.pdf["www.netapp.com/us/media/tr-4598.pdf"^]
+
+* NetApp 產品文件
++
+https://docs.netapp.com["https://docs.netapp.com"^]
+
+* TR-4036：FlexPod 《資料中心技術規格》
++
+https://www.netapp.com/us/media/tr-4036.pdf["https://www.netapp.com/us/media/tr-4036.pdf"^]
+
+

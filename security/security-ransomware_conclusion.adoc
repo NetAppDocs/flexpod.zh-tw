@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: security/security-ransomware_conclusion.html 
+keywords: ransomware, attack, data, backup, recovery, business, planning 
+summary: 作者建議在發生攻擊時不要支付贖金、因為這樣做可強化攻擊者對其商業模式的信心。資料備份與還原作業是勒索軟體還原的重要部分。因此、必須將其納入業務規劃的一部分。 
+---
+= 結論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+勒索軟體是有組織犯罪的產物、攻擊者的行為不符合道德規範。即使收到贖金、他們也可能不提供解密金鑰。受害者不僅遺失資料、也會損失大量金錢、並會面臨與生產資料遺失有關的後果。
+
+根據A https://www.forbes.com/sites/leemathews/2018/03/09/why-you-should-never-pay-a-ransomware-ransom/["Forbes文章"^]、只有19%的勒索軟體受害者在支付贖金後才取得資料。因此、作者建議在發生攻擊時不要支付贖金、因為這樣做可強化攻擊者對其商業模式的信心。
+
+資料備份與還原作業是勒索軟體還原的重要部分。因此、必須將其納入業務規劃的一部分。這些作業的實作應列入預算、以便在發生攻擊時、恢復功能不會受到影響。
+
+關鍵在於在這段旅程中選擇正確的技術合作夥伴、FlexPod 而在All Flash FAS 更新的系統中、無需額外成本、即可在原生環境中提供大部分所需的功能。

@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_introduction.html 
+keywords: flexpod, fabricpool, inactive, data, tiering, amazon, aws, s3 
+summary: 本技術報告會在FabricPool NetApp與Cisco的融合式基礎架構架構環境中、審查NetApp ONTAP ®的「資料分層」功能。FlexPod 
+---
+= TR-4801：FlexPod 包含FabricPool 不活動的資料分層功能、可讓您將資料分層至Amazon AWS S3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+NetApp的Scott Kovacs
+
+Flash儲存設備的價格持續下降、因此可用於先前未被視為Flash儲存設備候選對象的工作負載和應用程式。然而、最有效率地運用儲存設備投資、對於IT經理而言仍至關重要。IT部門持續受到壓力、必須提供效能更高的服務、而且預算不會增加或減少。為了滿足這些需求、NetApp FabricPool 功能可讓您將不常用的資料從昂貴的內部部署Flash儲存設備移至公有雲中更具成本效益的儲存層、藉此充分發揮雲端經濟效益。將不常存取的資料移至雲端、可釋出AFF 位於VMware或FAS VMware系統上的寶貴Flash儲存空間、為高效能Flash層的業務關鍵工作負載提供更多容量。
+
+本技術報告會在FabricPool NetApp與Cisco的融合式基礎架構架構環境中、審查NetApp ONTAP ®的「資料分層」功能。FlexPod您應該熟悉FlexPod 「支援資料中心」的融合式基礎架構架構和ONTAP 「支援資料中心」儲存軟體、才能充分發揮本技術報告所討論的概念。我們以FlexPod 熟悉的功能為基礎ONTAP 、討論FabricPool 如何使用功能、以及如何使用功能來更有效地使用內部部署的Flash儲存設備。本報告中的大部分內容將在中詳細說明 https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598 FabricPool 《最佳實務做法》"^] 及其他ONTAP 產品文件。內容已濃縮成FlexPod 適用於整個基礎架構的內容、並未完全涵蓋FabricPool 所有的使用案例。所有研究的功能和概念均可在ONTAP 32個版本中找到。
+
+如需FlexPod 更多關於此功能的資訊、請參閱 https://www.netapp.com/pdf.html?item=/media/12424-tr4036.pdf["TR-4036 FlexPod 《資料中心技術規格》"^]。

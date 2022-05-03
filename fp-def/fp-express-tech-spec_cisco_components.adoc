@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec__cisco_components.html 
+keywords: cisco, components, blade, server, options, rack, ucs, nexus, switches 
+summary: Cisco是FlexPod 對此解決方案的運算和網路層做出重大貢獻的不二選擇。 
+---
+= Cisco元件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Cisco是FlexPod 對此解決方案的運算和網路層做出重大貢獻的不二選擇。本節說明FlexPod 適用於Express的Cisco UCS和Cisco Nexus元件。
+
+
+
+== Cisco UCS B系列刀鋒伺服器選項
+
+Cisco UCS Mini平台目前支援的Cisco UCS B系列刀鋒為B200 M5和B420 M4。下表將列出Cisco UCS Mini平台支援的其他刀鋒。
+
+|===
+| Cisco UCS B系列伺服器 | 產品編號 | 技術規格 
+
+
+| Cisco UCS B200 M5 | UCSB-B200-M5 | https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-b200-m5-blade-server/model.html[] 
+
+
+| Cisco UCS B200 M4 | UCSB-B200-M4 | http://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/b200m4-specsheet.pdf[] 
+
+
+| Cisco UCS B420 M4 | UCSB-B420-M4 | http://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/b420m4-spec-sheet.pdf[] 
+|===
+
+
+== Cisco UCS C系列機架伺服器選項
+
+Cisco UCS C系列刀鋒伺服器提供單機架和雙機架單元（RU）類型、提供各種CPU、記憶體和I/O選項。下表所列的零件編號適用於基礎伺服器、不包括CPU、記憶體、磁碟機、PCIe卡或Cisco FEX。提供多種組態選項FlexPod 、並在支援中提供。
+
+|===
+| Cisco UCS C系列機架伺服器 | 產品編號 | 技術規格 
+
+
+| Cisco UCS C220 M4 | UCSC-C220-M4S | http://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c220m4-sff-spec-sheet.pdf[] 
+
+
+| Cisco UCS C240 M4 | UCSC-C240-M4S | http://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c240m4-sff-spec-sheet.pdf[] 
+
+
+| Cisco UCS C460 M4 | UCSC-C460-M4 | http://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c460m4_specsheet.pdf[] 
+|===
+
+
+== Cisco Nexus交換器
+
+所有FlexPod 的Express架構都需要備援交換器。
+
+採用NetApp的不只是NetApp的不只是單純的架構、更是以Cisco Nexus 31108交換器打造而成。FlexPod AFF FAS採用Cisco UCS Mini（Cisco UCS託管）架構的支援功能、已透過Cisco Nexus 3524交換器進行驗證。FlexPod此組態也可搭配標準交換器進行部署。
+
+使用E系列的支援功能的支援功能可透過標準交換器進行部署。FlexPod
+
+下表列出Cisco Nexus系列機箱的零件編號、不含額外的SFP或附加模組。
+
+|===
+| Cisco Nexus系列交換器 | 產品編號 | 技術規格 
+
+
+| Cisco Nexus 3048 | N3K-C3048TP-1GE | http://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-685363.html[] 
+
+
+| Cisco Nexus 31108. | N3K-C31108PC-V | http://www.cisco.com/c/en/us/products/switches/nexus-31108pc-v-switch/index.html[] 
+
+
+| Cisco Nexus 9396 | N9K-C9396PX | http://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729405.html[] 
+
+
+| Cisco Nexus 3172 | N3K-C3172 | https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html[] 
+|===
+
+
+== Cisco支援授權選項
+
+所有Cisco設備均需簽訂FlexPod 有效的SMARTnet支援合約、此合約均採用此功能。
+
+
+NOTE: 您的銷售代表應驗證所需的授權與這些授權的零件編號、因為這些授權可能因不同產品而異。
+
+下表列出Cisco支援授權選項。
+
+|===
+| Cisco支援授權 | 授權指南 
+
+
+| SMARTNET 24X7X4 | http://www.cisco.com/web/services/portfolio/product-technical-support/smartnet/index.html[] 
+|===

@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: healthcare/medical-imaging_solution_infrastructure_hardware_and_software_components.html 
+keywords: harware, software, components, solution, infrastructure, medical, imaging, flexpod 
+summary: 下表分別列出FlexPod 醫療影像系統的各種硬體和軟體元件。 
+---
+= 解決方案基礎架構硬體與軟體元件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+下表分別列出FlexPod 醫療影像系統的各種硬體和軟體元件。
+
+|===
+| 層級 | 產品系列 | 數量與模式 | 詳細資料 
+
+
+.4+| 運算 | Cisco UCS 5108機箱 | 1或2 | 根據支援年度研究數量所需的刀鋒數量 
+
+
+| Cisco UCS刀鋒伺服器 | B200 M5 | 每年使用2 x 20個以上核心、2.7GHz及128-384GB RAM的研究數量、以刀鋒數量為基礎 
+
+
+| Cisco UCS虛擬介面卡（VIC） | Cisco UCS 1440 | 請參閱 
+
+
+| 2個Cisco UCS網路互連 | 6454或更新版本 | – 
+
+
+| 網路 | Cisco Nexus交換器 | 2個Cisco Nexus 3000系列或9000系列 | – 
+
+
+.2+| 儲存網路 | 透過SMB/CIFS、NFS或iSCSI傳輸協定進行儲存存取的IP網路 | 與上述相同的網路交換器 | – 
+
+
+| 透過FC存取儲存設備 | 2個Cisco MDS 9132T | – 
+
+
+.3+| 儲存設備 | NetApp AFF 產品系列A400 All Flash儲存系統 | 1個或多個HA配對 | 具有兩個或多個節點的叢集 
+
+
+| 磁碟櫃 | 1個以上的DS224C或NS224磁碟櫃 | 已裝滿24個磁碟機 
+
+
+| SSD | 大於24、1.2TB或更大容量 | – 
+|===
+|===
+| 軟體 | 產品系列 | 版本或版本 | 詳細資料 
+
+
+.7+| 企業醫療影像系統 |  |  |  
+
+
+| MS SQL或Oracle資料庫伺服器 | 如醫療影像系統廠商所建議 |  
+
+
+| 沒有像MongoDB Server這樣的SQL DB | 如醫療影像系統廠商所建議 |  
+
+
+| 應用程式伺服器 | 如醫療影像系統廠商所建議 |  
+
+
+| 整合伺服器（MS BizTalk、MuleSoft、Rhapsody、Tibco） | 如醫療影像系統廠商所建議 |  
+
+
+| VM | Linux（64位元） |  
+
+
+| VM | Windows伺服器（64位元） |  
+
+
+| 儲存設備 | ONTAP | 更新版本ONTAP |  
+
+
+.3+| 網路 | Cisco UCS光纖互連 | Cisco UCS Manager 4.1或更新版本 |  
+
+
+| Cisco乙太網路交換器 | 9.2（3）i7（2）或更新版本 |  
+
+
+| Cisco FC：Cisco MDS 9132T | 8.4(2)或更新版本 |  
+
+
+| Hypervisor | Hypervisor | VMware vSphere ESXi 6.7 U2或更新版本 |  
+
+
+.3+| 管理 | Hypervisor管理系統 | VMware vCenter Server 6.7 U1（vCSA）或更新版本 |  
+
+
+| NetApp虛擬儲存主控台（VSC） | VSC 9.7或更新版本 |  
+
+
+| SnapCenter | 不含更新版本SnapCenter |  
+|===

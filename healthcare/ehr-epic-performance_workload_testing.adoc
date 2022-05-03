@@ -1,0 +1,454 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-epic-performance_workload_testing.html 
+keywords: data, generation, aff, a300, genio, aqos, adaptive, quality, test, server, procedure 
+summary: 此款《美國的非洲最大Epic執行個體：AFF如果您有兩個以上的Epic執行個體、您可能需要根據AFF NetApp SPM工具的結果、使用一套功能強大的解決方案。 
+---
+= 工作負載測試
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== 介紹A300程序AFF
+
+此款《美國的非洲最大Epic執行個體：AFF如果您有兩個以上的Epic執行個體、您可能需要根據AFF NetApp SPM工具的結果、使用一套功能強大的解決方案。
+
+
+
+=== 資料產生
+
+LUN內的資料是以Epic的Dgen.pl指令碼產生。指令碼的設計目的是建立類似Epic資料庫中的資料。
+
+下列Dgen-命令是從RHEL VM、EPIC rhel1和EPIC rhel2執行：
+
+....
+./dgen.pl --directory "/epic" --jobs 2 --quiet --pctfull 20
+....
+「pctfull」為選用項目、可定義LUN填入資料的百分比。預設值為95%。大小不會影響效能、但會影響將資料寫入LUN的時間。
+
+完成dgen-程序之後、您可以針對每部伺服器執行Genio測試。
+
+
+
+=== 執行Genio
+
+測試了兩部伺服器。執行的IOPS從75、000次增加到11、000次、這代表了非常大型的Epic環境。這兩項測試同時執行。
+
+從伺服器EPIC rhel1執行下列Genio命令：
+
+....
+./RampRun.pl –miniops 75000 --maxiops 110000 --background --disable-warmup --runtime 30 --wijfile /epic/epicjrn/GENIO.WIJ --numruns 10 --system epic-rhel1 --comment Ramp 75-110k
+....
+
+
+== Genio在AFF 整個過程中展現出
+
+下表列出AFF 了有關該技術的Genio結果
+
+|===
+| 讀取IOPs | 寫入IOPs | IOPs總計 | 最長寫入週期（秒） | 有效寫入延遲（毫秒） | Randread平均值（毫秒） 
+
+
+| 142505 | 46442 | 188929 | 44.68 | 0.115 | 0.66 
+|===
+
+
+== 介紹A700程序AFF
+
+對於較大型的Epic環境（通常超過一千萬個全球參考資料）、客戶可以選擇AFF 使用該產品。
+
+
+
+== 資料產生
+
+LUN內部的資料是以Epic的Dgen.pl指令碼產生。指令碼的設計目的是建立類似Epic資料庫中的資料。
+
+在所有三個RHEL VM上執行下列Dgen.命令。
+
+....
+./dgen.pl --directory "/epic" --jobs 2 --quiet --pctfull 20
+....
+「pctfull」為選用項目、可定義LUN填入資料的百分比。預設值為95%。大小不會影響效能、但會影響將資料寫入LUN的時間。
+
+完成dgen-程序之後、您就可以為每部伺服器執行Genio測試。
+
+
+
+== 執行Genio
+
+測試了三部伺服器。在兩部伺服器上、執行的IOP數量從75、000到10、000次、代表了一個非常大的Epic環境。第三台伺服器的設定是要將IOPS從75、000次提高至17、000次IOPS。這三項測試都同時執行。
+
+從伺服器EPIC rhel1執行下列Genio命令：
+
+....
+./RampRun.pl –miniops 75000 --maxiops 100000 --background --disable-warmup --runtime 30 --wijfile /epic/epicjrn/GENIO.WIJ --numruns 10 --system epic-rhel1 --comment Ramp 75-100k
+....
+
+
+== Genio的AFF 結果顯示在《整個過程中的整個過程中
+
+下表顯示Genio測試AFF 結果以測試出該系統的功能。
+
+|===
+| 讀取IOPs | 寫入IOPs | IOPs總計 | 最長寫入週期（秒） | 有效寫入延遲（毫秒） | Randread平均值（毫秒） 
+
+
+| 241,180 | 78,654 | 319、837 | 43.24 | 0.09 | 1.05 
+|===
+
+
+=== 具備AQO的效能SLA
+
+NetApp可以使用AQO原則、為工作負載設定最低和最高效能值。場地設置可保證最低效能。IOPS/TB可套用至Epic等應用程式的一組磁碟區。指派給QoS原則的Epic工作負載、可在同一個叢集上免受其他工作負載的影響。最低要求是保證的、同時允許工作負載達到尖峰、並使用控制器上的可用資源。
+
+在此測試中、伺服器1和伺服器2受到AQO保護、而第三台伺服器則是一種不良工作負載、導致叢集內的效能降低。AQO允許伺服器1和2在指定的SLA下執行、而高效能工作負載則顯示寫入週期較長的降級跡象。
+
+
+
+=== 可調整的服務品質預設值
+
+隨附三項預設的AQO原則：價值、效能及極致。ONTAP每個原則的值都可以使用「QoS」命令來檢視。在命令結尾處使用「-即時」來檢視所有的AQO設定。
+
+....
+::> qos adaptive-policy-group show
+Name         Vserver Wklds  Expected IOPS        Peak IOPS
+extreme      fp-g9a  0      6144IOPS/TB 12288IOPS/TB
+performance  fp-g9a  0      2048IOPS/TB 4096IOPS/TB
+value        fp-g9a  0      128IOPS/TB  512IOPS/TB
+....
+以下是建立AQO原則的語法：
+
+....
+::> qos adaptive-policy-group modify -policy-group aqos- epic-prod1 -expected-iops 5000 -peak-iops 10000 -absolute-min-iops 4000 -peak-iops-allocation used-space
+....
+AQO原則中有幾項重要設定：
+
+* *預期IOPS。*此調適性設定是原則的最小IOPS/TB值。工作負載保證至少達到每TB的IOPS等級。這是本測試中最重要的設定。在我們的測試範例中、效能AQO原則設定為2048IOPS/TB。
+* *尖峰IOPS。*此調適性設定是原則的最大IOPS / TB值。在我們的測試範例中、效能AQO原則設定為4096IOPS/TB。
+* *尖峰IOPS配置。*選項是分配空間或已用空間。將此參數設為「已用空間」、因為此值會隨著資料庫在LUN中的增長而變更。
+* *絕對最小IOPS。*此設定為靜態且不具調適性。此參數會設定最小IOPS、無論大小為何。此值僅在大小低於1TB且對此測試無影響時使用。
+
+
+一般而言、正式作業中的Epic工作負載執行的儲存和容量約為1000 IOPS / TB、而IOPS則呈線性增長。預設的AQO效能設定檔對於Epic工作負載而言已綽綽有餘。
+
+在這項測試中、實驗室並未反映出規模較小5TB的正式作業規模資料庫。其目標是以75、000 IOPS執行每項測試。EpicProd AQO原則的設定如下所示。
+
+* 預期IOPS / TB =總IOPS /已用空間
+* 每TB 15、000 IOPS = 75、000 IOPS/5TB
+
+
+下表列出EpicProd AQO原則所使用的設定。
+
+|===
+| 設定 | 價值 
+
+
+| Volume大小 | 5TB 
+
+
+| 必要的IOPS | 75、000 
+
+
+| 尖峰IOPS分配 | 已用空間 
+
+
+| 絕對最低IOPS | 7、500 
+
+
+| 預期IOPS / TB | 15、000 
+
+
+| IOPS / TB尖峰 | 30、000 
+|===
+下圖顯示隨著使用空間逐漸增加、如何計算樓層IOPS和上限IOPS。
+
+image:ehr-epic-performance_image2.png["錯誤：缺少圖形影像"]
+
+對於正式作業規模的資料庫、您可以建立像上一個範例所用的自訂AQO設定檔、也可以使用預設效能AQO原則。效能AQO原則的設定如下表所示。
+
+|===
+| 設定 | 價值 
+
+
+| Volume大小 | 75TB 
+
+
+| 必要的IOPS | 75、000 
+
+
+| 尖峰IOPS分配 | 已用空間 
+
+
+| 絕對最低IOPS | 500 
+
+
+| 預期IOPS / TB | 1、000 
+
+
+| IOPS / TB尖峰 | 2、000 
+|===
+下圖顯示當預設效能AQO原則的已用空間隨時間增加時、如何計算樓層和上限IOPS。
+
+image:ehr-epic-performance_image3.png["錯誤：缺少圖形影像"]
+
+
+
+=== 參數
+
+* 下列參數指定調適性原則群組的名稱：
++
+....
+     -policy-group <text> - Name
+....
++
+調適性原則群組名稱必須是唯一的、且限制為127個英數字元、包括底線「_」和連字號「-」。Adaptive原則群組名稱必須以英數字元開頭。使用「QoS Adaptive（QoS調適性）police-group rame（原則群組重新命名）」命令來變更調適性原則群組名稱。
+
+* 下列參數指定此調適性原則群組所屬的資料SVM（命令列中稱為vserver）。
++
+....
+     -vserver <vserver name> - Vserver
+....
++
+您只能將此調適性原則群組套用至指定SVM中所包含的儲存物件。如果系統只有一個SVM、則該命令預設會使用該SVM。
+
+* 下列參數會根據儲存物件配置的大小、指定所配置的預期IOPS/TB或IOPS/GB下限。
++
+....
+     -expected-iops {<integer>[IOPS[/{GB|TB}]] (default: TB)} - Expected IOPS
+....
+* 下列參數會根據儲存物件配置的大小或儲存物件使用的大小、指定可能的IOPS/TB或IOPS/GB配置上限。
++
+....
+     -peak-iops {<integer>[IOPS[/{GB|TB}]] (default: TB)} - Peak IOPS
+....
+* 下列參數指定當預期的IOPS低於此值時、作為置換的絕對最小IOPS。
++
+....
+     [-absolute-min-iops <qos_tput>] - Absolute Minimum IOPS
+....
++
+預設值的計算方式如下：
+
++
+....
+qos adaptive-policy-group modify -policy-group aqos- epic-prod1 -expected-iops 5000 -peak-iops 10000 -absolute-min-iops 4000 -peak-iops-allocation used-space
+....
++
+....
+qos adaptive-policy-group modify -policy-group aqos- epic-prod2 -expected-iops 6000 -peak-iops 20000 -absolute-min-iops 5000 -peak-iops-allocation used-space
+....
++
+....
+qos adaptive-policy-group modify -policy-group aqos- epic-bully -expected-iops 3000 -peak-iops 2000 -absolute-min-iops 2000 -peak-iops-allocation used-space
+....
+
+
+
+
+=== 資料產生
+
+LUN內部的資料是以Epic「Dgen.pl」指令碼產生。指令碼的設計目的是建立類似Epic資料庫中的資料。
+
+下列Dgen.命令在所有三個RHEL VM上執行：
+
+....
+./dgen.pl --directory "/epic" --jobs 2 --quiet --pctfull 20
+....
+
+
+=== 執行Genio
+
+測試了三部伺服器。兩個以持續75、000 IOPS執行、代表非常大型的Epic環境。第三台伺服器的設定是要將IOPS從75、000 IOPS提高至15、000 IOPS。這三項測試都同時執行。
+
+
+
+=== 伺服器EPIC _rhel1 Genio測試
+
+執行下列命令、將EpicProd AQO設定指派給每個Volume：
+
+....
+::> vol modify -vserver epic -volume epic_rhel1_* -qos-adaptive-policy-group AqosEpicProd
+....
+下列Genio命令是從伺服器EPIC rhel1執行：
+
+....
+./RampRun.pl –miniops 75000 --maxiops 75000 --background --disable-warmup --runtime 30 --wijfile /epic/GENIO.WIJ --numruns 10 --system epic-rhel1 --comment Ramp constant 75k
+....
+
+
+=== 伺服器EPIC _rhel2 Genio測試
+
+執行下列命令、將EpicProd AQO設定指派給每個Volume：
+
+....
+::> vol modify -vserver epic -volume epic_rhel2_* -qos-adaptive-policy-group AqosEpicProd
+....
+下列Genio命令是從伺服器EPIC rhel2執行：
+
+....
+./RampRun.pl --miniops 75000 --maxiops 75000 --background --disable-warmup --runtime 30 --wijfile /epic/GENIO.WIJ --numruns 10 --system epic-rhel2 --comment Ramp constant 75k
+....
+
+
+=== 伺服器EPIC _rhel3 Genio測試（不完全）
+
+下列命令不會將任何AQO原則指派給每個Volume：
+
+....
+::> vol modify -vserver epic -volume epic_rhel3_* -qos-adaptive-policy-group non
+....
+下列Genio命令是從伺服器EPIC rhel3執行：
+
+....
+./RampRun.pl --miniops 75000 --maxiops 150000 --background --disable-warmup --runtime 30 --wijfile /epic/GENIO.WIJ --numruns 10 --system epic-rhel3 --comment Ramp 75-150k
+....
+
+
+=== AQO測試結果
+
+下列各節中的表格包含每個並行Genio測試的summary.csv檔案輸出。若要通過測試、最長的寫入週期必須低於45秒。有效寫入延遲必須低於1毫秒。
+
+
+
+=== 伺服器EPIC _rhel1 Genio結果
+
+下表說明AQO伺服器EPIC _rhel1的Genio結果。
+
+|===
+| 執行 | 讀取IOPS | 寫入IOPS | IOPS總計 | 最長寫入週期（秒） | 有效寫入延遲（毫秒） 
+
+
+| 10. | 55655 | 18176年 | 73832 | 32.66 | 0.12 
+
+
+| 11. | 55653. | 18114. | 73768 | 34.66 | 0.1 
+
+
+| 12. | 55623 | 18099 | 73722 | 35.17 | 0.1 
+
+
+| 13. | 55646 | 18093 | 73740 | 35.16 | 0.1 
+
+
+| 14 | 55643. | 18082. | 73726 | 35.66 | 0.1 
+
+
+| 15 | 55634 | 18156. | 73791. | 32.54 | 0.1 
+
+
+| 16 | 55629 | 18138年 | 73767 | 34.74 | 0.11. 
+
+
+| 17 | 55646 | 18131. | 73777 | 35.081 | 0.11. 
+
+
+| 18 | 55639 | 18136. | 73775 | 35、48 | 0.11. 
+
+
+| 19 | 55597 | 18141年 | 73739 | 35、42. | 0.11. 
+|===
+
+
+=== 伺服器EPIC _rhel2 Genio結果
+
+下表說明AQO伺服器EPIC _rhel2的Genio結果。
+
+|===
+| 執行 | 讀取IOPS | 寫入IOPS | IOPS總計 | 最長寫入週期（秒） | 有效寫入延遲（毫秒） 
+
+
+| 10. | 55629 | 18081 | 73711. | 33.96年 | 0.1 
+
+
+| 11. | 55635 | 18152年 | 73788 | 28.59年 | 0.09 
+
+
+| 12. | 55606. | 18154. | 73761 | 30.44年 | 0.09 
+
+
+| 13. | 55639 | 18148年 | 73787 | 30.37年 | 0.09 
+
+
+| 14 | 55629 | 18145. | 73774 | 30.13 | 0.09 
+
+
+| 15 | 55619 | 18125. | 73745 | 30.03年 | 0.09 
+
+
+| 16 | 55640 | 18156. | 73796 | 33.48 | 0.09 
+
+
+| 17 | 55613. | 18177 | 73790 | 33.32 | 0.09 
+
+
+| 18 | 55605 | 18173. | 73779 | 32.11. | 0.09 
+
+
+| 19 | 55606. | 18178. | 73785 | 33.19 | 0.09 
+|===
+
+
+=== 伺服器EPIC _rhel3 Genio結果（不佳）
+
+下表說明AQO伺服器EPIC _rhel3的Genio結果。
+
+|===
+| 執行 | 寫入IOPS | IOPS總計 | 最長WIJ時間（秒） | 最長寫入週期（秒） | 有效寫入延遲（毫秒） 
+
+
+| 10. | 19980 | 81207 | 21：48 | 40.05 | 0.1 
+
+
+| 11. | 21835年 | 88610 | 17.57 | 46.32 | 0.12 
+
+
+| 12. | 23657 | 95959555 | 19.77 | 53.03 | 0.12 
+
+
+| 13. | 25493. | 103387 | 21：93 | 57.53 | 0.12 
+
+
+| 14 | 273331 | 110766 | 23.17 | 60.57 | 0.12 
+
+
+| 15 | 28893 | 11906 | 26.93年 | 56 | 0.1 
+
+
+| 16 | 30704 | 125233 | 28.05年 | 60.5 | 0.12 
+
+
+| 17 | 32521 | 132585 | 28.43 | 64.38 | 0.12 
+
+
+| 18 | 34335 | 13881. | 30 | 70.38 | 0.12 
+
+
+| 19 | 3636361. | 147633 | 22.78 | 73.66 | 0.13 
+|===
+
+
+== AQO測試結果分析
+
+上一節的結果顯示、EPIC rhel1和EPIC rhel2伺服器的效能不受EPIC rhel3上的高負荷影響。Epic rhel3將IOPS提升至150、000次、並在Genio測試達到控制器限制時開始失敗。EPIC rhel1和EPIC rhel2上的寫入週期和延遲會維持不變、而服務器的速度卻大不相同。
+
+這說明了AQO最低原則如何有效地將工作負載與優勢區隔、並保證最低效能等級。
+
+AQO有許多優點：
+
+* 它可提供更靈活、更簡化的架構。關鍵工作負載不再需要孤立、也能與非關鍵工作負載共存。所有容量和效能都可透過軟體進行管理和配置、而非使用實體分隔。
+* 它可節省執行ONTAP 於某個叢集上Epic所需的磁碟和控制器數量。
+* 它可簡化工作負載的資源配置、使其符合保證一致效能的效能原則。
+* 或者、您也可以實作NetApp服務層級管理程式來執行下列工作：
++
+** 建立服務目錄、以簡化儲存資源的配置。
+** 提供可預測的服務層級、讓您能夠持續達成使用率目標。
+** 定義服務層級目標。
+
+
+

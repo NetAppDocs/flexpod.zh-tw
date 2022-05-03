@@ -1,0 +1,192 @@
+---
+sidebar: sidebar 
+permalink: security/security-ransomware_protect_and_recover_data_on_flexpod.html 
+keywords: testbed, ransomeware, attack, vm, snapshot, copy, wannacry, detection, remediation, cifs 
+summary: 本節說明當攻擊發生時、如何恢復終端使用者的資料、以及如何使用FlexPod 一套系統來防止攻擊。 
+---
+= 保護FlexPod 及恢復資料
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節說明當攻擊發生時、如何恢復終端使用者的資料、以及如何使用FlexPod 一套系統來防止攻擊。
+
+
+
+== 測試床總覽
+
+為了展示FlexPod 不偵測、補救和預防、測試平台是根據本文件撰寫時最新平台CVD所指定的準則而打造： https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html["採用VMware vSphere 6.7 U1、Cisco UCS第4代及NetApp解決方案A系列CVD的資料中心FlexPod AFF"^]。
+
+在ONTAP VMware vSphere基礎架構中部署了Windows 2016 VM、該VM提供來自NetApp VMware vCenter軟體的CIFS共用區。然後在CIFS共用區上設定NetApp FPolicy、以防止執行具有特定副檔名類型的檔案。NetApp SnapCenter 支援軟體也能管理基礎架構中VM的Snapshot複本、以提供應用程式一致的Snapshot複本。
+
+
+
+== VM狀態及其檔案在攻擊之前
+
+本節說明在攻擊VM之前的檔案狀態、以及對應到VM的CIFS共用區。
+
+VM的「文件」資料夾中有一組尚未被WannaCry惡意軟體加密的PDF檔案。
+
+image:security-ransomware_image3.png["錯誤：缺少圖形影像"]
+
+下列螢幕快照顯示已對應至VM的CIFS共用區。
+
+image:security-ransomware_image4.png["錯誤：缺少圖形影像"]
+
+下列螢幕快照顯示CIFS共用區「fpolicy_share」上尚未被WannaCry惡意軟體加密的檔案。
+
+image:security-ransomware_image5.png["錯誤：缺少圖形影像"]
+
+
+
+== 在攻擊之前提供重複資料刪除和Snapshot資訊
+
+在攻擊之前、會指出Snapshot複本的儲存效率詳細資料和大小、並在偵測階段做為參考。
+
+在託管VM的磁碟區上執行重複資料刪除技術、可節省19%的儲存空間。
+
+image:security-ransomware_image6.png["錯誤：缺少圖形影像"]
+
+CIFS共用區「fpolicy_share'」上的重複資料刪除技術可節省45%的儲存空間。
+
+image:security-ransomware_image7.png["錯誤：缺少圖形影像"]
+
+針對裝載VM的磁碟區、觀察到Snapshot複本大小為456KB。
+
+image:security-ransomware_image8.png["錯誤：缺少圖形影像"]
+
+CIFS共用區的Snapshot複本大小為160KB。
+
+image:security-ransomware_image9.png["錯誤：缺少圖形影像"]
+
+
+
+== WannaCry感染VM和CIFS共用區
+
+在本節中、我們將說明WannaCry惡意軟體是如何引進FlexPod 到這個環境、以及後續觀察到的系統變更。
+
+下列步驟示範如何將WannaCry惡意軟體二進位檔引進VM：
+
+. 已擷取安全的惡意軟體。
++
+image:security-ransomware_image10.png["錯誤：缺少圖形影像"]
+
+. 執行二進位檔。
++
+image:security-ransomware_image11.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 案例1：WannaCry會加密VM內的檔案系統及對應的CIFS共用區
+
+WannaCry惡意軟體已加密本機檔案系統和對應的CIFS共用區。
+
+惡意軟體開始使用WNCRY副檔名加密檔案。
+
+image:security-ransomware_image12.png["錯誤：缺少圖形影像"]
+
+惡意軟體會加密本機VM和對應共用區中的所有檔案。
+
+image:security-ransomware_image13.png["錯誤：缺少圖形影像"]
+
+
+
+==== 偵測
+
+從惡意軟體開始加密檔案的那一刻起、它就引發Snapshot複本的大小呈指數式增加、儲存效率百分比呈指數式降低。
+
+我們偵測到、在攻擊期間、託管CIFS共用區的磁碟區的Snapshot大小大幅增加至820.98MB。
+
+image:security-ransomware_image14.png["錯誤：缺少圖形影像"]
+
+我們偵測到裝載VM的磁碟區的Snapshot複本大小增加到404.3MB。
+
+image:security-ransomware_image15.png["錯誤：缺少圖形影像"]
+
+託管CIFS共享區的Volume儲存效率降低至34%。
+
+image:security-ransomware_image16.png["錯誤：缺少圖形影像"]
+
+
+
+==== 補救
+
+使用攻擊前建立的全新Snapshot複本、還原VM和對應的CIFS共用區。
+
+*還原VM*
+
+若要還原VM、請完成下列步驟：
+
+. 使用SnapCenter 您使用NetApp建立的Snapshot複本來還原VM。
++
+image:security-ransomware_image17.png["錯誤：缺少圖形影像"]
+
+. 選取所需的VMware一致Snapshot複本進行還原。
++
+image:security-ransomware_image18.png["錯誤：缺少圖形影像"]
+
+. 整個VM都會還原並重新啟動。
++
+image:security-ransomware_image19.png["錯誤：缺少圖形影像"]
+
+. 按一下「Finish（完成）」以開始還原程序。
++
+image:security-ransomware_image20.png["錯誤：缺少圖形影像"]
+
+. VM及其檔案將會還原。
++
+image:security-ransomware_image21.png["錯誤：缺少圖形影像"]
+
+
+
+*還原CIFS共用*
+
+若要還原CIFS共用區、請完成下列步驟：
+
+. 使用攻擊前所取得磁碟區的Snapshot複本來還原共用區。
++
+image:security-ransomware_image22.png["錯誤：缺少圖形影像"]
+
+. 按一下「確定」以啟動還原作業。
++
+image:security-ransomware_image23.png["錯誤：缺少圖形影像"]
+
+. 還原後檢視CIFS共用區。
++
+image:security-ransomware_image24.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 案例2：WannaCry會加密VM內的檔案系統、並嘗試加密透過FPolicy保護的對應CIFS共用
+
+
+
+==== 預防
+
+*設定FPolicy*
+
+若要在CIFS共用區上設定FPolicy、請在ONTAP Windows叢集上執行下列命令：
+
+....
+vserver fpolicy policy event create -vserver infra_svm -event-name Ransomware_event -protocol cifs -file-operations create,rename,write,open
+vserver fpolicy policy create -vserver infra_svm -policy-name Ransomware_policy -events Ransomware_event -engine native
+vserver fpolicy policy scope create -vserver infra_svm -policy-name Ransomware_policy -shares-to-include fpolicy_share -file-extensions-to-include WNCRY,Locky,ad4c
+vserver fpolicy enable -vserver infra_svm -policy-name Ransomware_policy -sequence-number 1
+....
+使用此原則時、不允許副檔名為WNCRY、Locky和ad4c的檔案執行建立、重新命名、寫入或開啟的檔案作業。
+
+在遭受攻擊之前檢視檔案狀態、這些檔案未加密且位於乾淨的系統中。
+
+image:security-ransomware_image25.png["錯誤：缺少圖形影像"]
+
+VM上的檔案已加密。WannaCry惡意軟體嘗試加密CIFS共用區中的檔案、但FPolicy可防止其影響檔案。
+
+image:security-ransomware_image26.png["錯誤：缺少圖形影像"]

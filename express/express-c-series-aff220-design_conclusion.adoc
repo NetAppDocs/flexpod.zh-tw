@@ -1,0 +1,13 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-design_conclusion.html 
+keywords: conclusion, scaling, hypervisor 
+summary: 藉由提供使用領先業界元件的驗證設計、支援簡單有效的解決方案。FlexPod 
+---
+= 結論
+:allow-uri-read: 
+
+
+藉由提供使用領先業界元件的驗證設計、支援簡單有效的解決方案。FlexPod藉由擴充及提供Hypervisor平台選項、FlexPod 即可針對特定的業務需求量身打造。設計過程中、考慮到中小型企業、遠端辦公室和分公司、以及其他需要專屬解決方案的企業。FlexPod
+
+link:express-c-series-aff220-design_where_to_find_additional_information.html["下一步：何處可找到其他資訊。"]

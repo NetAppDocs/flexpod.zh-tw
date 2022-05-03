@@ -1,0 +1,95 @@
+---
+sidebar: sidebar 
+permalink: ontap-connector-for-intersight/ci-qsg_before_you_begin.html 
+keywords: cisco, intersight, intersight assist, netapp, ontap, connector, begin, install, installation, upgrade, active iq unified manager, create, deploy, deployment, download, OVA, appliance 
+summary: 開始之前、請先安裝或升級AIQ UM、建立Cisco Intersight帳戶、然後安裝Intersight小幫手。 
+---
+= 開始之前
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+若要從Cisco Intersight監控及協調NetApp儲存設備、Active IQ Unified Manager 您需要在vCenter環境中安裝NetApp功能支援與Cisco Intersight輔助虛擬應用裝置。
+
+
+
+== 安裝或升級NetApp Active IQ Unified Manager 產品
+
+如果Active IQ Unified Manager 您尚未安裝或升級至更新版（建議使用最新版本、目前為9.10P1）。如需相關指示、請前往 link:https://docs.netapp.com/us-en/active-iq-unified-manager/["NetApp Active IQ Unified Manager 產品文件"]。
+
+
+
+== 安裝Cisco Intersight輔助虛擬應用裝置
+
+確保您符合 https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html?referring_site=RE&pos=1&page=https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide.html["Cisco Intersight虛擬應用裝置授權、系統及網路需求"^]。
+
+*步驟*
+
+. 建立Cisco Intersight帳戶。請造訪 https://intersight.com/["https://intersight.com/"^] 建立Intersight帳戶。您必須擁有有效的Cisco ID才能建立Cisco Intersight帳戶。
+. 請至下載Intersight Virtual Appliance https://software.cisco.com/download/home/286319499/type/286323047/release/1.0.9-148["software.cisco.com"^]。如需詳細資訊、請前往 https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html["Intersight Appliance安裝與升級指南"^]。
+. 部署OVA。部署OVA時需要DNS和NTP。
++
+.. 在部署OVA之前、請先使用A/PTR和CNAME別名記錄來設定DNS。請參閱以下範例。
++
+image:ci-qsg_image1.png["用於A/PTR記錄的主機名稱範例"]
+
+.. 根據您對Intersight Virtual Appliance的OVA部署需求、選擇適當的組態大小（小型、小型或中型）。
++
+*秘訣：* ONTAP 對於具有大量儲存物件的雙節點式叢集、NetApp建議您使用小型（16個vCPU、32個Gi RAM）選項。
+
++
+image:ci-qsg_image2.png["部署OVF範本步驟5組態的快照"]
+
+.. 在「*自訂範本*」頁面上、自訂OVF範本的部署內容。系統管理員密碼適用於本機使用者：admin(`WebUI/CLI/ssh）。
++
+image:ci-qsg_image3.png["錯誤：缺少圖形影像"]
+
++
+image:ci-qsg_image4.png["錯誤：缺少圖形影像"]
+
+.. 單擊 * 下一步 * 。
+
+
+. 部署後的Intersight輔助設備。
++
+.. 瀏覽至 https://FQDN-of-your-appliance[] 以完成裝置的安裝後設定。
++
+安裝程序會自動開始。視Intersight.com的頻寬而定、安裝可能需要一小時的時間。在VM開機後、安全站台也可能需要數秒鐘的時間才能運作。
+
+.. 在部署後的程序中、選取您要安裝的項目：
++
+*** * Intersight Connected Virtual Appliance。*此部署需要連回Cisco和Intersight服務、才能更新及存取必要的服務、才能享有Intersight.com的完整功能。
+*** * Intersight Private Virtual Appliance。*此部署適用於以中斷連線（氣隙）模式操作資料中心的環境。
+*** * Intersight assist。*此部署可讓SaaS模式連線至Cisco Intersight。
++
+
+NOTE: 如果您選取「Intersight assist」、請在繼續之前記下裝置ID和請款代碼。
+
++
+image:ci-qsg_image5.png["Intersight部署選項的快照"]
+
+
+
+.. 按一下* Proce*。
+.. 如果您選擇* Intersight assist *、請完成下列步驟：
++
+... 瀏覽至您的SaaS Intersight帳戶 https://intersight.com["https://intersight.com"^]。
+... 按一下*目標*、* Cisco Intersight assist *、然後按* Start*。
+... 請從新部署的Intersight assist虛擬應用裝置複製並貼上裝置ID和請款代碼、以申請「Cisco Intersight assist」應用裝置。
++
+image:ci-qsg_image6.png["Select Target Type（選擇目標類型）反白顯示Cisco Intersight小幫手的快照"]
+
+... 返回「* Cisco Intersight assist *」應用裝置、然後按一下「*繼續」。*您可能需要重新整理瀏覽器。
++
+下載與安裝程序隨即開始。二進位檔會從Intersight Cloud傳輸至內部部署應用裝置。完成時間視您對Intersight Cloud的頻寬而定。
+
+
+
+
+
+

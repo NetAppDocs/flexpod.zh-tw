@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_netapp_configuration.html 
+keywords: configuration, storage, meditech, software, environments, controllers, hardware, takeover, licenses 
+summary: 部署於MEDITECH軟體環境的NetApp儲存設備、使用高可用度配對組態的儲存控制器。儲存設備必須透過FC傳輸協定從兩個控制器呈現給MEDITECH資料庫伺服器。此組態會顯示兩個控制器的儲存設備、以便在正常作業期間平均平衡應用程式負載。 
+---
+= NetApp組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+部署於MEDITECH軟體環境的NetApp儲存設備、使用高可用度配對組態中的儲存控制器。儲存設備必須透過FC傳輸協定從兩個控制器呈現給MEDITECH資料庫伺服器。此組態會顯示兩個控制器的儲存設備、以便在正常作業期間平均平衡應用程式負載。
+
+
+
+== 組態ONTAP
+
+本節說明使用相關ONTAP 的指令之部署與資源配置程序的範例。重點在於說明如何配置儲存設備、以實作NetApp建議的儲存配置、而此配置使用高可用度控制器配對。利用NetApp的主要優勢之一ONTAP 、就是能夠在不干擾現有高可用度配對的情況下橫向擴充。
+
+
+
+=== 不需要授權ONTAP
+
+設定儲存控制器之後、請套用授權以啟用ONTAP NetApp建議的功能。MEDITECH工作負載的授權包括FC、CIFS和NetApp Snapshot、SnapRestore ESIT、FlexClone、 以及SnapMirror技術。
+
+若要設定授權、請開啟NetApp ONTAP NetApp NetApp靜態系統管理程式、移至「組態授權」、然後新增適當的授權。
+
+或者、您也可以使用CLI執行下列命令來新增授權：
+
+....
+license add -license-code <code>
+....
+
+
+=== 組態AutoSupport
+
+NetApp AutoSupport 解決方案工具會透過HTTPS將摘要支援資訊傳送給NetApp。若要設定AutoSupport 靜態、請執行下列ONTAP 指令：
+
+....
+autosupport modify -node * -state enable
+autosupport modify -node * -mail-hosts <mailhost.customer.com>
+autosupport modify -node prod1-01 -from prod1-01@customer.com
+autosupport modify -node prod1-02 -from prod1-02@customer.com
+autosupport modify -node * -to storageadmins@customer.com
+autosupport modify -node * -support enable
+autosupport modify -node * -transport https
+autosupport modify -node * -hostnamesubj true
+....
+
+
+=== 硬體輔助接管組態
+
+在每個節點上、啟用硬體輔助接管功能、將控制器故障時啟動接管所需的時間減至最低。若要設定硬體輔助接管、請完成下列步驟：
+
+. 執行下列ONTAP 指令至xxx。
++
+將合作夥伴位址選項設為管理連接埠的IP位址、以設定為「prod1-01」。
+
++
+....
+MEDITECH::> storage failover modify -node prod1-01 -hwassist-partner-ip <prod1-02-mgmt-ip>
+....
+. 對ONTAP xxx執行下列指令：
++
+將合作夥伴位址選項設為管理連接埠的IP位址、以供「cluster1-02」使用。
+
++
+....
+MEDITECH::> storage failover modify -node prod1-02 -hwassist-partner-ip <prod1-01-mgmt-ip>
+....
+. 執行下列ONTAP 支援功能、在「prod1-01」和「prod1-02」HA控制器配對上啟用硬體輔助接管。
++
+....
+MEDITECH::> storage failover modify -node prod1-01 -hwassist true
+MEDITECH::> storage failover modify -node prod1-02 -hwassist true
+....
+
+
+link:ehr-meditech-deploy_aggregate_configuration.html["下一步：Aggregate組態。"]

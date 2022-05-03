@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_additional_information.html 
+keywords: additional, information, websites, documents, express, technical, specifications 
+summary: 若要深入瞭解本文所述資訊、請參閱下列文件與網站 
+---
+= 其他資訊
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+若要深入瞭解本文所述資訊、請參閱下列文件與網站：
+
+* 系統文件中心AFF FAS
++
+https://docs.netapp.com/platstor/index.jsp["https://docs.netapp.com/platstor/index.jsp"^]
+
+* 「文件資源」頁面AFF
++
+https://www.netapp.com/us/documentation/all-flash-fas.aspx["https://www.netapp.com/us/documentation/all-flash-fas.aspx"^]
+
+* 《儲存系統文件資源》頁面FAS
++
+https://www.netapp.com/us/documentation/fas-storage-systems.aspx["https://www.netapp.com/us/documentation/fas-storage-systems.aspx"^]
+
+* FlexPod
++
+https://flexpod.com/["https://flexpod.com/"^]
+
+* NetApp文件
++
+https://docs.netapp.com["https://docs.netapp.com"^]
+
+

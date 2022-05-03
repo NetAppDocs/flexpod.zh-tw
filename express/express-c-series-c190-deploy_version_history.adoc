@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_version_history.html 
+keywords: version, history, express, c, series, c190, deploy 
+summary: 以下是本文件的版本歷程記錄。 
+---
+= 版本歷程記錄
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+|===
+| 版本 | 日期 | 文件版本歷程記錄 
+
+
+| 1.0版 | 2019年11月 | 初始版本。 
+|===

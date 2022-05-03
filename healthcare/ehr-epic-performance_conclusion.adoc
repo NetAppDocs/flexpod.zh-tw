@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-epic-performance_conclusion.html 
+keywords: flash, storage, epic, array, pools, adaptive, qos, performance 
+summary: 到2020年、所有Epic客戶都必須使用Flash儲存設備。NetApp ONTAP 支援業界首創的All Flash Array、可獲得Epic的高舒適度評價、並列在「企業儲存陣列」之下。執行GA版ONTAP 的所有NetApp平台都非常舒適。 
+---
+= 結論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+到2020年、所有Epic客戶都必須使用Flash儲存設備。NetApp ONTAP 支援業界首創的All Flash Array、可獲得Epic的高舒適度評價、並列在「企業儲存陣列」之下。執行GA版ONTAP 的所有NetApp平台都非常舒適。
+
+EPIC需要將生產、報告和Clarity等關鍵工作負載、實際分隔在稱為「資源池」的儲存配置上。NetApp在單一叢集內提供多個儲存資源池、每個節點各有一個、並為整個Epic解決方案提供簡化的單一叢集和單一作業系統。支援NAS和SAN的所有傳輸協定、並提供SSD、HDD和雲端的混合式儲存層。ONTAP
+
+在支援QoS的ONTAP 過程中、推出支援QoS的功能ONTAP 、並在功能方面獲得重大的改善、使您能夠使用軟體來建立儲存資源池、而不需要實體隔離。這項功能可大幅簡化架構開發、允許整合節點和磁碟、並透過跨節點分散、改善生產等關鍵工作負載的效能。此外、它還能消除基礎架構所造成的儲存效能問題、並確保工作負載的使用壽命維持一致的效能。

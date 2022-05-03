@@ -1,0 +1,401 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_deploy_cisco_ucs_c-series_rack_server.html 
+keywords: deploy, cisco, ucs, c, series, rack, server, cimc, boot, disable, iscsi, vnics 
+summary: 本節提供設定Cisco UCS C系列獨立式機架伺服器以供FlexPod 搭配使用的詳細程序。 
+---
+= 部署Cisco UCS C系列機架伺服器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節提供設定Cisco UCS C系列獨立式機架伺服器以供FlexPod 搭配使用的詳細程序。
+
+
+
+== 執行CIMC的初始Cisco UCS C系列獨立伺服器設定
+
+請完成下列步驟、以初始設定Cisco UCS C系列獨立式伺服器的CIMC介面。
+
+下表列出為每部Cisco UCS C系列獨立式伺服器設定CIMC所需的資訊。
+
+|===
+| 詳細資料 | 詳細資料值 
+
+
+| CIMC IP位址 | \<<CIMC_IP>> 
+
+
+| CIMC子網路遮罩 | <<CIMc_netwask 
+
+
+| CIMC預設閘道 | <<CIMc_gateway>> 
+|===
+
+NOTE: 本驗證所使用的CIMC版本為CIMC 4.0.（4）。
+
+
+
+=== 所有伺服器
+
+. 將Cisco鍵盤、視訊和滑鼠（KVM）硬體鎖（伺服器隨附）連接至伺服器正面的KVM連接埠。將VGA監視器和USB鍵盤插入適當的KVM硬體鎖連接埠。
++
+開啟伺服器電源、並在提示輸入CIMC組態時按F8。
+
++
+image:express-c-series-c190-deploy_image5.png["錯誤：缺少圖形影像"]
+
+. 在CIMC組態公用程式中、設定下列選項：
++
+.. 網路介面卡（NIC）模式：
++
+專屬的「X」
+
+.. IP（基本）：
++
+IPV4：「X」
+
++
+DHCP已啟用：「[]」
+
++
+CIMC IP：`\<<CICI_IP>>
+
++
+前置碼/子網路：`\<<CIM_Mask>>.'
+
++
+閘道：「\<<CIMc_gateway>>」
+
+.. VLAN（進階）：保留為清除狀態、以停用VLAN標記。
++
+NIC備援
+
++
+無：「X」
+
++
+image:express-c-series-c190-deploy_image6.png["錯誤：缺少圖形影像"]
+
+
+
+. 按F1查看其他設定：
++
+.. 通用屬性：
++
+主機名稱：`\<<ESXi_host_name>>.'
+
++
+動態DNS：'[]
+
++
+原廠預設值：保持清除狀態。
+
+.. 預設使用者（基本）：
++
+預設密碼：`\<<admin_password >>
+
++
+重新輸入密碼：`\<<admin_password >>
+
++
+連接埠內容：使用預設值。
+
++
+連接埠設定檔：保持清除狀態。
+
+
+
+. 按F10儲存CIMC介面組態。
+. 儲存組態後、按Esc結束。
+
+
+
+
+== 設定Cisco UCS C系列伺服器iSCSI開機
+
+在這個支援此功能的支援中、VIC1457可用於iSCSI開機。FlexPod
+
+下表列出設定iSCSI開機所需的資訊。
+
+
+NOTE: 斜體字型表示每個ESXi主機的唯一變數。
+
+|===
+| 詳細資料 | 詳細資料值 
+
+
+| ESXi主機啟動器A名稱 | \<<var_UCS啟動器名稱_A>> 
+
+
+| ESXi主機iSCSI-A IP | \<<var_esxi_host_iscsia_ip>> 
+
+
+| ESXi主機iSCSI -網路遮罩 | \<<var_esxi_host_iscsia_mask>> 
+
+
+| ESXi主機iSCSI為預設閘道 | \<<var_esxi_host_iscsia_gateway>> 
+
+
+| ESXi主機啟動器B名稱 | \<<var_UCS啟動器名稱_b>> 
+
+
+| ESXi主機iSCSI-B IP | \<<var_esxi_host_iscsiB_ip>> 
+
+
+| ESXi主機iSCSI-B網路遮罩 | \<<var_esxi_host_iscsiB_mask>> 
+
+
+| ESXi主機iSCSI-B閘道 | \<<var_esxi_host_iscsiB_gateway>> 
+
+
+| IP位址iSCSI_lif01a | \<<var_iscs_lif01a_>> 
+
+
+| IP位址iSCSI_lif02a | \<<var_iscsa_lif02A>> 
+
+
+| IP位址iSCSI_lif01b | \<<var_iscs_lif01b>> 
+
+
+| IP位址iSCSI_lif02b | \<<var_iscsa_lif02b>> 
+
+
+| infor_SVM IQN | \<<var_svm_IQN>> 
+|===
+
+
+=== 開機順序組態
+
+若要設定開機順序組態、請完成下列步驟：
+
+. 在CIMC介面瀏覽器視窗中、按一下「運算」索引標籤、然後選取「BIOS」。
+. 按一下「設定開機順序」、然後按一下「確定」。
++
+image:express-c-series-c190-deploy_image7.png["錯誤：缺少圖形影像"]
+
+. 按一下「Add Boot Device（新增開機裝置）」下方的裝置、然後前往「Advanced（進階）」索引標籤、即可設定下列裝置：
++
+.. 新增虛擬媒體：
++
+名稱：KVM-CD-DVD
+
++
+子類型：KVM對應DVD
+
++
+狀態：已啟用
+
++
+訂單：1.
+
+.. 新增iSCSI開機：
++
+名稱：iSCSI-A
+
++
+狀態：已啟用
+
++
+訂單：2.
+
++
+插槽：MLOM
+
++
+連接埠：1.
+
+.. 按一下新增iSCSI開機：
++
+名稱：iSCSI-B
+
++
+狀態：已啟用
+
++
+訂單：3.
+
++
+插槽：MLOM
+
++
+連接埠：3.
+
+
+
+. 按一下新增裝置。
+. 按一下[儲存變更]，然後按一下[關閉]。
++
+image:express-c-series-c190-deploy_image8.png["錯誤：缺少圖形影像"]
+
+. 重新啟動伺服器、以新的開機順序開機。
+
+
+
+
+=== 停用RAID控制器（若有）
+
+如果您的C系列伺服器包含RAID控制器、請完成下列步驟。從SAN組態開機時不需要RAID控制器。或者、您也可以從伺服器實體移除RAID控制器。
+
+. 在「Compute（運算）」索引標籤下、按一下CIMC左側導覽窗格中的BIOS。
+. 選取「設定BIOS」。
+. 向下捲動至PCIe插槽：HBA Option ROM。
+. 如果該值尚未停用、請將其設為停用。
++
+image:express-c-series-c190-deploy_image9.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+== 設定Cisco VIC1457以進行iSCSI開機
+
+下列組態步驟適用於Cisco VIC 1457 for iSCSI開機。
+
+
+NOTE: 必須先關閉連接埠0、1、2和3之間的預設連接埠通道、才能設定四個個別連接埠。如果未關閉連接埠通道、則VIC 1457只會顯示兩個連接埠。完成下列步驟以啟用CIMC上的連接埠通道：
+
+. 在網路索引標籤下、按一下介面卡MLOM。
+. 在「General（一般）」索引標籤下、取消核取連接埠通道。
+. 儲存變更並重新啟動CIMC。
++
+image:express-c-series-c190-deploy_image10.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 建立iSCSI vNIC
+
+若要建立iSCSI vNIC、請完成下列步驟：
+
+. 在網路索引標籤下、按一下介面卡MLOM。
+. 按一下「Add vNIC（新增vNIC）」以建立vNIC。
+. 在「Add vNIC（新增vNIC）」區段中、輸入下列設定：
++
+** 名稱：eth1
+** CDN名稱：isciSCSI-vNIC
+** MTU：9000
+** 預設VLAN：`\<<var_iscsa_vla_a>_`
+** VLAN模式：主幹
+** 啟用PXE開機：檢查
+
+
+. 按一下「新增vNIC」、然後按一下「確定」。
+. 重複此程序以新增第二個vNIC：
++
+** 將vNIC命名為eth3。
+** CDN名稱：isciSCSI-vNIC：B
+** 輸入「<<var_iscse_vla_b>>」作為VLAN。
+** 將上行鏈路連接埠設定為3。
++
+image:express-c-series-c190-deploy_image11.png["錯誤：缺少圖形影像"]
+
+
+
+. 選取左側的vNIC eth1。
++
+image:express-c-series-c190-deploy_image12.png["錯誤：缺少圖形影像"]
+
+. 在「iSCSI開機內容」下、輸入啟動器詳細資料：
++
+** 名稱：`\<<var_ucsa_initiator名稱_a>.'
+** IP位址：`\<<var_esxi_hosta_iscsia_ip>>_`
+** 子網路遮罩：`\<<var_esxi_hosta_iscsia_mask>>.'
+** 閘道：`\<<var_esxi_hosta_iscsia_gateway>>.'
++
+image:express-c-series-c190-deploy_image13.png["錯誤：缺少圖形影像"]
+
+
+
+. 輸入主要目標詳細資料：
++
+** 名稱：IQN基礎架構的數量
+** IP位址：iSCSI_lif01a的IP位址
+** 開機LUN：0
+
+
+. 輸入次要目標詳細資料：
++
+** 名稱：IQN基礎架構的數量
+** IP位址：iSCSI_lif02a的IP位址
+** 開機LUN：0
++
+
+NOTE: 您可以執行「vserver iSCSI show」命令來取得儲存IQN編號。
+
++
+
+NOTE: 請務必記錄每個vNIC的IQN名稱。您需要這些資訊以供日後使用。此外、啟動器的IQN名稱對於每個伺服器和iSCSI vNIC而言必須是唯一的。
+
+
+
+. 按一下儲存變更。
+. 選取vNIC eth3、然後按一下位於主機乙太網路介面區段頂端的iSCSI開機按鈕。
+. 重複此程序以設定eth3。
+. 輸入啟動器詳細資料：
++
+** 名稱：`\<<var_ucsa_initiator名稱_b>_`
+** IP位址：`\<<var_esxi_hostb_iscsib_ip>>>.'
+** 子網路遮罩：`\<<var_esxi_hostb_iscsib_mask>>>.'
+** 閘道：`\<<var_esxi_hostb_iscsib_gateway>>_`
++
+image:express-c-series-c190-deploy_image14.png["錯誤：缺少圖形影像"]
+
+
+
+. 輸入主要目標詳細資料：
++
+** 名稱：IQN基礎架構的數量
+** IP位址：iSCSI_lif01b的IP位址
+** 開機LUN：0
+
+
+. 輸入次要目標詳細資料：
++
+** 名稱：IQN基礎架構的數量
+** IP位址：iSCSI_lif02b的IP位址
+** 開機LUN：0
++
+
+NOTE: 您可以使用「vserver iSCSI show」命令取得儲存IQN編號。
+
++
+
+NOTE: 請務必記錄每個vNIC的IQN名稱。您需要這些資訊以供日後使用。
+
+
+
+. 按一下儲存變更。
+. 重複此程序以設定Cisco UCS伺服器B的iSCSI開機
+
+
+
+
+=== 設定ESXi的vNIC
+
+若要設定ESXi的vNIC、請完成下列步驟：
+
+. 在CIMC介面瀏覽器視窗中、按一下「Inventory」（資源清冊）、然後按一下右窗格上的Cisco VIC介面卡。
+. 在「Networking」（網路）>「Adapter Card MLOM」（介面卡MLOM）下、選取「vNIC」索引標籤、然後選取下方的vNIC。
+. 選取eth0、然後按一下「內容」。
+. 將MTU設為9000。按一下儲存變更。
+. 將VLAN設定為原生VLAN 2。
++
+image:express-c-series-c190-deploy_image15.png["錯誤：缺少圖形影像"]
+
+. 對eth1重複步驟3和4、確認上行鏈路連接埠對eth1設定為1。
++
+image:express-c-series-c190-deploy_image16.png["錯誤：缺少圖形影像"]
+
++
+
+NOTE: 對於每個初始Cisco UCS伺服器節點、以及新增至環境的每個額外Cisco UCS伺服器節點、必須重複此程序。
+
+
+
+link:express-c-series-c190-design_netapp_aff_storage_deployment_procedure_@part_2@.html["下一步：NetApp AFF 解決方案儲存部署程序（第2部分）"]

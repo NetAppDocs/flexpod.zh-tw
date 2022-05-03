@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: infrastructure/nvme-vsphere-testing-approach.html 
+keywords: test, environment, hardware, software, plan 
+summary: 本節提供FC-NVMe關於FlexPod 驗證測試的高階摘要。其中包括測試環境/組態、以及針對FC-NVMe FlexPod for VMware vSphere 7執行工作負載測試所採用的測試計畫。 
+---
+= 測試方法
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:nvme-vsphere-introduction.html["上一篇：簡介。"]
+
+本節提供FC-NVMe關於FlexPod 驗證測試的高階摘要。其中包括測試環境/組態、以及針對FC-NVMe FlexPod for VMware vSphere 7執行工作負載測試所採用的測試計畫。
+
+
+
+== 測試環境
+
+Cisco Nexus 9000系列交換器支援兩種操作模式：
+
+* NX-OS獨立模式、使用Cisco NX-OS軟體
+* ACI網路模式、使用Cisco Application Centric Infrastructure（Cisco ACI）平台
+
+
+在獨立模式中、交換器的效能就像一般Cisco Nexus交換器一樣、可增加連接埠密度、低延遲、以及40GbE和100GbE連線能力。
+
+採用NX-OS的解決方案可在運算、網路和儲存層中完全備援。FlexPod從裝置或交通路況路徑的觀點來看、沒有單點故障。下圖顯示FlexPod 這項FC-NVMe驗證所使用的最新版外觀設計的各種元素的連線。
+
+image:nvme-vsphere-image2.png["錯誤：缺少圖形影像"]
+
+從FC SAN的觀點來看、此設計使用最新的第四代Cisco UCS 6454架構互連、以及在伺服器中使用連接埠擴充器的Cisco UCS VIC 1400平台。Cisco UCS機箱中的Cisco UCS B200 M6刀鋒伺服器使用Cisco UCS VIC 1440、連接埠擴充裝置連接至Cisco UCS 2408光纖延伸裝置IOM、而每個乙太網路光纖通道（FCoE）虛擬主機匯流排介面卡（vHBA）的速度都是40Gbps。Cisco UCS管理的Cisco UCS C220 M5機架伺服器使用Cisco UCS VIC 1457、每個Fabric互連有兩個25Gbps介面。每個C220 M5 FCoE vHBA的速度為50Gbps。
+
+光纖互連可透過32Gbps SAN連接埠通道連接至最新一代Cisco MDS 9142T或9132T FC交換器。Cisco MDS交換器與NetApp AFF 432A800儲存叢集之間的連線能力也是32Gbps FC。此組態可在儲存叢集與Cisco UCS之間支援32Gbps FC、適用於光纖通道傳輸協定（FCP）、以及FC-NVMe儲存設備。在這項驗證中、會使用四個FC連線來連線至每個儲存控制器。在每個儲存控制器上、四個FC連接埠同時用於FCP和FC-NVMe傳輸協定。
+
+Cisco Nexus交換器與最新一代NetApp AFF VA800儲存叢集之間的連線速度也高達100Gbps、儲存控制器上的連接埠通道與交換器上的VPC。NetApp AFF 推出的A800儲存控制器配備高速周邊連接介面Express（PCIe）匯流排上的NVMe磁碟。
+
+本驗證所使用的功能就是以實作為基礎FlexPod https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m6_esxi7u2.html["採用Cisco UCS 4.2（1）、UCS託管模式、VMware vSphere 7.0U2和NetApp 9.9的資料中心FlexPod ONTAP"^]。
+
+
+
+== 已驗證的硬體與軟體
+
+下表列出解決方案驗證程序期間所使用的硬體和軟體版本。請注意、Cisco與NetApp擁有互通性對照表、應參考該對照表來判斷FlexPod 是否支援任何特定的實作。如需詳細資訊、請參閱下列資源：
+
+* https://mysupport.netapp.com/matrix/["NetApp 互通性對照表工具"^]
+* https://ucshcltool.cloudapps.cisco.com/public/["Cisco UCS硬體與軟體互通性工具"]
+
+
+|===
+| 層級 | 裝置 | 映像 | 註解 
+
+
+| 運算  a| 
+* 兩個Cisco UCS 6454光纖互連
+* 一個Cisco UCS 5108刀鋒機箱、含兩個Cisco UCS 2408 I/O模組
+* 四個Cisco UCS B200 m6刀鋒、每個刀鋒配備一個Cisco UCS VIC 1440介面卡和連接埠擴充卡
+
+| 4.2版（1f） | 包括Cisco UCS Manager、Cisco UCS VIC 1440及連接埠擴充器 
+
+
+| CPU | 2個Intel Xeon Gold 6330 CPU、2.0 GHz、42 MB第3層快取、每個CPU 28核心 | – | – 
+
+
+| 記憶體 | 1024GB（16x 64GB DIMM以3200MHz運作） | – | – 
+
+
+| 網路 | 兩個Cisco Nexus 9336C-FX2交換器、採用NX-OS獨立模式 | 9.3版（8） | – 
+
+
+| 儲存網路 | 兩個Cisco MDS 9132T 32Gbps 32埠FC交換器 | 版本8.4（2c） | 支援FC-NVMe SAN分析 
+
+
+| 儲存設備 | 兩AFF 個NetApp固態A800儲存控制器、搭配24個1.8TB NVMe SSD | NetApp ONTAP 0.9.9.1P1 | – 
+
+
+| 軟體 | Cisco UCS Manager | 4.2版（1f） | – 
+
+
+|  | VMware vSphere | 7.0U2 | – 
+
+
+|  | VMware ESXi | 7.0.2 | – 
+
+
+|  | VMware ESXi原生光纖通道NIC驅動程式（NFNIC） | 5.0.0.12 | 在VMware上支援FC-NVMe 
+
+
+|  | VMware ESXi原生乙太網路NIC驅動程式（NENIC） | 1.0.35.0 | – 
+
+
+| 測試工具 | FIO | 3.19 | – 
+|===
+
+
+== 測試計畫
+
+我們開發了效能測試計畫、使用FlexPod 綜合工作負載在不支援的情況下驗證NVMe。此工作負載可讓我們執行8KB隨機讀取與寫入、以及64KB的讀取與寫入。我們使用VMware ESXi主機來執行測試案例、以搭配AFF 使用VMware A800儲存設備。
+
+我們使用開放原始碼的綜合I/O工具FIO來產生我們的綜合工作負載、該工具可用於效能測量。
+
+為了完成效能測試、我們在儲存設備和伺服器上執行了數個組態步驟。以下是實作的詳細步驟：
+
+. 在儲存設備方面、我們建立了四個儲存虛擬機器（SVM、先前稱為Vserver）、每個SVM 8個磁碟區、以及每個磁碟區1個命名空間。我們建立了1TB磁碟區和960GB命名空間。我們為每個SVM建立了四個生命週期、以及每個SVM建立一個子系統。SVM LIF平均分散於叢集上的八個可用FC連接埠。
+. 在伺服器端、我們在每個ESXi主機上建立了單一虛擬機器（VM）、總共可容納四個VM。我們在伺服器上安裝FIO、以執行綜合工作負載。
+. 儲存設備和VM設定完成後、我們就能從ESXi主機連線至儲存命名空間。如此一來、我們就能根據命名空間建立資料存放區、然後根據這些資料存放區建立虛擬機器磁碟（VMDK）。
+
+
+link:nvme-vsphere-test-results.html["下一步：測試結果。"]

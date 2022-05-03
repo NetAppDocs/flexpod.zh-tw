@@ -1,0 +1,155 @@
+---
+section: healthcare
+title: 醫療
+entries:
+- title: 適用於基因組學FlexPod
+  type: solutions
+  entries:
+  - title: 簡介
+    url: "/healthcare/flexpod-genomics-introduction.html"
+  - title: 將基因工作負載部署在FlexPod 架構上的優點
+    url: "/healthcare/flexpod-genomics-benefits-of-deploying-genomic-workloads-on-flexpod.html"
+  - title: 解決方案基礎架構硬體與軟體元件
+    url: "/healthcare/flexpod-genomics-solution-infrastructure-hardware-and-software-components.html"
+  - title: 基因組學：網關設定與執行
+    url: "/healthcare/flexpod-genomics-genomics---gatk-setup-and-execution.html"
+  - title: 使用Jar檔案執行網關的輸出
+    url: "/healthcare/flexpod-genomics-appendix-a.html"
+  - title: 使用./gatk指令碼執行網關的輸出
+    url: "/healthcare/flexpod-genomics-appendix-b.html"
+  - title: 使用Cromwell引擎執行網關的輸出
+    url: "/healthcare/flexpod-genomics-appendix-c.html"
+  - title: GPU設定
+    url: "/healthcare/flexpod-genomics-appendix-d-gpu-setup.html"
+  - title: 結論
+    url: "/healthcare/flexpod-genomics-conclusion.html"
+- title: "《資料中心Epic方向調整指南》FlexPod"
+  type: solutions
+  entries:
+  - title: 總覽
+    url: "/healthcare/ehr-epic-sizing_introduction.html"
+  - title: 參考架構
+    entries:
+    - title: Epic的NetApp儲存參考架構
+      url: "/healthcare/ehr-epic-sizing_netapp_storage_reference_architectures_for_epic.html"
+    - title: Epic的Cisco UCS參考架構
+      url: "/healthcare/ehr-epic-sizing_cisco_ucs_reference_architecture_for_epic.html"
+  - title: 小型、中型和大型架構的技術規格
+    url: "/healthcare/ehr-epic-sizing_technical_specifications_for_small,_medium,_and_large_architectures.html"
+  - title: 其他資訊
+    url: "/healthcare/ehr-epic-sizing_additional_information.html"
+  - title: 感謝
+    url: "/healthcare/ehr-epic-sizing_acknowledgements.html"
+- title: "《Datacenter for Epic EHR部署指南》FlexPod"
+  type: solutions
+  entries:
+  - title: 總覽
+    url: "/healthcare/ehr-epic-deploy_overview.html"
+  - title: 設計
+    url: "/healthcare/ehr-epic-deploy_design.html"
+  - title: 部署與組態
+    entries:
+    - title: 總覽
+      url: "/healthcare/ehr-epic-deploy_deployment_and_configuration_overview.html"
+    - title: 基礎架構硬體與軟體元件
+      url: "/healthcare/ehr-epic-deploy_infrastructure_hardware_and_software_components.html"
+    - title: 基礎架構組態
+      url: "/healthcare/ehr-epic-deploy_base_infrastructure_configuration.html"
+    - title: Cisco UCS刀鋒伺服器與交換器組態
+      url: "/healthcare/ehr-epic-deploy_cisco_ucs_blade_server_and_switch_configuration.html"
+    - title: Cisco MDS 9148S組態
+      url: "/healthcare/ehr-epic-deploy_cisco_mds_9148s_configuration.html"
+    - title: ESXi組態最佳實務做法
+      url: "/healthcare/ehr-epic-deploy_esxi_configuration_best_practices.html"
+    - title: NetApp組態
+      url: "/healthcare/ehr-epic-deploy_netapp_configuration.html"
+    - title: Genio工具
+      url: "/healthcare/ehr-epic-deploy_genio_tool.html"
+  - title: 何處可找到其他資訊
+    url: "/healthcare/ehr-epic-deploy_where_to_find_additional_information_overview.html"
+  - title: 感謝
+    url: "/healthcare/ehr-epic-deploy_acknowledgements.html"
+- title: 適用於Epic效能測試FlexPod
+  type: solutions
+  entries:
+  - title: 總覽
+    url: "/healthcare/ehr-epic-performance_introduction.html"
+  - title: 執行摘要
+    url: "/healthcare/ehr-epic-performance_executive_summary.html"
+  - title: 測試方法
+    url: "/healthcare/ehr-epic-performance_test_methodology.html"
+  - title: 工作負載測試
+    url: "/healthcare/ehr-epic-performance_workload_testing.html"
+  - title: 結論
+    url: "/healthcare/ehr-epic-performance_conclusion.html"
+  - title: 其他資訊
+    url: "/healthcare/ehr-epic-performance_additional_information.html"
+  - title: 感謝
+    url: "/healthcare/ehr-epic-performance_acknowledgements.html"
+- title: 適用於MEDITECH方向調整指南FlexPod
+  type: solutions
+  entries:
+  - title: 總覽
+    url: "/healthcare/ehr-meditech-sizing_introduction.html"
+  - title: Meditech工作負載總覽
+    url: "/healthcare/ehr-meditech-sizing_meditech_workload_overview.html"
+  - title: 小型、中型和大型架構的技術規格
+    url: "/healthcare/ehr-meditech-sizing_technical_specifications_for_small,_medium_and_large_architectures.html"
+  - title: 其他資訊
+    url: "/healthcare/ehr-meditech-sizing_additional_information.html"
+  - title: 感謝
+    url: "/healthcare/ehr-meditech-sizing_acknowledgments.html"
+- title: "《Datacenter for MEDITECH部署指南》FlexPod"
+  type: solutions
+  entries:
+  - title: 總覽
+    url: "/healthcare/ehr-meditech-deploy_overview.html"
+  - title: 設計
+    url: "/healthcare/ehr-meditech-deploy_design.html"
+  - title: 部署與組態
+    entries:
+    - title: 總覽
+      url: "/healthcare/ehr-meditech-deploy_deployment_and_configuration_overview.html"
+    - title: 基礎架構組態
+      url: "/healthcare/ehr-meditech-deploy_base_infrastructure_configuration.html"
+    - title: Cisco UCS刀鋒伺服器與交換器組態
+      url: "/healthcare/ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html"
+    - title: ESXi組態最佳實務做法
+      url: "/healthcare/ehr-meditech-deploy_esxi_configuration_best_practices.html"
+    - title: NetApp組態
+      url: "/healthcare/ehr-meditech-deploy_netapp_configuration.html"
+    - title: Aggregate組態
+      url: "/healthcare/ehr-meditech-deploy_aggregate_configuration.html"
+    - title: 儲存虛擬機器組態
+      url: "/healthcare/ehr-meditech-deploy_storage_virtual_machine_configuration.html"
+    - title: Volume組態
+      url: "/healthcare/ehr-meditech-deploy_volume_configuration.html"
+    - title: LUN組態
+      url: "/healthcare/ehr-meditech-deploy_lun_configuration.html"
+    - title: 啟動器群組組態
+      url: "/healthcare/ehr-meditech-deploy_initiator_group_configuration.html"
+    - title: LUN對應
+      url: "/healthcare/ehr-meditech-deploy_lun_mappings.html"
+  - title: Meditech模組與元件
+    url: "/healthcare/ehr-meditech-deploy_meditech_modules_and_components.html"
+  - title: 感謝
+    url: "/healthcare/ehr-meditech-deploy_acknowledgments.html"
+  - title: 何處可找到其他資訊
+    url: "/healthcare/ehr-meditech-deploy_where_to_find_additional_information.html"
+- title: 適用於醫療影像FlexPod
+  type: solutions
+  entries:
+  - title: 總覽
+    url: "/healthcare/medical-imaging_introduction.html"
+  - title: 架構
+    url: "/healthcare/medical-imaging_architecture.html"
+  - title: 解決方案基礎架構硬體與軟體元件
+    url: "/healthcare/medical-imaging_solution_infrastructure_hardware_and_software_components.html"
+  - title: 解決方案規模調整
+    url: "/healthcare/medical-imaging_solution_sizing.html"
+  - title: 最佳實務做法
+    url: "/healthcare/medical-imaging_best_practices.html"
+  - title: 結論
+    url: "/healthcare/medical-imaging_conclusion.html"
+  - title: 其他資訊
+    url: "/healthcare/medical-imaging_additional_information.html"

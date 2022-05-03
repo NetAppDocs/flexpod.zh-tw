@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_storage_software.html 
+keywords: storage, software, flexpod, express, ontap, e, series, santricity 
+summary: 本節所列的儲存作業系統可在FlexPod 《支援的資訊之速覽系統（All Flash Array Platform）」中獲得支援。 
+---
+= 儲存軟體
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+支援執行NetApp功能完善或功能完善的儲存系統。FlexPod ONTAP SANtricity
+
+
+
+== NetApp ONTAP
+
+NetApp ONTAP 支援軟體是可在AFF 功能完善的作業系統上執行。FAS支援不中斷營運、不中斷營運的升級、以及敏捷的資料基礎架構、可提供高度擴充的儲存架構。ONTAP
+
+如需ONTAP 更多關於效能的資訊、請參閱 http://www.netapp.com/us/products/platform-os/ontap/index.aspx["產品頁面ONTAP"^]。
+
+
+
+== E系列SANtricity 支援軟體
+
+E系列SANtricity 的支援軟體是在E系列儲存系統上執行的作業系統。提供高度靈活的系統、可滿足各種應用程式需求、並提供內建的高可用度和各種資料保護功能。SANtricity
+
+如需詳細資訊、請參閱 http://www.netapp.com/us/products/platform-os/santricity/index.aspx["產品頁面SANtricity"^]。

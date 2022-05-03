@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_aggregate_configuration.html 
+keywords: aggregate, configuration, raid, groups, dp, storage, expansion, snapshot, copy, 
+summary: NetApp建議NetApp RAID DP 的NetApp解決方案技術作為RAID類型、適用於NetApp FAS 的所有集合體、AFF 包括一般的NetApp Flash Pool Aggregate。Meditech文件可能會說明RAID 10的使用、但MEDITECH已核准RAID DP 使用。 
+---
+= Aggregate組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== NetApp RAID DP
+
+NetApp建議NetApp RAID DP 的NetApp解決方案技術作為RAID類型、適用於NetApp FAS 的所有集合體、AFF 包括一般的NetApp Flash Pool Aggregate。Meditech文件可能會說明RAID 10的使用、但MEDITECH已核准RAID DP 使用。
+
+
+
+== RAID群組大小和RAID群組數目
+
+預設RAID群組大小為16。這種規模可能最適合或可能不適合您特定站台的MEDITECH主機集合體。如需NetApp建議您在RAID群組中使用的磁碟數目、請參閱 https://fieldportal.netapp.com/content/190829["NetApp TR-3838：儲存子系統組態指南"^]。
+
+RAID群組大小對於儲存擴充非常重要、因為NetApp建議您將磁碟新增至集合體、其中的一或多個磁碟群組大小等於RAID群組大小。RAID群組的數量取決於資料磁碟的數量和RAID群組大小。若要判斷所需的資料磁碟數量、請使用NetApp System Performance Modeler（SPM）規模調整工具。確定資料磁碟數量後、請調整RAID群組大小、將同位元檢查磁碟數量降至每個磁碟類型RAID群組大小的建議範圍內。
+
+如需如何使用MEDITECH環境的SPM規模調整工具的詳細資訊、請參閱 https://fieldportal.netapp.com/content/198446["NetApp TR-4190：適用於MEDITECH環境的NetApp規模調整準則"^]。
+
+
+
+== 儲存擴充考量
+
+當您擴充含更多磁碟的Aggregate時、請將磁碟新增為與Aggregate RAID群組大小相同的群組。遵循此方法有助於在整個集合體中提供效能一致性。
+
+例如、若要將儲存設備新增至以20個RAID群組大小建立的集合體、NetApp建議新增的磁碟數目為一或多個20個磁碟群組。因此、您應該新增20、40、60等磁碟。
+
+擴充Aggregate之後、您可以在受影響的磁碟區或Aggregate上執行重新分配工作、將現有的資料等量分散到新磁碟上、藉此提升效能。這項行動特別有助於在現有的Aggregate幾乎已滿時執行。
+
+
+NOTE: 您應該計畫在非正式作業時間重新分配排程、因為這是高CPU和磁碟密集的工作。
+
+如需使用Aggregate擴充後重新分配的詳細資訊、請參閱 https://fieldportal.netapp.com/content/192896["NetApp TR-3929：重新分配最佳實務做法指南"^]。
+
+
+
+== Aggregate層級Snapshot複本
+
+將Aggregate層級的NetApp Snapshot複本保留設為零、並停用預設的Aggregate Snapshot排程。如果可能、請刪除任何預先存在的Aggregate層級Snapshot複本。
+
+link:ehr-meditech-deploy_storage_virtual_machine_configuration.html["下一步：儲存虛擬機器組態。"]

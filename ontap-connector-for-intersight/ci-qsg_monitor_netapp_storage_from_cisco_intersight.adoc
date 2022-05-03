@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: ontap-connector-for-intersight/ci-qsg_monitor_netapp_storage_from_cisco_intersight.html 
+keywords: netapp, storage, cisco intersight, monitor, orchestrate, orchestration, storage inventory, storage widgets 
+summary: 在宣告目標之後、如果您擁有Advantage層級授權、則NetApp儲存小工具、儲存設備庫存和虛擬化索引標籤都會提供使用。如果您擁有Premier層級授權、則可使用協調選項卡。 
+---
+= 從Cisco Intersight監控NetApp儲存設備
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+在宣告目標之後、如果您擁有Advantage層級授權、則NetApp儲存小工具、儲存設備庫存和虛擬化索引標籤都會提供使用。如果您擁有Premier層級授權、則可使用協調選項卡。
+
+
+
+== 儲存設備庫存總覽
+
+下列螢幕快照會顯示*作業>儲存設備*畫面。
+
+image:ci-qsg_image9.png["螢幕擷取畫面會顯示「操作」>「儲存」畫面"]
+
+下列螢幕快照顯示儲存叢集概觀。
+
+
+NOTE: 下列效能指標摘要資訊僅會在儲存陣列透過NetApp Active IQ Unified Manager 更新版本進行監控時顯示。
+
+image:ci-qsg_image10.png["快照顯示儲存叢集概觀"]
+
+
+
+== 儲存小工具
+
+若要檢視儲存小工具、請瀏覽至*監控>儀表板>檢視NetApp儲存小工具*。
+
+* 下列螢幕快照顯示儲存版本摘要小工具。
+
+
+image:ci-qsg_image11.jpg["快照顯示儲存版本摘要小工具"]
+
+* 此螢幕快照顯示依容量使用率列出的前5大儲存陣列Widget。
+
+
+image:ci-qsg_image12.png["快照顯示依容量使用率顯示前5大儲存陣列Widget"]
+
+* 此快照顯示依容量使用率列出的前5大儲存磁碟區Widget。
+
+
+image:ci-qsg_image13.png["快照顯示依容量使用率列出的前5大儲存磁碟區小工具"]

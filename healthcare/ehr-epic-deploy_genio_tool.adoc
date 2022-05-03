@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-epic-deploy_genio_tool.html 
+keywords: genio, tool, storage, performance, epic, intersystems, cache, command, line, application 
+summary: Genio是Epic使用的儲存效能測試工具。它會模擬Epic正式作業環境中使用的InterSystems Cach é 資料庫所產生的工作負載、包括寫入週期模式。它可在部署Cach é 的各種主機作業系統上作為命令列應用程式使用。請務必使用Epic的Genio工具最新複本進行測試。 
+---
+= Genio工具
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Genio是Epic使用的儲存效能測試工具。它會模擬Epic正式作業環境中使用的InterSystems Cach é 資料庫所產生的工作負載、包括寫入週期模式。它可在部署Cach é 的各種主機作業系統上作為命令列應用程式使用。請務必使用Epic的Genio工具最新複本進行測試。
+
+執行效能測試時、需要在正式作業Epic資料庫主機上執行Genio應用程式、並提供一組I/O參數。這些參數模擬客戶Epic環境的I/O模式、包括寫入週期。
+
+EPIC將控制器推過硬體組態指南中詳述的100%滿負載、以判斷控制器上的保留空間。Epic也會執行全負載測試、模擬備份作業。
+
+EPIC伺服器支援代表使用它從主機的角度驗證儲存效能。NetApp也使用Genio來驗證實驗室中NetApp儲存系統的效能。

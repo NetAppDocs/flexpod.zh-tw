@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: healthcare/flexpod-genomics-conclusion.html 
+keywords: conclusion 
+summary: 全球許多醫療組織都已將FlexPod 不僅僅是一個通用平台的不僅僅是功能、更是以功能為基礎。有了此功能、您就能安心部署醫療功能。FlexPod 
+---
+= 結論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-genomics-appendix-d-gpu-setup.html["上一篇：GPU設定。"]
+
+全球許多醫療組織都已將FlexPod 不僅僅是一個通用平台的不僅僅是功能、更是以功能為基礎。有了此功能、您就能安心部署醫療功能。FlexPodNetApp支援的解決方案標準配備能夠實作業界領先的一組現成通訊協定。FlexPod ONTAP無論申請執行特定病患基因組學的來源為何、FlexPod 互通性、存取能力、可用度及擴充性都是以一套完整的平台為標準。當我們在FlexPod 一個不完整的平台上標準化時、創新文化就變得具有感染力。
+
+
+
+== 何處可找到其他資訊
+
+若要深入瞭解本文所述資訊、請檢閱下列文件與網站：
+
+* 適用於AI/ML的Datacenter搭配Cisco UCS 480 ML、可進行深度學習FlexPod
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_480ml_aiml_deployment.pdf["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_480ml_aiml_deployment.pdf"^]
+
+* VMware vSphere 7.0與NetApp VMware vCenter 9.7的資料中心FlexPod ONTAP
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html"^]
+
+* 供應說明文件中心 ONTAP
++
+http://docs.netapp.com["http://docs.netapp.com"^]
+
+* 致勝榮譽
++
+https://www.netapp.com/blog/achieving-epic-honor-roll/["https://www.netapp.com/blog/achieving-epic-honor-roll/"^]
+
+* 敏捷又有效率：FlexPod 如何推動資料中心現代化
++
+https://www.flexpod.com/idc-white-paper/["https://www.flexpod.com/idc-white-paper/"^]
+
+* 醫療業的AI
++
+https://www.netapp.com/us/media/na-369.pdf["https://www.netapp.com/us/media/na-369.pdf"^]
+
+* 適用於醫療業的可讓您輕鬆轉型FlexPod
++
+https://flexpod.com/solutions/verticals/healthcare/["https://flexpod.com/solutions/verticals/healthcare/"^]
+
+* Cisco與NetApp提供的解決方案FlexPod
++
+https://flexpod.com/["https://flexpod.com/"^]
+
+* 醫療產業的AI與分析（NetApp）
++
+https://www.netapp.com/us/artificial-intelligence/healthcare-ai-analytics/index.aspx["https://www.netapp.com/us/artificial-intelligence/healthcare-ai-analytics/index.aspx"^]
+
+* 醫療業的AI智慧型基礎架構選項可提升成功率
++
+https://www.netapp.com/pdf.html?item=/media/7410-wp-7314.pdf["https://www.netapp.com/pdf.html?item=/media/7410-wp-7314.pdf"^]
+
+* 包含《Cisco Intersight *》的《Datacenter with》、《Cisco Intersight Storage Connector for Cisco Intersight》和《Cisco Intersight託管模式》。FlexPod ONTAP ONTAP
++
+https://www.netapp.com/pdf.html?item=/media/25001-tr-4883.pdf["https://www.netapp.com/pdf.html?item=/media/25001-tr-4883.pdf"^]
+
+* 採用Red Hat Enterprise Linux OpenStack平台的資料中心FlexPod
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_openstack_osp6.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_openstack_osp6.html"^]
+
+
+
+
+
+== 版本歷程記錄
+
+|===
+| 版本 | 日期 | 文件版本歷程記錄 
+
+
+| 1.0版 | 2021年11月 | 初始版本。 
+|===

@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_storage_virtual_machine_configuration.html 
+keywords: storage, virtual, machine, configuration, svm, meditech, host, luns, language, encoding 
+summary: 本節內容適用於ONTAP 在更新版本的更新版本上進行部署。 
+---
+= 儲存虛擬機器組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節內容適用於ONTAP 在更新版本的更新版本上進行部署。
+
+
+NOTE: 儲存虛擬機器（SVM）也稱為Vserver、位於ONTAP Sf2 API和ONTAP Sf2 CLI中。
+
+
+
+== 適用於MEDITECH主機LUN的SVM
+
+您應該為ONTAP 每個支援的儲存叢集建立一個專屬的SVM、以便擁有並管理包含MEDITECH主機LUN的集合體。
+
+
+
+== SVM語言編碼設定
+
+NetApp建議您為所有SVM設定語言編碼。如果在建立SVM時未指定語言編碼設定、則會使用預設的語言編碼設定。預設的語言編碼設定為C．utf-8 ONTAP for the fest.設定語言編碼之後、您無法在稍後修改具有Infinite Volume的SVM語言。
+
+除非您在建立磁碟區時明確指定其他設定、否則與SVM相關聯的磁碟區會繼承SVM語言編碼設定。若要讓特定作業正常運作、您應該在站台的所有磁碟區中一致使用語言編碼設定。例如、SnapMirror要求來源和目的地SVM具有相同的語言編碼設定。
+
+link:ehr-meditech-deploy_volume_configuration.html["下一步：Volume組態。"]

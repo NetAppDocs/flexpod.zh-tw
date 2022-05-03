@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_set_volume_tiering_policy.html 
+keywords: volume, tiering, policy, ontap, cli, oncommand, system, manager, cloud, fabricpool 
+summary:  
+---
+= 設定磁碟區分層原則
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+根據預設、Volume會使用「無」磁碟區分層原則。建立磁碟區之後、可使用OnCommand NetApp系統管理程式或ONTAP CLI來變更磁碟區分層原則。
+
+搭配使用時、支援下列三種Volume分層原則：Auto（自動）、Snapshot Only（僅快照）和None（無）FlexPod FabricPool 。
+
+* *自動*
++
+** 磁碟區中的所有冷區塊都會移至雲端層。假設Aggregate使用率超過50%、則非作用中區塊大約需要31天才能變冷。使用「分層最低冷卻天數」設定、可在2天至63天之間調整自動冷卻時間。
+** 當將分層原則設定為「自動」的磁碟區中的冷區塊隨機讀取時、就會變熱並寫入效能層。
+** 當將分層原則設為「自動」的磁碟區中的冷區塊依序讀取時、它們會保持在冷態、並保留在雲端層上。它們不會寫入效能層級。
+
+
+* *僅Snapshot *
++
+** 未與作用中檔案系統共用的磁碟區中的冷快照區塊會移至雲端層。假設Aggregate使用率超過50%、則非作用中的Snapshot區塊大約需要2天才能變冷。使用「分層最低冷卻天數」設定、僅Snapshot冷卻時間可從2天調整至63天。
+** 當磁碟區中的冷區塊將分層原則設定為「僅快照」時、這些區塊會變熱並寫入效能層。
+
+
+* *無（預設）*
++
+** 將Volume設為使用「無」作為分層原則、不會將冷資料分層至雲端層。
+** 將分層原則設定為「無」可防止新的分層。
+** 先前移至雲端層的Volume資料會保留在雲端層、直到變熱為止、並自動移回效能層。
+
+
+
+
+
+
+== 系統管理程式OnCommand
+
+若要使用OnCommand 《不實系統管理程式》變更磁碟區的分層原則、請完成下列步驟：
+
+. 啟動OnCommand 《系統管理程式》。
+. 選取一個Volume。
+. 按一下更多動作、然後選取變更分層原則。
+. 選取要套用至磁碟區的分層原則。
+. 按一下儲存。
++
+image:cloud-fabricpool_image16.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+== CLI ONTAP
+
+若要使用ONTAP CLI變更磁碟區的分層原則、請執行下列命令：
+
+....
+volume modify -vserver <svm_name> -volume <volume_name>
+-tiering-policy <auto|snapshot-only|all|none>
+....
+link:cloud-fabricpool_set_volume_tiering_minimum_cooling_days.html["接下來：設定磁碟區分層的最低冷卻天數。"]

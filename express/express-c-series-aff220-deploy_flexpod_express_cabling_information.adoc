@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-deploy_flexpod_express_cabling_information.html 
+keywords: cabling, information, validation, cisco, nexus, switches 
+summary: 本節詳細說明Cisco Nexus交換器3172P A和B以及NetApp AFF S16A220儲存控制器A和B的驗證纜線和纜線資訊參考 
+---
+= 資訊FlexPod
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+下圖顯示參考驗證纜線。
+
+image:express-c-series-aff220-deploy_image5.png["錯誤：缺少圖形影像"]
+
+下表顯示Cisco Nexus交換器3172P A的佈線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+| Cisco Nexus交換器3172P A | eth1/1. | NetApp AFF VA220儲存控制器A | e0c 
+
+
+|  | eth1/2 | NetApp AFF VA220儲存控制器B | e0c 
+
+
+|  | eth1/3. | Cisco UCS C220 C系列獨立式伺服器A | 採用CVR-QSFP-SFP10G介面卡的MLOM1 
+
+
+|  | eth1/4. | Cisco UCS C220 C系列獨立式伺服器B | 採用CVR-QSFP-SFP10G介面卡的MLOM1 
+
+
+|  | eth1/25 | Cisco Nexus交換器3172P B | eth1/25 
+
+
+|  | eth1/26 | Cisco Nexus交換器3172P B | eth1/26 
+
+
+|  | eth1/33 | NetApp AFF VA220儲存控制器A | e0M 
+
+
+|  | eth1/34 | Cisco UCS C220 C系列獨立式伺服器A | CIMC 
+|===
+下表顯示Cisco Nexus交換器3172P B的佈線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+| Cisco Nexus交換器3172P B | eth1/1. | NetApp AFF VA220儲存控制器A | e0d 
+
+
+|  | eth1/2 | NetApp AFF VA220儲存控制器B | e0d 
+
+
+|  | eth1/3. | Cisco UCS C220 C系列獨立式伺服器A | 採用CVR-QSFP-SFP10G介面卡的MLOM2 
+
+
+|  | eth1/4. | Cisco UCS C220 C系列獨立式伺服器B | 採用CVR-QSFP-SFP10G介面卡的MLOM2 
+
+
+|  | eth1/25 | Cisco Nexus交換器3172P A | eth1/25 
+
+
+|  | eth1/26 | Cisco Nexus交換器3172P A | eth1/26 
+
+
+|  | eth1/33 | NetApp AFF VA220儲存控制器B | e0M 
+
+
+|  | eth1/34 | Cisco UCS C220 C系列獨立式伺服器B | CIMC 
+|===
+下表顯示NetApp AFF Ar20A220儲存控制器A的纜線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+| NetApp AFF VA220儲存控制器A | e0a | NetApp AFF VA220儲存控制器B | e0a 
+
+
+|  | e0b. | NetApp AFF VA220儲存控制器B | e0b. 
+
+
+|  | e0c | Cisco Nexus交換器3172P A | eth1/1. 
+
+
+|  | e0d | Cisco Nexus交換器3172P B | eth1/1. 
+
+
+|  | e0M | Cisco Nexus交換器3172P A | eth1/33 
+|===
+下表顯示NetApp AFF 4A220儲存控制器B的纜線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+| NetApp AFF VA220儲存控制器B | e0a | NetApp AFF VA220儲存控制器A | e0a 
+
+
+|  | e0b. | NetApp AFF VA220儲存控制器A | e0b. 
+
+
+|  | e0c | Cisco Nexus交換器3172P A | eth1/2 
+
+
+|  | e0d | Cisco Nexus交換器3172P B | eth1/2 
+
+
+|  | e0M | Cisco Nexus交換器3172P B | eth1/33 
+|===

@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_lun_configuration.html 
+keywords: lun, configuration, provisioning, operating, system, type, size, presentation 
+summary: 您環境中的MEDITECH主機數量決定了在NetApp FAS 功能或AFF 功能區系統中建立的LUN數量。硬體組態提案會指定每個LUN的大小。 
+---
+= LUN組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+您環境中的MEDITECH主機數量決定了在NetApp FAS 功能或AFF 功能區系統中建立的LUN數量。硬體組態提案會指定每個LUN的大小。
+
+
+
+== LUN資源配置
+
+專為MEDITECH主機打造的Meditech LUN可以是完整配置、也可以是精簡配置。
+
+
+
+== LUN作業系統類型
+
+若要正確對齊所建立的LUN、您必須正確設定LUN的作業系統類型。未對齊的LUN會產生不必要的寫入作業負荷、而且修正未對齊的LUN會造成高昂成本。
+
+MEDITECH主機伺服器通常使用VMware vSphere Hypervisor在虛擬化的Windows Server環境中執行。主機伺服器也可以在裸機伺服器上的Windows Server環境中執行。若要判斷要設定的正確作業系統類型值、請參閱的「LUN建立」一節 https://library.netapp.com/ecm/ecm_download_file/ECMP1366832["叢集Data ONTAP 式的版本8.3命令：手動頁面參考"^]。
+
+
+
+== LUN大小
+
+若要判斷每部MEDITECH主機的LUN大小、請參閱MEDITECH的硬體組態提案（新部署）或硬體評估工作（現有部署）文件。
+
+
+
+== LUN呈現
+
+Meditech要求使用FC傳輸協定、將程式、字典和資料檔案的儲存設備以LUN形式呈現給MEDITECH主機。在VMware虛擬環境中、LUN會呈現給裝載MEDITECH主機的VMware ESXi伺服器。然後、在實體相容模式中使用RDM、將顯示給VMware ESXi伺服器的每個LUN對應至每個MEDITECH主機VM。
+
+您應該使用適當的LUN命名慣例、將LUN呈現給MEDITCH主機。例如、為了方便管理、您必須將LUN「MTFS01E」呈現給MEDITECH主機「mt-host-01」。
+
+當您諮詢MEDITECH和備份系統安裝程式、為MEDITECH主機所使用的LUN設計一致的命名慣例時、請參閱MEDITECH硬體組態提案。
+
+MEDITECH LUN名稱的範例為「MTFS05E」、其中：
+
+* 「MTFS」代表MEDITECH檔案伺服器（適用於MEDITECH主機）。
+* 05表示主機編號5。
+* 「E」代表Windows E磁碟機。
+
+
+link:ehr-meditech-deploy_initiator_group_configuration.html["下一步：啟動器群組組態。"]

@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_minimum_hardware_requirements.html 
+keywords: minimum, hardware, requirements, fas, cimc, configuration, rack, servers, ucs 
+summary: 本節說明FlexPod 不同版本的《不一樣》的最低硬體需求。 
+---
+= 最低硬體需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節說明FlexPod 不同版本的《不一樣》的最低硬體需求。
+
+
+
+== 採用NetApp的NetApp Express FlexPod FAS
+
+使用NetApp功能的基礎儲存設備之NetApp RINSANE解決方案的硬體需求FlexPod 、包括本節所述的組態。FAS
+
+
+
+=== CIMC型組態（獨立式機架伺服器）
+
+Cisco整合式管理控制器（CIMC）組態包括下列硬體元件：
+
+* 備援組態中有兩個10Gbps標準乙太網路交換器（建議使用Cisco Nexus 0808、並支援Cisco Nexus 3000和9000機型）
+* Cisco UCS C系列獨立式機架伺服器
+* 在AFF 部署為雙節點叢集的高可用度（HA）配對組態中、有兩AFF 個支援EFC190、EeseA250、FAS2600或FAS E122700系列的控制器
+
+
+
+
+=== Cisco UCS託管組態
+
+Cisco UCS託管確認包括下列硬體元件：
+
+* 備援組態中有兩個10Gbps標準乙太網路交換器（建議使用Cisco Nexus 3524）
+* 一個Cisco UCS 5108交流（AC）刀鋒伺服器機箱
+* 兩個Cisco UCS 6324光纖互連
+* Cisco UCS B系列伺服器（至少四個Cisco UCS B200 M5刀鋒伺服器）
+* HA配對組組態中有兩AFF 個供應器（AFF 每個控制器需要兩個可用的統一目標介面卡2個[UTA2]連接埠）、以供使用。
+
+
+
+
+== 採用E系列的支援FlexPod
+
+採用E系列入門組態的《Extre Express硬體需求：FlexPod
+
+* 兩個Cisco UCS 6324光纖互連
+* 一個Cisco UCS Mini機箱5108 AC2或DC2（Cisco UCS 6324架構互連僅在AC2和DC2機箱中受支援）
+* Cisco UCS B系列伺服器（至少兩部Cisco UCS B200 M4刀鋒伺服器）
+* E系列E2824儲存系統的一個HA配對組組態、裝載至少12個磁碟機
+* 備援組態中有兩個10Gbps標準乙太網路交換器（可在資料中心使用現有的交換器）
+
+
+這些硬體元件是建置解決方案入門組態所需的元件、您可以視需要新增其他刀鋒伺服器和磁碟機。E系列E2824儲存系統可更換為更高的平台、也可作為All Flash系統執行。

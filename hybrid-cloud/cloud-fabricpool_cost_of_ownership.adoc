@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_cost_of_ownership.html 
+keywords: cost, ownership, evaluator, group, savings, fabricpool, cloud 
+summary: 您可透過獨立IT分析公司Evaluator Group取得《The》《The NetApp經濟計算機》（英文）FabricPool 、協助您預測內部部署與雲端之間的成本節約效益、以利儲存冷資料。 
+---
+= 擁有成本
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+。 https://www.evaluatorgroup.com/FabricPool/["《經濟計算機》FabricPool"^] 可透過獨立的IT分析公司Evaluator Group取得、以協助規劃內部部署與雲端之間的成本節約效益、以利儲存冷資料。此計算機提供簡單的介面、可判斷在效能層儲存不常存取資料的成本、而不會在資料生命週期的剩餘時間將資料傳送至雲端層。根據5年計算結果、來源容量、資料成長、快照容量和冷資料百分比等四大關鍵因素、都是用來判斷一段時間內的儲存成本。

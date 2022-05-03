@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_create_aws_s3_bucket.html 
+keywords: create, aws, s3, bucket, cloud, fabricpool, flexpod, tiers, create 
+summary: 儲存區是儲存資料的物件存放區容器。您必須提供儲存資料的儲存區名稱和位置、才能將資料新增至雲端層的集合體。 
+---
+= 建立AWS S3儲存區
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+儲存區是儲存資料的物件存放區容器。您必須提供儲存資料的儲存區名稱和位置、才能將資料新增至雲端層的集合體。
+
+
+NOTE: 無法使用OnCommand 無法建立的整合套件、OnCommand 不可以使用「無法」功能的「無法」、「無法」使用「無法」功能來建立。ONTAP
+
+支援每個Aggregate附加一個貯體、如下圖所示。FabricPool單一儲存區可附加至單一Aggregate、單一儲存區可附加至多個Aggregate。不過、單一Aggregate無法附加至多個值區。雖然單一儲存區可附加至叢集中的多個集合體、但NetApp不建議將單一儲存區附加至多個叢集中的集合體。
+
+規劃儲存架構時、請考量儲存庫對集合體的關係可能如何影響效能。許多物件存放區供應商都會在儲存區或容器層級設定支援的IOPS上限。需要最大效能的環境應使用多個儲存區、以減少物件儲存IOPS限制可能影響多FabricPool 個支援區的效能。將單一儲存區或容器附加至FabricPool 叢集中的所有VMware整合、可能會對重視雲端層效能的管理能力環境更有幫助。
+
+image:cloud-fabricpool_image10.png["錯誤：缺少圖形影像"]
+
+
+
+== 建立S3儲存區
+
+. 在AWS管理主控台的首頁、在搜尋列中輸入S3。
+. 在雲端中選取S3可擴充儲存設備。
++
+image:cloud-fabricpool_image11.png["錯誤：缺少圖形影像"]
+
+. 在S3首頁上、選取「Create Bucket（建立儲存區）」。
+. 輸入DNS相容的名稱、然後選擇要建立儲存區的區域。
++
+image:cloud-fabricpool_image12.png["錯誤：缺少圖形影像"]
+
+. 按一下「建立」以建立物件存放區。
+
+
+link:cloud-fabricpool_add_a_cloud_tier_to_ontap.html["下一步：將雲端層新增ONTAP 至"]

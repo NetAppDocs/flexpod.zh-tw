@@ -1,0 +1,184 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_optional_features.html 
+keywords: metrocluster, fc, nvme, fc, san, boot, cisco, mds, fcoe, iscsi 
+summary: NetApp支援多種選用元件、以進一步強化FlexPod 「資料中心架構」。以下小節將概述選用元件。 
+---
+= 選用功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+NetApp支援多種選用元件、以進一步強化FlexPod 「資料中心架構」。以下小節將概述選用元件。
+
+
+
+== MetroCluster
+
+支援兩種不同的NetApp支援功能、可在雙節點或四節點叢集組態中持續提供可用度。FlexPod MetroCluster支援同步複寫以處理關鍵工作負載。MetroCluster它需要雙站台組態、並與Cisco交換器相連。站台之間的最大支援距離約為186英里（300公里）MetroCluster 、MetroCluster 而若為景點、則可增加至約435英里（700公里）。下圖分別說明FlexPod 採用NetApp MetroCluster 技術的「資料中心」、FlexPod 以及採用NetApp MetroCluster 產品介紹的「資料中心」、以及採用NetApp產品介紹的「資料中心」。
+
+下圖說明FlexPod 採用NetApp MetroCluster 技術的「資料中心」。
+
+image:dc-tech-spec_image1.png["錯誤：缺少圖形影像"]
+
+下圖說明FlexPod 採用NetApp MetroCluster RID IP架構的「資料中心」。
+
+image:dc-tech-spec_image2.png["錯誤：缺少圖形影像"]
+
+從推出支援功能時起、即可在第三個站台部署支援程式、以監控整個流程、並在發生站台災難時、協助自動化非計畫性切換。ONTAP ONTAP MetroCluster
+
+若要部署支援擴充第2層站台對站台連線功能的靜態IP解決方案、只要網路頻寬和交換器符合下圖所示的需求、您就可以將ISL和使用符合需求的交換器當作符合需求的可靠性IP交換器來節省成本。FlexPod MetroCluster FlexPod MetroCluster 說明FlexPod MetroCluster 採用ISL共享和相容交換器的靜態IP解決方案。
+
+image:dc-tech-spec_image10.png["錯誤：缺少圖形影像"]
+
+下圖說明VXLAN Multi-Site架構和MetroCluster 支援FlexPod MetroCluster VXLAN Multi-Site架構部署的支援功能、以利實現一套支援整個IP解決方案的功能。
+
+* VXLAN Multi-Site Fabric for FlexPod MetroCluster FeXIP解決方案
+
+
+image:dc-tech-spec_image11.png["錯誤：缺少圖形影像"]
+
+* 適用於整個IP解決方案的IP儲存架構MetroCluster FlexPod MetroCluster
+
+
+image:dc-tech-spec_image12.png["錯誤：缺少圖形影像"]
+
+
+
+== 端點對端點FC-NVMe
+
+端點對端點FC-NVMe可無縫延伸客戶現有的SAN基礎架構、以利即時應用程式、同時提供更高的IOPS與處理量、並減少延遲。
+
+現有的32G FC SAN傳輸可用於同時傳輸NVMe和SCSI工作負載。
+
+下圖說明FlexPod 採用Cisco MDS的適用於FC的「功能不整資料中心」。
+
+如需FlexPod 更多有關「效能優勢」的詳細資訊、請參閱 https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741907.html["推出端點對端點NVMe for FlexPod 《支援不全》白皮書。"^]
+
+如需ONTAP 有關實作的詳細資訊、請參閱 https://www.netapp.com/us/media/tr-4684.pdf["TR-4684：使用NVMe實作及設定現代化SAN"^]。
+
+image:dc-tech-spec_image3.png["錯誤：缺少圖形影像"]
+
+
+
+== FC SAN透過Cisco MDS開機
+
+為了使用專屬的SAN網路來提升擴充性、FlexPod 透過Cisco MDS交換器和Nexus交換器支援FC、例如Cisco Nexus 93108Tc-FX。Cisco MDS的FC SAN開機選項具有下列授權與硬體需求：
+
+* 每個NetApp儲存控制器至少有兩個FC連接埠；每個SAN架構有一個連接埠
+* 每個NetApp儲存控制器上都有FC授權
+* NetApp支援的Cisco MDS交換器和韌體版本 http://mysupport.netapp.com/matrix["IMT"^]
+
+
+如需MDS型設計的詳細指引、請參閱CVD https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html["《VMware vSphere 6.7U1 Fibre Channel and iSCSI Deployment Guide》（VMware vSphere 6.7U1資料中心光纖通道與iSCSI部署指南）FlexPod"^]。
+
+下圖顯示FlexPod 採用MDS連線功能的FC的「資料中心」範例、FlexPod 以及使用Cisco Nexus 93180YC-FX的「FC的「資料中心」。
+
+image:dc-tech-spec_image4.jpg["錯誤：缺少圖形影像"]
+
+image:dc-tech-spec_image5.png["錯誤：缺少圖形影像"]
+
+
+
+== 使用Cisco Nexus開機FC SAN
+
+傳統FC SAN開機選項具有下列授權與硬體需求：
+
+* 在Cisco Nexus 5000系列交換器中執行FC分區時、需要Cisco Nexus 5000系列交換器的儲存傳輸協定服務套件授權（FC_feature_pkg）。
+* 在Cisco Nexus 5000系列交換器中執行FC分區時、網路互連與Cisco Nexus 5000系列交換器之間需要SAN連結。如需額外的備援、建議在連結之間使用SAN連接埠通道。
+* Cisco Nexus 5010、5020和5548P交換器需要獨立的FC或通用連接埠（UP）模組、才能連線至Cisco UCS Fabric互連和NetApp儲存控制器。
+* Cisco Nexus 93180YC-FX需要FC功能授權、才能啟用FC。
+* 每個NetApp儲存控制器至少需要兩個8/16/32GB FC連接埠才能連線。
+* NetApp儲存控制器需要FC授權。
++
+
+NOTE: 除非在光纖互連中執行FC分區、否則使用Cisco Nexus 7000或9000系列交換器會排除傳統FC的使用。在這種情況下、不支援連接至交換器的SAN上行鏈路。
+
+
+
+下圖顯示FC連線組態。
+
+image:dc-tech-spec_image6.png["錯誤：缺少圖形影像"]
+
+
+
+== FCoE SAN開機選項
+
+FCoE SAN開機選項具有下列授權與硬體需求：
+
+* 在交換器中執行FC分區時、需要Cisco Nexus 5000或7000系列交換器的儲存傳輸協定服務套件授權（FC_feature_pkag）。
+* 在交換器中執行FC分區時、Fabric互連和Cisco Nexus 5000或7000系列交換器之間需要FCoE上行鏈路。如需額外的備援、也建議在連結之間使用FCoE連接埠通道。
+* 除非有內建統一化目標介面卡2（UTA2）連接埠、否則每個NetApp儲存控制器都需要至少一個雙埠統一化目標介面卡（UTA）附加卡來進行FCoE連線。
+* 此選項需要NetApp儲存控制器上的FC授權。
+* 如果您在交換器中使用Cisco Nexus 7000系列交換器、並執行FC分區、則需要能夠支援FCoE的線路卡。
++
+
+NOTE: 除非在光纖互連中執行FC分區、且儲存設備連接至光纖與應用裝置連接埠互連、否則使用Cisco Nexus 9000系列交換器將無法使用FCoE。在這種情況下、不支援連接至交換器的FCoE上行鏈路。
+
+
+
+下圖顯示FCoE開機案例。
+
+image:dc-tech-spec_image7.png["錯誤：缺少圖形影像"]
+
+
+
+== iSCSI開機選項
+
+iSCSI開機選項具有下列授權與硬體需求：
+
+* NetApp儲存控制器需要iSCSI授權。
+* Cisco UCS伺服器中需要能夠開機iSCSI的介面卡。
+* 需要在NetApp儲存控制器上使用雙埠10Gbps乙太網路介面卡。
+
+
+下圖顯示使用iSCSI開機的純乙太網路組態。
+
+image:dc-tech-spec_image8.png["錯誤：缺少圖形影像"]
+
+
+
+== Cisco UCS直接連接NetApp儲存設備
+
+NetApp AFF 的功能與FAS 功能不需使用任何上游SAN交換器、即可直接連接至Cisco UCS網路互連。
+
+四種Cisco UCS連接埠類型可用於直接連線至NetApp儲存設備：
+
+* *儲存FC連接埠。*直接將此連接埠連接至NetApp儲存設備上的FC連接埠。
+* *儲存FCoE連接埠。*直接將此連接埠連接至NetApp儲存設備上的FCoE連接埠。
+* *設備連接埠。*直接將此連接埠連接至NetApp儲存設備上的10GbE連接埠。
+* *統一化儲存連接埠。*直接將此連接埠連接至NetApp UTA。
+
+
+授權與硬體需求如下：
+
+* 需要NetApp儲存控制器上的傳輸協定授權。
+* 伺服器需要Cisco UCS介面卡（啟動器）。如需支援的Cisco UCS介面卡清單、請參閱NetApp http://mysupport.netapp.com/matrix["IMT"^]。
+* 需要NetApp儲存控制器上的目標介面卡。
+
+
+下圖顯示FC直接連線組態。
+
+image:dc-tech-spec_image9.png["錯誤：缺少圖形影像"]
+
+* 附註： *
+
+* Cisco UCS配置為FC交換模式。
+* 從目標到架構互連的FCoE連接埠、均設定為FCoE儲存連接埠。
+* 從目標到架構互連的FC連接埠會設定為FC儲存連接埠。
+
+
+下圖顯示iSCSI/Unified IP直接連線組態。
+
+image:dc-tech-spec_image10.png["錯誤：缺少圖形影像"]
+
+* 附註： *
+
+* Cisco UCS配置為乙太網路交換模式。
+* 從目標到光纖互連的iSCSI連接埠、會設定為iSCSI資料的乙太網路儲存連接埠。
+* 從目標到架構互連的乙太網路連接埠、會設定為CIFS/NFS資料的乙太網路儲存連接埠。
+

@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: security/flexpod-fips-additional-flexpod-security-consideration.html 
+keywords: security, cisco intersight, fpolicy, data at rest, data in flight, secure multitenancy 
+summary: 此功能為模組化、融合式、可選擇性虛擬化、可擴充（橫向擴充和垂直擴充）、以及具成本效益的平台。FlexPod有了FlexPod 這個平台、您就能獨立橫向擴充運算、網路和儲存設備、加速應用程式部署。此外、模組化架構還能在系統橫向擴充和升級活動期間、維持不中斷營運。 
+---
+= 其他FlexPod 的安全考量
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-fips-solution-benefits-of-flexpod-converged-infrastructure.html["先前版本：FlexPod 解決方案優勢：融合式基礎架構。"]
+
+此功能為模組化、融合式、可選擇性虛擬化、可擴充（橫向擴充和垂直擴充）、以及具成本效益的平台。FlexPod有了FlexPod 這個平台、您就能獨立橫向擴充運算、網路和儲存設備、加速應用程式部署。此外、模組化架構還能在系統橫向擴充和升級活動期間、維持不中斷營運。
+
+HIT系統的不同元件需要將資料儲存在SMB/CIFS、NFS、ext4和NTFS檔案系統中。這項需求表示基礎架構必須透過NFS、CIFS和SAN傳輸協定提供資料存取。單一NetApp儲存系統可支援所有這些傳輸協定、不需要傳統的傳輸協定專用儲存系統實務做法。此外、單一NetApp儲存系統可支援多種受影響的工作負載、例如EHRs、PACS或VNA、基因組學、VDI等、 提供保證且可設定的效能等級。
+
+當部署FlexPod 在一個不受限的系統中時、HIT可提供醫療產業特有的多項優點。下列清單是這些優點的詳細說明：
+
+* *安全*。FlexPod安全性是FlexPod 整個過程的基礎。過去幾年、勒索軟體已成為威脅。勒索軟體是一種以密碼學為基礎的惡意軟體、使用密碼編譯來建置惡意軟體。此惡意軟體可以同時使用對稱和非對稱金鑰加密來鎖定受害者的資料、並要求贖金提供金鑰來解密資料。若要瞭解FlexPod 此解決方案如何協助減輕勒索軟體等威脅、請參閱 https://www.netapp.com/us/media/tr-4802.pdf["TR-4802：勒索軟體解決方案"^]。此外、還包括了許多基礎架構元件FlexPod https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf["符合FIPS 140-2標準"^]。
+* * Cisco Intersight * Cisco Intersight是一款創新的雲端型管理即服務平台、提供單一窗口來進行完整堆疊FlexPod 的功能、以利進行全面的視覺化管理與協調。Intersight平台使用FIPS 140-2安全性相容的密碼編譯模組。此平台的頻外管理架構使其超出某些標準或稽核的範圍、例如HIPAA。網路上的任何個人識別健全狀況資訊都不會傳送至Intersight入口網站。
+* * NetApp FPolicy技術。* NetApp FPolicy（名稱檔案原則的演進）是檔案存取通知架構、可用來監控及管理NFS或SMB/CIFS傳輸協定上的檔案存取。這項技術已成為ONTAP VMware資料管理軟體的一部分超過十年、對於協助偵測勒索軟體非常有用。這款Zero Trust引擎提供額外的安全措施、超越存取控制清單（ACL）的權限。FPolicy有兩種操作模式：原生和外部：
++
+** 原生模式同時提供檔案副檔名的黑名單和白名單。
+** 外部模式的功能與原生模式相同、但它也與FPolicy伺服器整合、該伺服器可在ONTAP 外部執行至整個作業系統、以及安全資訊與事件管理（SIEM）系統。如需如何對抗勒索軟體的詳細資訊、請參閱 https://blog.netapp.com/fighting-ransomware-tools["對抗勒索軟體：第三部分ONTAP ：另一項強大的原生（又稱為免費）工具《SfPolicy》"^] 部落格：
+
+
+* *靜止資料*。更新版本包含三種符合FIPS 140-2標準的靜止資料加密解決方案：ONTAP
++
+** NSE是使用自我加密磁碟機的硬體解決方案。
+** NVE是一種軟體解決方案、可加密任何磁碟機類型的任何資料磁碟區、每個磁碟區都有一個唯一的金鑰。
+** Nae是一種軟體解決方案、可加密任何磁碟機類型上的任何資料磁碟區、並為每個Aggregate啟用唯一金鑰。
+
+
+
+
+
+NOTE: 從NetApp NVE 9.7開始ONTAP 、如果已有名稱為VE的NetApp NVE授權套件、則預設會啟用NAE和NVE。
+
+* *飛行中的資料*。從ONTAP Sf9.8開始、網際網路傳輸協定安全性（IPsec）可為用戶端與ONTAP SVM之間的所有IP流量提供端點對端點加密支援。所有IP流量的IPsec資料加密包括NFS、iSCSI及SMB/CIFS傳輸協定。IPsec為iSCSI流量提供唯一的傳輸加密選項。
+* *跨混合式多雲端資料架構的端點對端點資料加密*。使用靜止資料加密技術（例如NSE或NVE）和叢集對等加密（CPE）來進行資料複寫流量的客戶、現在可以透過升級至ONTAP RES9.8或更新版本、並使用IPsec、在混合式多雲端資料架構的用戶端與儲存設備之間使用端對端加密。從ONTAP 功能支援範圍9開始、您可以針對整個叢集的控制面板介面啟用FIPS 140-2相容模式。預設會停用FIPS 140-2模式。從推出《支援SnapMirror 9.6的支援方案」開始ONTAP 、持續提供TLS 1.2 AES-256 GCM加密支援ONTAP 、以支援諸如NetApp SnapMirror、NetApp SnapVault SnapMirror和NetApp FlexCache 等各種資料複寫技術。加密是透過兩個叢集對等端點之間的預先共用金鑰（PSK）來設定。
+* *安全的多租戶共享*。支援虛擬化伺服器和儲存共享基礎架構的需求增加、可安全地多租戶共享特定設施的資訊、尤其是在託管多個資料庫和軟體執行個體時。
+
+
+link:flexpod-fips-conclusion.html["下一步：結論。"]

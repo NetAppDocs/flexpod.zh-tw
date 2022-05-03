@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: infrastructure/nvme-vsphere-introduction.html 
+keywords: tr-4914, tr4914, 4914, nvme, vmware, vsphere, flexpod, fc, fc-nvme 
+summary: 本解決方案針對VMware vSphere 7 FlexPod 的VMware vSphere 7 on VMware提供FC-NVMe效能的高階摘要。此解決方案已通過驗證、可成功通過FC-NVMe流量、並擷取各種資料區塊大小的FC-NVMe效能規格表。 
+---
+= TR-4914：端點對端點NVMe FlexPod 、搭配Cisco UCSM、VMware vSphere 7.0及NetApp ONTAP ®4.9
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Chris Schmittt和Kamini Singh、NetApp
+
+與下列合作夥伴合作：image:cisco logo.png["錯誤：缺少圖形影像"]
+
+NVMe資料儲存標準是新興的核心技術、為目前和未來的記憶體技術提供極高的頻寬和極低延遲的儲存存取、正在轉變企業資料儲存設備的存取與傳輸。NVMe會以NVMe命令集取代SCSI命令集。
+
+NVMe是專為非揮發性Flash磁碟機、多核心CPU和GB記憶體所設計。此外、它也能善用自20世紀70年代以來電腦科學領域的重大進展、讓精簡的命令集能夠更有效率地剖析及處理資料。端點對端點NVMe架構也能讓資料中心管理員重新思考如何推動虛擬化與容器化環境、以及其交易導向資料庫可支援的擴充性。
+
+包含Cisco Unified Computing System（Cisco UCS）、Cisco Nexus交換器、Cisco MDS交換器及NetApp等系統的最佳實務資料中心架構。FlexPod AFF這些元件是根據Cisco和NetApp的最佳實務做法來連線和設定、提供絕佳的平台、讓您安心執行各種企業工作負載。可垂直擴充以獲得更高的效能和容量（視需要個別新增運算、網路或儲存資源）、也可針對需要多個一致部署的環境（例如、推出其他的支援堆疊）進行橫向擴充。FlexPod FlexPod
+
+下圖顯示FlexPod 了零組件系列。
+
+image:nvme-vsphere-image1.png["錯誤：缺少圖形影像"]
+
+支援以支援FC-NVMe的理想平台。FlexPod可在現有Cisco UCS B200 M5或M6伺服器、Cisco UCS C系列M5或M6機架伺服器中新增Cisco UCS VIC 1400系列和連接埠擴充器、以及簡單且不中斷的軟體升級至Cisco UCS系統、Cisco MDS 32Gbps交換器、 以及NetApp AFF 的不完整儲存陣列。支援的硬體和軟體就位之後、FC-NVMe的組態就跟FCP組態類似。
+
+NetApp ONTAP 支援9.5及更新版本、提供完整的FC-NVMe解決方案。不中斷營運ONTAP 的不中斷功能的更新功能可讓AFF 這些AFF 裝置支援端點對端點NVMe儲存堆疊。AFF AFF AFF因此、具有第六代主機匯流排介面卡（HBA）和NVMe驅動程式支援的伺服器、可以使用原生NVMe與這些陣列通訊。
+
+
+
+== 目標
+
+本解決方案針對VMware vSphere 7 FlexPod 的VMware vSphere 7 on VMware提供FC-NVMe效能的高階摘要。此解決方案已通過驗證、可成功通過FC-NVMe流量、並擷取各種資料區塊大小的FC-NVMe效能規格表。
+
+
+
+== 解決方案效益
+
+適用於FlexPod 整個流程的端點對端點NVMe為客戶提供卓越價值、並提供下列解決方案優勢：
+
+* NVMe仰賴PCIe、這是一種高速、高頻寬的硬體傳輸協定、比舊標準（例如SCSI、SAS和SATA）快得多。Cisco UCS伺服器與NetApp儲存陣列之間的高頻寬、超低延遲連線能力、適用於大多數嚴苛的應用程式。
+* FC-NVMe解決方案不失真、可滿足新一代應用程式的擴充需求。這些新技術包括人工智慧（AI）、機器學習（ML）、深度學習（DL）、即時分析、以及其他關鍵任務應用程式。
+* 有效運用堆疊中的所有資源、降低IT成本。
+* 大幅縮短回應時間並提升應用程式效能、這相當於改善IOPS與處理量、同時縮短延遲時間。此解決方案可為現有工作負載提供約60%的效能、並將延遲減少約50%。
+* FC-NVMe是一套精簡的傳輸協定、具備優異的佇列功能、尤其是在每秒I/O作業次數（IOPS、亦即交易量增加）和平行活動量增加的情況下。
+* 提供不中斷的軟體升級至FlexPod 諸如Cisco UCS、Cisco MDS和NetApp AFF 等元件。無需修改應用程式。
+
+
+link:nvme-vsphere-testing-approach.html["下一步：測試方法。"]

@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-deploy_install_vmware_vcenter_server_6.7.html 
+keywords: install, vmware, vcenter, server, appliance 
+summary: 本節提供在FlexPod VMware vCenter Server 6.7以VMware Express組態安裝的詳細程序。 
+---
+= 安裝VMware vCenter Server 6.7
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節提供在FlexPod VMware vCenter Server 6.7以VMware Express組態安裝的詳細程序。
+
+
+NOTE: VMware vCenter Server Appliance（VCSA）是由VMware vCenter Express提供。FlexPod
+
+
+
+== 下載VMware vCenter伺服器應用裝置
+
+. 下載VCSA。管理ESXi主機時、按一下「Get vCenter Server（取得vCenter伺服器）」圖示、即可存取下載連結。
++
+image:express-c-series-aff220-deploy_image41.png["錯誤：缺少圖形影像"]
+
+. 從VMware網站下載VCSA。
++
+
+NOTE: 雖然支援可安裝Microsoft Windows vCenter Server、但VMware建議新部署使用VCSA。
+
+. 掛載ISO映像。
+. 瀏覽到vcsa-ui-installer>win32目錄。按兩下installer.exe。
+. 按一下「安裝」。
+. 按一下「簡介」頁面上的「下一步」。
+. 接受終端使用者授權合約。
+. 選取「內嵌平台服務控制器」作為部署類型。
++
+image:express-c-series-aff220-deploy_image42.png["錯誤：缺少圖形影像"]
+
++
+
+NOTE: 如有需要、FlexPod 也支援外部平台服務控制器部署、作為支援的部分。
+
+. 在設備部署目標中、輸入您已部署ESXi主機的IP位址、以及root使用者名稱和root密碼。
++
+image:express-c-series-aff220-deploy_image43.png["錯誤：缺少圖形影像"]
+
+. 輸入「VCSA」作為VM名稱、並輸入您要用於VCSA的根密碼、以設定應用裝置VM。
++
+image:express-c-series-aff220-deploy_image44.png["錯誤：缺少圖形影像"]
+
+. 選擇最適合您環境的部署規模。按一下「下一步」
++
+image:express-c-series-aff220-deploy_image45.png["錯誤：缺少圖形影像"]
+
+. 選取infra_datastore_1資料存放區。按一下「下一步」
++
+image:express-c-series-aff220-deploy_image46.png["錯誤：缺少圖形影像"]
+
+. 在「Configure network settings（設定網路設定）」頁面中輸入下列資訊、然後按「Next（下一步）」。
++
+.. 選取「網路管理網路」。
+.. 輸入要用於VCSA的FQDN或IP。
+.. 輸入要使用的IP位址。
+.. 輸入要使用的子網路遮罩。
+.. 輸入預設閘道。
+.. 輸入DNS伺服器。
+
+
+. 在「準備完成階段1」頁面上、確認您輸入的設定正確無誤。按一下「完成」。
++
+image:express-c-series-aff220-deploy_image47.png["錯誤：缺少圖形影像"]
+
++
+VCSA現已安裝。此程序需要幾分鐘的時間。
+
+. 階段1完成後、會出現一則訊息、表示已完成。按一下「Continue（繼續）」以開始階段2組態。
+. 在「第2階段簡介」頁面上、按「下一步」。
++
+image:express-c-series-aff220-deploy_image48.png["錯誤：缺少圖形影像"]
+
+. 輸入「<<var_ntP_id>>'作為NTP伺服器位址。您可以輸入多個NTP IP位址。
++
+如果您打算使用vCenter Server高可用度（HA）、請確定已啟用SSH存取。
+
+. 設定SSO網域名稱、密碼和網站名稱。按一下「下一步」
++
+請記錄這些值以供參考、尤其是當您偏離vSphere.local網域名稱時。
+
+. 如有需要、請參加VMware客戶體驗方案。按一下「下一步」
+. 檢視設定摘要。按一下「Finish（完成）」或使用「Back（上一步）」按鈕編輯設定。
+. 此時會出現一則訊息、表示您無法在安裝啟動後暫停或停止完成安裝。按一下「確定」以繼續。
++
+應用裝置設定會繼續進行。這需要幾分鐘的時間。
+
++
+此時會出現一則訊息、指出設定成功。
+
++
+安裝程式可點選用來存取vCenter Server的連結。
+
+
+
+link:express-c-series-aff220-deploy_configure_vmware_vcenter_server_6.7_and_vsphere_clustering.html["下一步：設定VMware vCenter Server 6.7和vSphere叢集。"]

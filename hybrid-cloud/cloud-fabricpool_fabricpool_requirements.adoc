@@ -1,0 +1,136 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_fabricpool_requirements.html 
+keywords: cloud, fabricpool, flexpod, requirements, platforms, intercluster, lif, connectivity, volume, licensing, object, store, profiler 
+summary: 本節所列的任何平台均需使用支援支援功能的支援功能、才能使用支援功能的支援功能。FabricPool ONTAP 
+---
+= 需求FabricPool
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節所列的任何平台均需使用支援支援功能的支援功能、才能使用支援功能的支援功能。FabricPool ONTAP其他FabricPool 的需求取決於要附加的雲端層。對於擁有固定容量相對較小的入門級AFF 支援平台（例如NetApp AFF 歇爾C190）FabricPool 、可將非使用中資料移至雲端層的效率極高。
+
+
+
+== 平台
+
+下列平台支援此功能：FabricPool
+
+* NetApp AFF
++
+** A800
+** A700S、A700
+** A320、A300
+** A220、A200
+** C190
+** AFF8080、AFF8060和AFF8040
+
+
+* NetApp FAS
++
+** FAS9000
+** FAS8200
+** FAS8080、FAS8060和FAS8040
+** FAS2750、FAS2720
+** FAS2650、FAS2620
+
+
+
+
+
+NOTE: 只有固態硬碟集合體能夠FAS 在不穩定的基礎上使用FabricPool 。
+
+* 雲端階層
++
+** Alibaba雲端物件儲存服務（標準、非常用存取）
+** Amazon S3（Standard、Standard-IA、One ZA-IA、智慧分層）
+** Amazon商業雲端服務（C2S）
+** Google Cloud Storage（多重區域、區域、近線、高線）
+** IBM Cloud物件儲存設備（Standard、Vault、Cold Vault、Flex）
+** Microsoft Azure Blob儲存設備（熱與冷）
+
+
+
+
+
+
+== 叢集間LIF
+
+叢集高可用度（HA）配對使用FabricPool 的是「叢集間」、需要兩個叢集間邏輯介面（LIF）才能與雲端層通訊。NetApp建議在其他HA配對上建立叢集間LIF、以便將雲端層無縫連接至這些節點上的集合體。
+
+用來連接AWS S3物件存放區的LIF ONTAP 必須位於10Gbps連接埠。
+
+如果在具有不同路由的節點上使用多個InterclUser LIF、則NetApp建議將其放置在不同的IPspaces中。在組態期間FabricPool 、雖然可以從多個IPspace中選取、但無法在IPspace中選取特定的叢集間LIF。
+
+
+NOTE: 停用或刪除叢集間LIF會中斷與雲端層的通訊。
+
+
+
+== 連線能力
+
+資料讀取延遲是連線至雲端層的功能。FabricPool使用10Gbps連接埠的叢集間LIF（如下圖所示）可提供適當的效能。NetApp建議驗證特定網路環境的延遲和處理量、以判斷其對FabricPool VMware效能的影響。
+
+
+NOTE: 在低效能環境中使用FabricPool VMware時、必須持續滿足用戶端應用程式的最低效能要求、並應據此調整恢復時間目標。
+
+image:cloud-fabricpool_image6.png["錯誤：缺少圖形影像"]
+
+
+
+=== 物件存放區設定程式
+
+物件儲存檔案探查器的範例如下所示、可透過ONTAP 下列的CLI取得、在物件儲存區附加FabricPool 至物件集合體之前、先測試其延遲和處理量效能。
+
+
+NOTE: 必須先將雲端層新增ONTAP 至物件儲存區檔案管理程式、才能將其用於物件儲存區檔案管理程式。
+
+使用下列命令、從ONTAP 進階權限模式中以指令形式啟動物件存放區檔案探查器：
+
+....
+storage aggregate object-store profiler start -object-store-name <name> -node <name>
+....
+若要檢視結果、請執行下列命令：
+
+....
+storage aggregate object-store profiler show
+....
+雲端層的效能與效能層的效能並不類似（通常是每秒GB）。雖然能夠輕鬆提供SATA級的效能、但對於不需要SATA級效能的分層解決方案、它們也能承受高達10秒的延遲和低處理量。FabricPool
+
+image:cloud-fabricpool_image7.png["錯誤：缺少圖形影像"]
+
+
+
+== 磁碟區
+
+儲存資源隨需配置是FlexPod 適用於整個流程的標準實務做法。NetApp虛擬儲存主控台（VSC）可為VMware資料存放區配置儲存磁碟區、而不需任何空間保證（精簡配置）、並根據NetApp最佳實務做法、提供最佳化的儲存效率設定。如果使用VSC來建立VMware資料存放區、則不需要執行其他動作、因為不應將空間保證指派給資料存放區磁碟區。
+
+
+NOTE: 無法使用「無」以外的空間保證（例如Volume）、將雲端層附加至包含磁碟區的集合體。FabricPool
+
+....
+volume modify -space-guarantee none
+....
+設定「無保證」參數可為磁碟區提供精簡配置。使用此保證類型的磁碟區所耗用的空間量會隨著資料的新增而增加、而非由初始磁碟區大小決定。這種方法對於FabricPool 不支援的功能至關重要、因為磁碟區必須支援熱的雲端層資料、並將其恢復至效能層級。
+
+
+
+== 授權
+
+將第三方物件儲存供應商（例如Amazon S3）附加為雲端層、以供支援使用以容量為基礎的授權、以利執行不中斷的Flash和不中斷的混合式Flash系統。FabricPool AFF FAS
+
+以永久或定期（1年或3年）格式提供的支援。FabricPool
+
+當儲存在雲端層的資料量（已用容量）達到授權容量時、分層至雲端層會停止。在授權容量增加之前、其他資料（包括使用All Tiering原則的SnapMirror複本至磁碟區）將無法分層。雖然分層作業停止、但仍可從雲端層存取資料。在授權容量增加之前、SSD上仍會保留額外的冷資料。
+
+購買任何新的一套更新版的叢集時、都會隨附免費的10TB容量、以期為基礎FabricPool 的版次更新授權ONTAP 、不過可能需要額外的支援成本。可以1TB為單位購買各種不含任何容量的不含彈性授權（包括現有授權的額外容量）FabricPool 。
+
+僅可從不含任何資訊的叢集刪除此功能的認證。FabricPool FabricPool
+
+
+NOTE: 不只是叢集式授權。FabricPool購買授權時、您應該有可用的UUID（「cluster identify show」）。如需其他授權資訊、請參閱 https://kb.netapp.com/support/s/article/ka21A0000008qb3QAA/ONTAP-FabricPool-FP-Licensing-Overview["NetApp知識庫"^]。

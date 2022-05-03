@@ -1,0 +1,206 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-sizing_technical_specifications_for_small,_medium_and_large_architectures.html 
+keywords: technical, specifications, small, medium, large, architectures, bill, material 
+summary: 本節將討論適用於不同大小儲存架構的物料清單範例。 
+---
+= 小型、中型和大型架構的技術規格
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節將討論適用於不同大小儲存架構的物料清單範例。
+
+
+
+== 適用於小型、中型和大型架構的物料清單。
+
+此功能是一套靈活的基礎架構、FlexPod 涵蓋許多不同的元件和軟體版本。使用 https://fieldportal.netapp.com/content/443847["TR-4036：FlexPod 《技術規格》"^] 作為組裝有效FlexPod 的資訊功能組態的指南。下表中的組態是FlexPod 對功能性的最低需求、僅供參考。您可以根據不同環境和使用案例的需求、為每個產品系列擴充組態。
+
+在這項規模調整練習中、「小型」相當於類別3 MEDITECH環境、中至類別5、大至類別6。
+
+|===
+|  | 小 | 中 | 大 
+
+
+| 平台 | 一AFF 組NetApp解決方案：A220 All Flash儲存系統HA配對 | 一AFF 組NetApp解決方案：A220 HA配對 | 一個NetApp AFF 解決方案：A300 All Flash儲存系統HA配對 
+
+
+| 磁碟櫃 | 9TB x 3.8TB | 13TB x 3.8TB | 19TB x 3.8TB 
+
+
+| Meditech資料庫大小 | 3TB至12TB | 17TB | >30TB 
+
+
+| Meditech IOPS | 低於22、000 IOPS | 超過25、000個IOPs | 超過32,000個IOPs 
+
+
+| IOPS總計 | 22000年 | 27000 | 35000 
+
+
+| 原始 | 34.2TB | 49.4TB | 68.4 TB 
+
+
+| 可用容量 | 18.53TiB | 27.96TiB | 33.82TiB 
+
+
+| 有效容量（2：1儲存效率） | 55.6TiB | 83.89TiB | 101.47TiB 
+|===
+
+NOTE: 某些客戶環境可能會同時執行多個MEDITECH正式作業工作負載、或是需要更高的IOPS。在此情況下、請與NetApp客戶團隊合作、根據所需的IOPS和容量來調整儲存系統的規模。您應該能夠決定適當的平台來服務工作負載。例如、有客戶成功在NetApp AFF Reale A700 All Flash儲存系統HA配對上執行多個MEDITECH環境。
+
+下表顯示MEDITECH組態所需的標準軟體。
+
+|===
+| 軟體 | 產品系列 | 版本或版本 | 詳細資料 
+
+
+| 儲存設備 | ONTAP | 供應情形（GA）ONTAP |  
+
+
+.3+| 網路 | Cisco UCS網路互連 | Cisco UCSM 4.x | 目前建議的版本 
+
+
+| Cisco Nexus乙太網路交換器 | 7.0（3）I7（6） | 目前建議的版本 
+
+
+| Cisco FC：Cisco MDS 9132T | 8.3（2） | 目前建議的版本 
+
+
+| Hypervisor | Hypervisor | VMware vSphere ESXi 6.7 |  
+
+
+|  | 虛擬機器（VM） | Windows 2016 |  
+
+
+.4+| 管理 | Hypervisor管理系統 | VMware vCenter Server 6.7 U1（VCSA） |  
+
+
+| NetApp虛擬儲存主控台（VSC） | VSC 7.0P1 |  
+
+
+| NetApp SnapCenter | 版本4.0 SnapCenter |  
+
+
+| Cisco UCS Manager | 4.x |  
+|===
+下表顯示小型（類別3）組態範例：基礎架構元件。
+
+|===
+| 層級 | 產品系列 | 數量與模式 | 詳細資料 
+
+
+.5+| 運算 | Cisco UCS 5108機箱 | 1. | 最多可支援八個半寬或四個全寬刀鋒。隨著伺服器需求的成長而增加機箱。 
+
+
+| Cisco機箱I/O模組 | 2 x 2208 | 8GB x 10GB上行鏈路連接埠 
+
+
+| Cisco UCS刀鋒伺服器 | 4 x B200 M5 | 每個處理器均配備2個14核心、2.6GHz或更快的時鐘速度、以及384GB BIOS 3.2(3#) 
+
+
+| Cisco UCS虛擬介面卡 | 4個UCS 1440 | VMware ESXi fNIC FC驅動程式：1.6.0.47 VMware ESXi eNIC乙太網路驅動程式：1.0.27.0（請參閱互通性對照表： https://ucshcltool.cloudapps.cisco.com/public/)[] 
+
+
+| 2個Cisco UCS Fabric互連（FI） | 2個UCS 6454 FI | 第4代光纖互連、支援10/25/100Gb乙太網路和32GB FC 
+
+
+| 網路 | Cisco乙太網路交換器 | 2個Nexus 9336c-FX2 | 1GB、10GB、25GB、40GB、100GB 
+
+
+.2+| 儲存網路 | 適用於BLOB儲存設備的IP Network Nexus 9k |  | FI與UCS機箱 
+
+
+| FC：Cisco MDS 9132T |  | 兩個Cisco 9132T交換器 
+
+
+.3+| 儲存設備 | NetApp AFF 產品豐富的NetApp解決方案 | 1個HA配對 | 適用於所有MEDITECH工作負載的雙節點叢集（檔案伺服器、映像伺服器、SQL Server、VMware等） 
+
+
+| DS224C磁碟櫃 | 1個DS224C磁碟櫃 |  
+
+
+| 固態硬碟（SSD） | 9 x 3.8TB |  
+|===
+下表顯示中型（類別5）組態範例–基礎架構元件
+
+|===
+| 層級 | 產品系列 | 數量與模式 | 詳細資料 
+
+
+.5+| 運算 | Cisco UCS 5108機箱 | 1. | 最多可支援八個半寬或四個全寬刀鋒。隨著伺服器需求的成長而增加機箱。 
+
+
+| Cisco機箱I/O模組 | 2 x 2208 | 8GB x 10GB上行鏈路連接埠 
+
+
+| Cisco UCS刀鋒伺服器 | 6 x B200 M5 | 每個BIOS 3.2（3#）具有2個16核心、2.5GHz /或更快的時鐘速度、以及384GB或更多記憶體 
+
+
+| Cisco UCS虛擬介面卡（VIC） | 6個UCS 1440 VIC | VMware ESXi fNIC FC驅動程式：1.6.0.47 VMware ESXi eNIC乙太網路驅動程式：1.0.27.0（請參閱互通性對照表：） 
+
+
+| 2個Cisco UCS Fabric互連（FI） | 2個UCS 6454 FI | 第4代光纖互連、支援10GB / 25GB/100Gb乙太網路和32GB FC 
+
+
+| 網路 | Cisco乙太網路交換器 | 2個Nexus 9336c-FX2 | 1GB、10GB、25GB、40GB、100GB 
+
+
+.2+| 儲存網路 | 適用於BLOB儲存設備的IP Network Nexus 9k |  |  
+
+
+| FC：Cisco MDS 9132T |  | 兩個Cisco 9132T交換器 
+
+
+.3+| 儲存設備 | NetApp AFF 產品豐富的NetApp解決方案：A220 All Flash儲存系統 | 2 HA配對 | 適用於所有MEDITECH工作負載的雙節點叢集（檔案伺服器、映像伺服器、SQL Server、VMware等） 
+
+
+| DS224C磁碟櫃 | 1個DS224C磁碟櫃 |  
+
+
+| SSD | 13 x 3.8TB |  
+|===
+下表顯示大型（類別6）組態範例：基礎架構元件。
+
+|===
+| 層級 | 產品系列 | 數量與模式 | 詳細資料 
+
+
+.5+| 運算 | Cisco UCS 5108機箱 | 1. |  
+
+
+| Cisco機箱I/O模組 | 2 x 2208 | 8個10GB上行鏈路連接埠 
+
+
+| Cisco UCS刀鋒伺服器 | 8 x B200 M5 | 每個系統各有2個24核心、2.7GHz和768GB BIOS 3.2（3#） 
+
+
+| Cisco UCS虛擬介面卡（VIC） | 8個UCS 1440 VIC | VMware ESXi fNIC FC驅動程式：1.6.0.47 VMware ESXi eNIC乙太網路驅動程式：1.0.27.0（請參閱互通性對照表： https://ucshcltool.cloudapps.cisco.com/public/)[] 
+
+
+| 2個Cisco UCS網路互連（FI） | 2個UCS 6454 FI | 第4代光纖互連、支援10GB / 25GB/100Gb乙太網路和32GB FC 
+
+
+| 網路 | Cisco乙太網路交換器 | 2個Nexus 9336c-FX2 | 2個Cisco Nexus 9332PQ1、10GB、25GB、40GB、100GB 
+
+
+.2+| 儲存網路 | 用於BLOB儲存設備的IP Network N9k |  |  
+
+
+| FC：Cisco MDS 9132T |  | 兩個Cisco 9132T交換器 
+
+
+.3+| 儲存設備 | 部分A300 AFF | 1個HA配對 | 適用於所有MEDITECH工作負載的雙節點叢集（檔案伺服器、映像伺服器、SQL Server、VMware等） 
+
+
+| DS224C磁碟櫃 | 1個DS224C磁碟櫃 |  
+
+
+| SSD | 19 x 3.8TB |  
+|===
+
+NOTE: 這些組態提供規模調整指引的起點。某些客戶環境可能會同時執行多個MEDITECH正式作業和非MEDITECH工作負載、或是其IOP需求較高。您應該與NetApp客戶團隊合作、根據所需的IOPS、工作負載和容量來調整儲存系統的規模、以決定適合服務工作負載的平台。

@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_other_requirements.html 
+keywords: flexpod, datacenter, technical, specifications, requirements, interoperability 
+summary: 此架構具有下列額外的互通性與支援相關需求FlexPod 
+---
+= 其他需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+這個架構具有下列額外的互通性與支援相關要求：FlexPod
+
+* NetApp必須列出並支援所有硬體與軟體元件 http://mysupport.netapp.com/matrix["IMT"^]、 https://ucshcltool.cloudapps.cisco.com/public/["Cisco UCS硬體與軟體相容清單"^]和Cisco UCS硬體與軟體互通性對照表工具。
+* 所有設備都需要有效的支援合約、包括：
++
+** Cisco設備的Smart Net Total Care（SmartNet）支援
+** 支援NetApp設備的支援SupportEdge Advisor SupportEdge Premium
+
+
+
+
+如需詳細資訊、請參閱NetApp http://mysupport.netapp.com/matrix["IMT"^]。

@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: security/flexpod-fips-flexpod-cisco-ucs-compute-and-fips-140-2.html 
+keywords: compute, cisco, nist, compliance mode, fabric interconnect, fi, advanced malware protection 
+summary: 可利用符合FIPS 140-2標準的Cisco UCS伺服器來設計一套架構。FlexPod美國美國NIST、Cisco UCS伺服器可在FIPS 140-2第1級法規遵循模式下運作。 
+---
+= Cisco UCS運算與FIPS 140-2 FlexPod
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-fips-control-plane-versus-data-plane.html["上一個：控制面與資料平面。"]
+
+可利用符合FIPS 140-2標準的Cisco UCS伺服器來設計一套架構。FlexPod美國美國NIST、Cisco UCS伺服器可在FIPS 140-2第1級法規遵循模式下運作。如需FIPS相容Cisco元件的完整清單、請參閱 https://www.cisco.com/c/en/us/solutions/industries/government/global-government-certifications/fips-140.html?flt0_general-table0=UCSM["Cisco FIPS 140頁面"^]。Cisco UCS Manager已通過FIPS 140-2驗證。
+
+
+
+== Cisco UCS與Fabric互連
+
+Cisco UCS Manager是從Cisco Fabric Interconnects（FIS）部署及執行。
+
+如需Cisco UCS及如何啟用FIPS的詳細資訊、請參閱 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/CiscoUCSManager-RN-3-2.html["Cisco UCS Manager文件"^]。
+
+若要在每個Fabric A和B的Cisco Fabric互連上啟用FIPS模式、請執行下列命令：
+
+....
+fp-health-fabric-A# connect local-mgmt
+fp-health-fabric-A(local-mgmt)# enable fips-mode
+FIPS mode is enabled
+....
+
+NOTE: 若要將Cisco UCS Manager 3.2版（3）叢集上的FI替換為Cisco UCS Manager 3.2版（3）之前的版本上的FI、請先在現有的FI上停用FIPS模式（停用「FIPS模式」）、再將替換的FI新增至叢集。建立叢集之後、Cisco UCS Manager開機時、FIPS模式會自動啟用。
+
+Cisco提供下列關鍵產品、可在運算或應用程式層中實作：
+
+* *適用於端點的Cisco進階惡意軟體保護（AMP）。*此解決方案支援Microsoft Windows與Linux作業系統、整合了預防、偵測與回應功能。此安全軟體可防止資料外洩、在進入點封鎖惡意軟體、並持續監控及分析檔案與處理活動、以快速偵測、控制及補救可能規避第一線防禦的威脅。AMP的惡意活動保護（MAP）元件會持續監控所有端點活動、並提供執行時間偵測、並封鎖端點上執行中程式的異常行為。例如、當端點行為顯示勒索軟體時、會終止違規的程序、以防止端點加密並停止攻擊。
+* *電子郵件安全的AMP。*電子郵件已成為傳播惡意軟體及進行網路攻擊的主要工具。平均而言、每天大約會交換1000億封電子郵件、讓攻擊者能夠在使用者的系統中擁有絕佳的滲透率。因此、防禦這類攻擊是絕對必要的。擴大分析電子郵件中的威脅、例如零時差攻擊、以及隱藏在惡意附件中的惡意軟體。它也使用領先業界的URL情報來對抗惡意連結。它能為使用者提供進階保護、防止針對性網頁仿冒、勒索軟體及其他複雜的攻擊。
+* *新一代入侵防禦系統（NGIPS）。* Cisco火力NGIPS可部署為資料中心的實體應用裝置、或部署為VMware上的虛擬應用裝置（NGIPSv for VMware）。這套高效率的入侵防禦系統可提供可靠的效能、並降低總體擁有成本。您可以選擇訂閱授權來擴充威脅保護、以提供擴大的應用程式可見度與控制能力、以及URL篩選功能。虛擬化的NGIPS會檢查虛擬機器（VM）之間的流量、並使在資源有限的站台上部署和管理NGIPS解決方案變得更容易、同時增加實體與虛擬資產的保護。
+
+
+link:flexpod-fips-flexpod-cisco-networking-and-fips-140-2.html["下一步：FlexPod Cisco網路功能與FIPS 140-2。"]

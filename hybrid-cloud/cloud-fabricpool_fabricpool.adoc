@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_fabricpool.html 
+keywords: flexpod, cloud, fabricpool, overview, hybrid, storage, solution sdd, performance 
+summary: VMware是一套混合式儲存解決方案、採用All Flash（SSD）集合體作為效能層、並將物件儲存在公有雲服務中作為雲端層。FabricPool ONTAP此組態可視資料是否經常存取而啟用原則型資料移動。 
+---
+= FabricPool
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== 概述FabricPool
+
+VMware是一套混合式儲存解決方案、採用All Flash（SSD）集合體作為效能層、並將物件儲存在公有雲服務中作為雲端層。FabricPool ONTAP此組態可視資料是否經常存取而啟用原則型資料移動。支援的不只是支援支援在支援整個過程中使用的功能、還能在支援的基礎平台上使用全固態硬碟的集合體。FabricPool ONTAP AFF FAS資料處理是在區塊層級執行、在All Flash效能層中、經常存取的資料區塊會標記為「Hot」（熱）和「少見」的存取區塊、標記為「Cold」（冷）。
+
+使用VMware解決方案有助於降低儲存成本、而不會影響效能、效率、安全性或保護。FabricPool不需重新建構應用程式基礎架構、即可降低儲存TCO、讓企業應用程式透明化、並善用雲端效率。FabricPool
+
+利用NetApp的儲存分層功能、更有效率地使用介紹性快閃儲存設備、讓您受益匪淺。FlexPod FabricPool ONTAP非作用中虛擬機器（VM）、不常使用的VM範本、SnapCenter 以及NetApp for vSphere的VM備份、都會佔用資料存放區磁碟區中的寶貴空間。將冷資料移至雲端層、可釋出空間和資源、用於FlexPod 支援以VMware Infrastructure為主的高效能關鍵任務應用程式。
+
+
+NOTE: 光纖通道和iSCSI傳輸協定通常需要較長的時間才會發生逾時（60至120秒）、但不會重試建立連線、如同NAS傳輸協定一樣。如果SAN傳輸協定逾時、則必須重新啟動應用程式。即使是短暫的中斷、也可能對使用SAN傳輸協定的正式作業應用程式造成災難性影響、因為無法保證能夠連線至公有雲。為避免此問題、NetApp建議您在分層SAN傳輸協定存取的資料時、使用私有雲端。
+
+在Sibaba 9.6中ONTAP 、此產品與所有主要公有雲供應商整合：Alibaba Cloud Object Storage Service、Amazon AWS S3、Google Cloud Storage、IBM Cloud Object Storage和Microsoft Azure Blob Storage。FabricPool本報告著重於Amazon AWS S3儲存設備做為雲端物件層級的選擇。
+
+
+
+== 複合Aggregate
+
+建立一個由將一個不同步的Flash Aggregate與雲端物件存放區（例如AWS S3儲存區）建立關聯的執行個體、以建立一個複合式Aggregate。FabricPool ONTAP在複合式Aggregate內部建立磁碟區時、即可充分發揮FabricPool NetApp的分層功能。將資料寫入磁碟區後ONTAP 、即可將溫度指派給每個資料區塊。第一次寫入區塊時、會指派一個熱溫度。當時間過長時、如果資料未被存取、則會持續進行冷卻程序、直到最後指派冷狀態為止。然後、這些不常存取的資料區塊會從效能SSD集合體分層到雲端物件存放區。
+
+區塊被指定為冷區塊、移至雲端物件儲存區之間的時間、會由ONTAP 中的Volume分層原則修改。透過修改ONTAP 可控制區塊變冷所需天數的各項功能、進一步提高精細度。資料分層的候選對象是傳統的Volume快照、SnapCenter vSphere VM備份的功能不全、其他NetApp Snapshot型備份、以及vSphere資料存放區中不常使用的區塊、例如VM範本和不常存取的VM資料。
+
+
+
+=== 非作用中資料報告
+
+不活躍的資料報告（IDR)可在ONTAP 支援評估可從Aggregate分層的Cold資料量時取得。根據預設ONTAP 、印尼盾會在支援支援的9.6中啟用、並使用預設的31天冷卻原則來判斷磁碟區中的哪些資料處於非作用中狀態。
+
+
+NOTE: 分層的冷資料量取決於在磁碟區上設定的分層原則。此量可能與使用預設31天冷卻期間的印尼盾偵測到的冷資料量不同。
+
+
+
+== 物件建立與資料移動
+
+執行NetApp的「區塊層級」、冷卻區塊、將其串連至儲存物件、以及將這些物件移轉至雲端層。FabricPool WAFL每FabricPool 個物件均為4 MB、由1、024 4KB區塊組成。根據領先雲端供應商的效能建議、物件大小固定為4 MB、無法變更。如果冷區塊被讀取並變熱、則只會擷取4 MB物件中所要求的區塊、然後移回效能層。整個物件和整個檔案都不會移回。只會移轉必要的區塊。
+
+
+NOTE: 如果檢測到連續讀取的商機、就會在讀取前要求從雲端層區塊、以改善效能。ONTAP
+
+根據預設、只有當效能集合體使用率超過50%時、資料才會移至雲端層。此臨界值可設定為較低的百分比、以便將效能Flash層上的較少量資料儲存設備移至雲端。如果分層策略是僅在Aggregate即將達到容量時才移動Cold資料、這可能很有用。
+
+如果效能層使用率超過70%、則冷資料會直接從雲端層讀取、而不會被寫入效能層。藉由防止在大量使用的Aggregate上執行冷資料回寫、FabricPool 可保留用於作用中資料的Aggregate。
+
+
+
+== 回收效能層空間
+
+如前所述、FabricPool 適用於VMware的主要使用案例、是為了協助最有效率地使用高效能內部部署Flash儲存設備。以磁碟區快照和VM備份形式的Cold資料FlexPod 、可以佔用大量昂貴的Flash儲存設備。實作兩種分層原則之一：純快照或自動、即可釋出寶貴的效能層級儲存設備。
+
+
+
+=== 純快照分層原則
+
+下圖所示的純Snapshot分層原則、可將冷磁碟區快照資料和SnapCenter VMware for vSphere備份用於佔用空間但未與作用中檔案系統共用區塊的VM、移至雲端物件存放區。純Snapshot分層原則可將冷資料區塊移至雲端層。如果需要還原、雲端中的冷區塊會變熱、並移回內部部署的效能Flash層。
+
+image:cloud-fabricpool_image4.png["錯誤：缺少圖形影像"]
+
+
+
+=== 自動分層原則
+
+下圖所示的「功能區塊自動分層」原則不僅能將冷快照資料區塊移至雲端、也能在作用中檔案系統中移動任何冷區塊。FabricPool這可能包括VM範本和資料存放區磁碟區中任何未使用的VM資料。哪些冷區塊會被磁碟區的「分層最低冷卻天數」設定所控制。如果某個應用程式隨機讀取雲端層中的冷區塊、這些區塊就會變熱、並回到效能層級。不過、如果冷區塊是由防毒掃描程式等循序程序讀取、則區塊會保持冷態、並持續保留在雲端物件存放區中、不會移回效能層級。
+
+使用自動分層原則時、不常存取的熱區塊會以雲端連線速度從雲端層抽取回來。如果應用程式對延遲敏感、這可能會影響VM效能、在資料存放區上使用「自動分層」原則之前、應先考慮這一點。NetApp建議將叢集間的生命量放在速度為10GbE的連接埠上、以獲得適當的效能。
+
+
+NOTE: 物件存放區檔案探查器應先用於測試物件存放區的延遲和處理量、再將其附加至FabricPool 物件存放區。
+
+image:cloud-fabricpool_image5.png["錯誤：缺少圖形影像"]
+
+
+
+=== 所有分層原則
+
+與「自動」和「僅快照」原則不同、「所有分層」原則會將整個磁碟區的資料立即移入雲端層。此原則最適合次要資料保護或歸檔磁碟區、因為這些磁碟區的資料必須保留以供歷史或法規遵循之用、但很少存取。不建議將All原則用於VMware資料存放區磁碟區、因為寫入資料存放區的任何資料都會立即移至雲端層。後續的讀取作業是從雲端執行、可能會對資料存放區磁碟區中的VM和應用程式造成效能問題。
+
+
+
+== 安全性
+
+安全性是雲端和FabricPool 不穩定的核心考量。效能層級支援所有的原生安全功能ONTAP 、資料移轉到雲端層時、資料的移動也會受到保護。使用FabricPool https://tools.ietf.org/html/rfc5288["AES-256-GCM"^] 效能層級的加密演算法、並將此加密端點維持在雲端層。移至雲端物件存放區的資料區塊會使用傳輸層安全性（TLS）v1.2來保護、以維持儲存層之間的資料機密性和完整性。
+
+
+NOTE: NetApp支援但不建議透過未加密的連線與雲端物件存放區通訊。
+
+
+
+=== 資料加密
+
+資料加密對於保護智慧財產、交易資訊及可識別個人身分的客戶資訊至關重要。支援NetApp Volume Encryption（NVE）和NetApp Storage Encryption（NSE）、以維持現有的資料保護策略。FabricPool移至雲端層時、效能層上的所有加密資料都會保持加密狀態。用戶端加密金鑰歸ONTAP 物件所擁有、伺服器端物件存放區的加密金鑰則由各自的雲端物件存放區擁有。任何未使用NVE加密的資料都會以AES-256-GCM演算法加密。不支援其他AES-256密碼。
+
+
+NOTE: 使用NSE或NVE是選用功能、不需要FabricPool 使用NetApp。

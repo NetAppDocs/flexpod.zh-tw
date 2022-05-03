@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: ontap-connector-for-intersight/ci-qsg_new.html 
+keywords: 'netapp, cisco, ontap, intersight, flexpod, what"s new, features, release notes, enhancements' 
+summary: Cisco Intersight推出新版本、為您帶來新功能、增強功能及錯誤修復。 
+---
+= 新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節列出Cisco Intersight搭配NetApp ONTAP ®儲存設備的新功能。
+
+
+
+== 2022年4月
+
+
+NOTE: 為確保未來版本的相容性與完整功能、建議您將NetApp Active IQ Unified Manager 知識檔升級至9.10P1版。
+
+* 已新增「Broadcast Domain to Ethernet Port Detail」頁面
+* 在使用者介面中、將Aggregate和SVM的「Aggregate」一詞變更為「Tier」
+* 將「叢集狀態」一詞變更為「陣列狀態」
+* MTU篩選器現在適用於<、>、=、<=、>=字元
+* 新增網路介面頁面至叢集庫存
+* 新增AutoSupport 功能至叢集庫存
+* 新增「CDPD.enable」選項至節點
+* 新增CDP鄰近的物件
+* 在Cisco Intersight中新增NetApp工作流程儲存工作。請參閱 link:ci-qsg_use_cases.html["使用案例3使用無設計表單自訂工作流程"] 以取得NetApp儲存工作的完整清單。
+
+
+
+
+== 2022年1月
+
+* 新增適用於NetApp Active IQ Unified Manager 功能更新版本的事件型視覺間警報。
+
+
+
+NOTE: 為確保未來版本的相容性與完整功能、建議您將NetApp Active IQ Unified Manager 產品升級至9.10版。
+
+* 明確設定儲存虛擬機器的每個已啟用傳輸協定（true或false）
+* 已將叢集健全狀況狀態狀態「正常-抑制」對應為「正常」
+* 已將Health（健全狀況）欄重新命名為叢集清單頁面下方的Cluster Status（叢集狀態）欄
+* 如果叢集當機或無法連線、則顯示儲存陣列「無法連線」
+* 已將Health（健全狀況）欄重新命名為Array Status（陣列狀態）欄、位於Cluster General（叢集一般
+* SVM現在有一個「Volumes」（磁碟區）索引標籤、顯示SVM的所有磁碟區
+* Volume具有快照容量區段
+* 授權現已正確顯示
+
+
+
+
+== 2021年10月
+
+* 更新了Cisco Intersight中可用的NetApp儲存工作清單。請參閱 link:ci-qsg_use_cases.html["使用案例3使用無設計表單自訂工作流程"] 以取得NetApp儲存工作的完整清單。
+* 已新增「叢集」清單頁下方的「健全狀況」欄。
+* 所選叢集的「General（一般）」頁面下方現在提供更多詳細資料。
+* NTP伺服器表格現在可透過導覽窗格存取。
+* 新增「感應器」索引標籤、其中包含儲存虛擬機器的「一般」頁面。
+* VLAN和連結集合體群組摘要現在可在「連接埠一般」頁面下找到。
+* 「Volume Total Capacity」（磁碟區總容量）表格下新增的「Total Data Capacity」（總資料
+* 在「平均Volume統計資料」、「平均LUN統計資料」、「平均Aggregate統計資料」、「平均儲存VM統計資料」及「平均節點統計資料」表格中新增的延遲、IOPS及處理量欄
++
+
+NOTE: 以上效能指標僅適用於透過NetApp Active IQ Unified Manager 供應器9.9或更新版本監控的儲存陣列。
+
+

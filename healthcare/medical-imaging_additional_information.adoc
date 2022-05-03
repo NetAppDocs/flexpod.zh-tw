@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: healthcare/medical-imaging_additional_information.html 
+keywords: additional, information, flexpod, medical, imaging 
+summary: 若要深入瞭解本文所述資訊、請檢閱下列文件與網站。 
+---
+= 其他資訊
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+若要深入瞭解本文所述資訊、請檢閱下列文件與網站：
+
+* 《Datacenter for AI/ML with Cisco UCS 480 ML for Deep Learning設計指南》FlexPod
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html"^]
+
+* 採用VMware vSphere 6.7 U1、Cisco UCS第4代及NetApp解決方案的資料中心基礎架構FlexPod AFF
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html"^]
+
+* 包含《解決方案簡介》的Datacenter Oracle資料庫備份FlexPod SnapCenter
++
+https://www.netapp.com/us/media/sb-3999.pdf["https://www.netapp.com/us/media/sb-3999.pdf"^]
+
+* 採用Oracle RAC資料庫的Datacenter搭配Cisco UCS和NetApp解決方案A系列FlexPod AFF
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orc12cr2_affaseries.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orc12cr2_affaseries.html"^]
+
+* Oracle Linux上的Oracle RAC資料中心FlexPod
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orcrac_12c_bm.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orcrac_12c_bm.html"^]
+
+* 適用於Microsoft SQL Server FlexPod
++
+https://flexpod.com/solutions/use-cases/microsoft-sql-server/["https://flexpod.com/solutions/use-cases/microsoft-sql-server/"^]
+
+* Cisco與NetApp提供的解決方案FlexPod
++
+https://flexpod.com/["https://flexpod.com/"^]
+
+* https://fieldportal.netapp.com/content/734702["適用於MongoDB的NetApp解決方案"^] 解決方案簡介（需要NetApp登入）
++
+https://fieldportal.netapp.com/content/734702["https://fieldportal.netapp.com/content/734702"^]
+
+* TR-47700：SnapCenter 適用於Oracle資料庫的支援
++
+https://www.netapp.com/us/media/tr-4700.pdf["https://www.netapp.com/us/media/tr-4700.pdf"^]
+
+* NetApp 產品文件
++
+https://www.netapp.com/us/documentation/index.aspx["https://www.netapp.com/us/documentation/index.aspx"^]
+
+* 適用於虛擬桌面基礎架構（VDI）解決方案FlexPod
++
+https://flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/["https://flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/"^]
+
+

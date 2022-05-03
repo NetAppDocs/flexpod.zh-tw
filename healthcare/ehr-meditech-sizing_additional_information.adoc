@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-sizing_additional_information.html 
+keywords: additional, information, guides, meditech, sizing 
+summary: 若要深入瞭解本文所述資訊、請參閱下列文件或網站。 
+---
+= 其他資訊
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+若要深入瞭解本文所述資訊、請參閱下列文件或網站：
+
+* 採用FC Cisco驗證設計的資料中心。FlexPod
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html"^]
+
+* 適用於MEDITECH環境的NetApp部署準則。
++
+https://fieldportal.netapp.com/content/248456["https://fieldportal.netapp.com/content/248456"^] （需要NetApp登入）
+
+* 適用於MEDITECH環境的NetApp規模調整準則。
++
+http://www.netapp.com/us/media/tr-4190.pdf["www.netapp.com/us/media/tr-4190.pdf"^]
+
+* 適用於Epic EHR部署的資料中心FlexPod
++
+http://www.netapp.com/us/media/tr-4693.pdf["www.netapp.com/us/media/tr-4693.pdf"^]
+
+* 零點設計區FlexPod
++
+https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html["https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html"^]
+
+* 利用NetApp功能、vSphere 6.5U1及Cisco UCS Manager、搭配FC儲存設備（MDS交換器）的資料中心FlexPod AFF
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html"^]
+
+* Cisco Healthcare
++
+https://www.cisco.com/c/en/us/solutions/industries/healthcare.html?dtid=osscdc000283["https://www.cisco.com/c/en/us/solutions/industries/healthcare.html?dtid=osscdc000283"^]
+
+

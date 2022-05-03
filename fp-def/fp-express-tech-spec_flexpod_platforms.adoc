@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_flexpod_platforms.html 
+keywords: flexpod, platforms, datacenter, express, select, technical, specifications 
+summary: 本文件提供FlexPod 有關《不支援不支援的技術規格》。 
+---
+= 支援各種平台FlexPod
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+共有三FlexPod 個支援平台：
+
+* *《資料中心》*。此平台是可大幅擴充的虛擬資料中心基礎架構、適用於企業工作負載應用程式、虛擬化、VDI、以及公有雲和私有雲。FlexPod包含資料中心本身的規格、如所述FlexPod https://docs.netapp.com/us-en/flexpod/fp-def/dc-tech-spec_solution_overview.html["TR-4036：FlexPod 《資料中心技術規格》"^]。
+* *《Express》*此平台是一款精巧的融合式基礎架構、專為遠端辦公室和邊緣使用案例而設計。FlexPod
+* *《選擇》*此平台是專為高效能應用程式所打造的架構、FlexPod 例如 http://www.netapp.com/us/media/nva-0012-design.pdf["適用於高效能Oracle RAC的精選產品。FlexPod"^]
+
+
+本文件提供FlexPod 有關《不支援不支援的技術規格》。

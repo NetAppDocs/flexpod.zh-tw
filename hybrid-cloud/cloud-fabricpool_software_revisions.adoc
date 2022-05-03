@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_software_revisions.html 
+keywords: software, revision, hardware, versions, basic, requirements, cloud, fabricpool 
+summary: 下表說明已驗證的硬體和軟體版本、本頁詳述滿足基本需求後應採取的步驟。 
+---
+= 軟體修訂
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+下表說明已驗證的硬體和軟體版本。
+
+|===
+| 層級 | 裝置 | 映像 | 註解 
+
+
+| 儲存設備 | NetApp AFF 解決方案 | 零點9.6P2 ONTAP |  
+
+
+| 運算 | Cisco UCS B200 M5刀鋒伺服器搭配Cisco UCS VIC 1340 | 4.0版（4b） |  
+
+
+.2+| 網路 | Cisco Nexus 6332-16UP光纖互連 | 4.0版（4b） |  
+
+
+| Cisco Nexus 93180YC-EX交換器採用NX-OS獨立模式 | 7.0版（3）i7（6） |  
+
+
+| 儲存網路 | Cisco MDS 9148S | 8.3版（2） |  
+
+
+.2+| Hypervisor .2+|  | VMware vSphere ESXi 6.7U2 | ESXi 6.7.0.13006603 
+
+
+| VMware vCenter Server | vCenter Server 6.7.0.30000 Build 13639309 
+
+
+| 雲端供應商 |  | Amazon AWS S3 | 具有預設選項的標準S3儲存區 
+|===
+有關功能的基本要求FabricPool 、請見 link:cloud-fabricpool_fabricpool_requirements.html["需求FabricPool"]。滿足所有基本需求後、請完成下列步驟以設定FabricPool 下列項目：
+
+. 安裝FabricPool 一套不中斷的授權。
+. 建立AWS S3物件存放區。
+. 新增雲端階層至ONTAP 架構。
+. 將雲端層附加至集合體。
+. 設定磁碟區分層原則。
+
+
+link:cloud-fabricpool_install_fabricpool_license.html["下一步：安裝FabricPool 不含授權的產品。"]

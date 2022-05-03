@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_cisco_nexus_switching_modes_of_operation.html 
+keywords: cisco, nexus, switching, modes, operation, datacenter, techincal, specifications 
+summary: 各種Cisco Nexus產品可做為特定FlexPod 功能部署的交換元件。這些選項大多採用傳統的Cisco Nexus OS或NX-OS軟體。Cisco Nexus系列交換器在產品線內提供各種功能。本文件稍後將詳細說明這些功能。 
+---
+= Cisco Nexus交換操作模式
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+各種Cisco Nexus產品可做為特定FlexPod 功能部署的交換元件。這些選項大多採用傳統的Cisco Nexus OS或NX-OS軟體。Cisco Nexus系列交換器在產品線內提供各種功能。本文件稍後將詳細說明這些功能。
+
+Cisco在軟體定義網路空間提供的產品稱為以應用程式為中心的基礎架構（ACI）。Cisco Nexus產品線支援ACI模式、也稱為Fabric模式、是Cisco Nexus 9300系列。這些交換器也可以部署在NX-OS或獨立模式。
+
+Cisco ACI的目標對象是著重於特定應用程式需求的資料中心部署。應用程式是透過一系列的設定檔和合約進行個體化、這些設定檔和合約允許從主機或虛擬機器（VM）一路透過網路連線到儲存設備。
+
+通過Cisco Nexus交換器兩種操作模式的驗證。FlexPod如需ACI和NX-OS模式的詳細資訊、請參閱下列Cisco頁面：
+
+* http://www.cisco.com/c/en/us/solutions/data-center-virtualization/application-centric-infrastructure/index.html["以Cisco應用程式為中心的基礎架構"^]
+* http://www.cisco.com/c/en/us/products/ios-nx-os-software/nx-os-software/index.html["Cisco NX-OS軟體"^]
+

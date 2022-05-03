@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_lun_mappings.html 
+keywords: lun, mappings, meditech, host 
+summary: 當建立LUN時、就會建立MEDITECH主機的LUN對應。 
+---
+= LUN對應
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+當建立LUN時、就會建立MEDITECH主機的LUN對應。

@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-design_program_summary.html 
+keywords: summary, converged infrastructure, CVD, NVA, Express, Datacenter, select, Nexus 3172P, UCS C220 M5 
+summary: 以Cisco驗證設計或NetApp驗證架構的形式提供的參考架構。FlexPod如果差異不會導致部署不受支援的組態、則允許根據特定CVD或NVA的客戶需求而產生的差異。 
+---
+= 方案摘要
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== 融合式基礎架構產品組合FlexPod
+
+以Cisco驗證設計（CVD）或NetApp驗證架構（NVA）的形式提供參考架構。FlexPod如果差異不會導致部署不受支援的組態、則允許根據特定CVD或NVA的客戶需求而產生的差異。
+
+如下圖所示FlexPod 、此產品組合包含三種解決方案：FlexPod 《ExExpress》（英文）、FlexPod 《Extre Datacenter》（英文）和FlexPod 《ExSelect》（英文）：
+
+* *《*》《*》《*》《*》《*》》《*》《*》《*》《*》》《*》《*》《*》《* FlexPod
+* *《Datacenter》*提供最佳的多用途基礎、適用於各種工作負載和應用程式。FlexPod
+* *《選擇》*整合了《不二資料中心》的最佳功能、並針對特定應用程式量身打造基礎架構。FlexPod FlexPod
+
+
+image:express-c-series-aff220-design_image2.png["錯誤：缺少圖形影像"]
+
+
+
+== NetApp認證架構方案
+
+NVA方案為客戶提供通過驗證的NetApp解決方案架構。NVA代表NetApp解決方案具備下列特質：
+
+* 經過徹底測試
+* 是規範性的
+* 將部署風險降至最低
+* 加速上市時間
+
+
+本指南詳細說明FlexPod VMware vSphere的VMware Express設計。此外、這項設計還運用全新AFF 的《Sfora220》系統、執行NetApp ONTAP S得9.4軟體、Cisco Nexus 3172P交換器、以及Cisco UCS C220 M5伺服器、做為Hypervisor節點。
+
+雖然本文件已通過AFF 驗證、適用於E20A220、但本解決方案也支援FAS2700。
+
+link:express-c-series-aff220-design_solution_overview.html["下一步：解決方案總覽。"]

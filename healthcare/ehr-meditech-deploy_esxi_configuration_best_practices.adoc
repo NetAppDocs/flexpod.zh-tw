@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_esxi_configuration_best_practices.html 
+keywords: esxi, configuration, practices, vsc, vmware, vaai, host, multipathing 
+summary: 對於ESXi主機端組態、請將VMware主機設定為執行任何企業資料庫工作負載的方式。 
+---
+= ESXi組態最佳實務做法
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+對於ESXi主機端組態、請將VMware主機設定為執行任何企業資料庫工作負載的方式：
+
+* 適用於VMware vSphere的VSC會檢查並設定ESXi主機多重路徑設定、以及最適合搭配NetApp儲存系統使用的HBA逾時設定。VSC所設定的值是以NetApp嚴格的內部測試為基礎。
+* 若要獲得最佳儲存效能、請考慮使用支援VMware vStorage API的儲存硬體：Array Integration（VAAI）。適用於VAAI的NetApp外掛程式是一個軟體程式庫、可整合ESXi主機上安裝的VMware虛擬磁碟庫。VMware VAAI套件可將特定工作從實體主機卸載到儲存陣列。
++
+您可以在陣列層級執行精簡配置和硬體加速等工作、以減少ESXi主機上的工作負載。複本卸載功能和空間保留功能可提升VSC作業的效能。您可以下載外掛程式安裝套件、並從NetApp支援網站取得安裝外掛程式的指示。
+
++
+VSC會設定ESXi主機逾時、多重路徑設定、HBA逾時設定及其他值、以達到NetApp儲存控制器的最佳效能及成功容錯移轉。請遵循下列步驟：
+
++
+.. 從VMware vSphere Web Client首頁、選取vCenter >主機。
+.. 在主機上按一下滑鼠右鍵、然後選取「Actions」（動作）>「NetApp VSC」>「Set Recommended Values」（設定建議值）。
+.. 在「NetApp建議設定」對話方塊中、選取最適合您系統的值。
++
+預設會設定建議的標準值。
+
++
+image:ehr-meditech-deploy_image7.png["錯誤：缺少圖形影像"]
+
+.. 按一下「確定」。
+
+
+
+
+link:ehr-meditech-deploy_netapp_configuration.html["下一步：NetApp組態。"]

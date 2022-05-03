@@ -1,0 +1,201 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/sm-bcs-storage.html 
+keywords: connectivity, connections, interfaces, san boot, cluster peering, ONTAP Mediator, sm-bc consistency group, volumes, luns, host mappings 
+summary: 適用於整個系統的儲存組態FlexPod 是根據FlexPod 各個站台典型的「解決方案」最佳實務做法而定。對於SM至BC叢集對等和資料複寫、它們使用FlexPod 在兩個站台的站台間交換器之間建立的站台間連結。下列各節將重點介紹驗證所使用的部分連線能力和組態。 
+---
+= 解決方案驗證-儲存設備
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:sm-bcs-network.html["先前版本：解決方案驗證-網路。"]
+
+適用於整個系統的儲存組態FlexPod 是根據FlexPod 各個站台典型的「解決方案」最佳實務做法而定。對於SM至BC叢集對等和資料複寫、它們使用FlexPod 在兩個站台的站台間交換器之間建立的站台間連結。下列各節將重點介紹驗證所使用的部分連線能力和組態。
+
+
+
+== 連線能力
+
+本機站台的Nexus交換器可提供本機UCS FI和刀鋒伺服器的儲存連線功能。透過站台之間的Nexus交換器連線、遠端UCS刀鋒伺服器也能存取儲存設備。下圖和表格顯示每個站台儲存控制器的儲存連線圖和連線清單。
+
+image:sm-bcs-image22.png["錯誤：缺少圖形影像"]
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+| VA250 A AFF | e0c | 解答：A250 B AFF | e0c 
+
+
+|  | e0d |  | e0d 
+
+
+|  | e1a. | Nexus A | 1/10/1. 
+
+
+|  | e1b |  | 1/10/2. 
+
+
+|  | e1c | Nexus B | 1/10/1. 
+
+
+|  | e1d |  | 1/10/2. 
+
+
+| 解答：A250 B AFF | e0c | VA250 A AFF | e0c 
+
+
+|  | e0d |  | e0d 
+
+
+|  | e1a. | Nexus A | 1/10/3. 
+
+
+|  | e1b |  | 1/10/4. 
+
+
+|  | e1c | Nexus B | 1/10/3. 
+
+
+|  | e1d |  | 1/10/4. 
+|===
+
+
+== 連線與介面
+
+每個儲存控制器上有兩個實體連接埠連接至每個Nexus交換器、以進行頻寬集合和備援、以供此驗證之用。這四個連線會參與儲存設備上的介面群組組態。Nexus交換器上的對應連接埠會加入vPC以進行連結集合和恢復。
+
+頻內管理、叢集間及NFS/iSCSI資料儲存傳輸協定均使用VLAN。在介面群組上建立VLAN連接埠、以隔離不同類型的流量。各個功能的邏輯介面（LIF）會建立在對應的VLAN連接埠之上。下圖顯示實體連線、介面群組、VLAN連接埠和邏輯介面之間的關係。
+
+image:sm-bcs-image23.png["錯誤：缺少圖形影像"]
+
+
+
+== SAN開機
+
+NetApp建議FlexPod 在整個解決方案中為Cisco UCS伺服器實作SAN開機。實作SAN開機可讓您安全地保護NetApp儲存系統內的作業系統、提供更好的效能與靈活度。本解決方案已驗證iSCSI SAN開機。
+
+下圖說明從NetApp儲存設備啟動Cisco UCS伺服器的iSCSI SAN連線能力。在iSCSI SAN開機中、每個Cisco UCS伺服器都會指派兩個iSCSI vNIC（每個SAN架構各一個）、以提供從伺服器到儲存設備的備援連線功能。連接至Nexus交換器的10/25-G乙太網路儲存連接埠（在此範例中為e1a、e1b、e1c和e1d）會一起分組、形成一個介面群組（ifgrp）（在此範例中為a0a）。iSCSI VLAN連接埠是在ifgrp上建立、iSCSI LIF則是在iSCSI VLAN連接埠上建立。
+
+每個iSCSI開機LUN都會對應至透過iSCSI LIF從其開機的伺服器、方法是將開機LUN與其開機igroup中的伺服器iSCSI合格名稱（IQN）建立關聯。伺服器的開機igroup包含兩個IQN、每個VNIC / SAN架構一個IQN。此功能只能讓授權伺服器存取專為該伺服器所建立的開機LUN。
+
+image:sm-bcs-image24.png["錯誤：缺少圖形影像"]
+
+
+
+== 叢集對等
+
+透過叢集間生命體進行通訊的叢集對等端點。ONTAP使用適用於這兩個叢集的「系統管理程式」、您可以在「保護」>「總覽」窗格下建立所需的叢集間生命體。ONTAP
+
+image:sm-bcs-image25.png["錯誤：缺少圖形影像"]
+
+若要將兩個叢集對齊在一起、請完成下列步驟：
+
+. 在第一個叢集中產生叢集對等複雜密碼。
++
+image:sm-bcs-image26.png["錯誤：缺少圖形影像"]
+
+. 在第二個叢集中叫用對等叢集選項、並提供通關密碼和叢集間LIF資訊。
++
+image:sm-bcs-image27.png["錯誤：缺少圖形影像"]
+
+. System Manager Protection（系統管理員保護）> Overview（概觀）窗格會顯示叢集對等端點資訊。
++
+image:sm-bcs-image28.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+== 安裝與組態設定ONTAP
+
+此功能可在SMBC關係中、為不實叢集建立仲裁。ONTAP ONTAP當偵測到故障時、它會協調自動容錯移轉、並有助於避免每個叢集同時嘗試將控制權建立為主要叢集時發生腦分割情況。
+
+安裝ONTAP 完「BMC」後、請先查看 https://docs.netapp.com/us-en/ontap/mediator/index.html["安裝或升級ONTAP 《不知道如何使用》服務"^] 頁面、以取得先決條件、支援的Linux版本、以及在各種支援的Linux作業系統上安裝這些軟體的程序。
+
+安裝完這個功能後、您可以將這個功能的安全證書新增到整個叢集、然後在System Manager Protection（系統管理員保護）> Overview（總覽）窗格中設定這個功能。ONTAP ONTAP ONTAP ONTAP下列螢幕快照顯示ONTAP 了「畫面資訊」組態GUI。
+
+image:sm-bcs-image29.png["錯誤：缺少圖形影像"]
+
+提供必要資訊後、設定ONTAP 的「功能不全」便會出現在「系統管理員保護」>「總覽」窗格中。
+
+image:sm-bcs-image30.png["錯誤：缺少圖形影像"]
+
+
+
+== SMBC一致性群組
+
+一致性群組可針對橫跨指定磁碟區集合的應用程式工作負載、提供寫入順序一致性保證。對於《產品介紹》（《產品介紹》）9.10.1、以下是一些重要限制與限制。ONTAP
+
+* 叢集中的SM至BC一致性群組關係最大數量為20。
+* 每個SM至BC關係所支援的最大磁碟區數為16個。
+* 叢集中的來源端點和目的地端點總數上限為200。
+
+
+如需更多詳細資料、請參閱ONTAP 上的《》（英文）《 https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_additional_restrictions_and_limitations.html["限制與限制"^]。
+
+針對驗證組態、ONTAP 使用VMware System Manager建立一致性群組、以保護ESXi開機LUN和兩個站台的共享資料存放區LUN。若要存取一致性群組建立對話方塊、請前往「Protection（保護）」>「Overview（概觀）」>「Protect for Business Continuity（保護營運不中斷）」>「Protect Consistency若要建立一致性群組、請提供所需的來源磁碟區、目的地叢集及目的地儲存虛擬機器資訊、以供建立。
+
+image:sm-bcs-image31.png["錯誤：缺少圖形影像"]
+
+下表列出所建立的四個一致性群組、以及驗證測試所需的每個一致性群組所包含的磁碟區。
+
+|===
+| 系統管理員 | 一致性群組 | 磁碟區 
+
+
+| 站台A | CG_ESXi_a | ESXi_a 
+
+
+| 站台A | CG_infra_datastore_a | infra_datastore_a_01 infra_datastore_a_02 
+
+
+| 站台B | CG_ESXi_b | ESXi_b 
+
+
+| 站台B | CG_infra_datastore_b | infra_datastore_b_01 infra_datastore_b_02 
+|===
+在建立一致性群組之後、它們會顯示在站台A和站台B的各自保護關係之下
+
+此快照顯示站台A的一致性群組關係
+
+image:sm-bcs-image32.png["錯誤：缺少圖形影像"]
+
+此螢幕快照顯示站台B的一致性群組關係
+
+image:sm-bcs-image33.png["錯誤：缺少圖形影像"]
+
+此螢幕快照顯示CG_infra_datastore_b群組的一致性群組關係詳細資料。
+
+image:sm-bcs-image34.png["錯誤：缺少圖形影像"]
+
+
+
+== 磁碟區、LUN及主機對應
+
+建立一致性群組之後、SnapMirror會同步來源和目的地磁碟區、讓資料永遠保持同步。遠端站台的目的地磁碟區會以_目的地結尾來傳送磁碟區名稱。例如、對於站台A叢集中的ESXi磁碟區、站台B中有相對應的ESXi_a_dest資料保護（DP）磁碟區
+
+此螢幕快照顯示站台A的Volume資訊
+
+image:sm-bcs-image35.png["錯誤：缺少圖形影像"]
+
+此螢幕快照顯示站台B的Volume資訊
+
+image:sm-bcs-image36.png["錯誤：缺少圖形影像"]
+
+為了便於透明的應用程式容錯移轉、鏡射的SM至BC LUN也必須從目的地叢集對應至主機。如此一來、主機就能從來源叢集和目的地叢集正確查看LUN的路徑。以下兩個螢幕擷取畫面會擷取站台A和站台B的「igroup show」和「LUN show」輸出。使用建立的對應、叢集中的每個ESXi主機都會將自己的SAN開機LUN視為ID 0、以及所有四個共享iSCSI資料存放區LUN。
+
+此快照顯示站台A叢集的主機igroup和LUN對應。
+
+image:sm-bcs-image37.png["錯誤：缺少圖形影像"]
+
+此快照顯示站台B叢集的主機igroup和LUN對應。
+
+image:sm-bcs-image38.png["錯誤：缺少圖形影像"]
+
+link:sm-bcs-virtualization.html["下一步：解決方案驗證-虛擬化。"]

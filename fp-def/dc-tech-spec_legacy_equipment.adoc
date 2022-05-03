@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_legacy_equipment.html 
+keywords: legacy, equipment, cisco, end, life, eol, flexpod, datacenter, technical, specifications 
+summary: 支援靈活的解決方案、可讓您使用目前由Cisco與NetApp銷售的現有設備與新設備。FlexPod有時、Cisco和NetApp的某些設備機型會被指定為停產（EOL）。 
+---
+= 老舊設備
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+支援靈活的解決方案、可讓您使用目前由Cisco與NetApp銷售的現有設備與新設備。FlexPod有時、Cisco和NetApp的某些設備機型會被指定為停產（EOL）。
+
+即使這些設備機型已不再提供、如果您在終止供應（EOA）日期之前購買了其中一款機型、您仍可將該設備用在FlexPod 一個不間斷的組態中。如需不再銷售的完整清單、請參閱FlexPod https://mysupport.netapp.com/info/eoa/index.html["NetApp服務與支援產品方案終止供應指數"^]。
+
+如需舊版Cisco設備的詳細資訊、請參閱的Cisco EOL和EOA注意事項 http://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/eos-eol-notice-listing.html["Cisco UCS C系列機架伺服器"^]、 http://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/eos-eol-notice-listing.html["Cisco UCS B系列刀鋒伺服器"^]和 https://www.cisco.com/c/en/us/products/eos-eol-listing.html["Nexus交換器"^]。
+
+傳統FC Fabric支援包括下列項目：
+
+* 2GB Fabric
+* 4GB Fabric
+
+
+舊版軟體包括下列項目：
+
+* NetApp Data ONTAP 支援7-Mode、7.3.5及更新版本
+* 從8.1.x到9.1.x ONTAP
+* Cisco UCS Manager 1.3及更新版本
+* Cisco UCS Manager 2.1至2.2.7
+

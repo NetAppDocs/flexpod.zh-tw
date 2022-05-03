@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_install_fabricpool_license.html 
+keywords: install, fabricpool, license, cloud, capacity, oncommand, system, manager 
+summary: 取得NetApp授權檔案後、您可以使用OnCommand NetApp System Manager來安裝。若要安裝授權檔案、請完成下列步驟。 
+---
+= 安裝FabricPool 不含授權的
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+取得NetApp授權檔案後、您可以使用OnCommand NetApp System Manager來安裝。若要安裝授權檔案、請完成下列步驟：
+
+. 按一下組態。
+. 按一下叢集。
+. 按一下「授權」。
+. 按一下「新增」
+. 按一下「選擇檔案」以瀏覽並選取檔案。
+. 按一下「新增」
+
+
+image:cloud-fabricpool_image8.png["錯誤：缺少圖形影像"]
+
+
+
+== 授權容量
+
+您可以使用ONTAP 「View CLI」或OnCommand 「View System Manager」來檢視授權容量。若要查看授權容量、請在ONTAP CLI中執行下列命令：
+
+....
+system license show-status
+....
+在「系統管理程式」中、完成下列步驟：OnCommand
+
+. 按一下組態。
+. 按一下「授權」。
+. 按一下「詳細資料」索引標籤。
+
+
+image:cloud-fabricpool_image9.png["錯誤：缺少圖形影像"]
+
+最大容量和目前容量會列在FabricPool 「不含資源的授權」列中。
+
+link:cloud-fabricpool_create_aws_s3_bucket.html["接下來：建立AWS S3儲存區。"]

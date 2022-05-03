@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_volume_configuration.html 
+keywords: volume, provisioning, snapshot, copy, volume, default, aggregate, reallocate, schedule 
+summary: 專為MEDITECH主機設計的Meditech磁碟區可以是完整或精簡配置、也可以使用Snapshot複本來存取。您也可以使用磁碟區層級的重新分配功能來最佳化磁碟上的資料配置、以改善寫入延遲和循序讀取存取。 
+---
+= Volume組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== Volume資源配置
+
+專為MEDITECH主機所打造的Meditech磁碟區可以是完整配置或精簡配置。
+
+
+
+== 預設Volume層級Snapshot複本
+
+Snapshot複本是在備份工作流程中建立的一部分。每個Snapshot複本可用於在不同時間存取儲存在MEDITECH LUN中的資料。MEDITECH核准的備份解決方案會根據這些Snapshot複本建立精簡配置的FlexClone磁碟區、以提供MEDITECH LUN的時間點複本。MEDITECH環境已與核准的備份軟體解決方案整合。因此、NetApp建議您在FlexVol 構成MEDITECH正式作業資料庫LUN的每個NetApp版本上、停用預設的Snapshot複製排程。
+
+*重要事項：* FlexClone磁碟區會共用父資料磁碟區空間、因此磁碟區必須有足夠的空間來容納備份伺服器所建立的MEDITECH資料LUN和FlexClone磁碟區。FlexClone磁碟區所佔用的空間並不多於資料磁碟區所佔用的空間。不過、如果在短時間內有大量的MEDITECH LUN刪除作業、則複製磁碟區可能會增加。
+
+
+
+== 每個Aggregate的Volume數
+
+對於FAS 使用Flash Pool或NetApp Flash Cache快取的NetApp支援系統、NetApp建議針對每個Aggregate配置三個以上的磁碟區、這些磁碟區專用於儲存MEDITECH程式、字典和資料檔案。
+
+對於NetApp系統、NetApp建議在每個Aggregate中指定四個以上的磁碟區、以儲存MEDITECH程式、字典和資料檔案。AFF
+
+
+
+== 磁碟區層級的重新分配排程
+
+儲存設備的資料配置會隨著時間而變得較不理想、尤其是當MEDITECH的廣闊空間、6.x和C/S 5.x平台等寫入密集工作負載使用時。隨著時間推移、這種情況可能會增加循序讀取延遲、導致完成備份的時間更長。不良的資料配置或分散也會影響寫入延遲。您可以使用磁碟區層級的重新分配功能來最佳化磁碟上的資料配置、以改善寫入延遲和循序讀取存取。改善的儲存配置有助於在8小時內完成備份。
+
+|===
+| 最佳實務做法 
+
+
+ a| 
+NetApp建議您至少實作每週磁碟區重新分配排程、以便在分配的維護停機期間或正式作業站台的非尖峰時段執行重新分配作業。
+
+
+NOTE: NetApp強烈建議您每個控制器一次在一個磁碟區上執行重新分配工作。
+
+|===
+如需更多關於決定正式作業資料庫儲存設備的適當磁碟區重新分配排程的資訊、請參閱第3.12節 https://fieldportal.netapp.com/content/192896["NetApp TR-3929：重新分配最佳實務做法指南"^]。該節也會引導您如何為忙碌的站台建立每週重新分配排程。
+
+link:ehr-meditech-deploy_lun_configuration.html["下一步：LUN組態。"]

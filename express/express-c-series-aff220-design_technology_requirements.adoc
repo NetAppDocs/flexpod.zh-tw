@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-design_technology_requirements.html 
+keywords: express, requirements, technology, AFF A220, UCS C220 M5, Nexus 3172P switch, Virtual Interface Card, VIC 1387, C220 M5 Rack Server, CVR-QSFP-SFP10G adapter 
+summary: 根據所選的Hypervisor和網路速度、不需要搭配軟硬體元件。FlexPod此外FlexPod 、還會以兩個單位的單位、列出將Hypervisor節點新增至系統所需的硬體元件。 
+---
+= 技術需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+根據所選的Hypervisor和網路速度、不需要搭配軟硬體元件。FlexPod此外FlexPod 、還會以兩個單位的單位、列出將Hypervisor節點新增至系統所需的硬體元件。
+
+
+
+== 硬體需求
+
+無論選擇何種Hypervisor、所有FlexPod 的SESHExpress組態都使用相同的硬體。因此、即使業務需求改變、也能在相同FlexPod 的SExpress硬體上執行任一Hypervisor。
+
+下表列出FlexPod 所有的Express組態和實作解決方案所需的硬體元件。在解決方案的任何特定實作中使用的硬體元件、可能會因客戶需求而異。
+
+[cols="50,50"]
+|===
+| 硬體 | 數量 
+
+
+| VA220雙節點叢集AFF | 1. 
+
+
+| Cisco UCS C220 M5伺服器 | 2. 
+
+
+| Cisco Nexus 3172P交換器 | 2. 
+
+
+| Cisco UCS虛擬介面卡（VIC）1387、適用於Cisco UCS C220 M5機架伺服器 | 2. 
+
+
+| Cisco CVR-QSFP-SFP10G介面卡 | 4. 
+|===
+
+
+== 軟體需求
+
+下表列出實作FlexPod 《列舉》解決方案架構所需的軟體元件。
+
+下表列出FlexPod 基礎版的《不實時資料》實作軟體需求。
+
+[cols="33,33,33"]
+|===
+| 軟體 | 版本 | 詳細資料 
+
+
+| Cisco整合式管理控制器（CIMC） | 3.1.3 | 適用於C220 M5機架伺服器 
+
+
+| Cisco NX-OS | nxos.7.0.3.I7.5.bin | 適用於Cisco Nexus 3172P交換器 
+
+
+| NetApp ONTAP | 9.4 | 適用於VA220控制器AFF 
+|===
+下表列出FlexPod 在VMware vSphere上實作所有VMware vSphere所需的軟體。
+
+[cols="50,50"]
+|===
+| 軟體 | 版本 
+
+
+| VMware vCenter Server設備 | 6.7 
+
+
+| VMware vSphere ESXi | 6.7 
+
+
+| 適用於ESXi的NetApp VAAI外掛程式 | 1.1.2 
+|===
+link:express-c-series-aff220-design_design_choices.html["下一步：設計選擇。"]

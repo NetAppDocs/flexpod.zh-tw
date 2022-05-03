@@ -1,0 +1,130 @@
+---
+sidebar: sidebar 
+permalink: ontap-connector-for-intersight/ci-qsg_use_cases.html 
+keywords: netapp, ontap, cisco, intersight, storage, use cases, monitor, monitoring, orchestration, reference workflows, custom workflows, storage inventory, widgets 
+summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個使用案例。 
+---
+= 使用案例
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個使用案例。
+
+
+
+== 使用案例1：監控NetApp儲存設備庫存和小工具
+
+當NetApp儲存環境可在Cisco Intersight中使用時、您可以從儲存設備庫存中詳細監控NetApp儲存物件、並從儲存設備小工具中取得總覽。
+
+. 部署Intersight assist OVA（vCenter環境中的OnPrem工作）。
+. 在Intersight小幫手中新增NetApp AIQ UM裝置。
+. 前往* Storage *並瀏覽NetApp儲存設備庫存。
+. 在*監控儀表板*中新增*適用於NetApp儲存設備的小工具*。
++
+以下是 https://tv.netapp.com/detail/video/6228096841001["連結"^] 展示ONTAP Cisco Intersight的NetApp NetApp資料儲存監控功能的影片。
+
+
+
+
+
+== 使用案例2：使用參考工作流程進行NetApp儲存協調
+
+當Cisco Intersight提供NetApp儲存設備和vCenter環境時、您可以執行隨裝即用的端點對端點參考工作流程、包括儲存設備和虛擬化工作。
+
+. 部署Intersight assist OVA（vCenter環境中的OnPrem工作）。
+. 在Intersight小幫手中新增NetApp AIQ UM裝置。
+. 透過Intersight小幫手將vCenter目標新增至Intersight。
+. 執行隨裝即用的參考工作流程。
++
+以下是參考工作流程清單：
+
++
+** 全新儲存介面
+** 新的VMFS資料存放區
+** 更新VMFS資料存放區
+** 移除VMFS資料存放區
+** 全新NAS資料存放區
+** 更新NAS資料存放區
+** 移除NAS資料存放區
+** 新的儲存主機
+** 更新儲存主機
+** 移除儲存主機
+** 新的儲存匯出原則
+** 移除儲存匯出原則
+** 全新儲存虛擬機器
+** 新增虛擬機器
+
+
+
+
+
+
+== 使用案例3：使用無設計人員表單自訂工作流程
+
+當NetApp儲存設備和vCenter環境可在Cisco Intersight中使用時、您可以使用NetApp儲存設備和虛擬化工作來建立自訂工作流程。
+
+. 部署Intersight輔助OVA（vCenter環境中的OnPrem工作）
+. 在Intersight小幫手中新增NetApp AIQ UM裝置。
+. 透過Intersight小幫手將vCenter目標新增至Intersight。
+. 瀏覽至Intersight中的*協調*索引標籤。
+. 選取*建立工作流程*。
+. 將儲存與虛擬化工作新增至工作流程。
++
+以下是Cisco Intersight提供的NetApp儲存工作：
+
++
+** 新增儲存匯出原則至Volume
+** 將啟動器連接至儲存主機（igroup）
+** 展開Storage LUN
+** 展開儲存Volume
+** 尋找NetApp igroup LUN Map
+** 依ID尋找儲存LUN
+** 依ID尋找儲存Volume
+** 新的儲存匯出原則
+** 全新儲存光纖通道介面
+** 新的儲存主機
+** 新的儲存IP介面
+** 新的儲存LUN
+** 新的儲存LUN ID
+** 全新儲存虛擬機器
+** 全新儲存Volume
+** 移除儲存匯出原則
+** 移除儲存主機
+** 移除儲存LUN
+** 移除儲存LUN ID
+** 移除儲存Volume
+** 新的儲存Snapshot原則
+** 新的儲存Snapshot原則排程
+** 移除儲存Snapshot原則
+** 移除儲存Snapshot原則排程
+** 編輯儲存Snapshot原則
+** 編輯儲存Snapshot原則排程
+** 新的儲存Volume Snapshot
+** 移除儲存Volume Snapshot
+** 重新命名儲存Volume Snapshot
+** 新的儲存匯出原則規則
+** 編輯儲存匯出原則規則
+** 移除儲存匯出原則規則
+** 中斷儲存匯出原則與Volume的連線
+** 移除儲存FC介面
+** 移除儲存IP介面
+** 移除儲存虛擬機器
+** 編輯儲存虛擬機器的Aggregate
+** 全新儲存NAS智慧型Volume
+** 全新Storage Smart LUN
+** 移除Storage Smart LUN
++
+
+NOTE: 新的Storage NAS Smart Volume和新的Storage Smart LUN工作只能搭配ONTAP 使用。目前支援的最低版本為支援的更新版本。ONTAP
+
+
+
+
+
+若要深入瞭解如何使用NetApp儲存設備和虛擬化工作來自訂工作流程、請觀看影片 https://tv.netapp.com/detail/video/6228095945001["Cisco Intersight中的NetApp ONTAP 解決方案儲存協調"^]。

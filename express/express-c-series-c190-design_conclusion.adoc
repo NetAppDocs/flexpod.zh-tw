@@ -1,0 +1,13 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-design_conclusion.html 
+keywords:  
+summary: 通過驗證的《不只是單純、有效的解決方案、還使用領先業界的元件。FlexPod藉由擴充並提供Hypervisor平台選項、FlexPod 即可針對特定業務需求量身打造。 
+---
+= 結論
+:allow-uri-read: 
+
+
+通過驗證的《不只是單純、有效的解決方案、還使用領先業界的元件。FlexPod藉由擴充並提供Hypervisor平台選項、FlexPod 即可針對特定業務需求量身打造。支援中小企業、遠端辦公室和分公司、以及其他需要專屬解決方案的企業。FlexPod
+
+link:express-c-series-c190-design_where_to_find_additional_information.html["下一步：何處可找到其他資訊。"]

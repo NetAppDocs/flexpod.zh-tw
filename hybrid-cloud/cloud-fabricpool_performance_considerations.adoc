@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_performance_considerations.html 
+keywords: performance, considerations, size, tier, cloud, fabricpool 
+summary: 在考量規模時、應評估下列事項。 
+---
+= 效能考量
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== 調整效能層的規模
+
+在考慮調整規模時、請記住效能層應該能夠執行下列工作：
+
+* 支援Hot資料
+* 支援冷資料、直到分層掃描將資料移至雲端層為止
+* 支援雲端層資料、這些資料會變得很熱、並會寫入效能層級
+* 支援WAFL 與附加雲端層相關的不支援元資料
+
+
+在大多數環境中FabricPool 、用1：10的效能與容量比來說、這是極為保守的做法、同時也能大幅節省儲存成本。例如、如果打算將200TB分層至雲端層、則效能層Aggregate至少應為20TB。
+
+
+NOTE: 如果效能層容量大於 70% 、則會停用從雲端層寫入效能層的功能。如果發生這種情況、區塊會直接從雲端層讀取。
+
+
+
+== 調整雲端層的規模
+
+在考量規模時、做為雲端層的物件存放區應該能夠執行下列工作：
+
+* 支援讀取現有的Cold資料
+* 支援寫入新的Cold資料
+* 支援物件刪除和重組
+

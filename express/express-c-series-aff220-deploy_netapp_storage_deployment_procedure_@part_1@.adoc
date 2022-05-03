@@ -1,0 +1,995 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-deploy_netapp_storage_deployment_procedure_@part_1@.html 
+keywords: lif, vlans, snmp, nfsv3, lun, iscsi, configure, node, deployment, procedure 
+summary: 您可以依照下列步驟完成NetApp AFF 解決方案儲存部署程序。 
+---
+= NetApp儲存部署程序（第1部分）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本節說明NetApp AFF 的NetApp解決方案儲存部署程序。
+
+
+
+== NetApp儲存控制器AFF2xx系列安裝
+
+
+
+=== NetApp Hardware Universe
+
+NetApp Hardware Universe 解決方案（HWU）應用程式可為任何特定ONTAP 的版本提供支援的硬體和軟體元件。它提供ONTAP 目前由支援的所有NetApp儲存設備的組態資訊。同時也提供元件相容性的表格。
+
+確認ONTAP 您想要使用的硬體和軟體元件是否支援您打算安裝的版本的更新：
+
+. 存取 http://hwu.netapp.com/Home/Index["HWU"^] 應用程式以檢視系統組態指南。按一下「Controllers（控制器）」索引標籤、檢視ONTAP 不同版本的《》、以及符合您所需規格的NetApp儲存設備之間的相容性。
+. 或者、若要依儲存設備比較元件、請按一下「比較儲存系統」。
+
+
+|===
+| 控制器AFF2XX系列先決條件 
+
+
+| 若要規劃儲存系統的實體位置、請參閱NetApp Hardware Universe 解決方案。請參閱下列各節：電力需求、支援的電源線、以及內建連接埠和纜線。 
+|===
+
+
+=== 儲存控制器
+
+請遵循中控制器的實體安裝程序 https://mysupport.netapp.com/documentation/docweb/index.html?productID=62557&language=en-US["VA220文件AFF"^]。
+
+
+
+== NetApp ONTAP 產品9.4
+
+
+
+=== 組態工作表
+
+執行設定指令碼之前、請先完成產品手冊中的組態工作表。組態工作表可在中找到 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492611["《軟件安裝指南》ONTAP"^]。
+
+
+NOTE: 此系統是以雙節點無交換式叢集組態設定。
+
+下表顯示ONTAP 了有關安裝和組態的資訊。
+
+|===
+| 叢集詳細資料 | 叢集詳細資料值 
+
+
+| 叢集節點A IP位址 | \<<var_nodea_mgmt_ip>> 
+
+
+| 叢集節點A網路遮罩 | \<<var_nodea_mgmt_mask>> 
+
+
+| 叢集節點A閘道 | \<<var_nodea_mgmt_gateway>> 
+
+
+| 叢集節點A名稱 | \<<var_nodeA>> 
+
+
+| 叢集節點B IP位址 | \<<var_nodeB_mgmt_ip>> 
+
+
+| 叢集節點B網路遮罩 | \<<var_nodeB_mgmt_mask>> 
+
+
+| 叢集節點B閘道 | \<<var_nodeB_mgmt_gateway>> 
+
+
+| 叢集節點B名稱 | \<<var_nodeB>> 
+
+
+| 鏈接ONTAP | \<<var_url_boot_software>> 
+
+
+| 叢集名稱 | \<<var_clustername>> 
+
+
+| 叢集管理IP位址 | \<<var_clustermmgmt_ip>> 
+
+
+| 叢集B閘道 | \<<var_clustermmgmt_gateway>> 
+
+
+| 叢集B網路遮罩 | \<<var_clustermmgmt_mask>> 
+
+
+| 網域名稱 | \<<var_domain_name>> 
+
+
+| DNS伺服器IP（您可以輸入多個） | \<<var_DNs_server_ip>> 
+
+
+| NTP伺服器IP（您可以輸入多個） | \<<var_ntP_server_ip>> 
+|===
+
+
+=== 設定節點A
+
+若要設定節點A、請完成下列步驟：
+
+. 連接至儲存系統主控台連接埠。您應該會看到Loader-A提示。但是、如果儲存系統處於重新開機迴圈、請在看到以下訊息時按Ctrl-C退出自動開機迴圈：
++
+....
+Starting AUTOBOOT press Ctrl-C to abort…
+....
+. 允許系統開機。
++
+....
+autoboot
+....
+. 按Ctrl-C進入「開機」功能表。
++
+如果ONTAP 未啟動版本的軟體、請繼續執行下列步驟以安裝新軟體。如果ONTAP 正在開機的版本為「版本9.4」、請選取選項8和y以重新開機節點。接著、繼續執行步驟14。
+
+. 若要安裝新軟體、請選取選項「7」。
+. 輸入「y」執行升級。
+. 選取「e0M」作為您要下載的網路連接埠。
+. 輸入「y」立即重新開機。
+. 在各自的位置輸入e0M的IP位址、網路遮罩和預設閘道。
++
+....
+<<var_nodeA_mgmt_ip>> <<var_nodeA_mgmt_mask>> <<var_nodeA_mgmt_gateway>>
+....
+. 輸入找到軟體的URL。
++
+
+NOTE: 此Web伺服器必須可Ping。
+
++
+....
+<<var_url_boot_software>>
+....
+. 按Enter輸入使用者名稱、表示沒有使用者名稱。
+. 輸入「y」將新安裝的軟體設為預設值、以供後續重新開機使用。
+. 輸入「y」重新啟動節點。
++
+安裝新軟體時、系統可能會執行BIOS和介面卡的韌體升級、導致重新開機、並在Loader-A提示下停止可能。如果發生這些動作、系統可能會偏離此程序。
+
+. 按Ctrl-C進入「開機」功能表。
+. 選擇選項「4」以進行「乾淨組態」和「初始化所有磁碟」。
+. 輸入「y」將磁碟歸零、重設組態、然後安裝新的檔案系統。
+. 輸入「y」以清除磁碟上的所有資料。
++
+根Aggregate的初始化與建立可能需要90分鐘以上才能完成、視所連接的磁碟數量和類型而定。初始化完成後、儲存系統會重新開機。請注意、SSD初始化所需時間大幅縮短。您可以在節點A的磁碟歸零時繼續進行節點B組態。
+
+. 節點A正在初始化時、請開始設定節點B
+
+
+
+
+=== 設定節點B
+
+若要設定節點B、請完成下列步驟：
+
+. 連接至儲存系統主控台連接埠。您應該會看到Loader-A提示。但是、如果儲存系統處於重新開機迴圈、請在看到以下訊息時按Ctrl-C退出自動開機迴圈：
++
+....
+Starting AUTOBOOT press Ctrl-C to abort…
+....
+. 按Ctrl-C進入「開機」功能表。
++
+....
+autoboot
+....
+. 出現提示時、請按Ctrl-C。
++
+如果ONTAP 未啟動版本的軟體、請繼續執行下列步驟以安裝新軟體。如果ONTAP 正在開機的版本為「版本9.4」、請選取選項8和y以重新開機節點。接著、繼續執行步驟14。
+
+. 若要安裝新軟體、請選取選項7。
+. 輸入「y」執行升級。
+. 選取「e0M」作為您要下載的網路連接埠。
+. 輸入「y」立即重新開機。
+. 在各自的位置輸入e0M的IP位址、網路遮罩和預設閘道。
++
+....
+<<var_nodeB_mgmt_ip>> <<var_nodeB_mgmt_ip>><<var_nodeB_mgmt_gateway>>
+....
+. 輸入找到軟體的URL。
++
+
+NOTE: 此Web伺服器必須可Ping。
+
++
+....
+<<var_url_boot_software>>
+....
+. 按Enter輸入使用者名稱、表示沒有使用者名稱。
+. 輸入「y」將新安裝的軟體設為預設值、以供後續重新開機使用。
+. 輸入「y」重新啟動節點。
++
+安裝新軟體時、系統可能會執行BIOS和介面卡的韌體升級、導致重新開機、並在Loader-A提示下停止可能。如果發生這些動作、系統可能會偏離此程序。
+
+. 按Ctrl-C進入「開機」功能表。
+. 選取選項4進行「乾淨組態」和「初始化所有磁碟」。
+. 輸入「y」將磁碟歸零、重設組態、然後安裝新的檔案系統。
+. 輸入「y」以清除磁碟上的所有資料。
++
+根Aggregate的初始化與建立可能需要90分鐘以上才能完成、視所連接的磁碟數量和類型而定。初始化完成後、儲存系統會重新開機。請注意、SSD初始化所需時間大幅縮短。
+
+
+
+
+
+== 繼續節點A組態和叢集組態
+
+從連接至儲存控制器A（節點A）主控台連接埠的主控台連接埠程式、執行節點設定指令碼。當第一次在節點上啟動時、ONTAP 會出現此指令碼。
+
+
+NOTE: 節點和叢集設定程序ONTAP 在更新過程中略有變更。叢集設定精靈現在用於設定叢集中的第一個節點、而System Manager則用於設定叢集。
+
+. 依照提示設定節點A
++
+....
+Welcome to the cluster setup wizard.
+You can enter the following commands at any time:
+  "help" or "?" - if you want to have a question clarified,
+  "back" - if you want to change previously answered questions, and
+  "exit" or "quit" - if you want to quit the cluster setup wizard.
+     Any changes you made before quitting will be saved.
+You can return to cluster setup at any time by typing "cluster setup".
+To accept a default or omit a question, do not enter a value.
+This system will send event messages and periodic reports to NetApp Technical
+Support. To disable this feature, enter
+autosupport modify -support disable
+within 24 hours.
+Enabling AutoSupport can significantly speed problem determination and
+resolution should a problem occur on your system.
+For further information on AutoSupport, see:
+http://support.netapp.com/autosupport/
+Type yes to confirm and continue {yes}: yes
+Enter the node management interface port [e0M]:
+Enter the node management interface IP address: <<var_nodeA_mgmt_ip>>
+Enter the node management interface netmask: <<var_nodeA_mgmt_mask>>
+Enter the node management interface default gateway: <<var_nodeA_mgmt_gateway>>
+A node management interface on port e0M with IP address <<var_nodeA_mgmt_ip>> has been created.
+Use your web browser to complete cluster setup by accessing
+https://<<var_nodeA_mgmt_ip>>
+Otherwise, press Enter to complete cluster setup using the command line
+interface:
+....
+. 瀏覽至節點管理介面的IP位址。
++
+也可以使用CLI執行叢集設定。本文件說明使用NetApp System Manager引導式設定的叢集設定。
+
+. 按一下引導式設定以設定叢集。
+. 輸入「」<<var_clustername>>作為叢集名稱、輸入「」<<var_nodeA>>」、然後針對您要設定的每個節點輸入「」。輸入您要用於儲存系統的密碼。選取「無交換器叢集」作為叢集類型。輸入叢集基礎授權。
++
+image:express-c-series-aff220-deploy_image6.png["錯誤：缺少圖形影像"]
+
+. 您也可以輸入叢集、NFS和iSCSI的功能授權。
+. 您會看到一則狀態訊息、指出正在建立叢集。此狀態訊息會循環顯示多個狀態。此程序需要幾分鐘的時間。
+. 設定網路。
++
+.. 取消選取「IP位址範圍」選項。
+.. 在「Cluster Management IP Address（叢集管理IP位址）」欄位中輸入「\<<var_clustermmgmt_ip>>」、在「Netmask（子網路遮罩）」欄位中輸入「\<<var_mgmt_clustergateway>>」、並在「Gateway（閘道）」欄位中輸入「\<<var_mgmt_clustergateway>>」。使用… 選取「Port（連接埠）」欄位中的「Select（選取器）」、以選取節點A的e0M
+.. 節點A的節點管理IP已填入。在節點B中輸入「\<<var_nodea_mgmt_ip>>」
+.. 在DNS Domain Name（DNS網域名稱）欄位中輸入「」。在DNS Server IP Address（DNS伺服器IP位址）欄位中輸入「\<<var_DNs_server_ip>>」。
++
+您可以輸入多個DNS伺服器IP位址。
+
+.. 在主NTP伺服器欄位中輸入「\<<var_ntP_server_ip>>」。
++
+您也可以輸入替代的NTP伺服器。
+
+
+
+. 設定支援資訊。
++
+.. 如果您的環境需要Proxy才能存取AutoSupport 功能、請在Proxy URL中輸入URL。
+.. 輸入事件通知的SMTP郵件主機和電子郵件地址。
++
+您至少必須先設定事件通知方法、才能繼續進行。您可以選擇任何方法。
+
++
+image:express-c-series-aff220-deploy_image7.png["錯誤：缺少圖形影像"]
+
+
+
+. 當表示叢集組態已完成時、請按一下管理叢集以設定儲存設備。
+
+
+
+
+== 繼續儲存叢集組態
+
+儲存節點和基礎叢集的組態設定完成後、您可以繼續設定儲存叢集。
+
+
+
+=== 歸零所有備用磁碟
+
+若要將叢集中的所有備用磁碟歸零、請執行下列命令：
+
+....
+disk zerospares
+....
+
+
+=== 設定內建UTA2連接埠特性設定
+
+. 執行「ucadmin show」命令來驗證目前的模式和目前的連接埠類型。
++
+....
+AFF A220::> ucadmin show
+                       Current  Current    Pending  Pending    Admin
+Node          Adapter  Mode     Type       Mode     Type       Status
+------------  -------  -------  ---------  -------  ---------  -----------
+AFF A220_A     0c       fc       target     -        -          online
+AFF A220_A     0d       fc       target     -        -          online
+AFF A220_A     0e       fc       target     -        -          online
+AFF A220_A     0f       fc       target     -        -          online
+AFF A220_B     0c       fc       target     -        -          online
+AFF A220_B     0d       fc       target     -        -          online
+AFF A220_B     0e       fc       target     -        -          online
+AFF A220_B     0f       fc       target     -        -          online
+8 entries were displayed.
+....
+. 驗證使用中連接埠的目前模式為「cna」、且目前類型設定為「target」。如果沒有、請使用下列命令變更連接埠特性設定：
++
+....
+ucadmin modify -node <home node of the port> -adapter <port name> -mode cna -type target
+....
++
+連接埠必須離線才能執行上一個命令。若要使連接埠離線、請執行下列命令：
+
++
+....
+`network fcp adapter modify -node <home node of the port> -adapter <port name> -state down`
+....
++
+
+NOTE: 如果您變更了連接埠特性設定、則必須重新啟動每個節點、變更才會生效。
+
+
+
+
+
+=== 重新命名管理邏輯介面（LIF）
+
+若要重新命名管理生命期、請完成下列步驟：
+
+. 顯示目前的管理LIF名稱。
++
+....
+network interface show –vserver <<clustername>>
+....
+. 重新命名叢集管理LIF。
++
+....
+network interface rename –vserver <<clustername>> –lif cluster_setup_cluster_mgmt_lif_1 –newname cluster_mgmt
+....
+. 重新命名節點B管理LIF。
++
+....
+network interface rename -vserver <<clustername>> -lif cluster_setup_node_mgmt_lif_AFF A220_B_1 -newname AFF A220-02_mgmt1
+....
+
+
+
+
+=== 設定叢集管理的自動還原
+
+在叢集管理介面上設定「自動回復」參數。
+
+....
+network interface modify –vserver <<clustername>> -lif cluster_mgmt –auto-revert true
+....
+
+
+=== 設定服務處理器網路介面
+
+若要為每個節點上的服務處理器指派靜態IPv6位址、請執行下列命令：
+
+....
+system service-processor network modify –node <<var_nodeA>> -address-family IPv4 –enable true –dhcp none –ip-address <<var_nodeA_sp_ip>> -netmask <<var_nodeA_sp_mask>> -gateway <<var_nodeA_sp_gateway>>
+system service-processor network modify –node <<var_nodeB>> -address-family IPv4 –enable true –dhcp none –ip-address <<var_nodeB_sp_ip>> -netmask <<var_nodeB_sp_mask>> -gateway <<var_nodeB_sp_gateway>>
+....
+
+NOTE: 服務處理器IP位址應與節點管理IP位址位於相同的子網路中。
+
+
+
+=== 在ONTAP 不支援的情況下啟用儲存容錯移轉
+
+若要確認已啟用儲存容錯移轉、請在容錯移轉配對中執行下列命令：
+
+. 驗證儲存容錯移轉的狀態。
++
+....
+storage failover show
+....
++
+無論是「」或「」、「」、「」都必須能夠執行接管。如果節點可以執行接管、請前往步驟3。
+
+. 在兩個節點之一上啟用容錯移轉。
++
+....
+storage failover modify -node <<var_nodeA>> -enabled true
+....
++
+在單一節點上啟用容錯移轉功能、可讓這兩個節點都能執行。
+
+. 驗證雙節點叢集的HA狀態。
++
+此步驟不適用於具有兩個以上節點的叢集。
+
++
+....
+cluster ha show
+....
+. 如果已設定高可用度、請前往步驟6。如果已設定高可用度、您會在發出命令時看到下列訊息：
++
+....
+High Availability Configured: true
+....
+. 僅為雙節點叢集啟用HA模式。
++
+
+NOTE: 請勿針對具有兩個以上節點的叢集執行此命令、因為它會導致容錯移轉問題。
+
++
+....
+cluster ha modify -configured true
+Do you want to continue? {y|n}: y
+....
+. 確認硬體輔助已正確設定、並視需要修改合作夥伴IP位址。
++
+....
+storage failover hwassist show
+....
++
+「Keeping Alive Status：錯誤：Not receive hwassist Keeping Alive alerts from Partner（保持活動狀態：錯誤：未收到合作夥伴的HWassist Keepive警示）」訊息表示未設定硬體輔助。執行下列命令以設定硬體輔助。
+
++
+....
+storage failover modify –hwassist-partner-ip <<var_nodeB_mgmt_ip>> -node <<var_nodeA>>
+storage failover modify –hwassist-partner-ip <<var_nodeA_mgmt_ip>> -node <<var_nodeB>>
+....
+
+
+
+
+=== 在ONTAP 支援範圍內建立巨型框架MTU廣播網域
+
+若要建立MTU為9000的資料廣播網域、請執行下列命令：
+
+....
+broadcast-domain create -broadcast-domain Infra_NFS -mtu 9000
+broadcast-domain create -broadcast-domain Infra_iSCSI-A -mtu 9000
+broadcast-domain create -broadcast-domain Infra_iSCSI-B -mtu 9000
+....
+
+
+=== 從預設廣播網域移除資料連接埠
+
+10GbE資料連接埠用於iSCSI/NFS流量、這些連接埠應從預設網域中移除。不使用連接埠e0e和e0f、也應從預設網域中移除。
+
+若要從廣播網域移除連接埠、請執行下列命令：
+
+....
+broadcast-domain remove-ports -broadcast-domain Default -ports <<var_nodeA>>:e0c, <<var_nodeA>>:e0d, <<var_nodeA>>:e0e, <<var_nodeA>>:e0f, <<var_nodeB>>:e0c, <<var_nodeB>>:e0d, <<var_nodeA>>:e0e, <<var_nodeA>>:e0f
+....
+
+
+=== 停用UTA2連接埠上的流程控制
+
+在連接至外部裝置的所有UTA2連接埠上、停用流程控制是NetApp的最佳實務做法。若要停用流程控制、請執行下列命令：
+
+....
+net port modify -node <<var_nodeA>> -port e0c -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier.
+Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeA>> -port e0d -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier.
+Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeA>> -port e0e -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier.
+Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeA>> -port e0f -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier.
+Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeB>> -port e0c -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier.
+Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeB>> -port e0d -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier.
+Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeB>> -port e0e -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier.
+Do you want to continue? {y|n}: y
+net port modify -node <<var_nodeB>> -port e0f -flowcontrol-admin none
+Warning: Changing the network port settings will cause a several second interruption in carrier.
+Do you want to continue? {y|n}: y
+....
+
+
+=== 在ONTAP 不支援的環境中設定IFGRP LACP
+
+此類介面群組需要兩個以上的乙太網路介面和一個支援LACP的交換器。確定交換器設定正確。
+
+在叢集提示字元中、完成下列步驟。
+
+....
+ifgrp create -node <<var_nodeA>> -ifgrp a0a -distr-func port -mode multimode_lacp
+network port ifgrp add-port -node <<var_nodeA>> -ifgrp a0a -port e0c
+network port ifgrp add-port -node <<var_nodeA>> -ifgrp a0a -port e0d
+ifgrp create -node << var_nodeB>> -ifgrp a0a -distr-func port -mode multimode_lacp
+network port ifgrp add-port -node <<var_nodeB>> -ifgrp a0a -port e0c
+network port ifgrp add-port -node <<var_nodeB>> -ifgrp a0a -port e0d
+....
+
+
+=== 在NetApp ONTAP 產品架構中設定巨型框架
+
+若要將ONTAP 靜態網路連接埠設定為使用巨型框架（通常MTU為9、000位元組）、請從叢集Shell執行下列命令：
+
+....
+AFF A220::> network port modify -node node_A -port a0a -mtu 9000
+Warning: This command will cause a several second interruption of service on
+         this network port.
+Do you want to continue? {y|n}: y
+AFF A220::> network port modify -node node_B -port a0a -mtu 9000
+Warning: This command will cause a several second interruption of service on
+         this network port.
+Do you want to continue? {y|n}: y
+....
+
+
+=== 在ONTAP 不支援的環境中建立VLAN
+
+若要在ONTAP 不支援的情況下建立VLAN、請完成下列步驟：
+
+. 建立NFS VLAN連接埠、並將其新增至資料廣播網域。
++
+....
+network port vlan create –node <<var_nodeA>> -vlan-name a0a-<<var_nfs_vlan_id>>
+network port vlan create –node <<var_nodeB>> -vlan-name a0a-<<var_nfs_vlan_id>>
+broadcast-domain add-ports -broadcast-domain Infra_NFS -ports <<var_nodeA>>:a0a-<<var_nfs_vlan_id>>, <<var_nodeB>>:a0a-<<var_nfs_vlan_id>>
+....
+. 建立iSCSI VLAN連接埠、並將其新增至資料廣播網域。
++
+....
+network port vlan create –node <<var_nodeA>> -vlan-name a0a-<<var_iscsi_vlan_A_id>>
+network port vlan create –node <<var_nodeA>> -vlan-name a0a-<<var_iscsi_vlan_B_id>>
+network port vlan create –node <<var_nodeB>> -vlan-name a0a-<<var_iscsi_vlan_A_id>>
+network port vlan create –node <<var_nodeB>> -vlan-name a0a-<<var_iscsi_vlan_B_id>>
+broadcast-domain add-ports -broadcast-domain Infra_iSCSI-A -ports <<var_nodeA>>:a0a-<<var_iscsi_vlan_A_id>>, <<var_nodeB>>:a0a-<<var_iscsi_vlan_A_id>>
+broadcast-domain add-ports -broadcast-domain Infra_iSCSI-B -ports <<var_nodeA>>:a0a-<<var_iscsi_vlan_B_id>>, <<var_nodeB>>:a0a-<<var_iscsi_vlan_B_id>>
+....
+. 建立管理VLAN連接埠。
++
+....
+network port vlan create –node <<var_nodeA>> -vlan-name a0a-<<mgmt_vlan_id>>
+network port vlan create –node <<var_nodeB>> -vlan-name a0a-<<mgmt_vlan_id>>
+....
+
+
+
+
+=== 在ONTAP 功能不全的環境中建立集合體
+
+包含根磁碟區的Aggregate會在ONTAP 執行功能不全的設定程序時建立。若要建立其他Aggregate、請判斷Aggregate名稱、要在其中建立集合體的節點、以及其中包含的磁碟數目。
+
+若要建立Aggregate、請執行下列命令：
+
+....
+aggr create -aggregate aggr1_nodeA -node <<var_nodeA>> -diskcount <<var_num_disks>>
+aggr create -aggregate aggr1_nodeB -node <<var_nodeB>> -diskcount <<var_num_disks>>
+....
+在組態中保留至少一個磁碟（選取最大的磁碟）作為備援磁碟。最佳實務做法是每種磁碟類型和大小至少要有一個備援磁碟機。
+
+從五個磁碟開始、您可以在需要額外儲存設備時、將磁碟新增至集合體。
+
+在磁碟零位調整完成之前、無法建立集合體。執行「aggr show」命令以顯示集合建立狀態。在「aggr1'_'nodeA'」上線之前、請勿繼續。
+
+
+
+=== 在ONTAP 中設定時區
+
+若要設定時間同步並設定叢集上的時區、請執行下列命令：
+
+....
+timezone <<var_timezone>>
+....
+
+NOTE: 例如美國東部的時區是「美國/紐約」。開始輸入時區名稱後、按下分頁鍵查看可用選項。
+
+
+
+=== 在ONTAP SURE中設定SNMP
+
+若要設定SNMP、請完成下列步驟：
+
+. 設定SNMP基本資訊、例如位置和聯絡人。在輪詢時、此資訊會顯示為SNMP中的「最重要位置」和「最重要聯絡人」變數。
++
+....
+snmp contact <<var_snmp_contact>>
+snmp location “<<var_snmp_location>>”
+snmp init 1
+options snmp.enable on
+....
+. 設定SNMP設陷以傳送至遠端主機。
++
+....
+snmp traphost add <<var_snmp_server_fqdn>>
+....
+
+
+
+
+=== 在ONTAP 功能不均的情況下設定SNMPv1
+
+若要設定SNMPv1、請設定稱為社群的共用秘密純文字密碼。
+
+....
+snmp community add ro <<var_snmp_community>>
+....
+
+NOTE: 請謹慎使用「全部刪除NMP社群」命令。如果其他監控產品使用社群字串、此命令會移除這些字串。
+
+
+
+=== 在ONTAP 功能不均的情況下設定v3
+
+v3要求您定義及設定使用者進行驗證。若要設定v3、請完成下列步驟：
+
+. 執行「安全性snmpusers'」命令以檢視引擎ID。
+. 建立名為「shnmpv3user"的使用者。
++
+....
+security login create -username snmpv3user -authmethod usm -application snmp
+....
+. 輸入驗證實體的引擎ID、然後選取「md5」作為驗證傳輸協定。
+. 出現提示時、請輸入驗證傳輸協定的最小長度為8個字元的密碼。
+. 選擇「des」作為隱私權傳輸協定。
+. 出現提示時、請為隱私權傳輸協定輸入八個字元的最小長度密碼。
+
+
+
+
+=== 在AutoSupport 不支援的情況下設定支援HTTPS ONTAP
+
+NetApp AutoSupport 解決方案工具會透過HTTPS將支援摘要資訊傳送給NetApp。若要設定AutoSupport 靜態、請執行下列命令：
+
+....
+system node autosupport modify -node * -state enable –mail-hosts <<var_mailhost>> -transport https -support enable -noteto <<var_storage_admin_email>>
+....
+
+
+=== 建立儲存虛擬機器
+
+若要建立基礎架構儲存虛擬機器（SVM）、請完成下列步驟：
+
+. 執行「vserver create」命令。
++
+....
+vserver create –vserver Infra-SVM –rootvolume rootvol –aggregate aggr1_nodeA –rootvolume-security-style unix
+....
+. 將資料Aggregate新增至NetApp VSC的基礎架構VM Aggregate清單。
++
+....
+vserver modify -vserver Infra-SVM -aggr-list aggr1_nodeA,aggr1_nodeB
+....
+. 從SVM移除未使用的儲存傳輸協定、留下NFS和iSCSI。
++
+....
+vserver remove-protocols –vserver Infra-SVM -protocols cifs,ndmp,fcp
+....
+. 在基礎架構SVM SVM中啟用並執行NFS傳輸協定。
++
+....
+`nfs create -vserver Infra-SVM -udp disabled`
+....
+. 開啟NetApp NFS VAAI外掛程式的「VM vStorage」參數。然後、確認NFS已設定完成。
++
+....
+`vserver nfs modify –vserver Infra-SVM –vstorage enabled`
+`vserver nfs show `
+....
++
+
+NOTE: 命令會在命令列中以「vserver」為前置命令、因為儲存虛擬機器先前稱為伺服器。
+
+
+
+
+
+=== 在ONTAP SURE中設定NFSv3
+
+下表列出完成此組態所需的資訊。
+
+|===
+| 詳細資料 | 詳細資料值 
+
+
+| ESXi裝載NFS IP位址 | \<<var_esxi_Hosta_nfs_ip>> 
+
+
+| ESXi主機B NFS IP位址 | \<<var_esxi_hostb_nfs_ip>> 
+|===
+若要在SVM上設定NFS、請執行下列命令：
+
+. 在預設匯出原則中為每個ESXi主機建立規則。
+. 針對所建立的每個ESXi主機、指派規則。每個主機都有自己的規則索引。第一部ESXi主機的規則索引為1、第二部ESXi主機的規則索引為2、依此類推。
++
+....
+vserver export-policy rule create –vserver Infra-SVM -policyname default –ruleindex 1 –protocol nfs -clientmatch <<var_esxi_hostA_nfs_ip>> -rorule sys –rwrule sys -superuser sys –allow-suid false
+vserver export-policy rule create –vserver Infra-SVM -policyname default –ruleindex 2 –protocol nfs -clientmatch <<var_esxi_hostB_nfs_ip>> -rorule sys –rwrule sys -superuser sys –allow-suid false
+vserver export-policy rule show
+....
+. 將匯出原則指派給基礎架構SVM根Volume。
++
+....
+volume modify –vserver Infra-SVM –volume rootvol –policy default
+....
++
+
+NOTE: 如果您選擇在設定vSphere之後安裝匯出原則、NetApp VSC會自動處理匯出原則。如果未安裝、則必須在新增其他Cisco UCS C系列伺服器時建立匯出原則規則。
+
+
+
+
+
+=== 在ONTAP 不支援的環境中建立iSCSI服務
+
+若要建立iSCSI服務、請完成下列步驟：
+
+. 在SVM上建立iSCSI服務。此命令也會啟動iSCSI服務、並設定SVM的iSCSI IQN。確認iSCSI已設定。
++
+....
+iscsi create -vserver Infra-SVM
+iscsi show
+....
+
+
+
+
+=== 在SVM根磁碟區ONTAP 建立負載共享鏡像
+
+. 在每個節點上建立一個磁碟區、做為基礎架構SVM根磁碟區的負載共用鏡像。
++
+....
+volume create –vserver Infra_Vserver –volume rootvol_m01 –aggregate aggr1_nodeA –size 1GB –type DP
+volume create –vserver Infra_Vserver –volume rootvol_m02 –aggregate aggr1_nodeB –size 1GB –type DP
+....
+. 建立每15分鐘更新一次根磁碟區鏡射關係的工作排程。
++
+....
+job schedule interval create -name 15min -minutes 15
+....
+. 建立鏡射關係。
++
+....
+snapmirror create -source-path Infra-SVM:rootvol -destination-path Infra-SVM:rootvol_m01 -type LS -schedule 15min
+snapmirror create -source-path Infra-SVM:rootvol -destination-path Infra-SVM:rootvol_m02 -type LS -schedule 15min
+....
+. 初始化鏡射關係、並確認已建立鏡射關係。
++
+....
+snapmirror initialize-ls-set -source-path Infra-SVM:rootvol
+snapmirror show
+....
+
+
+
+
+=== 設定ONTAP HTTPS存取功能
+
+若要設定儲存控制器的安全存取、請完成下列步驟：
+
+. 提高存取憑證命令的權限等級。
++
+....
+set -privilege diag
+Do you want to continue? {y|n}: y
+....
+. 一般而言、自我簽署的憑證已經就緒。執行下列命令來驗證憑證：
++
+....
+security certificate show
+....
+. 對於顯示的每個SVM、憑證一般名稱應與SVM的DNS FQDN相符。這四個預設憑證應該刪除、並由自我簽署的憑證或憑證授權單位的憑證來取代。
++
+在建立憑證之前刪除過期的憑證是最佳做法。執行「安全憑證刪除」命令、刪除過期的憑證。在下列命令中、使用分頁完成功能來選取及刪除每個預設憑證。
+
++
+....
+security certificate delete [TAB] …
+Example: security certificate delete -vserver Infra-SVM -common-name Infra-SVM -ca Infra-SVM -type server -serial 552429A6
+....
+. 若要產生及安裝自我簽署的憑證、請以一次性命令的形式執行下列命令。為基礎架構虛擬機器和叢集SVM產生伺服器憑證。同樣地、請使用分頁完成功能來協助完成這些命令。
++
+....
+security certificate create [TAB] …
+Example: security certificate create -common-name infra-svm. netapp.com -type  server -size 2048 -country US -state "North Carolina" -locality "RTP" -organization "NetApp" -unit "FlexPod" -email-addr "abc@netapp.com" -expire-days 365 -protocol SSL -hash-function SHA256 -vserver Infra-SVM
+....
+. 若要取得下列步驟所需參數的值、請執行「安全憑證show」命令。
+. 使用「啟用伺服器的true」和「用戶端啟用的假」參數來啟用剛建立的每個憑證。同樣地、請使用標籤完成。
++
+....
+security ssl modify [TAB] …
+Example: security ssl modify -vserver Infra-SVM -server-enabled true -client-enabled false -ca infra-svm.netapp.com -serial 55243646 -common-name infra-svm.netapp.com
+....
+. 設定並啟用SSL和HTTPS存取、以及停用HTTP存取。
++
+....
+system services web modify -external true -sslv3-enabled true
+Warning: Modifying the cluster configuration will cause pending web service requests to be
+         interrupted as the web servers are restarted.
+Do you want to continue {y|n}: y
+system services firewall policy delete -policy mgmt -service http –vserver <<var_clustername>>
+....
++
+
+NOTE: 有些命令會傳回錯誤訊息、指出該項目不存在、這是正常現象。
+
+. 回復至管理權限層級、然後建立設定、讓SVM可供網路使用。
++
+....
+set –privilege admin
+vserver services web modify –name spi|ontapi|compat –vserver * -enabled true
+....
+
+
+
+
+=== 在FlexVol 功能不全的環境中建立NetApp的功能ONTAP
+
+若要建立NetApp FlexVol 流通量、請輸入其所在的磁碟區名稱、大小及集合體。建立兩個VMware資料存放區磁碟區和一個伺服器開機磁碟區。
+
+....
+volume create -vserver Infra-SVM -volume infra_datastore_1 -aggregate aggr1_nodeA -size 500GB -state online -policy default -junction-path /infra_datastore_1 -space-guarantee none -percent-snapshot-space 0
+volume create -vserver Infra-SVM -volume infra_swap -aggregate aggr1_nodeA -size 100GB -state online -policy default -junction-path /infra_swap -space-guarantee none -percent-snapshot-space 0 -snapshot-policy none
+volume create -vserver Infra-SVM -volume esxi_boot -aggregate aggr1_nodeA -size 100GB -state online -policy default -space-guarantee none -percent-snapshot-space 0
+....
+
+
+=== 在ONTAP 支援功能方面啟用重複資料刪除技術
+
+若要在適當的磁碟區上啟用重複資料刪除、請執行下列命令：
+
+....
+volume efficiency on –vserver Infra-SVM -volume infra_datastore_1
+volume efficiency on –vserver Infra-SVM -volume esxi_boot
+....
+
+
+=== 在ONTAP 功能不均的情況下建立LUN
+
+若要建立兩個開機LUN、請執行下列命令：
+
+....
+lun create -vserver Infra-SVM -volume esxi_boot -lun VM-Host-Infra-A -size 15GB -ostype vmware -space-reserve disabled
+lun create -vserver Infra-SVM -volume esxi_boot -lun VM-Host-Infra-B -size 15GB -ostype vmware -space-reserve disabled
+....
+
+NOTE: 新增額外的Cisco UCS C系列伺服器時、必須建立額外的開機LUN。
+
+
+
+=== 在ONTAP 不支援的環境中建立iSCSI LIF
+
+下表列出完成此組態所需的資訊。
+
+|===
+| 詳細資料 | 詳細資料值 
+
+
+| 儲存節點A iSCSI LIF01A | \<<var_nodea_iscs_lif01a_ip>> 
+
+
+| 儲存節點A iSCSI LIF01A網路遮罩 | \<<var_nodea_iscs_lif01a_mask>> 
+
+
+| 儲存節點A iSCSI LIF01B | \<<var_nodea_iscs_lif01b_ip>> 
+
+
+| 儲存節點A iSCSI LIF01B網路遮罩 | \<<var_nodea_iscs_lif01b_mask>> 
+
+
+| 儲存節點B iSCSI LIF01A | \<<var_nodeB_iscs_lif01a_ip>> 
+
+
+| 儲存節點B iSCSI LIF01A網路遮罩 | \<<var_nodeB_iscs_lif01a_mask>> 
+
+
+| 儲存節點B iSCSI LIF01B | \<<var_nodeB_iscs_lif01b_ip>> 
+
+
+| 儲存節點B iSCSI LIF01B網路遮罩 | \<<var_nodeB_iscs_lif01b_mask>> 
+|===
+. 在每個節點上建立四個iSCSI生命期、兩個。
++
+....
+network interface create -vserver Infra-SVM -lif iscsi_lif01a -role data -data-protocol iscsi -home-node <<var_nodeA>> -home-port a0a-<<var_iscsi_vlan_A_id>> -address <<var_nodeA_iscsi_lif01a_ip>> -netmask <<var_nodeA_iscsi_lif01a_mask>> –status-admin up –failover-policy disabled –firewall-policy data –auto-revert false
+network interface create -vserver Infra-SVM -lif iscsi_lif01b -role data -data-protocol iscsi -home-node <<var_nodeA>> -home-port a0a-<<var_iscsi_vlan_B_id>> -address <<var_nodeA_iscsi_lif01b_ip>> -netmask <<var_nodeA_iscsi_lif01b_mask>> –status-admin up –failover-policy disabled –firewall-policy data –auto-revert false
+network interface create -vserver Infra-SVM -lif iscsi_lif02a -role data -data-protocol iscsi -home-node <<var_nodeB>> -home-port a0a-<<var_iscsi_vlan_A_id>> -address <<var_nodeB_iscsi_lif01a_ip>> -netmask <<var_nodeB_iscsi_lif01a_mask>> –status-admin up –failover-policy disabled –firewall-policy data –auto-revert false
+network interface create -vserver Infra-SVM -lif iscsi_lif02b -role data -data-protocol iscsi -home-node <<var_nodeB>> -home-port a0a-<<var_iscsi_vlan_B_id>> -address <<var_nodeB_iscsi_lif01b_ip>> -netmask <<var_nodeB_iscsi_lif01b_mask>> –status-admin up –failover-policy disabled –firewall-policy data –auto-revert false
+network interface show
+....
+
+
+
+
+=== 建立ONTAP NFS LIF
+
+下表列出完成此組態所需的資訊。
+
+|===
+| 詳細資料 | 詳細資料值 
+
+
+| 儲存節點NFS LIF 01 IP | \<<var_nodea_nfs_lif_01_ip>> 
+
+
+| 儲存節點NFS LIF 01網路遮罩 | \<<var_nodea_nfs_lif_01_mask>> 
+
+
+| 儲存節點B NFS LIF 02 IP | \<<var_nodeB_nfs_lif_02_ip>> 
+
+
+| 儲存節點B NFS LIF 02網路遮罩 | \<<var_nodeB_nfs_lif_02_mask>> 
+|===
+. 建立NFS LIF。
++
+....
+network interface create -vserver Infra-SVM -lif nfs_lif01 -role data -data-protocol nfs -home-node <<var_nodeA>> -home-port a0a-<<var_nfs_vlan_id>> –address <<var_nodeA_nfs_lif_01_ip>> -netmask << var_nodeA_nfs_lif_01_mask>> -status-admin up –failover-policy broadcast-domain-wide –firewall-policy data –auto-revert true
+network interface create -vserver Infra-SVM -lif nfs_lif02 -role data -data-protocol nfs -home-node <<var_nodeA>> -home-port a0a-<<var_nfs_vlan_id>> –address <<var_nodeB_nfs_lif_02_ip>> -netmask << var_nodeB_nfs_lif_02_mask>> -status-admin up –failover-policy broadcast-domain-wide –firewall-policy data –auto-revert true
+network interface show
+....
+
+
+
+
+=== 新增基礎架構SVM管理員
+
+下表列出完成此組態所需的資訊。
+
+|===
+| 詳細資料 | 詳細資料值 
+
+
+| Vsmgmt IP | \<<var_svm_mgmt_ip>> 
+
+
+| Vsmgmt網路遮罩 | \<<var_svm_mgmt_mask>> 
+
+
+| Vsmgmt預設閘道 | \<<var_svm_mgmt_gateway>> 
+|===
+若要將基礎架構SVM管理員和SVM管理邏輯介面新增至管理網路、請完成下列步驟：
+
+. 執行下列命令：
++
+....
+network interface create –vserver Infra-SVM –lif vsmgmt –role data –data-protocol none –home-node <<var_nodeB>> -home-port  e0M –address <<var_svm_mgmt_ip>> -netmask <<var_svm_mgmt_mask>> -status-admin up –failover-policy broadcast-domain-wide –firewall-policy mgmt –auto-revert true
+....
++
+
+NOTE: 此處的SVM管理IP應與儲存叢集管理IP位於相同的子網路中。
+
+. 建立預設路由、以允許SVM管理介面到達外部環境。
++
+....
+network route create –vserver Infra-SVM -destination 0.0.0.0/0 –gateway <<var_svm_mgmt_gateway>>
+network route show
+....
+. 為SVM vsadmin使用者設定密碼、然後解除鎖定使用者。
++
+....
+security login password –username vsadmin –vserver Infra-SVM
+Enter a new password: <<var_password>>
+Enter it again: <<var_password>>
+security login unlock –username vsadmin –vserver Infra-SVM
+....
+
+
+link:express-c-series-aff220-deploy_cisco_ucs_c-series_rack_server_deployment_procedure.html["下一步：Cisco UCS C系列機架伺服器部署程序"]

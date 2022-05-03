@@ -1,0 +1,19 @@
+---
+section: vdi
+title: 虛擬桌面基礎架構
+entries:
+- title: 利用Citrix虛擬應用程式桌面1912 LTSR和VMware vSphere 7實現資料中心、最多可容納6000個用戶FlexPod
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/cisco_ucs_ctx1912esxi7u1_flexpodV2.html
+- title: 採用NetApp的VMware vCenter 9.6、VMware Horizon View 7.10和VMware vSphere 6.7 U2搭配Cisco
+    UCS Manager 4.0、最多可容納670人FlexPod ONTAP
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_ontap96_vmware710_67_u2_ucs_40_6700_seats.html
+- title: VMware與NVIDIA提供3D圖形視覺化功能（白皮書）FlexPod
+  url: https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741654.pdf
+- title: 採用Citrix XenDesktop / XenApp 7.15和VMware vSphere 6.5 Update 1的Datacenter（6000個用戶）FlexPod
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/cisco_ucs_xd715esxi65u1_flexpod.html
+- title: 採用VMware Horizon View 7.3和VMware vSphere 6.5 Update 1的VMware Datacenter搭配Cisco
+    UCS Manager 3.2、可容納5000人FlexPod
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_vmware_horizon_n9k_aff_ucsm32.html
+- title: 採用NetApp的VMware vCenter 9.6、VMware Horizon View 7.10和VMware vSphere 6.7 U2搭配Cisco
+    UCS Manager 4.0、最多可容納670人FlexPod ONTAP
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_ontap96_vmware710_67_u2_ucs_40_6700_seats.html

@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: security/security-ransomware_continue_business_operations_without_paying_ransom.html 
+keywords: ransom, pay, business, operations, restore, data, attack, prevent, recover 
+summary: 本文件所述的NetApp功能可協助您在攻擊發生後數分鐘內還原資料、並防止攻擊發生、讓您不受阻礙地繼續營運。 
+---
+= 無需支付贖金即可繼續營運
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+本文件所述的NetApp功能可協助您在攻擊發生後數分鐘內還原資料、並防止攻擊發生、讓您不受阻礙地繼續營運。
+
+您可以設定Snapshot複本排程、以符合所需的恢復點目標（RPO）。Snapshot複製型還原作業非常快速、因此恢復時間目標（RTO）非常低。
+
+最重要的是、您不需要支付任何攻擊所造成的贖金、也能迅速恢復正常營運。

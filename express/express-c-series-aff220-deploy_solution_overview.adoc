@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-deploy_solution_overview.html 
+keywords: flexpod, converged, infrastructure, verified, architecture, solution, technology 
+summary: 此解決方案屬於「融合式基礎架構方案」的一部分。FlexPod FlexPod 
+---
+= 解決方案總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+此解決方案屬於「融合式基礎架構方案」的一部分。FlexPod FlexPod
+
+
+
+== 融合式基礎架構方案FlexPod
+
+以Cisco驗證設計（CVD）或NetApp驗證架構（NVA）的形式提供參考架構。FlexPod如果這些差異並未建立不受支援的組態、則允許根據特定CVD或NVA的客戶需求來進行差異。
+
+如下圖所示FlexPod 、此功能包含三種解決方案：FlexPod 《ExExpress》（英文）、FlexPod 《Extre Datacenter》（英文）和FlexPod 《ExSelect》（英文）：
+
+* *《*》《*》《*》《*》《*》《*》《*》《*》《*》《*》《*》《*》《* FlexPod
+* *《Datacenter》*提供最佳的多用途基礎、適用於各種工作負載和應用程式。FlexPod
+* *《選擇》*整合了《不二資料中心》的最佳功能、並針對特定應用程式量身打造基礎架構。FlexPod FlexPod
+
+
+image:express-c-series-aff220-deploy_image3.png["錯誤：缺少圖形影像"]
+
+
+
+== NetApp認證架構方案
+
+NetApp認證架構方案為客戶提供通過驗證的NetApp解決方案架構。NetApp認證架構提供具備下列特質的NetApp解決方案架構：
+
+* 經過徹底測試
+* 是規範性的
+* 將部署風險降至最低
+* 加速上市時間
+
+
+本指南詳細說明FlexPod VMware vSphere的VMware Express設計。此外、這項設計還使用全新AFF 的功能完善的ArisorA220系統、執行NetApp ONTAP S得9.4；Cisco Nexus 3172P；以及Cisco UCS C系列C220 M5伺服器作為Hypervisor節點。
+
+
+
+== 解決方案技術
+
+本解決方案採用NetApp、Cisco及VMware的最新技術。本解決方案採用AFF 全新的NetApp S3220、執行ONTAP VMware vSphere 6.7的功能為：2個Cisco Nexus 3172P交換器、2個Cisco UCS C220 M5機架伺服器。這套經過驗證的解決方案採用10GbE技術。同時新增兩個Hypervisor節點、FlexPod 以使該支援架構能夠因應組織不斷演變的業務需求、進而提供擴充運算容量的指引。
+
+下圖顯示FlexPod 採用VMware vSphere 10GbE架構的VMware Express。
+
+image:express-c-series-aff220-deploy_image4.png["錯誤：缺少圖形影像"]
+
+
+NOTE: 此驗證使用10GbE連線能力和Cisco UCS VIC 1387、即40GbE。為了達到10GbE連線、使用CVR-QSFP-SFP10G介面卡。
+
+
+
+== 使用案例摘要
+
+此解決方案可應用於多種使用案例、包括：FlexPod
+
+* 遠端辦公室或分公司
+* 中小企業
+* 需要專屬且具成本效益的解決方案的環境
+
+
+適用於虛擬化和混合式工作負載的不只是Express。FlexPod
+
+
+NOTE: 雖然此解決方案已通過vSphere 6.7驗證、但可支援任何符合NetApp互通性對照表工具其他元件資格的vSphere版本。NetApp建議部署vSphere 6.7U1以進行修正及增強功能。
+
+以下是vSphere 6.7 U1的部分功能：
+
+* 功能完整的HTML5網路型vSphere用戶端
+* 適用於NVIDIA GRID vGPU VM的VMotion。支援Intel FPGA
+* vCenter Server融合工具可從外部PSC移至內部PC
+* vSAN增強功能（HCI更新）
+* 增強的內容庫
+
+
+如需vSphere 6.7 U1的詳細資訊、請參閱 https://blogs.vmware.com/vsphere/2018/10/whats-new-in-vcenter-server-6-7-update-1.html["vCenter Server 6.7 Update 1的新功能"^]。

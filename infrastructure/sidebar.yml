@@ -1,0 +1,16 @@
+---
+section: infrastructure
+title: 基礎架構
+entries:
+- title: 端點對端點NVMe FlexPod 、適用於Cisco UCSM、VMware vSphere 7.0和NetApp ONTAP VMware vCenter
+    9的功能
+  type: solutions
+  entries:
+  - title: 簡介
+    url: "/infrastructure/nvme-vsphere-introduction.html"
+  - title: 測試方法
+    url: "/infrastructure/nvme-vsphere-testing-approach.html"
+  - title: 測試結果
+    url: "/infrastructure/nvme-vsphere-test-results.html"
+  - title: 結論
+    url: "/infrastructure/nvme-vsphere-conclusion.html"

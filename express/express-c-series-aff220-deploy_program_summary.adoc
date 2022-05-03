@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-deploy_program_summary.html 
+keywords: summary, infrastructure, cisco, ucs, flexpod, datacenter 
+summary: 產業趨勢顯示、資料中心已向共享基礎架構和雲端運算領域進行大規模的轉型。此外、企業組織也需要一套簡單有效的解決方案、讓遠端辦公室和分公司都能善用他們在資料中心所熟悉的技術。 
+---
+= NVA-1123-Deploy：FlexPod 《使用VMware vSphere 6.7和NetApp AFF 功能的Arse-Express部署指南》
+:allow-uri-read: 
+
+
+NetApp的Savita Kumari
+
+與下列合作夥伴合作：image:cisco logo.png["錯誤：缺少圖形影像"]
+
+產業趨勢顯示、資料中心已向共享基礎架構和雲端運算領域進行大規模的轉型。此外、企業組織也需要一套簡單有效的解決方案、讓遠端辦公室和分公司都能善用他們在資料中心所熟悉的技術。
+
+NetApp Express是預先設計的最佳實務資料中心架構、建置於Cisco Unified Computing System（Cisco UCS）、Cisco Nexus系列交換器及NetApp儲存技術之上。FlexPod與之類似的是、在整個IT基礎架構環境中、透過更小規模的方式、實現管理協同效益。FlexPod FlexPod支援虛擬化、裸機作業系統和企業工作負載的最佳平台、就是資料中心和不支援的平台。FlexPod FlexPod
+
+支援基礎組態的支援中心及支援中心、可靈活調整規模及最佳化、以因應多種不同的使用案例和需求。FlexPod FlexPod現有FlexPod 的VMware資料中心客戶可以FlexPod 使用他們習慣使用的工具來管理自己的VMware Express系統。全新FlexPod 的Express客戶可隨FlexPod 環境的成長、輕鬆因應如何管理「不支援的資料中心」。
+
+適用於遠端辦公室和分公司、以及中小型企業的最佳基礎架構基礎。FlexPod對於想要為專屬工作負載提供基礎架構的客戶而言、這也是最佳解決方案。
+
+支援簡單易管理的基礎架構、幾乎適用於任何工作負載。FlexPod

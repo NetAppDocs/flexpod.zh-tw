@@ -1,0 +1,160 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-insights_use_cases_01.html 
+keywords: use, cases, active, iq, integration, dashboards, troubleshooting, storage, optimization, custom, real, time 
+summary: 利用設定及設定的功能來監控您的「不含資料的資料中心」解決方案、我們可以在儀表板上探索您可以執行的部分工作、以評估及監控您的環境。Cloud Insights FlexPod在本節中、我們將重點介紹Cloud Insights 五個適用於Oracle的主要使用案例。 
+---
+= 使用案例
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+利用設定及設定的功能來監控您的「不含資料的資料中心」解決方案、我們可以在儀表板上探索您可以執行的部分工作、以評估及監控您的環境。Cloud Insights FlexPod在本節中、我們重點介紹Cloud Insights 五個適用於下列項目的主要使用案例：
+
+* 整合Active IQ
+* 探索即時儀表板
+* 建立自訂儀表板
+* 進階疑難排解
+* 儲存最佳化
+
+
+
+
+== 整合Active IQ
+
+整個過程中、整個過程都與整個過程完全整合在整個過程中。Cloud Insights Active IQ作爲《不完整資料中心》解決方案一部分部署的一套系統、會自動設定透過內建於每個系統的「不完整功能」、將資訊傳回NetApp。ONTAP FlexPod AutoSupport這些報告是根據排程產生、或在系統偵測到故障時動態產生。透過AutoSupport 功能表傳達的資料會彙總、並顯示在Active IQ 容易存取的儀表板Cloud Insights 中、位於資訊功能表下方。
+
+
+
+=== 透過「資訊」儀表板存取Active IQ 資訊Cloud Insights
+
+若要Active IQ 透過Cloud Insights 「資訊」儀表板存取「資訊」、請完成下列步驟：
+
+. 按一下左側「管理」功能表下的「資料收集器」選項。
++
+image:cloud-insights_image13.png["錯誤：缺少圖形影像"]
+
+. 篩選環境中的特定資料收集器。在此範例中、我們會依術語FlexPod 「不知道」進行篩選。
++
+image:cloud-insights_image23.png["錯誤：缺少圖形影像"]
+
+. 按一下資料收集器、即可取得該收集器所監控的環境和裝置摘要。
++
+image:cloud-insights_image24.png["錯誤：缺少圖形影像"]
+
++
+在靠近底部的裝置清單下、按一下ONTAP 所監控的功能表儲存系統名稱。這會顯示收集到的系統相關資訊儀表板、包括下列詳細資料：
+
++
+** 模型
+** 家庭
+** 版本ONTAP
+** 原始容量
+** 平均IOPS
+** 平均延遲
+** 平均處理量
++
+image:cloud-insights_image25.png["錯誤：缺少圖形影像"]
+
++
+此外、在本頁的「效能原則」區段下方、您可以找到NetApp Active IQ 的連結。
+
++
+image:cloud-insights_image26.png["錯誤：缺少圖形影像"]
+
+
+
+. 若要開啟新的瀏覽器索引標籤、並前往風險減輕頁面、其中會顯示哪些節點受到影響、風險有多重要、以及需要採取哪些適當行動來修正已識別的問題、請按一下Active IQ 「更新」連結。
++
+image:cloud-insights_image27.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+=== 瀏覽即時儀表板
+
+透過部署在「Datacenter」解決方案中的功能、可顯示從該系統輪詢的資訊之即時儀表板。Cloud Insights ONTAP FlexPod採集單元會定期收集資料、並在預設的儲存系統儀表板中填入所收集的資訊。Cloud Insights
+
+
+
+==== 透過Cloud Insights Real-Dashboard存取即時圖表
+
+您可以從儲存系統儀表板查看資料收集器上次更新資訊的時間。下圖顯示此範例。
+
+image:cloud-insights_image28.png["錯誤：缺少圖形影像"]
+
+根據預設、儲存系統儀表板會顯示數個互動式圖表、顯示正在輪詢之儲存系統或每個個別節點的全系統度量、包括「Expert View（專家檢視）」區段中的延遲、IOPS和處理量。下圖顯示這些預設圖表的範例。
+
+image:cloud-insights_image29.png["錯誤：缺少圖形影像"]
+
+根據預設、圖形會顯示過去三小時的資訊、但您可以將其設定為儲存系統儀表板右上角附近的下拉式清單中的數個不同值或自訂值。如下圖所示。
+
+image:cloud-insights_image30.png["錯誤：缺少圖形影像"]
+
+
+
+=== 建立自訂儀表板
+
+除了使用顯示全系統資訊的預設儀表板之外、Cloud Insights 您也可以使用下列功能來建立完全自訂的儀表板：利用「效益FlexPod 分析中心」解決方案、您可以將焦點放在特定儲存Volume的資源使用上、 因此、部署在融合式基礎架構中的應用程式、必須仰賴這些磁碟區才能有效執行。這樣做有助於您更好地視覺化特定應用程式及其在資料中心環境中所耗用的資源。
+
+
+
+==== 建立自訂儀表板以評估儲存資源
+
+若要建立自訂儀表板以評估儲存資源、請完成下列步驟：
+
+. 若要建立自訂儀表板、請將游標移至Cloud Insights 「資訊功能」主功能表上的「儀表板」、然後在下拉式清單中按一下「+ New Dashboard（+新儀表板）」。
++
+image:cloud-insights_image31.png["錯誤：缺少圖形影像"]
+
++
+「新儀表板」視窗隨即開啟。
+
+. 命名儀表板、然後選取用於顯示資料的小工具類型。您可以從多種圖表類型、甚至是備註或表格類型中選取、以顯示所收集的資料。
++
+image:cloud-insights_image32.png["錯誤：缺少圖形影像"]
+
+. 從「新增變數」功能表中選擇自訂變數。
++
+如此一來、所呈現的資料就能集中顯示更多特定或專業因素。
+
++
+image:cloud-insights_image33.png["錯誤：缺少圖形影像"]
+
+. 若要建立自訂儀表板、請選取您想要使用的小工具類型、例如圓形圖、以依磁碟區顯示儲存使用率：
++
+.. 從「新增小工具」下拉式清單中選取「圓形圖」小工具。
+.. 使用描述性識別碼來命名小工具、例如「已使用容量」。
+.. 選取您要顯示的物件。例如、您可以依主要詞彙Volume搜尋、然後選取「volume.performance.capacity.used`」。
+.. 若要依儲存系統進行篩選、請使用篩選器、並在FlexPod 「Datacenter解決方案」中輸入儲存系統的名稱。
+.. 自訂要顯示的資訊。依預設、此選項會顯示ONTAP 「不實資料量」、並列出前10名。
+.. 若要儲存自訂儀表板、請按一下「儲存」。
++
+image:cloud-insights_image34.png["錯誤：缺少圖形影像"]
+
++
+儲存自訂Widget之後、瀏覽器會返回「新儀表板」頁面、顯示新建立的Widget、並允許採取互動式動作、例如修改資料輪詢期間。
+
++
+image:cloud-insights_image35.png["錯誤：缺少圖形影像"]
+
+
+
+
+
+
+
+=== 進階疑難排解
+
+利用支援進階疑難排解方法、可將其套用至任何位於「Datacenter融合式基礎架構」中的儲存環境。Cloud Insights FlexPod使用上述各項功能的元件：Active IQ 整合功能、含即時統計資料的預設儀表板、以及自訂儀表板、可以及早偵測並迅速解決可能發生的問題。客戶可以使用Active IQ 《示例》中的風險清單、找到回報的組態錯誤、這些錯誤可能會導致問題、或是發現已報告並修補程式碼版本的錯誤、以便加以補救。觀察Cloud Insights 支援網頁上的即時儀表板、有助於探索系統效能模式、這可能是早期問題出現的早期指標、並有助於迅速解決。最後、能夠建立自訂的儀表板、讓客戶能夠專注於基礎架構中最重要的資產、並直接監控這些資產、以確保其符合業務持續性目標。
+
+
+
+=== 儲存最佳化
+
+除了疑難排解之外、Cloud Insights 您也可以使用由效益分析所收集的資料來最佳化ONTAP 部署在「無法解決的資料中心整合式基礎架構」解決方案中的效益分析儲存系統FlexPod 。如果某個Volume顯示高延遲、可能是因為有多個高效能需求的VM共用同一個資料存放區、則該資訊會顯示在Cloud Insights 該資訊儀表板上。有了這項資訊、儲存管理員可以選擇將一或多個VM移轉到其他Volume、在集合體層之間或ONTAP 在二元儲存系統中的節點之間移轉儲存Volume、以獲得效能最佳化的環境。從支援VMware的整合功能中收集到的資訊Active IQ 、可以突顯導致效能不如預期的組態問題、並提供建議的修正行動、以便在實作時修正任何問題、並確保儲存系統達到最佳調校效果。Cloud Insights

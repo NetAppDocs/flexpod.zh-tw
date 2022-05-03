@@ -1,0 +1,143 @@
+---
+sidebar: sidebar 
+permalink: express/express-direct-attach-aff220-deploy_flexpod_express_cabling_information.html 
+keywords: cabling, express, information, cisco, nexus, switch, aff, storage, controller, ucs, fabric 
+summary: 參考驗證纜線記錄於下表。 
+---
+= 《資訊》FlexPod
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+參考驗證纜線記錄於下表。
+
+下表列出Cisco Nexus交換器31108PCV A的佈線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+.6+| Cisco Nexus交換器31108PCV A | eth1/1. | NetApp AFF VA220儲存控制器A | e0M 
+
+
+| eth1/2 | Cisco UCS迷你FI-A | mgmt0 
+
+
+| eth1/3. | Cisco UCS迷你FI-A | eth1/1. 
+
+
+| ETH 1/4 | Cisco UCS迷你FI-B | eth1/1. 
+
+
+| Eth 1/13 | Cisco NX 31108PCV B | Eth 1/13 
+
+
+| Eth 1/14 | Cisco NX 31108PCV B | Eth 1/14 
+|===
+下表列出Cisco Nexus交換器31108PCV B的纜線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+.6+| Cisco Nexus交換器31108PCV B | eth1/1. | NetApp AFF VA220儲存控制器B | e0M 
+
+
+| eth1/2 | Cisco UCS迷你FI-B | mgmt0 
+
+
+| eth1/3. | Cisco UCS迷你FI-A | eth1/2 
+
+
+| ETH 1/4 | Cisco UCS迷你FI-B | eth1/2 
+
+
+| Eth 1/13 | Cisco NX 31108PCV A | Eth 1/13 
+
+
+| Eth 1/14 | Cisco NX 31108PCV A | Eth 1/14 
+|===
+下表列出NetApp AFF NetApp 4A220儲存控制器A的纜線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+.5+| NetApp AFF VA220儲存控制器A | e0a | NetApp AFF VA220儲存控制器B | e0a 
+
+
+| e0b. | NetApp AFF VA220儲存控制器B | e0b. 
+
+
+| e0e | Cisco UCS迷你FI-A | eth1/3. 
+
+
+| e0f | Cisco UCS迷你FI-B | eth1/3. 
+
+
+| e0M | Cisco NX 31108PCV A | eth1/1. 
+|===
+下表列出NetApp AFF NetApp 4A220儲存控制器B的纜線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+.5+| NetApp AFF VA220儲存控制器B | e0a | NetApp AFF VA220儲存控制器B | e0a 
+
+
+| e0b. | NetApp AFF VA220儲存控制器B | e0b. 
+
+
+| e0e | Cisco UCS迷你FI-A | eth1/4. 
+
+
+| e0f | Cisco UCS迷你FI-B | eth1/4. 
+
+
+| e0M | Cisco NX 31108PCV B | eth1/1. 
+|===
+下表列出Cisco UCS Fabric Interconnect A的佈線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+.5+| Cisco UCS Fabric互連A | eth1/1. | Cisco NX 31108PCV A | eth1/3. 
+
+
+| eth1/2 | Cisco NX 31108PCV B | eth1/3. 
+
+
+| eth1/3. | NetApp AFF VA220儲存控制器A | e0e 
+
+
+| eth1/4. | NetApp AFF VA220儲存控制器B | e0e 
+
+
+| mgmt0 | Cisco NX 31108PCV A | eth1/2 
+|===
+下表列出Cisco UCS Fabric Interconnect B的佈線資訊
+
+|===
+| 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
+
+
+.5+| Cisco UCS Fabric互連B | eth1/1. | Cisco NX 31108PCV A | eth1/4. 
+
+
+| eth1/2 | Cisco NX 31108PCV B | eth1/4. 
+
+
+| eth1/3. | NetApp AFF VA220儲存控制器A | e0f 
+
+
+| eth1/4. | NetApp AFF VA220儲存控制器B | e0f 
+
+
+| mgmt0 | Cisco NX 31108PCV B | eth1/2 
+|===

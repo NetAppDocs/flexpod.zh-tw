@@ -1,0 +1,158 @@
+---
+sidebar: sidebar 
+permalink: security/flexpod-fips-where-to-find-additional-information.html 
+keywords:  
+summary:  
+---
+= 感謝、版本歷程記錄、以及何處可以找到其他資訊
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-fips-conclusion.html["上一篇：結論。"]
+
+若要深入瞭解本文所述資訊、請檢閱下列文件與網站：
+
+* Cisco MDS 9000系列NX-OS安全組態指南
++
+https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/8_x/config/security/cisco_mds9000_security_config_guide_8x/configuring_fips.html#task_1188151[]
+
+* Cisco Nexus 9000系列NX-OS安全組態指南、9.3（x）版
++
+https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/security/configuration/guide/b-cisco-nexus-9000-nx-os-security-configuration-guide-93x/m-configuring-fips.html[]
+
+* NetApp與聯邦資訊處理標準（FIPS）出版品140-2
++
+https://www.netapp.com/company/trust-center/compliance/fips-140-2/[]
+
+* FIPS 140-2
++
+https://fieldportal.netapp.com/content/902303[]
+
+* 《NetApp ONTAP ®9強化指南》
++
+https://www.netapp.com/us/media/tr-4569.pdf[]
+
+* NetApp加密電源指南
++
+https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-nve%2Fhome.html[]
+
+* NVE與NAE資料表
++
+https://www.netapp.com/us/media/ds-3899.pdf[]
+
+* NSE資料表
++
+https://www.netapp.com/us/media/ds-3213-en.pdf[]
+
+* 供應說明文件中心 ONTAP
++
+http://docs.netapp.com[]
+
+* NetApp與聯邦資訊處理標準（FIPS）出版品140-2
++
+https://www.netapp.com/company/trust-center/compliance/fips-140-2/[]
+
+* Cisco與FIPS 140-2法規遵循
++
+https://www.cisco.com/c/en/us/solutions/industries/government/global-government-certifications/fips-140.html[]
+
+* NetApp密碼編譯安全模組
++
+https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2648.pdf[]
+
+* 醫療產業網路安全實務：管理威脅及保護病患
++
+https://www.phe.gov/Preparedness/planning/405d/Pages/hic-practices.aspx[]
+
+* 中型和大型醫療組織的網路安全實務做法
++
+https://www.phe.gov/Preparedness/planning/405d/Documents/tech-vol2-508.pdf[]
+
+* Cisco與密碼編譯模組驗證方案（CMVP）
++
+https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?SearchMode=Basic&Vendor=cisco&CertificateStatus=Active&ValidationYear=0[]
+
+* NetApp儲存加密、NVMe自我加密磁碟機、NetApp Volume加密及NetApp Aggregate加密
++
+https://www.netapp.com/pdf.html?item=/media/17073-ds-3898.pdf[]
+
+* NetApp Volume Encryption與NetApp Aggregate Encryption
++
+https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf[]
+
+* NetApp儲存加密
++
+https://www.netapp.com/pdf.html?item=/media/7563-ds-3213-en.pdf[]
+
+* 適用於電子健康記錄系統FlexPod
++
+https://www.netapp.com/pdf.html?item=/media/22199-tr-4881.pdf[]
+
+* Data Now：利用雲端連線的Flash技術、提升Epic EHR環境的效能
++
+https://www.netapp.com/media/10809-cloud-connected-flash-wp.pdf[]
+
+* 適用於Epic EHR基礎架構的Datacenter FlexPod
++
+https://www.netapp.com/pdf.html?item=/media/17061-ds-3683.pdf[]
+
+* 《Datacenter for Epic EHR部署指南》FlexPod
++
+https://www.netapp.com/media/10658-tr-4693.pdf[]
+
+* 適用於MEDITECH軟體的資料中心基礎架構FlexPod
++
+https://www.netapp.com/media/8552-flexpod-for-meditech-software.pdf[]
+
+* 此功能延伸至MEDITECH軟體FlexPod
++
+https://blog.netapp.com/the-flexpod-standard-extends-to-meditech-software/[]
+
+* 適用於MEDITECH方向調整指南FlexPod
++
+https://www.netapp.com/pdf.html?item=/media/12429-tr4774.pdf[]
+
+* 醫療影像用的FlexPod
++
+https://www.netapp.com/media/19793-tr-4865.pdf[]
+
+* 醫療業的AI
++
+https://www.netapp.com/us/media/na-369.pdf[]
+
+* 適用於醫療業的可讓您輕鬆轉型FlexPod
++
+https://flexpod.com/solutions/verticals/healthcare/[]
+
+* Cisco與NetApp提供的解決方案FlexPod
++
+https://flexpod.com/[]
+
+
+
+
+
+== 感謝
+
+* NetApp技術行銷工程師Abhinav Singh
+* Brian O’Meahony、NetApp解決方案架構設計師Healthcare（Epic）
+* NetApp追求業務開發經理Brian Pruitt
+* NetApp資深解決方案架構設計師Arvind Ramakrishnan
+* Michael Hommer、FlexPod NetApp全球現場技術長
+
+
+
+
+== 版本歷程記錄
+
+|===
+| 版本 | 日期 | 文件版本歷程記錄 
+
+
+| 1.0版 | 2021年4月 | 初始版本 
+|===

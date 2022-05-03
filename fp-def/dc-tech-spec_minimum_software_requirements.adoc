@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_minimum_software_requirements.html 
+keywords: software, requirements, minimum, flexpod, datacenter, techincal, specifications, cisco, ucs, manager 
+summary: 下列資訊說明FlexPod 了有關功能不完整的基本軟體需求。 
+---
+= 最低軟體需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+下列最低軟體需求為基礎：FlexPod
+
+* NetApp ONTAP 產品：
++
+** 不含更新版本的軟體需要使用更新版本的版本ONTAP ONTAP
+
+
+* Cisco UCS Manager版本：
++
+** Cisco UCS 6200系列光纖互連—2.2（8a）
+** Cisco UCS 6300系列光纖互連—3.1（1e）
+** Cisco UCS 6400系列光纖互連—4.0(1)
+
+
+* Cisco Intersight託管模式：
++
+** Cisco UCS 6400系列光纖互連–4.1(2)
+
+
+* 對於Cisco Nexus 5000系列交換器、Cisco NX-OS軟體版本5.0（3）N1（1c）或更新版本、包括NX-OS 5.1.x
+* 對於Cisco Nexus 7000系列交換器：
++
+** 4插槽機箱需要Cisco NX-OS軟體6.1（2）版或更新版本
+** 9插槽機箱需要Cisco NX-OS軟體5.2版或更新版本
+** 10插槽機箱需要Cisco NX-OS軟體版本4.0或更新版本
+** 18插槽機箱需要Cisco NX-OS軟體4.1版或更新版本
+
+
+* 對於Cisco Nexus 9000系列交換器、Cisco NX-OS軟體版本6.1（2）或更新版本
+
+
+
+NOTE: NetApp必須列出並支援在支援中使用的軟體FlexPod http://mysupport.netapp.com/matrix["IMT"^]。某些功能可能需要比所列版本更新的軟體版本。

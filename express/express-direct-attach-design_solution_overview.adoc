@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: express/express-direct-attach-design_solution_overview.html 
+keywords: virtualization, FAS27xx, AFF220, express, VMware vSphere, 
+summary: 以執行混合式虛擬化工作負載為設計目標。FlexPod它的目標對象為遠端辦公室和分公司、以及中小型企業。對於想要實作專屬解決方案的大型企業而言、這也是最理想的選擇。全新FlexPod 的VMware vCenter Express解決方案的主要驅動因素是將ONTAP 諸如下列新技術的產品加入FlexPod 到更新的技術中：例如：VMware vSphere 9.5、FAS27xx和AFF220、VMware vSphere 6.7U1到ArcExpress。 
+---
+= 解決方案總覽
+:allow-uri-read: 
+
+
+以執行混合式虛擬化工作負載為設計目標。FlexPod它的目標對象為遠端辦公室和分公司、以及中小型企業。對於想要實作專屬解決方案的大型企業而言、這也是最理想的選擇。全新FlexPod 的VMware Express解決方案的主要驅動因素是將ONTAP 諸如下列新技術的產品加入FlexPod 到更新的技術中：例如：VMware vSphere 9.5、FAS27xx/AFF220、VMware vSphere 6.7U1至VMware Express。
+
+下圖顯示FlexPod 包含在《ExExpress解決方案」中的硬體元件。
+
+image:express-direct-attach-design_image2.png["錯誤：缺少圖形影像"]
+
+
+
+== 目標對象
+
+本文件適用於想要善用專為提高IT效率及推動IT創新所打造基礎架構的使用者。本文件的對象包括但不限於銷售工程師、現場顧問、專業服務人員、IT經理、 合作夥伴工程師與客戶。
+
+
+
+== 解決方案技術
+
+本解決方案採用NetApp、Cisco及VMware的最新技術。其特色為AFF ：執行ONTAP VMware vSphere 6.7U1的NetApp 4329.5、雙Cisco Nexus 31108PCV交換器、以及Cisco UCS B200 M5伺服器。這套通過驗證的解決方案採用透過10GbE技術的Direct Connect IP儲存設備。
+
+下圖說明FlexPod 採用VMware vSphere 6.7U1 IP型Direct Connect架構的VMware Express。
+
+image:express-direct-attach-design_image3.png["錯誤：缺少圖形影像"]
+
+
+
+== 使用案例摘要
+
+此解決方案可應用於多種使用案例、包括：FlexPod
+
+* ROBO
+* 中小企業
+* 需要專屬且具成本效益的解決方案FlexPod 的環境、最適合虛擬化和混合式工作負載。
+
+
+link:express-direct-attach-design_technology_requirements.html["下一步：技術需求。"]
