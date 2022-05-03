@@ -35,10 +35,6 @@ https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_v
 +
 http://docs.netapp.com["http://docs.netapp.com"^]
 
-* 致勝榮譽
-+
-https://www.netapp.com/blog/achieving-epic-honor-roll/["https://www.netapp.com/blog/achieving-epic-honor-roll/"^]
-
 * 敏捷又有效率：FlexPod 如何推動資料中心現代化
 +
 https://www.flexpod.com/idc-white-paper/["https://www.flexpod.com/idc-white-paper/"^]
