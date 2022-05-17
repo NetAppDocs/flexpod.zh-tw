@@ -27,7 +27,7 @@ summary: 本節說明FlexPod 不同版本的《不一樣》的最低硬體需求
 
 Cisco整合式管理控制器（CIMC）組態包括下列硬體元件：
 
-* 備援組態中有兩個10Gbps標準乙太網路交換器（建議使用Cisco Nexus 0808、並支援Cisco Nexus 3000和9000機型）
+* 兩個採用備援組態的10Gbps標準乙太網路交換器（建議使用Cisco Nexus 31108、並支援Cisco Nexus 3000和9000機型）
 * Cisco UCS C系列獨立式機架伺服器
 * 在AFF 部署為雙節點叢集的高可用度（HA）配對組態中、有兩AFF 個支援EFC190、EeseA250、FAS2600或FAS E122700系列的控制器
 
