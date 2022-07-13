@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/flexpod/issues/new?body=Page%3A%20[NVA-1142-部署：FlexPod 採用Cisco UCS C系列與NetApp AFF 支援中心190系列- NVA部署的不二之選](https://docs.netapp.com/zh-tw/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/flexpod/images/discuss-sm.svg" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/flexpod/blob/main/express/express-c-series-c190-deploy_program_summary_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/flexpod/images/edit-sm.svg" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/flexpod/images/article-sm.svg" class="github-icon" />瞭解如何作出貢獻</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/flexpod/issues/new?body=Page%3A%20[NVA-1142-部署：FlexPod 採用Cisco UCS C系列與NetApp AFF 支援中心190系列- NVA部署的不二之選](https://docs.netapp.com/zh-tw/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/flexpod/images/discuss-sm.svg" alt="" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/flexpod/blob/main/express/express-c-series-c190-deploy_program_summary_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/flexpod/images/edit-sm.svg" alt="" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/flexpod/images/article-sm.svg" alt="" class="github-icon" />瞭解如何作出貢獻</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此頁面上</div>
@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/zh-tw/flexpod/search.html"
           data-type="widget" 
-          data-placeholder="搜尋文件" 
-          data-no-results-found="找不到符合 {query} 的相關結果。" 
-          data-did-you-mean="搜尋 {suggestion}。" 
-          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？" 
-          data-results-found="找到 {hitCount} 筆結果"  
+          data-placeholder="搜尋文件"
+          data-no-results-found="找不到符合 {query} 的相關結果。"
+          data-did-you-mean="搜尋 {suggestion}。"
+          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？"
+          data-results-found="找到 {hitCount} 筆結果"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -277,35 +279,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/flexpod/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/flexpod/express/express-c-series-c190-deploy_program_summary_overview.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -349,7 +343,7 @@
   <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>可用的 PDF<span>
     </span>
   </a>
 </div>
@@ -359,7 +353,7 @@
         
         
         <a target="_blank" href="/zh-tw/flexpod/pdfs/fullsite-sidebar/解決方案FlexPod.pdf" >
-          <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
+          <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>此文件網站（PDF 格式）</a>
 
 
 
@@ -374,7 +368,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/可解析度FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             可解析度FlexPod
           </a>
           
@@ -390,7 +384,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/部分技術規格FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             部分技術規格FlexPod
           </a>
           
@@ -428,8 +422,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -449,7 +441,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/資料中心技術規格FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             資料中心技術規格FlexPod
           </a>
           
@@ -487,8 +479,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -496,8 +486,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -517,7 +505,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/資料中心FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             資料中心FlexPod
           </a>
           
@@ -533,7 +521,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/包含NetApp_SnapMirror營運不中斷和功能不再是資料中心FlexPod_ONTAP.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             包含NetApp SnapMirror營運不中斷和功能不再是資料中心FlexPod ONTAP
           </a>
           
@@ -553,7 +541,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/解決方案驗證.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             解決方案驗證
           </a>
           
@@ -569,8 +557,17 @@
 
 
 
+        </li>
+      </ul>
+    
 
-          
+  
+
+
+
+
+
+
         </li>
       </ul>
     
@@ -583,12 +580,6 @@
 
 
 
-          
-        </li>
-      </ul>
-    
-
-  
 
 
 
@@ -606,15 +597,6 @@
 
 
 
-
-
-
-
-
-
-
-
-          
         </li>
       </ul>
     
@@ -634,7 +616,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/混合雲.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             混合雲
           </a>
           
@@ -650,7 +632,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/NetApp_Cloud_Insights_解決方案FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             NetApp Cloud Insights 解決方案FlexPod
           </a>
           
@@ -670,8 +652,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -691,7 +671,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/包含此功能的支援_非使用中資料分層至Amazon_AWS_S3_FlexPod_FabricPool.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             包含此功能的支援：非使用中資料分層至Amazon AWS S3 FlexPod FabricPool
           </a>
           
@@ -715,7 +695,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/組態.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             組態
           </a>
           
@@ -733,8 +713,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -750,8 +728,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -767,8 +743,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -788,7 +762,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/企業資料庫.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             企業資料庫
           </a>
           
@@ -804,7 +778,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/SAP.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             SAP
           </a>
           
@@ -848,8 +822,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -869,7 +841,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/Oracle.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             Oracle
           </a>
           
@@ -881,8 +853,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -902,7 +872,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/Microsoft_SQL_Server.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             Microsoft SQL Server
           </a>
           
@@ -916,8 +886,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -925,8 +893,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -946,7 +912,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/醫療.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             醫療
           </a>
           
@@ -962,7 +928,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/適用於基因組學FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             適用於基因組學FlexPod
           </a>
           
@@ -984,8 +950,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1005,7 +969,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/適用於MEDITECH方向調整指南FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             適用於MEDITECH方向調整指南FlexPod
           </a>
           
@@ -1019,8 +983,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1040,7 +1002,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/_Datacenter_for_MEDITECH部署指南_FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             《Datacenter for MEDITECH部署指南》FlexPod
           </a>
           
@@ -1060,7 +1022,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/部署與組態.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             部署與組態
           </a>
           
@@ -1086,8 +1048,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1101,8 +1061,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1122,7 +1080,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/適用於醫療影像FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             適用於醫療影像FlexPod
           </a>
           
@@ -1140,8 +1098,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1149,8 +1105,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1170,7 +1124,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/虛擬桌面基礎架構.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             虛擬桌面基礎架構
           </a>
           
@@ -1186,8 +1140,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1207,7 +1159,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/現代化應用程式.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             現代化應用程式
           </a>
           
@@ -1233,8 +1185,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1254,7 +1204,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/Microsoft應用程式.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             Microsoft應用程式
           </a>
           
@@ -1266,8 +1216,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1287,7 +1235,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/Express_FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             Express FlexPod
           </a>
           
@@ -1303,7 +1251,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/_採用Cisco_UCS_C系列與NetApp功能的Express設計指南_FlexPod_AFF.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             《採用Cisco UCS C系列與NetApp功能的Express設計指南》FlexPod AFF
           </a>
           
@@ -1319,8 +1267,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1340,18 +1286,11 @@
               href="/zh-tw/flexpod/pdfs/sidebar/_採用Cisco_UCS_C系列與NetApp功能的Express部署指南__英文_FlexPod_AFF.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             《採用Cisco UCS C系列與NetApp功能的Express部署指南》（英文）FlexPod AFF
           </a>
           
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-tw/flexpod/pdfs/pages/express/express-c-series-c190-deploy_program_summary_overview.pdf" >
-    <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
 
@@ -1373,7 +1312,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/部署程序.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             部署程序
           </a>
           
@@ -1395,8 +1334,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1412,8 +1349,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1433,7 +1368,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/包含Cisco_UCS_C系列和_支援不支援的Express設計指南__英文_FlexPod_AFF.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             包含Cisco UCS C系列和《支援不支援的Express設計指南》（英文）FlexPod AFF
           </a>
           
@@ -1453,8 +1388,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1474,7 +1407,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/_採用Cisco_UCS_C系列與_支援不支援的Express部署指南__英文_FlexPod_AFF.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             《採用Cisco UCS C系列與《支援不支援的Express部署指南》（英文）FlexPod AFF
           </a>
           
@@ -1498,7 +1431,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/部署程序.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             部署程序
           </a>
           
@@ -1516,8 +1449,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1529,8 +1460,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1550,7 +1479,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/_VMware_vSphere_6_7U1與NetApp_VMware_Infrastructure_A220搭配直接附加IP型儲存設計指南_的_Express_with_VMware_vSphere_6_7U1_and_NetApp__英文_FlexPod_AFF.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             《VMware vSphere 6.7U1與NetApp VMware Infrastructure A220搭配直接附加IP型儲存設計指南》的《Express with VMware vSphere 6.7U1 and NetApp》（英文）FlexPod AFF
           </a>
           
@@ -1570,8 +1499,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1591,7 +1518,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/採用VMware_vSphere_6_7U1與NetApp_VMware_Infrastructure_A220搭配直接附加的IP型儲存設備的VMware_Express_FlexPod_AFF.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             採用VMware vSphere 6.7U1與NetApp VMware Infrastructure A220搭配直接附加的IP型儲存設備的VMware Express FlexPod AFF
           </a>
           
@@ -1609,8 +1536,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1620,8 +1545,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1641,7 +1564,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/功能與安全性FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             功能與安全性FlexPod
           </a>
           
@@ -1657,7 +1580,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/解決方案FlexPod.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             解決方案FlexPod
           </a>
           
@@ -1677,8 +1600,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1698,7 +1619,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/FIPS_140_2_FlexPod_安全性認證的醫療解決方案.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             FIPS 140-2 FlexPod 安全性認證的醫療解決方案
           </a>
           
@@ -1724,8 +1645,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1733,8 +1652,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1754,7 +1671,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/Cisco_Intersight_with_NetApp_ONTAP_解決方案儲存快速入門指南.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             Cisco Intersight with NetApp ONTAP 解決方案儲存快速入門指南
           </a>
           
@@ -1774,8 +1691,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1795,7 +1710,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/基礎架構.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             基礎架構
           </a>
           
@@ -1811,7 +1726,7 @@
               href="/zh-tw/flexpod/pdfs/sidebar/端點對端點NVMe_FlexPod__適用於Cisco_UCSM_VMware_vSphere_7_0和NetApp_ONTAP_VMware_vCenter_9的功能.pdf" 
             
           >
-            <img src="/zh-tw/flexpod/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-tw/flexpod/images/pdf.png" alt="" width="16" height="16"/>
             端點對端點NVMe FlexPod 、適用於Cisco UCSM、VMware vSphere 7.0和NetApp ONTAP VMware vCenter 9的功能
           </a>
           
@@ -1823,8 +1738,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1832,19 +1745,16 @@
   
 
 
-
-          
         </li>
       </ul>
     
 
   
-
 
 </li></ul>
   <div class="zip-pdf-link-container" style="display: none;">   
     <a href="#" id="zipPdf">
-      <img src="/zh-tw/flexpod/images/pdf-zip.png" width="16" height="16"/>
+      <img src="/zh-tw/flexpod/images/pdf-zip.png" alt="" width="16" height="16"/>
       <pre>個別 PDF 文件的集合<span class="zip-size"></span></pre>
     </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
@@ -1877,7 +1787,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/flexpod/index.html">
         解決方案文件FlexPod
       </a></li><li class="subfolders "><a href="#">
@@ -2746,4 +2656,5 @@
     </script>
     <script src='/zh-tw/flexpod/js/www-ntap.js'></script>
     <script src='/zh-tw/flexpod/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/flexpod/js/sidebar.js'></script>
   </body></html>
