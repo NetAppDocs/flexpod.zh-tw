@@ -45,20 +45,20 @@ summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個�
 以下是參考工作流程清單：
 
 +
-** 全新儲存介面
-** 新的VMFS資料存放區
-** 更新VMFS資料存放區
-** 移除VMFS資料存放區
 ** 全新NAS資料存放區
-** 更新NAS資料存放區
-** 移除NAS資料存放區
-** 新的儲存主機
-** 更新儲存主機
-** 移除儲存主機
 ** 新的儲存匯出原則
-** 移除儲存匯出原則
+** 新的儲存主機
+** 全新儲存介面
 ** 全新儲存虛擬機器
 ** 新增虛擬機器
+** 新的VMFS資料存放區
+** 移除NAS資料存放區
+** 移除儲存匯出原則
+** 移除儲存主機
+** 移除VMFS資料存放區
+** 更新NAS資料存放區
+** 更新儲存主機
+** 更新VMFS資料存放區
 
 
 
@@ -80,45 +80,45 @@ summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個�
 
 +
 ** 新增儲存匯出原則至Volume
-** 將啟動器連接至儲存主機（igroup）
+** 將啟動器連接至儲存主機
+** 中斷儲存匯出原則與Volume的連線
+** 編輯儲存虛擬機器的Aggregate
+** 編輯儲存匯出原則規則
+** 編輯儲存Snapshot原則
+** 編輯儲存Snapshot原則排程
 ** 展開Storage LUN
 ** 展開儲存Volume
 ** 尋找NetApp igroup LUN Map
 ** 依ID尋找儲存LUN
 ** 依ID尋找儲存Volume
 ** 新的儲存匯出原則
-** 全新儲存光纖通道介面
+** 新的儲存匯出原則規則
+** 全新NetApp儲存光纖通道介面
 ** 新的儲存主機
 ** 新的儲存IP介面
 ** 新的儲存LUN
 ** 新的儲存LUN ID
-** 全新儲存虛擬機器
-** 全新儲存Volume
-** 移除儲存匯出原則
-** 移除儲存主機
-** 移除儲存LUN
-** 移除儲存LUN ID
-** 移除儲存Volume
+** 全新NetApp儲存NAS智慧型磁碟區
+** 全新NetApp儲存智慧LUN
 ** 新的儲存Snapshot原則
 ** 新的儲存Snapshot原則排程
+** 全新儲存虛擬機器
+** 全新儲存Volume
+** 新的儲存Volume Snapshot
+** 移除儲存裝置匯出原則
+** 移除儲存匯出原則規則
+** 移除儲存FC介面
+** 移除儲存主機
+** 移除儲存IP介面
+** 移除儲存LUN
+** 移除儲存LUN ID
+** 移除NetApp Storage Smart LUN
 ** 移除儲存Snapshot原則
 ** 移除儲存Snapshot原則排程
-** 編輯儲存Snapshot原則
-** 編輯儲存Snapshot原則排程
-** 新的儲存Volume Snapshot
+** 移除儲存虛擬機器
+** 移除儲存Volume
 ** 移除儲存Volume Snapshot
 ** 重新命名儲存Volume Snapshot
-** 新的儲存匯出原則規則
-** 編輯儲存匯出原則規則
-** 移除儲存匯出原則規則
-** 中斷儲存匯出原則與Volume的連線
-** 移除儲存FC介面
-** 移除儲存IP介面
-** 移除儲存虛擬機器
-** 編輯儲存虛擬機器的Aggregate
-** 全新儲存NAS智慧型Volume
-** 全新Storage Smart LUN
-** 移除Storage Smart LUN
 +
 
 NOTE: 新的Storage NAS Smart Volume和新的Storage Smart LUN工作只能搭配ONTAP 使用。目前支援的最低版本為支援的更新版本。ONTAP

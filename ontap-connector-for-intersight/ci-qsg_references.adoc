@@ -20,6 +20,6 @@ https://www.netapp.com/pdf.html?item=/media/25001-tr-4883.pdf["TR 4883：FlexPod
 
 https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/flexpod/cisco-imm-for-flexpod.html["Cisco Intersight託管模式FlexPod 、適用於"^]
 
-https://intersight.com/help/getting_started["Cisco Intersight入門總覽"^]
+https://intersight.com/help/saas/getting_started/overview["Cisco Intersight入門總覽"^]
 
 https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html["Intersight Appliance安裝與升級指南"^]

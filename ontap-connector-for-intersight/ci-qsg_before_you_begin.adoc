@@ -61,14 +61,12 @@ image:ci-qsg_image4.png["錯誤：缺少圖形影像"]
 +
 安裝程序會自動開始。視Intersight.com的頻寬而定、安裝可能需要一小時的時間。在VM開機後、安全站台也可能需要數秒鐘的時間才能運作。
 
-.. 在部署後的程序中、選取您要安裝的項目：
+.. 在部署後的程序中、選取下列選項：
 +
-*** * Intersight Connected Virtual Appliance。*此部署需要連回Cisco和Intersight服務、才能更新及存取必要的服務、才能享有Intersight.com的完整功能。
-*** * Intersight Private Virtual Appliance。*此部署適用於以中斷連線（氣隙）模式操作資料中心的環境。
 *** * Intersight assist。*此部署可讓SaaS模式連線至Cisco Intersight。
 +
 
-NOTE: 如果您選取「Intersight assist」、請在繼續之前記下裝置ID和請款代碼。
+NOTE: 選取Intersight assist時、請先記下裝置ID和請款代碼、然後再繼續。
 
 +
 image:ci-qsg_image5.png["Intersight部署選項的快照"]
@@ -76,7 +74,7 @@ image:ci-qsg_image5.png["Intersight部署選項的快照"]
 
 
 .. 按一下* Proce*。
-.. 如果您選擇* Intersight assist *、請完成下列步驟：
+.. 選擇* Intersight assist *並完成下列步驟：
 +
 ... 瀏覽至您的SaaS Intersight帳戶 https://intersight.com["https://intersight.com"^]。
 ... 按一下*目標*、* Cisco Intersight assist *、然後按* Start*。

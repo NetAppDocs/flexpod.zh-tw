@@ -59,21 +59,11 @@
   <block id="17fd08459c8a5f34d6f93f908fc4fc70" category="list-text">將儲存與虛擬化工作新增至工作流程。</block>
   <block id="16823263a74001ecb22c9fecdb2d8af2" category="paragraph">以下是Cisco Intersight提供的NetApp儲存工作：</block>
   <block id="054ea9c656473e275b7ae5b69269cc81" category="list-text">新增儲存匯出原則至Volume</block>
-  <block id="005bfd913eb29ed0d97dbcf92a1dc44b" category="list-text">將啟動器連接至儲存主機（igroup）</block>
   <block id="aa4edcb7e57123151162ef878a3a3bb4" category="list-text">展開Storage LUN</block>
   <block id="cb036c70939fadc3637cbeb990d0a969" category="list-text">展開儲存Volume</block>
   <block id="01b698a596504162b7fcdf910e9175db" category="list-text">尋找NetApp igroup LUN Map</block>
   <block id="9e5d320b5556f2516f70b24e91d5f757" category="list-text">依ID尋找儲存LUN</block>
   <block id="783d5727a583df3d75bb078907ef7716" category="list-text">依ID尋找儲存Volume</block>
-  <block id="2e98a15a497ccdd705c1aacbc2565767" category="list-text">全新儲存光纖通道介面</block>
-  <block id="a2e112440799116f544e38030177ebc7" category="list-text">新的儲存IP介面</block>
-  <block id="97ac0e10ec1653fdd6d33b534b4fb581" category="list-text">新的儲存LUN</block>
-  <block id="194f7608b74b74a368090a870f7d5fcb" category="list-text">新的儲存LUN ID</block>
-  <block id="8984b5a23cc2d3327a7853fd1f99478b" category="list-text">全新儲存Volume</block>
-  <block id="306682b00b95423c3808ed174d82d2b5" category="list-text">移除儲存匯出原則</block>
-  <block id="51509d7e2140913e263274d44c95a454" category="list-text">移除儲存主機</block>
-  <block id="e85a681fd3a43de819202fa65bd57afb" category="list-text">移除儲存LUN</block>
-  <block id="4b80c44802bcd924cae1f359acfed1d8" category="list-text">移除儲存LUN ID</block>
   <block id="f44bd35636cd69c25b2f240a770ab0a5" category="list-text">移除儲存Volume</block>
   <block id="5cb81d48ffabbd08e273eb1371ff2113" category="list-text">新的儲存Snapshot原則</block>
   <block id="46c325550313b45bd974662a8ba5d5c5" category="list-text">新的儲存Snapshot原則排程</block>
@@ -92,9 +82,6 @@
   <block id="0027d78119d537368b4fd4055fdfdd69" category="list-text">移除儲存IP介面</block>
   <block id="2205b729cc3612050bfabb80d4d267a0" category="list-text">移除儲存虛擬機器</block>
   <block id="091e9fb66636892d6015097e15c3353a" category="list-text">編輯儲存虛擬機器的Aggregate</block>
-  <block id="c124f401989eb56f128d81a49069b568" category="list-text">全新儲存NAS智慧型Volume</block>
-  <block id="961513c69619cf93fef1cda04ea9a298" category="list-text">全新Storage Smart LUN</block>
-  <block id="207134fdf4cc60a2571bb638077b925c" category="list-text">移除Storage Smart LUN</block>
   <block id="fc763aee087e01aba254202f6cfd6ba9" category="admonition">新的Storage NAS Smart Volume和新的Storage Smart LUN工作只能搭配ONTAP 使用。目前支援的最低版本為支援的更新版本。ONTAP</block>
   <block id="aed9e8ce86d6b67ac26c7d1937461e90" category="inline-link">Cisco Intersight中的NetApp ONTAP 解決方案儲存協調</block>
   <block id="efd91dc6276bbe52b654d531a05b3658" category="paragraph">若要深入瞭解如何使用NetApp儲存設備和虛擬化工作來自訂工作流程、請觀看影片<block ref="9c51a52bc77cfd7dca26d970b0100330" category="inline-link-rx"></block>。</block>
@@ -162,7 +149,6 @@
   <block id="7b3308b95aec192d46bc92dd7fb02cb2" category="inline-link">Cisco Intersight託管模式FlexPod 、適用於</block>
   <block id="2155a8941fd728202c18dade730100d6" category="paragraph"><block ref="2155a8941fd728202c18dade730100d6" category="inline-link-rx"></block></block>
   <block id="0580772620331f949057ed6afbb098ea" category="inline-link">Cisco Intersight入門總覽</block>
-  <block id="c126a38a1e6af9c2dcbdc8fc12037c4b" category="paragraph"><block ref="c126a38a1e6af9c2dcbdc8fc12037c4b" category="inline-link-rx"></block></block>
   <block id="4d49c14c4afe96eb88aaef6d6588599b" category="inline-link">Intersight Appliance安裝與升級指南</block>
   <block id="5cce77ecfcdbd5857d67110262f7b5a9" category="paragraph"><block ref="5cce77ecfcdbd5857d67110262f7b5a9" category="inline-link-rx"></block></block>
   <block id="125b1abfe1e20b5d3d6794b8dcc47618" category="summary">開始之前、請先安裝或升級AIQ UM、建立Cisco Intersight帳戶、然後安裝Intersight小幫手。</block>
@@ -195,15 +181,10 @@
   <block id="88ade68952e1a8d9f1c49b5ed85b5af5" category="list-text">部署後的Intersight輔助設備。</block>
   <block id="dba06e35ee25a3095d873c4534514037" category="list-text">瀏覽至<block ref="f9e0ea639036dbfc655ff5cf553db753" category="inline-link-rx"></block> 以完成裝置的安裝後設定。</block>
   <block id="bca0d681ab79310b7d18a7976928af12" category="paragraph">安裝程序會自動開始。視Intersight.com的頻寬而定、安裝可能需要一小時的時間。在VM開機後、安全站台也可能需要數秒鐘的時間才能運作。</block>
-  <block id="275571fec9813ba1f9a0316d6c6f2fb6" category="list-text">在部署後的程序中、選取您要安裝的項目：</block>
-  <block id="c00e17d94315de3169768bef7aab5657" category="list-text">* Intersight Connected Virtual Appliance。*此部署需要連回Cisco和Intersight服務、才能更新及存取必要的服務、才能享有Intersight.com的完整功能。</block>
-  <block id="393c0ea686ccae41560844de6267272c" category="list-text">* Intersight Private Virtual Appliance。*此部署適用於以中斷連線（氣隙）模式操作資料中心的環境。</block>
   <block id="3920eddb38a93c54b93b962bbdea7c26" category="list-text">* Intersight assist。*此部署可讓SaaS模式連線至Cisco Intersight。</block>
-  <block id="1453aed754bf50218b4f4d0151fdacf0" category="admonition">如果您選取「Intersight assist」、請在繼續之前記下裝置ID和請款代碼。</block>
   <block id="32f55ec9f00aee8539ca16e146d53713" category="inline-image-macro">Intersight部署選項的快照</block>
   <block id="df2ced2f2ca7e12619f0e054224c6230" category="paragraph"><block ref="df2ced2f2ca7e12619f0e054224c6230" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2f88e5cbd35ab951b0bce5a96b06bb36" category="list-text">按一下* Proce*。</block>
-  <block id="1943b315b7a1e50917c318abee014486" category="list-text">如果您選擇* Intersight assist *、請完成下列步驟：</block>
   <block id="6f6002ff113b47d720b948fdbd799d5c" category="inline-link"><block ref="6f6002ff113b47d720b948fdbd799d5c" category="inline-link-rx"></block></block>
   <block id="3aa4c250877220ced11dd5118f05b73c" category="list-text">瀏覽至您的SaaS Intersight帳戶<block ref="b140963de237118a210eda3a58c6a981" category="inline-link-rx"></block>。</block>
   <block id="66b6809a917e6f7acac28f8accbdedc3" category="list-text">按一下*目標*、* Cisco Intersight assist *、然後按* Start*。</block>
@@ -1000,8 +981,6 @@
   <block id="d0ed65e54397020ba99377dad07d0960" category="inline-link">TR-4036：FlexPod 《資料中心技術規格》</block>
   <block id="b751a075630ee799e9ae603044754240" category="list-text">*《資料中心》*。此平台是可大幅擴充的虛擬資料中心基礎架構、適用於企業工作負載應用程式、虛擬化、VDI、以及公有雲和私有雲。FlexPod包含資料中心本身的規格、如所述FlexPod<block ref="c74831bb1a85ac0f8575eb8eeac86329" category="inline-link-rx"></block>。</block>
   <block id="ec80c81f43eaed2db319aaaddeb1b47c" category="list-text">*《Express》*此平台是一款精巧的融合式基礎架構、專為遠端辦公室和邊緣使用案例而設計。FlexPod</block>
-  <block id="82da3c7bdf42770183f1b2651ae3ac0a" category="inline-link">適用於高效能Oracle RAC的精選產品。FlexPod</block>
-  <block id="ea29f1a94a5cc0b3c2459d7f61b47043" category="list-text">*《選擇》*此平台是專為高效能應用程式所打造的架構、FlexPod 例如<block ref="6aad01ba0b9744c0d680fcb06a4741ad" category="inline-link-rx"></block></block>
   <block id="2a86267621fe34bc25574c8470106b4d" category="summary">供應電源和纜線的需求最低。FlexPod</block>
   <block id="4e3a8a01051fe088c7981d79c5a6a919" category="paragraph">根據安裝「支援資料中心」組態的位置、FlexPod 對「支援資料中心」的電源需求各有不同FlexPod 。</block>
   <block id="8e1b6aff03f733f3b26f0e7b61593417" category="inline-link-macro">技術規格與參考資料：硬體元件</block>
@@ -7912,4 +7891,35 @@
   <block id="11eed465080ae72a7cd51e9e0d769a36" category="sidebar">採用Citrix XenDesktop / XenApp 7.15和VMware vSphere 6.5 Update 1的Datacenter（6000個用戶）FlexPod</block>
   <block id="d6c9d3f77fc86d19e9d1e8e0460783c8" category="sidebar">採用VMware Horizon View 7.3和VMware vSphere 6.5 Update 1的VMware Datacenter搭配Cisco UCS Manager 3.2、可容納5000人FlexPod</block>
   <block id="77adde3767ae2cc82097445aa8b15e86" category="list-text">兩個採用備援組態的10Gbps標準乙太網路交換器（建議使用Cisco Nexus 31108、並支援Cisco Nexus 3000和9000機型）</block>
+  <block id="40ad3b682c80f313282c440b74ef7360" category="paragraph"><block ref="40ad3b682c80f313282c440b74ef7360" category="inline-link-rx"></block></block>
+  <block id="d1cdbd3c8324f3afbc5b420ce471feff" category="section-title">2022年7月</block>
+  <block id="f4b185ec676b1beb34726576b20e3951" category="list-text">容量小工具現在提供更優異的叢集資料減量比率視覺效果</block>
+  <block id="451cf77b3f516b53f84c38860a146687" category="list-text">已將FC介面索引標籤新增至「網路介面」頁面</block>
+  <block id="5a2fc567d92a62161d2b6939225dc099" category="list-text">使用一般的「新儲存磁碟區」工作建立新磁碟區、現在將磁碟區空間保證設定為無、而快照保留百分比設定為0%</block>
+  <block id="f4735a0179c438df4f0652a2213627a4" category="list-text">「編輯Snapshot原則」工作下的「註解」欄位現在為選用項目、不再是必要項目</block>
+  <block id="8666295a1715993c51aadd871206b296" category="list-text">改善UI庫存與協調一致性</block>
+  <block id="c913ce3283ef4e82118b70e853725332" category="list-text">叢集容量下的Intersight容量資訊現在與System Manager一致</block>
+  <block id="351ddfe27ca97ad456ea7b228dc67218" category="list-text">新增「新增儲存虛擬機器」工作下方的核取方塊、可在建立新的管理介面時顯示所有參數、以改善使用性</block>
+  <block id="ab652f6ea9944d5915c3894a6de4a64f" category="list-text">已將傳輸協定移至低於用戶端比對、現在與System Manager一致</block>
+  <block id="f4e3ab18e9c0fc16b6bf62f0f2357c60" category="list-text">匯出原則一般頁面現在顯示存取傳輸協定</block>
+  <block id="f44e0c940713ce3079a40ba9bc222f07" category="list-text">igroup移除現在已有條件記錄</block>
+  <block id="fa4af406aa8e6bea78d3f4f656f199fe" category="list-text">在新的儲存NAS資料介面和新的儲存iSCSI資料介面下新增NAS的「容錯移轉原則」和「自動調整」參數</block>
+  <block id="5f5cca73b8e0b0dcf13ae37abd1b30a6" category="list-text">如果沒有附加任何其他磁碟區、「復原新儲存NAS智慧型磁碟區」工作現在會移除匯出原則</block>
+  <block id="85c1767724516ce4c530e386f6a8e04e" category="list-text">針對智慧型Volume和智慧型LUN工作進行增強</block>
+  <block id="0de3d10d428301dc752a4aea634acb40" category="list-text">將啟動器連接至儲存主機</block>
+  <block id="9fc1d1408b035b5f699e246b36f2e395" category="list-text">全新NetApp儲存光纖通道介面</block>
+  <block id="a5df94fc588067cf92394a3554329601" category="list-text">新的儲存IP介面</block>
+  <block id="d7e057b4be4f5aec2f39a363e6970a26" category="list-text">新的儲存LUN</block>
+  <block id="4c807515ded4b2b7b3cea9068a98c67c" category="list-text">新的儲存LUN ID</block>
+  <block id="c6751b7723c681fbbc53d1ece3f78e57" category="list-text">全新NetApp儲存NAS智慧型磁碟區</block>
+  <block id="8221f154a0cd2642f264529279893b96" category="list-text">全新NetApp儲存智慧LUN</block>
+  <block id="e86a1c0d2603c82b6b81f234dae454af" category="list-text">全新儲存Volume</block>
+  <block id="40f53794e58186747b2ca794fc115708" category="list-text">移除儲存裝置匯出原則</block>
+  <block id="92deb106459eb050b785db2fe57cce48" category="list-text">移除儲存主機</block>
+  <block id="bd400b36b257aae8e728e6440fee9fe6" category="list-text">移除儲存LUN</block>
+  <block id="020226a8130f1d7d0a9df708c3d7b600" category="list-text">移除儲存LUN ID</block>
+  <block id="93eafe4433d296a1dd07b95ce951c9a7" category="list-text">移除NetApp Storage Smart LUN</block>
+  <block id="b8a3a6101b5ada36c1e5927fd398157d" category="list-text">在部署後的程序中、選取下列選項：</block>
+  <block id="05b3bc98db36aa487224a23de09ab3be" category="admonition">選取Intersight assist時、請先記下裝置ID和請款代碼、然後再繼續。</block>
+  <block id="fd7b91f0228fe4adf25f7fca76314e8d" category="list-text">選擇* Intersight assist *並完成下列步驟：</block>
 </blocks>
