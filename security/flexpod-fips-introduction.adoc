@@ -21,13 +21,13 @@ FIPS 140-2為美國政府標準、為保護敏感資訊的硬體、軟體和韌�
 
 
 
-=== 範圍
+== 範圍
 
 本文件概述Cisco Unified Computing System（Cisco UCS）、Cisco Nexus、Cisco MDS及NetApp ONTAP FlexPod 架構的技術概況、可用於託管一或多個需要FIPS 140-2安全規範的醫療IT應用程式或解決方案。
 
 
 
-=== 目標對象
+== 目標對象
 
 本文適用於醫療產業的技術領導者、以及Cisco與NetApp合作夥伴解決方案工程師與專業服務人員。NetApp假設讀者已充分瞭解運算與儲存規模的概念、以及對醫療威脅、醫療安全、醫療IT系統、Cisco UCS及NetApp儲存系統的技術熟悉度。
 
