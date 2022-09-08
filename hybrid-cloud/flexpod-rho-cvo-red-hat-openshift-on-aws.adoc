@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/flexpod-rho-cvo-red-hat-openshift-on-aws.html 
+keywords: red hat, openshift, aws, deployment, master, worker 
+summary: 另一個自我管理的OpenShift Container Platform 4叢集會部署在AWS上做為DR站台。主節點和工作節點橫跨三個可用區域、提供高可用度。 
+---
+= AWS上的Red Hat OpenShift
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-rho-cvo-flexpod-for-openshift-container-platform-4-bare-metal-installation.html["先前版本：FlexPod 適用於OpenShift Container Platform 4裸機安裝。"]
+
+另一個自我管理的OpenShift Container Platform 4叢集會部署在AWS上做為DR站台。主節點和工作節點橫跨三個可用區域、提供高可用度。
+
+image:flexpod-rho-cvo-image10.png["錯誤：缺少圖形影像"]
+
+....
+[ec2-user@ip-172-30-164-92 ~]$ oc get nodes
+NAME                             STATUS   ROLES    AGE   VERSION
+ip-172-30-164-128.ec2.internal   Ready    worker   29m   v1.22.8+f34b40c
+ip-172-30-164-209.ec2.internal   Ready    master   36m   v1.22.8+f34b40c
+ip-172-30-165-160.ec2.internal   Ready    master   33m   v1.22.8+f34b40c
+ip-172-30-165-93.ec2.internal    Ready    worker   30m   v1.22.8+f34b40c
+ip-172-30-166-162.ec2.internal   Ready    master   36m   v1.22.8+f34b40c
+ip-172-30-166-51.ec2.internal    Ready    worker   28m   v1.22.8+f34b40c
+....
+OpenShift部署為 https://docs.openshift.com/container-platform/4.8/installing/installing_aws/installing-aws-private.html["私有叢集"^] 移轉至AWS上現有的VPC。私有OpenShift Container Platform叢集不會暴露外部端點、而且只能從內部網路存取、網際網路無法看到。使用NetApp Cloud Manager部署單節點NetApp Cloud Volumes ONTAP 支援、可為Astra Trident提供儲存後端。
+
+如需在AWS上安裝OpenShift的詳細資訊、請參閱 https://docs.openshift.com/container-platform/4.8/installing/installing_aws/installing-aws-vpc.html["OpenShift文件"^]。
+
+link:flexpod-rho-cvo-netapp-cloud-volumes-ontap.html["下一步：Cloud Volumes ONTAP NetApp"]

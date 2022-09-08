@@ -2,6 +2,31 @@
 section: hybrid-cloud
 title: 混合雲
 entries:
+- title: 採用NetApp Astra和Cisco Intersight for Red Hat OpenShift的混合雲FlexPod
+  type: solutions
+  entries:
+  - title: 解決方案總覽
+    url: "/hybrid-cloud/flexpod-rho-cvo-solution-overview.html"
+  - title: 解決方案元件
+    url: "/hybrid-cloud/flexpod-rho-cvo-solution-components.html"
+  - title: 安裝與組態
+    entries:
+    - title: 適用於OpenShift Container Platform 4裸機安裝FlexPod
+      url: "/hybrid-cloud/flexpod-rho-cvo-flexpod-for-openshift-container-platform-4-bare-metal-installation.html"
+    - title: AWS上的Red Hat OpenShift
+      url: "/hybrid-cloud/flexpod-rho-cvo-red-hat-openshift-on-aws.html"
+    - title: NetApp Cloud Volumes ONTAP
+      url: "/hybrid-cloud/flexpod-rho-cvo-netapp-cloud-volumes-ontap.html"
+    - title: 在OpenShift Container Platform上安裝Astra Control Center
+      url: "/hybrid-cloud/flexpod-rho-cvo-astra-control-center-installation-on-openshift-container-platform.html"
+  - title: 解決方案驗證
+    entries:
+    - title: 總覽
+      url: "/hybrid-cloud/flexpod-rho-cvo-solution-validation_overview.html"
+    - title: 利用遠端備份進行應用程式還原
+      url: "/hybrid-cloud/flexpod-rho-cvo-application-recovery-with-remote-backups.html"
+  - title: 結論
+    url: "/hybrid-cloud/flexpod-rho-cvo-conclusion.html"
 - title: NetApp Cloud Insights 解決方案FlexPod
   type: solutions
   entries:

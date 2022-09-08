@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="dbc336f1f1eca69b9dcbc997457166bc" category="summary">NetApp與Cisco攜手合作、提供Cisco Intersight、這是FlexPod 一套單一窗格的視覺系統、可檢視整個過程。</block>
-  <block id="220a07bd22d8383b964d4c6d90dbe241" category="doc">Cisco Intersight with NetApp ONTAP 解決方案：快速入門指南</block>
-  <block id="f639dd547fc10c6cec8e186b3a4524c8" category="paragraph">NetApp的Rachel Lithman和Jyh-Shing CHEN</block>
   <block id="341d84aa26cb4521474864e04ea2a63b" category="inline-image-macro">錯誤：缺少圖形影像</block>
   <block id="f870dce89b1a86f562fc0615d943bfa6" category="paragraph">與下列合作夥伴合作：<block ref="4d9c1ec1584e887e0af42904bd173b15" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b79795d3efc95b9976c7c5b933afce2" category="section-title">簡介</block>
@@ -14,7 +12,6 @@
   <block id="ff2e4aa830d38c99b2010a91bd562775" category="inline-link">透過Cisco Intersight assist索取目標。</block>
   <block id="6bc0022874ff4b98cf45584e525e1f00" category="paragraph">安裝Cisco Intersight assist之後、您就可以申請NetApp儲存設備和虛擬化設備。返回* Intersight目標*頁面、並新增vCenter和NetApp Active IQ Unified Manager 的目標。如需報銷程序的詳細資訊、請觀看影片<block ref="30d5424c5fce71a06fbbaa3ffc76fb0e" category="inline-link-rx"></block></block>
   <block id="c27675fd33dbae852257d83ae0b40ee3" category="admonition">請確定Active IQ Unified Manager 已啟用NetApp Sure（AIQ UM）API閘道。</block>
-  <block id="97ff7ede8d5a11036c03fe02e9edd554" category="paragraph">瀏覽至*「設定」&gt;「一般」&gt;「功能設定」*。</block>
   <block id="94a25ce3cfde50ac05004124838a8585" category="inline-image-macro">已啟用NetApp AIQ UM API閘道的快照</block>
   <block id="ad16b87ea1c3124b9265af68c137ab53" category="paragraph"><block ref="ad16b87ea1c3124b9265af68c137ab53" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5604f474d145b4043eae9c5abb20bfd2" category="paragraph">以下範例顯示NetApp AIQ UM目標是從Cisco Intersight申請的。</block>
@@ -156,7 +153,6 @@
   <block id="881413045c8af6a58c42bcc219b2ba2d" category="paragraph">若要從Cisco Intersight監控及協調NetApp儲存設備、Active IQ Unified Manager 您需要在vCenter環境中安裝NetApp功能支援與Cisco Intersight輔助虛擬應用裝置。</block>
   <block id="535c7b50cee98be8fc0e8e0894346790" category="section-title">安裝或升級NetApp Active IQ Unified Manager 產品</block>
   <block id="d3723866fd8ed566ec4269ff8a1cde80" category="inline-link-macro">NetApp Active IQ Unified Manager 產品文件</block>
-  <block id="3537e24e4745c06b41a151532f5f0cd1" category="paragraph">如果Active IQ Unified Manager 您尚未安裝或升級至更新版（建議使用最新版本、目前為9.10P1）。如需相關指示、請前往 <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>。</block>
   <block id="916e11edd7302abcc99270b63af50410" category="section-title">安裝Cisco Intersight輔助虛擬應用裝置</block>
   <block id="6d6948b0a48e475952bf18dc3895f7a3" category="inline-link">Cisco Intersight虛擬應用裝置授權、系統及網路需求</block>
   <block id="dd2e3bcd8cbadfd776b8fdcd3811c9e8" category="paragraph">確保您符合<block ref="7800eff9d9526a65a7a22ce932db0f9b" category="inline-link-rx"></block>。</block>
@@ -202,7 +198,6 @@
   <block id="7b02ea300aef2e0bff0d7f6111053284" category="cell">NetApp ONTAP</block>
   <block id="29d1db03b55072fc401d11d7d0750f61" category="cell">部分9.7P1及更新版本ONTAP</block>
   <block id="45699291c017a65a90e4bb25860f4315" category="cell">NetApp Active IQ Unified Manager</block>
-  <block id="707a0e6f55c6b411d13ca40e08c31e14" category="cell">建議使用最新版本的NetApp Active IQ Unified Manager 產品（目前為9.10P1）</block>
   <block id="5dc8e3707996259deb52abdfee00eac9" category="cell">NetApp儲存陣列</block>
   <block id="00b515e766e1cba805399ff9eb813a8f" category="cell">支援所有的支援功能、包括所有的支援功能、支援所有的支援功能、包括更新版本的支援ONTAP ASA AFF FAS ONTAP</block>
   <block id="1f8e8bd6bc1c4895f936485882fbdf9d" category="cell">虛擬化Hypervisor</block>
@@ -7780,7 +7775,6 @@
   <block id="9651c3a3b7cbc999c2c50c39dbf61c04" category="sidebar">混合雲FlexPod 與功能</block>
   <block id="7cb27dbb321a2dda7b1a59417ac87d24" category="sidebar">適用於VDI FlexPod</block>
   <block id="e24bc29daa40702c050f7f3b61476c6f" category="sidebar">以功能為本的醫療照護FlexPod</block>
-  <block id="d90239d336ad9bbae46de5d6581486dd" category="sidebar">Cisco Intersight with NetApp ONTAP 解決方案儲存快速入門指南</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="b1b5d8cebde8af104d3749c7d984f391" category="sidebar">可解析度FlexPod</block>
   <block id="1f1a6514305e31e63aa9ce9e1338aa48" category="sidebar">部分技術規格FlexPod</block>
@@ -7922,4 +7916,516 @@
   <block id="b8a3a6101b5ada36c1e5927fd398157d" category="list-text">在部署後的程序中、選取下列選項：</block>
   <block id="05b3bc98db36aa487224a23de09ab3be" category="admonition">選取Intersight assist時、請先記下裝置ID和請款代碼、然後再繼續。</block>
   <block id="fd7b91f0228fe4adf25f7fca76314e8d" category="list-text">選擇* Intersight assist *並完成下列步驟：</block>
+  <block id="8c8498202f001fd26ea4173271ec8a24" category="paragraph">如果Active IQ Unified Manager 您尚未安裝或升級至更新版（需要最新版本、目前為9.11 GA）。如需相關指示、請前往 <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>。</block>
+  <block id="8bab215794a736f6f876eac0eeb23923" category="section-title">2022年8月</block>
+  <block id="d8f8a4fb7ebbb1310ca5d01f756e92d0" category="admonition">必須升級至NetApp Active IQ Unified Manager 的更新版本9.11 GA、才能確保與最新版本的相容性和完整功能。如需此版本的已知問題清單、請參閱 <block ref="1e93e2dfe5ecbece98249e8c1a59713c" category="inline-xref-macro-rx"></block>。</block>
+  <block id="42bd0f13ec20ddd3964630f6646c2136" category="list-text">更新叢集可用容量計算、以符合System Manager</block>
+  <block id="c380b3320025347a929239a0073327b2" category="list-text">更新叢集一般頁面、在填入效能資料之前隱藏效能指標摘要</block>
+  <block id="613a310e40c6bd822fdcfcd0eba92643" category="list-text">修復了偶爾導致頁面掛起的叢集一般頁面UI問題</block>
+  <block id="30ffb8174b79d2e22a54dd5e500ff70f" category="list-text">新增CIFS共用、CIFS服務、qtree及SVM SnapMirror原則至後端庫存。</block>
+  <block id="e146fa63a38e675821a4c48bf62b287d" category="list-text">已將共用和qtree新增至「邏輯庫存」區段下方的UI導覽功能表</block>
+  <block id="5ca8d8157671c02d6daa94b3aea5fbeb" category="list-text">新增共享區為所選儲存VM的索引標籤</block>
+  <block id="9cdaae7b657bf23b6c320b1cd28c4c36" category="list-text">如果儲存VM已啟用CIFS、則會在Storage VM General（儲存VM一般）索引標籤上新增CIFS服務資訊</block>
+  <block id="bd6cfb91907acb62b03084843321ec2a" category="list-text">新增了叢集檢查頁面、可讓使用者驗證NetApp儲存系統的組態是否符合最佳實務做法</block>
+  <block id="558ab0bef1894a7a726109d36632d09d" category="section-title">已知問題</block>
+  <block id="fe9b57b6a58a76519ec48d5a08f3c9b0" category="list-text">為了確保Intersight儲存設備庫存資料在資料收集過程中不會受到影響、任何不受支援ONTAP 的視覺叢集（例如ONTAP 、更新版本號：1.7P1）都必須從Active IQ Unified Manager 該版本中移除（AIQUM）。</block>
+  <block id="e8c4ec43528d3a582dd7b32616a88eb9" category="list-text">所有宣稱的目標都需要最低版本的AIQUM（9.11）才能FlexPod 順利完成、以利執行整合式系統互通性查詢。</block>
+  <block id="b1b25033ea7463aca79f95ef822af033" category="list-text">如果使用FQDN將不完整的叢集新增至AIM-UM、則不會填入「儲存設備庫存檢查」頁面。ONTAP使用者必須使用ONTAP IP位址將靜態叢集新增至AIM-UM。</block>
+  <block id="914be32cb08524e05323b3adb9bc0c3f" category="paragraph">在NetApp IQ Unified Manager中、瀏覽至*設定&gt;一般&gt;功能設定*。</block>
+  <block id="ad180dc1b01f328b8c0230d111d11d5d" category="cell">需要最新版本的NetApp Active IQ Unified Manager 產品（目前為9.11 GA）</block>
+  <block id="1f0c1e64448622e1d184d478ed9ef6d1" category="doc">Cisco Intersight with NetApp Storage快速入門指南</block>
+  <block id="e47450d255414e1f34605a681b2919e6" category="summary">本節說明本解決方案的各種元件。</block>
+  <block id="32e0d2b797e6706a73e8146d103572c7" category="inline-link-macro">上一篇：解決方案總覽。</block>
+  <block id="eb2be7a91b02c0827e8e6228cd75a97f" category="paragraph"><block ref="eb2be7a91b02c0827e8e6228cd75a97f" category="inline-link-macro-rx"></block></block>
+  <block id="b13d8cee842e1d64a7a4366fac2978b4" category="paragraph">支援針對虛擬化與非虛擬化解決方案、提供一套已定義的硬體與軟體、為其奠定整合基礎。FlexPod此解決方案包括NetApp產品、Cisco Nexus網路、Cisco MDS儲存網路、Cisco Unified Computing System（Cisco UCS）FlexPod ONTAP 。此設計相當靈活、可將網路、運算和儲存設備放入單一資料中心機架、或是根據客戶的資料中心設計進行部署。連接埠密度可讓網路元件容納多種組態。</block>
+  <block id="aabd9360d69086aa78c24d087317998e" category="section-title">Astra Control</block>
+  <block id="b3bb152d74e902e8930652c5a4dd6041" category="paragraph">Astra Control提供應用程式感知資料保護服務、適用於公有雲和內部部署環境中的雲端原生應用程式。Astra Control為您在Kubernetes上執行的容器化應用程式提供資料保護、災難恢復和移轉功能。</block>
+  <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
+  <block id="c66fd3d61ca9e5331b05a6bd70d4a1df" category="paragraph">Astra Control為Kubernetes應用程式資料生命週期管理提供關鍵功能：</block>
+  <block id="842f680f400de3b6ee92728ef695d366" category="list-text">自動管理持續儲存</block>
+  <block id="a4c47a67cd13bb8c69c7dfbb777482d8" category="list-text">建立應用程式一致的隨需快照與備份</block>
+  <block id="7617bf0237311cb0ed801df52bb177cc" category="list-text">自動化原則導向的快照與備份作業</block>
+  <block id="21993e1968d08893f354bed6738af100" category="list-text">在混合雲設定中、將應用程式和相關資料從一個Kubernetes叢集移轉到另一個叢集</block>
+  <block id="5b032bf60bb8730b0e9ecc6b50d8965e" category="list-text">將應用程式複製到相同的K8s叢集或另一個K8s叢集</block>
+  <block id="b596eced9c4bc9f16313b3284fb13e58" category="list-text">視覺化應用程式保護狀態</block>
+  <block id="6df472bda93f54acbbf206fa2d41e28f" category="list-text">提供圖形化使用者介面和完整的REST API清單、可從現有的內部工具實作所有保護工作流程。</block>
+  <block id="b59f8a067fecf2cfbbc4d3b401d296e0" category="paragraph">Astra Control為您的容器化應用程式提供單一窗口視覺化功能、讓您深入瞭解在Kubernetes叢集上建立的相關資源。您可以使用單一入口網站、在所有雲端或所有資料中心檢視所有叢集、所有應用程式。您可以在所有環境（內部部署或公有雲）中使用Astra Control API來實作資料管理工作流程。</block>
+  <block id="ee47d1958f4c072c5167bf6b0f0a3f51" category="paragraph">下圖顯示Astra Control功能。</block>
+  <block id="1a6732bb27af95bdf03fb9cb071efccb" category="paragraph"><block ref="1a6732bb27af95bdf03fb9cb071efccb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="71bf9ca6a7b88a4ef85430ead5e3b166" category="section-title">Astra Control消費模式</block>
+  <block id="f243566699578a9ff810689c2063fea0" category="paragraph">Astra Control提供兩種消費模式：</block>
+  <block id="c21e5f421922cf6741556e0df776fc32" category="list-text">* Astra Control Service.* NetApp所提供的全託管服務、可在Google Kubernetes Engine（GKE）、Azure Kubernetes Service（KS）中、提供Kubernetes叢集的應用程式感知資料管理功能。</block>
+  <block id="a186d51e6c0fdf7cf244ebe443eb218a" category="list-text">* Astra Control Cent.*自行管理的軟體、可針對在內部部署和混合雲環境中執行的Kubernetes叢集、提供應用程式感知資料管理功能。</block>
+  <block id="da218a5bb418a0aa8a29cea5846e0dfc" category="paragraph">本技術報告運用Astra Control Center來管理Kubernetes上執行的雲端原生應用程式。</block>
+  <block id="fa05d0c0435a45f7abc87843c7a0289a" category="paragraph">下圖顯示Astra Control架構。</block>
+  <block id="f14aca58e9bc1cec3baa80ff8a0b431c" category="paragraph"><block ref="f14aca58e9bc1cec3baa80ff8a0b431c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="086e6c16e3fe8e13c336612ef636aa02" category="section-title">Astra Trident</block>
+  <block id="e7862e4a1b1c0e48518ef7f2dbbb569b" category="inline-link">容器儲存介面（SCSI）</block>
+  <block id="e9e07505524402c434cb37baf0452959" category="paragraph">Astra Trident是一款開放原始碼、完全支援的儲存協調工具、適用於Container和Kubernetes配送。它從一開始就設計成使用業界標準介面（例如）來協助您滿足容器化應用程式的持續需求<block ref="11b176de1fd0554cff9c8a0e426a44c0" category="inline-link-rx"></block>。有了Astra Trident、微服務和容器化應用程式就能充分利用NetApp儲存系統產品組合所提供的企業級儲存服務。</block>
+  <block id="e9fe0fa2a72714d675e5bd084dea14bc" category="inline-link">Astra Trident文件。</block>
+  <block id="d0cc985f877a5098e0a069b8c9928ada" category="paragraph">Astra Trident部署在Kubernetes叢集上做為Pod、為Kubernetes工作負載提供動態儲存協調服務。它可讓您的容器化應用程式從NetApp廣泛的產品組合中快速輕鬆地使用持續儲存設備、包括NetApp ONTAP ®（NetApp AFF ®、NetApp FAS ®、NetApp ONTAP Select ®、Cloud、 以及Amazon FSX for NetApp ONTAP （NetApp）、NetApp Element 支援各種功能的功能、包括NetApp SolidFire 支援、Azure NetApp Files 以及支援各種功能的功能、例如Google Cloud上的Cloud Volume Service、以及AWS上的Cloud Volume Service。在不穩定的環境中、Astra Trident可用於動態配置及管理以NetApp支援的容器的持續Volume、這些容器以NetApp的支援功能為後盾、而LUN則裝載在諸如NetApp的不穩定區和不穩定區等儲存平台上、例如NetApp的不穩定區和不穩定區。FlexPod FlexVol ONTAP AFF FAS Cloud Volumes ONTAPTrident也在Astra Control提供的應用程式保護方案的實作中扮演關鍵角色。如需Astra Trident的詳細資訊、請參閱<block ref="a4e84d4448e67c302cfd652fac18bef7" category="inline-link-rx"></block></block>
+  <block id="6c5e678cf147ef415c2e584ba561bce7" category="section-title">儲存後端</block>
+  <block id="0758e335e69d93b347e2ccbb437ef2e3" category="paragraph">若要使用Astra Trident、您需要支援的儲存後端。Trident後端定義Trident與儲存系統之間的關係。它告訴Trident如何與該儲存系統通訊、以及Trident如何從該儲存系統配置磁碟區。Trident會自動從後端提供符合儲存類別所定義需求的儲存資源池。</block>
+  <block id="264d52a2ee63227a064803bbca685d76" category="list-text">不再是儲存後端。ONTAP AFF FAS作為儲存軟體與硬體平台ONTAP 、支援核心儲存服務、支援多種儲存存取傳輸協定、以及儲存管理功能、例如NetApp Snapshot複本與鏡射。</block>
+  <block id="570fa99ce4fbf8deb198b97a6931d63a" category="list-text">儲存後端Cloud Volumes ONTAP</block>
+  <block id="8035d5d39b2b48f6ec1a3133b688513c" category="inline-link">Astra資料儲存區</block>
+  <block id="669f585974ae8a7aad2324c8ea7a3c98" category="list-text"><block ref="5b5d917f19a2849fca0bcf9ca6a27dec" category="inline-link-rx"></block> 儲存後端</block>
+  <block id="0f0b99ea2f70cd363c2c6a279f74e760" category="section-title">NetApp Cloud Volumes ONTAP</block>
+  <block id="17c646c0f720b8a05c6406960057d084" category="paragraph">NetApp Cloud Volumes ONTAP 功能是軟體定義的儲存產品、可為檔案和區塊工作負載提供進階資料管理功能。有了VMware、您就能最佳化雲端儲存成本並提升應用程式效能、同時強化資料保護、安全性和法規遵循。Cloud Volumes ONTAP</block>
+  <block id="950a30dbe6160d51c93dd8570573b0b1" category="paragraph">主要效益包括：</block>
+  <block id="18b6826f1d119f55347e1db9badac2c3" category="list-text">運用內建的重複資料刪除技術、資料壓縮、精簡配置及複製技術、將儲存成本降至最低。</block>
+  <block id="61c29f4de87ac3f0e40f3b743f97c61a" category="list-text">確保雲端環境發生故障時、企業的可靠性和持續營運。</block>
+  <block id="dfa5b6bd94a406fe54edbce47e68d496" category="list-text">NetApp領先業界的SnapMirror複寫技術可將內部部署的資料複寫到雲端、因此您可以輕鬆取得次要複本、以供多種使用案例使用。Cloud Volumes ONTAP</block>
+  <block id="54eb3027a5a5c6efd7867ee34d94ef85" category="list-text">此外、還整合了支援資料的功能、可提供備份與還原功能、以保護雲端資料、並可長期歸檔。Cloud Volumes ONTAP Cloud Backup Service</block>
+  <block id="012f898c6125c28106c72227bcb70637" category="list-text">在高效能與低效能儲存資源池之間隨需切換、而不需將應用程式離線。</block>
+  <block id="9a06d9749bd65ba69b5840223871c79b" category="list-text">使用NetApp SnapCenter 功能確保Snapshot複本的一致性。</block>
+  <block id="286994e9e1269d98948cb886c01ca156" category="list-text">支援資料加密、並提供防範病毒和勒索軟體的功能。 Cloud Volumes ONTAP</block>
+  <block id="263abbafbe140ca10e57e519da88e057" category="list-text">與Cloud Data Sense整合可協助您瞭解資料內容並識別敏感資料。</block>
+  <block id="8ee8d65142a1b5ef6e397b75587b4e61" category="section-title">Cloud Central</block>
+  <block id="052efd24090fd11c3d6dfca62d719cf1" category="inline-link">Cloud Central：</block>
+  <block id="51b94a4b2b8a038f10a8d101a622c967" category="paragraph">Cloud Central提供集中位置、可存取及管理NetApp雲端資料服務。這些服務可讓您在雲端上執行關鍵應用程式、建立自動化的災難恢復站台、備份資料、以及在多個雲端之間有效地移轉和控制資料。如需詳細資訊、請參閱<block ref="4f07a0cbf03fd0617f920e5ca4c0c63b" category="inline-link-rx"></block></block>
+  <block id="315474a8ef79b74899073fc979f12da4" category="section-title">Cloud Manager</block>
+  <block id="027964ddd1801b04e51766bf73b36910" category="paragraph">Cloud Manager是企業級SaaS型管理平台、可讓IT專家和雲端架構設計師使用NetApp的雲端解決方案、集中管理混合式多雲端基礎架構。它提供集中式系統、可檢視及管理內部部署與雲端儲存設備、支援混合式、多個雲端供應商與帳戶。如需詳細資訊、請參閱<block ref="78eaae3c42f31156debba144f4ad7dca" category="inline-link-rx"></block>。</block>
+  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="section-title">連接器</block>
+  <block id="2c6eb8870c8b80a0bddf6fe220536ece" category="paragraph">Connector是一個執行個體、可讓Cloud Manager管理公有雲環境中的資源和程序。需要連接器才能使用Cloud Manager提供的許多功能。連接器可部署在雲端或內部部署網路中。</block>
+  <block id="b5da69e8a6f5548f4b32964f4c4b362d" category="paragraph">下列位置支援連接器：</block>
+  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="list-text">AWS</block>
+  <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">Microsoft Azure</block>
+  <block id="56ef2682280ac110060b881925a87b80" category="list-text">Google Cloud</block>
+  <block id="695e0a47c56539eb9bcf6290d1c797d8" category="list-text">在您的內部環境中</block>
+  <block id="9a04c053eaff60b85a2cae86b2356445" category="inline-link">此連結。</block>
+  <block id="bf991f37b2864ddc62c54178aa817020" category="paragraph">若要深入瞭解Connector、請參閱<block ref="83c4b85d01cddc8809f4a9cd744295ca" category="inline-link-rx"></block></block>
+  <block id="f3f740b379cfba7b308b18548a38a0b8" category="paragraph">NetApp雲端基礎架構監控工具Cloud Insights 、可讓您監控由Astra Control Center管理的Kubernetes叢集效能與使用率。可將儲存使用量與工作負載建立關聯。Cloud Insights當您在Cloud Insights Astra控制中心啟用「支援不中斷連線」時、遙測資訊會顯示在Astra控制中心UI頁面中。</block>
+  <block id="4d2abceee90713acea40a3f24ce8e1fe" category="paragraph">NetApp Active IQ Unified Manager 功能可讓您透過ONTAP 重新設計的直覺式單一介面、監控您的不只是一個儲存叢集、還能提供社群智慧和AI分析的情報。它提供完整的作業、效能、以及對儲存環境及其上執行之虛擬機器（VM）的主動深入見解。當儲存基礎架構發生問題時、Unified Manager可通知您有關問題的詳細資料、以協助識別根本原因。VM儀表板可讓您檢視VM的效能統計資料、以便從VMware vSphere主機到網路、最後到儲存設備的整個I/O路徑進行調查。有些事件也提供補救行動、可用來修正問題。您可以設定事件的自訂警示、以便在發生問題時、透過電子郵件和SNMP設陷通知您。利用NetApp可預測容量和使用趨勢、在發生問題之前主動採取行動、避免因應短期決策而導致長期的額外問題、藉此規劃使用者的儲存需求。Active IQ Unified Manager</block>
+  <block id="eb305742decf50535e6fd77239f604b7" category="section-title">Cisco Intersight</block>
+  <block id="f9eb988a1a7d2a12e6669f2b10bae221" category="paragraph">Cisco Intersight是SaaS平台、可針對傳統和雲端原生的應用程式和基礎架構、提供智慧型自動化、監控及最佳化功能。此平台可協助IT團隊推動變革、並提供專為混合雲設計的營運模式。</block>
+  <block id="9deac9d4663ff0bab9a7e0f0a6bfcb70" category="paragraph">Cisco Intersight提供下列優點：</block>
+  <block id="b35cf9b4c3059c69c5e99830469ef014" category="list-text">*更快的交付速度。*由於採用敏捷的軟體開發模式、因此可從雲端或客戶資料中心以服務形式提供、並提供頻繁更新和持續創新的服務。如此一來、客戶就能專注於加速交付業務線。</block>
+  <block id="b2fd8ed8439a0be7861c50572a9d6a8d" category="list-text">*簡化營運。*使用單一安全的SaaS交付工具、搭配通用的庫存、驗證和API、在完整堆疊和所有位置上運作、消除跨團隊的封閉環境、進而簡化營運。從內部部署的實體伺服器與Hypervisor管理、到VM、K8s、無伺服器、自動化、 在內部部署和公有雲之間進行最佳化和成本控制。</block>
+  <block id="f0a289280071311ecbfa5b7165cad617" category="list-text">*持續最佳化。*使用Cisco Intersight提供的智慧功能、跨越每個層面、以及Cisco技術支援中心、持續最佳化您的環境。這項智慧功能已轉換成建議的可自動執行的行動、讓您能夠即時因應每項變更：從移動工作負載、監控實體伺服器的健全狀況、到自動調整K8s叢集規模、再到您使用的公有雲的成本降低建議。</block>
+  <block id="c7147476332f1e44f269416f51c15e19" category="paragraph">Cisco Intersight有兩種管理作業模式：UCSM託管模式（UMM）和Intersight託管模式（IMMM）。在Fabric互連的初始設定期間、您可以為光纖附加的Cisco UCS系統選取原生Umm或IMMM。在此解決方案中、使用原生UMM。</block>
+  <block id="0c73bb7902b2e7c97ea82b754aff5f99" category="paragraph">下圖顯示Cisco Intersight儀表板。</block>
+  <block id="468f3a1a6f7595918821e9176af66e32" category="paragraph"><block ref="468f3a1a6f7595918821e9176af66e32" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fd89bb4228981d3b22187eb451421cd6" category="section-title">Red Hat OpenShift Container Platform</block>
+  <block id="c523c0cdd3813f2fcf747b074f1e4e38" category="paragraph">Red Hat OpenShift Container Platform是一個容器應用平台、可將CRI-O與Kubernetes結合在一起、並提供API與Web介面來管理這些服務。CRI-O是Kubernetes Container執行時間介面（CRI）的實作、可透過開放容器方案（OCI）相容的執行時間來啟用。這是使用Docker做為Kubernetes執行時間的輕量化替代方案。</block>
+  <block id="6d2baea0b33b07f63dfdb92938fce74e" category="paragraph">OpenShift Container Platform可讓客戶建立及管理容器。容器是獨立於作業系統和基礎架構的獨立程序、可在自己的環境中執行。OpenShift Container Platform可協助開發、部署及管理以容器為基礎的應用程式。它提供自助服務平台、可隨需建立、修改及部署應用程式、進而加快開發與發行生命週期。OpenShift Container Platform採用微服務架構、採用小型分離式單元、可共同運作。它可在Kubernetes叢集上執行、其中含有儲存在etcd中的物件相關資料、這是一個可靠的叢集式金鑰值儲存區。</block>
+  <block id="acc70e57eb6b97bc301539cb38d1966d" category="paragraph">下圖概述Red Hat OpenShift Container平台。</block>
+  <block id="0c7a9e2f08624e7b87913ecf9286d71e" category="paragraph"><block ref="0c7a9e2f08624e7b87913ecf9286d71e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a89cbdf63053889346eff5b606980423" category="section-title">Kubernetes基礎架構</block>
+  <block id="529e287e2f207422d4270595b5a5aa04" category="paragraph">在OpenShift Container Platform中、Kubernetes可管理一組CRA-O執行時間主機上的容器化應用程式、並提供部署、維護和應用程式擴充的機制。CRI-O服務套件、具現化及執行容器化應用程式。</block>
+  <block id="6066bcf83f07d47fe995bf7112f82a47" category="paragraph">Kubernetes叢集由一或多個主節點和一組工作節點組成。此解決方案設計包括硬體和軟體堆疊的高可用度（HA）功能。Kubernetes叢集設計為以HA模式執行、其中包含三個主要節點和至少兩個工作節點、以協助確保叢集沒有單點故障。</block>
+  <block id="380d4d789a03fedcd1c1c9c2d39e6e5c" category="section-title">Red Hat Core作業系統</block>
+  <block id="4b0daa653b908f2e95efbf63345f631b" category="paragraph">OpenShift Container Platform使用Red Hat Enterprise Linux CoreOS（RMCOS）、這是一套以容器為導向的作業系統、結合了CoreOS和Red Hat原子Host作業系統的部分最佳功能。RMCOS是專為執行OpenShift Container Platform的容器化應用程式所設計、可搭配新工具使用、以提供快速安裝、以營運者為基礎的管理、以及簡化的升級作業。</block>
+  <block id="a744bb3e6a86a7d585241c661dab35b4" category="paragraph">RMCOS包括下列功能：</block>
+  <block id="6e9235741135970ca611d4fc2636336b" category="list-text">OpenShift Container Platform將其作為初始開機系統組態、用於初次啟動及設定機器。</block>
+  <block id="b28aadf6b337cb42536413edfc6b155c" category="list-text">CRI-O是Kubernetes原生Container執行時間實作、可與作業系統緊密整合、提供有效率且最佳化的Kubernetes體驗。CRI-O提供執行、停止及重新啟動容器的設施。它完全取代OpenShift Container Platform 3中使用的Docker Container Engine。</block>
+  <block id="40955f5c2ef6e950fbfa487455a96e02" category="list-text">Kubernetes的主要節點代理程式Kubelet負責啟動及監控容器。</block>
+  <block id="ed6822c6f8960bb32c4ed03a66869011" category="section-title">VMware vSphere 7.0</block>
+  <block id="9dd822b8b4981c38b7475545d846d8be" category="paragraph">VMware vSphere是一套虛擬化平台、可將大量的基礎架構（包括CPU、儲存設備和網路等資源）、整體管理為無縫、多功能且動態的作業環境。與管理個別機器的傳統作業系統不同、VMware vSphere會將整個資料中心的基礎架構集合在一起、建立一個資源強大的單一儲存設備、以便快速動態地分配給任何需要的應用程式。</block>
+  <block id="1a57f6c59b4f815aab8aa1b477096309" category="paragraph">如需詳細資訊、請參閱<block ref="132550c60ca513f9467cdf8b8e5be374" category="inline-link-rx"></block>。</block>
+  <block id="b6182361fe83a7b5550df8ce4e673022" category="section-title">VMware vSphere vCenter</block>
+  <block id="eae141b11103b82e8d72fd508dad3016" category="paragraph">VMware vCenter Server可從單一主控台統一管理所有主機和VM、並集合叢集、主機和VM的效能監控。VMware vCenter Server可讓系統管理員深入瞭解運算叢集、主機、VM、儲存設備、來賓作業系統、 以及虛擬基礎架構的其他重要元件。VMware vCenter可管理VMware vSphere環境中的豐富功能集。</block>
+  <block id="1257ecda4a37b70ec7542079b2f9e13c" category="section-title">硬體與軟體版本</block>
+  <block id="6e306cef9d67c5a67ca5930c4eea0af7" category="inline-link">Cisco UCS硬體相容清單。</block>
+  <block id="472426c86933d812f902d54eed00190c" category="paragraph">此解決方案可延伸至FlexPod 任何執行支援軟體、韌體和硬體版本的支援環境、如中所定義<block ref="f0e87d28a2a99025f9c80d8d1bdd0531" category="inline-link-rx"></block> 和<block ref="3732666ee2ac4a00c2a6760c99004ecc" category="inline-link-rx"></block> OpenShift叢集以FlexPod 裸機形式安裝在VMware vSphere上。</block>
+  <block id="4f5740fc0abe61afc192bb911341a97c" category="paragraph">管理多個OpenShift（k8s）叢集時、只需要使用單一Astra Control Center執行個體、而Trident SCSI則安裝在每個OpenShift叢集上。Astra Control Center可安裝在任何OpenShift叢集上。在本解決方案中、Astra Control Center安裝在OpenShift裸機叢集上。</block>
+  <block id="b0032451b6f7b8e5e412cb5f82a4da0a" category="paragraph">下表列出FlexPod OpenShift的支援軟硬體版本。</block>
+  <block id="deb10517653c255364175796ace3553f" category="cell">產品</block>
+  <block id="2217a73f220cd96bb2bc674cd4d8da67" category="cell">Cisco UCS Fabric Interconnects 6454.</block>
+  <block id="b9faa673913f79bcfe8fc377629ab36b" category="cell">4.1（3c）</block>
+  <block id="e2fea0bd3c5a191ab48c9c90fd4c4c8b" category="cell">Cisco UCS B200 M5伺服器</block>
+  <block id="3c16dc6e4994c02025537635379f5c21" category="cell">Cisco Nexus 9336C-FX2 NX-OS</block>
+  <block id="71ef8bda0f6a317641f393b177a247cd" category="cell">9.3（8）</block>
+  <block id="11efa46f237387b311e6ed482756ac49" category="cell">9.11.1.</block>
+  <block id="12c17259bf3f3b36e970c9e3abbc6b43" category="cell">NetApp Astra控制中心</block>
+  <block id="63355c54bd7e8ff73915da41610ec6f7" category="cell">22.04.0</block>
+  <block id="3dda76b2029bed78e1e8d507a008c774" category="cell">NetApp Astra Trident SCSI外掛程式</block>
+  <block id="13bcbd2102f5a2f8d8f403a286a53f91" category="cell">9.11.</block>
+  <block id="2654ea741947ea67de78ffec09b5d13f" category="cell">vSphere ESXi</block>
+  <block id="ba27499f2190dd5e4b91917cb1a34016" category="cell">7.0（U2）</block>
+  <block id="09c799887b55f536c22e1344ff72e21f" category="cell">VMware vCenter應用裝置</block>
+  <block id="3dab94a3335186b7fc7a7769729e2d1f" category="cell">7.0 U2b</block>
+  <block id="fab735c206753ca8f75f495b50e8bd51" category="cell">Cisco Intersight輔助虛擬應用裝置</block>
+  <block id="8d35abcbb3ffaa92e615d991eeb769e8" category="cell">1.0.9-342.</block>
+  <block id="4ef2dcb544f4c7e2a832081732cf434c" category="cell">OpenShift Container平台</block>
+  <block id="622fbbcf746903b903f2af5462c8550a" category="cell">4.9</block>
+  <block id="1e9a06ef5944b218017c8b58b400327d" category="cell">OpenShift Container Platform Master Node</block>
+  <block id="7e97f647a14224330e23fe5a1697b534" category="cell">RMCOS 4.9</block>
+  <block id="2fd8da0a76b79da3083d61519e8d17c0" category="cell">OpenShift Container Platform Worker Node</block>
+  <block id="7860ea8f92b7efc5370436b2ac16d19c" category="paragraph">下表列出AWS上OpenShift的軟體版本。</block>
+  <block id="19b4d1bdb41036cb2e66f3253d60f778" category="cell">主要執行個體類型：M5.xLarge</block>
+  <block id="274b68192b056e268f128ff63bfcd4a4" category="cell">不適用</block>
+  <block id="30c42cc47da9aa255f6e7cc05b4846b4" category="cell">工作者執行個體類型：M5.Large</block>
+  <block id="6adc53a1c7bfdc84db888d91e67f6eb0" category="cell">虛擬私有雲傳輸閘道</block>
+  <block id="e6b251b0056db702f87168d58f035d17" category="inline-link-macro">下一步：FlexPod 適用於OpenShift Container Platform 4裸機安裝。</block>
+  <block id="8e0821bded9c5bf56c2be43d457cdce6" category="paragraph"><block ref="8e0821bded9c5bf56c2be43d457cdce6" category="inline-link-macro-rx"></block></block>
+  <block id="dc6c419f6f79fe4f1d72690da2e59b43" category="summary">有了Astra、您就能取得完整的應用程式一致備份、以便將應用程式的資料還原至在內部部署資料中心或公有雲上執行的不同Kubernetes叢集。若要驗證成功的應用程式還原、請模擬FlexPod 執行於支援系統上的應用程式發生內部部署故障、並使用遠端備份將應用程式還原至雲端上執行的K8s叢集。</block>
+  <block id="5867b8e6979e602059ba59d6e3736a5c" category="doc">利用遠端備份進行應用程式還原</block>
+  <block id="75ad3e486123e096429222bc734835bc" category="inline-link-macro">上一篇：解決方案驗證總覽。</block>
+  <block id="c9fc3dd44194481a892604c99ce7ce0b" category="paragraph"><block ref="c9fc3dd44194481a892604c99ce7ce0b" category="inline-link-macro-rx"></block></block>
+  <block id="3a55656bd3f20ee729beef62812f5d02" category="paragraph">有了Astra、您就能取得完整的應用程式一致備份、以便將應用程式的資料還原至在內部部署資料中心或公有雲上執行的不同Kubernetes叢集。</block>
+  <block id="428dec8227d7428fa29d0b2f4133cf53" category="paragraph">若要驗證成功的應用程式還原、請模擬FlexPod 執行於支援系統上的應用程式發生內部部署故障、並使用遠端備份將應用程式還原至雲端上執行的K8s叢集。</block>
+  <block id="49fcad8238c8f88a4434a2cd29a1e24e" category="inline-link">Argo CD</block>
+  <block id="8d9015d7f31b70763327a70890a3bd01" category="paragraph">範例應用程式是使用MySQL做為資料庫的價目表應用程式。為了自動化部署、我們使用了<block ref="ad8e3f3de012bf7c1ae965f01e3093d2" category="inline-link-rx"></block> 工具：Argo CD是Kubernetes的宣告式GitOps持續交付工具。</block>
+  <block id="aeca73786ef87eac84d8a2d59e9e7e52" category="list-text">登入內部部署的OpenShift叢集、然後建立名為「argocd」的新專案。</block>
+  <block id="eff5a8116e0b1c6747475076c185f1a9" category="paragraph"><block ref="eff5a8116e0b1c6747475076c185f1a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf096200a4e51e0a847219c159ff94db" category="list-text">在作業系統集線器中、搜尋「argocd」、然後選取「Argo CD operator」。</block>
+  <block id="6c27b5c03610a3ee7694d74a1dd15973" category="paragraph"><block ref="6c27b5c03610a3ee7694d74a1dd15973" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bbfe72b9bf15eafac1d4c55a94c0cf93" category="list-text">在「argocd」命名空間中安裝運算子。</block>
+  <block id="06c999261033f3499d5be9d341a16a59" category="paragraph"><block ref="06c999261033f3499d5be9d341a16a59" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18c3da749f2569aed37b9dc111c30635" category="list-text">移至運算子、然後按一下「Create ArgoCD（建立ArgoCD）」。</block>
+  <block id="6a65fdd1ff107a47825be2df0c895ed8" category="paragraph"><block ref="6a65fdd1ff107a47825be2df0c895ed8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e3eb16d925a9a797f9c5dc06bc16c2b2" category="list-text">若要在「argocd」專案中部署Argo CD執行個體、請提供名稱、然後按一下「Create（建立）」。</block>
+  <block id="3c6486785093e7ea0e922a7ed901c1b0" category="paragraph"><block ref="3c6486785093e7ea0e922a7ed901c1b0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7fdd09a389647d4abe31fa53d00827a1" category="list-text">若要登入Argo CD、預設使用者為admin、密碼位於名為「argocd-NetApp-cluster」的秘密檔案中。</block>
+  <block id="85c4294dc7cfa845c7a19913483f4633" category="paragraph"><block ref="85c4294dc7cfa845c7a19913483f4633" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cdc1b26a5fdad11390c63e209eeee0b9" category="list-text">從側功能表中、選取「Routes」（路由）&gt;「Location」（位置）、然後按一下「argocd」路由的URL。輸入使用者名稱和密碼。</block>
+  <block id="75e4e2e264f2d5c258b3162939b388c2" category="paragraph"><block ref="75e4e2e264f2d5c258b3162939b388c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ff827f48f751fb860a0923ade46b20c6" category="list-text">透過CLI將內部部署OpenShift叢集新增至Argo CD。</block>
+  <block id="ef08a0a136ab22e4e5fb4f1df926d525" category="list-text">在ArgoCD UI中、按一下「New APP（新應用程式）」、然後輸入應用程式名稱和程式碼儲存庫的詳細資料。</block>
+  <block id="b5637435fca8339f6fb0c48c7a7e543f" category="paragraph"><block ref="b5637435fca8339f6fb0c48c7a7e543f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4d5abe3d84025e992ddc2be4cf12d65d" category="list-text">進入OpenShift叢集、應用程式將與命名空間一起部署。</block>
+  <block id="7f7b19a5851bee1fc93338962b437664" category="paragraph"><block ref="7f7b19a5851bee1fc93338962b437664" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="09527a7f5f469605a1087d89c6abc896" category="list-text">若要在內部部署OpenShift叢集上部署應用程式、請按一下同步。</block>
+  <block id="d241ebf51a2cd6f60adb312f8c0bcffc" category="paragraph"><block ref="d241ebf51a2cd6f60adb312f8c0bcffc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cee74bcd00d7e1a1c83b9a074c4cf5ff" category="list-text">在OpenShift Container Platform主控台中、移至Project Pricelist、然後在Storage下確認PVc的名稱和大小。</block>
+  <block id="36693d6826be06f0f575f1c5a552e48b" category="paragraph"><block ref="36693d6826be06f0f575f1c5a552e48b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6fac36b94adad2d1fa2dba595bad0e21" category="list-text">登入System Manager並驗證PVc。</block>
+  <block id="085db6f4e43229a4937a8f6f74368bcf" category="paragraph"><block ref="085db6f4e43229a4937a8f6f74368bcf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8c8d1c0bdbea6391f8afe3f0e08332c9" category="list-text">在Pod執行之後、從側邊功能表中選取「Networking」（網路）&gt;「Routes」（路由）、然後按一下「Location」（位置）下的URL。</block>
+  <block id="2635e73b9158e5dad91d3b4cd686557b" category="paragraph"><block ref="2635e73b9158e5dad91d3b4cd686557b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab2342ea51dfdbf938a9639c3957fead" category="list-text">隨即顯示Pricelist應用程式首頁。</block>
+  <block id="ef84c4f9738c5adac3ce6a47c2b678af" category="paragraph"><block ref="ef84c4f9738c5adac3ce6a47c2b678af" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9c90c8d476f89a2592fe8bb154fa5bdb" category="list-text">在網頁上建立幾筆記錄。</block>
+  <block id="b2f24ecf5018cf7c1d198eb427f0b555" category="paragraph"><block ref="b2f24ecf5018cf7c1d198eb427f0b555" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f5cb6063e8d37aa54e5face78f3f4ff" category="list-text">此應用程式是在Astra Control Center中發現的。若要管理應用程式、請前往「應用程式&gt;探索中」、選取Pricelist應用程式、然後按一下「動作」下的「管理應用程式」。</block>
+  <block id="22dbf5b3b52dcc520d3543a1489968f8" category="paragraph"><block ref="22dbf5b3b52dcc520d3543a1489968f8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cebda398afecf245bb7b2b57e8fd5e18" category="list-text">按一下Pricelist應用程式、然後選取Data Protection（資料保護）。此時、不應該有快照或備份。按一下「Create Snapshot（建立Snapshot）」以建立隨需快照。</block>
+  <block id="c00e4f4728913157eccc688942a1eaf2" category="paragraph"><block ref="c00e4f4728913157eccc688942a1eaf2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc21a3456aa7f09faeede37871be4e1e" category="admonition">NetApp Astra Control Center支援隨需與排程的快照與備份。</block>
+  <block id="122adc20c5c62c1195ce98c86558837a" category="list-text">建立快照且狀態良好之後、請使用該快照建立遠端備份。此備份儲存在S3儲存區。</block>
+  <block id="752463e78378617e06d61158adcb9973" category="paragraph"><block ref="752463e78378617e06d61158adcb9973" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7b9739e6c9c96cd10e3e37d1b0a4d64b" category="list-text">選取AWS S3儲存區並啟動備份作業。</block>
+  <block id="5cbf3c161960206cad6fe866343c076f" category="paragraph"><block ref="5cbf3c161960206cad6fe866343c076f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8b40db2762fd24bd5746199d1d6446d7" category="list-text">備份作業應在AWS S3儲存區中建立含有多個物件的資料夾。</block>
+  <block id="168e1662fce955a4ef3edb74d712c560" category="paragraph"><block ref="168e1662fce955a4ef3edb74d712c560" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ca458f6ce2755db56d244b35c297646" category="list-text">當遠端備份完成時、請停止裝載PV備份磁碟區的儲存虛擬機器（SVM）、以模擬內部部署的災難。</block>
+  <block id="8c4b2b38355eec3a8fcef294468b3430" category="paragraph"><block ref="8c4b2b38355eec3a8fcef294468b3430" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f1d50e4ec222224148f01316149332a2" category="list-text">重新整理網頁以確認中斷運作。網頁無法使用。</block>
+  <block id="f1ccc81d970bbad1e838c81217621f88" category="paragraph"><block ref="f1ccc81d970bbad1e838c81217621f88" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ba1c2bf5551094f2f030f655d852b7c" category="paragraph">如同預期的那樣、網站已經停機、因此讓我們使用Astra快速從遠端備份恢復應用程式、以執行AWS的OpenShift叢集。</block>
+  <block id="3919c456d46867d68530facb8a294e5b" category="list-text">在Astra Control Center中、按一下Pricelist應用程式、然後選取Data Protection（資料保護）&gt; Backups（備份）。選取備份、然後按一下「Action（動作）」下的「Restore Application（還原應用程式</block>
+  <block id="e6de97f7b376fc4d7d5fc158998ef78b" category="paragraph"><block ref="e6de97f7b376fc4d7d5fc158998ef78b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36aaf3135b36d58ed328b53ba6a45e54" category="list-text">選取「OCP - AWS」作為目的地叢集、並為命名空間命名。按一下「隨需備份」、「下一步」、然後按一下「還原」。</block>
+  <block id="bd437ee3c992275a1aafcf6d220627a3" category="paragraph"><block ref="bd437ee3c992275a1aafcf6d220627a3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="600fc62c4849602c331ba0cf3f4aa6ba" category="list-text">在AWS執行的OpenShift叢集上、會出現一個名為「pricelist-app」的新應用程式。</block>
+  <block id="67cc808afad9a2103d81ea4a070200ca" category="paragraph"><block ref="67cc808afad9a2103d81ea4a070200ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e39c5fe0af730ce83d0258ccdaa80b35" category="list-text">在OpenShift Web主控台驗證相同的項目。</block>
+  <block id="77e34d0cd9093db4fb6869914d989009" category="paragraph"><block ref="77e34d0cd9093db4fb6869914d989009" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="09e7f5c160e9c778059848934261d552" category="list-text">在「pricele-AWS」專案下的所有Pod都在執行之後、請前往「Routes（路由）」、然後按一下URL以啟動網頁。</block>
+  <block id="656f8acae5cd8015e35a809e108d0cc3" category="paragraph"><block ref="656f8acae5cd8015e35a809e108d0cc3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="82b73b03911a8aa2365b090c8d82af52" category="paragraph">此程序可驗證價目表應用程式是否已成功還原、以及OpenShift叢集是否已在Astra Control Center的協助下、在AWS上順暢執行資料完整性。</block>
+  <block id="38264421648067c49705c832c9a6abad" category="section-title">利用Snapshot複本和DevTest的應用程式行動性來保護資料</block>
+  <block id="062586839f067eaec95ba404a9c7118a" category="paragraph">此使用案例由兩個部分組成、如下節所述。</block>
+  <block id="f3353b172c62b25c5b5749c72b138281" category="section-title">第1部分</block>
+  <block id="985e44108006560e2a507cf5df0a50f5" category="paragraph">使用Astra Control Center、您可以擷取應用程式感知快照、以保護本機資料。如果您不小心刪除或毀損資料、可以使用先前錄製的快照、將應用程式及相關資料還原為已知良好的狀態。</block>
+  <block id="aff5d9267b599fe61f286401ac3c501d" category="paragraph">在此案例中、開發與測試（DevTest）團隊會部署範例狀態化應用程式（部落格網站）、這是一種重影部落格應用程式、新增一些內容、並將應用程式升級至可用的最新版本。在資料庫中、Ghost應用程式使用SQLite。在升級應用程式之前、會使用Astra Control Center擷取快照（隨需）來保護資料。詳細步驟如下：</block>
+  <block id="36f2bb149d32a6cc62ae94fba3303c3a" category="list-text">部署範例部落格應用程式、並從ArgoCD同步處理。</block>
+  <block id="898d00f41701affcd3de03f1babb1822" category="paragraph"><block ref="898d00f41701affcd3de03f1babb1822" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2eb2043273665bba56f4d994ac762372" category="list-text">登入第一個OpenShift叢集、前往Project、然後在搜尋列中輸入部落格。</block>
+  <block id="c7c3988f761c0c78a0037a2e32567221" category="paragraph"><block ref="c7c3988f761c0c78a0037a2e32567221" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4a835fa82e6221f6aaa7c9894843e849" category="list-text">從側邊功能表中、選取網路&gt;路由、然後按一下URL。</block>
+  <block id="10025ffe22a5fcad86cf9a5d3c2a152e" category="paragraph"><block ref="10025ffe22a5fcad86cf9a5d3c2a152e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3643decfa34d971d179ca5ae5d80406a" category="list-text">隨即顯示部落格首頁。新增一些內容至部落格網站並加以發佈。</block>
+  <block id="abb32921a35b4f1434d79bfc2634240e" category="paragraph"><block ref="abb32921a35b4f1434d79bfc2634240e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d7c955e2c709457b79a554544f71e43" category="list-text">前往Astra控制中心。首先從探索到的索引標籤管理應用程式、然後製作Snapshot複本。</block>
+  <block id="84b09b74b91f4d641031733ca8226cef" category="paragraph"><block ref="84b09b74b91f4d641031733ca8226cef" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c48341950d06dc5b2b657a869930da35" category="inline-link">利用快照與備份來保護應用程式</block>
+  <block id="871cd11d246078051eab485577990938" category="admonition">您也可以依照定義的排程建立快照、備份或兩者、以保護應用程式。如需詳細資訊、請參閱<block ref="f4113928841cc9392d3f4867ece4c35b" category="inline-link-rx"></block>。</block>
+  <block id="1a3864d5015ea84453f3330013809aed" category="list-text">在成功建立隨需快照之後、請將應用程式升級至最新版本。目前的映像版本是「ghost：3.6-aline」、目標版本是「ghost：latest」。若要升級應用程式、請直接變更Git儲存庫、並將其同步至Argo CD。</block>
+  <block id="c9908f6f672739d5675fa011fc426f74" category="paragraph"><block ref="c9908f6f672739d5675fa011fc426f74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a99bcd6abcf6d9d0f8c8484a4c0227d8" category="list-text">您可以看到、由於部落格網站關閉、整個應用程式毀損、因此不支援直接升級至最新版本。</block>
+  <block id="6bf8b148f4f5756463960e90eab18eeb" category="paragraph"><block ref="6bf8b148f4f5756463960e90eab18eeb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8a146efe8b8a92c8938b8cb4382ab490" category="list-text">若要確認部落格網站無法使用、請重新整理URL。</block>
+  <block id="6c8d051935ff24d514e0a1ef7947a20f" category="paragraph"><block ref="6c8d051935ff24d514e0a1ef7947a20f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f91554382d38247c63c3a1a2deccc759" category="list-text">從快照還原應用程式。</block>
+  <block id="d735d93d8411e096d6cb56f3b12c82ca" category="paragraph"><block ref="d735d93d8411e096d6cb56f3b12c82ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8bef0158d469d7e6a86a85cfdc1b4714" category="list-text">應用程式會在相同的OpenShift叢集上還原。</block>
+  <block id="82a349d9c319bc1e7eababcbe8470be2" category="paragraph"><block ref="82a349d9c319bc1e7eababcbe8470be2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2a6f8b28fe617a5e5c57c280e78d5cfa" category="list-text">應用程式還原程序會立即開始。</block>
+  <block id="99ae836e446ce391c17fbd23c10ad2b8" category="paragraph"><block ref="99ae836e446ce391c17fbd23c10ad2b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ebd8041043c88c570ad6a540d16fd78e" category="list-text">幾分鐘後、應用程式就會從可用的快照中成功還原。</block>
+  <block id="63c37fe0b3780197acdce4aca90a0c22" category="paragraph"><block ref="63c37fe0b3780197acdce4aca90a0c22" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="470ddfd45de9ecb8fcaaf72a5ff16e07" category="list-text">若要查看網頁是否可用、請重新整理URL。</block>
+  <block id="47bd253037e346cae7c17119fabb14bb" category="paragraph"><block ref="47bd253037e346cae7c17119fabb14bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c1a02fbed0531923c144c3950b4c124e" category="paragraph">在Astra Control Center的協助下、DevTest團隊可以使用快照成功恢復部落格網站應用程式及其相關資料。</block>
+  <block id="6417c68d02736b9d6bbccd60d0e3bd39" category="section-title">第2部分</block>
+  <block id="03b6d5dbf0ff81cf58c3d900394cea53" category="paragraph">有了Astra Control Center、無論叢集位於何處（內部部署或雲端）、您都可以將整個應用程式及其資料從一個Kubernetes叢集移至另一個叢集。</block>
+  <block id="396f0eab74a43e69c5638b2ba641cda1" category="list-text">DevTest團隊一開始會將應用程式升級至支援的版本（「ghost-4.6- aline」）、然後再升級至最終版本（「ghost-latest」）、以利準備正式作業。接著他們會將複製到執行於不同FlexPod 版本的作業系統上的正式作業OpenShift叢集的應用程式進行升級。</block>
+  <block id="cf7347ddb468e7ce05b5b4736ce1c195" category="list-text">此時、應用程式會升級至最新版本、並準備好複製到正式作業叢集。</block>
+  <block id="bab6a40d9fb2a39fb64920ae93fee9d8" category="paragraph"><block ref="bab6a40d9fb2a39fb64920ae93fee9d8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fefff30e78a4e3907d1cdbb21da61988" category="list-text">若要驗證新主題、請重新整理部落格網站。</block>
+  <block id="3fcf6ac3f088b383e8ee15dfee50c6e3" category="paragraph"><block ref="3fcf6ac3f088b383e8ee15dfee50c6e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="083ae33bce48a8f76b7d6313bf31593a" category="list-text">從Astra Control Center、將應用程式複製到VMware vSphere上執行的其他正式作業OpenShift叢集。</block>
+  <block id="e5056e45ffc6bcc97562215846ca3769" category="paragraph"><block ref="e5056e45ffc6bcc97562215846ca3769" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48d8a4e7b96837af07b85c1c8e227ae7" category="paragraph">正式作業OpenShift叢集現在已配置新的應用程式實體複本。</block>
+  <block id="853f2420e83a7d15f637e0e800caf912" category="paragraph"><block ref="853f2420e83a7d15f637e0e800caf912" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6e480f943300a8b7c24ae83e94c52b1f" category="list-text">登入正式作業OpenShift叢集、然後搜尋專案部落格。</block>
+  <block id="1d8aec80f0be70275ef8e41422dd0c8d" category="paragraph"><block ref="1d8aec80f0be70275ef8e41422dd0c8d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="678f70483189f7424f184adb6b49c4de" category="list-text">從側邊功能表中、選取網路&gt;路由、然後按一下位置下的URL。畫面會顯示內含內容的同一個首頁。</block>
+  <block id="f5ce7b7930bd23b6703fa90f01278edf" category="paragraph"><block ref="f5ce7b7930bd23b6703fa90f01278edf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="889443e49bd32c67a9561aa08a2ac414" category="paragraph">Astra Control Center解決方案驗證到此結束。無論Kubernetes叢集位於何處、您現在都可以將整個應用程式及其資料從一個Kubernetes叢集複製到另一個叢集。</block>
+  <block id="3892d8f529d990970e68f80701065301" category="paragraph"><block ref="3892d8f529d990970e68f80701065301" category="inline-link-macro-rx"></block></block>
+  <block id="86233fc6d802f49b70b962a2469ee2de" category="summary">本節說明如何在Cloud Volumes ONTAP AWS上部署「不完整」和「Astra Trident」。</block>
+  <block id="1412e3e35f9c20b1fdeee824a035a654" category="inline-link-macro">上一篇：AWS上的Red Hat OpenShift。</block>
+  <block id="bdcd50354941543dc2e7131b5ad09c1c" category="paragraph"><block ref="bdcd50354941543dc2e7131b5ad09c1c" category="inline-link-macro-rx"></block></block>
+  <block id="94ee7072c2750da1997438a715efb7d4" category="inline-link">建立連接器</block>
+  <block id="d6bd41b8e6f87a1e5b918b25cb3e81b3" category="paragraph">NetApp Cloud Volumes ONTAP 執行個體部署在AWS上、做為Astra Trident的後端儲存設備。在新增Cloud Volumes ONTAP 功能不正常的環境之前、必須先部署Connector。Cloud Manager會提示您、如果您嘗試在Cloud Volumes ONTAP 沒有連接器的情況下、建立第一個運作環境。若要在AWS中部署Connector、請參閱<block ref="5090a65d29a710845284e1d0ac2c45f7" category="inline-link-rx"></block>。</block>
+  <block id="cb986a22a4fee3492df1e27f73b8ac51" category="inline-link">AWS快速入門</block>
+  <block id="6da32fe5e170e7dae5b894f3090c70ff" category="paragraph">若要在Cloud Volumes ONTAP AWS上部署功能、請參閱<block ref="3f7d6f7f2d3865b483aa674b6ba995e3" category="inline-link-rx"></block>。</block>
+  <block id="39a62c2833c58289fcebd0b1ef55c802" category="paragraph">部署完畢後、您可以在OpenShift Container Platform叢集上安裝Astra Trident並設定儲存後端和Snapshot類別。Cloud Volumes ONTAP</block>
+  <block id="60eb33560ea043dfa7cda115b53b58ad" category="inline-link-macro">下一步：在OpenShift Container Platform上安裝Astra Control Center。</block>
+  <block id="4508c419387b5dc5fa188210e0729743" category="paragraph"><block ref="4508c419387b5dc5fa188210e0729743" category="inline-link-macro-rx"></block></block>
+  <block id="7b11f8a58bd3453f7d26adea4a1fc8d7" category="summary">在這個解決方案中、我們使用FlexPod NetApp Astra產品組合、為執行於NetApp和AWS上的容器化應用程式實作了保護計畫。NetApp Astra Control Center和Astra Trident Cloud Volumes ONTAP 、以及下列項目FlexPod 、即包含了下列項目：NetApp、Red Hat OpenShift和The Rof Infrastructure、這些項目構成了本解決方案的核心元件。</block>
+  <block id="1382073bfc91396ffcf6726470271c21" category="inline-link-macro">先前版本：應用程式還原與遠端備份。</block>
+  <block id="7eca8f6fe808295ab3a4b102cecee4b0" category="paragraph"><block ref="7eca8f6fe808295ab3a4b102cecee4b0" category="inline-link-macro-rx"></block></block>
+  <block id="c18eeb241879fc774249da45c51f5fb2" category="paragraph">我們透過擷取快照來證實應用程式的保護能力、並執行完整複製備份、在雲端和內部部署環境中執行的不同K8s叢集之間還原應用程式。</block>
+  <block id="d5c2abf61a69f4d4b88304e043dd6c0a" category="paragraph">我們也展示了在K8s叢集之間複製應用程式的能力、讓客戶能夠將應用程式移轉到所需位置的K8s叢集。</block>
+  <block id="cc8b596e97ebe98b09dd470dd58a26df" category="paragraph">由於產品不斷進化、因此客戶可以將應用程式與業務交付流程現代化。FlexPod有了這套解決方案FlexPod 、客戶就能放心地為雲端原生應用程式建置BCDR計畫、並將公有雲當作暫時性或全時DR計畫的據點、同時降低解決方案的成本。</block>
+  <block id="e9df9bb5d0c41e91b20932a6f94e7674" category="paragraph">Astra Control可讓您將整個應用程式及其資料從一個Kubernetes叢集移至另一個叢集、無論叢集位於何處。它也能協助您加速雲端原生應用程式的部署、作業和保護。</block>
+  <block id="231cf4c70d866b616c21baddaeed0696" category="section-title">疑難排解</block>
+  <block id="bbe8701553ec350cc8626781c50a4d3a" category="inline-link">線上文件</block>
+  <block id="76650e433c31ed14d092e894522e9f88" category="paragraph">如需疑難排解指引、請參閱<block ref="6b26934cc1e18c2d0c2690a002260636" category="inline-link-rx"></block>。</block>
+  <block id="44ee122b811da35a6712c6885e16343c" category="list-text">Cisco驗證FlexPod 的《設計與部署指南》、適用於</block>
+  <block id="be368ff17b3e81589233c5454dbc29de" category="list-text">以Infrastructure部署為VMware程式碼、使用Ansible FlexPod</block>
+  <block id="11e815883f005657fd79ad2c41a47378" category="inline-link"><block ref="11e815883f005657fd79ad2c41a47378" category="inline-link-rx"></block></block>
+  <block id="8c86f914829d894a2da94899d9f3a209" category="paragraph"><block ref="8c86f914829d894a2da94899d9f3a209" category="inline-link-rx"></block></block>
+  <block id="1c917f34cb889c90da6e079c0f77a11a" category="list-text">以基礎架構做為Red Hat OpenShift裸機的程式碼、使用Ansible進行部署FlexPod</block>
+  <block id="9bbeb3e9d971c03c81d9aa7d44eb6e50" category="inline-link"><block ref="9bbeb3e9d971c03c81d9aa7d44eb6e50" category="inline-link-rx"></block></block>
+  <block id="1441e014138f070544353f0a40885c10" category="paragraph"><block ref="1441e014138f070544353f0a40885c10" category="inline-link-rx"></block></block>
+  <block id="8e8fc0e7e19023c0232fec039b6df961" category="inline-link"><block ref="8e8fc0e7e19023c0232fec039b6df961" category="inline-link-rx"></block></block>
+  <block id="dfae3900fb7c7a66ef5befc93980eef1" category="paragraph"><block ref="dfae3900fb7c7a66ef5befc93980eef1" category="inline-link-rx"></block></block>
+  <block id="0fe3c69c48bc9700b5dd37f69ca26199" category="list-text">Cisco Intersight資料表</block>
+  <block id="c56152678911fb0d557c41fdcf1d3213" category="inline-link"><block ref="c56152678911fb0d557c41fdcf1d3213" category="inline-link-rx"></block></block>
+  <block id="c96bb6046b6069eb7298cd0b0b6b70fd" category="paragraph"><block ref="c96bb6046b6069eb7298cd0b0b6b70fd" category="inline-link-rx"></block></block>
+  <block id="24a34a00f3b41f0c52f29954d6352598" category="list-text">NetApp Astra文件</block>
+  <block id="7393b156591c6381ba2a685d983903c7" category="inline-link"><block ref="7393b156591c6381ba2a685d983903c7" category="inline-link-rx"></block></block>
+  <block id="a5b8392a62ed556fcb08309b4205f017" category="paragraph"><block ref="a5b8392a62ed556fcb08309b4205f017" category="inline-link-rx"></block></block>
+  <block id="8de59ec369b10820d0dd336b9765c79b" category="list-text">NetApp Astra Trident</block>
+  <block id="b74877ef96b7f6ef3d913a0c3ebca5e8" category="inline-link"><block ref="b74877ef96b7f6ef3d913a0c3ebca5e8" category="inline-link-rx"></block></block>
+  <block id="14998aeaa664c7f299732bf6203694b6" category="paragraph"><block ref="14998aeaa664c7f299732bf6203694b6" category="inline-link-rx"></block></block>
+  <block id="bbd2995f138fe5b371240b2cc17190c1" category="list-text">NetApp Cloud Manager</block>
+  <block id="bd7b6098f4f7dbe0051346d24f5d0f68" category="inline-link"><block ref="bd7b6098f4f7dbe0051346d24f5d0f68" category="inline-link-rx"></block></block>
+  <block id="197ee6c8d2fbb82b68e7c9367a5d827f" category="paragraph"><block ref="197ee6c8d2fbb82b68e7c9367a5d827f" category="inline-link-rx"></block></block>
+  <block id="c892f0fdac24e434238098fff7a8b6bd" category="inline-link"><block ref="c892f0fdac24e434238098fff7a8b6bd" category="inline-link-rx"></block></block>
+  <block id="0b7a5473855fb81be20a23f140589b70" category="paragraph"><block ref="0b7a5473855fb81be20a23f140589b70" category="inline-link-rx"></block></block>
+  <block id="b175d08ac03101cd40f077848d436e1f" category="list-text">Red Hat OpenShift</block>
+  <block id="1ec6650b54774b39d9e29423517c2747" category="inline-link"><block ref="1ec6650b54774b39d9e29423517c2747" category="inline-link-rx"></block></block>
+  <block id="f905ad0669d00d6ec40ba771cfb4b060" category="paragraph"><block ref="f905ad0669d00d6ec40ba771cfb4b060" category="inline-link-rx"></block></block>
+  <block id="e70a0b693229650146278d707bea4c7d" category="cell">版本：Acc 22.04.0。</block>
+  <block id="309f12ab1a7353801116cb1fcb67e95f" category="summary">另一個自我管理的OpenShift Container Platform 4叢集會部署在AWS上做為DR站台。主節點和工作節點橫跨三個可用區域、提供高可用度。</block>
+  <block id="54f3756e2d84752e5c4284697c21d2ac" category="doc">AWS上的Red Hat OpenShift</block>
+  <block id="5589576e22e954a0a1401cbb6464f66c" category="inline-link-macro">先前版本：FlexPod 適用於OpenShift Container Platform 4裸機安裝。</block>
+  <block id="eadf725cc67bcaa775e0cea6535000f4" category="paragraph"><block ref="eadf725cc67bcaa775e0cea6535000f4" category="inline-link-macro-rx"></block></block>
+  <block id="03eb7c6cefd2541dda9be58046e788e3" category="paragraph"><block ref="03eb7c6cefd2541dda9be58046e788e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7abe47cfa521f37c92a29f79ad43a38c" category="inline-link">私有叢集</block>
+  <block id="740769ac2b3ea3b09c31090f4645f7a0" category="paragraph">OpenShift部署為<block ref="4283031f2dacf2594133b67e466efc99" category="inline-link-rx"></block> 移轉至AWS上現有的VPC。私有OpenShift Container Platform叢集不會暴露外部端點、而且只能從內部網路存取、網際網路無法看到。使用NetApp Cloud Manager部署單節點NetApp Cloud Volumes ONTAP 支援、可為Astra Trident提供儲存後端。</block>
+  <block id="366a1485e4aa704de0dd06d7f56ce08a" category="inline-link">OpenShift文件</block>
+  <block id="30b739b95a0414ad769bd2eddffa99ca" category="paragraph">如需在AWS上安裝OpenShift的詳細資訊、請參閱<block ref="ab305eff101d6a52db85d887b1fd5821" category="inline-link-rx"></block>。</block>
+  <block id="8b77ce8dbe25a37620c03383d4ad770a" category="inline-link-macro">下一步：Cloud Volumes ONTAP NetApp</block>
+  <block id="db386b9e76cceff7a087645b0b44de1e" category="paragraph"><block ref="db386b9e76cceff7a087645b0b44de1e" category="inline-link-macro-rx"></block></block>
+  <block id="e3bca5a253510d774968058cd7916fa8" category="summary">本技術報告將NetApp Astra Control Center與Red Hat OpenShift Container Platform結合在FlexPod 一個融合式基礎架構解決方案上、並延伸至Amazon Web Services（AWS）以形成混合雲資料中心。</block>
+  <block id="a9cea124fa33cc532aae100a95fa9566" category="doc">TR-4936：FlexPod 採用NetApp Astra和Cisco Intersight for Red Hat OpenShift的混合雲</block>
+  <block id="84a60369b238bb4a5dd7a5b1b4c73161" category="paragraph">Abhinav Singh</block>
+  <block id="35d5594fee83f1db26c8a4d25c3b29c4" category="paragraph">隨著容器和Kubernetes成為開發、部署、執行、管理及擴充容器化應用程式的實際選擇、企業在這些應用程式上執行業務關鍵應用程式的速度越來越快。業務關鍵應用程式在很大程度上取決於狀態。狀態化應用程式具有相關的狀態、資料和組態資訊、並取決於先前的資料交易來執行其商業邏輯。在Kubernetes上執行業務關鍵應用程式時、仍有像傳統應用程式一樣的可用度和營運不中斷需求。服務中斷可能嚴重影響公司的營收、生產力和聲譽。因此、保護、恢復及移動Kubernetes工作負載、無論是在叢集、內部部署資料中心、還是混合雲環境中、都能快速輕鬆地進行。企業已發現將業務移轉至混合雲模式、並將應用程式現代化至雲端原生尺寸規格的優點、在他們的名單中排名第一。</block>
+  <block id="d204a8b588acf148f3f0d91f586e6544" category="inline-link">包含FlexPod</block>
+  <block id="55aa681edf688f21e4deb2ab607cead4" category="paragraph">本技術報告將NetApp Astra Control Center與Red Hat OpenShift Container Platform結合在FlexPod 一個融合式基礎架構解決方案上、並延伸至Amazon Web Services（AWS）以形成混合雲資料中心。建立在熟悉的基礎上<block ref="4b3892f0f5b8b40c7227d58de15a39d2" category="inline-link-rx"></block>本文將討論NetApp Astra Control Center、從安裝、組態設定、應用程式保護工作流程開始、到內部部署與雲端之間的應用程式移轉。此外、本節也討論在使用NetApp Astra Control Center執行Red Hat OpenShift上的容器化應用程式時、應用程式感知資料管理功能（例如備份與還原、營運不中斷）的優點。</block>
+  <block id="f62db1f1545d4d6bf39a43f35bd88145" category="paragraph">下圖說明解決方案總覽。</block>
+  <block id="a75392b698d6ae39d077a5133668dae3" category="paragraph"><block ref="a75392b698d6ae39d077a5133668dae3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="62db6fd4151ad8371bb66b05da0ea100" category="paragraph">本文件的目標讀者包括技術長（CTO）、應用程式開發人員、雲端解決方案架構設計師、站台可靠性工程師（SRE）、DevOps工程師、ITOps及專業服務團隊、他們專注於設計、託管及管理容器化應用程式。</block>
+  <block id="3ca8a4776bfa56059f0a8a7d8ffa14ec" category="section-title">NetApp Astra Control–主要使用案例</block>
+  <block id="7b3db1fdc5136cd912b29ac4f9982ea6" category="paragraph">NetApp Astra Control旨在為處理雲端原生微服務的客戶簡化應用程式保護：</block>
+  <block id="e5ba967130e17e83d1dea4e3566db571" category="list-text">*利用快照提供時間點（pit）應用程式呈現。*使用Astra Control、您可以為容器化應用程式建立端點對端點快照、其中包括在Kubernetes上執行的應用程式組態詳細資料、以及相關的持續儲存設備。發生事件時、只要按一下按鈕、即可將應用程式還原至已知良好的狀態。</block>
+  <block id="55abedc3e70735897bd3c5d162a5303b" category="list-text">*完整複製應用程式備份。*使用Astra Control、您可以依照預先定義的排程進行完整的應用程式備份、以自動化方式將應用程式還原至相同的K8s叢集或不同的K8s叢集。</block>
+  <block id="db953b8f02cb34da89404efe26605550" category="list-text">*應用程式可攜性與利用複本進行移轉。*使用Astra Control、您可以將整個應用程式與其資料、從一個Kubernetes叢集複製到另一個K8s叢集或同一個K8s叢集內。無論叢集位於何處（只要在複製後刪除來源應用程式執行個體）、此功能也有助於跨K8s叢集移轉或移轉應用程式。</block>
+  <block id="7b1df8c1be51268d196359876f88a614" category="list-text">*自訂應用程式一致性。*使用Astra Control、您可以利用執行掛勾來控制定義應用程式靜止狀態。將「預先」和「POST」執行連結拖放到快照和備份工作流程、您的應用程式將會以您自己的方式靜止、然後再執行快照或備份。</block>
+  <block id="023e24ac7616748fcf34d6d14a0266a9" category="list-text">*自動化應用程式層級的災難恢復（DR）。* Astra Control可讓您為容器化應用程式設定業務持續性災難恢復（BCDR）計畫。NetApp SnapMirror用於後端、DR工作流程的完整實作也會自動化。</block>
+  <block id="1071731ddee094093ebd4eb4a8559261" category="section-title">解決方案拓撲</block>
+  <block id="0e728f6352dd5189fd77275ae42784fe" category="paragraph">本節說明解決方案的邏輯拓撲。</block>
+  <block id="94cab3a589bb098fb4712f2127916d15" category="paragraph">下圖顯示解決方案拓撲、包括FlexPod 執行OpenShift Container Platform叢集的內部部署環境、以及採用NetApp Cloud Volumes ONTAP 功能的AWS、Cisco Intersight和NetApp Cloud Manager SaaS平台上的自我管理OpenShift Container Platform叢集。</block>
+  <block id="83251359a98a808d93cee6a97116d036" category="paragraph"><block ref="83251359a98a808d93cee6a97116d036" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="06d97393472af1abe6e0186db18a7789" category="paragraph">第一個OpenShift Container Platform叢集是在FlexPod VMware上安裝裸機、第二個OpenShift Container Platform叢集部署在執行FlexPod VMware vSphere的VMware vSphere上、第三個OpenShift Container Platform叢集則部署為<block ref="4283031f2dacf2594133b67e466efc99" category="inline-link-rx"></block> 將AWS上的現有虛擬私有雲（VPC）當作自我管理的基礎架構。</block>
+  <block id="eac9331de49233358aa02bcfe36b57cc" category="paragraph">在本解決方案中FlexPod 、透過站台對站台VPN將物件連接至AWS、不過客戶也可以使用直接連線實作來延伸至混合雲。Cisco Intersight可用來管理FlexPod 不只是基礎架構的元件。</block>
+  <block id="a6c82c846ccceb18df0d3249a1b9b6b8" category="paragraph">在本解決方案中、Astra Control Center可管理以FlexPod 執行於效能分析和AWS上的OpenShift Container Platform叢集所託管的容器化應用程式。Astra Control Center安裝在執行FlexPod 於下列項目的OpenShift裸機執行個體上：Astra Control會與主節點上的Kube-API通訊、並持續監控Kubernetes叢集是否有變更。任何新增至K8s叢集的應用程式都會自動探索、並可供管理。</block>
+  <block id="a5df78cc2053842494b3c05093ec7732" category="paragraph">利用Astra Control Center、即可將容器化應用程式的整合呈現擷取為快照。應用程式快照可透過排定的保護原則或隨需觸發。對於Astra支援的應用程式、快照會保持一致的當機狀態。應用程式快照會構成持續磁碟區中應用程式資料的快照、以及與該應用程式相關之各種Kubernetes資源的應用程式中繼資料。</block>
+  <block id="28307797a3974946535c540b49986490" category="paragraph">您可以使用預先定義的備份排程或隨需使用Astra Control來建立應用程式的完整複本備份。物件儲存設備用於儲存應用程式資料的備份。NetApp ONTAP S3、NetApp StorageGRID 產品組合及任何一般S3實作均可作為物件存放區使用。</block>
+  <block id="49528b9b8c2513c486a45891563dc129" category="inline-link-macro">下一步：解決方案元件。</block>
+  <block id="6ea7b1c0ec7eb72d3d0a85c1196c6fea" category="paragraph"><block ref="6ea7b1c0ec7eb72d3d0a85c1196c6fea" category="inline-link-macro-rx"></block></block>
+  <block id="1cfbe904270ce36b1f0360ab064cf453" category="doc">安裝與組態</block>
+  <block id="d538efe0042f78745a246962979a6232" category="summary">您可以在執行FlexPod 於下列項目的OpenShift叢集上安裝Astra Control Center、或是在使用Cloud Volumes ONTAP NetApp儲存後端的AWS上安裝Astra Control Center。在本解決方案中、Astra Control Center部署在OpenShift裸機叢集上。</block>
+  <block id="0eef84e4b1f1ddc4d7b1abbfccb47625" category="doc">在OpenShift Container Platform上安裝Astra Control Center</block>
+  <block id="3865c3388119fdf51c8398974f20f115" category="inline-link-macro">上一篇：NetApp Cloud Volumes ONTAP 產品</block>
+  <block id="ba9a49f46db4217cc60be3d7dd792da7" category="paragraph"><block ref="ba9a49f46db4217cc60be3d7dd792da7" category="inline-link-macro-rx"></block></block>
+  <block id="fe5883865d4340bc373911bb967fb145" category="paragraph">Astra Control Center可以使用所述的標準程序來安裝<block ref="0dd9c7008b1f62bb19aef6fe627a8c01" category="inline-link-rx"></block> 或從Red Hat OpenShift作業系統集線器。Astra Control操作員是Red Hat認證的操作員。在本解決方案中、Astra Control Center是使用Red Hat作業系統集線器安裝。</block>
+  <block id="7bbb3c4c475e8e50d99bcf4d1f5999d4" category="section-title">環境需求</block>
+  <block id="4663e63bd04fcf67f3507d82e027aa03" category="list-text">Astra Control Center支援多種Kubernetes發佈版本、而Red Hat OpenShift則支援Red Hat OpenShift Container Platform 4.8或4.9。</block>
+  <block id="c75062cfa1eaf856013fb62277693063" category="list-text">除了環境與終端使用者的應用程式資源需求之外、Astra Control Center還需要下列資源：</block>
+  <block id="05bbb43b3d923283e0b6ffafd088f41f" category="cell">元件</block>
+  <block id="9b97b7bd5e0a87be7bf218224ada83cf" category="cell">需求</block>
+  <block id="355508832b7eb5caa7423548e7222913" category="cell">儲存後端容量</block>
+  <block id="97eba840a0a254e76474a1a32d2f5634" category="cell">至少可提供500GB容量</block>
+  <block id="fcb81a84511da525a1581c4ccc00d0fb" category="cell">工作節點</block>
+  <block id="e5d4ab249a6631d4ddc282e61a6ea4c5" category="cell">至少3個工作節點、各有4個CPU核心和12GB RAM</block>
+  <block id="e0317dac48550dcc07e77d4100e04cb1" category="cell">完整網域名稱（FQDN）位址</block>
+  <block id="b3071c30261a1e065c64f3de227b01ff" category="cell">Astra Control Center的FQDN位址</block>
+  <block id="782ddd5eae9f93dbf990bc08c3f35c1a" category="cell">已安裝並設定Astra Trident 21.004或更新版本</block>
+  <block id="c6ca9bfa4ec1c3ee70c123f1f3c93f16" category="cell">入口控制器或負載平衡器</block>
+  <block id="e9119b6495de3bb01f427aa75e104e7e" category="cell">設定入口控制器、以URL或負載平衡器公開Astra Control Center、以提供可解析為FQDN的IP位址</block>
+  <block id="a9288e208a89e03bc7040ba23d0a8923" category="list-text">您必須擁有現有的私有映像登錄、才能將Astra Control Center建置映像推送至該登錄。您需要提供影像登錄的URL、以便上傳影像。</block>
+  <block id="90614711720f05ba72469e62f183aa73" category="admonition">執行特定工作流程時會擷取部分映像、必要時會建立及銷毀容器。</block>
+  <block id="205bd1a2bfaa21034971e3c944124cb5" category="list-text">Astra Control Center需要建立儲存類別、並將其設為預設儲存類別。Astra Control Center支援ONTAP Astra Trident提供的下列支援資訊驅動程式：</block>
+  <block id="8321592ce24c8a122ecf26a63cfca407" category="list-text">ONTAP-NAS</block>
+  <block id="844e84da8e822b4a33c4d8188da97937" category="list-text">ONTAP-NAS-flexgroup</block>
+  <block id="73a3350a1b91aeb6e2836fdf5975672c" category="list-text">ONTAP-SAN</block>
+  <block id="3016c12c1db45f14c80c9c1731b9c26a" category="list-text">ONTAP-san經濟型</block>
+  <block id="de7608849c0f26c7c3f655bbb2528c21" category="admonition">我們假設已部署的OpenShift叢集已安裝Astra Trident、並已設定ONTAP 成包含一個恢復功能的後端、同時也定義了預設的儲存類別。</block>
+  <block id="765c282f25606a5ea4176fc5195e9667" category="list-text">對於OpenShift環境中的應用程式複製、Astra Control Center需要允許OpenShift掛載磁碟區並變更檔案擁有權。若要修改ONTAP 不允許執行這些作業的功能表匯出原則、請執行下列命令：</block>
+  <block id="c2ef5075ddbbc43ea22ccb3c2bb3d068" category="inline-link">Astra Trident說明</block>
+  <block id="dcaddeba606de0dc9403f541dd8d96c6" category="admonition">若要將第二個OpenShift作業環境新增為受管理的運算資源、請確定已啟用Astra Trident Volume快照功能。若要使用Astra Trident啟用及測試Volume快照、請參閱官方說明<block ref="d054ead7779b1f4f93ee2e564ab520a7" category="inline-link-rx"></block>。</block>
+  <block id="8f6db951ea3d788955700e4d9ccf6ddc" category="inline-link">Volume SnapClass</block>
+  <block id="b7c8c8e6deafa3a30b344f15c199ca09" category="list-text">答<block ref="20f8e059f0cdd4b928144cfd1d135160" category="inline-link-rx"></block> 應在管理應用程式的所有Kubernetes叢集上設定。這也可能包括安裝Astra Control Center的K8s叢集。Astra Control Center可管理其執行所在K8s叢集上的應用程式。</block>
+  <block id="ca6f33719464e2320b44f90d6ae70eb7" category="section-title">應用程式管理需求</block>
+  <block id="6b0ce3f323c8df21ecc7c8565168d0fc" category="list-text">*授權。*若要使用Astra Control Center管理應用程式、您需要Astra Control Center授權。</block>
+  <block id="31b0da457d7ae739823ac3e61226ee87" category="list-text">*命名空間。*命名空間是最大的實體、可由Astra Control Center以應用程式的形式加以管理。您可以選擇根據現有命名空間中的應用程式標籤和自訂標籤來篩選元件、並將資源子集當作應用程式來管理。</block>
+  <block id="2aa60b9834f6aed0336379cdb1424e99" category="list-text">* StorageClass。*如果您安裝的應用程式已明確設定StorageClass、而且需要複製應用程式、則複製作業的目標叢集必須具有原本指定的StorageClass。將具有明確設定StorageClass的應用程式複製到沒有相同StorageClass的叢集時、將會失敗。</block>
+  <block id="6602bf47d8e6975bcd9029b813288201" category="list-text">* Kubernetes資源。*使用Kubernetes資源的應用程式若未被Astra Control擷取、則可能沒有完整的應用程式資料管理功能。Astra Control可擷取下列Kubernetes資源：</block>
+  <block id="186d4bf61b16ff75063f15a5fef9d6ed" category="cell">Kubernetes資源</block>
+  <block id="d7d354d0f9d0780e168c895c92a32c24" category="cell">叢集角色</block>
+  <block id="e866afd8290d5c73cda6260e04e6eef0" category="cell">ClusterRoleBinding</block>
+  <block id="a941f8adb5ae079ebc739cb59407fd30" category="cell">組態對應</block>
+  <block id="99bc4b850e05bafd67cf5f5f49344c1e" category="cell">CustomResourceDesDefinition</block>
+  <block id="2597d86efa761b80f198c7208e859dd7" category="cell">CustomResource</block>
+  <block id="639125955d3128c08b048bc254433dbf" category="cell">可關係工作</block>
+  <block id="0d4eb61dc57afc7f3f8d51439c96eedd" category="cell">示範</block>
+  <block id="f82570cd8dd080fcb0fe525f9b081bdb" category="cell">HorizontalPodAutoscaler</block>
+  <block id="7d05c708b92b4809bfe9bf66edf8f765" category="cell">入侵</block>
+  <block id="788c34b60baf42eb1cac433ba1f0b64a" category="cell">部署組態</block>
+  <block id="1fcd027e4be180b1536eba3afa93e6be" category="cell">互鎖Webhook</block>
+  <block id="2b3f8e4d49589c4452db0a07d619d824" category="cell">PeristentVolume Claim</block>
+  <block id="8a0813c70cf4bf1529f25c411a039130" category="cell">Pod</block>
+  <block id="d8babd242bd93046572e7f50a3fbb394" category="cell">Podcast中斷預算</block>
+  <block id="3f4dbf8b7a689375f651090e7a111098" category="cell">Podcast範本</block>
+  <block id="c794a682153b998c6dca3efddf650512" category="cell">網路原則</block>
+  <block id="3f402161942e4154684cf3f56c76cead" category="cell">ReplicaSet</block>
+  <block id="bbbabdbe1b262f75d99d62880b953be1" category="cell">角色</block>
+  <block id="ec7eab019566cfca91934ab1e0073511" category="cell">角色繫結</block>
+  <block id="9405c3aff9112c3c60d03b94792877dc" category="cell">路由</block>
+  <block id="1e6947ac7fb3a9529a9726eb692c8cc5" category="cell">秘密</block>
+  <block id="91e292ade0a336af19f1ac0977215b91" category="cell">驗證Webhook</block>
+  <block id="d74cdf75cddd8ade6d1b83dd387ec2f2" category="section-title">使用OpenShift作業系統集線器安裝Astra Control Center</block>
+  <block id="5e443eb2da0db751d5f7eabe91ac5de0" category="paragraph">下列程序會使用Red Hat作業系統集線器安裝Astra Control Center。在這個解決方案中、Astra Control Center安裝在執行FlexPod 效益的裸機OpenShift叢集上。</block>
+  <block id="8c41baf1ca98e1184f48c4721d44d431" category="inline-link">NetApp支援網站</block>
+  <block id="3b17d8f0676889d303a328918dd54569" category="list-text">請從下載Astra Control Center套裝組合（「Astra控制中心-[版本].tar.gz」）<block ref="ed74209aa7b0e064261367c862dc3177" category="inline-link-rx"></block>。</block>
+  <block id="071a2a9615ad21025ee81dce34e3420b" category="list-text">從下載Astra Control Center憑證和金鑰的.Zip檔案<block ref="ed74209aa7b0e064261367c862dc3177" category="inline-link-rx"></block>。</block>
+  <block id="6ca23ae27270cb11bc74e6fddd97a371" category="list-text">驗證套件的簽名。</block>
+  <block id="6bcb02856dcde67ff9ffe3b985333943" category="list-text">擷取Astra影像。</block>
+  <block id="f649b0ca3deae5a7d2e60dabf74a0ab4" category="list-text">變更至Astra目錄。</block>
+  <block id="f3a336387913fb09b49faa1d3e15bdde" category="list-text">將映像新增至本機登錄。</block>
+  <block id="cbe717f6539d2c2f1ad28aa5bb9769f1" category="list-text">使用適當的指令碼來載入映像、標記映像、然後將它們推送到本機登錄。</block>
+  <block id="8a1bf6a101dd1b45b027b1f821aa60ac" category="paragraph">適用於Docker：</block>
+  <block id="175a4c6a4a71657d0fb6c846c5262661" category="paragraph">若為Podman：</block>
+  <block id="057ec9b76bdef18315460f3694cd5b11" category="list-text">登入裸機OpenShift叢集Web主控台。從側功能表中、選取運算子&gt;運算子集線器。輸入「Astra」以列出「NetApp-acc營運者」。</block>
+  <block id="6126235bdbea31bbacde8866394afa2a" category="paragraph"><block ref="6126235bdbea31bbacde8866394afa2a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="974a814446bc76aab73372507d45e43a" category="admonition">「NetApp-acc操作者」是經過認證的Red Hat OpenShift操作者、列於作業系統集線器目錄下。</block>
+  <block id="1c9daf0b08f9d133b246b600ab8207a2" category="list-text">選取「NetApp-acc operator」、然後按一下「Install（安裝）」。</block>
+  <block id="b08ed73f0447038b95f2b48dc19ae4de" category="paragraph"><block ref="b08ed73f0447038b95f2b48dc19ae4de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="011458ebb9f725c15dc64d31b2c8da08" category="list-text">選取適當的選項、然後按一下「Install（安裝）」。</block>
+  <block id="34228ab26ecc4d96c7489233dfaa7aec" category="paragraph"><block ref="34228ab26ecc4d96c7489233dfaa7aec" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4ff9b0a64935c2ecc86c1f8a64828aeb" category="list-text">核准安裝、並等待操作員安裝。</block>
+  <block id="304c4bd8e7105921eca8c0352d7cddc6" category="paragraph"><block ref="304c4bd8e7105921eca8c0352d7cddc6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53e0a6c1a95ced69c04f31a15427c300" category="list-text">在此階段、操作員已成功安裝並準備就緒可供使用。按一下「View operator（檢視操作員）」開始安裝Astra Control Center。</block>
+  <block id="fbb0245c6a7767072ab04419c51840dc" category="paragraph"><block ref="fbb0245c6a7767072ab04419c51840dc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0d776fc8b4850f49686798442cf91dcc" category="list-text">在安裝Astra Control Center之前、請先建立Pull secret、以便從先前推入的Docker登錄下載Astra映像。</block>
+  <block id="18af2361ff0ba3b248024fb9d6fe4f94" category="paragraph"><block ref="18af2361ff0ba3b248024fb9d6fe4f94" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8c19ce93be726a03041ac3f89f868efe" category="list-text">若要從Docker Private repo擷取Astra Control Center映像檔、請在「NetApp-acc operator」命名空間中建立秘密。此秘密名稱會在Astra Control Center Yaml資訊清單中稍後提供。</block>
+  <block id="e5113dce4cdeac74feb705bb287a4f3c" category="paragraph"><block ref="e5113dce4cdeac74feb705bb287a4f3c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="95a5ef5680b7f2ecac39af1f05d7da44" category="list-text">從側功能表中選取「運算子」&gt;「安裝的運算子」、然後按一下所提供API區段下方的「建立執行個體」。</block>
+  <block id="79e4147b842de94c1ed2e1a3859ffac2" category="paragraph"><block ref="79e4147b842de94c1ed2e1a3859ffac2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="97d1bb3a90d32f97f79e6a53dd08d03c" category="list-text">填寫「Create」（建立）「吧」「Control Center」表單。提供名稱、Astra位址和Astra版本。</block>
+  <block id="8b1e06abd816739a4bf12cc5556217a7" category="paragraph"><block ref="8b1e06abd816739a4bf12cc5556217a7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe2c02c86280bba06337349b166cb9ec" category="admonition">在Astra Address下、提供Astra Control Center的FQDN位址。此位址用於存取Astra Control Center網頁主控台。FQDN也應解析為可連線的IP網路、並應在DNS中設定。</block>
+  <block id="1879b3dbbd0f96a8006586caa5f6acc4" category="list-text">輸入帳戶名稱、電子郵件地址、系統管理員姓氏、並保留預設的Volume回收原則。如果您使用負載平衡器、請將Ingress Type設為「AccTraefik」。否則、請選取「Ingress、Controller」（入口控制器）的「Gener通用」（通用）。在「Image登錄」下、輸入Container映像登錄路徑和機密。</block>
+  <block id="6f80b5d6019e9836173a9c3e73e9bb72" category="paragraph"><block ref="6f80b5d6019e9836173a9c3e73e9bb72" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4bbb62c95c906d6cae5e35744c045789" category="admonition">在此解決方案中、會使用Metallb負載平衡器。因此、入口類型為AccTraefik。這會將Astra Control Center truefik閘道公開為負載平衡器類型的Kubernetes服務。</block>
+  <block id="ca441c58c4b4c99fc2383bb693883aad" category="list-text">輸入管理員名字、設定資源擴充、並提供儲存類別。按一下「建立」。</block>
+  <block id="fd35f5b06f70bbe7f21bec913bc5c908" category="paragraph"><block ref="fd35f5b06f70bbe7f21bec913bc5c908" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e8faaaf07038b10285b090f06614a13c" category="paragraph">Astra Control Center執行個體的狀態應從「部署」變更為「就緒」。</block>
+  <block id="013d4c3a27fb49de795677fde0bc5637" category="paragraph"><block ref="013d4c3a27fb49de795677fde0bc5637" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="577e1b27adeadb525cb3822b311b580e" category="list-text">驗證是否已成功安裝所有系統元件、以及所有Pod是否都在執行中。</block>
+  <block id="e34e867469b8d6d40e42c1fbcc13a6d8" category="admonition">每個Pod的狀態應為「執行中」。部署系統Pod可能需要幾分鐘的時間。</block>
+  <block id="f0715aec950586c7219883a1146313e2" category="list-text">當所有Pod都在執行時、請執行下列命令來擷取一次性密碼。在Yaml版本的輸出中、檢查「tatus.deploymentState`」欄位以取得部署的值、然後複製「states.uuid」值。密碼為「ACC-」、後面接著UUID值。（ACC-[UUUID]）。</block>
+  <block id="5323e7a8f44f15c4b854425bacae9961" category="list-text">在瀏覽器中、使用您提供的FQDN瀏覽至URL。</block>
+  <block id="b7504c73a319408ba7a31856d3cc33bd" category="list-text">使用預設使用者名稱（即安裝期間提供的電子郵件地址和一次性密碼ACC-[UUUUID]）登入。</block>
+  <block id="fa84607b3da85b44ad51a00394b377a3" category="paragraph"><block ref="fa84607b3da85b44ad51a00394b377a3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed701e754a08a1db2d6ed7d6b057b677" category="admonition">如果您輸入錯誤密碼三次、系統管理員帳戶會鎖定15分鐘。</block>
+  <block id="2a382eb7da620cf1bf6a9856d184f2ae" category="list-text">變更密碼並繼續。</block>
+  <block id="f69e71db80caab752e3de48872bc0775" category="paragraph"><block ref="f69e71db80caab752e3de48872bc0775" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5606aa503cb24d632b2d3d6d26bba282" category="inline-link">Astra Control Center安裝總覽</block>
+  <block id="3ef8290364229caec08a69a9dc1210a2" category="paragraph">如需Astra Control Center安裝的詳細資訊、請參閱<block ref="bc78157234cb949291558917c3ff6530" category="inline-link-rx"></block> 頁面。</block>
+  <block id="d507eb4e66b24d44edccbe2de081c8ee" category="section-title">設定Astra控制中心</block>
+  <block id="7d36af14617797dc107c216138e691b8" category="paragraph">安裝Astra Control Center之後、請登入UI、上傳授權、新增叢集、管理儲存設備及新增儲存區。</block>
+  <block id="6c1178be2d30653be5bd4d983c0cc063" category="list-text">在首頁的「Account（帳戶）」下、移至「License（授權）」索引標籤、然後選取「Add License（新增授權）」以上傳Astra授權。</block>
+  <block id="5ce505ecc4ac2381cf2f6f10c756e12c" category="paragraph"><block ref="5ce505ecc4ac2381cf2f6f10c756e12c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11e4f085846f57731256b48458d16d14" category="list-text">在新增OpenShift叢集之前、請先從OpenShift網路主控台建立Astra Trident Volume快照類別。Volume Snapshot類別是以「csi.trident.netapp.io`驅動程式」來設定。</block>
+  <block id="b7f41e3defbc129fcefeda0bf44c8520" category="paragraph"><block ref="b7f41e3defbc129fcefeda0bf44c8520" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34790b071e5cae2220b79211e893b25f" category="list-text">若要新增Kubernetes叢集、請移至首頁上的「叢集」、然後按一下「新增Kubernetes叢集」。然後上傳叢集的「kubeconfig」檔案、並提供認證名稱。按一下「下一步」</block>
+  <block id="0daa3e63d38773439077e048a2cef23f" category="paragraph"><block ref="0daa3e63d38773439077e048a2cef23f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5e9bf5e41a52eda9a2e9cba209976456" category="list-text">系統會自動探索現有的儲存類別。選取預設儲存類別、按一下「Next（下一步）」、然後按一下「Add cluster（新增叢集）」。</block>
+  <block id="8ce5ab6c9c9713ea4486eee5f9948971" category="paragraph"><block ref="8ce5ab6c9c9713ea4486eee5f9948971" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ef4d5957882c015cefb490859e4f15d6" category="list-text">叢集會在幾分鐘內新增。若要新增其他OpenShift Container Platform叢集、請重複步驟1–4。</block>
+  <block id="e1fe148edfb186d5da919d8cae6906dc" category="inline-link">Volume SnapshotClass物件</block>
+  <block id="ee0ad920dc5829b03e516c5107ad3438" category="admonition">若要將額外的OpenShift作業環境新增為受管理的運算資源、請確定Astra Trident<block ref="d15ae237ad3b308a19184f47e50243c7" category="inline-link-rx"></block> 已定義。</block>
+  <block id="95ebc1f0d7c6454a2b87ff36972f5f34" category="list-text">若要管理儲存設備、請移至後端、按一下您要管理的後端「動作」下方的三個點。按一下「管理」。</block>
+  <block id="d99f2382e4cc5f03c6fed4e3d1f3bd80" category="paragraph"><block ref="d99f2382e4cc5f03c6fed4e3d1f3bd80" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a36dfeec2e98a9c00ff177a65b6225f6" category="list-text">提供ONTAP 「不全」認證、然後按「下一步」。檢閱資訊、然後按一下「託管」。後端應如下例所示。</block>
+  <block id="4cd455b89d9de68d8f9576fd14841a75" category="paragraph"><block ref="4cd455b89d9de68d8f9576fd14841a75" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="994b9ae6ce6143b2a2a8e21778a81a04" category="list-text">若要將儲存庫新增至Astra Control、請選取「儲存庫」、然後按一下「新增」。</block>
+  <block id="c2944fb399eafdc70f74eb37d490716c" category="paragraph"><block ref="c2944fb399eafdc70f74eb37d490716c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cf38cfd3df92487e9123be954f44104d" category="list-text">選取儲存區類型、並提供儲存區名稱、S3伺服器名稱、或IP位址和S3認證。按一下「更新」。</block>
+  <block id="f28c5e55eadf141a0ea38d6f50e7068a" category="paragraph"><block ref="f28c5e55eadf141a0ea38d6f50e7068a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9da7a1f0f7fee71d4f5bd6f1da77b0bb" category="admonition">在本解決方案中ONTAP 、AWS S3和SS3鏟斗都是使用的。您也可以使用StorageGRID 此功能。</block>
+  <block id="c5048148ad7d7ca070fd26190fe6fbbc" category="paragraph">庫位狀態應為健全狀態。</block>
+  <block id="588a47f8680b394517b7ce47cefa162b" category="paragraph"><block ref="588a47f8680b394517b7ce47cefa162b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c462efa05b868dfa6ad37a770a34b88" category="paragraph">Astra Control是Kubernetes叢集註冊的一部分、透過Astra Control Center進行應用程式感知資料管理、可自動建立角色繫結和NetApp監控命名空間、以從應用程式Pod和工作節點收集度量和記錄。將其中一個受支援的ONTAP型儲存類別設為預設類別。</block>
+  <block id="1cf97dd1e6f6c8888d8fa6dcede7fac9" category="inline-link">將叢集新增至Astra Control管理</block>
+  <block id="7b7f260c982647b3aee51c681be792ef" category="inline-link">應用程式管理需求</block>
+  <block id="7bc570394a747455e5ed6d1e45fea928" category="paragraph">您先請<block ref="c05760bbebe492348e11379a4b684f6c" category="inline-link-rx"></block>、您可以在叢集上安裝應用程式（Astra Control之外）、然後前往Astra Control的「應用程式」頁面、以管理應用程式及其資源。如需使用Astra管理應用程式的詳細資訊、請參閱<block ref="951440f66d61a3a208669b9c835a031c" category="inline-link-rx"></block>。</block>
+  <block id="afec64d00ecbb0a170d3923b080dbacb" category="paragraph"><block ref="afec64d00ecbb0a170d3923b080dbacb" category="inline-link-macro-rx"></block></block>
+  <block id="125cef4ef1c84def1e6681dba3a747e2" category="summary">本頁說明FlexPod 適用於OpenShift Container Platform 4裸機的邏輯拓撲和安裝。</block>
+  <block id="a0b6237d44a0d2c21f3d4a620c3985b9" category="doc">適用於OpenShift Container Platform 4裸機安裝FlexPod</block>
+  <block id="f10e6f4168fd0b7a7938b99cb2a92f1d" category="inline-link-macro">先前版本：解決方案元件。</block>
+  <block id="eb76defd1388bd0bcb80f85c792f7ae5" category="paragraph"><block ref="eb76defd1388bd0bcb80f85c792f7ae5" category="inline-link-macro-rx"></block></block>
+  <block id="49fb95a5bf8ec2fbf8b33e2f7c31fe29" category="inline-link">使用OpenShift Cisco驗證設計與部署指南（CVD）FlexPod</block>
+  <block id="008b944b958a9cfc59f2436678d2218d" category="paragraph">若要瞭FlexPod 解適用於OpenShift Container Platform 4裸機設計、部署詳細資料、以及NetApp Astra Trident安裝與組態、請參閱<block ref="a1cb5768a662f902b313f95b645289f1" category="inline-link-rx"></block>。本CVD涵FlexPod 蓋使用Ansible的功能進行的功能性和OpenShift Container Platform部署。CVD也提供有關準備工作節點、Astra Trident安裝、儲存後端及儲存類別組態的詳細資訊、這些是部署及設定Astra Control Center的幾項必要條件。</block>
+  <block id="c2d52e27011d5f3f8bfaac3b8d5a4660" category="paragraph">下圖說明FlexPod 了OpenShift Container Platform 4 Bare Metal on the效益。</block>
+  <block id="00ce1a07690efff1e4feab7bc0956769" category="paragraph"><block ref="00ce1a07690efff1e4feab7bc0956769" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a4307cd40efb0761d454f4410b6aa2a9" category="section-title">適用於VMware安裝上的OpenShift Container Platform 4 FlexPod</block>
+  <block id="d956a6bea51428aaa4953f6370cebb6d" category="inline-link">適用於OpenShift Container Platform 4的資料中心FlexPod</block>
+  <block id="069c6305d743d0580f896751ad108a78" category="paragraph">如需在FlexPod 執行VMware vSphere的VMware vSphere上部署Red Hat OpenShift Container Platform 4的詳細資訊、請參閱<block ref="a2d0c54fb4dd644ab00e9ecd40f02c05" category="inline-link-rx"></block>。</block>
+  <block id="dec02db6fa2e343fef05af969396afb1" category="paragraph">下圖說明FlexPod vSphere上OpenShift Container Platform 4的功能。</block>
+  <block id="c65207706ad820c9c1a22f0c2f27bfca" category="paragraph"><block ref="c65207706ad820c9c1a22f0c2f27bfca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="42b53f21476aa8c4c53a3f38cb4810e7" category="inline-link-macro">下一步：AWS上的Red Hat OpenShift。</block>
+  <block id="70f195922a6a8320c691239ce6bd1392" category="paragraph"><block ref="70f195922a6a8320c691239ce6bd1392" category="inline-link-macro-rx"></block></block>
+  <block id="7b512a08eb99537a765ea81e147c01fc" category="summary">在本節中、我們會針對各種已驗證的使用案例、重新審視解決方案。</block>
+  <block id="1b62bfa64f2673cba195487fd8feb18a" category="inline-link-macro">先前版本：在OpenShift Container Platform上安裝Astra Control Center。</block>
+  <block id="0e2a25b6bed87f8f40bab007ddf8aa69" category="paragraph"><block ref="0e2a25b6bed87f8f40bab007ddf8aa69" category="inline-link-macro-rx"></block></block>
+  <block id="6dc6f752ebbf33a1e47d6e58b3355a44" category="paragraph">在本節中、我們會針對以下使用案例重新審視解決方案：</block>
+  <block id="c7e7c6dc1d148c332dac305c5895f19f" category="list-text">將狀態化應用程式從遠端備份還原至雲端上執行的另一個OpenShift叢集。</block>
+  <block id="0c2fac35b74d2651a0cf203e46b43e81" category="list-text">將狀態化應用程式還原至OpenShift叢集中的相同命名空間。</block>
+  <block id="cb50c69a87472d190c5774a3b4a3ba23" category="list-text">將應用程式的行動性從一個FlexPod VMware系統（OpenShift Container Platform裸機）複製到另FlexPod 一個VMware系統（OpenShift Container Platform on VMware）。</block>
+  <block id="d99ec67419b81a899072309b77de3b1b" category="paragraph">值得注意的是、本解決方案僅驗證少數幾個使用案例。此驗證絕不代表Astra Control Center的完整功能。</block>
+  <block id="a9462b7caf51a5f0b6a2b5a33fb45816" category="inline-link-macro">下一步：利用遠端備份來還原應用程式。</block>
+  <block id="99e101fa8a67abbcc78b48de44a36fe8" category="paragraph"><block ref="99e101fa8a67abbcc78b48de44a36fe8" category="inline-link-macro-rx"></block></block>
+  <block id="4a4ae8a45209f121c5563aef13d0350d" category="sidebar">Cisco Intersight搭配NetApp ONTAP 解決方案儲存設備</block>
+  <block id="791474f815efa1479f85126e0698e330" category="sidebar">採用NetApp Astra和Cisco Intersight for Red Hat OpenShift的混合雲FlexPod</block>
 </blocks>

@@ -19,7 +19,7 @@ summary: 安裝Cisco Intersight assist之後、您就可以申請NetApp儲存設
 
 NOTE: 請確定Active IQ Unified Manager 已啟用NetApp Sure（AIQ UM）API閘道。
 
-瀏覽至*「設定」>「一般」>「功能設定」*。
+在NetApp IQ Unified Manager中、瀏覽至*設定>一般>功能設定*。
 
 image:ci-qsg_image7.png["已啟用NetApp AIQ UM API閘道的快照"]
 

@@ -17,6 +17,23 @@ summary: Cisco Intersight推出新版本、為您帶來新功能、增強功能�
 
 
 
+== 2022年8月
+
+
+NOTE: 必須升級至NetApp Active IQ Unified Manager 的更新版本9.11 GA、才能確保與最新版本的相容性和完整功能。如需此版本的已知問題清單、請參閱 <<Known Issues>>。
+
+* 更新叢集可用容量計算、以符合System Manager
+* 更新叢集一般頁面、在填入效能資料之前隱藏效能指標摘要
+* 修復了偶爾導致頁面掛起的叢集一般頁面UI問題
+* 新增CIFS共用、CIFS服務、qtree及SVM SnapMirror原則至後端庫存。
+* 已將共用和qtree新增至「邏輯庫存」區段下方的UI導覽功能表
+* 新增共享區為所選儲存VM的索引標籤
+* 如果儲存VM已啟用CIFS、則會在Storage VM General（儲存VM一般）索引標籤上新增CIFS服務資訊
+* 新增了叢集檢查頁面、可讓使用者驗證NetApp儲存系統的組態是否符合最佳實務做法
+
+
+
+
 == 2022年7月
 
 * 容量小工具現在提供更優異的叢集資料減量比率視覺效果
@@ -88,4 +105,13 @@ NOTE: 為確保未來版本的相容性與完整功能、建議您將NetApp Acti
 
 NOTE: 以上效能指標僅適用於透過NetApp Active IQ Unified Manager 供應器9.9或更新版本監控的儲存陣列。
 
+
+
+
+
+= 已知問題
+
+* 為了確保Intersight儲存設備庫存資料在資料收集過程中不會受到影響、任何不受支援ONTAP 的視覺叢集（例如ONTAP 、更新版本號：1.7P1）都必須從Active IQ Unified Manager 該版本中移除（AIQUM）。
+* 所有宣稱的目標都需要最低版本的AIQUM（9.11）才能FlexPod 順利完成、以利執行整合式系統互通性查詢。
+* 如果使用FQDN將不完整的叢集新增至AIM-UM、則不會填入「儲存設備庫存檢查」頁面。ONTAP使用者必須使用ONTAP IP位址將靜態叢集新增至AIM-UM。
 

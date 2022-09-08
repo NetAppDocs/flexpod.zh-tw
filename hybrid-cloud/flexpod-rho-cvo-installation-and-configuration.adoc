@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: flexpod-rho-cvo-installation-and-configuration.html 
+keywords:  
+summary:  
+---
+= 安裝與組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

@@ -1,0 +1,103 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/flexpod-rho-cvo-conclusion.html 
+keywords: conclusion 
+summary: 在這個解決方案中、我們使用FlexPod NetApp Astra產品組合、為執行於NetApp和AWS上的容器化應用程式實作了保護計畫。NetApp Astra Control Center和Astra Trident Cloud Volumes ONTAP 、以及下列項目FlexPod 、即包含了下列項目：NetApp、Red Hat OpenShift和The Rof Infrastructure、這些項目構成了本解決方案的核心元件。 
+---
+= 結論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-rho-cvo-application-recovery-with-remote-backups.html["先前版本：應用程式還原與遠端備份。"]
+
+在這個解決方案中、我們使用FlexPod NetApp Astra產品組合、為執行於NetApp和AWS上的容器化應用程式實作了保護計畫。NetApp Astra Control Center和Astra Trident Cloud Volumes ONTAP 、以及下列項目FlexPod 、即包含了下列項目：NetApp、Red Hat OpenShift和The Rof Infrastructure、這些項目構成了本解決方案的核心元件。
+
+我們透過擷取快照來證實應用程式的保護能力、並執行完整複製備份、在雲端和內部部署環境中執行的不同K8s叢集之間還原應用程式。
+
+我們也展示了在K8s叢集之間複製應用程式的能力、讓客戶能夠將應用程式移轉到所需位置的K8s叢集。
+
+由於產品不斷進化、因此客戶可以將應用程式與業務交付流程現代化。FlexPod有了這套解決方案FlexPod 、客戶就能放心地為雲端原生應用程式建置BCDR計畫、並將公有雲當作暫時性或全時DR計畫的據點、同時降低解決方案的成本。
+
+Astra Control可讓您將整個應用程式及其資料從一個Kubernetes叢集移至另一個叢集、無論叢集位於何處。它也能協助您加速雲端原生應用程式的部署、作業和保護。
+
+
+
+== 疑難排解
+
+如需疑難排解指引、請參閱 https://docs.netapp.com/us-en/astra-control-center/support/troubleshooting-acc.html["線上文件"^]。
+
+
+
+== 何處可找到其他資訊
+
+若要深入瞭解本文所述資訊、請檢閱下列文件和 / 或網站：
+
+* 首頁FlexPod
++
+https://www.flexpod.com["https://www.flexpod.com"^]
+
+* Cisco驗證FlexPod 的《設計與部署指南》、適用於
++
+https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html["https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html"^]
+
+* 以Infrastructure部署為VMware程式碼、使用Ansible FlexPod
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m6_esxi7u2.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m6_esxi7u2.html#AnsibleAutomationWorkflowandSolutionDeployment"^]
+
+* 以基礎架構做為Red Hat OpenShift裸機的程式碼、使用Ansible進行部署FlexPod
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_iac_redhat_openshift.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_iac_redhat_openshift.html"^]
+
+* Cisco UCS硬體與軟體互通性工具
++
+https://www.cisco.com/web/techdoc/ucs/interoperability/matrix/matrix.html["http://www.cisco.com/web/techdoc/ucs/interoperability/matrix/matrix.html"^]
+
+* Cisco Intersight資料表
++
+https://intersight.com/help/saas/home["https://intersight.com/help/saas/home"^]
+
+* NetApp Astra文件
++
+https://docs.netapp.com/us-en/astra-control-center/index.html["https://docs.netapp.com/us-en/astra-control-center/index.html"^]
+
+* NetApp Astra控制中心
++
+https://docs.netapp.com/us-en/astra-control-center/index.html["https://docs.netapp.com/us-en/astra-control-center/index.html"^]
+
+* NetApp Astra Trident
++
+https://docs.netapp.com/us-en/trident/index.html["https://docs.netapp.com/us-en/trident/index.html"^]
+
+* NetApp Cloud Manager
++
+https://docs.netapp.com/us-en/occm/concept_overview.html["https://docs.netapp.com/us-en/occm/concept_overview.html"^]
+
+* NetApp Cloud Volumes ONTAP
++
+https://docs.netapp.com/us-en/occm/task_getting_started_aws.html["https://docs.netapp.com/us-en/occm/task_getting_started_aws.html"^]
+
+* Red Hat OpenShift
++
+https://www.openshift.com/["https://www.openshift.com/"^]
+
+* NetApp 互通性對照表工具
++
+http://support.netapp.com/matrix/["http://support.netapp.com/matrix/"^]
+
+
+
+
+
+== 版本歷程記錄
+
+|===
+| 版本 | 日期 | 文件版本歷程記錄 
+
+
+| 1.0版 | 2022年7月 | 版本：Acc 22.04.0。 
+|===

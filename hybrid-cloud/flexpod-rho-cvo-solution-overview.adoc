@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/flexpod-rho-cvo-solution-overview.html 
+keywords: tr4936, 4936, containers, kubernetes, introduction, Astra, openshift, cvo, intersight 
+summary: 本技術報告將NetApp Astra Control Center與Red Hat OpenShift Container Platform結合在FlexPod 一個融合式基礎架構解決方案上、並延伸至Amazon Web Services（AWS）以形成混合雲資料中心。 
+---
+= TR-4936：FlexPod 採用NetApp Astra和Cisco Intersight for Red Hat OpenShift的混合雲
+:allow-uri-read: 
+
+
+Abhinav Singh
+
+
+
+== 簡介
+
+隨著容器和Kubernetes成為開發、部署、執行、管理及擴充容器化應用程式的實際選擇、企業在這些應用程式上執行業務關鍵應用程式的速度越來越快。業務關鍵應用程式在很大程度上取決於狀態。狀態化應用程式具有相關的狀態、資料和組態資訊、並取決於先前的資料交易來執行其商業邏輯。在Kubernetes上執行業務關鍵應用程式時、仍有像傳統應用程式一樣的可用度和營運不中斷需求。服務中斷可能嚴重影響公司的營收、生產力和聲譽。因此、保護、恢復及移動Kubernetes工作負載、無論是在叢集、內部部署資料中心、還是混合雲環境中、都能快速輕鬆地進行。企業已發現將業務移轉至混合雲模式、並將應用程式現代化至雲端原生尺寸規格的優點、在他們的名單中排名第一。
+
+本技術報告將NetApp Astra Control Center與Red Hat OpenShift Container Platform結合在FlexPod 一個融合式基礎架構解決方案上、並延伸至Amazon Web Services（AWS）以形成混合雲資料中心。建立在熟悉的基礎上 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_iac_redhat_openshift.html["包含FlexPod"^]本文將討論NetApp Astra Control Center、從安裝、組態設定、應用程式保護工作流程開始、到內部部署與雲端之間的應用程式移轉。此外、本節也討論在使用NetApp Astra Control Center執行Red Hat OpenShift上的容器化應用程式時、應用程式感知資料管理功能（例如備份與還原、營運不中斷）的優點。
+
+下圖說明解決方案總覽。
+
+image:flexpod-rho-cvo-image2.png["錯誤：缺少圖形影像"]
+
+
+
+== 目標對象
+
+本文件的目標讀者包括技術長（CTO）、應用程式開發人員、雲端解決方案架構設計師、站台可靠性工程師（SRE）、DevOps工程師、ITOps及專業服務團隊、他們專注於設計、託管及管理容器化應用程式。
+
+
+
+== NetApp Astra Control–主要使用案例
+
+NetApp Astra Control旨在為處理雲端原生微服務的客戶簡化應用程式保護：
+
+* *利用快照提供時間點（pit）應用程式呈現。*使用Astra Control、您可以為容器化應用程式建立端點對端點快照、其中包括在Kubernetes上執行的應用程式組態詳細資料、以及相關的持續儲存設備。發生事件時、只要按一下按鈕、即可將應用程式還原至已知良好的狀態。
+* *完整複製應用程式備份。*使用Astra Control、您可以依照預先定義的排程進行完整的應用程式備份、以自動化方式將應用程式還原至相同的K8s叢集或不同的K8s叢集。
+* *應用程式可攜性與利用複本進行移轉。*使用Astra Control、您可以將整個應用程式與其資料、從一個Kubernetes叢集複製到另一個K8s叢集或同一個K8s叢集內。無論叢集位於何處（只要在複製後刪除來源應用程式執行個體）、此功能也有助於跨K8s叢集移轉或移轉應用程式。
+* *自訂應用程式一致性。*使用Astra Control、您可以利用執行掛勾來控制定義應用程式靜止狀態。將「預先」和「POST」執行連結拖放到快照和備份工作流程、您的應用程式將會以您自己的方式靜止、然後再執行快照或備份。
+* *自動化應用程式層級的災難恢復（DR）。* Astra Control可讓您為容器化應用程式設定業務持續性災難恢復（BCDR）計畫。NetApp SnapMirror用於後端、DR工作流程的完整實作也會自動化。
+
+
+
+
+=== 解決方案拓撲
+
+本節說明解決方案的邏輯拓撲。
+
+下圖顯示解決方案拓撲、包括FlexPod 執行OpenShift Container Platform叢集的內部部署環境、以及採用NetApp Cloud Volumes ONTAP 功能的AWS、Cisco Intersight和NetApp Cloud Manager SaaS平台上的自我管理OpenShift Container Platform叢集。
+
+image:flexpod-rho-cvo-image3.png["錯誤：缺少圖形影像"]
+
+第一個OpenShift Container Platform叢集是在FlexPod VMware上安裝裸機、第二個OpenShift Container Platform叢集部署在執行FlexPod VMware vSphere的VMware vSphere上、第三個OpenShift Container Platform叢集則部署為 https://docs.openshift.com/container-platform/4.8/installing/installing_aws/installing-aws-private.html["私有叢集"^] 將AWS上的現有虛擬私有雲（VPC）當作自我管理的基礎架構。
+
+在本解決方案中FlexPod 、透過站台對站台VPN將物件連接至AWS、不過客戶也可以使用直接連線實作來延伸至混合雲。Cisco Intersight可用來管理FlexPod 不只是基礎架構的元件。
+
+在本解決方案中、Astra Control Center可管理以FlexPod 執行於效能分析和AWS上的OpenShift Container Platform叢集所託管的容器化應用程式。Astra Control Center安裝在執行FlexPod 於下列項目的OpenShift裸機執行個體上：Astra Control會與主節點上的Kube-API通訊、並持續監控Kubernetes叢集是否有變更。任何新增至K8s叢集的應用程式都會自動探索、並可供管理。
+
+利用Astra Control Center、即可將容器化應用程式的整合呈現擷取為快照。應用程式快照可透過排定的保護原則或隨需觸發。對於Astra支援的應用程式、快照會保持一致的當機狀態。應用程式快照會構成持續磁碟區中應用程式資料的快照、以及與該應用程式相關之各種Kubernetes資源的應用程式中繼資料。
+
+您可以使用預先定義的備份排程或隨需使用Astra Control來建立應用程式的完整複本備份。物件儲存設備用於儲存應用程式資料的備份。NetApp ONTAP S3、NetApp StorageGRID 產品組合及任何一般S3實作均可作為物件存放區使用。
+
+link:flexpod-rho-cvo-solution-components.html["下一步：解決方案元件。"]

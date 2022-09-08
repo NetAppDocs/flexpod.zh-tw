@@ -1,0 +1,294 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/flexpod-rho-cvo-solution-components.html 
+keywords: astra control, trident, storage backend, cloud central, cloud manager, Active IQ Unified Manager 
+summary: 本節說明本解決方案的各種元件。 
+---
+= 解決方案元件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-rho-cvo-solution-overview.html["上一篇：解決方案總覽。"]
+
+
+
+== FlexPod
+
+支援針對虛擬化與非虛擬化解決方案、提供一套已定義的硬體與軟體、為其奠定整合基礎。FlexPod此解決方案包括NetApp產品、Cisco Nexus網路、Cisco MDS儲存網路、Cisco Unified Computing System（Cisco UCS）FlexPod ONTAP 。此設計相當靈活、可將網路、運算和儲存設備放入單一資料中心機架、或是根據客戶的資料中心設計進行部署。連接埠密度可讓網路元件容納多種組態。
+
+
+
+== Astra Control
+
+Astra Control提供應用程式感知資料保護服務、適用於公有雲和內部部署環境中的雲端原生應用程式。Astra Control為您在Kubernetes上執行的容器化應用程式提供資料保護、災難恢復和移轉功能。
+
+
+
+=== 功能
+
+Astra Control為Kubernetes應用程式資料生命週期管理提供關鍵功能：
+
+* 自動管理持續儲存
+* 建立應用程式一致的隨需快照與備份
+* 自動化原則導向的快照與備份作業
+* 在混合雲設定中、將應用程式和相關資料從一個Kubernetes叢集移轉到另一個叢集
+* 將應用程式複製到相同的K8s叢集或另一個K8s叢集
+* 視覺化應用程式保護狀態
+* 提供圖形化使用者介面和完整的REST API清單、可從現有的內部工具實作所有保護工作流程。
+
+
+Astra Control為您的容器化應用程式提供單一窗口視覺化功能、讓您深入瞭解在Kubernetes叢集上建立的相關資源。您可以使用單一入口網站、在所有雲端或所有資料中心檢視所有叢集、所有應用程式。您可以在所有環境（內部部署或公有雲）中使用Astra Control API來實作資料管理工作流程。
+
+下圖顯示Astra Control功能。
+
+image:flexpod-rho-cvo-image4.png["錯誤：缺少圖形影像"]
+
+
+
+=== Astra Control消費模式
+
+Astra Control提供兩種消費模式：
+
+* * Astra Control Service.* NetApp所提供的全託管服務、可在Google Kubernetes Engine（GKE）、Azure Kubernetes Service（KS）中、提供Kubernetes叢集的應用程式感知資料管理功能。
+* * Astra Control Cent.*自行管理的軟體、可針對在內部部署和混合雲環境中執行的Kubernetes叢集、提供應用程式感知資料管理功能。
+
+
+本技術報告運用Astra Control Center來管理Kubernetes上執行的雲端原生應用程式。
+
+下圖顯示Astra Control架構。
+
+image:flexpod-rho-cvo-image5.png["錯誤：缺少圖形影像"]
+
+
+
+== Astra Trident
+
+Astra Trident是一款開放原始碼、完全支援的儲存協調工具、適用於Container和Kubernetes配送。它從一開始就設計成使用業界標準介面（例如）來協助您滿足容器化應用程式的持續需求 https://kubernetes-csi.github.io/docs/introduction.html["容器儲存介面（SCSI）"^]。有了Astra Trident、微服務和容器化應用程式就能充分利用NetApp儲存系統產品組合所提供的企業級儲存服務。
+
+Astra Trident部署在Kubernetes叢集上做為Pod、為Kubernetes工作負載提供動態儲存協調服務。它可讓您的容器化應用程式從NetApp廣泛的產品組合中快速輕鬆地使用持續儲存設備、包括NetApp ONTAP ®（NetApp AFF ®、NetApp FAS ®、NetApp ONTAP Select ®、Cloud、 以及Amazon FSX for NetApp ONTAP （NetApp）、NetApp Element 支援各種功能的功能、包括NetApp SolidFire 支援、Azure NetApp Files 以及支援各種功能的功能、例如Google Cloud上的Cloud Volume Service、以及AWS上的Cloud Volume Service。在不穩定的環境中、Astra Trident可用於動態配置及管理以NetApp支援的容器的持續Volume、這些容器以NetApp的支援功能為後盾、而LUN則裝載在諸如NetApp的不穩定區和不穩定區等儲存平台上、例如NetApp的不穩定區和不穩定區。FlexPod FlexVol ONTAP AFF FAS Cloud Volumes ONTAPTrident也在Astra Control提供的應用程式保護方案的實作中扮演關鍵角色。如需Astra Trident的詳細資訊、請參閱 https://docs.netapp.com/us-en/trident/index.html["Astra Trident文件。"^]
+
+
+
+== 儲存後端
+
+若要使用Astra Trident、您需要支援的儲存後端。Trident後端定義Trident與儲存系統之間的關係。它告訴Trident如何與該儲存系統通訊、以及Trident如何從該儲存系統配置磁碟區。Trident會自動從後端提供符合儲存類別所定義需求的儲存資源池。
+
+* 不再是儲存後端。ONTAP AFF FAS作為儲存軟體與硬體平台ONTAP 、支援核心儲存服務、支援多種儲存存取傳輸協定、以及儲存管理功能、例如NetApp Snapshot複本與鏡射。
+* 儲存後端Cloud Volumes ONTAP
+* https://docs.netapp.com/us-en/astra-data-store/index.html["Astra資料儲存區"^] 儲存後端
+
+
+
+
+== NetApp Cloud Volumes ONTAP
+
+NetApp Cloud Volumes ONTAP 功能是軟體定義的儲存產品、可為檔案和區塊工作負載提供進階資料管理功能。有了VMware、您就能最佳化雲端儲存成本並提升應用程式效能、同時強化資料保護、安全性和法規遵循。Cloud Volumes ONTAP
+
+主要效益包括：
+
+* 運用內建的重複資料刪除技術、資料壓縮、精簡配置及複製技術、將儲存成本降至最低。
+* 確保雲端環境發生故障時、企業的可靠性和持續營運。
+* NetApp領先業界的SnapMirror複寫技術可將內部部署的資料複寫到雲端、因此您可以輕鬆取得次要複本、以供多種使用案例使用。Cloud Volumes ONTAP
+* 此外、還整合了支援資料的功能、可提供備份與還原功能、以保護雲端資料、並可長期歸檔。Cloud Volumes ONTAP Cloud Backup Service
+* 在高效能與低效能儲存資源池之間隨需切換、而不需將應用程式離線。
+* 使用NetApp SnapCenter 功能確保Snapshot複本的一致性。
+* 支援資料加密、並提供防範病毒和勒索軟體的功能。 Cloud Volumes ONTAP
+* 與Cloud Data Sense整合可協助您瞭解資料內容並識別敏感資料。
+
+
+
+
+== Cloud Central
+
+Cloud Central提供集中位置、可存取及管理NetApp雲端資料服務。這些服務可讓您在雲端上執行關鍵應用程式、建立自動化的災難恢復站台、備份資料、以及在多個雲端之間有效地移轉和控制資料。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/occm35/concept_cloud_central.html["Cloud Central："^]
+
+
+
+== Cloud Manager
+
+Cloud Manager是企業級SaaS型管理平台、可讓IT專家和雲端架構設計師使用NetApp的雲端解決方案、集中管理混合式多雲端基礎架構。它提供集中式系統、可檢視及管理內部部署與雲端儲存設備、支援混合式、多個雲端供應商與帳戶。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/occm/index.html["Cloud Manager"^]。
+
+
+
+== 連接器
+
+Connector是一個執行個體、可讓Cloud Manager管理公有雲環境中的資源和程序。需要連接器才能使用Cloud Manager提供的許多功能。連接器可部署在雲端或內部部署網路中。
+
+下列位置支援連接器：
+
+* AWS
+* Microsoft Azure
+* Google Cloud
+* 在您的內部環境中
+
+
+若要深入瞭解Connector、請參閱 https://docs.netapp.com/us-en/occm/concept_connectors.html["此連結。"^]
+
+
+
+== NetApp Cloud Insights
+
+NetApp雲端基礎架構監控工具Cloud Insights 、可讓您監控由Astra Control Center管理的Kubernetes叢集效能與使用率。可將儲存使用量與工作負載建立關聯。Cloud Insights當您在Cloud Insights Astra控制中心啟用「支援不中斷連線」時、遙測資訊會顯示在Astra控制中心UI頁面中。
+
+
+
+== NetApp Active IQ Unified Manager
+
+NetApp Active IQ Unified Manager 功能可讓您透過ONTAP 重新設計的直覺式單一介面、監控您的不只是一個儲存叢集、還能提供社群智慧和AI分析的情報。它提供完整的作業、效能、以及對儲存環境及其上執行之虛擬機器（VM）的主動深入見解。當儲存基礎架構發生問題時、Unified Manager可通知您有關問題的詳細資料、以協助識別根本原因。VM儀表板可讓您檢視VM的效能統計資料、以便從VMware vSphere主機到網路、最後到儲存設備的整個I/O路徑進行調查。有些事件也提供補救行動、可用來修正問題。您可以設定事件的自訂警示、以便在發生問題時、透過電子郵件和SNMP設陷通知您。利用NetApp可預測容量和使用趨勢、在發生問題之前主動採取行動、避免因應短期決策而導致長期的額外問題、藉此規劃使用者的儲存需求。Active IQ Unified Manager
+
+
+
+== Cisco Intersight
+
+Cisco Intersight是SaaS平台、可針對傳統和雲端原生的應用程式和基礎架構、提供智慧型自動化、監控及最佳化功能。此平台可協助IT團隊推動變革、並提供專為混合雲設計的營運模式。
+
+Cisco Intersight提供下列優點：
+
+* *更快的交付速度。*由於採用敏捷的軟體開發模式、因此可從雲端或客戶資料中心以服務形式提供、並提供頻繁更新和持續創新的服務。如此一來、客戶就能專注於加速交付業務線。
+* *簡化營運。*使用單一安全的SaaS交付工具、搭配通用的庫存、驗證和API、在完整堆疊和所有位置上運作、消除跨團隊的封閉環境、進而簡化營運。從內部部署的實體伺服器與Hypervisor管理、到VM、K8s、無伺服器、自動化、 在內部部署和公有雲之間進行最佳化和成本控制。
+* *持續最佳化。*使用Cisco Intersight提供的智慧功能、跨越每個層面、以及Cisco技術支援中心、持續最佳化您的環境。這項智慧功能已轉換成建議的可自動執行的行動、讓您能夠即時因應每項變更：從移動工作負載、監控實體伺服器的健全狀況、到自動調整K8s叢集規模、再到您使用的公有雲的成本降低建議。
+
+
+Cisco Intersight有兩種管理作業模式：UCSM託管模式（UMM）和Intersight託管模式（IMMM）。在Fabric互連的初始設定期間、您可以為光纖附加的Cisco UCS系統選取原生Umm或IMMM。在此解決方案中、使用原生UMM。
+
+下圖顯示Cisco Intersight儀表板。
+
+image:flexpod-rho-cvo-image6.png["錯誤：缺少圖形影像"]
+
+
+
+== Red Hat OpenShift Container Platform
+
+Red Hat OpenShift Container Platform是一個容器應用平台、可將CRI-O與Kubernetes結合在一起、並提供API與Web介面來管理這些服務。CRI-O是Kubernetes Container執行時間介面（CRI）的實作、可透過開放容器方案（OCI）相容的執行時間來啟用。這是使用Docker做為Kubernetes執行時間的輕量化替代方案。
+
+OpenShift Container Platform可讓客戶建立及管理容器。容器是獨立於作業系統和基礎架構的獨立程序、可在自己的環境中執行。OpenShift Container Platform可協助開發、部署及管理以容器為基礎的應用程式。它提供自助服務平台、可隨需建立、修改及部署應用程式、進而加快開發與發行生命週期。OpenShift Container Platform採用微服務架構、採用小型分離式單元、可共同運作。它可在Kubernetes叢集上執行、其中含有儲存在etcd中的物件相關資料、這是一個可靠的叢集式金鑰值儲存區。
+
+下圖概述Red Hat OpenShift Container平台。
+
+image:flexpod-rho-cvo-image7.png["錯誤：缺少圖形影像"]
+
+
+
+=== Kubernetes基礎架構
+
+在OpenShift Container Platform中、Kubernetes可管理一組CRA-O執行時間主機上的容器化應用程式、並提供部署、維護和應用程式擴充的機制。CRI-O服務套件、具現化及執行容器化應用程式。
+
+Kubernetes叢集由一或多個主節點和一組工作節點組成。此解決方案設計包括硬體和軟體堆疊的高可用度（HA）功能。Kubernetes叢集設計為以HA模式執行、其中包含三個主要節點和至少兩個工作節點、以協助確保叢集沒有單點故障。
+
+
+
+=== Red Hat Core作業系統
+
+OpenShift Container Platform使用Red Hat Enterprise Linux CoreOS（RMCOS）、這是一套以容器為導向的作業系統、結合了CoreOS和Red Hat原子Host作業系統的部分最佳功能。RMCOS是專為執行OpenShift Container Platform的容器化應用程式所設計、可搭配新工具使用、以提供快速安裝、以營運者為基礎的管理、以及簡化的升級作業。
+
+RMCOS包括下列功能：
+
+* OpenShift Container Platform將其作為初始開機系統組態、用於初次啟動及設定機器。
+* CRI-O是Kubernetes原生Container執行時間實作、可與作業系統緊密整合、提供有效率且最佳化的Kubernetes體驗。CRI-O提供執行、停止及重新啟動容器的設施。它完全取代OpenShift Container Platform 3中使用的Docker Container Engine。
+* Kubernetes的主要節點代理程式Kubelet負責啟動及監控容器。
+
+
+
+
+== VMware vSphere 7.0
+
+VMware vSphere是一套虛擬化平台、可將大量的基礎架構（包括CPU、儲存設備和網路等資源）、整體管理為無縫、多功能且動態的作業環境。與管理個別機器的傳統作業系統不同、VMware vSphere會將整個資料中心的基礎架構集合在一起、建立一個資源強大的單一儲存設備、以便快速動態地分配給任何需要的應用程式。
+
+如需詳細資訊、請參閱 https://www.vmware.com/products/vsphere.html["VMware vSphere"^]。
+
+
+
+=== VMware vSphere vCenter
+
+VMware vCenter Server可從單一主控台統一管理所有主機和VM、並集合叢集、主機和VM的效能監控。VMware vCenter Server可讓系統管理員深入瞭解運算叢集、主機、VM、儲存設備、來賓作業系統、 以及虛擬基礎架構的其他重要元件。VMware vCenter可管理VMware vSphere環境中的豐富功能集。
+
+
+
+== 硬體與軟體版本
+
+此解決方案可延伸至FlexPod 任何執行支援軟體、韌體和硬體版本的支援環境、如中所定義 http://support.netapp.com/matrix/["NetApp 互通性對照表工具"^] 和 https://www.cisco.com/web/techdoc/ucs/interoperability/matrix/matrix.html["Cisco UCS硬體相容清單。"^] OpenShift叢集以FlexPod 裸機形式安裝在VMware vSphere上。
+
+管理多個OpenShift（k8s）叢集時、只需要使用單一Astra Control Center執行個體、而Trident SCSI則安裝在每個OpenShift叢集上。Astra Control Center可安裝在任何OpenShift叢集上。在本解決方案中、Astra Control Center安裝在OpenShift裸機叢集上。
+
+下表列出FlexPod OpenShift的支援軟硬體版本。
+
+|===
+| 元件 | 產品 | 版本 
+
+
+| 運算 | Cisco UCS Fabric Interconnects 6454. | 4.1（3c） 
+
+
+|  | Cisco UCS B200 M5伺服器 | 4.1（3c） 
+
+
+| 網路 | Cisco Nexus 9336C-FX2 NX-OS | 9.3（8） 
+
+
+| 儲存設備 | NetApp AFF 解決方案 | 9.11.1. 
+
+
+|  | NetApp Astra控制中心 | 22.04.0 
+
+
+|  | NetApp Astra Trident SCSI外掛程式 | 22.04.0 
+
+
+|  | NetApp Active IQ Unified Manager | 9.11. 
+
+
+| 軟體 | VMware ESXi Nenic乙太網路驅動程式 | 1.0.35.0 
+
+
+|  | vSphere ESXi | 7.0（U2） 
+
+
+|  | VMware vCenter應用裝置 | 7.0 U2b 
+
+
+|  | Cisco Intersight輔助虛擬應用裝置 | 1.0.9-342. 
+
+
+|  | OpenShift Container平台 | 4.9 
+
+
+|  | OpenShift Container Platform Master Node | RMCOS 4.9 
+
+
+|  | OpenShift Container Platform Worker Node | RMCOS 4.9 
+|===
+下表列出AWS上OpenShift的軟體版本。
+
+|===
+| 元件 | 產品 | 版本 
+
+
+| 運算 | 主要執行個體類型：M5.xLarge | 不適用 
+
+
+|  | 工作者執行個體類型：M5.Large | 不適用 
+
+
+| 網路 | 虛擬私有雲傳輸閘道 | 不適用 
+
+
+| 儲存設備 | NetApp Cloud Volumes ONTAP | 9.11.1. 
+
+
+|  | NetApp Astra Trident SCSI外掛程式 | 22.04.0 
+
+
+| 軟體 | OpenShift Container平台 | 4.9 
+
+
+|  | OpenShift Container Platform Master Node | RMCOS 4.9 
+
+
+|  | OpenShift Container Platform Worker Node | RMCOS 4.9 
+|===
+link:flexpod-rho-cvo-flexpod-for-openshift-container-platform-4-bare-metal-installation.html["下一步：FlexPod 適用於OpenShift Container Platform 4裸機安裝。"]
