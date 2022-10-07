@@ -462,16 +462,12 @@
   <block id="7f0e76e050a690f383ba518e5dc386f3" category="cell">NetApp FAS/AFF磁碟櫃文件</block>
   <block id="e76c07915a60bfdaf4c9dd87979fa449" category="cell">NetApp DS212C磁碟櫃</block>
   <block id="b539e925204802559371bf5b81d79954" category="inline-link">DS212C磁碟櫃文件</block>
-  <block id="ef162519d16b1936bf31da3a369049a1" category="cell"><block ref="ef162519d16b1936bf31da3a369049a1" category="inline-link-rx"></block></block>
   <block id="215bdc4f5901db3322a51a02e5573550" category="cell">NetApp DS224C磁碟櫃</block>
   <block id="2a23643eed53b0879cb9ffff0a404bfb" category="inline-link">DS224C磁碟櫃文件</block>
-  <block id="779556aec1edf8b5675c2d3dfa53e0c3" category="cell"><block ref="779556aec1edf8b5675c2d3dfa53e0c3" category="inline-link-rx"></block></block>
   <block id="d7592745d562764dea1fb30de121bb8a" category="cell">NetApp DS460C磁碟櫃</block>
   <block id="cc65918bd28bab6767cc0d37580a9bd0" category="inline-link">DS460C磁碟櫃文件</block>
-  <block id="c1993083b76561b6cc7488ea49dad053" category="cell"><block ref="c1993083b76561b6cc7488ea49dad053" category="inline-link-rx"></block></block>
   <block id="a3cf3a1f214dd05382c45e1c59088a60" category="cell">NetApp NS224 NVMe SSD磁碟櫃</block>
   <block id="87db9ffbb33e8796f7f110bc6b8b591d" category="inline-link">NS224磁碟櫃文件</block>
-  <block id="e509169f7b763c049d6e1cd8959bb624" category="cell"><block ref="68bc1010e02188d9b3d4ec8388e14a51" category="inline-link-rx"></block></block>
   <block id="16f17b706ba2e29ed39978b26d5efd75" category="section-title">NetApp推動</block>
   <block id="1db61abeed53a1e4b952c0d4bae14ca3" category="paragraph">NetApp磁碟機的技術規格包括尺寸規格、磁碟容量、磁碟RPM、支援控制器及ONTAP 版本要求。這些規格可在的「磁碟機」區段中找到<block ref="afd6b1daca313ab42848776252cb3eb9" category="inline-link-rx"></block>。</block>
   <block id="245c499a8eb2230fa27979a452c776e5" category="summary">本節所列的儲存作業系統可在FlexPod 《支援的資訊之速覽系統（All Flash Array Platform）」中獲得支援。</block>
@@ -9192,4 +9188,19 @@
   <block id="b2f3408c9d01ee65202784c85e804e29" category="inline-link-macro">下一步：從控制器執行Terraform。</block>
   <block id="b676b4f0a7c70c0b6b427d2d63263495" category="paragraph"><block ref="b676b4f0a7c70c0b6b427d2d63263495" category="inline-link-macro-rx"></block></block>
   <block id="549e147409126d885754994939d9cb6c" category="sidebar">採用NetApp技術的混合雲Google Cloud Platform搭配NetApp功能和Cisco Intersight FlexPod Cloud Volumes ONTAP</block>
+  <block id="b77014effa68d8bd1b8a5868123a2a63" category="summary">具備Proxy伺服器組態的AIQ UM需要透過CLI進行設定、才能使用IMT 此功能。</block>
+  <block id="e814e5396b09bd235085ad390f6ea986" category="doc">設定AIQ UM Proxy伺服器IMT 以進行服務</block>
+  <block id="5a66f19b0ec8be9c2e0a7c58787ea9b1" category="paragraph">如果您使用的Proxy伺服器搭配AIQ UM for Cisco Intersight搭配NetApp ONTAP 視覺儲存設備、則必須透過命令列介面（CLI）設定設定、以使用互通性對照表工具服務IMT （簡稱「Is2」）。您必須使用Active IQ Unified Manager VMware View Virtual Machine（OVA）診斷Shell來設定AIQ UM Proxy伺服器設定。</block>
+  <block id="80b32c2ac8f5fd5845a3ccaf583c8c8b" category="inline-link">如何存取Active IQ Unified Manager VMware虛擬機器（OVA）DIAG Shell</block>
+  <block id="baf8ab71191c15b45a74e4bc93f0b0cf" category="admonition">如需如何存取AIQ UM診斷Shell的資訊、請參閱<block ref="6b434b6393786ea1d3dba8a708c6486d" category="inline-link-rx"></block></block>
+  <block id="22b912c9ddb3da961206d948f4472107" category="list-text">登入AIQ UM終端機、然後執行下列命令登入um。</block>
+  <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 範例 *</block>
+  <block id="6cb809a8bc4e94ce05646c538ea53abd" category="list-text">執行下列命令、設定「IMT_PROxy_host」和「IMT_PROxy_port」。</block>
+  <block id="527a65460dc1c7f686c7683b3ab72495" category="admonition">該SproxyProxy是與SProxy（ASUP）Proxy組態分開的組態。IMT AutoSupport</block>
+  <block id="37f4f54ba1187a9487a7c7c02790e03e" category="admonition">支援驗證的不支援Proxy伺服器組態。IMT</block>
+  <block id="3b9d69f0a29fb6e182f8d000f6c02f3e" category="list-text">檢視IMT 「支援代理」詳細資料、透過下列命令來驗證「proxy_host」和「proxy_port」設定。</block>
+  <block id="1a8a82d18ec89729783cfac8c1b987e5" category="cell"><block ref="1a8a82d18ec89729783cfac8c1b987e5" category="inline-link-rx"></block></block>
+  <block id="f205de40b1d0e559049d3fcc494e1df9" category="cell"><block ref="f205de40b1d0e559049d3fcc494e1df9" category="inline-link-rx"></block></block>
+  <block id="a7925e750bfc040002383b6d7dc9f5ac" category="cell"><block ref="a7925e750bfc040002383b6d7dc9f5ac" category="inline-link-rx"></block></block>
+  <block id="eaa8da373e73883b20c172d7d760cc68" category="cell"><block ref="eaa8da373e73883b20c172d7d760cc68" category="inline-link-rx"></block></block>
 </blocks>

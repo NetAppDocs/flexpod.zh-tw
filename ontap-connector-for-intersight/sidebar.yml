@@ -11,6 +11,8 @@ entries:
   url: "/ontap-connector-for-intersight/ci-qsg_requirements.html"
 - title: 開始之前
   url: "/ontap-connector-for-intersight/ci-qsg_before_you_begin.html"
+- title: 設定AIQ UM Proxy伺服器IMT 以進行服務
+  url: "/ontap-connector-for-intersight/ci-qsg_aiqum_imt_proxy_config.html"
 - title: 請款目標
   url: "/ontap-connector-for-intersight/ci-qsg_claim_targets.html"
 - title: 從Cisco Intersight監控NetApp儲存設備

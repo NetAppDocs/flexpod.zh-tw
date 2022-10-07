@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: ontap-connector-for-intersight/ci-qsg_aiqum_imt_proxy_config.html 
+keywords: cisco, intersight, intersight assist, netapp, ontap, connector, configuration, active iq unified manager, proxy, imt, deployment, interoperability, ai qm, ova, cli 
+summary: 具備Proxy伺服器組態的AIQ UM需要透過CLI進行設定、才能使用IMT 此功能。 
+---
+= 設定AIQ UM Proxy伺服器IMT 以進行服務
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+如果您使用的Proxy伺服器搭配AIQ UM for Cisco Intersight搭配NetApp ONTAP 視覺儲存設備、則必須透過命令列介面（CLI）設定設定、以使用互通性對照表工具服務IMT （簡稱「Is2」）。您必須使用Active IQ Unified Manager VMware View Virtual Machine（OVA）診斷Shell來設定AIQ UM Proxy伺服器設定。
+
+
+NOTE: 如需如何存取AIQ UM診斷Shell的資訊、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/How_to_access_Active_IQ_Unified_Manager_Virtual_Machine_OVA_DIAG_shell["如何存取Active IQ Unified Manager VMware虛擬機器（OVA）DIAG Shell"]
+
+*步驟*
+
+. 登入AIQ UM終端機、然後執行下列命令登入um。
++
+[listing]
+----
+um cli login -u <um maintenance user name>
+----
++
+* 範例 *
+
++
+[listing]
+----
+um cli login -u admin
+----
+. 執行下列命令、設定「IMT_PROxy_host」和「IMT_PROxy_port」。
++
+
+NOTE: 該SproxyProxy是與SProxy（ASUP）Proxy組態分開的組態。IMT AutoSupport
+
++
+[listing]
+----
+um option set imt.https.proxy.host=<IMT_PROXY_HOST>
+um option set imt.https.proxy.port=<IMT_PROXY_PORT>
+----
++
+* 範例 *
+
++
+[listing]
+----
+um option set imt.https.proxy.host=example-proxy.cls.eng.com
+um option set imt.https.proxy.port=8200
+----
++
+
+NOTE: 支援驗證的不支援Proxy伺服器組態。IMT
+
+. 檢視IMT 「支援代理」詳細資料、透過下列命令來驗證「proxy_host」和「proxy_port」設定。
++
+[listing]
+----
+um option list |grep imt
+----
+

@@ -437,16 +437,16 @@ NetApp磁碟櫃的技術規格包括尺寸規格、每個機箱的磁碟機數�
 | 元件 | NetApp FAS/AFF磁碟櫃文件 
 
 
-| NetApp DS212C磁碟櫃 | http://docs.netapp.com/platstor/topic/com.netapp.nav.sas3/home.html["DS212C磁碟櫃文件"] 
+| NetApp DS212C磁碟櫃 | https://www.netapp.com/data-storage/disk-shelves-storage-media/["DS212C磁碟櫃文件"] 
 
 
-| NetApp DS224C磁碟櫃 | http://docs.netapp.com/platstor/topic/com.netapp.nav.sas3/home.html["DS224C磁碟櫃文件"] 
+| NetApp DS224C磁碟櫃 | https://www.netapp.com/data-storage/disk-shelves-storage-media/["DS224C磁碟櫃文件"] 
 
 
-| NetApp DS460C磁碟櫃 | http://docs.netapp.com/platstor/topic/com.netapp.nav.sas3/home.html["DS460C磁碟櫃文件"] 
+| NetApp DS460C磁碟櫃 | https://www.netapp.com/data-storage/disk-shelves-storage-media/["DS460C磁碟櫃文件"] 
 
 
-| NetApp NS224 NVMe SSD磁碟櫃 | https://docs.netapp.com/platstor/index.jsp?topic=%2Fcom.netapp.doc.hw-ds-nvme-shelfid%2FGUID-2C057CF4-8897-4270-BF57-CA90333FBCF4.html&lang=en["NS224磁碟櫃文件"] 
+| NetApp NS224 NVMe SSD磁碟櫃 | https://www.netapp.com/data-storage/disk-shelves-storage-media/["NS224磁碟櫃文件"] 
 |===
 
 
