@@ -118,9 +118,9 @@ image:express-c-series-aff220-deploy_image23.png["錯誤：缺少圖形影像"]
 . 使用空格鍵取消選取「Enable IPv6（重新啟動必要）」（啟用IPv6（重新啟動））選項、以停用IPv6。按Enter。
 . 進入功能表以設定DNS設定。
 . 由於IP位址是手動指派的、因此也必須手動輸入DNS資訊。
-. 輸入主DNS伺服器的IP位址<<nameserver_ip>>」
+. 輸入主DNS伺服器的IP位址」
 . （選用）輸入次要DNS伺服器的IP位址。
-. 輸入VMware ESXi主機名稱的FQDN：<<esxi_host_fqdn>>」
+. 輸入VMware ESXi主機名稱的FQDN：」
 . 按Enter接受DNS組態的變更。
 . 按Esc鍵退出「設定管理網路」子功能表。
 . 按Y確認變更、然後重新啟動伺服器。

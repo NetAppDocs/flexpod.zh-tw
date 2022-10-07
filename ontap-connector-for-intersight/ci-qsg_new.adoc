@@ -20,7 +20,7 @@ summary: Cisco Intersight推出新版本、為您帶來新功能、增強功能�
 == 2022年8月
 
 
-NOTE: 必須升級至NetApp Active IQ Unified Manager 的更新版本9.11 GA、才能確保與最新版本的相容性和完整功能。如需此版本的已知問題清單、請參閱 <<Known Issues>>。
+NOTE: 必須升級至NetApp Active IQ Unified Manager 的更新版本9.11 GA、才能確保與最新版本的相容性和完整功能。如需此版本的已知問題清單、請參閱  Issues。
 
 * 更新叢集可用容量計算、以符合System Manager
 * 更新叢集一般頁面、在填入效能資料之前隱藏效能指標摘要

@@ -1,0 +1,105 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/gcp-ncvo-solution-validation.html 
+keywords: validation, data replication workflow, measurements 
+summary: 在本頁、我們將以範例資料複寫工作流程來重新審視解決方案、並進行一些測量、以驗證資料複寫的完整性、從ONTAP 執行FlexPod 於Google Cloud Volumes ONTAP Cloud上的《從以NetApp執行的NetApp列舉到NetApp》。 
+---
+= 解決方案驗證
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:gcp-ncvo-terraform-execution-from-controller.html["先前版本：從控制器執行Terraform。"]
+
+在本節中、我們將以範例資料複寫工作流程來重新審視解決方案、並進行一些測量、以驗證資料複寫的完整性、從ONTAP 執行FlexPod 於Google Cloud Volumes ONTAP Cloud上的《從以NetApp執行的NetApp列舉到NetApp》。
+
+我們在此解決方案中使用Cisco Intersight工作流程Orchestrator、並將繼續使用此解決方案作為使用案例。
+
+值得注意的是、本解決方案所使用的Cisco Intersight工作流程有限、並不代表Cisco Intersight所配備的完整工作流程。您可以根據自己的特定需求建立自訂工作流程、並從Cisco Intersight觸發這些工作流程。
+
+若要驗證成功的DR情境、請先ONTAP 使用SnapMirror將資料從包含FlexPod 在功能性資料中的某個Volume移至Cloud Volumes ONTAP 功能性資料區。接著您可以嘗試從Google雲端運算執行個體存取資料、然後再進行資料完整性檢查。
+
+下列高層級步驟可用來驗證本解決方案的成功條件：
+
+. 在樣本資料集上產生SHA256 Checksum、該資料集出現在ONTAP 本文檔的某個範例資料集中FlexPod 。
+. 在ONTAP 不FlexPod 只是單純的不只是單純的不只是單純的使用者、還要在不Cloud Volumes ONTAP 只是單純的
+. 將樣本資料集從FlexPod 資料複寫到Cloud Volumes ONTAP 資料複寫。
+. 打破SnapMirror關係、並將Cloud Volumes ONTAP 整個Volume提升至正式作業。
+. 在Cloud Volumes ONTAP Google Cloud中將包含資料集的實體磁碟區對應至運算執行個體。
+. 在Cloud Volumes ONTAP 範例資料集上產生SHA256 Checksum、以利執行。
+. 比較來源和目的地的Checksum；兩側的Checksum可能相符。
+
+
+若要執行內部部署工作流程、請完成下列步驟：
+
+. 在Intersight中建立內部部署FlexPod 的工作流程。
++
+image:gcp-ncvo-image78.png["快照"]
+
+. 提供必要的輸入並執行工作流程。
++
+image:gcp-ncvo-image79.png["快照"]
+
+. 在系統管理程式中驗證新建立的SVM。
++
+image:gcp-ncvo-image80.png["快照"]
+
+. 建立並執行另一個災難恢復工作流程、在FlexPod 內部環境的支援環境中建立磁碟區、並在FlexPod 這個磁碟區之間建立SnapMirror關係、以供選擇。Cloud Volumes ONTAP
++
+image:gcp-ncvo-image81.png["快照"]
+
+. 驗證ONTAP 在系統管理程式中新建立的Volume。
++
+image:gcp-ncvo-image82.png["快照"]
+
+. 將相同的NFS磁碟區掛載到內部部署虛擬機器、然後複製範例資料集並執行Checksum。
++
+image:gcp-ncvo-image83.png["快照"]
+
++
+image:gcp-ncvo-image84.png["快照"]
+
+. 在Cloud Manager中檢查複寫狀態。根據資料大小、資料傳輸可能需要幾分鐘的時間。完成之後、您可以將SnapMirror狀態顯示為*閒置*。
++
+image:gcp-ncvo-image85.png["快照"]
+
+. 資料傳輸完成後、請停止裝載「Test_vol1」磁碟區的SVM、以模擬來源端的災難。
++
+SVM停止後、Cloud Manager中不會顯示「Test_vol1」磁碟區。
+
++
+image:gcp-ncvo-image86.png["快照"]
+
+. 打破複寫關係、將Cloud Volumes ONTAP 目的地磁碟區提升為正式作業。
++
+image:gcp-ncvo-image87.png["快照"]
+
++
+image:gcp-ncvo-image88.png["快照"]
+
+. 編輯磁碟區、並將其與匯出原則建立關聯、以啟用用戶端存取。
++
+image:gcp-ncvo-image89.png["快照"]
+
+. 取得適用於磁碟區的使用就緒掛載命令。
++
+image:gcp-ncvo-image90.png["快照"]
+
++
+image:gcp-ncvo-image91.png["快照"]
+
+. 將磁碟區掛載至運算執行個體、確認資料存在於目的地磁碟區、然後產生「shasfe_data_2GB」檔案的SHA256 Checksum。
++
+image:gcp-ncvo-image92.png["快照"]
+
+. 比較來源FlexPod （景點）和目的地Cloud Volumes ONTAP （景點）的總和檢查值。
+. 校驗和與來源和目的地相符。
+
+
+您可以確認從來源到目的地的資料複寫已成功完成、而且資料完整性已得到維護。現在、在來源站台進行還原時、應用程式可以安全地使用這些資料來服務用戶端。
+
+link:gcp-ncvo-conclusion.html["下一步：結論。"]

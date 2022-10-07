@@ -2,6 +2,34 @@
 section: hybrid-cloud
 title: 混合雲
 entries:
+- title: 採用NetApp技術的混合雲Google Cloud Platform搭配NetApp功能和Cisco Intersight FlexPod Cloud
+    Volumes ONTAP
+  type: solutions
+  entries:
+  - title: 解決方案總覽
+    url: "/hybrid-cloud/gcp-ncvo-solution-overview.html"
+  - title: 解決方案元件
+    url: "/hybrid-cloud/gcp-ncvo-solution-components.html"
+  - title: 安裝與組態
+    entries:
+    - title: 部署FlexPod
+      url: "/hybrid-cloud/gcp-ncvo-deploy-flexpod.html"
+    - title: Cisco Intersight組態
+      url: "/hybrid-cloud/gcp-ncvo-cisco-intersight-configuration.html"
+    - title: Terraform Cloud與ICO的整合先決條件
+      url: "/hybrid-cloud/gcp-ncvo-terraform-cloud-integration-with-ico-prerequisite.html"
+    - title: 設定公有雲服務供應商
+      url: "/hybrid-cloud/gcp-ncvo-configure-public-cloud-service-provider.html"
+    - title: 自動部署混合雲NetApp儲存設備
+      url: "/hybrid-cloud/gcp-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html"
+    - title: DR工作流程
+      url: "/hybrid-cloud/gcp-ncvo-dr-workflow.html"
+    - title: 從控制器執行Terraform
+      url: "/hybrid-cloud/gcp-ncvo-terraform-execution-from-controller.html"
+  - title: 解決方案驗證
+    url: "/hybrid-cloud/gcp-ncvo-solution-validation.html"
+  - title: 結論
+    url: "/hybrid-cloud/gcp-ncvo-conclusion.html"
 - title: 採用NetApp Astra和Cisco Intersight for Red Hat OpenShift的混合雲FlexPod
   type: solutions
   entries:

@@ -8428,4 +8428,768 @@
   <block id="99e101fa8a67abbcc78b48de44a36fe8" category="paragraph"><block ref="99e101fa8a67abbcc78b48de44a36fe8" category="inline-link-macro-rx"></block></block>
   <block id="4a4ae8a45209f121c5563aef13d0350d" category="sidebar">Cisco Intersight搭配NetApp ONTAP 解決方案儲存設備</block>
   <block id="791474f815efa1479f85126e0698e330" category="sidebar">採用NetApp Astra和Cisco Intersight for Red Hat OpenShift的混合雲FlexPod</block>
+  <block id="28d5cfec2cd9fc90ebbf8f74a625f0f2" category="summary">在這個解決方案中、NetApp Cloud Data Service Cloud Volumes ONTAP 、可靠性和FlexPod 可靠性資料中心基礎架構是用來建置DR解決方案、並採用Cisco Intersight Cloud Orchestrator技術的公有雲。此解決方案不斷進化、讓客戶能夠將應用程式與業務交付流程現代化。FlexPod有了這套解決方案、您可以利用公有雲做為暫時性或全時DR計畫的理想據點、同時降低DR解決方案的成本。</block>
+  <block id="55b703aabe54821b6b01a0b44f42d5bc" category="inline-link-macro">先前版本：解決方案驗證。</block>
+  <block id="a32e4e95364ffbad606090ede21ebdd0" category="paragraph"><block ref="a32e4e95364ffbad606090ede21ebdd0" category="inline-link-macro-rx"></block></block>
+  <block id="812bf5909886df82811c165a4ed8b01d" category="paragraph">內部部署FlexPod 的內部部署的NetApp功能與NetApp Cloud Volumes ONTAP 功能之間的資料複寫是由獲證實的SnapMirror技術所處理、但您也可以選擇Cloud Sync 其他NetApp資料傳輸與同步工具、例如針對您的資料移動需求而選擇的功能。以TLS/AES為基礎的內建加密技術、提供即時資料安全性。</block>
+  <block id="a18714e0708f254b05cd644112b5728b" category="paragraph">無論您的應用程式是暫時的災難恢復計畫、或是企業的全職災難恢復計畫、本解決方案所使用的產品組合都能大規模滿足這兩項需求。以Cisco Intersight Workflow Orchestrator為後盾、可透過預先建置的工作流程來自動化、不僅免除重建程序的需求、也能加速BCDR計畫的實作。</block>
+  <block id="d543fe011b5ca59d76b0601285d35c3a" category="paragraph">此解決方案可透過FlexPod Cisco Intersight Cloud Orchestrator提供的自動化與協調功能、輕鬆且便利地在混合雲上管理內部部署的功能和資料複寫。</block>
+  <block id="d3b7c913cd04ebfec0e9ec32cb6fd58c" category="section-title">GitHub</block>
+  <block id="6ccd6e595c753175e7ea6b9c3c00feb9" category="list-text">使用的所有Terraform組態</block>
+  <block id="c179b6fa575bc7fa32dfb7610146c685" category="inline-link"><block ref="c179b6fa575bc7fa32dfb7610146c685" category="inline-link-rx"></block></block>
+  <block id="68e15b733420e402fbbb000ebeca5961" category="paragraph"><block ref="68e15b733420e402fbbb000ebeca5961" category="inline-link-rx"></block></block>
+  <block id="f8ea35d5f1082c0d4ebadcaeb5c4ce9b" category="list-text">用於匯入工作流程的Json檔案</block>
+  <block id="d36eb67bdeda5d26432b94d3b21665aa" category="inline-link"><block ref="d36eb67bdeda5d26432b94d3b21665aa" category="inline-link-rx"></block></block>
+  <block id="7ee1c41b1421d2dc52ff2a6c0ca34454" category="paragraph"><block ref="7ee1c41b1421d2dc52ff2a6c0ca34454" category="inline-link-rx"></block></block>
+  <block id="a9ec7bb4f4f0cf0273cc7a2d54798374" category="list-text">Cisco Intersight說明中心</block>
+  <block id="325ef16488c41cabfb77587d00f90537" category="list-text">Cisco Intersight Cloud Orchestrator文件：</block>
+  <block id="fa212deb4193a2682a5adc2e636644bd" category="inline-link"><block ref="fa212deb4193a2682a5adc2e636644bd" category="inline-link-rx"></block></block>
+  <block id="99839072ce01f98f3b6cf15b8382c597" category="paragraph"><block ref="99839072ce01f98f3b6cf15b8382c597" category="inline-link-rx"></block></block>
+  <block id="30de9c74ca24ef6c8bab1b4a84f1fde5" category="list-text">Cisco Intersight Service for HashiCorp Terraform文件</block>
+  <block id="3eb9b36a3168b0f6da765e2ada88617d" category="inline-link"><block ref="3eb9b36a3168b0f6da765e2ada88617d" category="inline-link-rx"></block></block>
+  <block id="fd09af68db9c0dfd650f7c4e78a460f8" category="paragraph"><block ref="fd09af68db9c0dfd650f7c4e78a460f8" category="inline-link-rx"></block></block>
+  <block id="3060910bb320ad2fd34d07464c85725f" category="inline-link"><block ref="3060910bb320ad2fd34d07464c85725f" category="inline-link-rx"></block></block>
+  <block id="6fbda78dbf9544421ca94656af2d60d0" category="paragraph"><block ref="6fbda78dbf9544421ca94656af2d60d0" category="inline-link-rx"></block></block>
+  <block id="04d452bb65ecf39ba22501bcfe33a74d" category="list-text">Cisco Intersight Cloud Orchestrator資料表</block>
+  <block id="88ab9197aec1a2d2e6b750005780355b" category="inline-link"><block ref="88ab9197aec1a2d2e6b750005780355b" category="inline-link-rx"></block></block>
+  <block id="7694a8b09c651585b616cd5c2e2d315f" category="paragraph"><block ref="7694a8b09c651585b616cd5c2e2d315f" category="inline-link-rx"></block></block>
+  <block id="04de9f12c9816edbaa3c2e844070e26d" category="list-text">Cisco Intersight Service for HashiCorp Terraform資料表</block>
+  <block id="cbf7792df5787e2488397b0a12491eec" category="inline-link"><block ref="cbf7792df5787e2488397b0a12491eec" category="inline-link-rx"></block></block>
+  <block id="4b69ade29c4ddd1a50169396d2e6167a" category="paragraph"><block ref="4b69ade29c4ddd1a50169396d2e6167a" category="inline-link-rx"></block></block>
+  <block id="87a10d4cd20cfd124b01902a2c1429a7" category="paragraph"><block ref="87a10d4cd20cfd124b01902a2c1429a7" category="inline-link-rx"></block></block>
+  <block id="5264da9809f5f966f5f03e5a027a117a" category="list-text">採用Cisco UCS X系列的資料中心FlexPod</block>
+  <block id="67a915151759ecc737f698391f7cfd08" category="section-title">互通性</block>
+  <block id="1f735b42d50924526fea1c1512159c8c" category="paragraph"><block ref="1f735b42d50924526fea1c1512159c8c" category="inline-link-rx"></block></block>
+  <block id="f58e06fa88f4c2a1b6785754a9e0a782" category="section-title">NetApp Cloud Volumes ONTAP 產品參考文件</block>
+  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
+  <block id="9fdeec9ecb7581b5b8e2d2a5fcc66adc" category="paragraph"><block ref="9fdeec9ecb7581b5b8e2d2a5fcc66adc" category="inline-link-rx"></block></block>
+  <block id="384f18164b60938c5ad89d5effb32d7b" category="list-text">NetApp TCO計算機Cloud Volumes ONTAP</block>
+  <block id="1464cfd03ef9221a5c46576dbb5acaaf" category="paragraph"><block ref="1464cfd03ef9221a5c46576dbb5acaaf" category="inline-link-rx"></block></block>
+  <block id="89a8336752fe296450613297e4b900cf" category="list-text">Sizer Cloud Volumes ONTAP</block>
+  <block id="60bd11ea0e09744eaeccf06ad57d256f" category="inline-link"><block ref="60bd11ea0e09744eaeccf06ad57d256f" category="inline-link-rx"></block></block>
+  <block id="a86cb95749eab7bd0c6a482d4da0d720" category="paragraph"><block ref="a86cb95749eab7bd0c6a482d4da0d720" category="inline-link-rx"></block></block>
+  <block id="77484b50042596806200eb9ad8a1034b" category="list-text">雲端評估工具</block>
+  <block id="1069773ac12400966d826141fdef9d8b" category="paragraph"><block ref="1069773ac12400966d826141fdef9d8b" category="inline-link-rx"></block></block>
+  <block id="e2616fc1fdb50365b35d1d5473ed3dce" category="list-text">NetApp混合雲</block>
+  <block id="9fcffeb3a73be8377997a3dbce512929" category="paragraph"><block ref="9fcffeb3a73be8377997a3dbce512929" category="inline-link-rx"></block></block>
+  <block id="23efdbe8862f0b39feb5fee8ba6a9555" category="list-text">Cloud Manager API文件</block>
+  <block id="3fa5dc240c6c9a67734c097894aad63a" category="inline-link"><block ref="3fa5dc240c6c9a67734c097894aad63a" category="inline-link-rx"></block></block>
+  <block id="c832101e61c0299f840aa2fb0dc54a5f" category="paragraph"><block ref="c832101e61c0299f840aa2fb0dc54a5f" category="inline-link-rx"></block></block>
+  <block id="b9a6d65bed31fdf5f2527866fa0dfd9d" category="section-title">疑難排解問題</block>
+  <block id="868df23d9e8dc922a264062fa79c2241" category="inline-link"><block ref="868df23d9e8dc922a264062fa79c2241" category="inline-link-rx"></block></block>
+  <block id="3f6b4966cbc4a579bb0f9bef161c8fa5" category="paragraph"><block ref="3f6b4966cbc4a579bb0f9bef161c8fa5" category="inline-link-rx"></block></block>
+  <block id="303e96f80576360d0c7b07ae7528fa4b" category="section-title">Terraform</block>
+  <block id="2286ccbf59b9435994947e88725c76e8" category="list-text">Terraform Cloud</block>
+  <block id="e07006e711ecd6f73bd7048090b7e2ab" category="inline-link"><block ref="e07006e711ecd6f73bd7048090b7e2ab" category="inline-link-rx"></block></block>
+  <block id="98ca9412177a5814dfc1273e93b809e8" category="paragraph"><block ref="98ca9412177a5814dfc1273e93b809e8" category="inline-link-rx"></block></block>
+  <block id="fb6bb9990406d2b2738dce70c36fb9f5" category="list-text">Terraform文件</block>
+  <block id="1ed30a4b55ba790efa401b303c8c37f4" category="inline-link"><block ref="1ed30a4b55ba790efa401b303c8c37f4" category="inline-link-rx"></block></block>
+  <block id="3a05ef5172fb9c6f0659f46f7acb6e1a" category="paragraph"><block ref="3a05ef5172fb9c6f0659f46f7acb6e1a" category="inline-link-rx"></block></block>
+  <block id="844506467bd58ba94370953ce011170b" category="list-text">NetApp Cloud Manager登錄</block>
+  <block id="3820325f9ee4ef1564a4956854301751" category="inline-link"><block ref="3820325f9ee4ef1564a4956854301751" category="inline-link-rx"></block></block>
+  <block id="99bdab1ba48d99c6b9acd194ae1eb5df" category="paragraph"><block ref="99bdab1ba48d99c6b9acd194ae1eb5df" category="inline-link-rx"></block></block>
+  <block id="c731f72e1d22a7c5e01a7cb789a8885e" category="section-title">GCP</block>
+  <block id="369e0f23a1a6dd50bf713d3771a63ab4" category="list-text">適用於GCP的高可用度ONTAP</block>
+  <block id="ad697fee8b8edd1e753ec60060dd1394" category="inline-link"><block ref="ad697fee8b8edd1e753ec60060dd1394" category="inline-link-rx"></block></block>
+  <block id="abfe0d8c399de2e80383ac64ea642a0f" category="paragraph"><block ref="abfe0d8c399de2e80383ac64ea642a0f" category="inline-link-rx"></block></block>
+  <block id="08c7c6c7a0eaf45b1812976fa5f40a08" category="list-text">GCP環境</block>
+  <block id="07cd340ee20e09fd5ad828c27798a62c" category="inline-link"><block ref="07cd340ee20e09fd5ad828c27798a62c" category="inline-link-rx"></block></block>
+  <block id="fe6eee3642045f58dd18597ab300a43a" category="paragraph"><block ref="fe6eee3642045f58dd18597ab300a43a" category="inline-link-rx"></block></block>
+  <block id="bbe9a5129b8211f586f57fa3c81a56d0" category="summary">本節說明實作此解決方案所需的所有解決方案元件。</block>
+  <block id="037d666bf4e372500ae12a5586124677" category="paragraph"><block ref="037d666bf4e372500ae12a5586124677" category="inline-link-macro-rx"></block></block>
+  <block id="7833bbc47611761f05b9a8273bfcc9b8" category="paragraph">支援針對虛擬化與非虛擬化解決方案、提供一套明確定義的硬體與軟體、為兩者提供整合式基礎。FlexPod包含NetApp的不整儲存設備、Cisco Nexus網路、Cisco MDS儲存網路、以及Cisco Unified Computing System（Cisco UCS）FlexPod ONTAP 。此設計相當靈活、可將網路、運算和儲存設備放入單一資料中心機架、或是根據客戶的資料中心設計進行部署。連接埠密度可讓網路元件容納多種組態。</block>
+  <block id="746c911b9080ad5685beb48bc4e87fdc" category="paragraph">Cisco Intersight是SaaS平台、可針對傳統和雲端原生的應用程式和基礎架構、提供智慧型自動化、監控及最佳化功能。此平台可協助IT團隊推動變革、並提供專為混合雲設計的營運模式。Cisco Intersight提供下列優點：</block>
+  <block id="91b14ca67790413a539614bfb9b60060" category="list-text">*更快的交付速度。*由於採用敏捷的軟體開發模式、因此可從雲端或客戶資料中心以服務形式提供、並提供頻繁更新和持續創新的服務。如此一來、客戶就能專注於加速交付業務線。</block>
+  <block id="e80d745eb45409b15c92907b1a4370c8" category="list-text">*簡化營運。*使用單一安全的SaaS交付工具、搭配通用的庫存、驗證和API、在整個堆疊和所有位置上運作、以簡化營運、消除跨團隊的封閉環境。從內部部署的實體伺服器與Hypervisor管理、到VM、K8s、無伺服器、自動化、 在內部部署和公有雲之間進行最佳化和成本控制。</block>
+  <block id="f787f087a1f6eaed7b5cccfde5cd5306" category="list-text">*持續最佳化。*使用Cisco Intersight提供的智慧功能、跨越每個層面、以及Cisco技術支援中心、持續最佳化您的環境。這項智慧功能已轉換成建議且可自動執行的動作、讓您能夠即時因應每項變更：從移動工作負載、監控實體伺服器的健全狀況、到您使用的公有雲所建議的成本降低建議。</block>
+  <block id="7a3e1f28e5357956ed40f51eaffef792" category="paragraph">Cisco Intersight有兩種管理作業模式：UCSM託管模式（UMM）和Intersight託管模式（IMMM）。您可以在初始設定光纖互連時、為光纖附加的Cisco UCS系統選取原生Umm或IMMM。在此解決方案中、使用原生的IMM.</block>
+  <block id="6275a2d3828d6e9e1283549c6eb97d28" category="section-title">Cisco Intersight授權</block>
+  <block id="2bffe2ef90c9dd706416edd74f9979f3" category="paragraph">Cisco Intersight使用多層的訂閱型授權。</block>
+  <block id="ad76b447719ee525367b3f9e1d2d74db" category="paragraph">Cisco Intersight授權層如下：</block>
+  <block id="ea355e3c3cb577b3107b711a9afd53f3" category="list-text">* Cisco Intersight Essentials *包含所有基礎功能及下列功能：</block>
+  <block id="ad9fb76f4c570d079c7d1aaafed445ab" category="list-text">Cisco UCS Central</block>
+  <block id="1d964f5f3de3fa97d800e6e0775ae950" category="list-text">Cisco IMC主管權利</block>
+  <block id="a815ed7f01e05b7d30cee5f576c4fd83" category="list-text">使用伺服器設定檔進行原則型組態</block>
+  <block id="dd56e6cd0992d8514725a4acede35af7" category="list-text">韌體管理</block>
+  <block id="1d4fe46da3e791622416090e0316b7a1" category="list-text">評估與硬體相容性清單（HCL）的相容性</block>
+  <block id="479a03e9ed8f4b73028173a264932046" category="list-text">* Cisco Intersight Advantage *包含Essentials層級的功能與特色、以及下列功能：</block>
+  <block id="bea8e01cf1c3f6b2c8cc0c6f7f5d62f6" category="list-text">跨實體運算、網路、儲存設備、VMware虛擬化及AWS公有雲的小工具、庫存、容量、使用率功能及跨網域庫存關聯。</block>
+  <block id="e7c1fab5556e3293d7c694df8118e4ef" category="list-text">Cisco安全性摘要報告服務、客戶可在此收到重要的安全性警示和受影響端點裝置的現場通知。</block>
+  <block id="32085592ea7375e22d4e50fb250ab93b" category="list-text">* Cisco Intersight Premier *除了優勢層提供的功能之外、Cisco Intersight Premier還提供下列功能：</block>
+  <block id="8689723938ad68dca4800a06de385d61" category="list-text">Intersight Cloud Orchestrator（ICO）適用於Cisco與協力廠商運算、網路、儲存設備、整合式系統、虛擬化、 容器和公有雲平台</block>
+  <block id="7c7cb6774a222f136c322cbd6271909f" category="list-text">Cisco UCS Director的完整訂購權利、不需額外付費。</block>
+  <block id="c138302b39330092178afca4d6a1b99d" category="paragraph">如需每個授權所支援之Intersight授權和功能的詳細資訊、請參閱<block ref="7eb168891f5d1b0113edfcdbba242d25" category="inline-link-rx"></block>。</block>
+  <block id="635a4cf8fefd5a9d753528bc767bfc5f" category="admonition">在此解決方案中、我們使用Intersight Cloud Orchestrator和Intersight Service for HashiCorp Terraform。這些功能適用於具有Intersight Premier授權的使用者、因此必須啟用此授權層級。</block>
+  <block id="c4111b747373051b5b95ba533ab26cda" category="section-title">Terraform Cloud與ICO整合</block>
+  <block id="c905a15b564036aed889ec79a12b2b42" category="paragraph">您可以使用Cisco Intersight Cloud Orchestrator（ICO）建立及執行稱為Terraform Cloud（TFC）API的工作流程。「叫用Web API要求」工作可支援以Terraform Cloud做為目標、並可使用HTTP方法設定Terraform Cloud API。因此、工作流程可以結合使用一般API工作和其他作業來呼叫多個Terraform Cloud API的工作。您需要Premier授權才能使用ICO功能。</block>
+  <block id="e23b1faaa773bc841675a9d4e18ef128" category="section-title">Cisco Intersight小幫手</block>
+  <block id="f21c1da9fbfdee9365a8996cefe9d817" category="paragraph">Cisco Intersight協助可協助您將端點裝置新增至Cisco Intersight。資料中心可能有多個裝置無法直接與Cisco Intersight連線。Cisco Intersight支援但未直接連線至的任何裝置都需要連線機制。Cisco Intersight小幫手提供這種連線機制、可協助您將裝置新增至Cisco Intersight。</block>
+  <block id="8b83e74c5234b94ef4aa50c7e8355cf7" category="inline-link">Cisco Intersight Virtual Appliance入門指南</block>
+  <block id="30f75ac7800191b38f765a03e95e4e92" category="paragraph">Cisco Intersight虛擬應用裝置可在Cisco Intersight虛擬應用裝置中使用Cisco Intersight輔助功能、此應用裝置以開放式虛擬應用裝置（OVA）檔案格式的可部署虛擬機器形式散佈。您可以在ESXi伺服器上安裝應用裝置。如需詳細資訊、請參閱<block ref="9ec2007768c9abd4b84d3e74335f0c5f" category="inline-link-rx"></block>。</block>
+  <block id="bf647454e36069fd16f1a7a35cf6a865" category="inline-link">快速入門</block>
+  <block id="ec0f396f2d3d02970c125145260fcc38" category="paragraph">在Intersight中申請Intersight assist之後、您可以使用Intersight assist選項來申請端點裝置。如需詳細資訊、請參閱<block ref="5c61a46cbaf3644182eeea7ed23b0ac8" category="inline-link-rx"></block>。</block>
+  <block id="4bd50825ba17a2acb595707efca60c74" category="list-text">運用內建的重複資料刪除技術、資料壓縮、精簡配置及複製技術、將儲存成本降至最低。</block>
+  <block id="5b22d57ae20a13353e0800be8fda5c50" category="list-text">在雲端環境發生故障時、提供企業級的可靠性和持續營運。</block>
+  <block id="d14748164dcd7407330b974fba978880" category="list-text">NetApp SnapMirror是領先業界的複寫技術、可將內部部署的資料複寫到雲端、因此您可以輕鬆取得次要複本、以供多種使用案例使用。Cloud Volumes ONTAP</block>
+  <block id="5b8323c8e9d9958da4242126519064e5" category="list-text">此外、還整合了支援備份與還原功能的功能、可保護雲端資料並長期歸檔。Cloud Volumes ONTAP Cloud Backup Service</block>
+  <block id="7439de3a5dc39945bf626d0f142fb2a3" category="list-text">在高效能與低效能儲存資源池之間隨需切換、而不需將應用程式離線。</block>
+  <block id="e47f4d50b9a7d31850314f79b07c89b9" category="list-text">使用NetApp SnapCenter 功能提供Snapshot複本的一致性。</block>
+  <block id="18c70a53630dad3791a51d3a1b08b562" category="paragraph">Cloud Central提供集中位置、可存取及管理NetApp雲端資料服務。這些服務可讓您在雲端上執行關鍵應用程式、建立自動化的DR站台、備份SaaS資料、以及在多個雲端之間有效地移轉和控制資料。如需詳細資訊、請參閱<block ref="ef2f80fcac56775a5e4c8b298adc8f42" category="inline-link-rx"></block>。</block>
+  <block id="d7bd0f007a100411c8b59ce1a239d505" category="paragraph">Cloud Manager是企業級SaaS型管理平台、可讓IT專家和雲端架構設計師使用NetApp雲端解決方案集中管理混合式多雲端基礎架構。它提供集中式系統、可用於檢視及管理內部部署與雲端儲存設備、以支援多家混合雲供應商與客戶。如需詳細資訊、請參閱<block ref="78eaae3c42f31156debba144f4ad7dca" category="inline-link-rx"></block>。</block>
+  <block id="17bdc8141e5dc3e45f3b56856eac1502" category="paragraph">Connector可讓Cloud Manager管理公有雲環境中的資源與程序。連接器執行個體必須使用Cloud Manager提供的許多功能、而且可以部署在雲端或內部部署網路中。下列位置支援連接器：</block>
+  <block id="4df40e141b0559f15db8f84f78aed013" category="list-text">內部部署</block>
+  <block id="7ee3affd9e60ceb2b9e3a6591e5bdb60" category="paragraph">NetApp Active IQ Unified Manager 功能可讓您透過ONTAP 重新設計的直覺式單一介面、監控您的不只是一個儲存叢集、還能提供社群智慧和AI分析的情報。它提供完整的作業、效能、以及對儲存環境及其上執行之虛擬機器的主動深入見解。當儲存基礎架構發生問題時、Unified Manager可通知您有關問題的詳細資料、以協助識別根本原因。虛擬機器儀表板可讓您檢視虛擬機器的效能統計資料、以便從vSphere主機到網路、最後到儲存設備的整個I/O路徑進行調查。</block>
+  <block id="b6bececf79765f735afe96ca6a372677" category="paragraph">有些事件也提供補救行動、您可以採取這些行動來修正問題。您可以設定事件的自訂警示、以便在發生問題時、透過電子郵件和SNMP設陷通知您。利用NetApp可預測容量和使用趨勢、在發生問題之前主動採取行動、避免因應短期決策而導致長期的額外問題、藉此規劃使用者的儲存需求。Active IQ Unified Manager</block>
+  <block id="c2e2fce3a995f59900d7afbbe58683f5" category="inline-link">此連結</block>
+  <block id="edc471e35cb4a935ff2612be287b4622" category="paragraph">如需VMware vSphere的詳細資訊、請參閱<block ref="1c79928d773a6a687b99f75e1531d5b3" category="inline-link-rx"></block>。</block>
+  <block id="80d88dcb4abb4fb16a3dcd2b30537a5d" category="section-title">硬體與軟體版本</block>
+  <block id="5b5b418e0c91979a9827fe792ba8dc75" category="paragraph">此混合雲解決方案可延伸至FlexPod 執行NetApp互通性對照表工具和Cisco UCS硬體相容清單所定義之受支援軟體、韌體和硬體版本的任何支援環境。</block>
+  <block id="2c6e4ca4692997fe4d11c99c80dfbb47" category="paragraph">在內部部署環境中、用作基礎平台的功能就是根據所述的準則與規格來部署FlexPod<block ref="f10eda6a1028e8f651dae68f5081fe48" category="inline-link-rx"></block>。</block>
+  <block id="7dc4cb6e5cc764021edf603ee8086766" category="paragraph">此環境中的網路為ACI型。如需詳細資訊、請參閱<block ref="52978bee2b81a5e001ad2371304c6c3c" category="inline-link-rx"></block>。</block>
+  <block id="0de80610a4cf8c45d9737ee7c93ff699" category="list-text">如需詳細資訊、請參閱下列連結：</block>
+  <block id="78bb864de2f3628a86c0e8e70bb5087d" category="list-text"><block ref="78bb864de2f3628a86c0e8e70bb5087d" category="inline-link-rx"></block></block>
+  <block id="0d87b9270aecd2565c2b1c531fbb959b" category="list-text"><block ref="0d87b9270aecd2565c2b1c531fbb959b" category="inline-link-rx"></block></block>
+  <block id="071525c85bdb987cadd64553952b977b" category="list-text"><block ref="071525c85bdb987cadd64553952b977b" category="inline-link-rx"></block></block>
+  <block id="b9ac0f5a408543b25267c7b18f92a793" category="paragraph">下表顯示FlexPod 了有關硬體與軟體版本的資訊。</block>
+  <block id="8a14b9430ecf77aa29cf62499a6805cc" category="cell">Cisco UCS X210 C-M6.</block>
+  <block id="636209f84e6a091cb33e0a4b0797d517" category="cell">5.0（1b）</block>
+  <block id="4050fe42ef663681f4a0351a830abc54" category="cell">4.2（2a）</block>
+  <block id="36a884b66a05fe2f14e97457ff65959a" category="cell">Cisco Nexus 9332C（脊柱）</block>
+  <block id="573f11f9a84b4e05919220d25b4a4171" category="cell">14.2（7秒）</block>
+  <block id="4835ce1897802aec129296c17be6f0a9" category="cell">Cisco Nexus 9336C-FX2（Leaf）</block>
+  <block id="3156dd33c46cdf0b0f85ee56fdbde4aa" category="cell">Cisco ACI</block>
+  <block id="d6cee59c00e824e53b470f1f765a127f" category="cell">4.2（7）</block>
+  <block id="cedd98a2f38cdafe187d3e9aa5657c60" category="cell">適用於VMware VAAI的NetApp NFS外掛程式</block>
+  <block id="217c407fc866eb13dd653007eb45c079" category="cell">2.0-15</block>
+  <block id="5ecb6b24c169667ff1a176768115659e" category="cell">Active IQ Unified Manager</block>
+  <block id="f2991c5b36598de40e8da0ad1cce293d" category="cell">7.0（U3）</block>
+  <block id="03bc88feb8c0ce198a12645fce792b30" category="cell">7.0.3</block>
+  <block id="88cf5495333c55b8342dbb57bd6d7ebe" category="cell">1.0.11-306</block>
+  <block id="fa7ceb8575b8fff909615662ac46674b" category="paragraph">Terraform Cloud for Business帳戶會執行Terraform組態。Terraform組態使用Terraform供應商的NetApp Cloud Manager。</block>
+  <block id="164284cc4b6224def696228983b76364" category="paragraph">下表列出廠商、產品及版本。</block>
+  <block id="1129ea7ef173c0128f37020fea647cec" category="cell">HashiCorp</block>
+  <block id="8733519a60fd49dee81fe221b6da28b5" category="cell">1.2.7</block>
+  <block id="0da1750004f7c759d1e8c561d641c115" category="paragraph">下表顯示Cloud Manager和Cloud Volumes ONTAP 各種版本的資訊。</block>
+  <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="cell">NetApp</block>
+  <block id="4f8261c495074e5d5a19d690ba126b0f" category="cell">3.9.21</block>
+  <block id="5e879ef49b48cebf265dca9ffe1788a9" category="inline-link-macro">下一步：安裝與組態-部署FlexPod 功能。</block>
+  <block id="f76a180ca674dd6361693a55c8dac231" category="paragraph"><block ref="f76a180ca674dd6361693a55c8dac231" category="inline-link-macro-rx"></block></block>
+  <block id="2a897edf7367a756ab404301bb53432b" category="summary">本頁列出使用FlexPod 支援功能來設定Cisco Intersight所需的資源。</block>
+  <block id="d78c53e860299f27f327545be8febaa7" category="doc">Cisco Intersight組態</block>
+  <block id="4f85f6f72a3271e0f8a966edde764e81" category="inline-link-macro">上一篇：部署FlexPod 功能</block>
+  <block id="bc608a93bb7019bc779b1f1a5c15f0fa" category="paragraph"><block ref="bc608a93bb7019bc779b1f1a5c15f0fa" category="inline-link-macro-rx"></block></block>
+  <block id="293126242dbc358f87bde4141dbc530c" category="paragraph">若要設定Cisco Intersight和Intersight小幫手、請參閱Cisco驗證的FlexPod 《支援找到的設計」<block ref="4be172445d052df3a6539293c3fe29ba" category="inline-link-rx"></block>。</block>
+  <block id="8215c4882674a4305767399d9a43d7db" category="inline-link-macro">下一步：Terraform Cloud與ICO整合的先決條件。</block>
+  <block id="34203f61fde9b873964b6623029c0f4b" category="paragraph"><block ref="34203f61fde9b873964b6623029c0f4b" category="inline-link-macro-rx"></block></block>
+  <block id="69b1ef6590180c408bc0feb1d9769f0b" category="summary">在本頁、我們將以範例資料複寫工作流程來重新審視解決方案、並進行一些測量、以驗證資料複寫的完整性、從ONTAP 執行FlexPod 於Google Cloud Volumes ONTAP Cloud上的《從以NetApp執行的NetApp列舉到NetApp》。</block>
+  <block id="1e472079c22b08f805b1720281baba6b" category="inline-link-macro">先前版本：從控制器執行Terraform。</block>
+  <block id="d48cab5f1b30eb3578b5a170ba59ee23" category="paragraph"><block ref="d48cab5f1b30eb3578b5a170ba59ee23" category="inline-link-macro-rx"></block></block>
+  <block id="dac0bd43fff7f9c89199f39a23accb80" category="paragraph">在本節中、我們將以範例資料複寫工作流程來重新審視解決方案、並進行一些測量、以驗證資料複寫的完整性、從ONTAP 執行FlexPod 於Google Cloud Volumes ONTAP Cloud上的《從以NetApp執行的NetApp列舉到NetApp》。</block>
+  <block id="89518a07acbdbe4dde36fa54a24cb816" category="paragraph">我們在此解決方案中使用Cisco Intersight工作流程Orchestrator、並將繼續使用此解決方案作為使用案例。</block>
+  <block id="ef1fc9473334d665707fc654387aca5e" category="paragraph">值得注意的是、本解決方案所使用的Cisco Intersight工作流程有限、並不代表Cisco Intersight所配備的完整工作流程。您可以根據自己的特定需求建立自訂工作流程、並從Cisco Intersight觸發這些工作流程。</block>
+  <block id="7c8fa5fc944f50775d2964313e47defe" category="paragraph">若要驗證成功的DR情境、請先ONTAP 使用SnapMirror將資料從包含FlexPod 在功能性資料中的某個Volume移至Cloud Volumes ONTAP 功能性資料區。接著您可以嘗試從Google雲端運算執行個體存取資料、然後再進行資料完整性檢查。</block>
+  <block id="ff20347981f12a7025f66d58eaa6c0ab" category="paragraph">下列高層級步驟可用來驗證本解決方案的成功條件：</block>
+  <block id="df99bb72ae33d1183cac370f481b9e10" category="list-text">在樣本資料集上產生SHA256 Checksum、該資料集出現在ONTAP 本文檔的某個範例資料集中FlexPod 。</block>
+  <block id="07639f7b00b1b739b185812f67970a39" category="list-text">在ONTAP 不FlexPod 只是單純的不只是單純的不只是單純的使用者、還要在不Cloud Volumes ONTAP 只是單純的</block>
+  <block id="77b0649a68bd12e30a079c58814fbde9" category="list-text">將樣本資料集從FlexPod 資料複寫到Cloud Volumes ONTAP 資料複寫。</block>
+  <block id="33a9919927d0bf146771949f2a55fa84" category="list-text">打破SnapMirror關係、並將Cloud Volumes ONTAP 整個Volume提升至正式作業。</block>
+  <block id="22924722760dff5d15bb33fb7cdefeee" category="list-text">在Cloud Volumes ONTAP Google Cloud中將包含資料集的實體磁碟區對應至運算執行個體。</block>
+  <block id="97e56ddd25631d14f7c9c089b257aede" category="list-text">在Cloud Volumes ONTAP 範例資料集上產生SHA256 Checksum、以利執行。</block>
+  <block id="0231c5857fad88e331211ab5f7c53f0a" category="list-text">比較來源和目的地的Checksum；兩側的Checksum可能相符。</block>
+  <block id="cc59c9678564230fb99ee54dd3f3426f" category="paragraph">若要執行內部部署工作流程、請完成下列步驟：</block>
+  <block id="1f44fa5edf8dde5cf4f8d97507bf7b91" category="list-text">在Intersight中建立內部部署FlexPod 的工作流程。</block>
+  <block id="3afbd9828e011526955ca93b48b57524" category="inline-image-macro">快照</block>
+  <block id="c2e63941a3546d0ebc5271eb1ddafdbf" category="paragraph"><block ref="c2e63941a3546d0ebc5271eb1ddafdbf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b4bb537f5b737d6b3712a2eecf29acc7" category="list-text">提供必要的輸入並執行工作流程。</block>
+  <block id="9ea97ae83ff13cf8f80bbb724a092b2e" category="paragraph"><block ref="9ea97ae83ff13cf8f80bbb724a092b2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="21a4653f598384f9cdda211b72da3624" category="list-text">在系統管理程式中驗證新建立的SVM。</block>
+  <block id="2fd71dd02dfb2c14fb0f30a41805db27" category="paragraph"><block ref="2fd71dd02dfb2c14fb0f30a41805db27" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9fa79629cb187cd1f1a80cac0b9b9007" category="list-text">建立並執行另一個災難恢復工作流程、在FlexPod 內部環境的支援環境中建立磁碟區、並在FlexPod 這個磁碟區之間建立SnapMirror關係、以供選擇。Cloud Volumes ONTAP</block>
+  <block id="4b20a3dca129415313af4db062a56ebd" category="paragraph"><block ref="4b20a3dca129415313af4db062a56ebd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="17926f4cb78686060a868e0a8742bc8c" category="list-text">驗證ONTAP 在系統管理程式中新建立的Volume。</block>
+  <block id="25cf9d1383c6264b6751d4720c8aa51d" category="paragraph"><block ref="25cf9d1383c6264b6751d4720c8aa51d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cc57d96c6da10e00338fa9d33d59011a" category="list-text">將相同的NFS磁碟區掛載到內部部署虛擬機器、然後複製範例資料集並執行Checksum。</block>
+  <block id="88c00f5f5ead28999ec0e3159505b1d1" category="paragraph"><block ref="88c00f5f5ead28999ec0e3159505b1d1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41bf7ceb253ae81a9674f61836fa2c00" category="paragraph"><block ref="41bf7ceb253ae81a9674f61836fa2c00" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9d6b440f824474c319ab03ece17865b7" category="list-text">在Cloud Manager中檢查複寫狀態。根據資料大小、資料傳輸可能需要幾分鐘的時間。完成之後、您可以將SnapMirror狀態顯示為*閒置*。</block>
+  <block id="dd2b3db97d3d98314f7f000eb77ba5d3" category="paragraph"><block ref="dd2b3db97d3d98314f7f000eb77ba5d3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="16dcbc91e3d6627c2617510737097188" category="list-text">資料傳輸完成後、請停止裝載「Test_vol1」磁碟區的SVM、以模擬來源端的災難。</block>
+  <block id="8d89ccec0beb51ea153dc13eb743549e" category="paragraph">SVM停止後、Cloud Manager中不會顯示「Test_vol1」磁碟區。</block>
+  <block id="2daed770d7e1d57858018a3a284d3a74" category="paragraph"><block ref="2daed770d7e1d57858018a3a284d3a74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="893f57c92cb33f610732ab3f7a7410fc" category="list-text">打破複寫關係、將Cloud Volumes ONTAP 目的地磁碟區提升為正式作業。</block>
+  <block id="e0596816fb067c94052d80ece82ec4eb" category="paragraph"><block ref="e0596816fb067c94052d80ece82ec4eb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="54c3c46ad0c220c48a9e99a365a35d18" category="paragraph"><block ref="54c3c46ad0c220c48a9e99a365a35d18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d1722b4dd68c0912192fc57695a9f0cb" category="list-text">編輯磁碟區、並將其與匯出原則建立關聯、以啟用用戶端存取。</block>
+  <block id="ac04f704c43ebea8c94fa6262227178c" category="paragraph"><block ref="ac04f704c43ebea8c94fa6262227178c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e14869af2399ae859c15fd7cec22023d" category="list-text">取得適用於磁碟區的使用就緒掛載命令。</block>
+  <block id="a50580afd0e21cf96c2f96ae4a20a529" category="paragraph"><block ref="a50580afd0e21cf96c2f96ae4a20a529" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ef11a0e63459aea7adc66c2ea6f2aa99" category="paragraph"><block ref="ef11a0e63459aea7adc66c2ea6f2aa99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="952791a95d4123c909c667d51ba1b32e" category="list-text">將磁碟區掛載至運算執行個體、確認資料存在於目的地磁碟區、然後產生「shasfe_data_2GB」檔案的SHA256 Checksum。</block>
+  <block id="fc35d462e743c1b522358aa115268e09" category="paragraph"><block ref="fc35d462e743c1b522358aa115268e09" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ae581d3bc4fc3d47d8b728efedfb6aa" category="list-text">比較來源FlexPod （景點）和目的地Cloud Volumes ONTAP （景點）的總和檢查值。</block>
+  <block id="34aac2a1392e30ab3ec0e33c17f4b6ec" category="list-text">校驗和與來源和目的地相符。</block>
+  <block id="01b934dfa12e16dd2064227df772dccc" category="paragraph">您可以確認從來源到目的地的資料複寫已成功完成、而且資料完整性已得到維護。現在、在來源站台進行還原時、應用程式可以安全地使用這些資料來服務用戶端。</block>
+  <block id="fd5a0331dea68ef832dc37e290b1bfd5" category="paragraph"><block ref="fd5a0331dea68ef832dc37e290b1bfd5" category="inline-link-macro-rx"></block></block>
+  <block id="1110378103a587f562da59b8232a4bb5" category="summary">本頁說明如何存取NetApp Cloud Manager、以及如何部署Connector。</block>
+  <block id="296905c924222c83eef2d46cfc06670c" category="doc">設定公有雲服務供應商</block>
+  <block id="a93bd8fac0274b3d8a9a725b02a7006e" category="inline-link-macro">先前：Terraform Cloud與ICO整合的先決條件。</block>
+  <block id="14f746f4385eed664c63e7c2ceb0c33f" category="paragraph"><block ref="14f746f4385eed664c63e7c2ceb0c33f" category="inline-link-macro-rx"></block></block>
+  <block id="60d1ed6349be5d3bad11d86129f158ce" category="section-title">程序1：存取NetApp Cloud Manager</block>
+  <block id="49fc376ed35249f3841846ede4dab884" category="inline-link">NetApp Cloud Central</block>
+  <block id="881118b4505a907203f96d7d4bb2464b" category="paragraph">若要存取NetApp Cloud Manager和其他雲端服務、您必須先註冊<block ref="25c9ce3f64e912d3750c233c5edfffad" category="inline-link-rx"></block>。</block>
+  <block id="4f39c070d98fb8261f08a9f4af4bfcea" category="admonition">若要在Cloud Central帳戶中設定工作區和使用者、請按一下<block ref="8db968382215ca64c3ec159bc6512f38" category="inline-link-rx"></block>。</block>
+  <block id="2e4179358198d20865e3e24968e6d2d5" category="section-title">程序2：部署Connector</block>
+  <block id="4d12f9411baea75a585912a995cd84b2" category="paragraph">若要在Google Cloud中部署Connector、請參閱這一點<block ref="7d420e21b1b4b492131970b38e3c7184" category="inline-link-rx"></block>。</block>
+  <block id="5dcab386a1ca963fc73435340cd17e59" category="inline-link-macro">下一步：自動部署混合雲NetApp儲存設備。</block>
+  <block id="fa0a9a98c8d38275c036e1e42c650fda" category="paragraph"><block ref="fa0a9a98c8d38275c036e1e42c650fda" category="inline-link-macro-rx"></block></block>
+  <block id="31ff2f42aa06afb4f688413ec87469d6" category="summary">本頁說明如何連接Cisco Intersight和Terraform Cloud、如何產生使用者權杖、如何宣告Terraform雲端目標、以及如何新增Terraform Cloud代理程式。</block>
+  <block id="4ede2f96caaa6d0a14cb67452b876f33" category="doc">Terraform Cloud與ICO的整合先決條件</block>
+  <block id="5879a343b1bb9064ae1b5f83edd2ef96" category="inline-link-macro">先前版本：Cisco Intersight組態。</block>
+  <block id="9923c0ce9a58421f785fd2ec60966fa0" category="paragraph"><block ref="9923c0ce9a58421f785fd2ec60966fa0" category="inline-link-macro-rx"></block></block>
+  <block id="a6988e0328985acf7d14b582d5555880" category="section-title">程序1：連接Cisco Intersight和Terraform Cloud</block>
+  <block id="ee8cc5791df61140cfb2aea76b83f8bf" category="list-text">請提供相關的Terraform Cloud帳戶詳細資料、以申請或建立Terraform雲端目標。</block>
+  <block id="2d3d08c3c299f80b1db3e3ab39bd5e9d" category="list-text">建立私有雲端的Terraform Cloud Agent目標、讓客戶能在資料中心安裝代理程式、並與Terraform Cloud進行通訊。</block>
+  <block id="e795699f1e20cc25510953719622f9d5" category="paragraph">如需詳細資訊、請參閱<block ref="b0ae32ca311a918c6584fdf584508f49" category="inline-link-rx"></block>。</block>
+  <block id="3c8df17370cf0099f92c862dacb4d915" category="section-title">程序2：產生使用者權杖</block>
+  <block id="50ee5c7def2aa3f096824e3771b588e8" category="paragraph">在新增Terraform Cloud目標時、您必須從Terraform Cloud設定頁面提供使用者名稱和API權杖。</block>
+  <block id="f0748d5a29db5c42275c71bacbf7b318" category="inline-link"><block ref="f0748d5a29db5c42275c71bacbf7b318" category="inline-link-rx"></block></block>
+  <block id="d8ce22891e0723b7eeee7a765f4a5cc3" category="list-text">登入Terraform Cloud並前往*使用者令牌*：<block ref="17cc5c2ab5dcc5826fcbbb07a90f0daf" category="inline-link-rx"></block>。</block>
+  <block id="9b2ee2ae96e5d4c8d4b3b0f66fe7df42" category="list-text">按一下*建立新的API權杖*。</block>
+  <block id="fe47798a8cf5a4b54428db97b1575099" category="list-text">指派要記住的名稱、並將Token儲存在安全的位置。</block>
+  <block id="567bb7dbf851c80cdad13709527b8fe4" category="section-title">程序3：請款Terraform Cloud Target</block>
+  <block id="499cdf50f6393130fb7562787505e0b6" category="list-text">以帳戶管理員、裝置管理員或裝置技術人員權限登入Intersight。</block>
+  <block id="251c74ead0c418fa078f0c1e22cec6d0" category="list-text">瀏覽至*管理&gt;目標&gt;申請新目標*。</block>
+  <block id="79799ecc6d36bcf3957363636b103690" category="list-text">在*類別*中、按一下*雲端*。</block>
+  <block id="af27c28ff13fff9d7517cc61d73656a8" category="list-text">按一下「* Terraform Cloud *」、然後按一下「* Start*」。</block>
+  <block id="f5b9111f5dc9bef0e747df00fbf3c562" category="inline-image-macro">在Cisco Intersight中選取目標類型的快照。</block>
+  <block id="9929cbe75f34fd901af504920af58598" category="paragraph"><block ref="9929cbe75f34fd901af504920af58598" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="54dd0edd01e7b44d9d7b6650811a5371" category="list-text">輸入目標名稱、Terraform Cloud的使用者名稱、API權杖、以及Terraform Cloud中的預設組織、如下圖所示。</block>
+  <block id="886830cc9a5858d1b7a331cc2a121c7b" category="list-text">在*預設託管主機*欄位中、請務必新增下列連結及其他託管主機：</block>
+  <block id="99cd2175108d157588c04758296d1cfc" category="list-text">github.com</block>
+  <block id="9d98de09b6621ae9fd7f0eb049b1f741" category="list-text">github-releases.githubusercontent.com</block>
+  <block id="fc811e15680d7a50fb87286f43f21586" category="inline-image-macro">預設託管主機欄位的快照。</block>
+  <block id="0caf227dbb5a9076a42a8ce059ae6989" category="paragraph"><block ref="0caf227dbb5a9076a42a8ce059ae6989" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8f8d8af9e7fbf9ed4ffa66123038be65" category="paragraph">如果輸入的內容正確、您會在「* Intersight目標*」區段中看到Terraform Cloud目標。</block>
+  <block id="a600abea4743a1020e3054d7f0d1d4b6" category="section-title">程序4：新增Terraform Cloud代理程式</block>
+  <block id="d9a414100020a5250a8c1cc4fe4fbf37" category="paragraph">先決條件：</block>
+  <block id="b8c01b6d6fe36ce040e64ceff8826c00" category="list-text">Terraform Cloud目標：</block>
+  <block id="7d1e08eb7ef6f0e089234809924f9c39" category="list-text">在部署Terraform Cloud Agent之前、請先將Intersight協助要求提供給Intersight。</block>
+  <block id="c1fd3e81639213ed522aaf2e3c32216a" category="admonition">您只能為每個輔助服務申請五位值機員。</block>
+  <block id="94e2b8e1267c7917d55d166c968c3a0c" category="admonition">建立與Terraform的連線之後、您必須啟動Terraform Agent才能執行Terraform程式碼。</block>
+  <block id="d2084a59a070c3501f66c833653dc567" category="list-text">從您的Terraform Cloud目標下拉式清單中、按一下*請款Terraform Cloud agent*。</block>
+  <block id="a8ed570074883ca89e4621acdab32e95" category="list-text">輸入Terraform Cloud代理程式的詳細資料。下列螢幕快照顯示Terraform代理程式的組態詳細資料。</block>
+  <block id="9f284b799dfd58daa76a14382b7bd24f" category="inline-image-macro">顯示Terraform代理程式組態詳細資料的快照。</block>
+  <block id="645a47bef1e62282538b1a2d830385e5" category="paragraph"><block ref="645a47bef1e62282538b1a2d830385e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ece792e07bf61bd54a9916d5d929b96d" category="admonition">您可以更新任何Terraform Agent屬性。如果目標處於*未連線*狀態、且從未處於*已連線*狀態、則不會為Terraform代理程式產生權杖。</block>
+  <block id="291ac555f717d4866ec72c236e9096cd" category="paragraph">代理程式驗證成功並產生代理程式權杖之後、您將無法重新設定組織和/或代理程式集區。Terraform代理程式的成功部署狀態為* Connected *。</block>
+  <block id="1ca2f2b2beadbfe86f870a9f168c11d2" category="paragraph">啟用並宣告Terraform Cloud整合之後、您可以在Cisco Intersight assist中部署一或多個Terraform Cloud代理程式。Terraform Cloud代理程式是以Terraform Cloud目標的子目標為建模。當您申請值機員目標時、您會看到一則訊息、指出目標報銷正在進行中。</block>
+  <block id="24b4fd83a46960113ab73823a154f60e" category="paragraph">數秒後、目標會移至*已連線*狀態、而Intersight平台會將HTTPS封包從代理程式路由傳送至Terraform Cloud閘道。</block>
+  <block id="184297381718797eca63d6a84ecb34f7" category="paragraph">您的Terraform Agent應正確聲明、並應顯示在目標下方* Connected *。</block>
+  <block id="f80fe732577f113390f34169fcf0b4fe" category="inline-link-macro">下一步：設定公有雲服務供應商。</block>
+  <block id="0ccdb94ed44bc398f844df4243736680" category="paragraph"><block ref="0ccdb94ed44bc398f844df4243736680" category="inline-link-macro-rx"></block></block>
+  <block id="e82ada92461b044ecb6548922062c0e1" category="summary">本節說明混合雲NetApp儲存設備的自動化部署。</block>
+  <block id="d4c2de0376e264ac418c3475c22d0c6a" category="doc">自動部署混合雲NetApp儲存設備</block>
+  <block id="701c920bd07e80f235f1b3624e88579f" category="inline-link-macro">先前版本：設定公有雲服務供應商。</block>
+  <block id="065938048c5b098791d2afdfba3c7823" category="paragraph"><block ref="065938048c5b098791d2afdfba3c7823" category="inline-link-macro-rx"></block></block>
+  <block id="1a862f0d66480d9b27e538c2428596f1" category="paragraph">您必須先啟用API、並建立服務帳戶、讓Cloud Manager擁有部署和管理Cloud Volumes ONTAP 與Connector相同專案或不同專案中的各個系統的權限。</block>
+  <block id="edf2dce39ac9e5dc8c9a59814c8fdc8e" category="paragraph">在Google Cloud專案中部署連接器之前、請確定連接器未在您的內部部署或其他雲端供應商中執行。</block>
+  <block id="9233d9e2d56c82c6f122b2d20ce21c26" category="paragraph">直接從 Cloud Manager 部署 Connector 之前、必須先設定兩組權限：</block>
+  <block id="3526fec7a2fc1c05d2e7efd2b10c86bf" category="list-text">您需要使用具有從Cloud Manager啟動Connector VM執行個體權限的Google帳戶來部署Connector。</block>
+  <block id="2c828a2343e9ab9a5d153a7ab41c6f75" category="inline-link">要設定權限的Yaml檔案</block>
+  <block id="95050f5bd3904367150961e719746644" category="list-text">部署Connector時、系統會提示您選取VM執行個體。Cloud Manager 可從服務帳戶取得權限 Cloud Volumes ONTAP 、代表您建立及管理各種系統。權限是透過將自訂角色附加至服務帳戶來提供。您需要設定兩個Yaml檔案、其中包含使用者和服務帳戶所需的權限。瞭解如何使用<block ref="ec334313a613ea3857a0d57616b8f502" category="inline-link-rx"></block> 請按這裡。</block>
+  <block id="80980cb345f62c55d7f9fcd7be376762" category="inline-link">這段詳細影片</block>
+  <block id="8b3e19e9e211deaadf299929396c3c39" category="paragraph">請參閱<block ref="b4bfd16ca1370613cfc70d28d5b22331" category="inline-link-rx"></block> 所有必要的先決條件。</block>
+  <block id="000723be1d44c44ab8fa3b3fc8ed45c1" category="section-title">部署模式與架構Cloud Volumes ONTAP</block>
+  <block id="e8839bc783eb8d4aa6150b2341161cf5" category="paragraph">在Google Cloud中、可將其作為單一節點系統和高可用度（HA）節點配對使用。Cloud Volumes ONTAP根據需求、我們可以選擇Cloud Volumes ONTAP 「非功能性部署」模式。不支援將單一節點系統升級為HA配對。如果您要在單一節點系統和HA配對之間切換、則必須部署新系統、並將資料從現有系統複寫到新系統。</block>
+  <block id="896b59e33470d2c92de6bbf68534df87" category="section-title">Google Cloud提供高可用Cloud Volumes ONTAP 度的功能</block>
+  <block id="b40cbbb06d34a0c086ea56aa92d09aad" category="paragraph">Google Cloud可支援跨多個地理區域及一個區域內的多個區域部署資源。HA部署包含兩ONTAP 個使用Google Cloud提供的強大n1-Standard或n2-standard機器類型的支援節點。資料會在Cloud Volumes ONTAP 兩個節點之間同步複寫、以便在發生故障時提供可用度。HA部署功能需要在每個VPC中部署四個VPC和一個私有子網路。Cloud Volumes ONTAP四個VPC中的子網路應配置不重疊的CIDR範圍。</block>
+  <block id="e04f7cb4a1e7257672b951d625f5dd1d" category="paragraph">這四個VPC用於下列用途：</block>
+  <block id="08f211ac064f1894c38aeccc8f373a88" category="list-text">VPC 0可讓傳入資料與Cloud Volumes ONTAP 節點之間的通訊。</block>
+  <block id="adc4af935bc0b6b89a0965272d39d14a" category="list-text">VPC 1可在Cloud Volumes ONTAP 各個節點之間提供叢集連線功能。</block>
+  <block id="25f3bf8b47526deb5c3ecdb747758f28" category="list-text">VPC 2允許在節點之間進行非揮發性RAM（NVRAM）複寫。</block>
+  <block id="82b6ef023ce64963a4365b4e83a85d46" category="list-text">VPC 3用於連線至HA中介執行個體和磁碟複寫流量、以進行節點重建。</block>
+  <block id="0cf69c2984ade860d2753bf4996ce2fa" category="paragraph">下圖顯示Cloud Volumes ONTAP 高句麗雲端的高可用性功能。</block>
+  <block id="59c13f2b608f3a08acecf9da255acbc1" category="inline-image-macro">此影像顯示Cloud Volumes ONTAP 高句麗雲端的高可用性功能。</block>
+  <block id="76e127464c6a0508d6cb195b830cbd17" category="paragraph"><block ref="76e127464c6a0508d6cb195b830cbd17" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f9dd39754b56818ded8b6a437467608b" category="paragraph">如需詳細資訊、請參閱<block ref="25499db4d92b67cf576ffeab74dfdce5" category="inline-link-rx"></block>。</block>
+  <block id="d9c41124d325e9784fdb11dd235e4a94" category="paragraph">如需Cloud Volumes ONTAP Google Cloud中的技術需求、請參閱<block ref="b6d23153f6f14250e195a9b12e33da52" category="inline-link-rx"></block>。</block>
+  <block id="46997dd4ba70f9ba99d1953550a8918b" category="paragraph">如需資料分層的詳細資訊、請參閱<block ref="56116f49c6aab0a2aa039ee7dcf6d319" category="inline-link-rx"></block>。</block>
+  <block id="7961691383c428907e93b78059e36e92" category="section-title">設定環境先決條件</block>
+  <block id="8191532958596b0c0d1bdf6e22ba0aa3" category="paragraph">透過Cloud Volumes ONTAP Terraform組態、自動建立內部部署Volume與Cloud Volume之間的叢集、SnapMirror組態、建立雲端Volume等。這些Terraform組態裝載於Terraform Cloud for Business帳戶。使用Intersight Cloud Orchestrator、您可以協調各種工作、例如在Terraform Cloud for Business帳戶中建立工作區、在工作區中新增所有必要的變數、執行Terraform Plan等等。</block>
+  <block id="2380402e21335066ce7f825004be024d" category="paragraph">對於這些自動化和協調作業工作、需要幾項需求和資料、如下列各節所述。</block>
+  <block id="4a6c7893abd7ef92fb09d3359e17324d" category="section-title">GitHub儲存庫</block>
+  <block id="6e44f8632722e86d98fe7e921e8cddd3" category="paragraph">您需要GitHub帳戶來裝載Terraform程式碼。Intersight Orchestrator在Terraform Cloud for Business帳戶中建立新的工作區。此工作區已設定版本控制工作流程。為此、您必須將Terraform組態保留在GitHub儲存庫中、並在建立工作區時提供作為輸入。</block>
+  <block id="f36238daba7154b059d99557a05d4b86" category="inline-link">此GitHub連結</block>
+  <block id="2a1ab138896d11febbe935a77aa86ff3" category="paragraph"><block ref="187a40dfe1da2425129f8bce9ad2adb6" category="inline-link-rx"></block> 提供含有各種資源的Terraform組態。您可以在GitHub帳戶中分頁此儲存庫並製作複本。</block>
+  <block id="58d1c40a160c26ce9b569468f46bf446" category="paragraph">在此儲存庫中、「provider .tf」定義了所需的Terraform供應商。NetApp Cloud Manager的Terraform供應商已使用。</block>
+  <block id="17762b2242b4236a9aa2db59ff7bbe61" category="paragraph">variables.tf包含所有的變數宣告。這些變數的值會輸入為Intersight Cloud Orchestrator的工作流程輸入。這是將值傳遞到工作區並執行Terraform組態的便利方法。</block>
+  <block id="6d6e98862becc20ef7c3d6a7a2551efe" category="paragraph">「rsources.tf」定義將內部環境ONTAP 的內部部署功能添加到工作環境、在Cloud Volumes ONTAP Google Cloud上建立單一節點的叢集、在內部部署與Cloud Volumes ONTAP 內部部署之間建立SnapMirror關係、在Cloud Volumes ONTAP 整個過程中建立一個雲端磁碟區等所需的各種資源。</block>
+  <block id="24014a368e640c718de8d41ac423ebe4" category="paragraph">在此儲存庫中：</block>
+  <block id="c7b0cbe6cc86b2bfab6b2600f3fb9313" category="list-text">「provider .tf」是NetApp Cloud Manager的定義、適用於所需的Terraform供應商。</block>
+  <block id="5169c8485b0025d15c4009590639fe90" category="list-text">「variables.tf」具有變數宣告、可做為Intersight Cloud Orchestrator工作流程的輸入。這是將值傳遞到工作區並執行Terraform組態的便利方法。</block>
+  <block id="8e1a90a49a6ca036b3a6e91a2e9b8ac1" category="list-text">「rsources.tf」定義各種資源、可將內部部署ONTAP 的功能支援到工作環境中、在Cloud Volumes ONTAP Google Cloud上建立單節點的「叢集」、在內部部署與Cloud Volumes ONTAP 「叢集」之間建立SnapMirror關係、在Cloud Volumes ONTAP 「叢集」上建立一個雲端磁碟區等等。</block>
+  <block id="9a4b495acde072eac52f58f2e595d42b" category="paragraph">您可以新增額外的資源區塊、在Cloud Volumes ONTAP 支援的情況下建立多個Volume、或使用count數 或for_each的Terraform架構。</block>
+  <block id="1e8c1360ad8b0e59f39b6990b1b4ab96" category="paragraph">若要將Terraform工作區、模組和原則集連線至含有Terraform組態的git儲存庫、Terraform Cloud需要存取GitHub repo。</block>
+  <block id="f33a6ec23d6d12597211b79291da676e" category="paragraph">新增用戶端、然後將用戶端的OAUTH Token ID作為Intersight Cloud Orchestrator的工作流程輸入之一。</block>
+  <block id="c453a2687a6416a81da4dcfbebf97dbd" category="list-text">登入Terraform Cloud for Business帳戶。瀏覽至*設定&gt;供應商*。</block>
+  <block id="3577307b044427a08d13483e4dff13d4" category="list-text">按一下「*新增VCS供應商*」。</block>
+  <block id="1f035cbd86cc02a83f8e3f63cab7a15c" category="list-text">選取您的版本。</block>
+  <block id="38fb13061239fec81c8479a02e0cace2" category="list-text">請遵循*設定供應商*下的步驟。</block>
+  <block id="3a9ea0e2f618860775f078f5bb938e73" category="list-text">您會在* VCS Providers*中看到新增的用戶端。記下OAUTH Token ID。</block>
+  <block id="277b24082fc32501bb70e90558ede1a7" category="section-title">NetApp Cloud Manager API作業的重新整理權杖</block>
+  <block id="59e2bf08dc87fd36e9c6ea718a40d302" category="paragraph">除了網頁瀏覽器介面、Cloud Manager還有REST API、可讓軟體開發人員透過SaaS介面直接存取Cloud Manager功能。Cloud Manager服務由數個不同的元件組成、這些元件共同構成可擴充的開發平台。重新整理權杖可讓您針對每個API呼叫、產生新增至「授權」標頭的存取權杖。</block>
+  <block id="1ce82783c12853924d053ebd63247046" category="paragraph">NetApp雲端管理程式供應商不需直接呼叫API、就能使用重新整理權杖、將Terraform資源轉譯為對應的API呼叫。您需要從產生更新權杖、以便執行NetApp Cloud Manager API作業<block ref="5d608bb84d68f48fc0f2a082711072a5" category="inline-link-rx"></block>。</block>
+  <block id="27ac2feaf42890f9f136ed93221af6d5" category="paragraph">您需要Cloud Manager Connector的用戶端ID、才能在Cloud Manager上建立資源、例如建立Cloud Volumes ONTAP 一個叢集、設定SnapMirror等。</block>
+  <block id="3b36da93270e0e511323c2728740350a" category="inline-link"><block ref="3b36da93270e0e511323c2728740350a" category="inline-link-rx"></block></block>
+  <block id="ef0b4202fe6d78c5c95e834a5dd3c5e6" category="list-text">登入Cloud Manager：<block ref="706fcc69dfde34fadb1d98758f4b70dd" category="inline-link-rx"></block>。</block>
+  <block id="9e704e76a760053c0baca32c96d9c6a3" category="list-text">按一下 * Connector* 。</block>
+  <block id="5e6a0548d1a9b870a897fd2b63da39c6" category="list-text">按一下「*管理連接器*」。</block>
+  <block id="51f4228ddd4fe603c9e044ac87746f5f" category="list-text">按一下省略符號、然後複製Connector ID。</block>
+  <block id="234940416f28d73aee62456f57c10e26" category="section-title">開發Cisco Intersight Cloud Orchestrator工作流程</block>
+  <block id="e12890c02d1e827bd500e83e8b8bd93f" category="paragraph">Cisco Intersight Cloud Orchestrator可在下列情況下於Cisco Intersight中使用：</block>
+  <block id="2e7a3e122946e52b9bd6cad92bc04668" category="list-text">您已安裝Intersight Premier授權。</block>
+  <block id="b24a31a922ff107a390c5b600d15b80a" category="list-text">您是帳戶管理員、儲存管理員、虛擬化管理員或伺服器管理員、至少有一部伺服器指派給您。</block>
+  <block id="c98cfe5cdd448c672c0c618f3b41618e" category="section-title">工作流程設計工具</block>
+  <block id="22b1acbed4769f006d14253ac5251cf4" category="paragraph">Workflow Designer可協助您建立新的工作流程（以及工作和資料類型）、並編輯現有的工作流程、以管理Cisco Intersight中的目標。</block>
+  <block id="1741a420bbdaade3a21007a67110829b" category="paragraph">若要啟動工作流程設計工具、請前往*協調&gt; Workflows*。儀表板會在索引標籤* My Workflow*、*範例WorkWorkWorkflow*和* All WorkWorkflow*下顯示下列詳細資料：</block>
+  <block id="8e9560a6eefa3d416a0c4345a49521ad" category="list-text">驗證狀態</block>
+  <block id="35dfcf569b2a1406ce3084cdd3dcb66c" category="list-text">上次執行狀態</block>
+  <block id="82e55bfa47d2b4717b859e51acaa5652" category="list-text">依執行計數列出的工作流程排行</block>
+  <block id="016038815fd0e8409805a3b5068fb703" category="list-text">熱門工作流程類別</block>
+  <block id="700bfdbf6b944209562981975d64ad88" category="list-text">系統定義的工作流程數量</block>
+  <block id="45ab0cc3ff3fb80905d6bef9b29fcbc2" category="list-text">依目標的工作流程排行</block>
+  <block id="5cf2b499f88f34a10257b7e33fb893b6" category="paragraph">您可以使用儀表板來建立、編輯、複製或刪除索引標籤。若要建立自己的自訂檢視索引標籤、請按一下*+*、指定名稱、然後選取需要顯示在欄、標記欄和小工具中的必要參數。如果索引標籤沒有*鎖定*圖示、您可以重新命名索引標籤。</block>
+  <block id="35460d6cdbeebda533e198dd06589be1" category="paragraph">儀表板下方是工作流程的表格清單、顯示下列資訊：</block>
+  <block id="b48968e1c912da07df5e8d6d246291ec" category="list-text">顯示名稱</block>
+  <block id="331e02b0f91351acf8ea7fa064aed310" category="list-text">系統定義</block>
+  <block id="fb090683926f552466ff36786889c76f" category="list-text">預設版本</block>
+  <block id="936770f2606e780ce536b4f29068542d" category="list-text">執行</block>
+  <block id="28b65ad4fb748f1996eafbe159d05998" category="list-text">上次更新</block>
+  <block id="d6b258792ff06f82933c74eeb8aef591" category="list-text">組織</block>
+  <block id="e79e91e91bf3a1d2a45a62d55768d44f" category="paragraph">「動作」欄可讓您執行下列動作：</block>
+  <block id="91861dc7544e845187a16da6e4d4308e" category="list-text">*執行。*執行工作流程。</block>
+  <block id="c90c40db0730485bce04ecf2a3650a9b" category="list-text">* History（歷史記錄）。*顯示工作流程執行歷史記錄。</block>
+  <block id="7b6b5b57fd825a6222de0ea81c7bd4a1" category="list-text">*管理版本。*建立及管理工作流程的版本。</block>
+  <block id="4b4e7da9d3cc46c75752d62482d49c31" category="list-text">*刪除*刪除*刪除工作流程。</block>
+  <block id="348085f57882fef41411b9f1e077d489" category="list-text">*重試。*重試失敗的工作流程。</block>
+  <block id="24f47cdbe9ddba774a7cc53e51d9032e" category="section-title">工作流程</block>
+  <block id="ebeda20ea80501703d720ed926bcc672" category="paragraph">建立包含下列步驟的工作流程：</block>
+  <block id="7b03c6ca8491ecbb7ef8c7c514eb7ed5" category="list-text">*定義工作流程。*指定顯示名稱、說明及其他重要屬性。</block>
+  <block id="42eaae923446ad64ccc8f13c659e2617" category="list-text">*定義工作流程輸入和工作流程輸出。*指定工作流程執行所需的輸入參數、以及成功執行時所產生的輸出</block>
+  <block id="0cff3459089a1cd2aa442bcd858581f1" category="list-text">*新增工作流程工作。*在工作流程設計工具中新增一或多個工作流程工作、以執行工作流程的功能。</block>
+  <block id="4d13a537d644eccf16164597d630b091" category="list-text">*驗證工作流程。*驗證工作流程、確保在連接工作輸入和輸出時不會發生錯誤。</block>
+  <block id="2c58b038a23924ab191e07c85e25d618" category="section-title">建立內部部署FlexPod 的工作流程、以利內部部署的不整儲存</block>
+  <block id="d3bca7ba7e33f926a10ed8fcc8de8ec3" category="paragraph">若要設定內部部署FlexPod 的靜態儲存工作流程、請參閱<block ref="41f2862aa0eb5051c9fc124ae78328c7" category="inline-link-rx"></block>。</block>
+  <block id="cf97cc03318693cbdded070f94f5b46c" category="inline-link-macro">下一步：DR工作流程。</block>
+  <block id="268bb3713362394a1d7347baf0ae0560" category="paragraph"><block ref="268bb3713362394a1d7347baf0ae0560" category="inline-link-macro-rx"></block></block>
+  <block id="3bca1d42af3e949da58b5de9d8f29c69" category="summary">本技術報告將FlexPod NetApp Cloud Volumes ONTAP 的融合式基礎架構解決方案、Google Cloud上的NetApp解決方案、以及Cisco Intersight整合在一起、形成適用於災難恢復的混合雲資料中心。在此解決方案中、我們將討論ONTAP 如何使用Cisco Intersight Cloud Orchestrator來設計及執行內部部署的功能性工作流程。我們也會討論如何使用Cloud Volumes ONTAP Cisco Intersight Service for HashiCorp Terraform、部署NetApp的功能、協調及自動化FlexPod 資料複寫與DR、以利在視覺與Cloud Volumes ONTAP 視覺之間進行複寫。</block>
+  <block id="67fb8bc34c076b891ef2e252568f0b08" category="doc">TR-4939：FlexPod 《適用於Google Cloud Platform的NetApp混合雲》Cloud Volumes ONTAP （採用NetApp功能）和《Cisco Intersight》（Cisco Intersight）</block>
+  <block id="be7c09eaec2df4eee7d0d859b405f265" category="paragraph">NetApp的Ruchika Lahoti</block>
+  <block id="d9d72f0e09f5303cc791114d8ca77b83" category="paragraph">利用災難恢復（DR）保護資料、是維持企業營運不中斷的關鍵目標。災難恢復可讓組織將業務作業容錯移轉至次要位置、然後以高效率且可靠的方式、將其恢復及容錯回復至主要站台。許多問題、例如自然災害、網路故障、軟體弱點和人為錯誤、都讓開發災難恢復策略成為IT的首要優先考量。</block>
+  <block id="60e509f4c2a479e71fc4bd263d288f35" category="paragraph">對於災難恢復、在主要站台上執行的所有工作負載都必須在災難恢復站台上忠實重現。組織也必須擁有所有企業資料的最新複本、包括資料庫、檔案服務、NFS和iSCSI儲存設備等。由於正式作業環境中的資料會不斷更新、因此變更必須定期傳輸至災難恢復站台。</block>
+  <block id="50e559db3a49f2f2d5786cc21ecad81e" category="paragraph">由於基礎架構和站台獨立性的需求、因此部署災難恢復環境對大多數組織來說都是一項挑戰。所需資源的數量、以及設定、測試及維護二線資料中心的成本可能非常高、通常會接近整個正式作業環境的成本。要維持最小的資料佔用空間並提供足夠的保護、同時持續同步資料、並建立無縫容錯移轉和容錯回復、是一項艱鉅的挑戰。在建置DR站台之後、挑戰就變成複寫正式作業環境中的資料、並讓資料保持同步。</block>
+  <block id="97db86093854566a22324169fb54b084" category="paragraph">下圖提供解決方案總覽。</block>
+  <block id="e53e6c9fc9ceb403d3b917f9e7a44fbb" category="inline-image-macro">解決方案總覽。</block>
+  <block id="8bc986d6444a9f305e8ff058a168615b" category="paragraph"><block ref="8bc986d6444a9f305e8ff058a168615b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3bb9b78652268d04123a9e7f5ead8686" category="paragraph">此解決方案提供多種優勢、包括：</block>
+  <block id="70be46411c63c1fdcfe954aad410cd0f" category="list-text">*協調與自動化。* Cisco Intersight FlexPod 提供一致的協調化架構、透過自動化提供、簡化了整個過程中的例行作業。</block>
+  <block id="ad9530d8397f09d8e042a1f9d87acac0" category="list-text">*客製化保護。Cloud Volumes ONTAP *支援區塊層級的資料複寫功能、可透過ONTAP 遞增式更新、將目的地保持在最新狀態。使用者可以指定每5分鐘或每小時的同步排程、例如根據傳輸來源的變更。</block>
+  <block id="0c7eb04c9a4fc034ca52506c2b891367" category="list-text">*無縫容錯移轉和容錯回復。*發生災難時、儲存管理員可以快速容錯移轉至雲端磁碟區。當主站台恢復時、在DR環境中建立的新資料會同步回來源磁碟區、重新建立次要資料複寫。</block>
+  <block id="931a3a34289953d269bf50963a7e4f60" category="list-text">*效率：*二線雲端複本的儲存空間和成本、是透過資料壓縮、精簡配置和重複資料刪除技術進行最佳化。資料會以壓縮和重複資料刪除的形式在區塊層級傳輸、以提升傳輸速度。資料也會自動分層至低成本的物件儲存設備、而且只有在存取時才會恢復至高效能儲存設備、例如在DR案例中。如此可大幅降低持續儲存成本。</block>
+  <block id="084bb74193afd078e7861a2c4ccc2c0a" category="list-text">*提高IT生產力。*使用Intersight做為單一安全的企業級平台、進行基礎架構與應用程式生命週期管理、可簡化組態管理、並可針對解決方案進行大規模的手動工作自動化。</block>
+  <block id="f55a2a8f9b2487bd5170f3018454452c" category="paragraph">本文件的對象包括但不限於：銷售工程師、現場顧問、專業服務、IT經理、 合作夥伴工程師、站台可靠性工程師、雲端架構設計師、雲端工程師、以及想要善用基礎架構以提供IT效率並實現IT創新的客戶。</block>
+  <block id="90a9345438f7f62f0bd7592a1efd7441" category="paragraph">本節說明解決方案的邏輯拓撲。下圖顯示內部部署FlexPod 的解決方案拓撲、Cloud Volumes ONTAP 在Google Cloud、Cisco Intersight和NetApp Cloud Manager上執行的NetApp EFlash。</block>
+  <block id="ae13399f9eae080f1ee446f22465ba75" category="inline-image-macro">解決方案拓撲：</block>
+  <block id="f5d6d29c01ea632db44f859919a20a5d" category="paragraph"><block ref="f5d6d29c01ea632db44f859919a20a5d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3cc897795eb078113b130d7b2dd56d12" category="paragraph">端點之間的控制平面和資料平面會清楚標示出來。資料平面使用安全的站台對站台VPN連線、將ONTAP 執行於FlexPod 整個Flash FAS 上的執行個體連接Cloud Volumes ONTAP 至Google Cloud上的NetApp實例。</block>
+  <block id="fa04036d3b397d88f70b09ed396dc749" category="paragraph">NetApp SnapMirror可將工作負載資料從FlexPod 功能複寫到NetApp Cloud Volumes ONTAP 功能、而整個流程則是使用Cisco Intersight Cloud Orchestrator來協調內部部署和雲端環境。Cisco Intersight Cloud Orchestrator會使用Terraform Resource Providers for NetApp Cloud Manager來執行與NetApp Cloud Volumes ONTAP 的部署相關的作業、並建立資料複寫關係。</block>
+  <block id="6852fcb4ce5743154f76135a97cc44ce" category="admonition">此Cloud Volumes ONTAP 解決方案也支援可選的冷資料備份和分層、將駐留在NetApp支援執行個體的冷資料備份至Google Cloud Storage。</block>
+  <block id="aeb00977712ce36ebb3418bf98d9e22b" category="paragraph"><block ref="aeb00977712ce36ebb3418bf98d9e22b" category="inline-link-macro-rx"></block></block>
+  <block id="2e568ff051eec49694b904e35bfedae2" category="summary">我們可以使用控制器來執行Terraform計畫。如果您已使用ICO工作流程執行Terraform方案、則可以跳過本節。</block>
+  <block id="b9358f74cbb8544ccf7f80cf40bb01d3" category="doc">從控制器執行Terraform</block>
+  <block id="fb9ed767511e21c1fa58778f50382e2d" category="inline-link-macro">上一個：DR工作流程。</block>
+  <block id="4a1f91340d0b06b63ab8b00484b300ca" category="paragraph"><block ref="4a1f91340d0b06b63ab8b00484b300ca" category="inline-link-macro-rx"></block></block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="section-title">先決條件</block>
+  <block id="ce1a30861453d414389a37f815cb055b" category="paragraph">解決方案的設定從能夠存取網際網路的管理工作站開始、並開始使用Terraform的有效安裝。</block>
+  <block id="23182bc94fff9d0274b57dbccbdc2558" category="paragraph">如需安裝Terraform的指南、請參閱<block ref="7230226aef03d3cffc8b7eda070620c6" category="inline-link-rx"></block>。</block>
+  <block id="843e2880ef9703d0e40a0a1020002449" category="section-title">Clone GitHub repo</block>
+  <block id="0b387b7cce0d4d005bb4715743406aa7" category="paragraph">此程序的第一步是將GitHub repo複製到管理工作站上的新空白資料夾。若要複製GitHub儲存庫、請完成下列步驟：</block>
+  <block id="99a088c1781035daa7bcc9c1d06f0799" category="list-text">從管理工作站為專案建立新資料夾。在此資料夾內建立名為「/root/SnapMirror-CVO」的新資料夾、然後將GitHub repo複製到其中。</block>
+  <block id="def2f0ed80912b2b0aaaecfb424e8e1b" category="list-text">在管理工作站上開啟命令列或主控台介面、並將目錄變更為剛建立的新資料夾。</block>
+  <block id="0984cdc454054f2578739547ca9cc083" category="list-text">使用下列命令複製GitHub集合：</block>
+  <block id="8a47191b618a17a87fbfc7378272e3a8" category="list-text">將目錄變更為名為「shnapmirror -CVO」的新資料夾。</block>
+  <block id="9f26147930994fa195dd59fdcf2d0144" category="paragraph">* Terraform執行*</block>
+  <block id="7f6e711c0fe8c9c5324d36a69f3b9749" category="inline-image-macro">Terraform執行示意圖。</block>
+  <block id="a3f2fcf1bb459f018c79c7286cc1c672" category="paragraph"><block ref="a3f2fcf1bb459f018c79c7286cc1c672" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7c6735b7d927594a2b630d5dcb152d97" category="list-text">* Init。*初始化（本機）Terraform環境。每個工作階段通常只執行一次。</block>
+  <block id="b765d4897ee406cd3587d4fddb89d280" category="list-text">*計畫*比較雲端中的Terraform狀態與「即用」狀態、然後建置並顯示執行計畫。這不會變更部署（唯讀）。</block>
+  <block id="19ff72873ed231c81efcbd5ef35ffa20" category="list-text">*套用。*從計畫階段套用計畫。這可能會變更部署（讀寫）。</block>
+  <block id="cbb1f81ca111acdcb63438f2e3c02c73" category="list-text">*銷毀*所有受此特定Terraform環境管理的資源。</block>
+  <block id="bfc841d25732f34686fa48cbab7b7e00" category="paragraph">如需詳細資訊、請參閱<block ref="99767708057bef9b40bd678f37692e87" category="inline-link-rx"></block>。</block>
+  <block id="e8d3f61f51562ad245b65242dc92c0da" category="inline-link-macro">下一步：解決方案驗證。</block>
+  <block id="8eff5d8d81cf0c32df5ff72792ff16b3" category="paragraph"><block ref="8eff5d8d81cf0c32df5ff72792ff16b3" category="inline-link-macro-rx"></block></block>
+  <block id="f8c0f096af034a83e40cfb8c311fb375" category="summary">此頁面列出部署FlexPod 某個實體執行個體所需的資源。</block>
+  <block id="363a32b2498b5885eeaa5882884a2069" category="doc">部署FlexPod</block>
+  <block id="fab70cba13311b99a01d1d366d9dc6b5" category="paragraph"><block ref="fab70cba13311b99a01d1d366d9dc6b5" category="inline-link-macro-rx"></block></block>
+  <block id="82fbf7051f82e4d7c615c32e6f7aeb5a" category="inline-link">Cisco驗FlexPod 證的設計以供使用</block>
+  <block id="d23887744900f66c7e4a925440bbda99" category="paragraph">如需瞭解FlexPod 有關設計與部署的詳細資料、包括各種設計元素的組態、以及相關的最佳實務做法、請參閱<block ref="49cd090650905838ab4084970dd71adf" category="inline-link-rx"></block>。</block>
+  <block id="f86ba2e9668a8b6515d17da31c294a07" category="paragraph">可在UCS託管模式和Cisco Intersight託管模式下部署。FlexPod如果您是FlexPod 在UCS託管模式下部署功能、則可以找到最新的Cisco驗證設計<block ref="1512ec962a6258d1959b900880952ef0" category="inline-link-rx"></block>。</block>
+  <block id="86af9fe337ee661dd14a9342cd42bc1e" category="paragraph">Cisco Unified Compute System（Cisco UCS）X系列是全新的模組化運算系統、可從雲端進行設定與管理。其設計旨在滿足現代化應用程式的需求、並透過可調整且符合未來需求的模組化設計來提升作業效率、敏捷度及擴充性。您FlexPod 可以在設計指南中找到、將Cisco Intersight託管的UCS X系列平台整合到各種基礎架構之中<block ref="121085e9839537ca1d6c20eb7b594e4c" category="inline-link-rx"></block>。</block>
+  <block id="83fd95562d7fefb430d031ab01d81478" category="paragraph">可在Cisco ACI部署中找到FlexPod<block ref="52978bee2b81a5e001ad2371304c6c3c" category="inline-link-rx"></block>。</block>
+  <block id="7e7b5b619cbafb1d9e4e2760288e085a" category="inline-link-macro">下一步：Cisco Intersight組態。</block>
+  <block id="678501a3f6fca7f30ea2a2c56bded3e5" category="paragraph"><block ref="678501a3f6fca7f30ea2a2c56bded3e5" category="inline-link-macro-rx"></block></block>
+  <block id="6c5ca08ee34f34f8f2e8ce60b49d9c8b" category="summary">本頁列出實作災難恢復工作流程所需的11個程序。</block>
+  <block id="6682bc21a120ebd5bee9fe0b122ac419" category="doc">DR工作流程</block>
+  <block id="734f90208110ec4b00e4b94f33242a6e" category="inline-link-macro">先前版本：混合雲NetApp儲存設備的自動化部署。</block>
+  <block id="736d8eadce4dfe5319c63837c7098d41" category="paragraph"><block ref="736d8eadce4dfe5319c63837c7098d41" category="inline-link-macro-rx"></block></block>
+  <block id="772269c24b386e0367b475a48f3a8e47" category="paragraph">步驟順序如下：</block>
+  <block id="5d996f5feca62b1b07a4daf069a51b60" category="list-text">定義工作流程。</block>
+  <block id="dd679c13fd867f1678d47a7a062249bc" category="list-text">為工作流程建立簡單易用的名稱、例如災難恢復工作流程。</block>
+  <block id="f80272ab10a586a09cc5697e34438857" category="list-text">定義工作流程輸入。我們為此工作流程所做的輸入包括：</block>
+  <block id="f3524a65be845d3f6909937b866e950b" category="list-text">Volume選項（Volume名稱、掛載路徑）</block>
+  <block id="5d8bdae6b2483b4c4c9fa1dde086e0ca" category="list-text">Volume容量</block>
+  <block id="427169b539a8d17a0e21e4b4415ffe10" category="list-text">與新資料存放區相關聯的資料中心</block>
+  <block id="6f1184b7fddfbf7504c928d98c08d3ac" category="list-text">託管資料存放區的叢集</block>
+  <block id="5fc691467ac1a832e7b17ea7ae51f0d3" category="list-text">要在vCenter中建立的新資料存放區名稱</block>
+  <block id="815c6647d097a73a10594eb89b5bac9c" category="list-text">新資料存放區的類型和版本</block>
+  <block id="a3563fd8e5b5e85c75327249c84f034c" category="list-text">Terraform組織名稱</block>
+  <block id="834d44ab782658afe263948a646c14ef" category="list-text">Terraform工作區</block>
+  <block id="5895441fe8c803c5b617467a815c8dd6" category="list-text">Terraform工作區說明</block>
+  <block id="792762e9adebe2483bf96e0b6a7b0db6" category="list-text">執行Terraform組態所需的變數（敏感和非敏感）</block>
+  <block id="cbc049c794c793a05ee939090e92f447" category="list-text">開始計畫的理由</block>
+  <block id="e0aec5dab82d5cd3f942ee414ee05d3e" category="list-text">新增工作流程工作。</block>
+  <block id="7d29d65c886f070402f94d919783cc66" category="paragraph">下列是有關執行功能的工作FlexPod ：</block>
+  <block id="6babdf7fdae58a04ab08aebbc9b1fd50" category="list-text">在FlexPod 功能不全的環境中建立Volume。</block>
+  <block id="6ff21f2142f05369c3a93555c910d529" category="list-text">將儲存匯出原則新增至建立的磁碟區。</block>
+  <block id="80a7b868721d7dd164d05294d4a8a896" category="list-text">將新建立的磁碟區對應至VMware vCenter中的資料存放區。</block>
+  <block id="25324271d0af46fd827255f3b835fa3d" category="paragraph">與建立Cloud Volumes ONTAP 叢集有關的工作：</block>
+  <block id="31bab440c5a7b9e237ec8ba3b9289ac4" category="list-text">新增Terraform工作區</block>
+  <block id="f0a9d3e8da1f1311368ba8e42f0a9197" category="list-text">新增Terraform變數</block>
+  <block id="66eea08911793c55847125b1f4706f85" category="list-text">新增Terraform敏感變數</block>
+  <block id="0d5b2d358551d6924599718b3844670b" category="list-text">開始新的Terraform計畫</block>
+  <block id="939d04d53873e7867489c426c748875d" category="list-text">確認Terraform執行</block>
+  <block id="38d93bd48eede9b5c660886046e77e9b" category="list-text">驗證工作流程。</block>
+  <block id="5b05cb7f9bce3dc3fd835d1eb491f753" category="section-title">程序1：建立工作流程</block>
+  <block id="b2a604fe4c5200a724edd96d727d287b" category="list-text">按一下左導覽窗格中的*協調*、然後按一下*建立工作流程*。</block>
+  <block id="0b72002ec45b5da69892a00e8886df6d" category="list-text">在*一般*索引標籤中：</block>
+  <block id="e04ad64ff0ee02d02253625645c05e9f" category="list-text">提供顯示名稱（災難恢復工作流程）。</block>
+  <block id="344d4e4bc1344bf0e11e1070a48c583c" category="list-text">選取組織、設定標記、並提供說明。</block>
+  <block id="647e6bea1cdb16ba59c14da6aa8737a1" category="inline-image-macro">顯示變數輸入畫面的快照。</block>
+  <block id="84f2337233bc2321ce11e26cebf148bd" category="paragraph"><block ref="84f2337233bc2321ce11e26cebf148bd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="33239222030e6ae719a52c45bd6a7e0e" category="section-title">程序2.在FlexPod 這個過程中建立新的Volume</block>
+  <block id="37243340d2b11bb0c9891da89db8f1f9" category="list-text">移至* Designer*索引標籤、然後按一下「*工具*」區段中的「*工作*」。</block>
+  <block id="4d7950afd16b463f6633315243c9daa8" category="list-text">將「*儲存設備&gt;新儲存磁碟區*」工作從「*工具*」區段拖放到「*設計*」區域。</block>
+  <block id="d0a9be56d13baf133c3cc7d0c892b8fe" category="list-text">按一下「*新增儲存磁碟區*」。</block>
+  <block id="6d132b23e31e788225862e4cc59a2875" category="inline-image-macro">顯示新儲存Volume的快照。</block>
+  <block id="56277f51d03031bb2761b6d47a59c3f7" category="paragraph"><block ref="56277f51d03031bb2761b6d47a59c3f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="66c1291b28dceee84d9001752e852765" category="list-text">在「*工作內容*」區域中、按一下「*一般*」索引標籤。您也可以選擇變更此工作的名稱和說明。在此範例中、工作名稱為*在FlexPod 本*中建立Volume。</block>
+  <block id="ab4156ba4d36c738a47ed7403d43b5f0" category="inline-image-macro">顯示新連線的快照。</block>
+  <block id="d764dd757fac5547c9bbd74db2ed7a1f" category="paragraph"><block ref="d764dd757fac5547c9bbd74db2ed7a1f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41627ef5efb657fae649237b6a04ae95" category="list-text">在*工作內容*區域中、按一下*輸入*。</block>
+  <block id="ce489996351eba1d042d289503715065" category="list-text">按一下*儲存設備*欄位中的*地圖*。</block>
+  <block id="f147023b967c4a4cb95d7eca135ca74e" category="inline-image-macro">顯示對應步驟的快照。</block>
+  <block id="5fa5aac9d5261f3860a44af51c5436b1" category="paragraph"><block ref="5fa5aac9d5261f3860a44af51c5436b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11e3c696ab17a1e0c20de32c1d36674e" category="list-text">選擇* Static Value*（靜態值），然後單擊* Select Storage Device（選擇儲存設備）*。</block>
+  <block id="53d221a3d676c8fd58692a58f34217ed" category="list-text">按一下新增的儲存目標、然後按一下*選取*。</block>
+  <block id="8617c54eb46a1df5da7e3eb64a16f498" category="inline-image-macro">顯示如何選取儲存目標的快照。</block>
+  <block id="113360e88e0569c46c50324ea3704eca" category="paragraph"><block ref="113360e88e0569c46c50324ea3704eca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8a29f973af6b92f1a6fc52495eca5973" category="list-text">按一下*地圖*。</block>
+  <block id="f623665283dbf5554e5d45c6c7002331" category="inline-image-macro">顯示「對應工作輸入」的快照。</block>
+  <block id="c72aa1d7e0839d4ad8fa92b8a0cf5b42" category="paragraph"><block ref="c72aa1d7e0839d4ad8fa92b8a0cf5b42" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e28b6513be508e9a3e8a3866cbb828da" category="list-text">在* Storage Vendor Virtual Machine *（*儲存設備廠商虛擬機器*）欄位中按一下*地圖*。</block>
+  <block id="b2af792f107fd793d868741e8d04ef0b" category="inline-image-macro">顯示Storage Vendor Virtual Machine欄位的快照。</block>
+  <block id="221aa9cafd1ebd52c01aedd545f0bf53" category="paragraph"><block ref="221aa9cafd1ebd52c01aedd545f0bf53" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4cc3d0249a67180ee548e79fa9e91b52" category="list-text">選擇* Static Value*（靜態值），然後單擊* Select Storage Virtual Machine（選擇儲存虛擬機）*。</block>
+  <block id="d6c57e11a3050cdd11511f4c1a3521d2" category="inline-image-macro">顯示如何選取儲存虛擬機器的快照。</block>
+  <block id="88035795b404a99c7c9ec5252dbdb4c9" category="paragraph"><block ref="88035795b404a99c7c9ec5252dbdb4c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="66d5fba025795e8fdee7fa15a6ad1b30" category="list-text">選取需要建立磁碟區的儲存虛擬機器、然後按一下*選取*。</block>
+  <block id="ec37ed7256625a3ae46e17394c41ee40" category="inline-image-macro">快照顯示需要在其中建立磁碟區的儲存虛擬機器。</block>
+  <block id="05cacb1b5d1ac9ff4fa35d463750310f" category="paragraph"><block ref="05cacb1b5d1ac9ff4fa35d463750310f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2c5cc17fd6aa2f959949572984117e87" category="paragraph"><block ref="2c5cc17fd6aa2f959949572984117e87" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94ac13636c7349ca504f558d6d6f23d8" category="list-text">在* Storage Vendor Aggregate *（*儲存設備廠商Aggregate *）欄位中按一下</block>
+  <block id="7dae5360fc6d8096e7f61cddbd104a24" category="inline-image-macro">顯示「儲存設備廠商Aggregate」欄位的快照。</block>
+  <block id="4195fcfc4da194170eb671fa5d87ce4e" category="paragraph"><block ref="4195fcfc4da194170eb671fa5d87ce4e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d50257dc7ed0b3d5e8c5a29ee83b61b2" category="list-text">選擇* Static Value*（靜態值），然後單擊* Select Storage Aggregate（選擇儲存Aggregate選擇Aggregate並按一下* Select *。</block>
+  <block id="3fd76b1c3435eb9891abb7b3387f1e87" category="inline-image-macro">顯示如何選取儲存Aggregate的快照。</block>
+  <block id="0fdc6dd5bf534b59ceea1ce2ef08151c" category="paragraph"><block ref="0fdc6dd5bf534b59ceea1ce2ef08151c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2265b33da88cd0967b634ff56c6f574f" category="list-text">按一下*儲存設備廠商Volume選項*欄位中的*地圖*。</block>
+  <block id="36edb4949b2f825be592abe4e7824f25" category="list-text">選擇*直接對應*、然後按一下*工作流程輸入*。</block>
+  <block id="07bc93d5465b5be18caada014c3f2115" category="inline-image-macro">顯示地圖工作輸入的快照。</block>
+  <block id="eb0f90d9e7f8b58c90bc437dc50e7339" category="paragraph"><block ref="eb0f90d9e7f8b58c90bc437dc50e7339" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cd600b350fdb0da54bc271d13678fdca" category="list-text">在「新增輸入」精靈中、完成下列步驟：</block>
+  <block id="dea9fbddfdcc65f30e41e43a36cfe698" category="list-text">提供顯示名稱和參考名稱（選用）。</block>
+  <block id="d24b9db8f383a7b40be343edfc72353e" category="list-text">請確定*類型*已選取*儲存設備廠商Volume選項*。</block>
+  <block id="1439138599740dd3b38a02a8f09c7e39" category="list-text">按一下*設定預設值和置換*。</block>
+  <block id="e3444523418e01c9e6d0e28d413fb2a8" category="list-text">按一下*必要*。</block>
+  <block id="e1371b25bd6f39c88c77ffba8a21da20" category="list-text">將*平台類型*設為* NetApp Active IQ Unified Manager S庫*。</block>
+  <block id="706916bc3704b9eb776f55138ca08704" category="list-text">在* Volume *下為建立的磁碟區提供預設值。</block>
+  <block id="4cefacbcadb12e0319424b086b179677" category="list-text">按一下「* NFS*」。如果設定NFS、就會建立NFS Volume。如果此值設為假、則會建立SAN Volume。</block>
+  <block id="101bd0277dbe3517704a5e3b8e7a204b" category="list-text">提供掛載路徑、然後按一下*「Add*（新增*）」。</block>
+  <block id="d30745c09e9946eccbeba6725d8fd9b7" category="inline-image-macro">顯示「新增工作流程」輸入畫面的快照。</block>
+  <block id="171bf5680b8b31636818afac6c84d9cc" category="paragraph"><block ref="171bf5680b8b31636818afac6c84d9cc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="215b422959ba704f608b998c649e6055" category="list-text">按一下* Volume Capacity *欄位中的* Map*。</block>
+  <block id="8126ee8cc706af488750a2d5386d0812" category="list-text">按一下*輸入名稱*和*建立工作流程輸入*。</block>
+  <block id="9f2031b6f0c5d9daebff9e0a8b1e233f" category="inline-image-macro">顯示如何在「地圖工作輸入」畫面中建立名稱的快照。</block>
+  <block id="0286b925805ca43237d2bd0dfe372456" category="paragraph"><block ref="0286b925805ca43237d2bd0dfe372456" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8ab09dc1846d8f3be53f9588659b2f46" category="list-text">在「新增輸入」精靈中：</block>
+  <block id="81fd4bd095837002cc71d3e2b55d9315" category="list-text">提供顯示名稱和參考名稱（選用）。</block>
+  <block id="44b1b1e517f090c2ad3b42e972bb2640" category="list-text">若為*類型*、請選取*儲存容量*。</block>
+  <block id="8673d3d84878e8cdef67ee0942b0621a" category="list-text">提供Volume大小和單位的預設值。</block>
+  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">按一下「 * 新增 * 」。</block>
+  <block id="29ccd14da68ba5854fb96c1163f4e387" category="inline-image-macro">螢幕擷取畫面會顯示新增輸入精靈的資料輸入。</block>
+  <block id="0ab5b14c0dc6d07a42afea2afb9ecd1f" category="paragraph"><block ref="0ab5b14c0dc6d07a42afea2afb9ecd1f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5646ec28b1b7c7bd305da1e5b39bef94" category="list-text">使用Connector、在* Start* FlexPod 和* Create Volume in Sori*工作之間建立連線、然後按一下* Sav*。</block>
+  <block id="cd4e27c784eea4df3e97824facdbac48" category="inline-image-macro">錯誤：螢幕擷取畫面顯示如何在FlexPod 「開始」和「建立Volume in」任務之間建立連線。</block>
+  <block id="482b2adccd1e52c6fa756bf1e1b5aa63" category="paragraph"><block ref="482b2adccd1e52c6fa756bf1e1b5aa63" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f77f6eda767428572b45651b06125dc5" category="admonition">立即忽略錯誤。顯示此錯誤的原因是：在FlexPod 指定成功轉換所需的工作*「在Ses*中建立Volume」與「*成功*」之間沒有連線。</block>
+  <block id="193591e02b6d4337d0e696b80ff37607" category="section-title">程序3：新增儲存匯出原則</block>
+  <block id="c7ea583764d707a03f22932449ec0475" category="list-text">從「*設計*」區域的「*工具*」區段中、拖放「*儲存設備&gt;新增儲存匯出原則至Volume *」工作。</block>
+  <block id="fa785b209683158e970c13e592f61a73" category="list-text">按一下*「將儲存裝置匯出原則新增至磁碟區*」。在「*工作內容*」區域中、按一下「*一般*」索引標籤。您也可以選擇變更此工作的名稱和說明。在此範例中、工作名稱為「新增儲存匯出原則」。</block>
+  <block id="30a3be9ce038a1ffa384a70099b97739" category="list-text">使用Connector在任務*《Create Volume in FlexPod the Sor*》（在本*中建立Volume）和*《Add Storage Export Policy*》（新增儲存匯出原則*）之間建立連結。按一下「 * 儲存 * 」。</block>
+  <block id="38d73fdf8202f78a1ecf54c07e937bc5" category="inline-image-macro">快照顯示如何在「Create Volume in FlexPod the」（在功能區中建立Volume）和「Add Storage Export Policy」（新增儲存匯出原則）之間建立連線。</block>
+  <block id="79ad4882aa28341466f4d1ea3617419c" category="paragraph"><block ref="79ad4882aa28341466f4d1ea3617419c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e54b8fcb56f8f7c580e1fd7c97ee4218" category="paragraph"><block ref="e54b8fcb56f8f7c580e1fd7c97ee4218" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab0f4e5c4a299632bc8672003f6cebc8" category="list-text">選擇* Static Value*（靜態值），然後單擊* Select Storage Device（選擇儲存設備）*。在建立先前建立新儲存磁碟區的工作時、選取已新增的相同儲存目標。</block>
+  <block id="249f6e3d2412ef75cd516f7f8ce68428" category="inline-image-macro">顯示對應步驟第2部分的快照。</block>
+  <block id="3c71beaec48c2248fe306a1c24998c98" category="paragraph"><block ref="3c71beaec48c2248fe306a1c24998c98" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a741c50959e6b262e91d5fafd6fe5c51" category="list-text">選擇* Static Value*（靜態值），然後單擊* Select Storage Virtual Machine（選擇儲存虛擬機）*。在建立先前建立新儲存磁碟區的工作時、選取已新增的相同儲存虛擬機器。</block>
+  <block id="f88d4c7b31fadac661226595603960e7" category="inline-image-macro">顯示如何選擇靜態值的快照、然後按一下「Select Storage Virtual Machine（選擇儲存虛擬機器）」。</block>
+  <block id="bdded88e0d930d2d5cf164ed449bab7e" category="paragraph"><block ref="bdded88e0d930d2d5cf164ed449bab7e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88cf683ef515f62206e1a449f4cd973d" category="list-text">在* Volume *欄位中按一下* Map*。</block>
+  <block id="fdf0b9a37f6bda4fbaec86366198fd8a" category="list-text">按一下「*工作名稱*」、然後按一下「*在FlexPod Same*中建立Volume」。按一下*「輸出名稱*」、然後按*「Volume *」。</block>
+  <block id="dcdd5d92697e970c2cf4da448a3fd67f" category="admonition">在Cisco Intersight Cloud Orchestrator中、您可以提供先前工作的輸出、作為新工作的輸入。在此範例中、* Volume *詳細資料是從*《Create Volume in FlexPod S供*》（在列舉*中建立Volume *）工作中提供、作為工作的輸入*《Add Storage Export Policy*》（新增儲存匯出原則*）。</block>
+  <block id="ce22c4cc1ced67cf7535b954d3ea7fc8" category="inline-image-macro">快照顯示如何提供先前工作的輸出作為新工作的輸入。</block>
+  <block id="de2df1dbfe613372f541ac0f859307cb" category="paragraph"><block ref="de2df1dbfe613372f541ac0f859307cb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="074a6109822169f193049d695ce36a56" category="list-text">按一下*匯出原則*欄位中的*地圖*。</block>
+  <block id="1458860a0ee7de6f8f9a08fd32e32714" category="list-text">選擇* Static Value*（靜態值），然後單擊* Select Export Policy*（選擇導出策略*）。選取建立的匯出原則。</block>
+  <block id="7332de0449c59e4a4479e15e9788cfc9" category="paragraph"><block ref="7332de0449c59e4a4479e15e9788cfc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f8f82962ab357f0a7e2afd638821c0af" category="list-text">按一下*地圖*、然後按*儲存*。</block>
+  <block id="8f9124bef4e8915c43036b7abecac20f" category="admonition">如此一來、就能將匯出原則新增至磁碟區。接下來、您要建立新的資料存放區、以對應建立的磁碟區。</block>
+  <block id="565f3e900139ac92e0b91101646c665e" category="section-title">程序4：將FlexPod 流通區對應至資料存放區</block>
+  <block id="0bf914ef7e766cec80d5d5d19f362ad4" category="list-text">將「*虛擬化&gt;新Hypervisor Datastor*」工作拖放到「*設計*」區域的「*工具*」區段。</block>
+  <block id="7b4b39c55cf0242acb2025a3f71fd095" category="list-text">使用Connector在* Add Storage Export Policy*和* New Hypervisor Datastor*工作之間建立連線。按一下「 * 儲存 * 」。</block>
+  <block id="a98a6ee0326bda81640c1933bb147305" category="paragraph"><block ref="a98a6ee0326bda81640c1933bb147305" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d142df7224d947489295feab1f266d93" category="list-text">按一下「*新Hypervisor資料存放區*」。在「*工作內容*」區域中、按一下「*一般*」索引標籤。您也可以選擇變更此工作的名稱和說明。在此範例中、工作名稱為*將磁碟區對應至Datastor*。</block>
+  <block id="5e675472020c3b3ff5609625beb17e90" category="paragraph"><block ref="5e675472020c3b3ff5609625beb17e90" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="295dd81e4bf468f9eb9167446c1c4795" category="list-text">按一下* Hypervisor Manager*欄位中的*地圖*。</block>
+  <block id="70c0c11eabe795305d6445365d10115a" category="list-text">選擇* Static Value*（靜態值）、然後按一下* Select Hypervisor Manager*（選擇Hypervisor管理程式*）。按一下VMware vCenter目標。</block>
+  <block id="e8092b124a48b9eac914df57df02b28f" category="paragraph"><block ref="e8092b124a48b9eac914df57df02b28f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dbc69e815d01b5efd6dea5f30de342e0" category="paragraph"><block ref="dbc69e815d01b5efd6dea5f30de342e0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8f3fb14925e336b2ea5d35f575ace4bd" category="list-text">在*資料中心*欄位中按一下*地圖*。這是與新資料存放區相關聯的資料中心。</block>
+  <block id="52b0c8b6f3f8da7a6c88d14cef59f08a" category="list-text">按一下*輸入名稱*、然後按*建立工作流程輸入*。</block>
+  <block id="8e542f222c1595fe65f0edc1f5adf51d" category="paragraph"><block ref="8e542f222c1595fe65f0edc1f5adf51d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0533ee465d5fd33878e66cc36d59994f" category="list-text">選擇*資料中心*作為類型。</block>
+  <block id="96cdfa445701bdf6bbb8e07c3021b724" category="list-text">按一下*選取資料中心*。</block>
+  <block id="80c525a4fe0344296e93a244e5e453c1" category="list-text">按一下與新資料存放區相關聯的資料中心、然後按一下*選取*。</block>
+  <block id="be91d8d619ee84709756fee2e91c4b77" category="paragraph"><block ref="be91d8d619ee84709756fee2e91c4b77" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c3c144240031f4c640bd5f5235bce135" category="list-text">在*叢集*欄位中按一下*地圖*。</block>
+  <block id="19a0181cec2dc0bbe84eac5671140978" category="paragraph"><block ref="19a0181cec2dc0bbe84eac5671140978" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="760e6e9e8e0277e6eaf914248a7090f3" category="list-text">選取叢集作為類型。</block>
+  <block id="413e0dd75a8c2f8d2866a9befa78bc99" category="list-text">按一下*選取叢集*。</block>
+  <block id="d3268a3895301d83e93e7570fa1a99e2" category="list-text">按一下與新資料存放區相關聯的叢集。</block>
+  <block id="a2396693254d9ec35f0b6faa885e8f58" category="list-text">按一下*選取*。</block>
+  <block id="f5fe76c5305d7ab25540c0c6bae99ca1" category="paragraph"><block ref="f5fe76c5305d7ab25540c0c6bae99ca1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2a93b6e240c97677ff19bf2a8879be00" category="list-text">在*主機*欄位中按一下*地圖*。</block>
+  <block id="e18b144f923bd20dfca2460aadd366f5" category="paragraph"><block ref="e18b144f923bd20dfca2460aadd366f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a947918eb09a399408ed87d568ca5c5f" category="list-text">選擇* Static Value*（靜態值）、然後按一下要裝載資料存放區的主機。如果指定叢集、則會忽略主機。</block>
+  <block id="11a626b17cae5dba61e52c32a67bee33" category="paragraph"><block ref="11a626b17cae5dba61e52c32a67bee33" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4cebacaed40a481b45cde2207d71dee8" category="list-text">按一下*選取並對應*。</block>
+  <block id="4a6fa1ffac6aa1366be0555506f3d231" category="list-text">在* Datastor*欄位中按一下* Map*。</block>
+  <block id="f74cc3721b60a5a1f20ff2788171b57a" category="paragraph"><block ref="f74cc3721b60a5a1f20ff2788171b57a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="533163b2482ce67466dfdb36cd6585d9" category="list-text">提供資料存放區的預設值、然後按一下*「Add*（新增*）」。</block>
+  <block id="e5d4dbd58d0a011e36b71c6dad3f2a02" category="paragraph"><block ref="e5d4dbd58d0a011e36b71c6dad3f2a02" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5bcce873d6d71d72bf3fa4d08ac87844" category="list-text">在輸入欄位*資料存放區類型*中按一下*地圖*。</block>
+  <block id="d61396251afff8e50b3f8dd3efcf2d8a" category="paragraph"><block ref="d61396251afff8e50b3f8dd3efcf2d8a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9d7293a4af215135872234e697071d9c" category="list-text">提供顯示名稱和參考名稱（選用）、然後按一下*必要*。</block>
+  <block id="4ddddb8b907d575bb88a23a6ff6d2f88" category="list-text">請務必選取*資料存放區類型*、然後按一下*設定預設值和覆寫*。</block>
+  <block id="b124873c7adbed52dfb47d4890835ff8" category="paragraph"><block ref="b124873c7adbed52dfb47d4890835ff8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1ff30fe36cafac1e2d9965e216c6b2bd" category="list-text">提供遠端路徑。這是NFS掛載點的遠端路徑。</block>
+  <block id="065e03fdef4251d4647cd91edacd9542" category="list-text">在NFS伺服器位址中提供遠端NFS伺服器的主機名稱或IP位址。</block>
+  <block id="de292fc5afb4b1f8b8fe49ae5e8e876f" category="list-text">按一下*存取模式*。存取模式適用於NFS伺服器。如果磁碟區匯出為唯讀、請按一下唯讀。按一下「 * 新增 * 」。</block>
+  <block id="c023401432e40d3ddb7e5709b6ee2585" category="paragraph"><block ref="c023401432e40d3ddb7e5709b6ee2585" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">按一下「 * 儲存 * 」。</block>
+  <block id="e23071796c21231bcaa5b76783fefd0d" category="paragraph">這完成了建立資料存放區的工作。所有在內部部署FlexPod 中執行的工作均已完成。</block>
+  <block id="6b616830514b6de48d9a4aa7042a3158" category="paragraph"><block ref="6b616830514b6de48d9a4aa7042a3158" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2a1b2c5e63adea2791748c03d2acbf7c" category="section-title">程序5：新增Terraform工作區</block>
+  <block id="ca5a3c99cc82fb97415d7bbb5d78ffe8" category="list-text">從「設計」區域的「工具」區段拖放* Terraform Cloud &gt; Add Terraform Workspace*工作。</block>
+  <block id="b89ada204a1d9666d159755eaf5b6c9e" category="list-text">使用Connector將*對應磁碟區連線至Datastori*和*新增Terraform Workspace*工作、然後按一下*「儲存*」。</block>
+  <block id="6556c808e09c3cce95116efffe37509b" category="list-text">按一下「*新增Terraform Workspace*」。在「工作內容」區域中、按一下「*一般*」索引標籤。您也可以選擇變更此工作的名稱和說明。</block>
+  <block id="7da851d402c1d154fb0946bb0fac2af6" category="paragraph"><block ref="7da851d402c1d154fb0946bb0fac2af6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="556caa4b2d2ab4ac194aa630c3a0ecb7" category="list-text">在「工作內容」區域中、按一下*輸入*。</block>
+  <block id="0b14a18cdd5b3b4b4c393b1d0aca06e4" category="list-text">在輸入字段* Terraform Cloud Target *中單擊* Map*。</block>
+  <block id="a873ef71d19ea066a5ea85d10d2dbc63" category="inline-link-macro">設定HashiCorp Terraform的Cisco Intersight Service</block>
+  <block id="5472001b4d6770b809fbbffa76c52f2b" category="list-text">選擇* Static Value*（靜態值）、然後按一下* Select Terraform Cloud Target *（選擇Terraform Cloud Target *）。請選取如所述新增的Terraform Cloud for Business帳戶 <block ref="d702817a0d262e0d18041c9b5395a08d" category="inline-link-macro-rx"></block>」。</block>
+  <block id="e195faecfe873b904ebb47a989ccb8d0" category="paragraph"><block ref="e195faecfe873b904ebb47a989ccb8d0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e69fb5b76e89d6986e20bf3b3006cd2" category="list-text">在輸入字段* Terraform Organization Name*中單擊* Map*。</block>
+  <block id="884812e14725666421637d9af44eedb0" category="list-text">選擇* Static Value*（靜態值），然後單擊* Select Terraform Organization*（選擇Terraform Organization*）。在Terraform Cloud for Business帳戶中、選取您所屬的Terraform組織名稱。</block>
+  <block id="d4579f9c5c62eeba83337b2abd2370a7" category="paragraph"><block ref="d4579f9c5c62eeba83337b2abd2370a7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a258d73ea05c607b1a28101ae083f1c3" category="list-text">在* Terraform Workspace Name*欄位中按一下* Map*。這是Terraform Cloud for Business帳戶的新工作區。</block>
+  <block id="1dc7516a27a6ca8f8a911983906042a3" category="paragraph"><block ref="1dc7516a27a6ca8f8a911983906042a3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e7ea77d6619f5812b5ad7129e1b9fdcd" category="list-text">請務必為*類型*選取*字串*。</block>
+  <block id="a26907578e5ec8ce75776b64d489c5c7" category="list-text">提供工作區的預設名稱。</block>
+  <block id="8e40588dc26559dc183d06a439034545" category="paragraph"><block ref="8e40588dc26559dc183d06a439034545" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1d7ee105c5c07ae9780839602cff178" category="list-text">按一下*工作區說明*欄位中的*地圖*。</block>
+  <block id="7b20a28a20199e6ff39630e1bdcf8b52" category="paragraph"><block ref="7b20a28a20199e6ff39630e1bdcf8b52" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf1d9f58592ca29198cc5ed8122f262f" category="list-text">提供工作區說明、然後按一下*「Add*（新增*）」。</block>
+  <block id="36dc10e083fbcceb3ca2d82c8693a06d" category="paragraph"><block ref="36dc10e083fbcceb3ca2d82c8693a06d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="238f8416f6737e3bc6b9e7a825f31641" category="list-text">在*執行模式*欄位中按一下*地圖*。</block>
+  <block id="0ce0cc148512532225f04579b2832bea" category="list-text">選擇*靜態值*、按一下*執行模式*、然後按一下*遠端*。</block>
+  <block id="def519c0e31d0aa499671e55330f0037" category="paragraph"><block ref="def519c0e31d0aa499671e55330f0037" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d51f549dd0be0b4575aa612f7dfac88c" category="list-text">按一下「*套用方法*」欄位中的「*地圖*」。</block>
+  <block id="18a5fc679f5af161af991629f8ffc8a1" category="list-text">選擇*靜態值*、然後按一下*套用方法*。按一下*手動套用*。</block>
+  <block id="809f8577cb0dcd5cf6b721d43f1352a8" category="paragraph"><block ref="809f8577cb0dcd5cf6b721d43f1352a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="be93c70fc671625d1fe7b57e0d277c81" category="list-text">按一下*使用者介面*欄位中的*地圖*。</block>
+  <block id="752534af9e96f08ee5102962c9cff74e" category="list-text">選擇* Static Value*（靜態值）並單擊* User Interface*（*用戶界面*）。按一下*主控台Ui*。</block>
+  <block id="ea4a101b7ae1f6cdaafad6db0075e7e3" category="paragraph"><block ref="ea4a101b7ae1f6cdaafad6db0075e7e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="412d515223293b6bab18705751a75d40" category="list-text">按一下輸入欄位中的*地圖*、然後選取您的工作流程。</block>
+  <block id="9c357b53bdf1e6aee4a86be4ed9ad4b0" category="list-text">選取*靜態值*、然後按一下*選擇您的工作流程*。按一下*版本控制工作流程*。</block>
+  <block id="3c28f1f86cce7b9f6cccd84c353320aa" category="paragraph"><block ref="3c28f1f86cce7b9f6cccd84c353320aa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="baf8ff06d7e7509dbb1525fc95dee350" category="list-text">提供下列GitHub儲存庫詳細資料：</block>
+  <block id="f00cb64c44901d8b140ee5334ba42392" category="inline-link-macro">「設定環境先決條件」</block>
+  <block id="4a470f461c007e22030142a71b593456" category="list-text">在*儲存庫名稱*中、輸入一節中詳述的儲存庫名稱 <block ref="3bd0a1108a23c22c460b332b6044d46b" category="inline-link-macro-rx"></block>。</block>
+  <block id="7ad0c2df34976d7bd8b12ea9e4d942f5" category="list-text">請提供OAUTH Token ID、如一節所述 <block ref="3bd0a1108a23c22c460b332b6044d46b" category="inline-link-macro-rx"></block>。</block>
+  <block id="cc52ae3c0b42500f9340757e4535abe9" category="list-text">選取*自動執行觸發*選項。</block>
+  <block id="7dc4834a62425cc62d13478addab1f09" category="paragraph"><block ref="7dc4834a62425cc62d13478addab1f09" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="51b0e138743de6b27eb2983b1e789a5d" category="paragraph">這完成了在Terraform Cloud for Business帳戶中建立工作區的工作。</block>
+  <block id="3a0eac03a9c460ab6cff0a2624ba21af" category="section-title">程序6：新增不敏感的變數至工作區</block>
+  <block id="f632468bad5159e9e6061b29c2e8784f" category="list-text">移至* Designer*索引標籤、然後按一下「Tools（工具）*中的* Workflows（*工作流程）」區段。</block>
+  <block id="fc567f1c0f743fbb67b94d066a592f2c" category="list-text">從「*設計*」區域的「*工具*」區段拖放「* Terraform &gt; Add Terraform Variables*」工作流程。</block>
+  <block id="ec9d48ae41a228f399522ad84fdb0950" category="list-text">使用Connector連接* Add Terraform Workspace*和* Add Terraform Variables*工作。按一下「 * 儲存 * 」。</block>
+  <block id="2cf9f929b7fd546d1a2e3e82000e49c6" category="list-text">按一下「*新增Terraform變數*」。在「*工作流程內容*」區域中、按一下「*一般*」索引標籤。您也可以選擇變更此工作的名稱和說明。</block>
+  <block id="01ed8d9b52acd6913bce86b69751c3b5" category="paragraph"><block ref="01ed8d9b52acd6913bce86b69751c3b5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="662f9d0db2f2dea1cb132e598a3a48e1" category="list-text">在「*工作流程內容*」區域中、按一下「*輸入*」。</block>
+  <block id="e977d89ad0d0fbdc6ececa771a438f1f" category="list-text">在* Terraform Cloud Target *欄位中按一下* Map*。</block>
+  <block id="fb64e71acf4aa4de06c489263c48da02" category="paragraph"><block ref="fb64e71acf4aa4de06c489263c48da02" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4faa4d57695922164dfc78b307eab7a4" category="list-text">在* Terraform Organization Name *字段中單擊* Map*。</block>
+  <block id="8edd642e23864d6e971c3e3bda604fb4" category="list-text">選擇* Static Value*（靜態值），然後單擊* Select Terraform Organization*（選擇Terraform Organization*）。在Terraform Cloud for Business帳戶中、選取您所屬的Terraform組織名稱。</block>
+  <block id="28629e939400ad6037f28be2125b7c80" category="paragraph"><block ref="28629e939400ad6037f28be2125b7c80" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6b68c21095ada7b8b964a3c927c9b70d" category="list-text">在* Terraform Workspace Name*欄位中按一下* Map*。</block>
+  <block id="e4c6cb254394276c3f3c2b82e26bc0a8" category="list-text">選擇*直接對應*、然後按一下*工作輸出*。</block>
+  <block id="2f6858fe2ae7c129a46bfeb632764432" category="list-text">按一下「*工作名稱*」、然後按一下「*新增Terraform Workspace*」。</block>
+  <block id="c19ac7c1c04261f391df0a60605246f9" category="paragraph"><block ref="c19ac7c1c04261f391df0a60605246f9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="37b39d4ffe666c0f19b5cbafc8077145" category="list-text">按一下*輸出名稱*、然後按一下*工作區名稱*。</block>
+  <block id="cb6a4d03e92f80323204573d5f039e7a" category="list-text">在* Add Variables Options（添加變量選項）*字段中單擊* Map*。</block>
+  <block id="8a7826b81306102f3fb51a0d1d685823" category="paragraph"><block ref="8a7826b81306102f3fb51a0d1d685823" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dfa0d7d8d0cf8d559f394ea8f19c4952" category="list-text">提供顯示名稱和參考名稱（選用）。</block>
+  <block id="97745752e546e6413c3e3619dcf0a498" category="list-text">請務必為*類型*選取*字串*。</block>
+  <block id="920552b0f438378a71987719f434334e" category="list-text">按一下*變數類型*、然後按一下*非敏感變數*。</block>
+  <block id="cbedd84b3bc9a1a56d08b4d9b3e13463" category="list-text">在「*新增Terraform變數*」區段中、提供下列資訊：</block>
+  <block id="c4ab987808b4863ce12716f8684c5d9b" category="list-text">*金鑰*「name_of_on prem-ONTAP」</block>
+  <block id="080e2bd938a89c6a3b55f0457caaf4f8" category="list-text">* Value。*提供內部部署ONTAP 的名稱。</block>
+  <block id="b7d374371e730d267834843a58f37c2b" category="list-text">*說明*內部部署ONTAP 的名稱</block>
+  <block id="1c13d5c742b63f94434ab958d6de3578" category="list-text">按一下「*+*」以新增其他變數。</block>
+  <block id="e86708fbc922cf92b4c8544c7c8b68a0" category="paragraph"><block ref="e86708fbc922cf92b4c8544c7c8b68a0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5146e9306fed25fd1c442cdf0c7c100c" category="list-text">新增下表所示的所有Terraform變數。您也可以提供預設值。</block>
+  <block id="9e77151dd2afa3e5c43be330df9768de" category="cell">Terraform變數名稱</block>
+  <block id="f3ba59e834d24c981cb01b03314a25d4" category="cell">name_of_on內部m-ONTAP</block>
+  <block id="a5fff921f5ad52f59fd50fe2932651e7" category="cell">內部部署ONTAP 的名稱（FlexPod 僅限英文）</block>
+  <block id="182c90bf03a410c8148880d068a107c1" category="cell">on－prem-ONTAP_叢 集IP</block>
+  <block id="30e36d10d4826f340912d2070c38929f" category="cell">儲存叢集管理介面的IP位址</block>
+  <block id="ae1ef39476b3e55648bd3b86b8f9f560" category="cell">內部部署-ontap使用者名稱</block>
+  <block id="85d2d0af1ea340e0364fc1ddec278c45" category="cell">儲存叢集的管理使用者名稱</block>
+  <block id="b3ff996fe5c77610359114835baf9b38" category="cell">區域</block>
+  <block id="4e2fa5166acdf1df2b001059ae4f0ffb" category="cell">將建立工作環境的GCP區域</block>
+  <block id="fe866fcb2725fcd80b024a7957795b65" category="cell">Subnet_id</block>
+  <block id="6d11d98399a4bf9ec9a84426b4289430" category="cell">要建立工作環境的GCP子網路ID</block>
+  <block id="b26086b0825721c46b343c2486e643b7" category="cell">VPC_ID</block>
+  <block id="10ee079778df6fb021dd8525dbaa98d5" category="cell">將建立工作環境的VPC ID</block>
+  <block id="f56f446f407f0b78757ec937357eec94" category="cell">capid_package_name</block>
+  <block id="bc45069b691918b98f218ebb3bf9441f" category="cell">要使用的授權類型</block>
+  <block id="ee515ad089ea756256cb1f767ac287e8" category="cell">來源Volume</block>
+  <block id="bc02973b293f761c370533e7a39576d8" category="cell">來源Volume的名稱</block>
+  <block id="7425deadb19fc08412afb65e7bd73a1b" category="cell">source_storage、vm_name</block>
+  <block id="3a7296826057e6d967be17fa2c5f49d7" category="cell">來源SVM的名稱</block>
+  <block id="045fb4be8169d31479f33ba077fae7fc" category="cell">destination_volume</block>
+  <block id="a1c1df336bc308c9801e9d8e3943de8d" category="cell">Volume名稱Cloud Volumes ONTAP</block>
+  <block id="41ee84966c806dc207e8df9783fb3b16" category="cell">schedule__of_repl複 寫</block>
+  <block id="c9885d42964613096df96fb9ccb8cd98" category="cell">預設值為1小時</block>
+  <block id="b9b6e45226f283c37e84f7de3cf9b2f6" category="cell">名稱__of_volume至create_on_CVO</block>
+  <block id="c1cd0d56866b7320dc62486a3b9f582e" category="cell">雲端Volume的名稱</block>
+  <block id="ffedea8bc70a36b6b1d7afc960244647" category="cell">工作區ID</block>
+  <block id="a49962c89c5d84ca15cf007d119e4d51" category="cell">工作環境的建立工作區ID</block>
+  <block id="c6ca42045dd8974f126f41167ddb8635" category="cell">專案ID</block>
+  <block id="b07b1fe41116396ec2707697a92c77ab" category="cell">要建立工作環境的專案ID</block>
+  <block id="557a61c5d4189ea360feb274384db6ee" category="cell">name_of_CVO_cluster</block>
+  <block id="cde59e72298039f9a1fb42987aefbfc4" category="cell">不工作環境的名稱Cloud Volumes ONTAP</block>
+  <block id="71f81d1d643bb01a1a1496b42f24ba8a" category="cell">GCP_service_Account</block>
+  <block id="350b3481868a2b974433574648038b09" category="cell">GCP_service_account of Cloud Volumes ONTAP 《不正常工作環境》</block>
+  <block id="b5a5b9a29d368bf3c7ae00c4d01afcfb" category="paragraph"><block ref="b5a5b9a29d368bf3c7ae00c4d01afcfb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed7f7c8c55ed7f5a712ea5541170b012" category="paragraph">如此便完成將必要的Terraform變數新增至工作區的工作。接著、將必要的敏感Terraform變數新增至工作區。您也可以將兩者合併成單一工作。</block>
+  <block id="8dbe7eef079864130882eb9f2c3a1c43" category="section-title">程序7：新增敏感變數至工作區</block>
+  <block id="3e1ad43c13af0cac129b8a64ea2142b5" category="list-text">移至* Designer*索引標籤、然後按一下「*工具*」區段中的「*工作流程*」。</block>
+  <block id="68234ab797837d6cd669d44a4a4cca1e" category="list-text">使用Connector連接兩項*新增Terraform Workspace*工作。按一下「 * 儲存 * 」。</block>
+  <block id="dee3dd236a8cea3bb461ec720a7d6880" category="admonition">此時會出現一則警告、指出這兩項工作的名稱相同。現在請忽略此錯誤、因為您在下一個步驟中變更了工作名稱。</block>
+  <block id="ddd72a9d78e672ce84078e188779949c" category="list-text">按一下「*新增Terraform變數*」。在「*工作流程內容*」區域中、按一下「*一般*」索引標籤。將名稱變更為*新增Terraform敏感變數*。</block>
+  <block id="86e3738a676f0f748478273a1ce2b051" category="paragraph"><block ref="86e3738a676f0f748478273a1ce2b051" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e4ca1dde984190c01aa1ba387d335714" category="list-text">選擇* Static Value*（靜態值）、然後按一下* Select Terraform Cloud Target *（選擇Terraform Cloud Target *）。選取新增至區段的Terraform Cloud for Business帳戶 <block ref="d702817a0d262e0d18041c9b5395a08d" category="inline-link-macro-rx"></block>。」</block>
+  <block id="0909d486af935a1c2692bc83bfd41208" category="list-text">在* Terraform Organization Name*欄位中按一下* Map*。</block>
+  <block id="545d38093ae01cc865196046ef8df048" category="list-text">按一下「*工作名稱*」、然後按一下「*新增工作區*」。</block>
+  <block id="f15511d51e5bb056616e87512dc8d70e" category="list-text">按一下*「輸出名稱*」、然後按一下輸出*「工作區名稱*」。</block>
+  <block id="1621bf2df26116272259f0f4c5a30928" category="list-text">選擇*直接對應*、然後按一下*工作流程輸入*。</block>
+  <block id="22d7df80c543ee33b0d328f7ae6bbf7d" category="list-text">請務必為類型選取* Terraform Add Variables*。</block>
+  <block id="bb43b8f2eaa5a1d72122aa9a1fc612b5" category="list-text">按一下*設定預設值*。</block>
+  <block id="db1e9a5622120f7cbf5d0e20d8599b6a" category="list-text">按一下*變數類型*、然後按一下*敏感變數*。</block>
+  <block id="33a8343b68cadf3b9b0375f6a3b573df" category="paragraph"><block ref="33a8343b68cadf3b9b0375f6a3b573df" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2c6f2f9cf14b7430dd6b2a0e485a6d8a" category="list-text">*金鑰*「cloudmanager_refresh_doken」。</block>
+  <block id="e97bbbb4aa99cae4a317dc1978ea02ce" category="list-text">*值。*輸入NetApp Cloud Manager API作業的重新整理權杖。</block>
+  <block id="c0635c122427dfcc192d6c29ee84e3fb" category="list-text">*說明。*重新整理權杖。</block>
+  <block id="253f26b8ee128a839e34d1b24a799e82" category="inline-link-macro">「設定環境先決條件」。</block>
+  <block id="0873f157a13b94ec2c2cb69ff4d2f25d" category="admonition">如需取得NetApp Cloud Manager API作業更新權杖的詳細資訊、請參閱一節 <block ref="e494838bdd9d1128badc766b5008a232" category="inline-link-macro-rx"></block></block>
+  <block id="d05613edc0c7136089b620dec8c8d9de" category="paragraph"><block ref="d05613edc0c7136089b620dec8c8d9de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ca0fb47f75ab6fca4e951b8cbe658bdd" category="list-text">新增所有Terraform敏感變數、如下表所示。您也可以提供預設值。</block>
+  <block id="eb8e560b05e9ad296a7e85c8465ee698" category="cell">Terraform敏感變數名稱</block>
+  <block id="11fb5dbd9970666e6f5ff557e8db45b6" category="cell">cloudmanager_refresh_doken</block>
+  <block id="71e26c072786939da31ffe1ad8004bb6" category="cell">重新整理權杖。請至以下網址取得：</block>
+  <block id="2b69d2ab5aec459dabdafdaa2bf52655" category="cell">連接器ID</block>
+  <block id="3e4184fa8ebacaa6de933be7e25c6e3f" category="cell">Cloud Manager Connector的用戶端ID。請從取得</block>
+  <block id="60ff2f8a66906dcf6fcefa276011c101" category="cell">CVO_admin_password</block>
+  <block id="e15f5086b4dfd0fa7f74c0e5ed873056" category="cell">管理員密碼Cloud Volumes ONTAP</block>
+  <block id="19b83ac8b13fdd7885b86b68fae29495" category="cell">內部部署：ON-prem-ONTAP_USER_password</block>
+  <block id="d1a9b65a9414d8fa602a4d3615c6f2dd" category="cell">儲存叢集的管理密碼</block>
+  <block id="b4c5f9b8c9aec141677bcee5c0da850c" category="list-text">按一下「*地圖*」。這會完成將必要的Terraform敏感變數新增至工作區的工作。接下來、在設定的工作區中開始新的Terraform計畫。</block>
+  <block id="06cc56ce304a1110c660e081886ed872" category="section-title">程序8：開始新的Terraform計畫</block>
+  <block id="36b4bcd6a2c5ee8c9ea599fa50d27990" category="list-text">從「*設計*」區域的「*工具*」區段拖放「* Terraform Cloud &gt; Start New Terraform Plan *」工作。</block>
+  <block id="e4934b3e12228c001d2da98bceffa242" category="list-text">使用Connector在工作之間建立連結*新增Terraform敏感變數*和*開始新的Terraform Plan工作*。按一下「 * 儲存 * 」。</block>
+  <block id="0718f3b2cb784c592a49b4647ae12367" category="list-text">按一下「*開始新的Terraform Plan *」。在「*工作內容*」區域中、按一下「*一般*」索引標籤。您也可以選擇變更此工作的名稱和說明。</block>
+  <block id="c8dd881caff964ec71daef697b92213f" category="paragraph"><block ref="c8dd881caff964ec71daef697b92213f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="20510649666748d1b8c02988d968d290" category="list-text">選擇* Static Value*（靜態值）、然後按一下* Select Terraform Cloud Target *（選擇Terraform Cloud Target *）。選取在「設定HashiCorp Terraform的Cisco Intersight服務」一節中新增的Terraform Cloud for Business帳戶。</block>
+  <block id="21cb844f70fedbba0d33de64e2a99eb9" category="list-text">按一下*工作區ID*欄位中的*地圖*。</block>
+  <block id="b5b4b94ed4730d8189f79b769152da59" category="paragraph"><block ref="b5b4b94ed4730d8189f79b769152da59" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03d4edfdfae72f25232b9ec58800881e" category="list-text">按一下*輸出名稱*、*工作區ID*、然後按*地圖*。</block>
+  <block id="f5717dbada2ed48feb3d79e1d913d47f" category="list-text">在*啟動計畫理由*欄位中按一下*地圖*。</block>
+  <block id="f5dc2f6942066a4f2694590b19444adc" category="list-text">輸入*開始計畫理由*的預設值、然後按一下*「Add*（新增*）」。</block>
+  <block id="14a230365d0b42a0e7199663b315eddf" category="paragraph"><block ref="14a230365d0b42a0e7199663b315eddf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36ae0267a1eb1ecf130591466ea570ad" category="list-text">在* Plan Operation*（計劃操作）字段中單擊* Map*。</block>
+  <block id="0316b559b06256a3a3e01b5aa3f2e297" category="list-text">選擇* Static Value*（靜態值）並單擊* Plan Operation*（計劃操作*）。按一下*新計畫*。</block>
+  <block id="784011cde26225d6d9d719de9c52f273" category="paragraph"><block ref="784011cde26225d6d9d719de9c52f273" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a5d7e4e6edaf5408f217414e43b7656" category="paragraph">這項任務完成了在Terraform Cloud for Business帳戶中新增Terraform方案的任務。接下來、建立幾秒鐘的睡眠工作。</block>
+  <block id="718e657978cd41152df75e4485090339" category="section-title">程序9：同步的睡眠工作</block>
+  <block id="6c87848fc54410cc1c75ccf05331e0b1" category="paragraph">Terraform Apply需要RunID、這是Terraform Plan工作的一部分。在Terraform Plan（Terraform計畫）與Terraform Apply（Terraform套用）之間等待數秒、可避免時間問題。</block>
+  <block id="38ffdd65709853a10d34ce7d03dcfc49" category="list-text">從*設計*區域的*工具*區段拖放*核心工作&gt;睡眠工作*。</block>
+  <block id="e3033042a2088c2e3a186bc0b7b57a44" category="list-text">使用Connector來連接工作*開始新的Terraform Plan *和*睡眠工作*。按一下「 * 儲存 * 」。</block>
+  <block id="13ac5359b7980ee6c9fa3392eb3df214" category="paragraph"><block ref="13ac5359b7980ee6c9fa3392eb3df214" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="39057865c7092f42f8ab8f84ed0ec950" category="list-text">按一下*睡眠工作*。在「*工作內容*」區域中、按一下「*一般*」索引標籤。您也可以選擇變更此工作的名稱和說明。在此範例中、工作名稱為* Synchronize*。</block>
+  <block id="3f37ed5747ccc2a0c5bc701e77ee57aa" category="list-text">按一下*睡眠時間（秒）*欄位中的*地圖*。</block>
+  <block id="bcebd8fb5ea0990fd8873a54ab8ecf52" category="list-text">選擇* Static Value*（靜態值）並輸入* 15* in（以秒為單位的*睡眠時間）*。</block>
+  <block id="df136f6368428a12c860058b70f3f894" category="paragraph"><block ref="df136f6368428a12c860058b70f3f894" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c430f1cf6c2907c1c0385aba8a8aeb53" category="paragraph">如此便可完成睡眠工作。接下來、建立此工作流程的最後一項工作、確認並套用Terraform Run。</block>
+  <block id="e3d6e044b917c76bf244507e9d051003" category="section-title">程序10：確認並套用Terraform Run</block>
+  <block id="386a7bcb4405dbf3fa5bc6db44ae0fe5" category="list-text">從「*設計*」區域的「*工具*」區段拖放「* Terraform Cloud &gt; Confirm and Apply Terraform Run*」工作。</block>
+  <block id="c2d809cf8192caf73bdf6d73a8605e9f" category="list-text">使用連接器來連接工作*同步*和*確認及套用Terraform Run*。按一下「 * 儲存 * 」。</block>
+  <block id="0e1dc6077d34ff33ff253e09c3d0bdce" category="list-text">按一下「*確認*」和「*套用Terraform Run*」。在「*工作內容*」區域中、按一下「*一般*」索引標籤。您也可以選擇變更此工作的名稱和說明。</block>
+  <block id="8671194a007739e451570e012816c39a" category="paragraph"><block ref="8671194a007739e451570e012816c39a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a5f0204b18f1ec88cd1117ce0776f621" category="list-text">選擇* Static Value*（靜態值）、然後按一下* Select Terraform Cloud Target *（選擇Terraform Cloud Target *）。選取新增的Terraform Cloud for Business帳戶 <block ref="d702817a0d262e0d18041c9b5395a08d" category="inline-link-macro-rx"></block>。」</block>
+  <block id="0b4dd6539d76e12c9cd96d7348977d1c" category="list-text">在* Run ID*（運行ID*）字段中單擊* Map*。</block>
+  <block id="c2fe66ef87838d7855958b06ffc78b52" category="list-text">按一下「*工作名稱*」、然後按一下「*開始新的Terraform Plan *」。</block>
+  <block id="383bcf9dd2a8b183184ceb15f839adb0" category="list-text">按一下「*輸出名稱*」、然後按一下「*執行ID*」。</block>
+  <block id="b764d9dba6189360e00a563c935c9108" category="paragraph"><block ref="b764d9dba6189360e00a563c935c9108" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2c1f1b5d000e01325d0d94db9b5c2b01" category="list-text">按一下「*自動對齊工作流程*」、使所有工作都對齊。按一下「 * 儲存 * 」。</block>
+  <block id="e027bfaf34a26d810b29037e48b5ee56" category="paragraph"><block ref="e027bfaf34a26d810b29037e48b5ee56" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eb91734c80c3059460de3a91e7023f5d" category="paragraph">這將完成「確認並套用Terraform執行」工作。使用Connector連接*確認和應用Terraform Run*任務與* Success *和*故障*任務。</block>
+  <block id="8cbb982b1133f487dca2f7b50b3bb7d1" category="section-title">程序11：匯入Cisco建置的工作流程</block>
+  <block id="4c3da47674ee039671b7ee3017283cc2" category="paragraph">Cisco Intersight Cloud Orchestrator可讓您將工作流程從Cisco Intersight帳戶匯出至系統、然後匯入其他帳戶。Json檔案是透過匯出可匯入您帳戶的建置工作流程所建立。</block>
+  <block id="aa7206c393519866735d718a745db075" category="paragraph">工作流程元件的Json檔案可在中取得<block ref="f9ca7c1dbbbd005395883eb34560fa1c" category="inline-link-rx"></block>。</block>
+  <block id="b2f3408c9d01ee65202784c85e804e29" category="inline-link-macro">下一步：從控制器執行Terraform。</block>
+  <block id="b676b4f0a7c70c0b6b427d2d63263495" category="paragraph"><block ref="b676b4f0a7c70c0b6b427d2d63263495" category="inline-link-macro-rx"></block></block>
+  <block id="549e147409126d885754994939d9cb6c" category="sidebar">採用NetApp技術的混合雲Google Cloud Platform搭配NetApp功能和Cisco Intersight FlexPod Cloud Volumes ONTAP</block>
 </blocks>

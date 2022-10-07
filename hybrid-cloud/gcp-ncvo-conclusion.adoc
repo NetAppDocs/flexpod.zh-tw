@@ -1,0 +1,182 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/gcp-ncvo-conclusion.html 
+keywords: conclusion 
+summary: 在這個解決方案中、NetApp Cloud Data Service Cloud Volumes ONTAP 、可靠性和FlexPod 可靠性資料中心基礎架構是用來建置DR解決方案、並採用Cisco Intersight Cloud Orchestrator技術的公有雲。此解決方案不斷進化、讓客戶能夠將應用程式與業務交付流程現代化。FlexPod有了這套解決方案、您可以利用公有雲做為暫時性或全時DR計畫的理想據點、同時降低DR解決方案的成本。 
+---
+= 結論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:gcp-ncvo-solution-validation.html["先前版本：解決方案驗證。"]
+
+在這個解決方案中、NetApp Cloud Data Service Cloud Volumes ONTAP 、可靠性和FlexPod 可靠性資料中心基礎架構是用來建置DR解決方案、並採用Cisco Intersight Cloud Orchestrator技術的公有雲。此解決方案不斷進化、讓客戶能夠將應用程式與業務交付流程現代化。FlexPod有了這套解決方案、您可以利用公有雲做為暫時性或全時DR計畫的理想據點、同時降低DR解決方案的成本。
+
+內部部署FlexPod 的內部部署的NetApp功能與NetApp Cloud Volumes ONTAP 功能之間的資料複寫是由獲證實的SnapMirror技術所處理、但您也可以選擇Cloud Sync 其他NetApp資料傳輸與同步工具、例如針對您的資料移動需求而選擇的功能。以TLS/AES為基礎的內建加密技術、提供即時資料安全性。
+
+無論您的應用程式是暫時的災難恢復計畫、或是企業的全職災難恢復計畫、本解決方案所使用的產品組合都能大規模滿足這兩項需求。以Cisco Intersight Workflow Orchestrator為後盾、可透過預先建置的工作流程來自動化、不僅免除重建程序的需求、也能加速BCDR計畫的實作。
+
+此解決方案可透過FlexPod Cisco Intersight Cloud Orchestrator提供的自動化與協調功能、輕鬆且便利地在混合雲上管理內部部署的功能和資料複寫。
+
+
+
+== 何處可找到其他資訊
+
+若要深入瞭解本文所述資訊、請檢閱下列文件和 / 或網站：
+
+
+
+=== GitHub
+
+* 使用的所有Terraform組態
++
+https://github.com/NetApp-Automation/FlexPod-hybrid-cloud-for-GCP-with-Intersight-and-CVO["https://github.com/NetApp-Automation/FlexPod-hybrid-cloud-for-GCP-with-Intersight-and-CVO"^]
+
+* 用於匯入工作流程的Json檔案
++
+https://github.com/ucs-compute-solutions/FlexPod_DR_Workflows["https://github.com/ucs-compute-solutions/FlexPod_DR_Workflows"^]
+
+
+
+
+
+=== Cisco Intersight
+
+* Cisco Intersight說明中心
++
+https://intersight.com/help/saas/home["https://intersight.com/help/saas/home"^]
+
+* Cisco Intersight Cloud Orchestrator文件：
++
+https://intersight.com/help/saas/features/orchestration/configure["https://intersight.com/help/saas/features/orchestration/configure#intersight_cloud_orchestrator"^]
+
+* Cisco Intersight Service for HashiCorp Terraform文件
++
+https://intersight.com/help/saas/features/terraform_cloud/admin["https://intersight.com/help/saas/features/terraform_cloud/admin"^]
+
+* Cisco Intersight資料表
++
+https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/intersight-ds.html["https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/intersight-ds.html"^]
+
+* Cisco Intersight Cloud Orchestrator資料表
++
+https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/nb-06-intersight-cloud-orch-aag-cte-en.html["https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/nb-06-intersight-cloud-orch-aag-cte-en.html"^]
+
+* Cisco Intersight Service for HashiCorp Terraform資料表
++
+https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/nb-06-intersight-terraf-ser-aag-cte-en.html["https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/nb-06-intersight-terraf-ser-aag-cte-en.html"^]
+
+
+
+
+
+=== FlexPod
+
+* 首頁FlexPod
++
+https://www.flexpod.com["https://www.flexpod.com"^]
+
+* Cisco驗證FlexPod 的《設計與部署指南》、適用於
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m6_esxi7u2_design.html["以UCS託管模式搭配Cisco UCS 4.2（1）的資料中心、VMware vSphere 7.0 U2和NetApp《9.9設計指南》FlexPod ONTAP"^]
+
+* 採用Cisco UCS X系列的資料中心FlexPod
++
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_esxi7u2_design.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_esxi7u2_design.html"^]
+
+
+
+
+
+=== 互通性
+
+* NetApp 互通性對照表工具
++
+http://support.netapp.com/matrix/["http://support.netapp.com/matrix/"^]
+
+* Cisco UCS硬體與軟體互通性工具
++
+http://www.cisco.com/web/techdoc/ucs/interoperability/matrix/matrix.html["http://www.cisco.com/web/techdoc/ucs/interoperability/matrix/matrix.html"^]
+
+* VMware相容性指南
++
+http://www.vmware.com/resources/compatibility/search.php["http://www.vmware.com/resources/compatibility/search.php"^]
+
+
+
+
+
+=== NetApp Cloud Volumes ONTAP 產品參考文件
+
+* NetApp Cloud Manager
++
+https://docs.netapp.com/us-en/occm/concept_overview.html["https://docs.netapp.com/us-en/occm/concept_overview.html"^]
+
+* Cloud Volumes ONTAP
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html[]
+
+* NetApp TCO計算機Cloud Volumes ONTAP
++
+https://cloud.netapp.com/google-cloud-calculator[]
+
+* Sizer Cloud Volumes ONTAP
++
+https://cloud.netapp.com/cvo-sizer["https://cloud.netapp.com/cvo-sizer"^]
+
+* 雲端評估工具
++
+https://cloud.netapp.com/assessments[]
+
+* NetApp混合雲
++
+https://cloud.netapp.com/hybrid-cloud[]
+
+* Cloud Manager API文件
++
+https://docs.netapp.com/us-en/occm/reference_infrastructure_as_code.html["https://docs.netapp.com/us-en/occm/reference_infrastructure_as_code.html"^]
+
+
+
+
+
+=== 疑難排解問題
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Volumes_ONTAP_(CVO)["https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Volumes_ONTAP_(CVO)"^]
+
+
+
+=== Terraform
+
+* Terraform Cloud
++
+https://www.terraform.io/cloud["https://www.terraform.io/cloud"^]
+
+* Terraform文件
++
+https://www.terraform.io/docs/["https://www.terraform.io/docs/"^]
+
+* NetApp Cloud Manager登錄
++
+https://registry.terraform.io/providers/NetApp/netapp-cloudmanager/lates["https://registry.terraform.io/providers/NetApp/netapp-cloudmanager/lates"^]
+
+
+
+
+
+=== GCP
+
+* 適用於GCP的高可用度ONTAP
++
+https://cloud.netapp.com/blog/gcp-cvo-blg-what-makes-cloud-volumes-ontap-high-availability-for-gcp-tick["https://cloud.netapp.com/blog/gcp-cvo-blg-what-makes-cloud-volumes-ontap-high-availability-for-gcp-tick"^]
+
+* GCP環境
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f3d0368b-7165-4d43-a76e-ae01011853d6["https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f3d0368b-7165-4d43-a76e-ae01011853d6"^]
+
+

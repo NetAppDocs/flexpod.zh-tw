@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/gcp-ncvo-solution-overview.html 
+keywords: tr4939, 4939, introduction, audience, solution topology 
+summary: 本技術報告將FlexPod NetApp Cloud Volumes ONTAP 的融合式基礎架構解決方案、Google Cloud上的NetApp解決方案、以及Cisco Intersight整合在一起、形成適用於災難恢復的混合雲資料中心。在此解決方案中、我們將討論ONTAP 如何使用Cisco Intersight Cloud Orchestrator來設計及執行內部部署的功能性工作流程。我們也會討論如何使用Cloud Volumes ONTAP Cisco Intersight Service for HashiCorp Terraform、部署NetApp的功能、協調及自動化FlexPod 資料複寫與DR、以利在視覺與Cloud Volumes ONTAP 視覺之間進行複寫。 
+---
+= TR-4939：FlexPod 《適用於Google Cloud Platform的NetApp混合雲》Cloud Volumes ONTAP （採用NetApp功能）和《Cisco Intersight》（Cisco Intersight）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+NetApp的Ruchika Lahoti
+
+
+
+== 簡介
+
+利用災難恢復（DR）保護資料、是維持企業營運不中斷的關鍵目標。災難恢復可讓組織將業務作業容錯移轉至次要位置、然後以高效率且可靠的方式、將其恢復及容錯回復至主要站台。許多問題、例如自然災害、網路故障、軟體弱點和人為錯誤、都讓開發災難恢復策略成為IT的首要優先考量。
+
+對於災難恢復、在主要站台上執行的所有工作負載都必須在災難恢復站台上忠實重現。組織也必須擁有所有企業資料的最新複本、包括資料庫、檔案服務、NFS和iSCSI儲存設備等。由於正式作業環境中的資料會不斷更新、因此變更必須定期傳輸至災難恢復站台。
+
+由於基礎架構和站台獨立性的需求、因此部署災難恢復環境對大多數組織來說都是一項挑戰。所需資源的數量、以及設定、測試及維護二線資料中心的成本可能非常高、通常會接近整個正式作業環境的成本。要維持最小的資料佔用空間並提供足夠的保護、同時持續同步資料、並建立無縫容錯移轉和容錯回復、是一項艱鉅的挑戰。在建置DR站台之後、挑戰就變成複寫正式作業環境中的資料、並讓資料保持同步。
+
+本技術報告將FlexPod NetApp Cloud Volumes ONTAP 的融合式基礎架構解決方案、Google Cloud上的NetApp解決方案、以及Cisco Intersight整合在一起、形成適用於災難恢復的混合雲資料中心。在此解決方案中、我們將討論ONTAP 如何使用Cisco Intersight Cloud Orchestrator來設計及執行內部部署的功能性工作流程。我們也會討論如何使用Cloud Volumes ONTAP Cisco Intersight Service for HashiCorp Terraform、部署NetApp的功能、協調及自動化FlexPod 資料複寫與DR、以利在視覺與Cloud Volumes ONTAP 視覺之間進行複寫。
+
+下圖提供解決方案總覽。
+
+image:gcp-ncvo-image1.png["解決方案總覽。"]
+
+此解決方案提供多種優勢、包括：
+
+* *協調與自動化。* Cisco Intersight FlexPod 提供一致的協調化架構、透過自動化提供、簡化了整個過程中的例行作業。
+* *客製化保護。Cloud Volumes ONTAP *支援區塊層級的資料複寫功能、可透過ONTAP 遞增式更新、將目的地保持在最新狀態。使用者可以指定每5分鐘或每小時的同步排程、例如根據傳輸來源的變更。
+* *無縫容錯移轉和容錯回復。*發生災難時、儲存管理員可以快速容錯移轉至雲端磁碟區。當主站台恢復時、在DR環境中建立的新資料會同步回來源磁碟區、重新建立次要資料複寫。
+* *效率：*二線雲端複本的儲存空間和成本、是透過資料壓縮、精簡配置和重複資料刪除技術進行最佳化。資料會以壓縮和重複資料刪除的形式在區塊層級傳輸、以提升傳輸速度。資料也會自動分層至低成本的物件儲存設備、而且只有在存取時才會恢復至高效能儲存設備、例如在DR案例中。如此可大幅降低持續儲存成本。
+* *提高IT生產力。*使用Intersight做為單一安全的企業級平台、進行基礎架構與應用程式生命週期管理、可簡化組態管理、並可針對解決方案進行大規模的手動工作自動化。
+
+
+
+
+== 目標對象
+
+本文件的對象包括但不限於：銷售工程師、現場顧問、專業服務、IT經理、 合作夥伴工程師、站台可靠性工程師、雲端架構設計師、雲端工程師、以及想要善用基礎架構以提供IT效率並實現IT創新的客戶。
+
+
+
+== 解決方案拓撲
+
+本節說明解決方案的邏輯拓撲。下圖顯示內部部署FlexPod 的解決方案拓撲、Cloud Volumes ONTAP 在Google Cloud、Cisco Intersight和NetApp Cloud Manager上執行的NetApp EFlash。
+
+image:gcp-ncvo-image2.png["解決方案拓撲："]
+
+端點之間的控制平面和資料平面會清楚標示出來。資料平面使用安全的站台對站台VPN連線、將ONTAP 執行於FlexPod 整個Flash FAS 上的執行個體連接Cloud Volumes ONTAP 至Google Cloud上的NetApp實例。
+
+NetApp SnapMirror可將工作負載資料從FlexPod 功能複寫到NetApp Cloud Volumes ONTAP 功能、而整個流程則是使用Cisco Intersight Cloud Orchestrator來協調內部部署和雲端環境。Cisco Intersight Cloud Orchestrator會使用Terraform Resource Providers for NetApp Cloud Manager來執行與NetApp Cloud Volumes ONTAP 的部署相關的作業、並建立資料複寫關係。
+
+
+NOTE: 此Cloud Volumes ONTAP 解決方案也支援可選的冷資料備份和分層、將駐留在NetApp支援執行個體的冷資料備份至Google Cloud Storage。
+
+link:gcp-ncvo-solution-components.html["下一步：解決方案元件。"]

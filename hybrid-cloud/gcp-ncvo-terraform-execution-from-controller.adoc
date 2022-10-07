@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/gcp-ncvo-terraform-execution-from-controller.html 
+keywords: prerequisites, clone github repo, terraform execution, init, plan, apply, destroy 
+summary: 我們可以使用控制器來執行Terraform計畫。如果您已使用ICO工作流程執行Terraform方案、則可以跳過本節。 
+---
+= 從控制器執行Terraform
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:gcp-ncvo-dr-workflow.html["上一個：DR工作流程。"]
+
+我們可以使用控制器來執行Terraform計畫。如果您已使用ICO工作流程執行Terraform方案、則可以跳過本節。
+
+
+
+== 先決條件
+
+解決方案的設定從能夠存取網際網路的管理工作站開始、並開始使用Terraform的有效安裝。
+
+如需安裝Terraform的指南、請參閱 https://learn.hashicorp.com/tutorials/terraform/install-cli["請按這裡"^]。
+
+
+
+== Clone GitHub repo
+
+此程序的第一步是將GitHub repo複製到管理工作站上的新空白資料夾。若要複製GitHub儲存庫、請完成下列步驟：
+
+. 從管理工作站為專案建立新資料夾。在此資料夾內建立名為「/root/SnapMirror-CVO」的新資料夾、然後將GitHub repo複製到其中。
+. 在管理工作站上開啟命令列或主控台介面、並將目錄變更為剛建立的新資料夾。
+. 使用下列命令複製GitHub集合：
+
+
+....
+Git clone https://github.com/NetApp-Automation/FlexPod-hybrid-cloud-for-GCP-with-Intersight-and-CVO
+....
+. 將目錄變更為名為「shnapmirror -CVO」的新資料夾。
+
+
+* Terraform執行*
+
+image:gcp-ncvo-image77.png["Terraform執行示意圖。"]
+
+* * Init。*初始化（本機）Terraform環境。每個工作階段通常只執行一次。
+* *計畫*比較雲端中的Terraform狀態與「即用」狀態、然後建置並顯示執行計畫。這不會變更部署（唯讀）。
+* *套用。*從計畫階段套用計畫。這可能會變更部署（讀寫）。
+* *銷毀*所有受此特定Terraform環境管理的資源。
++
+如需詳細資訊、請參閱 https://www.terraform.io/cli/commands["請按這裡"^]。
+
+
+
+link:gcp-ncvo-solution-validation.html["下一步：解決方案驗證。"]

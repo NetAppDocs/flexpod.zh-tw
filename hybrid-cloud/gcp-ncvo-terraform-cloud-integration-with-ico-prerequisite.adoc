@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/gcp-ncvo-terraform-cloud-integration-with-ico-prerequisite.html 
+keywords: user token, terraform cloud target, agents, api 
+summary: 本頁說明如何連接Cisco Intersight和Terraform Cloud、如何產生使用者權杖、如何宣告Terraform雲端目標、以及如何新增Terraform Cloud代理程式。 
+---
+= Terraform Cloud與ICO的整合先決條件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:gcp-ncvo-cisco-intersight-configuration.html["先前版本：Cisco Intersight組態。"]
+
+
+
+== 程序1：連接Cisco Intersight和Terraform Cloud
+
+. 請提供相關的Terraform Cloud帳戶詳細資料、以申請或建立Terraform雲端目標。
+. 建立私有雲端的Terraform Cloud Agent目標、讓客戶能在資料中心安裝代理程式、並與Terraform Cloud進行通訊。
++
+如需詳細資訊、請參閱 https://intersight.com/help/saas/features/terraform_cloud/admin["此連結"^]。
+
+
+
+
+
+== 程序2：產生使用者權杖
+
+在新增Terraform Cloud目標時、您必須從Terraform Cloud設定頁面提供使用者名稱和API權杖。
+
+. 登入Terraform Cloud並前往*使用者令牌*： https://app.terraform.io/app/settings/tokens["https://app.terraform.io/app/settings/tokens"^]。
+. 按一下*建立新的API權杖*。
+. 指派要記住的名稱、並將Token儲存在安全的位置。
+
+
+
+
+== 程序3：請款Terraform Cloud Target
+
+. 以帳戶管理員、裝置管理員或裝置技術人員權限登入Intersight。
+. 瀏覽至*管理>目標>申請新目標*。
+. 在*類別*中、按一下*雲端*。
+. 按一下「* Terraform Cloud *」、然後按一下「* Start*」。
++
+image:gcp-ncvo-image3.png["在Cisco Intersight中選取目標類型的快照。"]
+
+. 輸入目標名稱、Terraform Cloud的使用者名稱、API權杖、以及Terraform Cloud中的預設組織、如下圖所示。
+. 在*預設託管主機*欄位中、請務必新增下列連結及其他託管主機：
++
+** github.com
+** github-releases.githubusercontent.com
++
+image:gcp-ncvo-image4.png["預設託管主機欄位的快照。"]
+
+
+
+
+
+如果輸入的內容正確、您會在「* Intersight目標*」區段中看到Terraform Cloud目標。
+
+
+
+== 程序4：新增Terraform Cloud代理程式
+
+先決條件：
+
+* Terraform Cloud目標：
+* 在部署Terraform Cloud Agent之前、請先將Intersight協助要求提供給Intersight。
+
+
+
+NOTE: 您只能為每個輔助服務申請五位值機員。
+
+
+NOTE: 建立與Terraform的連線之後、您必須啟動Terraform Agent才能執行Terraform程式碼。
+
+. 從您的Terraform Cloud目標下拉式清單中、按一下*請款Terraform Cloud agent*。
+. 輸入Terraform Cloud代理程式的詳細資料。下列螢幕快照顯示Terraform代理程式的組態詳細資料。
++
+image:gcp-ncvo-image5.png["顯示Terraform代理程式組態詳細資料的快照。"]
+
+
+
+
+NOTE: 您可以更新任何Terraform Agent屬性。如果目標處於*未連線*狀態、且從未處於*已連線*狀態、則不會為Terraform代理程式產生權杖。
+
+代理程式驗證成功並產生代理程式權杖之後、您將無法重新設定組織和/或代理程式集區。Terraform代理程式的成功部署狀態為* Connected *。
+
+啟用並宣告Terraform Cloud整合之後、您可以在Cisco Intersight assist中部署一或多個Terraform Cloud代理程式。Terraform Cloud代理程式是以Terraform Cloud目標的子目標為建模。當您申請值機員目標時、您會看到一則訊息、指出目標報銷正在進行中。
+
+數秒後、目標會移至*已連線*狀態、而Intersight平台會將HTTPS封包從代理程式路由傳送至Terraform Cloud閘道。
+
+您的Terraform Agent應正確聲明、並應顯示在目標下方* Connected *。
+
+link:gcp-ncvo-configure-public-cloud-service-provider.html["下一步：設定公有雲服務供應商。"]

@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/gcp-ncvo-deploy-flexpod.html 
+keywords: deploy, installation, flexpod 
+summary: 此頁面列出部署FlexPod 某個實體執行個體所需的資源。 
+---
+= 部署FlexPod
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:gcp-ncvo-solution-components.html["先前版本：解決方案元件。"]
+
+如需瞭解FlexPod 有關設計與部署的詳細資料、包括各種設計元素的組態、以及相關的最佳實務做法、請參閱 https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html["Cisco驗FlexPod 證的設計以供使用"^]。
+
+可在UCS託管模式和Cisco Intersight託管模式下部署。FlexPod如果您是FlexPod 在UCS託管模式下部署功能、則可以找到最新的Cisco驗證設計 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m6_esxi7u2_design.html["請按這裡"^]。
+
+Cisco Unified Compute System（Cisco UCS）X系列是全新的模組化運算系統、可從雲端進行設定與管理。其設計旨在滿足現代化應用程式的需求、並透過可調整且符合未來需求的模組化設計來提升作業效率、敏捷度及擴充性。您FlexPod 可以在設計指南中找到、將Cisco Intersight託管的UCS X系列平台整合到各種基礎架構之中 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_esxi7u2_design.html["請按這裡"^]。
+
+可在Cisco ACI部署中找到FlexPod https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9k_aci.html["請按這裡"^]。
+
+link:gcp-ncvo-cisco-intersight-configuration.html["下一步：Cisco Intersight組態。"]
