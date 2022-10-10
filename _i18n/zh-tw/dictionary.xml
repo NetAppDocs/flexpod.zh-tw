@@ -2352,7 +2352,6 @@
   <block id="d5350d8759b1ec84607e47908809058e" category="cell">集合體</block>
   <block id="d68a8c02998023d2f388f550704264e1" category="summary">本節顯示使用Cromwell引擎執行GK後的輸出。</block>
   <block id="0f785b6a5555ed4bcd551fab331ca7a2" category="doc">使用Cromwell引擎執行網關的輸出</block>
-  <block id="11fffe01d469840980d9b9a5f45bf9ed" category="inline-link-macro">上一篇：使用「/gatk」指令碼執行網關的輸出。</block>
   <block id="de3dfc758141427b11edfa64d359f781" category="paragraph"><block ref="de3dfc758141427b11edfa64d359f781" category="inline-link-macro-rx"></block></block>
   <block id="bbc63c84c18100b4182421f802410308" category="paragraph">使用Cromwell引擎執行GATE時、產生下列範例輸出。</block>
   <block id="9b442a5691d6c853f564cb2a8b9e6565" category="inline-link-macro">下一步：GPU設定。</block>
@@ -2476,7 +2475,6 @@
   <block id="75d0ed1766acb5eef5e9d26b3af4fee4" category="paragraph"><block ref="75d0ed1766acb5eef5e9d26b3af4fee4" category="inline-link-macro-rx"></block></block>
   <block id="a14d291d2a4ad024d1d31a2cbcd6445b" category="paragraph">使用Jar檔案執行GK時產生下列範例輸出。</block>
   <block id="f971af00761e2131cd67cdd6d21b3952" category="paragraph">請注意、輸出檔案位於執行後指定的位置。</block>
-  <block id="fb08e15744e912200b45cf04b5fce2ad" category="inline-link-macro">下一步：使用「/gatk」指令碼執行網關的輸出。</block>
   <block id="cecb20ab793e557284156e6c28f058e7" category="paragraph"><block ref="cecb20ab793e557284156e6c28f058e7" category="inline-link-macro-rx"></block></block>
   <block id="650a665cd26629cb9bf5396560f70149" category="summary">當建立LUN時、就會建立MEDITECH主機的LUN對應。</block>
   <block id="389e3e53ccb44e580ad6f383cc487612" category="doc">LUN對應</block>
@@ -3211,7 +3209,6 @@
   <block id="d887665c63a7291c9e1ac9d3f5905165" category="list-text">「-I」指定輸入BAM檔案。</block>
   <block id="125c3593d9228135bab6202d07433af8" category="list-text">-o'以變式呼叫格式（*。vcf)指定變體輸出檔案。 <block ref="3fa8b247ed9dfba2fcb5a4abad8161ce" category="inline-link-rx"></block>）。</block>
   <block id="b1e66c8eb239c0b7b45f04354fda837e" category="list-text">使用「-R」參數、我們正在傳遞參考基因組。</block>
-  <block id="016e203cf9beada735f224ab14d0b3af" category="inline-link-macro">使用「/gatk」指令碼執行網關的輸出。</block>
   <block id="53d05d4cce8abe1712aa45ae5724fc09" category="paragraph">執行後、可在區段中找到輸出詳細資料 <block ref="82670f1e96ccc4d84cd1c4d4db2387f8" category="inline-link-macro-rx"></block></block>
   <block id="dc5d8fbe2af173209ccfae07de7c4fc2" category="section-title">使用Cromwell引擎執行網關</block>
   <block id="1a87984b0683c55fb89143a7c31444d0" category="paragraph">我們使用Cromwell引擎來管理網關執行。讓我們來檢查命令列及其參數。</block>
@@ -9198,4 +9195,7 @@
   <block id="7ab9ea8d60880f13606485669ddd6049" category="list-text">將資料庫檔案和交易記錄放在不同的磁碟區上、以提高恢復精細度。</block>
   <block id="8219ca1a94f009ddb8447bb619fb79ce" category="list-text">請考慮使用Volume屬性、例如自動調整大小、Snapshot保留、QoS等。</block>
   <block id="7048837fdc10598b502f6bed64d8ef66" category="list-text">使用NetApp儲存陣列型複寫技術、稱為<block ref="133ca7709616c45e80024be2d7da217e" category="inline-link-rx"></block> 而非vSphere型複寫。</block>
+  <block id="ce93121f4d7265c3a12c10d3efa2733d" category="inline-link-macro">上一篇：使用&lt;block ref="c04f464a529d08398ebf630bf9c932ed" pref="" categor='ine-code'//指令碼執行網關的輸出。</block>
+  <block id="1b04071fa32de2cc62ba81ce722a80de" category="inline-link-macro">使用&lt;block ref="c04f464a529d08398ebf630bf9c932ed" pref="" CATAL='ine-code'/&gt;指令碼執行網關連結的輸出。</block>
+  <block id="919bcacd06d9ba9c758783027661478b" category="inline-link-macro">下一步：使用&lt;block ref="c04f464a529d08398ebf630bf9c932ed" pref="" CATAL="ine-code'/&gt;指令碼執行網關連結的輸出。</block>
 </blocks>

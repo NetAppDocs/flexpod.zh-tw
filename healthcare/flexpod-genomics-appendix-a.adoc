@@ -85,4 +85,4 @@ Runtime.totalMemory()=5561122816
 ....
 請注意、輸出檔案位於執行後指定的位置。
 
-link:flexpod-genomics-appendix-b.html["下一步：使用「/gatk」指令碼執行網關的輸出。"]
+link:flexpod-genomics-appendix-b.html["fb08e15744e912200b45cf04b5fce2ad"]

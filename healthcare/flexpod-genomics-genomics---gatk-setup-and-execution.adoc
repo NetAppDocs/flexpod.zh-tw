@@ -233,7 +233,7 @@ HaplotypeCaller \
 * 使用「-R」參數、我們正在傳遞參考基因組。
 
 
-執行後、可在區段中找到輸出詳細資料 link:flexpod-genomics-appendix-b.html["使用「/gatk」指令碼執行網關的輸出。"]
+執行後、可在區段中找到輸出詳細資料 link:flexpod-genomics-appendix-b.html["016e203cf9beada735f224ab14d0b3af"]
 
 
 
