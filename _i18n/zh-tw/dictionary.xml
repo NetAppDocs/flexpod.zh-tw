@@ -3360,17 +3360,6 @@
   <block id="d6805acb6dfc9c9a27c05441e138d49d" category="list-text">所有映像資料都裝載在FC LUN中。在FlexVol 分散於不同儲存控制器節點所擁有之集合體的各個資料區中、建立這些LUN。</block>
   <block id="9b33e5a688f125caa6d59dcbad14cda6" category="paragraph">若要將LUN放置在儲存磁碟區中、請遵循下一節中的準則。</block>
   <block id="22e802f805cc0ae139fc4fa75879cc1f" category="section-title">儲存磁碟區</block>
-  <block id="ede0f58b02d65e48674f43605d4ddff5" category="paragraph">為獲得最佳效能、管理及備份作業、NetApp建議採用下列Volume設計最佳實務做法：</block>
-  <block id="056e750e41892102ae79348e2b9e2f49" category="list-text">在不同的磁碟區中、利用I/O密集的查詢隔離資料庫、最後再有個別的工作來備份。</block>
-  <block id="e975458608b303ba58462de41dcd441e" category="list-text">若要加快還原速度、請將恢復時間目標（RTO）最短的大型資料庫和資料庫放在不同的磁碟區中。</block>
-  <block id="4cf129d5843e23dd548bc4d82794c729" category="list-text">將不太重要或I/O需求較少的中小型資料庫整合至單一磁碟區。當您備份位於同一個磁碟區的大量資料庫時、需要維護的Snapshot複本就會減少。NetApp也建議您整合Oracle資料庫伺服器執行個體、以使用相同的磁碟區來控制所建立的備份Snapshot複本數量。</block>
-  <block id="cbf0715d629bf29c459420acadf976bc" category="list-text">對於資料庫複本、請將複本的資料和記錄檔放在所有節點上相同的資料夾結構中。</block>
-  <block id="188e02487d0c64c88aae3664cf14ed70" category="list-text">將資料庫檔案放在單FlexVol 一的範圍內；不要將它們散佈在FlexVols上。</block>
-  <block id="9c92316e1a390dff04d96ebb8cabc9b9" category="list-text">視需要設定Volume自動調整大小原則、以協助防止空間不足的情況。</block>
-  <block id="2e88f8f20e70c0cb2747195410e3f806" category="list-text">當資料庫I/O設定檔大多包含大量循序讀取（例如決策支援系統工作負載）時、即可在磁碟區上啟用讀取重新分配。讀取重新分配可最佳化區塊、以獲得更好的效能。</block>
-  <block id="6d0d353edf8beab592842c085ad129ec" category="list-text">為了從作業角度輕鬆監控、請將磁碟區中的Snapshot複本保留值設為零。</block>
-  <block id="e4692669d2ba2cd6e132b6c3ca5da116" category="list-text">停用儲存Snapshot複本排程和保留原則。而是使用適用於SnapCenter Oracle資料庫的NetApp功能區外掛程式來協調Oracle資料磁碟區的Snapshot複本。</block>
-  <block id="67d07174c442dd1a0a47543b9fc3abc8" category="list-text">將使用者資料檔案和記錄檔放在不同的FlexVols上、以便針對個別的FlexVols設定適當的QoS、並建立不同的備份排程。</block>
   <block id="e9c694050e93c601dd70234fb234d8cd" category="paragraph">Aggregate是NetApp儲存組態的主要儲存容器、包含一或多個RAID群組、由資料磁碟和同位元磁碟組成。</block>
   <block id="f631f7430ddf641b7a19f499b140c88c" category="paragraph">NetApp使用共享和專用的集合體、將資料檔案和交易記錄檔分開、執行各種I/O工作負載特性測試。測試顯示、一個大型Aggregate搭配更多RAID群組和磁碟機（HDD或SSD）、可最佳化及改善儲存效能、而且系統管理員有兩個理由較容易管理：</block>
   <block id="1e5a70f617e1a9de603a024906761108" category="list-text">一個大型Aggregate可讓所有檔案都能使用所有磁碟機的I/O功能。</block>
@@ -3415,7 +3404,6 @@
   <block id="318245cf077eb2f36c50adf4aa79740e" category="list-text">與醫療影像系統廠商合作、找出最佳方法來準備VM範本、以便快速部署和維護。</block>
   <block id="b122cbb51e08e5873db5c423182f46a5" category="list-text">管理、儲存和正式作業網路需要將LAN隔離用於資料庫、並使用隔離的VLAN來執行VMware VMotion。</block>
   <block id="794cb725c5631ad99b5b7c000307f0df" category="inline-link">SnapMirror</block>
-  <block id="4cdde416153c6d117181383b93534ec1" category="list-text">使用NetApp儲存陣列型複寫技術、稱為<block ref="133ca7709616c45e80024be2d7da217e" category="inline-link-rx"></block> 而非vSphere型複寫。</block>
   <block id="e3679fa0631ab408c36d8aed9abdf535" category="list-text">使用利用VMware API的備份技術；備份時間應超出正常的正式作業時間。</block>
   <block id="334187009dc6a27eb0034678179f34b2" category="summary">您環境中的MEDITECH主機數量決定了在NetApp FAS 功能或AFF 功能區系統中建立的LUN數量。硬體組態提案會指定每個LUN的大小。</block>
   <block id="783a06e1789912979ddde31660b15547" category="section-title">LUN資源配置</block>
@@ -9203,4 +9191,11 @@
   <block id="f205de40b1d0e559049d3fcc494e1df9" category="cell"><block ref="f205de40b1d0e559049d3fcc494e1df9" category="inline-link-rx"></block></block>
   <block id="a7925e750bfc040002383b6d7dc9f5ac" category="cell"><block ref="a7925e750bfc040002383b6d7dc9f5ac" category="inline-link-rx"></block></block>
   <block id="eaa8da373e73883b20c172d7d760cc68" category="cell"><block ref="eaa8da373e73883b20c172d7d760cc68" category="inline-link-rx"></block></block>
+  <block id="ae2687dae8f23f6af065bc15c7d3826e" category="paragraph">為獲得最佳效能與管理、NetApp建議採用下列Volume設計最佳實務做法：</block>
+  <block id="33af7418734d2a05ae9f18eb5524c449" category="list-text">在個別儲存磁碟區上隔離具有I/O密集查詢的資料庫。</block>
+  <block id="7bf8d318ffb4b6475f643ef9cfbbcfee" category="list-text">資料檔案可放置在單一LUN或磁碟區上、但建議使用多個磁碟區/ LUN來提高處理量。</block>
+  <block id="abf2a187f8a2f19880402e4c694785a4" category="list-text">使用多個LUN時、可使用任何支援的檔案系統來達到I/O平行度。</block>
+  <block id="7ab9ea8d60880f13606485669ddd6049" category="list-text">將資料庫檔案和交易記錄放在不同的磁碟區上、以提高恢復精細度。</block>
+  <block id="8219ca1a94f009ddb8447bb619fb79ce" category="list-text">請考慮使用Volume屬性、例如自動調整大小、Snapshot保留、QoS等。</block>
+  <block id="7048837fdc10598b502f6bed64d8ef66" category="list-text">使用NetApp儲存陣列型複寫技術、稱為<block ref="133ca7709616c45e80024be2d7da217e" category="inline-link-rx"></block> 而非vSphere型複寫。</block>
 </blocks>
