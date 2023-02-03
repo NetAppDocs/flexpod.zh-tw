@@ -165,28 +165,22 @@
   <block id="2b70343738f7a785cf3d0064f0a39b32" category="list-text">部署OVA。部署OVA時需要DNS和NTP。</block>
   <block id="b46368b8756e258c478ad0209aafb836" category="list-text">在部署OVA之前、請先使用A/PTR和CNAME別名記錄來設定DNS。請參閱以下範例。</block>
   <block id="9d6318b0d30a534802e63b46fbc2f7c1" category="inline-image-macro">用於A/PTR記錄的主機名稱範例</block>
-  <block id="045ce1f853ba95eeb06d41946cbbe014" category="paragraph"><block ref="045ce1f853ba95eeb06d41946cbbe014" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c1d2c46420fb0fb59479d35168ae1900" category="list-text">根據您對Intersight Virtual Appliance的OVA部署需求、選擇適當的組態大小（小型、小型或中型）。</block>
   <block id="4d612f1b1c407dc59d8ad3e83f7b76ea" category="paragraph">*秘訣：* ONTAP 對於具有大量儲存物件的雙節點式叢集、NetApp建議您使用小型（16個vCPU、32個Gi RAM）選項。</block>
   <block id="6a63e53ddbe218be4bb2034c0305e630" category="inline-image-macro">部署OVF範本步驟5組態的快照</block>
-  <block id="163d67d440d02b8ef7547f4bfe8166de" category="paragraph"><block ref="163d67d440d02b8ef7547f4bfe8166de" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3ee38327895dc648b6f1f999e57babca" category="list-text">在「*自訂範本*」頁面上、自訂OVF範本的部署內容。系統管理員密碼適用於本機使用者：admin(`WebUI/CLI/ssh）。</block>
-  <block id="318871c35022cd02bcd1bd5839f0d3a8" category="paragraph"><block ref="318871c35022cd02bcd1bd5839f0d3a8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f52c8224a9f4defa0e18839412fe673b" category="paragraph"><block ref="f52c8224a9f4defa0e18839412fe673b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">單擊 * 下一步 * 。</block>
   <block id="88ade68952e1a8d9f1c49b5ed85b5af5" category="list-text">部署後的Intersight輔助設備。</block>
   <block id="dba06e35ee25a3095d873c4534514037" category="list-text">瀏覽至<block ref="f9e0ea639036dbfc655ff5cf553db753" category="inline-link-rx"></block> 以完成裝置的安裝後設定。</block>
   <block id="bca0d681ab79310b7d18a7976928af12" category="paragraph">安裝程序會自動開始。視Intersight.com的頻寬而定、安裝可能需要一小時的時間。在VM開機後、安全站台也可能需要數秒鐘的時間才能運作。</block>
   <block id="3920eddb38a93c54b93b962bbdea7c26" category="list-text">* Intersight assist。*此部署可讓SaaS模式連線至Cisco Intersight。</block>
   <block id="32f55ec9f00aee8539ca16e146d53713" category="inline-image-macro">Intersight部署選項的快照</block>
-  <block id="df2ced2f2ca7e12619f0e054224c6230" category="paragraph"><block ref="df2ced2f2ca7e12619f0e054224c6230" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2f88e5cbd35ab951b0bce5a96b06bb36" category="list-text">按一下* Proce*。</block>
   <block id="6f6002ff113b47d720b948fdbd799d5c" category="inline-link"><block ref="6f6002ff113b47d720b948fdbd799d5c" category="inline-link-rx"></block></block>
   <block id="3aa4c250877220ced11dd5118f05b73c" category="list-text">瀏覽至您的SaaS Intersight帳戶<block ref="b140963de237118a210eda3a58c6a981" category="inline-link-rx"></block>。</block>
   <block id="66b6809a917e6f7acac28f8accbdedc3" category="list-text">按一下*目標*、* Cisco Intersight assist *、然後按* Start*。</block>
   <block id="53e0ae9e421ccd8017c4eeb818859f12" category="list-text">請從新部署的Intersight assist虛擬應用裝置複製並貼上裝置ID和請款代碼、以申請「Cisco Intersight assist」應用裝置。</block>
   <block id="aa934cad8ef62fbb6a89fb41491c988e" category="inline-image-macro">Select Target Type（選擇目標類型）反白顯示Cisco Intersight小幫手的快照</block>
-  <block id="e7934022378c77a43b6c1f0ba4528fa0" category="paragraph"><block ref="e7934022378c77a43b6c1f0ba4528fa0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4fc4b024772b963c5f5f7aac44f2918" category="list-text">返回「* Cisco Intersight assist *」應用裝置、然後按一下「*繼續」。*您可能需要重新整理瀏覽器。</block>
   <block id="ebd1193b80c5bb1e5a3c2f4ca7d1ad9f" category="paragraph">下載與安裝程序隨即開始。二進位檔會從Intersight Cloud傳輸至內部部署應用裝置。完成時間視您對Intersight Cloud的頻寬而定。</block>
   <block id="e7114cd6ec011855ffed323eb8d029e1" category="summary">檢查您是否符合與ONTAP Cisco Intersight整合NetApp®儲存設備的硬體、軟體及授權要求。</block>
@@ -7897,7 +7891,6 @@
   <block id="b8a3a6101b5ada36c1e5927fd398157d" category="list-text">在部署後的程序中、選取下列選項：</block>
   <block id="05b3bc98db36aa487224a23de09ab3be" category="admonition">選取Intersight assist時、請先記下裝置ID和請款代碼、然後再繼續。</block>
   <block id="fd7b91f0228fe4adf25f7fca76314e8d" category="list-text">選擇* Intersight assist *並完成下列步驟：</block>
-  <block id="8c8498202f001fd26ea4173271ec8a24" category="paragraph">如果Active IQ Unified Manager 您尚未安裝或升級至更新版（需要最新版本、目前為9.11 GA）。如需相關指示、請前往 <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>。</block>
   <block id="8bab215794a736f6f876eac0eeb23923" category="section-title">2022年8月</block>
   <block id="d8f8a4fb7ebbb1310ca5d01f756e92d0" category="admonition">必須升級至NetApp Active IQ Unified Manager 的更新版本9.11 GA、才能確保與最新版本的相容性和完整功能。如需此版本的已知問題清單、請參閱 <block ref="1e93e2dfe5ecbece98249e8c1a59713c" category="inline-xref-macro-rx"></block>。</block>
   <block id="42bd0f13ec20ddd3964630f6646c2136" category="list-text">更新叢集可用容量計算、以符合System Manager</block>
@@ -7909,11 +7902,9 @@
   <block id="9cdaae7b657bf23b6c320b1cd28c4c36" category="list-text">如果儲存VM已啟用CIFS、則會在Storage VM General（儲存VM一般）索引標籤上新增CIFS服務資訊</block>
   <block id="bd6cfb91907acb62b03084843321ec2a" category="list-text">新增了叢集檢查頁面、可讓使用者驗證NetApp儲存系統的組態是否符合最佳實務做法</block>
   <block id="558ab0bef1894a7a726109d36632d09d" category="section-title">已知問題</block>
-  <block id="fe9b57b6a58a76519ec48d5a08f3c9b0" category="list-text">為了確保Intersight儲存設備庫存資料在資料收集過程中不會受到影響、任何不受支援ONTAP 的視覺叢集（例如ONTAP 、更新版本號：1.7P1）都必須從Active IQ Unified Manager 該版本中移除（AIQUM）。</block>
   <block id="e8c4ec43528d3a582dd7b32616a88eb9" category="list-text">所有宣稱的目標都需要最低版本的AIQUM（9.11）才能FlexPod 順利完成、以利執行整合式系統互通性查詢。</block>
   <block id="b1b25033ea7463aca79f95ef822af033" category="list-text">如果使用FQDN將不完整的叢集新增至AIM-UM、則不會填入「儲存設備庫存檢查」頁面。ONTAP使用者必須使用ONTAP IP位址將靜態叢集新增至AIM-UM。</block>
   <block id="914be32cb08524e05323b3adb9bc0c3f" category="paragraph">在NetApp IQ Unified Manager中、瀏覽至*設定&gt;一般&gt;功能設定*。</block>
-  <block id="ad180dc1b01f328b8c0230d111d11d5d" category="cell">需要最新版本的NetApp Active IQ Unified Manager 產品（目前為9.11 GA）</block>
   <block id="1f0c1e64448622e1d184d478ed9ef6d1" category="doc">Cisco Intersight with NetApp Storage快速入門指南</block>
   <block id="e47450d255414e1f34605a681b2919e6" category="summary">本節說明本解決方案的各種元件。</block>
   <block id="32e0d2b797e6706a73e8146d103572c7" category="inline-link-macro">上一篇：解決方案總覽。</block>
@@ -9175,7 +9166,6 @@
   <block id="549e147409126d885754994939d9cb6c" category="sidebar">採用NetApp技術的混合雲Google Cloud Platform搭配NetApp功能和Cisco Intersight FlexPod Cloud Volumes ONTAP</block>
   <block id="b77014effa68d8bd1b8a5868123a2a63" category="summary">具備Proxy伺服器組態的AIQ UM需要透過CLI進行設定、才能使用IMT 此功能。</block>
   <block id="e814e5396b09bd235085ad390f6ea986" category="doc">設定AIQ UM Proxy伺服器IMT 以進行服務</block>
-  <block id="5a66f19b0ec8be9c2e0a7c58787ea9b1" category="paragraph">如果您使用的Proxy伺服器搭配AIQ UM for Cisco Intersight搭配NetApp ONTAP 視覺儲存設備、則必須透過命令列介面（CLI）設定設定、以使用互通性對照表工具服務IMT （簡稱「Is2」）。您必須使用Active IQ Unified Manager VMware View Virtual Machine（OVA）診斷Shell來設定AIQ UM Proxy伺服器設定。</block>
   <block id="80b32c2ac8f5fd5845a3ccaf583c8c8b" category="inline-link">如何存取Active IQ Unified Manager VMware虛擬機器（OVA）DIAG Shell</block>
   <block id="baf8ab71191c15b45a74e4bc93f0b0cf" category="admonition">如需如何存取AIQ UM診斷Shell的資訊、請參閱<block ref="6b434b6393786ea1d3dba8a708c6486d" category="inline-link-rx"></block></block>
   <block id="22b912c9ddb3da961206d948f4472107" category="list-text">登入AIQ UM終端機、然後執行下列命令登入um。</block>
@@ -9198,4 +9188,14 @@
   <block id="ce93121f4d7265c3a12c10d3efa2733d" category="inline-link-macro">上一篇：使用&lt;block ref="c04f464a529d08398ebf630bf9c932ed" pref="" categor='ine-code'//指令碼執行網關的輸出。</block>
   <block id="1b04071fa32de2cc62ba81ce722a80de" category="inline-link-macro">使用&lt;block ref="c04f464a529d08398ebf630bf9c932ed" pref="" CATAL='ine-code'/&gt;指令碼執行網關連結的輸出。</block>
   <block id="919bcacd06d9ba9c758783027661478b" category="inline-link-macro">下一步：使用&lt;block ref="c04f464a529d08398ebf630bf9c932ed" pref="" CATAL="ine-code'/&gt;指令碼執行網關連結的輸出。</block>
+  <block id="4174da9caea2fe6cfb47e03b760a26b4" category="cell">需要最新版本的NetApp Active IQ Unified Manager 支援（目前為9.12 GA）</block>
+  <block id="1ad9d53c3fc2062cfb8cd9f962f46df0" category="paragraph">如果Active IQ Unified Manager 您尚未安裝或升級至更新版（需要最新版本、目前為9.12 GA）。如需相關指示、請前往 <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>。</block>
+  <block id="30afe0cd8c37f4391553d8fb227f8dd4" category="paragraph">如果您使用的Proxy伺服器搭配AIQ UM for Cisco Intersight搭配NetApp ONTAP 視覺儲存設備、則必須透過命令列介面（CLI）設定設定、以使用互通性對照表工具服務IMT （簡稱「Is2」）。此服務可在*整合式系統*頁面的*互通性*索引標籤下找到IMT 。您必須使用Active IQ Unified Manager VMware View Virtual Machine（OVA）診斷Shell來設定AIQ UM Proxy伺服器設定。</block>
+  <block id="abb14d21829ba186172f6e1d0b64b55b" category="section-title">2023年1月</block>
+  <block id="f58686065d77527c1d5e19130ba1ee62" category="admonition">必須升級至NetApp Active IQ Unified Manager 《支援》9.12 GA、才能確保與最新版本的相容性和完整功能。如需此版本的已知問題清單、請參閱 <block ref="1e93e2dfe5ecbece98249e8c1a59713c" category="inline-xref-macro-rx"></block>。</block>
+  <block id="bcd1997c23df8e33e5754b435a84db65" category="list-text">Intersight互通性檢查現在可在執行相容性檢查時、區分UCSM和IMM-韌體模式。</block>
+  <block id="6479629d372a87dcf6f7058a3b415313" category="list-text">Intersight中ONTAP 不會顯示Protection Relationships for景象9.7。此問題已在ONTAP RC9（零件號）中修正。</block>
+  <block id="481eaf6f556ec962ffcf3a6e3c11049d" category="list-text">如果您使用的是AIQUM 9.11或更早版本、則「儲存清單」頁面上顯示的值與「儲存設備」一般頁面上的容量長條圖之間會發生差異。若要解決此問題、請升級至AIQUM 9.12或更新版本、以確保顯示的容量值準確無誤。</block>
+  <block id="dd6bef8a9fbb7862bfad4c41ccf7f03d" category="list-text">如果您使用AIQUM 9.11或更早版本、「整合式系統」頁面下方的「互通性」索引標籤所執行的任何檢查、都無法準確區分IMM和UCSM Cisco元件。若要解決此問題、請升級至AIQUM 9.12、以確保所有元件均已正確識別。</block>
+  <block id="215f19e5d79256f2e6c09a431d1ee7d7" category="list-text">為了確保Intersight儲存設備庫存資料在資料收集過程中不會受到影響、任何不受支援ONTAP 的視覺叢集（亦即ONTAP 、版本低於下列版本的版本）都必須從Active IQ Unified Manager 該功能表（AIQUM）中移除。</block>
 </blocks>

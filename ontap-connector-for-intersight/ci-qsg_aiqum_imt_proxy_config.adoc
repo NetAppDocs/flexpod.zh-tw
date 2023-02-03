@@ -14,7 +14,7 @@ summary: 具備Proxy伺服器組態的AIQ UM需要透過CLI進行設定、才能
 
 
 [role="lead"]
-如果您使用的Proxy伺服器搭配AIQ UM for Cisco Intersight搭配NetApp ONTAP 視覺儲存設備、則必須透過命令列介面（CLI）設定設定、以使用互通性對照表工具服務IMT （簡稱「Is2」）。您必須使用Active IQ Unified Manager VMware View Virtual Machine（OVA）診斷Shell來設定AIQ UM Proxy伺服器設定。
+如果您使用的Proxy伺服器搭配AIQ UM for Cisco Intersight搭配NetApp ONTAP 視覺儲存設備、則必須透過命令列介面（CLI）設定設定、以使用互通性對照表工具服務IMT （簡稱「Is2」）。此服務可在*整合式系統*頁面的*互通性*索引標籤下找到IMT 。您必須使用Active IQ Unified Manager VMware View Virtual Machine（OVA）診斷Shell來設定AIQ UM Proxy伺服器設定。
 
 
 NOTE: 如需如何存取AIQ UM診斷Shell的資訊、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/How_to_access_Active_IQ_Unified_Manager_Virtual_Machine_OVA_DIAG_shell["如何存取Active IQ Unified Manager VMware虛擬機器（OVA）DIAG Shell"]

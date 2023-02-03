@@ -17,6 +17,17 @@ summary: Cisco Intersight推出新版本、為您帶來新功能、增強功能�
 
 
 
+== 2023年1月
+
+
+NOTE: 必須升級至NetApp Active IQ Unified Manager 《支援》9.12 GA、才能確保與最新版本的相容性和完整功能。如需此版本的已知問題清單、請參閱 <<已知問題>>。
+
+* Intersight互通性檢查現在可在執行相容性檢查時、區分UCSM和IMM-韌體模式。
+* Intersight中ONTAP 不會顯示Protection Relationships for景象9.7。此問題已在ONTAP RC9（零件號）中修正。
+
+
+
+
 == 2022年8月
 
 
@@ -109,9 +120,11 @@ NOTE: 以上效能指標僅適用於透過NetApp Active IQ Unified Manager 供�
 
 
 
-= 已知問題
+== 已知問題
 
-* 為了確保Intersight儲存設備庫存資料在資料收集過程中不會受到影響、任何不受支援ONTAP 的視覺叢集（例如ONTAP 、更新版本號：1.7P1）都必須從Active IQ Unified Manager 該版本中移除（AIQUM）。
+* 如果您使用的是AIQUM 9.11或更早版本、則「儲存清單」頁面上顯示的值與「儲存設備」一般頁面上的容量長條圖之間會發生差異。若要解決此問題、請升級至AIQUM 9.12或更新版本、以確保顯示的容量值準確無誤。
+* 如果您使用AIQUM 9.11或更早版本、「整合式系統」頁面下方的「互通性」索引標籤所執行的任何檢查、都無法準確區分IMM和UCSM Cisco元件。若要解決此問題、請升級至AIQUM 9.12、以確保所有元件均已正確識別。
+* 為了確保Intersight儲存設備庫存資料在資料收集過程中不會受到影響、任何不受支援ONTAP 的視覺叢集（亦即ONTAP 、版本低於下列版本的版本）都必須從Active IQ Unified Manager 該功能表（AIQUM）中移除。
 * 所有宣稱的目標都需要最低版本的AIQUM（9.11）才能FlexPod 順利完成、以利執行整合式系統互通性查詢。
 * 如果使用FQDN將不完整的叢集新增至AIM-UM、則不會填入「儲存設備庫存檢查」頁面。ONTAP使用者必須使用ONTAP IP位址將靜態叢集新增至AIM-UM。
 
