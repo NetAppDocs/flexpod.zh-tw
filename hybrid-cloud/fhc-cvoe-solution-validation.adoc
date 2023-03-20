@@ -1,0 +1,313 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/fhc-cvoe-solution-validation.html 
+keywords: application, development, testing, disaster recovery, dr, verification 
+summary: 本節說明如何使用多種使用案例來驗證解決方案。 
+---
+= 解決方案驗證
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:fhc-cvoe-san-configuration.html["先前版本：SAN組態。"]
+
+[role="lead"]
+在本節中、我們會複習一些解決方案使用案例。
+
+* SnapMirror的主要使用案例之一是資料備份。SnapMirror可透過複寫同一個叢集內的資料或遠端目標、作為主要備份工具。
+* 使用DR環境執行應用程式開發測試（開發/測試）。
+* 災難發生時的災難恢復。
+* 資料發佈與遠端資料存取。
+
+
+值得注意的是、本解決方案中驗證的使用案例相對較少、並不代表SnapMirror複寫的完整功能。
+
+
+
+== 應用程式開發與測試（開發/測試）
+
+若要加速應用程式開發、您可以在DR站台快速複製複寫的資料、並將其用於開發/測試應用程式。災難恢復與開發/測試環境的主機代管可大幅改善備份或災難恢復設備的使用率、而隨需開發/測試複本則可提供所需數量的資料複本、讓您更快上線。
+
+NetApp FlexClone技術可用於快速建立SnapMirror目的地FlexVol SnapMirror Volume的讀寫複本、以便您擁有次要複本的讀寫存取權、以確認所有正式作業資料是否可用。
+
+請完成下列步驟、以使用DR環境執行應用程式開發/測試：
+
+. 製作正式作業資料的複本。若要這麼做、請執行內部部署磁碟區的應用程式快照。應用程式快照建立包含三個步驟： `Lock`、 `Snap`和 `Unlock`。
++
+.. 靜止檔案系統、使I/O暫停、應用程式維持一致性。在步驟C中發出unquiesce命令之前、任何寫入檔案系統的應用程式都會保持在等待狀態步驟a、b和c是透過透明的程序或工作流程執行、不會影響應用程式SLA。
++
+....
+[root@hc-cloud-secure-1 ~]# fsfreeze -f /file1
+....
++
+此選項會要求將指定的檔案系統從新的修改中凍結。任何嘗試寫入凍結檔案系統的程序都會遭到封鎖、直到檔案系統解除凍結為止。
+
+.. 建立內部部署Volume的快照。
++
+....
+A400-G0312::> snapshot create -vserver Healthcare_SVM -volume hc_iscsi_vol -snapshot kamini
+....
+.. 取消靜止檔案系統以重新啟動I/O
++
+....
+[root@hc-cloud-secure-1 ~]# fsfreeze -u /file1
+....
++
+此選項用於解除檔案系統凍結、並允許繼續作業。凍結所封鎖的任何檔案系統修改都會解除封鎖、並允許完成。
+
++
+應用程式一致的快照功能也可以使用NetApp SnapCenter 解決方案來執行、NetApp解決方案能夠完整協調上述流程SnapCenter 、作為上述流程的一部分。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/snapcenter/["請按這裡"^]。
+
+
+
+. 執行SnapMirror更新作業、使正式作業和DR系統保持同步。
++
+....
+singlecvoaws::> snapmirror update -destination-path svm_singlecvoaws:hc_iscsi_vol_copy -source-path Healthcare_SVM:hc_iscsi_vol
+
+Operation is queued: snapmirror update of destination “svm_singlecvoaws:hc_iscsi_vol_copy”.
+....
++
+SnapMirror更新也可透過BlueXP GUI的「* Replication *（複寫*）」索引標籤執行。
+
+. 根據先前擷取的應用程式快照建立FlexClone執行個體。
++
+....
+singlecvoaws::> volume clone create -flexclone kamini_clone -type RW -parent-vserver svm_singlecvoaws -parent-volume hc_iscsi_vol_copy -junction-active true -foreground true -parent-snapshot kamini
+
+[Job 996] Job succeeded: Successful
+....
++
+對於先前的工作、也可以建立新的快照、但您必須依照上述步驟進行、以確保應用程式一致性。
+
+. 啟動FlexClone Volume以在雲端上顯示EHR執行個體。
++
+....
+singlecvoaws::> lun mapping create –vserver svm_singlecvoaws –path /vol/kamini_clone/iscsi_lun1 -igroup ehr-igroup –lun-id 0
+
+singlecvoaws::> lun mapping show
+Vserver     Path                                  Igroup    LUN ID  Protocol
+---------- -------------- --------------- -----  --------   ------ ---------
+svm_singlecvoaws
+                 /vol/kamini_clone/iscsi_lun1    ehr-igroup   0    iscsi
+....
+. 在雲端的EHR執行個體上執行下列命令、以存取資料或檔案系統。
++
+.. 探索ONTAP 功能：檢查多重路徑狀態。
++
+....
+sudo rescan-scsi-bus.sh
+sudo iscsiadm -m discovery -t sendtargets -p <iscsi-lif-ip>
+sudo iscsiadm -m node -L all
+sudo sanlun lun show
+
+Output:
+controller(7mode/E-Series)/         device    host             lun
+vserver(cDOT/FlashRay) lun-pathname filename  adapter protocol size   product
+-----------------------------------------------------------------------------
+svm_singlecvoaws                    /dev/sda  host2   iSCSI    200g    cDOT
+                    /vol/kamini_clone/iscsi_lun1
+sudo multipath -ll
+
+Output:
+3600a09806631755a452b543041313053 dm-0 NETAPP,LUN C-Mode
+size=200G features='3 queue_if_no_path pg_init_retries 50' hwhandler='1 alua' wp=rw
+`-+- policy='service-time 0' prio=50 status=active
+`- 2:0:0:0 sda 8:0 active ready running
+....
+.. 啟動Volume群組。
++
+....
+sudo vgchange -ay datavg
+Output:
+1 logical volume(s) in volume group "datavg" now active
+....
+.. 掛載檔案系統並顯示檔案系統資訊摘要。
++
+....
+sudo mount -t xfs /dev/datavg/datalv /file1
+
+cd /file1
+df -k .
+Output:
+Filesystem                 1K-blocks  Used     Available  Use%  Mounted on
+/dev/mapper/datavg-datalv  209608708 183987096  25621612  88%    /file1
+....
++
+這會驗證您是否可以使用DR環境進行應用程式開發/測試。在災難恢復儲存設備上執行應用程式開發/測試、可讓您更充分地利用資源、否則可能會佔用大量時間。
+
+
+
+
+
+
+
+== 災難恢復
+
+SnapMirror技術也可作為災難恢復計畫的一部分。如果將關鍵資料複寫到不同的實體位置、嚴重的災難就不需要延長關鍵業務應用程式的資料不可用時間。用戶端可透過網路存取複寫的資料、直到正式作業站台從毀損、意外刪除、自然災害等狀況中恢復為止。
+
+在對主站台進行容錯回復的情況下、SnapMirror提供一種有效率的方法來重新同步災難恢復站台與主站台、只要反轉SnapMirror關係、就能將變更的或新的資料從災難恢復站台傳輸回主站台。在主正式作業站台恢復正常的應用程式作業之後、SnapMirror會繼續傳輸至DR站台、而不需要進行其他基礎傳輸。
+
+若要驗證成功的DR案例、請完成下列步驟：
+
+. 停止裝載內部部署ONTAP 的SVM、模擬來源（正式作業）端的災難 (`hc_iscsi_vol`）。
++
+image:fhc-cvoe-image21.png["此螢幕擷取畫面會在Storage VM下拉式清單中顯示Stop（停止）選項。"]
+
++
+請確定SnapMirror複寫已設定在ONTAP 內部部署的支援範FlexPod 圍內、以供執行個體使用、Cloud Volumes ONTAP 並在AWS中設定為可建立常用的應用程式快照。
+
++
+在SVM停止之後 `hc_iscsi_vol` 在BlueXP中看不到Volume。
+
++
+image:fhc-cvoe-image22.png["Volume現在可在Volume Summary（Volume摘要）畫面中看到。"]
+
+. 在CVO中啟動DR。
++
+.. 打破內部ONTAP 環境的SnapMirror與Cloud Volumes ONTAP 內部環境的複寫關係、並推廣CVO目的地Volume (`hc_iscsi_vol_copy`）上線。
++
+image:fhc-cvoe-image23.png["隨即顯示中斷關係選項畫面。"]
+
++
+SnapMirror關係中斷後、目的地Volume類型會從資料保護（DP）變更為讀取/寫入（RW）。
+
++
+....
+singlecvoaws::> volume show -volume hc_iscsi_vol_copy -fields typev
+server          volume            type
+---------------- ----------------- ----
+svm_singlecvoaws hc_iscsi_vol_copy RW
+....
+.. 啟動Cloud Volumes ONTAP 目的地Volume in the目的地、在雲端的EC2執行個體上顯示EHR執行個體。
++
+....
+singlecvoaws::> lun mapping create –vserver svm_singlecvoaws –path /vol/hc_iscsi_vol_copy/iscsi_lun1 -igroup ehr-igroup –lun-id 0
+
+singlecvoaws::> lun mapping show
+Vserver     Path                                Igroup   LUN ID  Protocol
+---------- ----------------------------------  --------  ------ ---------
+svm_singlecvoaws
+            /vol/hc_iscsi_vol_copy/iscsi_lun1  ehr-igroup  0    iscsi
+....
+.. 若要存取雲端EHR執行個體上的資料和檔案系統、請先探索ONTAP 此解決方案的功能、並驗證多重路徑狀態。
++
+....
+sudo rescan-scsi-bus.sh
+sudo iscsiadm -m discovery -t sendtargets -p <iscsi-lif-ip>
+sudo iscsiadm -m node -L all
+sudo sanlun lun show
+Output:
+controller(7mode/E-Series)/         device    host             lun
+vserver(cDOT/FlashRay) lun-pathname filename  adapter protocol size   product
+-----------------------------------------------------------------------------
+svm_singlecvoaws                    /dev/sda  host2   iSCSI    200g    cDOT
+                  /vol/hc_iscsi_vol_copy/iscsi_lun1
+sudo multipath -ll
+Output:
+3600a09806631755a452b543041313051 dm-0 NETAPP,LUN C-Mode
+size=200G features='3 queue_if_no_path pg_init_retries 50' hwhandler='1 alua' wp=rw
+`-+- policy='service-time 0' prio=50 status=active
+`- 2:0:0:0 sda 8:0 active ready running
+....
+.. 然後啟動Volume群組。
++
+....
+sudo vgchange -ay datavg
+Output:
+1 logical volume(s) in volume group "datavg" now active
+....
+.. 最後、掛載檔案系統並顯示檔案系統資訊。
++
+....
+sudo mount -t xfs /dev/datavg/datalv /file1
+
+cd /file1
+df -k .
+Output:
+Filesystem                 1K-blocks  Used      Available  Use%  Mounted on
+/dev/mapper/datavg-datalv  209608708  183987096  25621612  88%   /file1
+....
++
+此輸出顯示使用者可透過網路存取複寫的資料、直到正式作業站台從災難中恢復為止。
+
+.. 反轉SnapMirror關係。此作業會反轉來源與目的地磁碟區的角色。
++
+image:fhc-cvoe-image24.png["此螢幕快照會顯示「反轉關係」選項方塊。"]
+
++
+執行此作業時、來自原始來源Volume的內容會被目的地Volume的內容覆寫。當您想要重新啟動離線的來源 Volume 時、這很有幫助。
+
++
+現在是CVO Volume (`hc_iscsi_vol_copy`）成為來源磁碟區、內部部署磁碟區 (`hc_iscsi_vol`）成為目的地Volume。
+
++
+image:fhc-cvoe-image25.png["此快照顯示在BlueXP中建立的Volume Replication關係。"]
+
++
+在上次資料複寫與停用來源磁碟區之間寫入原始來源磁碟區的任何資料都不會保留。
+
+.. 若要驗證CVO磁碟區的寫入存取權、請在雲端的EHR執行個體上建立新檔案。
++
+....
+cd /file1/
+sudo touch newfile
+....
+
+
+
+
+當正式作業站台當機時、用戶端仍可存取資料、也可寫入Cloud Volumes ONTAP 目前為來源Volume的靜態Volume。
+
+在對主站台進行容錯回復的情況下、SnapMirror提供一種有效率的方法來重新同步災難恢復站台與主站台、只要反轉SnapMirror關係、就能將變更的或新的資料從災難恢復站台傳輸回主站台。在主正式作業站台恢復正常的應用程式作業之後、SnapMirror會繼續傳輸至DR站台、而不需要進行其他基礎傳輸。
+
+本節說明當正式作業站台遭受災難時、災難恢復案例的成功解決方法。現在、當來源站台完成還原時、應用程式可以安全地為用戶端提供服務。
+
+
+
+== 驗證正式作業站台上的資料
+
+正式作業站台還原之後、您必須確保還原原始組態、而且用戶端能夠從來源站台存取資料。
+
+在本節中、我們將討論如何建立來源站台、恢復內部部署ONTAP 的SnapMirror與Cloud Volumes ONTAP 還原之間的SnapMirror關係、最後在來源端執行資料完整性檢查
+
+下列程序可用於驗證正式作業站台上的資料：
+
+. 請確定來源網站已啟動。若要這麼做、請啟動裝載內部部署ONTAP 的SVM (`hc_iscsi_vol`）。
++
+image:fhc-cvoe-image26.png["此螢幕快照顯示如何使用Storage VM頁面中的下拉式功能表來啟動特定VM。"]
+
+. 打破Cloud Volumes ONTAP 內部部署ONTAP 的SnapMirror複寫關係、並推廣內部部署的Volume (`hc_iscsi_vol`）回歸正式作業。
++
+image:fhc-cvoe-image27.png["此螢幕快照顯示如何打破關係。"]
+
++
+SnapMirror關係中斷之後、內部部署磁碟區類型會從資料保護（DP）變更為讀取/寫入（RW）。
+
++
+....
+A400-G0312::> volume show -volume hc_iscsi_vol -fields type
+vserver        volume       type
+-------------- ------------ ----
+Healthcare_SVM hc_iscsi_vol RW
+....
+. 反轉SnapMirror關係。現在、內部部署ONTAP 的《The On-One-Volume》（內部部署） (`hc_iscsi_vol`）會像以前一樣變成來源Volume、Cloud Volumes ONTAP 也會變成《The》的《The》（來源）Volume (`hc_iscsi_vol_copy`）成為目的地Volume。
++
+image:fhc-cvoe-image28.png["此螢幕快照顯示如何反轉關聯。"]
+
++
+依照這些步驟、我們已成功還原原始組態。
+
+. 重新啟動內部部署的EHR執行個體。掛載檔案系統、並確認 `newfile` 您在雲端的EHR執行個體上建立的正式作業中斷時、現在也存在於此處。
++
+image:fhc-cvoe-image29.png["此快照顯示如何在內部部署的EHR執行個體上尋找新檔案。"]
+
+
+
+我們可以推斷、從來源到目的地的資料複寫作業已成功完成、而且資料完整性也已維持不變。如此即可完成正式作業站台上的資料驗證。
+
+link:fhc-cvoe-conclusion.html["下一步：結論。"]

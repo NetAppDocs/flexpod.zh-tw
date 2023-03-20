@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/fhc-cvoe-solution-overview.html 
+keywords: tr4960, 4960, introduction, cvo, healthcare, public cloud 
+summary: NetApp為企業應用程式（包括醫療）提供單一資料管理解決方案、我們能夠引導醫院完成數位轉型的過程。NetApp Cloud Volumes ONTAP 支援醫療資料管理解決方案、可將資料從FlexPod 「支援資料中心」有效率地複寫到Cloud Volumes ONTAP 部署在AWS等公有雲上的「支援中心」。 
+---
+= TR-4960：FlexPod 《以Cloud Volumes ONTAP Epic為基礎的混合雲》
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+與下列合作夥伴合作：image:cisco logo.png["Cisco標誌"]
+
+NetApp的Kamini Singh
+
+[role="lead"]
+數位化轉型的關鍵、就是利用資料做更多工作。醫院會產生大量資料、並需要大量資料來管理組織、有效服務病患。在治療病患及管理員工排程和醫療資源時、會收集並處理資訊。
+
+醫療資料的大小不斷增加、這些資料所提供的寶貴見解、使醫療資料服務和資料保護成為關鍵與挑戰。首先、醫療資料必須同時可用並受到保護、才能符合資料恢復、醫療業務持續性或法規遵循要求。
+
+第二、醫療資料必須隨時可供分析。此分析通常使用人工智慧（AI）和機器學習（ML）方法、協助醫療企業改善解決方案並創造商業價值。
+
+第三、隨著醫療業務成長、資料服務基礎架構和資料保護方法必須能夠因應醫療資料的成長。此外、資料移動性也日益重要、因為需要將資料從建立資料的邊緣移至核心和雲端、以便將可用的資源用於資料分析或歸檔用途。
+
+NetApp為企業應用程式（包括醫療）提供單一資料管理解決方案、我們能夠引導醫院完成數位轉型的過程。NetApp Cloud Volumes ONTAP 支援醫療資料管理解決方案、可將資料從FlexPod 「支援資料中心」有效率地複寫到Cloud Volumes ONTAP 部署在AWS等公有雲上的「支援中心」。
+
+利用具成本效益且安全的公有雲資源、Cloud Volumes ONTAP 利用高效率的資料複寫、內建的儲存效率、以及簡單的災難恢復測試、讓基於雲端的災難恢復（DR）更為出色。這些系統均以統一化的控制和拖放簡易性進行管理、提供具成本效益且防範項目的保護、避免發生任何錯誤、故障或災難。NetApp SnapMirror技術是區塊層級資料複寫的解決方案、可透過遞增式更新、讓目的地保持最新狀態Cloud Volumes ONTAP 。
+
+image:fhc-cvoe-image1.jpeg["NetApp SnapMirror技術是區塊層級資料複寫的解決方案、可透過遞增式更新、讓目的地保持最新狀態Cloud Volumes ONTAP 。"]
+
+
+
+== 目標對象
+
+本文件適用於NetApp與合作夥伴解決方案工程師（SE）及專業服務人員。NetApp假設讀者具備下列背景知識：
+
+* 深入瞭解SAN和NAS概念
+* 熟悉NetApp ONTAP 功能儲存系統的技術知識
+* 熟悉ONTAP 組態及管理功能的技術知識
+
+
+
+
+== 解決方案效益
+
+與NetApp支援整合的Datacenter可為醫療工作負載提供下列優勢Cloud Volumes ONTAP FlexPod ：
+
+* *自訂的保護。Cloud Volumes ONTAP *支援區塊層級的資料複寫功能、可透過ONTAP 遞增式更新、將目的地保持在最新狀態。使用者可以指定同步排程、以決定何時傳輸來源的變更。這可為各種醫療資料提供自訂的保護。
+* *容錯移轉與容錯回復。*發生災難時、儲存管理員可以快速設定容錯移轉至雲端磁碟區。當主要站台恢復時、DR環境中建立的新資料會同步回來源磁碟區、以便重新建立次要資料複寫。如此一來、便能輕鬆恢復醫療資料而不中斷營運。
+* *效率。*二線雲端複本的儲存空間和成本、是使用資料壓縮、精簡配置和重複資料刪除技術最佳化的。醫療資料會以壓縮和重複資料刪除的形式、在區塊層級傳輸、以提升傳輸速度。資料也會自動分層至低成本的物件儲存設備、而且只有在存取時才會恢復至高效能儲存設備、例如在DR案例中。如此可大幅降低持續儲存成本。
+* *勒索軟體保護。* NetApp BlueXP勒索軟體保護功能可掃描內部部署和雲端環境的資料來源、偵測安全漏洞、並提供目前的安全狀態和風險評分。然後提供可行的建議、您可以進一步調查並遵循以進行補救。如此一來、您就能保護重要的醫療資料免受勒索軟體攻擊。
+
+
+
+
+== 解決方案拓撲
+
+本節說明解決方案的邏輯拓撲。下圖所示為解決方案拓撲、包括FlexPod 內部部署環境的功能不全、Cloud Volumes ONTAP 在Amazon Web Services（AWS）上執行的NetApp Sing（CVO）、以及NetApp BlueXP SaaS平台。
+
+image:fhc-cvoe-image2.jpeg["此影像描述FlexPod 在公有ONTAP 雲中執行的執行個體與NetApp Cloud Volumes ONTAP 的SnapMirror之間進行SnapMirror複寫。"]
+
+端點之間的控制平面和資料平面會清楚標示出來。資料平面會在ONTAP 執行於FAS All Flash的整個過程中執行、並FlexPod 透過安全的站台對站台VPN連線、在AWS中執行NetApp CVO執行個體之間執行。將醫療工作負載資料從內部部署FlexPod 的「支援資料中心」複寫到NetApp Cloud Volumes ONTAP 解決方案、是由NetApp SnapMirror複寫來處理。此解決方案也支援選擇性備份及分層保存在NetApp CVO執行個體中的冷資料至AWS S3。
+
+link:fhc-cvoe-solution-components.html["下一步：解決方案元件。"]

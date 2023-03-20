@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/fhc-cvoe-conclusion.html 
+keywords: conclusion 
+summary: 建置混合雲是大多數醫療組織隨時提供資料可用度的目標。在這個解決方案中、我們實作FlexPod 了一套採用Cloud Volumes ONTAP NetApp SnapMirror複寫技術的混合雲解決方案、以驗證某些使用案例來備份及恢復醫療應用程式和工作負載。 
+---
+= 結論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:fhc-cvoe-solution-validation.html["先前版本：解決方案驗證。"]
+
+[role="lead"]
+建置混合雲是大多數醫療組織隨時提供資料可用度的目標。在這個解決方案中、我們實作FlexPod 了一套採用Cloud Volumes ONTAP NetApp SnapMirror複寫技術的混合雲解決方案、以驗證某些使用案例來備份及恢復醫療應用程式和工作負載。
+
+由Cisco與NetApp的策略合作夥伴關係、提供經過嚴格測試與預先驗證的融合式基礎架構、可提供可預測的低延遲系統效能與高可用度FlexPod 。這種方法可讓EHR達到高舒適度、最終為EHR系統的使用者提供最佳回應時間。
+
+有了NetApp、您就能在雲端上執行EHR正式作業、災難恢復、備份或分層、就像在內部部署資料中心執行NetApp儲存功能一樣。有了NetApp Cloud Volumes ONTAP 功能、NetApp就能提供企業級的功能和效能、以便在雲端上有效執行EHR。NetApp雲端選項可提供區塊over iSCSI、檔案over NFS或SMB。
+
+此解決方案能滿足醫療組織的需求、讓他們邁出數位轉型的步伐。它也能協助他們以有效率的方式管理應用程式和工作負載。
+
+link:fhc-cvoe-where-to-find-additional-information.html["下一步：何處可找到其他資訊。"]

@@ -1,0 +1,166 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/fhc-cvoe-installation-and-configuration.html 
+keywords: cloud volumes ontap, flexpod, ontap bluexp, installation, configuration 
+summary: 本節說明如何安裝及設定Cloud Volumes ONTAP 功能、包括功能性的功能、FlexPod 例如功能性的功能、功能性的功能、功能性的功能、ONTAP 以及功能性的功能。 
+---
+= 安裝與組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:fhc-cvoe-solution-components.html["先前版本：解決方案元件。"]
+
+
+
+== NetApp Cloud Volumes ONTAP 產品部署
+
+完成下列步驟以設定Cloud Volumes ONTAP 您的實例：
+
+. 準備公有雲服務供應商環境。
++
+您必須擷取公有雲服務供應商的環境詳細資料、才能進行解決方案組態。例如、針對Amazon Web Services（AWS）環境準備、您需要AWS存取金鑰、AWS密碼金鑰、以及其他網路詳細資料、例如區域、VPC、子網路等。
+
+. 設定VPC端點閘道。
++
+VPC端點閘道是啟用VPC與AWS S3服務之間連線的必要條件。這是用來在CVO（具有閘道類型的端點）上啟用備份。
+
+. 存取NetApp BlueXP。
++
+若要存取NetApp BlueXP和其他雲端服務、您必須先註冊 https://cloudmanager.netapp.com/["NetApp BlueXP"^]。若要在BlueXP帳戶中設定工作區和使用者、請按一下 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-setting-up-netapp-accounts.html["請按這裡"^]。您需要擁有權限的帳戶、才能直接從BlueXP在雲端供應商中部署Connector。您可以從下載BlueXP原則 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["請按這裡"^]。
+
+. 部署Connector。
++
+在新增Cloud Volume ONTAP 的運作環境之前、您必須先部署Connector。如果您嘗試在Cloud Volumes ONTAP 沒有連接器的情況下建立第一個運作環境、則BlueXP會提示您。若要從BlueXP在AWS中部署Connector、請參閱此 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["連結"^]。
+
+. 在Cloud Volumes ONTAP AWS中啟動
++
+您可以 Cloud Volumes ONTAP 在單一系統組態中或 AWS 中以 HA 配對的形式啟動功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["請閱讀逐步指示"^]。
+
++
+如需這些步驟的詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["AWS的功能快速入門指南Cloud Volumes ONTAP"^]。
+
++
+在這個解決方案中、我們已在Cloud Volumes ONTAP AWS中部署單節點的效能不整系統。下圖說明採用單節點CVO執行個體的NetApp BlueXP儀表板。
+
+
+
+image:fhc-cvoe-image4.jpeg["此螢幕快照顯示NetApp BlueXP畫版畫面、其中顯示「My Working Environments（我的工作環境）」。"]
+
+
+
+== 內部部署FlexPod 的內部部署
+
+若要瞭解FlexPod UCS X系列、VMware及NetApp ONTAP 的功能不全、請參閱 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_esxi7u2_design.html["採用Cisco UCS X系列的資料中心FlexPod"^] 設計指南：本文件提供設計指南、可將Cisco Intersight託管UCS X系列平台整合到FlexPod 「支援資料中心」基礎架構中。
+
+如需部署內部部署FlexPod 的資訊實例、請參閱 https://netapp-https:/www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_vmware_7u2.htmlmy.sharepoint.com/personal/dorianh_netapp_com/Documents/Projects/Github%20Conversions/FlexPod/TR-4960/TR-4960%20FlexPod%20hybrid%20cloud%20with%20CVO%20for%20Epic%20latest-Feb14.docx["本部署指南"^]。
+
+本文件提供部署指南、可將Cisco Intersight託管UCS X系列平台整合到FlexPod 一套Datacenter基礎架構中。本文件涵蓋成功部署的組態和最佳實務做法。
+
+可在UCS託管模式和Cisco Intersight託管模式（IMMM）中部署FlexPod 。如果您要以FlexPod UCS託管模式部署功能、請參閱此 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m6_esxi7u2_design.html["設計指南"^] 以及這項功能 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m6_esxi7u2.html["部署指南"^]。
+
+使用Ansible、可利用基礎架構做為程式碼來自動化部署FlexPod 。以下是GitHub儲存庫的端點對端FlexPod 點支援連結：
+
+* 可在UCS託管模式、NetApp功能和VMware vSphere中使用Cisco UCS進行的FlexPod 可行組態ONTAP https://github.com/ucs-compute-solutions/FlexPod-UCSM-M6["請按這裡"^]。
+* 可在IMM, NetApp功能和VMware vSphere中看到Cisco UCS的FlexPod 可執行組態ONTAP https://github.com/ucs-compute-solutions/FlexPod-IMM-4.2.2["請按這裡"^]。
+
+
+
+
+== 內部部署ONTAP 的不整儲存組態
+
+本節說明ONTAP 本解決方案特有的一些重要的資訊功能組態步驟。
+
+. 設定執行iSCSI服務的SVM。
++
+....
+1. vserver create –vserver Healthcare_SVM –rootvolume Healthcare_SVM_root –aggregate aggr1_A400_G0312_01 –rootvolume-security-style unix
+2. vserver add-protocols -vserver Healthcare_SVM -protocols iscsi
+3. vserver iscsi create -vserver Healthcare_SVM
+
+   To verify:
+
+   A400-G0312::> vserver iscsi show -vserver Healthcare_SVM
+   Vserver: Healthcare_SVM
+   Target Name:
+   iqn.1992-08.com.netapp:sn.1fbf00f438c111ed866cd039ea91fb56:vs.3
+   Target Alias: Healthcare_SVM
+   Administrative Status: up
+....
++
+如果在叢集組態期間未安裝iSCSI授權、請務必先安裝授權、再建立iSCSI服務。
+
+. 建立FlexVol 一個流通量。
++
+....
+1. volume create -vserver Healthcare_SVM -volume hc_iscsi_vol -aggregate aggr1_A400_G0312_01 -size 500GB -state online -policy default -space guarantee none
+....
+. 新增iSCSI存取介面。
++
+....
+1. network interface create -vserver Healthcare_SVM -lif iscsi-lif-01a -service-policy default-data-iscsi -home-node <st-node01> -home-port a0a-<infra-iscsi-a-vlan-id> -address <st-node01-infra-iscsi-a–ip> -netmask <infra-iscsi-a-mask> -status-admin up
+2. network interface create -vserver Healthcare_SVM -lif iscsi-lif-01b -service-policy default-data-iscsi -home-node <st-node01> -home-port a0a-<infra-iscsi-b-vlan-id> -address <st-node01-infra-iscsi-b–ip> -netmask <infra-iscsi-b-mask> –status-admin up
+3. network interface create -vserver Healthcare_SVM -lif iscsi-lif-02a -service-policy default-data-iscsi -home-node <st-node02> -home-port a0a-<infra-iscsi-a-vlan-id> -address <st-node02-infra-iscsi-a–ip> -netmask <infra-iscsi-a-mask> –status-admin up
+4. network interface create -vserver Healthcare_SVM -lif iscsi-lif-02b -service-policy default-data-iscsi -home-node <st-node02> -home-port a0a-<infra-iscsi-b-vlan-id> -address <st-node02-infra-iscsi-b–ip> -netmask <infra-iscsi-b-mask> –status-admin up
+....
++
+在此解決方案中、我們建立了四個iSCSI邏輯介面（l生命 週期）、每個節點上各有兩個。
+
++
+在部署vCenter並將所有ESXi主機新增至該執行個體的情況下、我們需要FlexPod 部署Linux VM、做為連線至及存取NetApp ONTAP 等位儲存設備的伺服器。在此解決方案中、我們已在vCenter中安裝CentOS 8執行個體。
+
+. 建立LUN。
++
+....
+1. lun create -vserver Healthcare_SVM -path /vol/hc_iscsi_vol/iscsi_lun1 -size 200GB -ostype linux -space-reserve disabled
+....
++
+對於EHR作業資料庫（odb）、日誌和應用程式工作負載、EHR建議將儲存設備呈現給iSCSI LUN。如果您的AIX版本和RHEL作業系統能夠增強效能、則NetApp也支援使用FCP和NVMe/FC。FCP和NVMe / FC可共存於同一個架構上。
+
+. 建立igroup。
++
+....
+1. igroup create –vserver Healthcare_SVM –igroup ehr –protocol iscsi –ostype linux –initiator iqn.1994-05.com.redhat:8e91e9769336
+....
++
+igroup用於允許伺服器存取LUN。若為Linux主機、可在檔案中找到伺服器IQN `/etc/iscsi/initiatorname.iscsi`。
+
+. 將LUN對應至igroup。
++
+....
+1. lun mapping create –vserver Healthcare_SVM –path /vol/hc_iscsi_vol/iscsi_lun1 –igroup ehr –lun-id 0
+....
+
+
+
+
+== 將內部部署FlexPod 的資料儲存設備新增至藍圖XP
+
+請完成下列步驟FlexPod 、使用NetApp BlueXP將您的整套儲存設備新增至工作環境。
+
+. 從導覽功能表中、選取* Storage *>* Canvas*。
+. 在「畫版」頁面上、按一下「*新增工作環境*」、然後選取「*內部部署*」。
+. 選取*內部部署ONTAP 的S--。單擊 * 下一步 * 。
++
+image:fhc-cvoe-image5.jpeg["此螢幕快照顯示已ONTAP 選取內部部署功能的BlueXP新增工作群組頁面。"]
+
+. 在「叢集詳細資料」頁面上、輸入叢集管理IP位址和管理員使用者帳戶的密碼ONTAP 。然後按一下「*新增*」。
++
+image:fhc-cvoe-image6.png["此螢幕快照顯示「BlueXP Discover ONTAP 」（探索）「叢集」頁面、其中包含ONTAP 「叢集詳細資料」項目。"]
+
+. 在「詳細資料與認證」頁面上、輸入工作環境的名稱與說明、然後按一下「*執行*」。
++
+BlueXP會探索ONTAP 整個叢集、並將其新增為在Canvas.上的工作環境。
+
++
+image:fhc-cvoe-image7.jpeg["此螢幕快照顯示「藍圖XP畫版」頁面、右側則是最近新增的工作環境。"]
+
+
+
+如需詳細資訊、請參閱頁面 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["探索內部部署ONTAP 的叢集"^]。
+
+link:fhc-cvoe-san-configuration.html["下一步：SAN組態。"]

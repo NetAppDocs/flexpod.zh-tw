@@ -1,0 +1,189 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/fhc-cvoe-solution-components.html 
+keywords: flexpod, epic, bluexp, connector, cvo, active iq, unified manager, cisco, intersight, vsphere, vcenter 
+summary: 本節概述本解決方案所需的各種元件。 
+---
+= 解決方案元件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:fhc-cvoe-solution-overview.html["上一篇：解決方案總覽。"]
+
+
+
+== FlexPod
+
+支援針對虛擬化與非虛擬化解決方案、提供一套明確定義的硬體與軟體、為兩者提供整合式基礎。FlexPod包括NetApp的不二儲存設備、Cisco Nexus網路、Cisco MDS儲存網路、以及Cisco Unified Computing System（Cisco UCS）ONTAP FlexPod 。
+
+醫療組織正在尋求解決方案、以簡化數位轉型、並改善病患體驗與成果。有了這個功能、您就能獲得一個安全且可擴充的平台、來提升效率、並讓員工更快做出更明智的決策、以便提供更好的病患照護FlexPod 。
+
+支援下列優點、因此支援各種醫療工作負載需求的理想平台FlexPod ：
+
+* 最佳化營運、以獲得更快的洞見和更好的病患結果。
+* 利用可擴充且可靠的基礎架構來簡化映像應用程式。
+* 以備受肯定的方法快速有效地部署醫療應用程式、例如EHR。
+
+
+
+
+== 致勝
+
+Epic電子健康記錄（EHRs）為中型和大型醫療組織、醫院及整合式醫療組織製作軟體。客戶也包括社區醫院、學術機構、兒童組織、安全網供應商及多醫院系統。EHR整合式軟體涵蓋臨床、存取和營收功能、並延伸至家中。
+
+醫療業者組織仍面臨著壓力、必須在領先業界的EHRs上、充分發揮其大量投資所帶來的效益。客戶在設計EHR解決方案和關鍵任務應用程式的資料中心時、通常會針對其資料中心架構找出下列目標：
+
+* EHR應用程式的高可用度
+* 高效能
+* 在資料中心內輕鬆實作EHR
+* 靈活度與擴充性、可透過新的EHR版本或應用程式來實現成長
+* 成本效益
+* 管理能力、穩定性及支援簡易性
+* 健全的資料保護、備份、還原及業務持續運作
+
+
+通過EHR認證、並支援內含Cisco UCS的平台、其中包含Intel Xeon處理器、Red Hat Enterprise Linux（RHEL）、以及採用VMware ESXi的虛擬化技術FlexPod 。此平台加上EHR在執行ONTAP 支援的NetApp儲存設備上的「高舒適度」等級、讓客戶有信心透過FlexPod 可連線至任何公有雲供應商的功能、在完全託管的私有雲中執行醫療應用程式。
+
+
+
+== NetApp BlueXP
+
+BlueXP（前身為NetApp Cloud Manager）是企業級SaaS型管理平台、可讓IT專家和雲端架構設計師使用NetApp雲端解決方案集中管理混合式多雲端基礎架構。它提供集中式系統、可檢視及管理內部部署與雲端儲存設備、支援混合式、多個雲端供應商與帳戶。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-family/index.html["藍圖"^]。
+
+
+
+== 連接器
+
+Connector執行個體可讓BlueXP管理公有雲環境中的資源和程序。需要連接器才能使用BlueXP提供的許多功能、而且可以部署在雲端或內部部署網路中。
+
+下列位置支援連接器：
+
+* Amazon Web Services
+* Microsoft Azure
+* Google Cloud
+* 內部部署
+
+
+若要深入瞭解Connector、請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["連接器頁面"^]。
+
+
+
+== NetApp Cloud Volumes ONTAP
+
+NetApp Cloud Volumes ONTAP 解決方案是軟體定義的儲存產品、可在ONTAP 雲端上執行支援功能的資料管理軟體、為檔案和區塊工作負載提供進階的資料管理功能。有了VMware、您就能最佳化雲端儲存成本並提升應用程式效能、同時強化資料保護、安全性和法規遵循。Cloud Volumes ONTAP
+
+主要效益包括：
+
+* *儲存效率。*運用內建的重複資料刪除技術、資料壓縮、精簡配置及即時複製功能、將儲存成本降至最低。
+* *高可用度。*在雲端環境發生故障時、提供企業級的可靠性和持續運作。
+* *資料保護。Cloud Volumes ONTAP *此功能使用領先業界的NetApp複寫技術SnapMirror、將內部部署資料複寫至雲端、以便在多種使用案例中輕鬆取得次要複本。此外、還能與Cloud Backup整合、提供備份與還原功能、以保護雲端資料、並長期歸檔Cloud Volumes ONTAP 。
+* *資料分層。*在高效能與低效能儲存資源池之間隨需切換、而不需將應用程式離線。
+* *應用程式一致性。*使用NetApp SnapCenter 技術提供NetApp Snapshot複本的一致性。
+* *資料安全* Cloud Volumes ONTAP 。*支援資料加密、並提供防範病毒和勒索軟體的功能。
+* *隱私權法規遵循控管措施。*與Cloud Data Sense整合可協助您瞭解資料內容、並識別敏感資料。
+
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/["Cloud Volumes ONTAP"^]。
+
+
+
+== NetApp Active IQ Unified Manager
+
+NetApp Active IQ Unified Manager 支援透過ONTAP 單一、重新設計且直覺化的介面、監控您的不只是單一儲存叢集、還能提供社群智慧和AI分析的情報。它可針對儲存環境及其上執行的虛擬機器、提供全方位的作業、效能及主動深入見解。當儲存基礎架構發生問題時、Unified Manager可通知您有關問題的詳細資料、以協助識別根本原因。虛擬機器儀表板可讓您檢視虛擬機器的效能統計資料、以便從vSphere主機到網路、最後到儲存設備的整個I/O路徑進行調查。
+
+有些事件也提供補救行動、可用來修正問題。您可以設定事件的自訂警示、以便在發生問題時、透過電子郵件和SNMP設陷通知您。利用此功能、您可以預測容量和使用趨勢、以便在發生問題之前採取行動、避免因應短期決策而導致長期的額外問題、藉此規劃使用者的儲存需求Active IQ Unified Manager 。
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^]。
+
+
+
+== Cisco Intersight
+
+Cisco Intersight是SaaS平台、可針對傳統和雲端原生的應用程式和基礎架構、提供智慧型自動化、監控及最佳化功能。此平台可協助IT團隊推動變革、並提供專為混合雲設計的營運模式。Cisco Intersight提供下列優點：
+
+* *更快的交付速度。* Intersight是以雲端或客戶資料中心的服務形式提供、因為它採用敏捷的軟體開發模式、所以能頻繁更新並持續創新。如此一來、客戶就能專注於支援關鍵業務需求。
+* *簡化營運。* Intersight使用單一、安全的SaaS交付工具、搭配通用的庫存、驗證及API、可在整個堆疊和所有位置上運作、消除跨團隊的封閉環境、藉此簡化營運。這可讓您在內部部署、VM、K8s、無伺服器、自動化、 在內部部署和公有雲中都能進行最佳化和成本控管。
+* *持續最佳化。*您可以使用Cisco Intersight提供的智慧功能、跨越每個層面、以及Cisco技術支援中心、持續最佳化您的環境。這項情報會轉換成建議的可自動執行的行動、讓您能夠即時因應任何變更：從移動工作負載、監控實體伺服器的健全狀況、到為您使用的公有雲提供降低成本的建議。
+
+
+Cisco Intersight有兩種管理作業模式：UCSM託管模式（UMM）和Intersight託管模式（IMMM）。在Fabric互連的初始設定期間、您可以針對光纖附加的Cisco UCS系統、選取原生的UCSM託管模式（Umm）或Intersight託管模式（IMMM）。在此解決方案中、使用原生的IMM.下圖顯示Cisco Intersight儀表板。
+
+image:fhc-cvoe-image3.png["此快照顯示Cisco Intersight儀表板的「伺服器」頁面。"]
+
+
+
+== VMware vSphere 7.0
+
+VMware vSphere是一種虛擬化平台、可將大量的基礎架構（包括CPU、儲存設備和網路）整體管理為無縫、多功能且動態的作業環境。與管理個別機器的傳統作業系統不同、VMware vSphere會將整個資料中心的基礎架構集合在一起、建立一個資源強大的單一儲存設備、以便快速動態地分配給任何需要的應用程式。
+
+如需VMware vSphere及其元件的詳細資訊、請參閱 https://www.vmware.com/products/vsphere.html["VMware vSphere"^]。
+
+
+
+== VMware vCenter Server
+
+VMware vCenter Server可從單一主控台統一管理所有主機和VM、並集合叢集、主機和VM的效能監控。VMware vCenter Server可讓系統管理員深入瞭解運算叢集、主機、VM、儲存設備、來賓作業系統、 以及虛擬基礎架構的其他重要元件。VMware vCenter可管理VMware vSphere環境中的豐富功能集。
+
+如需詳細資訊、請參閱 https://www.vmware.com/products/vcenter.html["VMware vCenter"^]。
+
+
+
+== 硬體與軟體版本
+
+此混合雲解決方案可延伸至FlexPod 執行中所定義之受支援軟體、韌體和硬體版本的任何支援環境 http://support.netapp.com/matrix/["NetApp 互通性對照表工具"^]、 https://ucshcltool.cloudapps.cisco.com/public/["UCS硬體與軟體相容性"^]和 https://www.vmware.com/resources/compatibility/search.php["VMware相容性指南"^]。
+
+下表顯示內部部署FlexPod 的更新版軟硬體。
+
+|===
+| 元件 | 產品 | 版本 
+
+
+| 運算 | Cisco UCS X210 c M6. | 5.0（1b） 
+
+
+|  | Cisco UCS Fabric Interconnects 6454. | 4.2（2a） 
+
+
+| 網路 | Cisco Nexus 9336C-FX2 NX-OS | 9.3（9） 
+
+
+| 儲存設備 | NetApp AFF 產品-A400 | 零點9.11.1P2 ONTAP 
+
+
+|  | 適用於VMware vSphere的NetApp ONTAP 產品開發工具 | 9.11. 
+
+
+|  | 適用於VMware VAAI的NetApp NFS外掛程式 | 2.0 
+
+
+|  | NetApp Active IQ Unified Manager | 9.11p1 
+
+
+| 軟體 | VMware vSphere | 7.0（U3） 
+
+
+|  | VMware ESXi Nenic乙太網路驅動程式 | 1.0.35.0 
+
+
+|  | VMware vCenter應用裝置 | 7.0.3 
+
+
+|  | Cisco Intersight輔助虛擬應用裝置 | 1.0.9-342. 
+|===
+下表顯示NetApp BlueXP和Cloud Volumes ONTAP 更新版本。
+
+|===
+| 廠商 | 產品 | 版本 
+
+
+| NetApp | 藍圖 | 3.9.24 
+
+
+|  | Cloud Volumes ONTAP | 零點9.11. ONTAP 
+|===
+link:fhc-cvoe-installation-and-configuration.html["下一步：安裝與組態。"]

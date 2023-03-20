@@ -2,6 +2,23 @@
 section: hybrid-cloud
 title: 混合雲
 entries:
+- title: 採用Epic的混合雲Cloud Volumes ONTAP FlexPod
+  type: solutions
+  entries:
+  - title: 解決方案總覽
+    url: "/hybrid-cloud/fhc-cvoe-solution-overview.html"
+  - title: 解決方案元件
+    url: "/hybrid-cloud/fhc-cvoe-solution-components.html"
+  - title: 安裝與組態
+    url: "/hybrid-cloud/fhc-cvoe-installation-and-configuration.html"
+  - title: SAN組態
+    url: "/hybrid-cloud/fhc-cvoe-san-configuration.html"
+  - title: 解決方案驗證
+    url: "/hybrid-cloud/fhc-cvoe-solution-validation.html"
+  - title: 結論
+    url: "/hybrid-cloud/fhc-cvoe-conclusion.html"
+  - title: 何處可找到其他資訊
+    url: "/hybrid-cloud/fhc-cvoe-where-to-find-additional-information.html"
 - title: 採用NetApp技術的混合雲Google Cloud Platform搭配NetApp功能和Cisco Intersight FlexPod Cloud
     Volumes ONTAP
   type: solutions
