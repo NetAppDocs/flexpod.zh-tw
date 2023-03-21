@@ -9207,13 +9207,10 @@
   <block id="20554b7070a41f183c39f879d9542b90" category="list-text">最佳化營運、以獲得更快的洞見和更好的病患結果。</block>
   <block id="47b7068ff550075db8c23110dd3c06b0" category="list-text">利用可擴充且可靠的基礎架構來簡化映像應用程式。</block>
   <block id="082dcbe360c49ca4c12f46f0b9c45717" category="list-text">以備受肯定的方法快速有效地部署醫療應用程式、例如EHR。</block>
-  <block id="e3f530e977d74053c6d70eb84886e756" category="section-title">致勝</block>
-  <block id="5487d5465f5bef86877c53f4bee269b7" category="paragraph">Epic電子健康記錄（EHRs）為中型和大型醫療組織、醫院及整合式醫療組織製作軟體。客戶也包括社區醫院、學術機構、兒童組織、安全網供應商及多醫院系統。EHR整合式軟體涵蓋臨床、存取和營收功能、並延伸至家中。</block>
   <block id="61e92578533bbca384b0827757c3828b" category="paragraph">醫療業者組織仍面臨著壓力、必須在領先業界的EHRs上、充分發揮其大量投資所帶來的效益。客戶在設計EHR解決方案和關鍵任務應用程式的資料中心時、通常會針對其資料中心架構找出下列目標：</block>
   <block id="3e77b8f2742f9c6c9e5431bb6a507cc0" category="list-text">EHR應用程式的高可用度</block>
   <block id="0bf306b1478661b1ec659d3d45732ce6" category="list-text">在資料中心內輕鬆實作EHR</block>
   <block id="2104af181edd8195e9eacb28f07d9434" category="list-text">靈活度與擴充性、可透過新的EHR版本或應用程式來實現成長</block>
-  <block id="266186fab1495f829a1954e04558db4b" category="paragraph">通過EHR認證、並支援內含Cisco UCS的平台、其中包含Intel Xeon處理器、Red Hat Enterprise Linux（RHEL）、以及採用VMware ESXi的虛擬化技術FlexPod 。此平台加上EHR在執行ONTAP 支援的NetApp儲存設備上的「高舒適度」等級、讓客戶有信心透過FlexPod 可連線至任何公有雲供應商的功能、在完全託管的私有雲中執行醫療應用程式。</block>
   <block id="1273c8a63109161e6fd1f18d6998523f" category="section-title">NetApp BlueXP</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link">藍圖</block>
   <block id="86706cdade6ef7fa7ccfbed73633a085" category="paragraph">BlueXP（前身為NetApp Cloud Manager）是企業級SaaS型管理平台、可讓IT專家和雲端架構設計師使用NetApp雲端解決方案集中管理混合式多雲端基礎架構。它提供集中式系統、可檢視及管理內部部署與雲端儲存設備、支援混合式、多個雲端供應商與帳戶。如需詳細資訊、請參閱<block ref="c49cacac9cbe82dcff36ada88ba62aa3" category="inline-link-rx"></block>。</block>
@@ -9534,4 +9531,7 @@
   <block id="fb4d860c1938626a4cb9b8f66c6eb6f2" category="cell">2023年3月</block>
   <block id="862ad23f517c987dec375a134fc0d5c0" category="cell">初始版本</block>
   <block id="c1138e31cf3bd66be11eeb4877babdd1" category="sidebar">採用Epic的混合雲Cloud Volumes ONTAP FlexPod</block>
+  <block id="1522a775ace254939b906658e7521ca9" category="section-title">EHR</block>
+  <block id="ba8a69a3d262e3d66f6f5cdc83781213" category="paragraph">電子健康記錄（EHRs）為中型和大型醫療組織、醫院和整合式醫療組織製作軟體。客戶也包括社區醫院、學術機構、兒童組織、安全網供應商及多醫院系統。EHR整合式軟體涵蓋臨床、存取和營收功能、並延伸至家中。</block>
+  <block id="df788b689025995ee4f69e5d3ecf444d" category="paragraph">通過EHR驗證、並支援內含Cisco UCS、搭載Intel Xeon處理器、Red Hat Enterprise Linux（RHEL）及VMware ESXi虛擬化的平台FlexPod 。此平台加上EHR在執行ONTAP 支援的NetApp儲存設備上的「高舒適度」等級、讓客戶有信心透過FlexPod 可連線至任何公有雲供應商的功能、在完全託管的私有雲中執行醫療應用程式。</block>
 </blocks>
