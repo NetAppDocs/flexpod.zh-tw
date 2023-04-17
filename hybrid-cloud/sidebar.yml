@@ -126,12 +126,12 @@ entries:
     url: "/hybrid-cloud/cloud-fabricpool_conclusion.html"
   - title: 何處可找到其他資訊
     url: "/hybrid-cloud/cloud-fabricpool_where_to_find_additional_information.html"
-- title: 利用IBM Cloud Private搭配Cisco UCS Manager、NetApp VMware vCenter 9.3及VMware vSphere
-    6.5U1進行資料中心設計FlexPod ONTAP AFF
-  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_icp_ucsm32.html
-- title: 適用於平台即服務的資料中心、搭配Apprenda 8.2、Cisco ACI 3.1及Kubernetes 1.9.4 [設計] FlexPod
-  url: https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-740803.pdf
-- title: 適用於混合雲的Datacenter搭配Cisco CloudCenter和NetApp私有儲存設備[設計] FlexPod
-  url: http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_hybridcloud_design.html
-- title: 適用於混合雲的Datacenter搭配Cisco CloudCenter和NetApp私有儲存設備[部署] FlexPod
-  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_hybridcloud.html
+- title: FlexPod Datacenter 搭配 IBM Cloud Private 、搭配 Cisco UCS Manager 、 NetApp ONTAP
+    9.3 AFF 和 VMware vSphere 6.5U1 - 設計
+  url: "/hybrid-cloud/fpd-ibn-cloud-design.html"
+- title: FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備
+    - 設計
+  url: "/hybrid-cloud/fpd-hc-storage-design.html"
+- title: FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備
+    - 部署
+  url: "/hybrid-cloud/multi-cloud-deploy.html"

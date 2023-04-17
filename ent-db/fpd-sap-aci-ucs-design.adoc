@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: ent-db/fpd-sap-aci-ucs-design.html 
+keywords: flexpod, cisco, sap, aci, ucs, sles, rhlel, hana, aff, a-series 
+summary: 本文件說明 FlexPod 基礎架構上 SAP HANA 量身打造的資料中心整合選項的架構與部署程序。 
+---
+= FlexPod Datacenter for SAP 解決方案、搭配 Cisco UCS M5 伺服器上的 Cisco ACI 、搭配 SLES 12 SP3 和 RHEL 7.4
+:allow-uri-read: 
+
+
+Pramod Ramamurthy 、 Cisco Marco Schoen 、 NetApp
+
+本文件說明 FlexPod 基礎架構上 SAP HANA 量身打造的資料中心整合選項的架構與部署程序、這些選項由 Cisco 運算與交換產品所組成、這些產品運用領先業界的軟體定義網路解決方案（ SDN ） Cisco Application Centric Infrastructure （ ACI ）、以及 NetApp A 系列 AFF 陣列。本文件旨在說明 SAP HANA 部署詳細組態步驟的設計原則。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_saphana_aci_UCSM32.html["FlexPod Datacenter for SAP 解決方案、搭配 Cisco UCS M5 伺服器上的 Cisco ACI 、搭配 SLES 12 SP3 和 RHEL 7.4"^]

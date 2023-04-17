@@ -2,25 +2,21 @@
 section: modern-apps
 title: 現代化應用程式
 entries:
-- title: 適用於採用Cisco UCS 480 ML的AI/ML資料中心Nvidia T4 vGPU、適用於深度學習CVD設計指南[設計] FlexPod
-  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html
-- title: 在Cisco Container Platform上部署NetApp Trident SCSI外掛FlexPod 程式、並提供功能完善的功能[Deploy（部署）]
-  url: https://www.cisco.com/c/dam/en/us/solutions/collateral/data-center-virtualization/unified-computing/trident-on-container-platform-with-flexpod.pdf
-- title: 適用於OpenShift Container Platform 4（部署）的資料中心FlexPod
-  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_openshift_platform_4.html
-- title: 採用Cisco UCS C480 ML的AI/ML資料中心深度學習設計指南[設計] FlexPod
-  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html
-- title: 利用Docker資料中心進行Container管理的資料中心[設計] FlexPod
-  url: http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_docker_deploy_design.html
-- title: "《適用於OpenShift Container Platform 4的Datacenter設計指南》FlexPod"
-  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_openshift4_design.html
-- title: 適用於採用Cisco UCS 480 ML的AI/ML資料中心Nvidia T4 vGPU、適用於深度學習CVD設計指南FlexPod
-  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html
-- title: 適用於採用Cisco UCS 480 ML的AI/ML資料中心Nvidia T4 vGPU、適用於深度學習CVD部署指南FlexPod
-  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_480ml_aiml_deployment.html
-- title: "《Datacenter for AI/ML with Cisco UCS C480 ML for Deep Learning設計指南》FlexPod"
-  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html
+- title: FlexPod 資料中心結合 AI 和 ML 與 Cisco UCS 480 ML 、 Nvidia T4 和 vGPU 、適用於深度學習 CVD
+    - 設計
+  url: "/modern-apps/fpd-ai-dl-design.html"
+- title: 在採用 FlexPod 的 Cisco Container 平台上部署 NetApp Trident CSI 外掛程式 - 部署
+  url: "/modern-apps/fpd-trident-ccp-deploy.html"
+- title: 適用於 OpenShift Container Platform 4 的 FlexPod 資料中心 - 部署
+  url: "/modern-apps/fpd-openshift-deploy.html"
+- title: FlexPod Datacenter 搭配 Docker Datacenter for Container Management - 設計
+  url: "/modern-apps/fpd-docker-contm-design.html"
+- title: 適用於 OpenShift Container Platform 4 的 FlexPod 資料中心 - 設計
+  url: "/modern-apps/fpd-opens-cont-design.html"
+- title: FlexPod 資料中心、結合 AI 和 ML 與 Cisco UCS 480 ML 、 Nvidia T4 和 vGPU 、適用於深度學習 CVD
+    - 部署
+  url: "/modern-apps/fpd-ai-dl-deploy.html"
 - title: VMware與NVIDIA提供3D圖形視覺化功能FlexPod
-  url: https://www.cisco.com/c/dam/en/us/solutions/collateral/data-center-virtualization/desktop-virtualization-solutions-vmware-horizon-view/whitepaper-c11-741606.pdf
+  url: "/modern-apps/fpd-wp-741606.html"
 - title: 支援Citrix與NVIDIA 3D圖形視覺化（白皮書）FlexPod
-  url: https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/whitepaper-c11-741586.pdf
+  url: "/modern-apps/fpd-wp-741586.html"

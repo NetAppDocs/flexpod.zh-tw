@@ -1,0 +1,13 @@
+---
+sidebar: sidebar 
+permalink: modern-apps/fpd-wp-741606.html 
+keywords:  
+summary:  
+---
+= 在 Cisco UCS 上使用 VMware 和 NVIDIA 實現 3D 圖形視覺化 - 白皮書
+:allow-uri-read: 
+
+
+本文件說明 VMware ESXi Hypervisor 和 VMware Horizon 在 Cisco UCS C240 M5 機架式伺服器和 B200 M5 刀鋒伺服器上搭配 NVIDIA Tesla P4 、 P6 和 P40 解決方案的效能。
+
+link:https://www.cisco.com/c/dam/en/us/solutions/collateral/data-center-virtualization/desktop-virtualization-solutions-vmware-horizon-view/whitepaper-c11-741606.pdf["在 Cisco UCS 上使用 VMware 和 NVIDIA 實現 3D 圖形視覺化 - 白皮書"^]

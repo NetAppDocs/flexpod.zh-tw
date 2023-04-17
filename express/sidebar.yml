@@ -145,6 +145,6 @@ entries:
     url: "/express/express-direct-attach-aff220-deploy_conclusion.html"
   - title: 其他資訊
     url: "/express/express-direct-attach-aff220-deploy_additional_information.html"
-- title: 適用於VMware vSphere 7.0的VMware Express搭配Cisco UCS Mini和NetApp功能/功能（NVA）FlexPod
-    AFF FAS
-  url: https://www.netapp.com/pdf.html?item=/media/21938-nva-1154-DEPLOY.pdf
+- title: FlexPod Express for VMware vSphere 7.0 搭配 Cisco UCS Mini 和 NetApp AFF/FAS
+    （ NVA ）
+  url: "/express/express-nva-1154-deploy.html"

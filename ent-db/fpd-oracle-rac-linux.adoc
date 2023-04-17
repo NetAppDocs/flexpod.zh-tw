@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: ent-db/fpd-oracle-rac-linux.html 
+keywords: flexpod, cisco, datacenter, oracle, rac, linux, ucs 
+summary: Cisco Unified Computing System （ Cisco UCS ）是新一代的資料中心平台、可將運算、網路、儲存存取及虛擬化整合至單一的整合式系統中。 
+---
+= Oracle Linux上的Oracle RAC資料中心FlexPod
+:allow-uri-read: 
+
+
+Tushar Patel 、 Cisco Niranjan Mohapatra 、 Cisco John Elliott 、 NetApp
+
+Cisco Unified Computing System （ Cisco UCS ）是新一代的資料中心平台、可將運算、網路、儲存存取及虛擬化整合至單一的整合式系統中。Cisco UCS 是關鍵任務資料庫工作負載架構的理想平台。Cisco UCS 平台、 NetApp 儲存設備和 Oracle Real Application Cluster （ RAC ）架構的結合、可加快部署速度、提高選擇彈性、提高效率、降低風險、進而加速您的 IT 轉型。這項 Cisco 驗證設計（ CVD ）強調了採用 Oracle 12c RAC 資料庫的彈性、多租戶、高效能和彈性 FlexPod 參考架構。
+
+FlexPod 平台由 NetApp 與 Cisco 開發、是一套靈活的整合式基礎架構解決方案、可提供預先驗證的儲存、網路和伺服器技術。其設計旨在提高 IT 對業務需求的回應能力、同時降低整體運算成本。考慮最長的正常運作時間、最小的風險。FlexPod 元件經過整合與標準化、可協助您實現及時、可重複、一致的部署。您可以準確規劃每個 FlexPod 部署的電力、場地空間、可用容量、效能和成本。
+
+FlexPod 採用最新技術、有效簡化資料中心工作負載、重新定義其提供價值的方式：
+
+* 利用 NetApp FAS 混合式陣列與 Flash Pool Flash 的功能、針對您的特定應用程式或環境、提供將 Flash 與旋轉媒體的精確比例部署的功能。
+* 運用預先驗證的平台、將業務中斷降至最低、並提升 IT 敏捷度、並將部署時間從數月縮短至數週。
+* 將管理時間和總擁有成本（ TCO ）減少 50% 。
+* 滿足或超越資料中心工作負載不斷擴充的硬體效能需求。
+
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orcrac_12c_bm.html["Oracle Linux上的Oracle RAC資料中心FlexPod"^]

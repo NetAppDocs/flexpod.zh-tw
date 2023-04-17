@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/fpd-cisco-vm-vs-deploy.html 
+keywords: flexpod, data, center, cisco, intersight, ontap, deployment 
+summary: 目前資料中心設計的產業趨勢是朝向共享基礎架構。 
+---
+= 採用 Cisco Intersight 和 NetApp ONTAP 9.7 的 FlexPod 資料中心：部署
+:allow-uri-read: 
+
+
+John George 、 Cisco Scott Kovacs 、 NetApp
+
+目前資料中心設計的產業趨勢是朝向共享基礎架構。企業客戶運用虛擬化技術與預先驗證的 IT 平台、從應用程式封閉環境移往可快速部署的共享基礎架構、進而邁向雲端之路、進而提高敏捷度並降低成本。Cisco 與 NetApp 合作提供 FlexPod 、使用最佳的儲存、伺服器及網路元件、做為各種工作負載的基礎、實現可快速且充滿信心地部署的高效率架構設計。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_dc_ontap_97_ucs_4_vmw_vs_67_U3.html["採用 Cisco Intersight 和 NetApp ONTAP 9.7 的 FlexPod 資料中心：部署"^]

@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: ent-db/fpd-microsoft-sql-2019.html 
+keywords: flexpod, cisco, esxi, microsoft, vmware, vsphere 
+summary: 本文件說明使用最新硬體與軟體產品的 FlexPod 參考架構、並提供在 VMware ESXi 虛擬化環境中代管 Microsoft SQL Server 2019 資料庫的部署建議。 
+---
+= 適用於Microsoft SQL Server 2019和VMware vSphere 6.7的Datacenter FlexPod
+:allow-uri-read: 
+
+
+Gopu Narasimha Reddy 、 Cisco Sanjeev Naldurgkar 、 Cisco Atul Bhalodia 、 NetApp
+
+本文件說明使用最新硬體與軟體產品的 FlexPod 參考架構、並提供在 VMware ESXi 虛擬化環境中代管 Microsoft SQL Server 2019 資料庫的部署建議。此解決方案也使用 Cisco Workload Optimization Manager （ CWOM ）、針對 SQL 工作負載和基礎架構、提供自動化建議、以達到最佳且有效率的資源使用率。
+
+此解決方案是以 Cisco Unified Computing System （ Cisco UCS ）為基礎、使用統一化軟體版本 4.1.1 來支援 Cisco UCS 硬體平台、包括 Cisco UCS B 系列刀鋒伺服器、 Cisco UCS 6400 Fabric Interconnects 、 Cisco Nexus 9000 系列交換器、以及 NetApp AFF 系列儲存陣列。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/mssql2019_flexpod.html["適用於Microsoft SQL Server 2019和VMware vSphere 6.7的Datacenter FlexPod"^]

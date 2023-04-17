@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: modern-apps/fpd-docker-contm-design.html 
+keywords: flexpod, docket, cisco, container, management, data 
+summary: Docker 是領先全球的軟體容器平台、可供開發人員和 IT 作業人員在任何地方建置、交付及執行分散式應用程式。 
+---
+= FlexPod Datacenter 搭配 Docker Enterprise Edition for Container Management
+:allow-uri-read: 
+
+
+Muhammad Afzal 、 Cisco John George 、 Cisco Amit Borulkar 、 NetApp UDay Shetty 、 Docker
+
+Docker 是全球領先的軟體容器平台、可供開發人員和 IT 作業人員在任何地方建置、交付及執行分散式應用程式。隨著微服務架構成為新一代 IT 的架構、對單一應用程式投入大量資金的企業正尋求採用 Docker 的方法、將其應用程式架構現代化、並保持組織的競爭力和成本效益。容器化提供開發人員和 IT 營運人員在任何基礎架構中建置和部署應用程式所需的敏捷度、控制能力和可攜性。Docker 平台可讓分散式應用程式輕鬆地組成輕量化的應用程式容器、以動態方式變更而不中斷營運。這項功能可讓應用程式在本機、資料中心及不同雲端服務供應商的網路上、於實體或虛擬機器上執行的開發、測試及正式作業環境中、都能輕鬆移轉。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_docker_deploy_design.html["FlexPod Datacenter 搭配 Docker Enterprise Edition for Container Management"^]

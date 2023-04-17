@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: ent-db/fpd-sap-3gen-aff.html 
+keywords: flexpod, cisco, sap, ucs, third generation, fabric, aff, a-series 
+summary: 本文件說明 Cisco 與 NetApp FlexPod Datacenter for SAP HANA 的部署方法、其基礎為第二代 Intel Xeon 可擴充處理器所支援的 Cisco UCS 運算系統（ Cisco UCS ）。 
+---
+= FlexPod Datacenter for SAP 解決方案搭配 Cisco UCS 第三代架構和 NetApp AFF A 系列
+:allow-uri-read: 
+
+
+Shailendra Mruthunchaya,Cisco Ralf Klahr,Cisco Marco Schoen 、 NetApp
+
+本文件說明 Cisco 與 NetApp FlexPod Datacenter for SAP HANA 的部署方法、其基礎為第二代 Intel Xeon 可擴充處理器所支援的 Cisco UCS 運算系統（ Cisco UCS ）。
+
+Cisco UCS Manager （ UCSM ） 4.0 （ 4 ）可整合支援所有目前的 Cisco UCS Fabric 互連機型（ 6200 、 6300 、 6324 和 6454 ）、 2200/2300 系列 IOM 、 Cisco UCS B 系列刀鋒伺服器和 Cisco UCS C 系列機架模板型伺服器。採用 Cisco UCS 統一化軟體版本 4.0(4D) 與 NetApp ONTAP 9.6 的 FlexPod 資料中心是預先設計的最佳實務資料中心架構、建置於 Cisco UCS 、 Cisco Nexus 9000 系列交換器、以及 NetApp AFF A 系列儲存陣列之上。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_sap_ontap96.html["FlexPod Datacenter for SAP 解決方案搭配 Cisco UCS 第三代架構和 NetApp AFF A 系列"^]

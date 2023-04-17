@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: ent-db/fpd-sap-deploy.html 
+keywords: flexpod, cisco, ontap, 9.7, aff, a400, ucs, sap, hana 
+summary: 本文件說明採用 NetApp AFF A400 儲存設備的 NetApp ONTAP 9.7 的 Cisco 和 NetApp FlexPod 資料中心、以及 Cisco UCS Manager 統一化軟體版本 4.1 （ 1 ）、特別是適用於 SAP HANA 的第二代 Intel Xeon 可擴充處理器 
+---
+= FlexPod Datacenter for SAP 解決方案、搭配使用 Fibre Channel SAN 搭配 Cisco UCS Manager 4.0 和 NetApp ONTAP 9.7
+:allow-uri-read: 
+
+
+Pramod Ramamurthy 、 Cisco Marco Schoen 、 NetApp
+
+本文件說明採用 NetApp AFF A400 儲存設備的 NetApp ONTAP 9.7 的 Cisco 和 NetApp FlexPod 資料中心、以及 Cisco UCS Manager 統一化軟體版本 4.1 （ 1 ）、特別是適用於 SAP HANA 的第二代 Intel Xeon 可擴充處理器。
+
+FlexPod Datacenter 搭配 NetApp ONTAP 9.7 和 Cisco UCS 統一化軟體版本 4.1(1) 是預先設計的最佳實務資料中心架構、建置於 Cisco 統一運算系統（ Cisco UCS ）、 Cisco Nexus 9000 系列交換器、 MDS 9000 多層架構交換器、 以及執行 ONTAP 9.7 儲存作業系統的 NetApp AFF A 系列儲存陣列。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_sap_ucsm40_fcsan.html["FlexPod Datacenter for SAP 解決方案、搭配使用 Fibre Channel SAN 搭配 Cisco UCS Manager 4.0 和 NetApp ONTAP 9.7"^]

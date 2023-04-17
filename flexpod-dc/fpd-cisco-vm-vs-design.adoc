@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/fpd-cisco-vm-vs-design.html 
+keywords: flexpod, cisco, intersight, vmware, vsphere, ontap 
+summary: 本文檔介紹 Cisco 和 NetApp FlexPod 解決方案，這是一種經過驗證的方法，用於將 Cisco 和 NetApp 技術部署爲共享雲基礎架構。 
+---
+= FlexPod Datacenter 搭配 Cisco Intersight 和 NetApp ONTAP 9.7 ：設計
+:allow-uri-read: 
+
+
+John George 、 Cisco Scott Kovacs 、 NetApp
+
+本文檔介紹 Cisco 和 NetApp FlexPod 解決方案，這是一種經過驗證的方法，用於將 Cisco 和 NetApp 技術部署爲共享雲基礎架構。這項經過驗證的設計提供了一個架構、可在 FlexPod 上部署 VMware vSphere 、這是企業級資料中心中最受歡迎的虛擬化平台。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_dc_ontap_97_ucs_4_vmw_vs_67_U3_design.html["FlexPod Datacenter 搭配 Cisco Intersight 和 NetApp ONTAP 9.7 ：設計"^]

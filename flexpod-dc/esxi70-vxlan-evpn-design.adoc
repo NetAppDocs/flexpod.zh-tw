@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/fpd-vxlan-design.html 
+keywords: flexpod, cisco, vmware, data, center, vsphere, vxlan, ontap, cloud, public 
+summary: Cisco 驗證的設計（ CVD ）包含設計、測試及記錄的系統與解決方案、可協助及改善客戶部署。 
+---
+= FlexPod Datacenter 搭配 VMware vSphere 7.0 、 Cisco VXLAN 單站台光纖和 NetApp ONTAP 9.7 - 設計
+:allow-uri-read: 
+
+
+Ramesh Isaac 、 Cisco Abhinav Singh 、 NetApp
+
+Cisco 驗證的設計（ CVD ）包含設計、測試及記錄的系統與解決方案、可協助及改善客戶部署。這些設計將廣泛的技術和產品整合到一系列解決方案中、這些解決方案是為了滿足客戶的業務需求而開發的。Cisco 與 NetApp 合作提供 FlexPod 、作為各種工作負載的基礎、並提供健全、有效率且可擴充的架構設計、以因應客戶需求。FlexPod 解決方案是一種經過驗證的方法、可用於部署 Cisco 和 NetApp 技術和產品、以建置共享的私有雲和公有雲基礎架構。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi70_vxlan_evpn_design.html["FlexPod Datacenter 搭配 VMware vSphere 7.0 、 Cisco VXLAN 單站台光纖和 NetApp ONTAP 9.7 - 設計"^]

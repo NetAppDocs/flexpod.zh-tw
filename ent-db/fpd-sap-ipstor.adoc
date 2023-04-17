@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: ent-db/fpd-sap-ipstor.html 
+keywords: flexpod, data,center, sap, cisco, aff, a-series, ucs, manager 
+summary: 本文件所詳述的參考架構、強調 IP 型儲存解決方案的恢復能力、成本效益及部署簡易性。 
+---
+= FlexPod Datacenter for SAP 解決方案、採用 NetApp AFF A 系列和 Cisco UCS Manager 3.2 的 IP 型儲存設備
+:allow-uri-read: 
+
+
+Shailendra Mruthunchaya,Cisco Ralf Klahr,Cisco Marco Schoen 、 NetApp
+
+本文件所詳述的參考架構、強調 IP 型儲存解決方案的恢復能力、成本效益及部署簡易性。能夠在單一介面上提供多種傳輸協定的儲存系統、可讓客戶選擇並保護投資、因為它確實是一種一線架構。此解決方案專為裝載可擴充的 SAP HANA 工作負載而設計。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_saphana_n9k_aff_ucsm.html["FlexPod Datacenter for SAP 解決方案、採用 NetApp AFF A 系列和 Cisco UCS Manager 3.2 的 IP 型儲存設備"^]

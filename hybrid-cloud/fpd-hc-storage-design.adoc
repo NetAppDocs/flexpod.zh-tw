@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/fpd-hc-storage-design.html 
+keywords: flexpod, cisco, hybrid, cloud, storage, private 
+summary: Cisco 驗證的設計（ CVD ）可提供經過設計、測試及記錄的系統與解決方案、以協助及改善客戶部署。 
+---
+= FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備 - 設計
+:allow-uri-read: 
+
+
+Haseeb Niazi 、 Cisco David Arnette 、 NetApp
+
+Cisco 驗證的設計（ CVD ）可提供經過設計、測試及記錄的系統與解決方案、以協助及改善客戶部署。這些設計將廣泛的技術與產品整合到一系列解決方案中、這些解決方案是為了滿足客戶的業務需求、並引導客戶從設計到部署。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_hybridcloud_design.html["FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備 - 設計"^]

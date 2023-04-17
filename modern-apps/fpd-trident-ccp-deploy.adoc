@@ -1,0 +1,13 @@
+---
+sidebar: sidebar 
+permalink: modern-apps/fpd-trident-ccp-deploy.html 
+keywords: flexpod, cisco, trident, container, plug, in, deploy 
+summary: 本文件提供在 FlexPod 解決方案中的 Cisco Container Platform Kubernetes 租戶叢集上部署 NetApp Trident Container Storage Interface （ CSI ）外掛程式的逐步程序。 
+---
+= 在採用 FlexPod 的 Cisco Container 平台上部署 NetApp Trident CSI 外掛程式
+:allow-uri-read: 
+
+
+本文件提供在 FlexPod 解決方案中的 Cisco Container Platform Kubernetes 租戶叢集上部署 NetApp Trident Container Storage Interface （ CSI ）外掛程式的逐步程序。
+
+link:https://www.cisco.com/c/dam/en/us/solutions/collateral/data-center-virtualization/unified-computing/trident-on-container-platform-with-flexpod.pdf["在採用 FlexPod 的 Cisco Container 平台上部署 NetApp Trident CSI 外掛程式"^]

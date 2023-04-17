@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/vmware-vsphere-70-ontap-97.html 
+keywords:  
+summary: Cisco 驗證的設計（ CVD ）包括經過設計、測試及記錄的系統與解決方案、可協助及改善客戶部署。 
+---
+= VMware vSphere 7.0與NetApp VMware vCenter 9.7的資料中心FlexPod ONTAP
+:allow-uri-read: 
+
+
+John George 、 Cisco Sree Lakshmi Lanka 、 NetApp
+
+Cisco 驗證的設計（ CVD ）包括經過設計、測試及記錄的系統與解決方案、可協助及改善客戶部署。這些設計將廣泛的技術和產品整合到一系列解決方案中、這些解決方案是為了滿足客戶的業務需求而開發的。Cisco 與 NetApp 合作提供 FlexPod ® 、作為各種工作負載的基礎、並根據客戶需求、實現高效率的架構設計。FlexPod 解決方案是一種經過驗證的方法、可將 Cisco 和 NetApp 技術部署為共享雲端基礎架構。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html"^]

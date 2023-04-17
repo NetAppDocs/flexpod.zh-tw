@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/fpd-cisco-vsphere.html 
+keywords: flexpod, cisco, data, center, ontap, ucs, xeon, vmware, vsphere, aff 
+summary: '本文件說明採用 NetApp ONTAP 9.6 的 Cisco 和 NetApp FlexPod 資料中心、採用第二代 Intel Xeon 可擴充處理器的 Cisco UCS Manager 統一化軟體版本 4.0(4) 、以及 VMware vSphere 6.7 U2 。' 
+---
+= FlexPod Datacenter 搭配 VMware vSphere 6.7 U2 、 Cisco UCS 第一代 Fabric 和 NetApp ONTAP 9.6
+:allow-uri-read: 
+
+
+John George 、 Cisco Sree Lakshmi Lanka 、 NetApp
+
+本文件說明採用 NetApp ONTAP 9.6 的 Cisco 和 NetApp FlexPod 資料中心、採用第二代 Intel Xeon 可擴充處理器的 Cisco UCS Manager 統一化軟體版本 4.0(4) 、以及 VMware vSphere 6.7 U2 。Cisco UCS Manager （ UCSM ） 4.0(4) 提供下列整合式支援：
+
+* 所有目前的 Cisco UCS Fabric 互連機型： 6200 、 6300 、 6324 （ Cisco UCS Mini ）
+* 6454
+* 2200/2300/2400 系列 IOM
+* Cisco UCS B系列
+* Cisco UCS C 系列。
+
+
+FlexPod Datacenter 搭配 NetApp ONTAP 9.6 、 Cisco UCS 統一化軟體版本 4.0(4) 及 VMware vSphere 6.7 U2 是預先設計的最佳實務資料中心架構、建置於 Cisco 統一運算系統（ Cisco UCS ）、 Cisco Nexus 9000 系列交換器、 MDS 9000 多層架構交換器、 以及執行 ONTAP 9 的 NetApp AFF A 系列儲存陣列。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa_u2.html["FlexPod Datacenter 搭配 VMware vSphere 6.7 U2 、 Cisco UCS 第四代 Fabric 和 NetApp ONTAP 9.6"^]

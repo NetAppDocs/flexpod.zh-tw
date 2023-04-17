@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: ent-db/fpd-sap-ucs-aff.html 
+keywords: flexpod, cisco, data, center, sap, ucs, aff, a-series, tdi, tailored, design 
+summary: 本文件說明 Cisco 與 NetApp FlexPod 解決方案、這是一套經過驗證的方法、可用於部署 SAP HANA 量身打造的資料中心整合（ TDI ）環境。 
+---
+= FlexPod Datacenter for SAP 解決方案搭配 Cisco UCS Manager 4.0 和 NetApp AFF A 系列 - 設計
+:allow-uri-read: 
+
+
+Pramod Ramamurthy 、 Cisco Marco Schoen 、 NetApp
+
+本文件說明 Cisco 與 NetApp FlexPod 解決方案、這是一套經過驗證的方法、可用於部署 SAP HANA 量身打造的資料中心整合（ TDI ）環境。這項經過驗證的設計提供準則和架構、可運用 Cisco 和 NetApp 的最佳實務實務實作 SAP HANA 。
+
+FlexPod 是領先業界的整合式基礎架構、可支援各種企業工作負載和使用案例。此解決方案可讓您以量身打造的資料中心整合模式、快速可靠地部署 SAP HANA 。
+
+建議的解決方案架構建置於 Cisco Unified Computing System （ Cisco UCS ）之上、使用統一化的軟體版本來支援 Cisco UCS 硬體平台、其中包括下列元件：
+
+* Cisco UCS B 系列刀鋒伺服器和 Cisco UCS C 系列機架伺服器、可透過 Intel Optane Data Center Persistent Memory Module （ DCPMM ）選項進行設定
+* Cisco UCS 6300 系列 Fabric Interconnects
+* Cisco Nexus 9000系列交換器
+* NetApp All Flash 系列儲存陣列
+
+
+此外、本文件還提供 Red Hat Enterprise Linux 和 SUSE Linux Enterprise Server for SAP HANA 的驗證功能。
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_sap_netappaffa_design.html["FlexPod Datacenter for SAP 解決方案搭配 Cisco UCS Manager 4.0 和 NetApp AFF A 系列 - 設計"^]
