@@ -7859,7 +7859,6 @@
   <block id="bd6cfb91907acb62b03084843321ec2a" category="list-text">新增了叢集檢查頁面、可讓使用者驗證NetApp儲存系統的組態是否符合最佳實務做法</block>
   <block id="558ab0bef1894a7a726109d36632d09d" category="section-title">已知問題</block>
   <block id="e8c4ec43528d3a582dd7b32616a88eb9" category="list-text">所有宣稱的目標都需要最低版本的AIQUM（9.11）才能FlexPod 順利完成、以利執行整合式系統互通性查詢。</block>
-  <block id="b1b25033ea7463aca79f95ef822af033" category="list-text">如果使用FQDN將不完整的叢集新增至AIM-UM、則不會填入「儲存設備庫存檢查」頁面。ONTAP使用者必須使用ONTAP IP位址將靜態叢集新增至AIM-UM。</block>
   <block id="914be32cb08524e05323b3adb9bc0c3f" category="paragraph">在NetApp IQ Unified Manager中、瀏覽至*設定&gt;一般&gt;功能設定*。</block>
   <block id="1f0c1e64448622e1d184d478ed9ef6d1" category="doc">Cisco Intersight with NetApp Storage快速入門指南</block>
   <block id="e47450d255414e1f34605a681b2919e6" category="summary">本節說明本解決方案的各種元件。</block>
@@ -9772,4 +9771,12 @@
   <block id="b3e0099b048c24efc807f9dd8dad5387" category="sidebar">FlexPod Datacenter 搭配 IBM Cloud Private 、搭配 Cisco UCS Manager 、 NetApp ONTAP 9.3 AFF 和 VMware vSphere 6.5U1 - 設計</block>
   <block id="2834c2489e66234d739bc68190c533f8" category="sidebar">FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備 - 設計</block>
   <block id="0a60298d1cecc2b46fc00c3b49fad269" category="sidebar">FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備 - 部署</block>
+  <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">2023 年 4 月</block>
+  <block id="4616e97717152ad6ebe9ea5b5148926e" category="list-text">在使用者介面的「庫存」區段中的「原則」頁面下新增保護原則（ SnapMirror ）和 Snapshot 原則索引標籤。</block>
+  <block id="70d106565a3a540dfd0f8bab83e76a38" category="list-text">在使用者介面的 [ 清查 ] 區段下新增了 [NFS 用戶端 ] 頁面。</block>
+  <block id="8e0535294f5f33af426f147791172241" category="list-text">已在使用者介面的 [ 資源清冊 ] 區段下的 [ 儲存 VM ] 頁面中新增 [ 受保護的 ] 欄。</block>
+  <block id="bde3fb96ef210104acac308d66ce1c9a" category="list-text">已修改資料減量資訊的報告和顯示方式。</block>
+  <block id="33f06c93ff0e249c6d028973d21932bc" category="list-text">在使用者介面「庫存」區段的「層級」頁下方新增「本機層級」和「雲端層級」索引標籤。</block>
+  <block id="cebb5bee9f2c3fd7a29eb3a7ad7f1530" category="list-text">節點欄現在會顯示在使用者介面「詳細目錄」區段「連接埠」頁面下方的「名稱」欄之後。</block>
+  <block id="59829409d4681e66c64ba39915db7b13" category="list-text">如果使用 FQDN 將 ONTAP 叢集新增至 AIQUM 、則「儲存設備詳細目錄檢查」頁面將不會填入。使用者必須使用 IP 位址將 ONTAP 叢集新增至 AIQUM 。</block>
 </blocks>
