@@ -15,6 +15,7 @@ summary: 本節提供GATE的Jar檔案輸出。
 
 link:flexpod-genomics-genomics---gatk-setup-and-execution.html["上一篇：基因組學-網頁設定與執行。"]
 
+[role="lead"]
 使用Jar檔案執行GK時產生下列範例輸出。
 
 ....

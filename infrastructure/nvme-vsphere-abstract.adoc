@@ -13,4 +13,5 @@ summary:
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本技術報告提供NVMe over Fibre Channel（FC-NVMe）效能的高階概覽、VMware vSphere 7 on FlexPod VMware。支援以支援高效能儲存設備存取應用程式的支援、是部署FC-NVMe的最佳共享基礎架構基礎。FlexPod

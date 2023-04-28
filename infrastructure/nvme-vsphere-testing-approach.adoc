@@ -15,6 +15,7 @@ summary: 本節提供FC-NVMe關於FlexPod 驗證測試的高階摘要。其中�
 
 link:nvme-vsphere-introduction.html["上一篇：簡介。"]
 
+[role="lead"]
 本節提供FC-NVMe關於FlexPod 驗證測試的高階摘要。其中包括測試環境/組態、以及針對FC-NVMe FlexPod for VMware vSphere 7執行工作負載測試所採用的測試計畫。
 
 

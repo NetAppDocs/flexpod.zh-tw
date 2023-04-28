@@ -13,6 +13,7 @@ summary: 本節內容適用於ONTAP 在更新版本的更新版本上進行部�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節內容適用於ONTAP 在更新版本的更新版本上進行部署。
 
 

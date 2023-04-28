@@ -13,6 +13,7 @@ summary: 本文件所述的一套規則定義了這個架構。FlexPod硬體元�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本文件所述的一套規則定義了這個架構。FlexPod硬體元件和軟體組態必須由Cisco硬體相容清單（HCL）和支援 http://mysupport.netapp.com/matrix["NetApp互通性對照表工具IMT （不含）"^]。
 
 每個Cisco驗證設計（CVD）或NetApp驗證架構（NVA）都是可能FlexPod 的組態。Cisco與NetApp會記錄這些組態組合、並透過廣泛的端點對端點測試加以驗證。如果不符合這些組態的支援項目遵循本文件中的準則、且所有元件均列於Cisco HCL和NetApp中、則完全支援這些部署項目FlexPod http://mysupport.netapp.com/matrix["IMT"^]。

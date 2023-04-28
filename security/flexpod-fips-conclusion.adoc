@@ -15,6 +15,7 @@ summary: 透過在支援FIPS 140-2的平台上執行醫療應用程式FlexPod �
 
 link:flexpod-fips-additional-flexpod-security-consideration.html["上一篇：FlexPod 其他的不安全考量。"]
 
+[role="lead"]
 透過在支援FIPS 140-2的平台上執行醫療應用程式FlexPod 、您的醫療機構將獲得更好的保護。在運算、網路和儲存等每個元件上、均提供多層保護。FlexPod資料保護功能可在閒置或飛行時保護資料、並在需要時確保備份安全且準備就緒。FlexPod
 
 運用FlexPod 通過Cisco與NetApp策略合作夥伴、經過嚴格測試的融合式基礎架構、預先驗證的NetApp設計、避免人為錯誤。設計與設計旨在提供可預測、低延遲的系統效能與高可用度、即使在運算、網路和儲存層啟用FIPS 140-2、也能發揮極低的影響。FlexPod這種方法可為您的命中率系統使用者提供優異的使用者體驗、並為其提供最佳的回應時間。

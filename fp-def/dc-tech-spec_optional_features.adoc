@@ -13,6 +13,7 @@ summary: NetApp支援多種選用元件、以進一步強化FlexPod 「資料中
 :imagesdir: ./../media/
 
 
+[role="lead"]
 NetApp支援多種選用元件、以進一步強化FlexPod 「資料中心架構」。以下小節將概述選用元件。
 
 

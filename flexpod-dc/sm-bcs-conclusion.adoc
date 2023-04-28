@@ -15,6 +15,7 @@ summary: 採用SM至BC的《支援核心資料中心》採用主動式資料中�
 
 link:sm-bcs-validated-scenarios.html["先前版本：解決方案驗證-已驗證的案例。"]
 
+[role="lead"]
 採用SM至BC的《支援核心資料中心》採用主動式資料中心設計、FlexPod 可為業務關鍵工作負載提供營運不中斷和災難恢復功能。此解決方案通常會將兩個資料中心互連、分別部署在不同地理位置的都會區。NetApp SMBC解決方案使用同步複寫功能、保護關鍵業務資料服務、避免站台故障。解決方案要求兩FlexPod 個仰賴不超過10毫秒的往返網路延遲。
 
 部署在第三站台的NetApp ONTAP 支援中心會監控SMBC解決方案、並在偵測到站台災難時自動容錯移轉。VMware vCenter搭配VMware HA和延伸的VMware vSphere Metro儲存叢集組態、可與NetApp SMBC無縫搭配運作、讓解決方案達到理想的零RPO和接近零的RTO目標。

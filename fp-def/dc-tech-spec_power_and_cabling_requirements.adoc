@@ -13,6 +13,7 @@ summary: 供應電源和纜線的需求最低。FlexPod
 :imagesdir: ./../media/
 
 
+[role="lead"]
 供應電源和纜線的需求最低。FlexPod
 
 

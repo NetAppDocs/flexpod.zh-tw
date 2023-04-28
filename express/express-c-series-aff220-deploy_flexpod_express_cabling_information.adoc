@@ -13,6 +13,7 @@ summary: 本節詳細說明Cisco Nexus交換器3172P A和B以及NetApp AFF S16A2
 :imagesdir: ./../media/
 
 
+[role="lead"]
 下圖顯示參考驗證纜線。
 
 image:express-c-series-aff220-deploy_image5.png["錯誤：缺少圖形影像"]

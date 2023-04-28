@@ -15,6 +15,7 @@ summary: 本節顯示使用Cromwell引擎執行GK後的輸出。
 
 link:flexpod-genomics-appendix-b.html["11fffe01d469840980d9b9a5f45bf9ed"]
 
+[role="lead"]
 使用Cromwell引擎執行GATE時、產生下列範例輸出。
 
 ....

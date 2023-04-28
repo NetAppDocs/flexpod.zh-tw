@@ -10,6 +10,7 @@ summary: IBM Cloud Private （ ICP ）是內部部署平台、用於開發和管
 
 Sreenivasa Edula 、 Cisco Thachit Wichianchai 、 IBM Jacky Ben-Bassat 、 IBM Global Alliance 、 NetApp
 
+[role="lead"]
 IBM Cloud Private （ ICP ）是內部部署平台、用於開發和管理雲端原生和應用程式現代化使用案例的容器化應用程式。這是以 Kubernetes 為基礎的整合式環境、作為其容器協調作業、其中包括適用於 Docker 容器的私有映像儲存庫、管理主控台、監控架構、許多開放原始碼型和 IBM 容器化應用程式等。將來自 Cisco 和 NetApp 的融合式基礎架構 ICP 與 FlexPod 結合、可簡化基礎架構的部署與管理。您也可以從提高儲存效率、改善資料保護、降低風險、以及靈活擴充這種高可用度的企業級基礎架構堆疊、以因應新的業務需求和其他隨時間而變化的需求、而獲益良多。
 
 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_icp_ucsm32.html["FlexPod 資料中心與 IBM Cloud Private"^]

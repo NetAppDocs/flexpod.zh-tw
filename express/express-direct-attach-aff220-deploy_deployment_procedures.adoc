@@ -13,6 +13,7 @@ summary: 本文件詳細說明如何設定完全備援且高度可用FlexPod 的
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本文件詳細說明如何設定完全備援且高度可用FlexPod 的Express系統。為了反映這種備援、每個步驟中所設定的元件都稱為元件A或元件B例如、控制器A和控制器B會識別本文件中所配置的兩個NetApp儲存控制器。交換器A和交換器B會識別一對Cisco Nexus交換器。Fabric互連A和Fabric互連B是兩個整合式Nexus Fabric互連。
 
 此外、本文也說明配置多個Cisco UCS主機的步驟、這些主機會依序識別為伺服器A、伺服器B等。

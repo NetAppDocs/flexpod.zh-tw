@@ -15,6 +15,7 @@ summary: 適用於整個過程的運算組態FlexPod 是以典型FlexPod 的解�
 
 link:sm-bcs-solution-validation_overview.html["前置作業：解決方案驗證-總覽。"]
 
+[role="lead"]
 適用於整個過程的運算組態FlexPod 是以典型FlexPod 的解決方案最佳實務做法為準。下列各節將重點介紹驗證所使用的部分連線能力和組態。同時也強調一些與SM至BC相關的考量、以提供實作參考資料和指引。
 
 

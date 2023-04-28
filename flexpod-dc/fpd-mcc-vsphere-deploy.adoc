@@ -10,6 +10,7 @@ summary: Cisco 與 NetApp 合作推出一系列 FlexPod 解決方案、以實現
 
 Haseeb Niazi 、 Cisco Ramesh Issac 、 Cisco Arvind Ramakrishnan 、 NetApp
 
+[role="lead"]
 Cisco 與 NetApp 合作推出一系列 FlexPod 解決方案、以實現策略性資料中心平台。FlexPod 解決方案提供整合式架構、整合運算、儲存和網路的最佳設計實務、藉由驗證整合式架構來確保各種元件之間的相容性、進而將 IT 風險降至最低。此解決方案也提供書面設計指南、部署指南及支援、可用於部署的各個階段（規劃、設計及實作）、以解決 IT 難題。
 
 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi67_n9k_aci_metrocluster.html["FlexPod Datacenter 搭配 Cisco ACI Multi-Pod 搭配 NetApp MetroCluster IP 和 VMware vSphere 6.7 - 部署"^]

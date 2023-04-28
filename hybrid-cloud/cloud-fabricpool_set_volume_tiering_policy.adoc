@@ -13,6 +13,7 @@ summary:
 :imagesdir: ./../media/
 
 
+[role="lead"]
 根據預設、Volume會使用「無」磁碟區分層原則。建立磁碟區之後、可使用OnCommand NetApp系統管理程式或ONTAP CLI來變更磁碟區分層原則。
 
 搭配使用時、支援下列三種Volume分層原則：Auto（自動）、Snapshot Only（僅快照）和None（無）FlexPod FabricPool 。

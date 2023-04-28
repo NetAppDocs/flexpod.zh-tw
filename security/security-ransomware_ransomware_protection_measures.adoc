@@ -13,6 +13,7 @@ summary: 本節將討論NetApp ONTAP VMware資料管理軟體的主要功能、�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節將討論NetApp ONTAP VMware資料管理軟體的主要功能、以及Cisco UCS和Cisco Nexus工具、您可以使用這些工具來有效保護和恢復勒索軟體攻擊。
 
 

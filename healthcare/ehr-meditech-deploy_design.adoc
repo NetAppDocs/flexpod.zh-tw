@@ -13,6 +13,7 @@ summary: MEDITECH的架構FlexPod 以MEDITECH、Cisco和NetApp的指引為基礎
 :imagesdir: ./../media/
 
 
+[role="lead"]
 MEDITECH的架構FlexPod 以MEDITECH、Cisco和NetApp的指引為基礎、並以合作夥伴與各種規模的MEDITECH客戶合作的經驗為基礎。此架構可靈活調整、並根據您的資料中心策略、組織規模、以及您的系統是否為集中式、分散式或多租戶、套用MEDITECH的最佳實務做法。
 
 正確的儲存架構可由整體大小和IOPS總計來決定。效能不只是唯一的考量因素、您可能會根據其他客戶需求決定使用較大的節點數。使用NetApp儲存設備的優勢在於、您可以輕鬆且不中斷營運地隨需求變化而擴充叢集。您也可以在不中斷營運的情況下、從叢集中移除節點、以重新規劃設備用途、或在設備更新期間移除節點。

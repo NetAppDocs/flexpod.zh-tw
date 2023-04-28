@@ -10,6 +10,7 @@ summary: 本文件說明 Cisco ACI 整合式 FlexPod 解決方案、是部署 SA
 
 Pramod Ramamurthy 、 Cisco Marco Schoen 、 NetApp
 
+[role="lead"]
 本文件說明 Cisco ACI 整合式 FlexPod 解決方案、是部署 SAP HANA 量身打造的資料中心整合（ TDI ）環境的驗證方法。這項經過驗證的設計提供準則和架構、可運用 Cisco 和 NetApp 的最佳實務實務實作 SAP HANA 。
 
 建議的解決方案架構建置於 Cisco Unified Computing System （ Cisco UCS ）之上、使用統一化的軟體版本來支援 Cisco UCS 硬體平台、其中包括下列元件：

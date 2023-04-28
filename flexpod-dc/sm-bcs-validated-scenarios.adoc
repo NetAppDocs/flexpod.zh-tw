@@ -15,6 +15,7 @@ summary: 《Datacenter SM - BC解決方案》FlexPod 可保護資料服務、以
 
 link:sm-bcs-virtualization.html["先前版本：解決方案驗證-虛擬化。"]
 
+[role="lead"]
 《Datacenter SM - BC解決方案》FlexPod 可保護資料服務、以因應各種單點故障情況、以及站台災難。在每個站台上實作的備援設計可提供高可用度、而採用跨站台同步資料複寫的SMBC實作則可保護資料服務、避免單一站台在站台範圍內發生災難。已部署的解決方案已針對其所需的解決方案功能、以及解決方案設計用來保護的各種故障案例進行驗證。
 
 

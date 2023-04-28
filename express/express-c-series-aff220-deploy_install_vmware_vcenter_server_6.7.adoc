@@ -13,6 +13,7 @@ summary: 本節提供在FlexPod VMware vCenter Server 6.7以VMware Express組態
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節提供在FlexPod VMware vCenter Server 6.7以VMware Express組態安裝的詳細程序。
 
 

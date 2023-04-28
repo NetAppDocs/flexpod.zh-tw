@@ -13,6 +13,7 @@ summary: MEDITECH應用程式涵蓋數個模組和元件。
 :imagesdir: ./../media/
 
 
+[role="lead"]
 MEDITECH應用程式涵蓋數個模組和元件。下表列出這些模組所涵蓋的功能。如需設定及部署這些模組的其他資訊、請參閱MEDITECH文件。
 
 |===

@@ -8,6 +8,7 @@ summary: 以執行混合式虛擬化工作負載為設計目標。FlexPod它的�
 :allow-uri-read: 
 
 
+[role="lead"]
 以執行混合式虛擬化工作負載為設計目標。FlexPod它的目標對象為遠端辦公室和分公司、以及中小型企業。對於想要實作專屬解決方案的大型企業而言、這也是最理想的選擇。全新FlexPod 的VMware Express解決方案的主要驅動因素是將ONTAP 諸如下列新技術的產品加入FlexPod 到更新的技術中：例如：VMware vSphere 9.5、FAS27xx/AFF220、VMware vSphere 6.7U1至VMware Express。
 
 下圖顯示FlexPod 包含在《ExExpress解決方案」中的硬體元件。

@@ -15,6 +15,7 @@ summary: 有了這個功能、Cisco與NetApp建立了一個既靈活又可擴充
 
 link:nvme-vsphere-test-results.html["上一篇：測試結果。"]
 
+[role="lead"]
 此解決方案觀察到的處理量為14GBps和220k IOPS、可在1毫秒延遲下執行連續讀取工作負載。對於隨機讀取工作負載、我們的處理量達到9.5GBps和1.25M IOPS。藉由FC-NVMe提供此效能的能力FlexPod 、可以滿足任何關鍵任務應用程式的需求。
 
 採用VMware vSphere 7.0 U2的VMware Datacenter是最佳的共享基礎架構基礎、可針對各種IT工作負載部署FC-NVMe、進而提供高效能的儲存設備存取、以存取需要的應用程式。FlexPod由於FC-NVMe不斷進化、包括高可用度、多重路徑及額外的作業系統支援、FlexPod 因此作爲首選平台、提供支援這些功能所需的擴充性與可靠性。

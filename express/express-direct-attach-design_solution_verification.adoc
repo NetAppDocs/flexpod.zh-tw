@@ -8,6 +8,7 @@ summary: 根據此解決方案的基本原則FlexPod 、FlexPod Cisco與NetApp�
 :allow-uri-read: 
 
 
+[role="lead"]
 Cisco與NetApp設計並打造FlexPod 出一套適用於其客戶的卓越基礎架構平台。由於採用領先業界的元件設計、因此客戶可以信賴FlexPod 以支援功能為基礎的功能。根據此解決方案的基本原則FlexPod 、FlexPod Cisco與NetApp資料中心的架構設計師與工程師已徹底測試過此架構。從備援和可用度到每項個別功能、整個FlexPod 流程都經過驗證、可為客戶建立信心、並建立對設計流程的信任感。
 
 VMware vSphere 6.7U1 Hypervisor已通過FlexPod 有關不實的Express基礎架構元件的驗證。此驗證包括使用10GbE連線選項的iSCSI Direct Connect SAN開機連線和NFS Direct Connect資料存放區。

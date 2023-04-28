@@ -15,6 +15,7 @@ summary: 此為預先設計的最佳實務架構、建置於Cisco Unified Comput
 
 Karthick Radhakrishnan、Arvind Ramakrishnan、Lindsey Street、Savita Kumari、NetApp
 
+[role="lead"]
 此為預先設計的最佳實務架構、建置於Cisco Unified Computing System（Cisco UCS）和Cisco Nexus系列交換器上、儲存層則是使用NetApp Exor NetApp E系列儲存設備打造。FlexPod FAS適用於執行各種虛擬化Hypervisor、裸機作業系統（OS）和企業工作負載的平台。FlexPod
 
 不只是基礎組態、還能靈活調整規模及最佳化、以因應多種不同的使用案例和需求。FlexPod本文件根據FlexPod 使用的儲存系統、FlexPod 以採用FAS E系列的NetApp支援功能、以支援NetApp的支援功能、FlexPod 以及使用E-系列的支援功能來分類《不支援的不支援》（E- Express）組態。

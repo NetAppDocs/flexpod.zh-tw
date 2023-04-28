@@ -17,6 +17,7 @@ Brandon Agee、John Duignan、NetApp Mike Brennan、Jon Eammeir、Cisco
 
 與下列合作夥伴合作：image:cisco logo.png["錯誤：缺少圖形影像"]
 
+[role="lead"]
 本報告針對FlexPod MEDITECH EHR應用程式軟體環境提供調整規模的指導方針。
 
 

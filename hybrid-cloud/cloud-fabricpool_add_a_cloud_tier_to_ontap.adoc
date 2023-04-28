@@ -13,6 +13,7 @@ summary: 物件存放區必須先新增至集合體、ONTAP 並由資訊技術�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 物件存放區必須先新增至集合體、ONTAP 並由資訊技術辨識、方可附加至集合體。此工作可透過OnCommand 《系統管理程式》或ONTAP 《系統資訊管理系統》CLI完成。
 
 支援Amazon S3、IBM Object Cloud Storage及Microsoft Azure Blob Storage物件儲存為雲端層。FabricPool

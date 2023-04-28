@@ -13,6 +13,7 @@ summary: NetApp是一種預先設計、整合及驗證的架構、將Cisco Unifi
 :imagesdir: ./../media/
 
 
+[role="lead"]
 NetApp是一種預先設計、整合及驗證的架構、將Cisco Unified Computing System（Cisco UCS）伺服器、Cisco Nexus系列交換器、Cisco MDS架構交換器及NetApp儲存陣列、整合為單一靈活架構。FlexPod支援各種工作負載的支援、可在不發生單點故障的情況下、維持成本效益和設計靈活度、實現高可用度。FlexPod支援不同Hypervisor和裸機伺服器的支援功能、也可根據客戶工作負載需求調整規模及最佳化。FlexPod
 
 下圖說明FlexPod 了這個架構、並清楚強調堆疊所有層級的高可用度。儲存設備、網路和運算的基礎架構元件的設定方式、可在其中一個元件故障時、立即將作業容錯移轉至正常合作夥伴。

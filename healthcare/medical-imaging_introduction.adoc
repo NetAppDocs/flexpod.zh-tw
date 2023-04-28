@@ -15,6 +15,7 @@ summary: 有了這個功能、您就能從單一平台獲得支援FC、FCoE、iS
 
 NetApp公司Jaya Kishore Esanakula和Atul Bhaludia
 
+[role="lead"]
 醫療影像技術佔醫療組織產生的所有資料的70%。隨著數位化模式持續進步、新模式也不斷出現、資料量將持續增加。例如、從類比轉換為數位化的異常、將會大幅增加影像大小、使目前的任何資料管理策略都面臨挑戰。
 
 根據最近的說法、COVID-19已明確改變了數位轉型的面貌 https://www.cfo.com/the-cloud/2020/06/three-ways-covid-19-is-accelerating-digital-transformation-in-professional-services/["報告"^]COVID-19的數位商務速度加快了5年。問題解決者所推動的技術創新、從根本上改變了我們的日常生活方式。這項技術導向的變更將徹底改變我們生命中的許多關鍵層面、包括醫療。

@@ -13,6 +13,7 @@ summary: 物件存放區新增至ONTAP 及由功能區識別之後、必須附�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 物件存放區新增至ONTAP 及由功能區識別之後、必須附加到集合體才能建立FabricPool 功能區。您可以使用OnCommand 「系統管理程式」或ONTAP 「系統資訊管理系統」CLI來完成這項工作。
 
 可將多種類型的物件存放區連線至叢集、但每個集合體只能附加一種類型的物件存放區。例如、一個Aggregate可以使用Google Cloud、另一個Aggregate可以使用Amazon S3、但無法同時附加一個Aggregate。

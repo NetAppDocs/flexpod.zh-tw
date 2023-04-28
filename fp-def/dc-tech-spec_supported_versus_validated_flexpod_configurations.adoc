@@ -13,6 +13,7 @@ summary: 本文件所述的一套規則定義了這個架構。FlexPod
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本文件所述的一套規則定義了這個架構。FlexPod硬體元件和軟體組態必須受到支援 https://ucshcltool.cloudapps.cisco.com/public/["Cisco UCS硬體與軟體相容清單"^] 和 http://mysupport.netapp.com/matrix["NetApp互通性對照表工具IMT （不含）"^]。
 
 每個Cisco驗證設計（CVD）或NetApp驗證架構（NVA）都是可能FlexPod 的組態。Cisco與NetApp會記錄這些組態組合、並透過廣泛的端點對端點測試加以驗證。如果不符合這些組態的支援範本、且所有元件均列於Cisco UCS硬體與軟體相容清單和NetApp中、則完全支援不符合這些組態的部署FlexPod http://mysupport.netapp.com/matrix["IMT"^]。

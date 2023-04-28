@@ -13,6 +13,7 @@ summary: 下節將詳細說明FlexPod 在SExpress環境中使用的Cisco Nexus 3
 :imagesdir: ./../media/
 
 
+[role="lead"]
 下節將詳細說明FlexPod 在SExpress環境中使用的Cisco Nexus 3172P交換器組態。
 
 

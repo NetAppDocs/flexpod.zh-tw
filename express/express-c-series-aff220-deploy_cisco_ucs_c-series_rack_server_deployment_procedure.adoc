@@ -13,6 +13,7 @@ summary: 下節提供設定Cisco UCS C系列獨立式機架伺服器以供FlexPo
 :imagesdir: ./../media/
 
 
+[role="lead"]
 下節提供設定Cisco UCS C系列獨立式機架伺服器以供FlexPod 搭配使用的詳細程序。
 
 

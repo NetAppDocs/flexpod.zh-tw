@@ -13,6 +13,7 @@ summary: 下表分別列出FlexPod 醫療影像系統的各種硬體和軟體元
 :imagesdir: ./../media/
 
 
+[role="lead"]
 下表分別列出FlexPod 醫療影像系統的各種硬體和軟體元件。
 
 |===

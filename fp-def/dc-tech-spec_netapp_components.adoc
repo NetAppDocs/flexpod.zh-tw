@@ -13,6 +13,7 @@ summary: NetApp儲存控制器為FlexPod 支援開機和應用程式資料儲存
 :imagesdir: ./../media/
 
 
+[role="lead"]
 NetApp儲存控制器為FlexPod 支援開機和應用程式資料儲存的功能、提供了整個架構的儲存基礎。NetApp元件包括儲存控制器、叢集互連交換器、磁碟機和磁碟櫃、以及授權選項。
 
 

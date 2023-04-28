@@ -13,6 +13,7 @@ summary: 在本節中、我們將複習FlexPod 一下「不經認證的資料中
 :imagesdir: ./../media/
 
 
+[role="lead"]
 在本節中、我們將複習FlexPod 一下「不經認證的資料中心整合式基礎架構」的架構、包括AFF 由「不經認證」監控的NetApp版A800系統Cloud Insights 。
 
 

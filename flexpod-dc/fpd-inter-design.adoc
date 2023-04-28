@@ -10,6 +10,7 @@ summary: 本文件說明將 Cisco 和 NetApp 技術部署為共享雲端基礎�
 
 John George 、 Cisco Scott Kovacs 、 NetApp
 
+[role="lead"]
 本文件說明將 Cisco 和 NetApp 技術部署為共享雲端基礎架構的驗證解決方案。這項經過驗證的設計提供了一個架構、可在 FlexPod 上部署 VMware vSphere 、這是企業級資料中心中最受歡迎的虛擬化平台。
 
 FlexPod 是領先業界的整合式基礎架構、可支援各種企業工作負載和使用案例。此解決方案可讓客戶在整合式基礎架構上快速可靠地部署 VMware vSphere 私有雲。

@@ -10,6 +10,7 @@ summary: 本文件提供虛擬桌面與應用程式設計的參考架構、使�
 
 Vadim Lebedev 、 Cisco Chris Rodriguez 、 NetApp
 
+[role="lead"]
 本文件提供虛擬桌面與應用程式設計的參考架構、使用以 Cisco UCS 為基礎的 Citrix XenApp/XenDesktop 7.15 、搭配 NetApp All Flash FAS （ AFF ） A300 儲存設備與 VMware vSphere ESXi 6.5 Hypervisor 平台。
 
 桌面與應用程式虛擬化的環境不斷變化。全新 M5 高效能 Cisco UCS 刀鋒伺服器與 Cisco UCS 統一交換矩陣結合為 FlexPod 實證基礎架構的一部分、搭配最新一代的 NetApp AFF 儲存設備、可提供更精簡、更強大、更可靠、更有效率的平台。

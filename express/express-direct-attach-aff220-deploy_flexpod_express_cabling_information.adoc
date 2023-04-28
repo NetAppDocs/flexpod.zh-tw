@@ -13,6 +13,7 @@ summary: 參考驗證纜線記錄於下表。
 :imagesdir: ./../media/
 
 
+[role="lead"]
 參考驗證纜線記錄於下表。
 
 下表列出Cisco Nexus交換器31108PCV A的佈線資訊

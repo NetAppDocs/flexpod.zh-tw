@@ -13,6 +13,7 @@ summary: 您環境中的MEDITECH主機數量決定了在NetApp FAS 功能或AFF 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 您環境中的MEDITECH主機數量決定了在NetApp FAS 功能或AFF 功能區系統中建立的LUN數量。硬體組態提案會指定每個LUN的大小。
 
 

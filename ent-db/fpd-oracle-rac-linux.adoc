@@ -10,6 +10,7 @@ summary: Cisco Unified Computing System （ Cisco UCS ）是新一代的資料�
 
 Tushar Patel 、 Cisco Niranjan Mohapatra 、 Cisco John Elliott 、 NetApp
 
+[role="lead"]
 Cisco Unified Computing System （ Cisco UCS ）是新一代的資料中心平台、可將運算、網路、儲存存取及虛擬化整合至單一的整合式系統中。Cisco UCS 是關鍵任務資料庫工作負載架構的理想平台。Cisco UCS 平台、 NetApp 儲存設備和 Oracle Real Application Cluster （ RAC ）架構的結合、可加快部署速度、提高選擇彈性、提高效率、降低風險、進而加速您的 IT 轉型。這項 Cisco 驗證設計（ CVD ）強調了採用 Oracle 12c RAC 資料庫的彈性、多租戶、高效能和彈性 FlexPod 參考架構。
 
 FlexPod 平台由 NetApp 與 Cisco 開發、是一套靈活的整合式基礎架構解決方案、可提供預先驗證的儲存、網路和伺服器技術。其設計旨在提高 IT 對業務需求的回應能力、同時降低整體運算成本。考慮最長的正常運作時間、最小的風險。FlexPod 元件經過整合與標準化、可協助您實現及時、可重複、一致的部署。您可以準確規劃每個 FlexPod 部署的電力、場地空間、可用容量、效能和成本。

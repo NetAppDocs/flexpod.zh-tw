@@ -10,6 +10,7 @@ summary: 本文件提供有關 Cisco UCS C480 ML M5 平台整合至 FlexPod 資�
 
 Haseeb Niazi 、 Cisco Arvind Ramakrishnan 、 NetApp
 
+[role="lead"]
 本文件提供有關 Cisco UCS C480 ML M5 平台整合至 FlexPod 資料中心解決方案的部署詳細資料與指引、以提供統一的方法、在融合式基礎架構中提供 AI 與 ML 功能。本文件也說明 Cisco UCS C220 與 C240 平台上的 NVIDIA GPU 組態。如需本解決方案所使用平台和技術的詳細設計討論、請參閱 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html["FlexPod 資料中心結合 AI 和 ML 與 Cisco UCS 480 ML 、提供深度學習設計"^]。
 
 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_480ml_aiml_deployment.html["FlexPod 資料中心、結合 AI 和 ML 與 Cisco UCS 480 ML 、提供深度學習 - 部署"^]

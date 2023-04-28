@@ -13,6 +13,7 @@ summary: 您可以觀看使用NetApp Cloud Insights 解決方案的影片示範�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 您可以觀看使用NetApp Cloud Insights 功能來評估內部部署環境中資源的影片示範 https://netapp.hubs.vidyard.com/watch/1ycNWx4hzFsaV1dQHFyxY2?["請按這裡"^]。
 
 您可以觀看影片、示範如何使用NetApp Cloud Insights 功能來監控基礎架構、以及設定基礎架構的警示臨界值 https://netapp.hubs.vidyard.com/watch/DgUxcxES3Ujdqe1JhhkfAW["請按這裡"^]。

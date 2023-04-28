@@ -10,6 +10,7 @@ summary: '本文檔介紹 Cisco UCS Manager 統一化軟體版本 4.0(2) 和 VMw
 
 John George 、 Cisco Scott Kovacs 、 NetApp
 
+[role="lead"]
 本文檔介紹 Cisco UCS Manager 統一化軟體版本 4.0(2) 和 VMware vSphere 6.7 U1 的 Cisco 和 NetApp FlexPod Datacenter 。Cisco UCS Manager （ UCSM ） 4.0(2) 提供對所有當前 Cisco UCS Fabric 互連模式（ 6200 、 6300 、 6324 （ Cisco UCS Mini ））、 6454,2200/2300 系列 IOM 、 Cisco UCS B 系列和 Cisco UCS C 系列的整合支援。採用 Cisco UCS 統一化軟體版本 4.0(2) 和 VMware vSphere 6.7 U1 的 FlexPod 資料中心是預先設計的最佳實務資料中心架構、建置於 Cisco Unified Computing System （ UCS ）、 Cisco Nexus 9000 系列交換器、 MDS 9000 多層架構交換器、 以及執行 ONTAP 9 儲存作業系統的 NetApp AFF A 系列儲存陣列。
 
 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html["FlexPod Datacenter 搭配 VMware vSphere 6.7 U1 、 Cisco UCS 第四代架構及 NetApp AFF A 系列"^]

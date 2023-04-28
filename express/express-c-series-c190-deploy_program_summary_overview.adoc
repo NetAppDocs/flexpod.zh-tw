@@ -15,6 +15,7 @@ summary: 支援基礎組態的支援中心及支援中心、可靈活調整規�
 
 NetApp的Savita Kumari
 
+[role="lead"]
 產業趨勢顯示、共享基礎架構和雲端運算正在進行龐大的資料中心轉型。此外、企業組織也需要一套簡單有效的解決方案、讓遠端辦公室和分公司使用他們在資料中心熟悉的技術。
 
 NetApp®Express是預先設計的最佳實務資料中心架構、建置於Cisco Unified Computing System（Cisco UCS）、Cisco Nexus系列交換器及NetApp®儲存技術之上。FlexPod與之類似的是、在整個IT基礎架構環境中、透過更小規模的方式、實現管理協同效益。FlexPod FlexPod支援虛擬化、裸機作業系統和企業工作負載的最佳平台、就是資料中心和不支援的平台。FlexPod FlexPod

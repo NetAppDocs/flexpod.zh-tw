@@ -13,6 +13,7 @@ summary: 您可以依照下列步驟完成NetApp AFF 解決方案儲存部署程
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節說明NetApp AFF 的NetApp解決方案儲存部署程序。
 
 

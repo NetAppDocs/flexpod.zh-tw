@@ -17,6 +17,7 @@ NetApp的Alan Cowles
 
 與下列合作夥伴合作：image:cisco logo.png["錯誤：缺少圖形影像"]
 
+[role="lead"]
 本技術報告中詳述的解決方案是NetApp Cloud Insights 支援服務的組態、可監控AFF 執行NetApp ONTAP 支援的NetApp可靠性儲存系統、而NetApp支援是FlexPod 以「Datacenter」解決方案的一部分來部署。
 
 

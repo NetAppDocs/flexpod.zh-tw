@@ -13,6 +13,7 @@ summary: 部署於MEDITECH軟體環境的NetApp儲存設備、使用高可用度
 :imagesdir: ./../media/
 
 
+[role="lead"]
 部署於MEDITECH軟體環境的NetApp儲存設備、使用高可用度配對組態中的儲存控制器。儲存設備必須透過FC傳輸協定從兩個控制器呈現給MEDITECH資料庫伺服器。此組態會顯示兩個控制器的儲存設備、以便在正常作業期間平均平衡應用程式負載。
 
 

@@ -13,6 +13,7 @@ summary: Cisco在FlexPod 整個解決方案運算和網路層的設計與架構�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Cisco在FlexPod 整個解決方案運算和網路層的設計與架構上、貢獻良多。本節說明FlexPod 適用於下列項目的Cisco UCS和Cisco Nexus選項：支援Cisco UCS B系列和C系列伺服器。FlexPod
 
 

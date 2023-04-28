@@ -15,6 +15,7 @@ summary: 在多站台FlexPod 的「VMware SMBC」解決方案中、單一VMware 
 
 link:sm-bcs-storage.html["先前版本：解決方案驗證-儲存設備。"]
 
+[role="lead"]
 在多站台FlexPod 的「VMware SMBC」解決方案中、單一VMware vCenter可管理整個解決方案的虛擬基礎架構資源。兩個資料中心的主機都參與橫跨兩個資料中心的單一VMware HA叢集。主機可存取NetApp SMBC解決方案、在這兩個站台都能存取具有定義的SMBC關係的儲存設備。
 
 SMBC解決方案儲存設備符合VMware vSphere Metro Storage Cluster（VMSC）功能中的統一存取模式、以避免災難和停機。為獲得最佳虛擬機器效能、虛擬機器磁碟應裝載於本機NetApp AFF Are A250系統、以在正常運作下、將WAN連結的延遲和流量降至最低。

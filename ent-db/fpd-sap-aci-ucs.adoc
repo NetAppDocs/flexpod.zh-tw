@@ -10,6 +10,7 @@ summary: 本文件說明 FlexPod 基礎架構上 SAP HANA 量身打造的資料�
 
 Pramod Ramamurthy 、 Cisco Marco Schoen 、 NetApp
 
+[role="lead"]
 本文件說明 FlexPod 基礎架構上 SAP HANA 量身打造的資料中心整合選項的架構與部署程序、包括：
 
 * 第二代 Intel Xeon 可擴充處理器支援的 Cisco UCS 運算系統（ Cisco UCS ）。

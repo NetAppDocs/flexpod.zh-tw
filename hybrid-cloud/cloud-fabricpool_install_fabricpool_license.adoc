@@ -13,6 +13,7 @@ summary: 取得NetApp授權檔案後、您可以使用OnCommand NetApp System Ma
 :imagesdir: ./../media/
 
 
+[role="lead"]
 取得NetApp授權檔案後、您可以使用OnCommand NetApp System Manager來安裝。若要安裝授權檔案、請完成下列步驟：
 
 . 按一下組態。

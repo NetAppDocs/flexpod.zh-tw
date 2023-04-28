@@ -15,6 +15,7 @@ summary: 此功能為模組化、融合式、可選擇性虛擬化、可擴充�
 
 link:flexpod-fips-solution-benefits-of-flexpod-converged-infrastructure.html["先前版本：FlexPod 解決方案優勢：融合式基礎架構。"]
 
+[role="lead"]
 此功能為模組化、融合式、可選擇性虛擬化、可擴充（橫向擴充和垂直擴充）、以及具成本效益的平台。FlexPod有了FlexPod 這個平台、您就能獨立橫向擴充運算、網路和儲存設備、加速應用程式部署。此外、模組化架構還能在系統橫向擴充和升級活動期間、維持不中斷營運。
 
 HIT系統的不同元件需要將資料儲存在SMB/CIFS、NFS、ext4和NTFS檔案系統中。這項需求表示基礎架構必須透過NFS、CIFS和SAN傳輸協定提供資料存取。單一NetApp儲存系統可支援所有這些傳輸協定、不需要傳統的傳輸協定專用儲存系統實務做法。此外、單一NetApp儲存系統可支援多種受影響的工作負載、例如EHRs、PACS或VNA、基因組學、VDI等、 提供保證且可設定的效能等級。

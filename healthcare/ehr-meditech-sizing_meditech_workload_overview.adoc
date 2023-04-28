@@ -13,6 +13,7 @@ summary: 本節說明您可能在MEDITECH環境中找到的運算和儲存工作
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節說明您可能在MEDITECH環境中找到的運算和儲存工作負載類型。
 
 

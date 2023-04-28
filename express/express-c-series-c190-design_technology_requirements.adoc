@@ -8,6 +8,7 @@ summary: 根據所選的Hypervisor和網路速度、不需要搭配軟硬體元�
 :allow-uri-read: 
 
 
+[role="lead"]
 根據所選的Hypervisor和網路速度、不需要搭配軟硬體元件。FlexPod此外FlexPod 、還會以兩個單位的單位、列出將Hypervisor節點新增至系統所需的硬體元件。
 
 

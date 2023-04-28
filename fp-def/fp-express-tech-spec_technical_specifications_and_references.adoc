@@ -13,6 +13,7 @@ summary: 本節說明FlexPod 每個《ExExpress》元件的其他重要技術規
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節說明FlexPod 每個《ExExpress》元件的其他重要技術規格。
 
 

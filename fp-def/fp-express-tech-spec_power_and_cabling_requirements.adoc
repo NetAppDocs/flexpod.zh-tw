@@ -13,6 +13,7 @@ summary: 本節說明FlexPod 功能和最低纜線需求、以利執行不需使
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節說明FlexPod 功能和最低纜線需求、以利執行不需使用的功能。
 
 

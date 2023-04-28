@@ -10,6 +10,7 @@ summary: FlexPod Express for VMware vSphere 7.0 搭配 Cisco UCS Mini 和 NetApp
 
 NetApp的Jyh-hing-CHEN CHEN
 
+[role="lead"]
 FlexPod Express for VMware vSphere 7.0 搭配 Cisco UCS Mini 和 NetApp AFF/FAS 解決方案、運用 Cisco UCS Mini 搭配 B200 M5 刀鋒伺服器、 Cisco UCS 6324 機箱內建 Fabric Interconnects 、 Cisco Nexus 31108PC-V 交換器或其他相容交換器、以及 NetApp AFF A220 、 C190 或 FAS2700 系列控制器 HA 配對、 執行 NetApp ONTAP 9.7 資料管理軟體。本 NetApp 驗證架構（ NVA ）部署文件提供設定基礎架構元件、部署 VMware vSphere 7.0 及相關工具所需的詳細步驟、以建立高度可靠且高度可用的 FlexPod Express 型虛擬基礎架構。
 
 link:https://www.netapp.com/pdf.html?item=/media/21938-nva-1154-DEPLOY.pdf["FlexPod Express for VMware vSphere 7.0 搭配 Cisco UCS Mini 和 NetApp AFF/FAS - NVA - 部署"^]

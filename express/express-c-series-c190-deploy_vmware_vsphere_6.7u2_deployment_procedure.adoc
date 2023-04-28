@@ -13,6 +13,7 @@ summary: 本節提供在FlexPod VMware ESXi 6.7U2組態中安裝VMware ESXi的�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節提供在FlexPod VMware ESXi 6.7U2組態中安裝VMware ESXi的詳細程序。下列部署程序已自訂、以納入先前各節所述的環境變數。
 
 在這樣的環境中安裝VMware ESXi有多種方法。此程序使用CIMC介面的虛擬KVM主控台和虛擬媒體功能、以供Cisco UCS C系列伺服器將遠端安裝媒體對應至每個個別伺服器。

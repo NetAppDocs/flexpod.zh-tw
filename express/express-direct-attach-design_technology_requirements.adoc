@@ -8,6 +8,7 @@ summary: 不只是使用不需要的功能、更需要搭配軟硬體元件。Fl
 :allow-uri-read: 
 
 
+[role="lead"]
 不只是使用不需要的功能、更需要搭配軟硬體元件。FlexPod此外、還會說明在系統中新增Hypervisor節點所需的硬體元件（單位為兩個）FlexPod 。
 
 

@@ -13,6 +13,7 @@ summary: 本節將說明FlexPod 選用的功能以供選用。
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節將說明FlexPod 選用的功能以供選用。
 
 

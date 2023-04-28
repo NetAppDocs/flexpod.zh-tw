@@ -10,6 +10,7 @@ summary: 本文件討論使用最新硬體與軟體產品的 FlexPod 參考架�
 
 Gopu Narasimha Reddy 、 Cisco Sanjeev Naldurgkar 、 Cisco David Arnette 、 NetApp
 
+[role="lead"]
 本文件討論使用最新硬體與軟體產品的 FlexPod 參考架構、並提供在虛擬化環境中部署 Microsoft SQL Server 資料庫的組態建議。
 
 建議的解決方案架構建置於 Cisco Unified Computing System （ Cisco UCS ）之上、使用統一化軟體版本來支援 Cisco UCS 硬體平台、包括 Cisco UCS B 系列刀鋒伺服器、 Cisco UCS 6300 Fabric Interconnects 、 Cisco Nexus 9000 系列交換器、以及 NetApp All Flash 系列儲存陣列。此外、此解決方案還包括 VMware vSphere 6.5 、 vSphere 6.5 、提供許多新功能來最佳化儲存使用率、並促進私有雲的使用。

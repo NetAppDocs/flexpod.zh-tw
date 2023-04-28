@@ -15,6 +15,7 @@ summary: 本頁列出使用FlexPod 支援功能來設定Cisco Intersight所需�
 
 link:gcp-ncvo-deploy-flexpod.html["上一篇：部署FlexPod 功能"]
 
+[role="lead"]
 若要設定Cisco Intersight和Intersight小幫手、請參閱Cisco驗證的FlexPod 《支援找到的設計」 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_cvo_ico_ntap.html["請按這裡"^]。
 
 link:gcp-ncvo-terraform-cloud-integration-with-ico-prerequisite.html["下一步：Terraform Cloud與ICO整合的先決條件。"]

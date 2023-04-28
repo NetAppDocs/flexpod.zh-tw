@@ -13,6 +13,7 @@ summary: 對於ESXi主機端組態、請將VMware主機設定為執行任何企�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 對於ESXi主機端組態、請將VMware主機設定為執行任何企業資料庫工作負載的方式：
 
 * 適用於VMware vSphere的VSC會檢查並設定ESXi主機多重路徑設定、以及最適合搭配NetApp儲存系統使用的HBA逾時設定。VSC所設定的值是以NetApp嚴格的內部測試為基礎。

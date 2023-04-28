@@ -13,6 +13,7 @@ summary: 本節說明FlexPod 不同版本的《不一樣》的連線需求。
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節說明FlexPod 不同版本的《不一樣》的連線需求。
 
 

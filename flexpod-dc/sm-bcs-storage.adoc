@@ -15,6 +15,7 @@ summary: 適用於整個系統的儲存組態FlexPod 是根據FlexPod 各個站�
 
 link:sm-bcs-network.html["先前版本：解決方案驗證-網路。"]
 
+[role="lead"]
 適用於整個系統的儲存組態FlexPod 是根據FlexPod 各個站台典型的「解決方案」最佳實務做法而定。對於SM至BC叢集對等和資料複寫、它們使用FlexPod 在兩個站台的站台間交換器之間建立的站台間連結。下列各節將重點介紹驗證所使用的部分連線能力和組態。
 
 

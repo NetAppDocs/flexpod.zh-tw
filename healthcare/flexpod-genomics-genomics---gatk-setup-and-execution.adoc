@@ -15,6 +15,7 @@ summary: 本節說明FlexPod 如何設定檔、如何使用Cromwell引擎、Jar�
 
 link:flexpod-genomics-solution-infrastructure-hardware-and-software-components.html["先前版本：解決方案基礎架構硬體與軟體元件。"]
 
+[role="lead"]
 根據國家人類基因組研究所（ https://www.genome.gov/about-genomics/fact-sheets/A-Brief-Guide-to-Genomics["NHGRI"^]《基因組學》（Genomics）、《基因組學》（Genomics）是一個人所有基因（基因組）的研究、包括這些基因彼此互動、以及與個人環境的互動。」
 
 根據 https://www.genome.gov/about-genomics/fact-sheets/A-Brief-Guide-to-Genomics["NHGRI"^]「脫氧合核DNA（DNA）是一種化學複合物、內含開發和引導幾乎所有生物體活動所需的指示。DNA分子是由兩股扭曲的配對股組成、通常稱為雙螺旋。」 「生物的完整DNA組稱為基因組。」

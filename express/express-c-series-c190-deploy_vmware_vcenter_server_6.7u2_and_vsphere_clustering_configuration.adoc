@@ -13,6 +13,7 @@ summary: 若要設定VMware vCenter Server 6.7和vSphere叢集、請完成本頁
 :imagesdir: ./../media/
 
 
+[role="lead"]
 若要設定VMware vCenter Server 6.7和vSphere叢集、請完成下列步驟：
 
 . 瀏覽至「https://\<<FQDN」或「IP of vCenter>//vSphere-client/」。

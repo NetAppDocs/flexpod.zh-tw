@@ -7580,7 +7580,6 @@
   <block id="bb451481e26e511fe03c69a1058cc460" category="paragraph"><block ref="bb451481e26e511fe03c69a1058cc460" category="inline-link-macro-rx"></block></block>
   <block id="4266bfd7b550d5c65b5619e4baf9ddf3" category="summary">以下是本文件的版本歷程記錄。</block>
   <block id="aafb48343bbcbc586f011c8f87a52d7f" category="cell">2019年11月</block>
-  <block id="1d763cf78cf2374fec79652106e9badd" category="list-text">NVA-1131-Deploy：FlexPod 使用VMware vSphere 6.7UI的VMware Infrastructure Express和採用AFF 直接附加IP型儲存NVA部署的NetApp VMware Infrastructure A220</block>
   <block id="fccf6882b91cb961a97a9187a8a54a3b" category="inline-link"><block ref="fccf6882b91cb961a97a9187a8a54a3b" category="inline-link-rx"></block></block>
   <block id="0856e6e8bd0cec5a876a3a0f2ae0e15e" category="paragraph"><block ref="0856e6e8bd0cec5a876a3a0f2ae0e15e" category="inline-link-rx"></block></block>
   <block id="c2ffa08183bd2bfb9908487bd95e6fe0" category="doc">NVA-1123-Deploy：FlexPod 《使用VMware vSphere 6.7和NetApp AFF 功能的Arse-Express部署指南》</block>
@@ -9772,4 +9771,5 @@
   <block id="2834c2489e66234d739bc68190c533f8" category="sidebar">FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備 - 設計</block>
   <block id="0a60298d1cecc2b46fc00c3b49fad269" category="sidebar">FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備 - 部署</block>
   <block id="b1b25033ea7463aca79f95ef822af033" category="list-text">如果使用FQDN將不完整的叢集新增至AIM-UM、則不會填入「儲存設備庫存檢查」頁面。ONTAP使用者必須使用ONTAP IP位址將靜態叢集新增至AIM-UM。</block>
+  <block id="3684bd581345640f9a259d9a0657db7e" category="list-text">NVA-1131-Deploy ： FlexPod Express 搭配 VMware vSphere 6.7UI 和 NetApp AFF A220 、搭配直接附加的 IP 型儲存 NVA 部署</block>
 </blocks>

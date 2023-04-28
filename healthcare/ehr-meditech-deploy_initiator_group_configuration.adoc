@@ -13,6 +13,7 @@ summary: 使用FC作為資料網路傳輸協定時、請在每個儲存控制器
 :imagesdir: ./../media/
 
 
+[role="lead"]
 使用FC作為資料網路傳輸協定時、請在每個儲存控制器上建立兩個啟動器群組（igroup）。第一個igroup包含裝載MEDITECH主機VM的VMware ESXi伺服器上FC主機介面卡的WWPN（適用於MEDITECH的igroup）。
 
 您必須根據環境設定來設定MEDITECH igroup作業系統類型。例如：

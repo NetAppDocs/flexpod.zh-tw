@@ -15,6 +15,7 @@ summary: 本節說明本解決方案所使用的解決方案基礎架構和軟�
 
 link:flexpod-genomics-benefits-of-deploying-genomic-workloads-on-flexpod.html["先前版本：將基因工作負載部署在FlexPod 架構上的優點。"]
 
+[role="lead"]
 下圖說明FlexPod 用於網關設定與驗證的「不二」系統。我們使用 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html["採用VMware vSphere 7.0與NetApp的解決方案資料中心9.7 Cisco驗證設計（CVD）FlexPod ONTAP"^] 在設定過程中。
 
 image:flexpod-genomics-image6.png["錯誤：缺少圖形影像"]

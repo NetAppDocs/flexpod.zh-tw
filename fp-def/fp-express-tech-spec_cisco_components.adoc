@@ -13,6 +13,7 @@ summary: Cisco是FlexPod 對此解決方案的運算和網路層做出重大貢�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Cisco是FlexPod 對此解決方案的運算和網路層做出重大貢獻的不二選擇。本節說明FlexPod 適用於Express的Cisco UCS和Cisco Nexus元件。
 
 

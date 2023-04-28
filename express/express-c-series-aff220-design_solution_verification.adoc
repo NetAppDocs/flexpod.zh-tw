@@ -8,6 +8,7 @@ summary: 從備援和可用度到每項個別功能、整個FlexPod 流程都經
 :allow-uri-read: 
 
 
+[role="lead"]
 Cisco與NetApp設計並打造FlexPod 出一套適用於其客戶的卓越基礎架構平台。由於採用領先業界的元件設計、因此客戶可以信賴FlexPod 以支援基礎架構的功能為基礎的支援。根據《不完整產品組合》的基本原則FlexPod 、FlexPod Cisco與NetApp資料中心的架構設計師與工程師已徹底測試過《不完整》架構。從備援和可用度到每項個別功能、整個FlexPod 流程都經過驗證、可為客戶建立信心、並建立對設計流程的信任感。
 
 VMware vSphere 6.7已通過FlexPod 驗證、適用於不完整的VMware Express基礎架構元件。這項驗證包括Hypervisor的10GbE上行鏈路連線選項。

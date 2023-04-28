@@ -13,6 +13,7 @@ summary: 各種Cisco Nexus產品可做為特定FlexPod 功能部署的交換元�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 各種Cisco Nexus產品可做為特定FlexPod 功能部署的交換元件。這些選項大多採用傳統的Cisco Nexus OS或NX-OS軟體。Cisco Nexus系列交換器在產品線內提供各種功能。本文件稍後將詳細說明這些功能。
 
 Cisco在軟體定義網路空間提供的產品稱為以應用程式為中心的基礎架構（ACI）。Cisco Nexus產品線支援ACI模式、也稱為Fabric模式、是Cisco Nexus 9300系列。這些交換器也可以部署在NX-OS或獨立模式。

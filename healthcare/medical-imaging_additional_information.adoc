@@ -13,6 +13,7 @@ summary: 若要深入瞭解本文所述資訊、請檢閱下列文件與網站�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 若要深入瞭解本文所述資訊、請檢閱下列文件與網站：
 
 * 《Datacenter for AI/ML with Cisco UCS 480 ML for Deep Learning設計指南》FlexPod

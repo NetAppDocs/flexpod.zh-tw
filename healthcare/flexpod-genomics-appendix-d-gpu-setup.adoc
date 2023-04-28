@@ -15,6 +15,7 @@ summary: 在發佈時、網關工具並未原生支援內部部署的GPU型執�
 
 link:flexpod-genomics-appendix-c.html["上一篇：使用Cromwell引擎執行網關的輸出。"]
 
+[role="lead"]
 在發佈時、網關工具並未原生支援內部部署的GPU型執行。提供下列設定與指引、讓讀者瞭解FlexPod 使用GATE PCIe夾層卡的後置NVIDIA Tesla P6 GPU使用時、如何簡單易用。
 
 我們使用下列Cisco驗證設計（CVD）做為參考架構和最佳實務指南、來設定FlexPod 「不支援」環境、以便執行使用GPU的應用程式。

@@ -15,6 +15,7 @@ summary: 在本頁、我們將以範例資料複寫工作流程來重新審視�
 
 link:gcp-ncvo-terraform-execution-from-controller.html["先前版本：從控制器執行Terraform。"]
 
+[role="lead"]
 在本節中、我們將以範例資料複寫工作流程來重新審視解決方案、並進行一些測量、以驗證資料複寫的完整性、從ONTAP 執行FlexPod 於Google Cloud Volumes ONTAP Cloud上的《從以NetApp執行的NetApp列舉到NetApp》。
 
 我們在此解決方案中使用Cisco Intersight工作流程Orchestrator、並將繼續使用此解決方案作為使用案例。

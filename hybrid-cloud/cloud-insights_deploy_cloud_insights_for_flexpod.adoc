@@ -13,6 +13,7 @@ summary: 必須完成下列工作、才能部署Cloud Insights 適用於FlexPod 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 若要部署解決方案、您必須完成下列工作：
 
 . 註冊Cloud Insights 以使用此功能

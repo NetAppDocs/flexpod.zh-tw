@@ -13,4 +13,5 @@ summary: 當建立LUN時、就會建立MEDITECH主機的LUN對應。
 :imagesdir: ./../media/
 
 
+[role="lead"]
 當建立LUN時、就會建立MEDITECH主機的LUN對應。

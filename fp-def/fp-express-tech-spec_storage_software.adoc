@@ -13,6 +13,7 @@ summary: 本節所列的儲存作業系統可在FlexPod 《支援的資訊之速
 :imagesdir: ./../media/
 
 
+[role="lead"]
 支援執行NetApp功能完善或功能完善的儲存系統。FlexPod ONTAP SANtricity
 
 

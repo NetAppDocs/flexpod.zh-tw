@@ -13,6 +13,7 @@ summary: 本節所列的任何平台均需使用支援支援功能的支援功�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本節所列的任何平台均需使用支援支援功能的支援功能、才能使用支援功能的支援功能。FabricPool ONTAP其他FabricPool 的需求取決於要附加的雲端層。對於擁有固定容量相對較小的入門級AFF 支援平台（例如NetApp AFF 歇爾C190）FabricPool 、可將非使用中資料移至雲端層的效率極高。
 
 

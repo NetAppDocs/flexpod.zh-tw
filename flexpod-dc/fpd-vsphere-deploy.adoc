@@ -10,6 +10,7 @@ summary: 本文件說明採用 NetApp ONTAP 9.7 技術的 Cisco 和 NetApp FlexP
 
 John George 、 Cisco Sree Lakshmi Lanka 、 NetApp
 
+[role="lead"]
 本文件說明採用 NetApp ONTAP 9.7 技術的 Cisco 和 NetApp FlexPod 資料中心、採用 NetApp AFF A400 All Flash 儲存系統、搭配第二代 Intel Xeon 可擴充處理器的 Cisco UCS Manager 統一化軟體版本 4.1 （ 2 ）和 VMware vSphere 7.0 。Cisco UCS Manager （ UCSM ） 4.1 （ 2 ）提供下列整合式支援：
 
 * 所有目前的 Cisco UCS Fabric 互連機型： 6200 、 6300 、 6324 （ Cisco UCS Mini ）

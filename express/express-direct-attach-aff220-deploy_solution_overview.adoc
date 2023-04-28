@@ -13,6 +13,7 @@ summary: 此解決方案屬於融合式基礎架構方案的一部分。FlexPod 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 此解決方案屬於融合式基礎架構方案的一部分。FlexPod FlexPod
 
 

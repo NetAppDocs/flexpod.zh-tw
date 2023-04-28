@@ -13,6 +13,7 @@ summary: 本文件針對FlexPod MEDITECH軟體的基本需求組態、提供詳�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 適用於MEDITECH軟體的支援功能、是專為每個層級的容錯設計。FlexPod系統中沒有單點故障。為獲得最佳效能、Cisco建議使用熱備援刀鋒伺服器。
 
 本文件針對FlexPod MEDITECH軟體的基本需求組態、提供詳細的指引。在本節中、我們提供一些高階步驟、以及一些範例、協助您準備FlexPod 好支援此功能的Cisco UCS運算平台元素。本指南的先決條件是FlexPod 、根據中的指示、將該等支援組態機架安裝、供電及連接纜線 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["利用VMware vSphere 6.5 Update 1、NetApp解決方案A系列和Cisco UCS Manager 3.2、搭配光纖通道儲存設備的資料中心FlexPod AFF"^]CVD：

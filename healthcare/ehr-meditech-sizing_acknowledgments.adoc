@@ -13,6 +13,7 @@ summary: 下列人員對本指南的撰寫與建立貢獻良多。
 :imagesdir: ./../media/
 
 
+[role="lead"]
 下列人員對本指南的撰寫與建立貢獻良多。
 
 * NetApp技術行銷工程師Brandon Agee

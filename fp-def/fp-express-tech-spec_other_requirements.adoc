@@ -13,6 +13,7 @@ summary: 以下列出更多FlexPod 關於此功能的要求。
 :imagesdir: ./../media/
 
 
+[role="lead"]
 其他關於Express的要求FlexPod 包括：
 
 * 所有設備都需要有效的支援合約、包括：

@@ -15,6 +15,7 @@ summary: 在本節中、我們會針對各種已驗證的使用案例、重新�
 
 link:flexpod-rho-cvo-astra-control-center-installation-on-openshift-container-platform.html["先前版本：在OpenShift Container Platform上安裝Astra Control Center。"]
 
+[role="lead"]
 在本節中、我們會針對以下使用案例重新審視解決方案：
 
 * 將狀態化應用程式從遠端備份還原至雲端上執行的另一個OpenShift叢集。

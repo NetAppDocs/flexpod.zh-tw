@@ -13,6 +13,7 @@ summary: 本節詳細說明FlexPod 使用ONTAP NetApp或Cisco UCS刀鋒伺服器
 :imagesdir: ./../media/
 
 
+[role="lead"]
 本文件所提供的NetApp FlexPod 解決方案部署儲存指南涵蓋：
 
 * 使用本功能的環境ONTAP

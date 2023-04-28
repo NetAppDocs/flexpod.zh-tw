@@ -15,6 +15,7 @@ summary: 可利用符合FIPS 140-2標準的Cisco UCS伺服器來設計一套架�
 
 link:flexpod-fips-control-plane-versus-data-plane.html["上一個：控制面與資料平面。"]
 
+[role="lead"]
 可利用符合FIPS 140-2標準的Cisco UCS伺服器來設計一套架構。FlexPod美國美國NIST、Cisco UCS伺服器可在FIPS 140-2第1級法規遵循模式下運作。如需FIPS相容Cisco元件的完整清單、請參閱 https://www.cisco.com/c/en/us/solutions/industries/government/global-government-certifications/fips-140.html?flt0_general-table0=UCSM["Cisco FIPS 140頁面"^]。Cisco UCS Manager已通過FIPS 140-2驗證。
 
 

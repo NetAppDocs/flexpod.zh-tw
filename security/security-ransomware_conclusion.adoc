@@ -13,6 +13,7 @@ summary: 作者建議在發生攻擊時不要支付贖金、因為這樣做可�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 勒索軟體是有組織犯罪的產物、攻擊者的行為不符合道德規範。即使收到贖金、他們也可能不提供解密金鑰。受害者不僅遺失資料、也會損失大量金錢、並會面臨與生產資料遺失有關的後果。
 
 根據A https://www.forbes.com/sites/leemathews/2018/03/09/why-you-should-never-pay-a-ransomware-ransom/["Forbes文章"^]、只有19%的勒索軟體受害者在支付贖金後才取得資料。因此、作者建議在發生攻擊時不要支付贖金、因為這樣做可強化攻擊者對其商業模式的信心。

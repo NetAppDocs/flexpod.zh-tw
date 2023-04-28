@@ -15,6 +15,7 @@ summary: 在這個解決方案中、NetApp Cloud Data Service Cloud Volumes ONTA
 
 link:gcp-ncvo-solution-validation.html["先前版本：解決方案驗證。"]
 
+[role="lead"]
 在這個解決方案中、NetApp Cloud Data Service Cloud Volumes ONTAP 、可靠性和FlexPod 可靠性資料中心基礎架構是用來建置DR解決方案、並採用Cisco Intersight Cloud Orchestrator技術的公有雲。此解決方案不斷進化、讓客戶能夠將應用程式與業務交付流程現代化。FlexPod有了這套解決方案、您可以利用公有雲做為暫時性或全時DR計畫的理想據點、同時降低DR解決方案的成本。
 
 內部部署FlexPod 的內部部署的NetApp功能與NetApp Cloud Volumes ONTAP 功能之間的資料複寫是由獲證實的SnapMirror技術所處理、但您也可以選擇Cloud Sync 其他NetApp資料傳輸與同步工具、例如針對您的資料移動需求而選擇的功能。以TLS/AES為基礎的內建加密技術、提供即時資料安全性。

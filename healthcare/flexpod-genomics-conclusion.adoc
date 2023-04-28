@@ -15,6 +15,7 @@ summary: 全球許多醫療組織都已將FlexPod 不僅僅是一個通用平台
 
 link:flexpod-genomics-appendix-d-gpu-setup.html["上一篇：GPU設定。"]
 
+[role="lead"]
 全球許多醫療組織都已將FlexPod 不僅僅是一個通用平台的不僅僅是功能、更是以功能為基礎。有了此功能、您就能安心部署醫療功能。FlexPodNetApp支援的解決方案標準配備能夠實作業界領先的一組現成通訊協定。FlexPod ONTAP無論申請執行特定病患基因組學的來源為何、FlexPod 互通性、存取能力、可用度及擴充性都是以一套完整的平台為標準。當我們在FlexPod 一個不完整的平台上標準化時、創新文化就變得具有感染力。
 
 

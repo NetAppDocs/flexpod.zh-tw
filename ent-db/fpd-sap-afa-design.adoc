@@ -10,6 +10,7 @@ summary: 本文件說明 Cisco 與 NetApp FlexPod 解決方案、這是一套經
 
 Pramod Ramamurthy 、 Cisco Marco Schoen 、 NetApp
 
+[role="lead"]
 本文件說明 Cisco 與 NetApp FlexPod 解決方案、這是一套經過驗證的方法、可用於部署 SAP HANA 量身打造的資料中心整合（ TDI ）環境。這項經過驗證的設計提供準則和架構、可運用 Cisco 和 NetApp 的最佳實務實務實作 SAP HANA 。
 
 FlexPod 是領先業界的整合式基礎架構、可支援各種企業工作負載和使用案例。此解決方案可讓您以量身打造的資料中心整合模式、快速可靠地部署 SAP HANA 。

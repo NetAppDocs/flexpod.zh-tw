@@ -13,6 +13,7 @@ summary: 本節列出NetApp舊版磁碟櫃、FAS 支援功能的控制器和儲�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 下表列出NetApp舊版儲存控制器選項。
 
 |===

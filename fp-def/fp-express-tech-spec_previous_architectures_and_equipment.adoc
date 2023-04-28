@@ -13,6 +13,7 @@ summary: 本節列出FlexPod 先前使用的《不實時速覽系統架構與硬
 :imagesdir: ./../media/
 
 
+[role="lead"]
 NetApp是一款靈活的解決方案、可讓客戶同時使用Cisco和NetApp目前銷售的現有設備和新設備。FlexPod有時、Cisco和NetApp的特定設備機型會被指定為停產。
 
 即使這些機型已經不再提供、在銷售結束日期之前購買這些機型的客戶仍可在FlexPod 不支援的情況下使用該設備。

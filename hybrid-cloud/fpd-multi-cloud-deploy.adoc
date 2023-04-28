@@ -10,6 +10,7 @@ summary: 本文件針對混合雲設定 FlexPod 資料中心提供深入的組�
 
 Haseeb Niazi 、 Cisco David Arnette 、 NetApp
 
+[role="lead"]
 本文件針對混合雲設定 FlexPod 資料中心提供深入的組態和實作準則。下列設計元素將此版本的 FlexPod 與先前的機型區分開來：
 
 * 將 Cisco CloudCenter 與 FlexPod Datacenter 整合為私有雲端、並將 ACI 整合為私有雲端

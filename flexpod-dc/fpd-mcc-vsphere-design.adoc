@@ -10,6 +10,7 @@ summary: 本文件說明 Cisco ACI Multi-Pod 和 NetApp MetroCluster IP 解決�
 
 Haseeb Niazi 、 Cisco Arvind Ramakrishnan 、 NetApp
 
+[role="lead"]
 本文件說明 Cisco ACI Multi-Pod 和 NetApp MetroCluster IP 解決方案整合至 FlexPod 資料中心、以提供高可用度的多資料中心解決方案。多重資料中心架構能夠利用不中斷營運的工作負載移動性、在兩個資料中心之間平衡工作負載、因此可在站台之間移轉服務、而無需持續中斷。
 
 FlexPod with ACI Multi-Pod 和 NetApp MetroCluster IP 解決方案具有下列優點：

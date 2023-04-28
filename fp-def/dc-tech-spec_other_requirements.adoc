@@ -13,6 +13,7 @@ summary: 此架構具有下列額外的互通性與支援相關需求FlexPod
 :imagesdir: ./../media/
 
 
+[role="lead"]
 這個架構具有下列額外的互通性與支援相關要求：FlexPod
 
 * NetApp必須列出並支援所有硬體與軟體元件 http://mysupport.netapp.com/matrix["IMT"^]、 https://ucshcltool.cloudapps.cisco.com/public/["Cisco UCS硬體與軟體相容清單"^]和Cisco UCS硬體與軟體互通性對照表工具。

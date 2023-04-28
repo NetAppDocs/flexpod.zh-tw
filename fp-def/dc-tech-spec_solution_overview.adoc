@@ -15,6 +15,7 @@ summary: 此平台是一種預先設計的最佳實務資料中心架構、建�
 
 Arvind Ramakrishnan和NetApp的Jyh-sen CHEN
 
+[role="lead"]
 此平台是一種預先設計的最佳實務資料中心架構、建置於Cisco Unified Computing System（Cisco UCS）、Cisco Nexus系列交換器及NetApp儲存控制器（例如：NetApp、NetApp、FlexPod AFF ASA FAS
 
 適用於執行各種虛擬化Hypervisor、裸機作業系統和企業工作負載的平台。FlexPod不僅提供基礎組態、還能靈活調整規模及最佳化、以因應多種不同的使用案例和需求。FlexPod

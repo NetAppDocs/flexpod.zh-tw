@@ -10,6 +10,7 @@ summary: 本文件提供參考架構、設計指南及部署、可在採用 Cisc
 
 Ramesh Guduru 、 Cisco David Arette 、 NetApp
 
+[role="lead"]
 本文件提供參考架構、設計指南及部署、可在採用 Cisco UCS 和 NetApp All Flash FAS （ AFF ） A300 儲存設備的 FlexPod 資料中心上、提供多達 5000 個用戶的混合工作負載終端使用者運算環境。此解決方案包括 VMware Horizon 伺服器型遠端桌面伺服器託管工作階段、 VMware Horizon 持續性 Microsoft Windows 10 虛擬桌面、以及 VMware vSphere 6.5 上的 VMware Horizon 非持續性 Microsoft Windows 10 即時複製虛擬桌面。
 
 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_vmware_horizon_n9k_aff_ucsm32.html["FlexPod Datacenter 搭配 VMware Horizon View 7.3 和 VMware vSphere 6.5 Update 1 搭配 Cisco UCS Manager 3.2 、可容納 5000 個用戶"^]

@@ -13,6 +13,7 @@ summary: 若要深入瞭解本文所述資訊、請檢閱下列文件和/或網�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 若要深入瞭解本文所述資訊、請檢閱下列文件和 / 或網站：
 
 * 最佳實務做法FabricPool

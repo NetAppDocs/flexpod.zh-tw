@@ -15,6 +15,7 @@ summary: 本節說明./gatk輸出的執行。
 
 link:flexpod-genomics-appendix-a.html["上一步：使用Jar檔案執行GATE的輸出。"]
 
+[role="lead"]
 使用「/gatk」指令碼執行網關、產生下列範例輸出。
 
 ....

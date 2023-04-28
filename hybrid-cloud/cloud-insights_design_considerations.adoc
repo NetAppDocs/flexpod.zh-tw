@@ -13,6 +13,7 @@ summary: 「支援資料中心」解決方案是由Cisco與NetApp設計的融合
 :imagesdir: ./../media/
 
 
+[role="lead"]
 「支援資料中心」解決方案是由Cisco與NetApp設計的融合式基礎架構、FlexPod 可提供動態、高可用度且可擴充的資料中心環境、以利執行企業工作負載。解決方案中的運算和網路資源由Cisco UCS和Nexus產品提供、而儲存資源則由ONTAP 效益管理系統提供。當更新的硬體機型或軟體與韌體版本可供使用時、解決方案設計會定期增強。這些詳細資料、以及解決方案設計與部署的最佳實務做法、均記錄在Cisco驗證設計（CVD）或NetApp驗證架構（NVA）文件中、並定期發佈。
 
 我們提供最新的CVD文件、詳述FlexPod 「資料中心」解決方案設計 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_vmware_vs_7_design.html["請按這裡"^]。

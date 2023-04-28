@@ -15,6 +15,7 @@ summary: 針對此解決方案的網路組態FlexPod 遵循每FlexPod 個站台�
 
 link:sm-bcs-compute.html["先前版本：解決方案驗證-運算。"]
 
+[role="lead"]
 針對此解決方案的網路組態FlexPod 遵循每FlexPod 個站台典型的「解決方案」最佳實務做法。對於站台間連線、解決方案驗證組態FlexPod 會將這兩個站台的Nexus交換器連接在一起、以提供站台間連線功能、在兩個站台之間延伸VLAN。下列各節將重點介紹驗證所使用的部分連線能力和組態。
 
 

@@ -13,6 +13,7 @@ summary: 技術規格提供FlexPod 有關解決方案中硬體元件的詳細資
 :imagesdir: ./../media/
 
 
+[role="lead"]
 技術規格提供FlexPod 有關解決方案中硬體元件的詳細資料、例如機箱、FEXs、伺服器、交換器、 和儲存控制器。
 
 

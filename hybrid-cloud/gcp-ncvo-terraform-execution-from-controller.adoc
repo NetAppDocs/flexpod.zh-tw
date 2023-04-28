@@ -15,6 +15,7 @@ summary: 我們可以使用控制器來執行Terraform計畫。如果您已使�
 
 link:gcp-ncvo-dr-workflow.html["上一個：DR工作流程。"]
 
+[role="lead"]
 我們可以使用控制器來執行Terraform計畫。如果您已使用ICO工作流程執行Terraform方案、則可以跳過本節。
 
 

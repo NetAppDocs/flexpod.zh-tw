@@ -15,6 +15,7 @@ summary: 本頁說明FlexPod 適用於OpenShift Container Platform 4裸機的邏
 
 link:flexpod-rho-cvo-solution-components.html["先前版本：解決方案元件。"]
 
+[role="lead"]
 若要瞭FlexPod 解適用於OpenShift Container Platform 4裸機設計、部署詳細資料、以及NetApp Astra Trident安裝與組態、請參閱 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_iac_redhat_openshift.html["使用OpenShift Cisco驗證設計與部署指南（CVD）FlexPod"^]。本CVD涵FlexPod 蓋使用Ansible的功能進行的功能性和OpenShift Container Platform部署。CVD也提供有關準備工作節點、Astra Trident安裝、儲存後端及儲存類別組態的詳細資訊、這些是部署及設定Astra Control Center的幾項必要條件。
 
 下圖說明FlexPod 了OpenShift Container Platform 4 Bare Metal on the效益。

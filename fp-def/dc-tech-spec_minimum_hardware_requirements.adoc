@@ -13,6 +13,7 @@ summary: 「資料中心」組態具有最低的硬體需求、包括但不限�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 「資料中心」組態具有最低的硬體需求、包括但不限於交換器、網路互連、伺服器和NetApp儲存控制器。FlexPod
 
 您必須使用Cisco UCS伺服器。C系列和B系列伺服器均已用於通過驗證的設計。Cisco Nexus Fabric延伸器（FEXs）可搭配C系列伺服器選用。

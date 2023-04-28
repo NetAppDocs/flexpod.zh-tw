@@ -15,6 +15,7 @@ summary: 另一個自我管理的OpenShift Container Platform 4叢集會部署�
 
 link:flexpod-rho-cvo-flexpod-for-openshift-container-platform-4-bare-metal-installation.html["先前版本：FlexPod 適用於OpenShift Container Platform 4裸機安裝。"]
 
+[role="lead"]
 另一個自我管理的OpenShift Container Platform 4叢集會部署在AWS上做為DR站台。主節點和工作節點橫跨三個可用區域、提供高可用度。
 
 image:flexpod-rho-cvo-image10.png["錯誤：缺少圖形影像"]

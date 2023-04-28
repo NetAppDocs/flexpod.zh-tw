@@ -13,6 +13,7 @@ summary: 利用設定及設定的功能來監控您的「不含資料的資料�
 :imagesdir: ./../media/
 
 
+[role="lead"]
 利用設定及設定的功能來監控您的「不含資料的資料中心」解決方案、我們可以在儀表板上探索您可以執行的部分工作、以評估及監控您的環境。Cloud Insights FlexPod在本節中、我們重點介紹Cloud Insights 五個適用於下列項目的主要使用案例：
 
 * 整合Active IQ

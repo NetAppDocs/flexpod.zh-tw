@@ -13,6 +13,7 @@ summary: 以下列出FlexPod 有關整合功能組態的連線需求。
 :imagesdir: ./../media/
 
 
+[role="lead"]
 這個組態具有下列連線需求：FlexPod
 
 * 所有元件都需要個別的100Mbps乙太網路/1Gb乙太網路頻外管理網路。

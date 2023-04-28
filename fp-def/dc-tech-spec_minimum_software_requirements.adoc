@@ -13,6 +13,7 @@ summary: 下列資訊說明FlexPod 了有關功能不完整的基本軟體需求
 :imagesdir: ./../media/
 
 
+[role="lead"]
 下列最低軟體需求為基礎：FlexPod
 
 * NetApp ONTAP 產品：
