@@ -9770,6 +9770,13 @@
   <block id="b3e0099b048c24efc807f9dd8dad5387" category="sidebar">FlexPod Datacenter 搭配 IBM Cloud Private 、搭配 Cisco UCS Manager 、 NetApp ONTAP 9.3 AFF 和 VMware vSphere 6.5U1 - 設計</block>
   <block id="2834c2489e66234d739bc68190c533f8" category="sidebar">FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備 - 設計</block>
   <block id="0a60298d1cecc2b46fc00c3b49fad269" category="sidebar">FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備 - 部署</block>
-  <block id="b1b25033ea7463aca79f95ef822af033" category="list-text">如果使用FQDN將不完整的叢集新增至AIM-UM、則不會填入「儲存設備庫存檢查」頁面。ONTAP使用者必須使用ONTAP IP位址將靜態叢集新增至AIM-UM。</block>
   <block id="3684bd581345640f9a259d9a0657db7e" category="list-text">NVA-1131-Deploy ： FlexPod Express 搭配 VMware vSphere 6.7UI 和 NetApp AFF A220 、搭配直接附加的 IP 型儲存 NVA 部署</block>
+  <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">2023 年 4 月</block>
+  <block id="4616e97717152ad6ebe9ea5b5148926e" category="list-text">在使用者介面的「庫存」區段中的「原則」頁面下新增保護原則（ SnapMirror ）和 Snapshot 原則索引標籤。</block>
+  <block id="70d106565a3a540dfd0f8bab83e76a38" category="list-text">在使用者介面的 [ 清查 ] 區段下新增了 [NFS 用戶端 ] 頁面。</block>
+  <block id="8e0535294f5f33af426f147791172241" category="list-text">已在使用者介面的 [ 資源清冊 ] 區段下的 [ 儲存 VM ] 頁面中新增 [ 受保護的 ] 欄。</block>
+  <block id="bde3fb96ef210104acac308d66ce1c9a" category="list-text">已修改資料減量資訊的報告和顯示方式。</block>
+  <block id="33f06c93ff0e249c6d028973d21932bc" category="list-text">在使用者介面「庫存」區段的「層級」頁下方新增「本機層級」和「雲端層級」索引標籤。</block>
+  <block id="cebb5bee9f2c3fd7a29eb3a7ad7f1530" category="list-text">節點欄現在會顯示在使用者介面「詳細目錄」區段「連接埠」頁面下方的「名稱」欄之後。</block>
+  <block id="59829409d4681e66c64ba39915db7b13" category="list-text">如果使用 FQDN 將 ONTAP 叢集新增至 AIQUM 、則「儲存設備詳細目錄檢查」頁面將不會填入。使用者必須使用 IP 位址將 ONTAP 叢集新增至 AIQUM 。</block>
 </blocks>
