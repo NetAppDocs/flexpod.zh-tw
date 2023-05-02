@@ -580,8 +580,6 @@
   <block id="c453f553d73c506df5a01e3bd8ff03e0" category="cell">NetApp支援授權</block>
   <block id="13163c7b776f46d35bcf8a753d9e4c1b" category="cell">現場4小時；月數：SupportEdge 36</block>
   <block id="34ff3e9936bccd6963e8de9dc3992201" category="cell">CS -O2 - 4小時</block>
-  <block id="571bbc28568c2b00c6975b19fb5dd53b" category="inline-link-macro"><block ref="571bbc28568c2b00c6975b19fb5dd53b" category="inline-link-rx"></block></block>
-  <block id="09a6eadb4b8f87bcdef9f46ac5b0a651" category="cell"><block ref="09a6eadb4b8f87bcdef9f46ac5b0a651" category="inline-link-macro-rx"></block></block>
   <block id="813e53e7bb54b15e72348ce9fe93dbdc" category="paragraph">下表列出E系列儲存設備的NetApp支援授權選項。</block>
   <block id="ef63debe35aa2ea907cf5d6ba93bbca3" category="cell">硬體支援Premium 4小時現場服務；月數：36</block>
   <block id="3700267a6a1c84c57290ba35d60b6065" category="cell">Svc-O2/4hr-E</block>
@@ -1206,7 +1204,6 @@
   <block id="1d9f38092927f6d65753edab7ca3d039" category="inline-link">NetApp文件：Cisco Nexus 3132Q-V交換器</block>
   <block id="392fceb5a4d064176abe344715627cfb" category="cell"><block ref="bc5b55d95c18c102e8300585910ae029" category="inline-link-rx"></block></block>
   <block id="0bc97a80630d922e5e5de8dd8689bcaa" category="inline-link">NetApp文件：Cisco Nexus 9336C-FX2交換器</block>
-  <block id="1842d50bda8c8607d91b97316b2186a2" category="cell"><block ref="1842d50bda8c8607d91b97316b2186a2" category="inline-link-rx"></block></block>
   <block id="bfdd18e32fc0e9981825376863beb7a1" category="section-title">NetApp磁碟櫃與磁碟機選項</block>
   <block id="ce9c0b8b6c23f9fbba191e4d302b977e" category="paragraph">所有儲存控制器至少需要一個NetApp磁碟櫃。</block>
   <block id="c590db225b3b8f81ea877e347416fc4b" category="paragraph">所選的NetApp機櫃類型決定該機櫃中可用的磁碟機類型。</block>
@@ -1690,7 +1687,6 @@
   <block id="625631f3e07150b8b24d4b8387119edd" category="paragraph">最終的功能是協助簡化IT作業並降低營運成本、讓IT基礎架構管理員能夠專注於有助於臨床醫師創新的工作、而非只是為了維持營運不中斷。FlexPod</block>
   <block id="6706db4316a6632cb20d560fc933ceb1" category="list-text">*通過驗證的設計與保證成果* FlexPod 。*《整套設計與部署指南》已通過驗證、可重複使用、其中涵蓋完整的組態詳細資料、以及部署FlexPod 可靠的《整套解決方案》所需的業界最佳實務做法。Cisco與NetApp驗證的設計指南、部署指南與架構、可協助您的醫療或生命科學組織從一開始就不再猜測實作已驗證且值得信賴的平台。有了NetApp、您可以加快部署時間、並降低成本、複雜度和風險。FlexPod通過驗證的設計與部署指南、將此平台建立為各種基因組工作負載的理想平台。FlexPod FlexPod</block>
   <block id="1ae6b2f7f1fad59fc238abf083ff0117" category="inline-link">致勝榮譽</block>
-  <block id="f59c589a8a56328d42c01fe4907799db" category="list-text">*創新與敏捷度* FlexPod 推薦使用Epic、Cerner、Meditech等EHRs、以及Agfa、GE、飛利浦等影像系統、作為理想的平台。如需詳細資訊、請參閱<block ref="29fbfe5255d192aa57455db81ba41a3d" category="inline-link-rx"></block> 以及目標平台架構、請參閱Epic使用者網路。在上執行基因組學<block ref="24f2c347deb06bba4de59a5266702e7d" category="inline-link-rx"></block> 讓醫療組織能夠靈活地繼續創新之路。利用此功能、組織架構的改變自然就能實現。FlexPod當企業組織採用FlexPod 統一化的解決平台時、醫療IT專家就能撥備時間、精力和資源來進行創新、因此能夠靈活因應生態系統的需求。</block>
   <block id="c7e8b95fdeca6082100682f1b89e8b20" category="list-text">*資料解放* FlexPod 利用融合式基礎架構平台與NetApp ONTAP 支援儲存系統、您可以從單一平台、透過各種大規模的傳輸協定、提供並存取基因組學資料。NetApp支援的解決方案提供簡單、直覺且功能強大的混合雲平台。FlexPod ONTAP您的Data Fabric採用NetApp ONTAP 技術、可跨越實體界限、跨應用程式、將資料一起編織在各個站台之間。您的資料架構是專為資料導向企業打造、專為資料導向企業打造。資料是在多個位置建立和使用、通常需要運用資料、並與其他位置、應用程式和基礎架構共用。因此、您需要一致且整合的方式來管理IT。此功能可讓您的IT團隊掌控一切、並簡化不斷增加的IT複雜度。FlexPod</block>
   <block id="7fcbd234b81a57e30b18381191dd1e46" category="list-text">*安全的多租戶共享* FlexPod 。*此功能使用FIPS 140-2相容的密碼編譯模組、因此組織能夠將安全性實作為基礎要素、而非事後考量。無論平台的規模為何、透過單一整合式基礎架構平台、均可讓組織實作安全的多租戶共享。FlexPod利用安全的多租戶共享和QoS、有助於將工作負載區隔、並將使用率最大化。FlexPod這有助於避免資金被鎖定在可能未充分利用的專業平台上、並需要一套專門的技能來管理。</block>
   <block id="18389a4a9ad5795744699cff0ba66c15" category="inline-link">參考資料</block>
@@ -3625,7 +3621,6 @@
   <block id="dd0abb5bf55fbf07bd4b6cbe25c9528e" category="paragraph">購買任何新的一套更新版的叢集時、都會隨附免費的10TB容量、以期為基礎FabricPool 的版次更新授權ONTAP 、不過可能需要額外的支援成本。可以1TB為單位購買各種不含任何容量的不含彈性授權（包括現有授權的額外容量）FabricPool 。</block>
   <block id="8105972a850e9e688b4486ea7d2ed719" category="paragraph">僅可從不含任何資訊的叢集刪除此功能的認證。FabricPool FabricPool</block>
   <block id="55d00560611b7ac6ad1fbc07da675be3" category="inline-link">NetApp知識庫</block>
-  <block id="99ad76c1f19beedce25d63008b6beed4" category="admonition">不只是叢集式授權。FabricPool購買授權時、您應該有可用的UUID（「cluster identify show」）。如需其他授權資訊、請參閱<block ref="4a7942f67fe49d92d9fe4bec3f7e3903" category="inline-link-rx"></block>。</block>
   <block id="9b477d427eec353b19e985f723c091e3" category="summary">您可透過獨立IT分析公司Evaluator Group取得《The》《The NetApp經濟計算機》（英文）FabricPool 、協助您預測內部部署與雲端之間的成本節約效益、以利儲存冷資料。</block>
   <block id="6f48d1fb7c7073c6f1c817cb15e915a2" category="doc">擁有成本</block>
   <block id="93787b18aa3cb5e7c602c81ff4a5cab7" category="inline-link">《經濟計算機》FabricPool</block>
@@ -4010,8 +4005,6 @@
   <block id="2d817d24735f352fea82322ab2c9e621" category="paragraph"><block ref="2d817d24735f352fea82322ab2c9e621" category="inline-link-rx"></block></block>
   <block id="6770ff13f95abd8619a19519877aedf9" category="list-text">NetApp密碼編譯安全模組</block>
   <block id="02817beae9581784d8cd2f39ddda543b" category="paragraph"><block ref="02817beae9581784d8cd2f39ddda543b" category="inline-link-rx"></block></block>
-  <block id="846bf2df66c90e0dd774c49f7106f381" category="list-text">醫療產業網路安全實務：管理威脅及保護病患</block>
-  <block id="2902b923b2807abc94a366d08ff1bda6" category="paragraph"><block ref="2902b923b2807abc94a366d08ff1bda6" category="inline-link-rx"></block></block>
   <block id="bf7fa6fb49dfa01515f774f7a86c6270" category="list-text">中型和大型醫療組織的網路安全實務做法</block>
   <block id="d1bf3cb27e5807caa3600fcdce477355" category="paragraph"><block ref="d1bf3cb27e5807caa3600fcdce477355" category="inline-link-rx"></block></block>
   <block id="3f6b1e7f286b82aada2164eae419754f" category="list-text">Cisco與密碼編譯模組驗證方案（CMVP）</block>
@@ -6767,8 +6760,6 @@
   <block id="c9eaceb67ff025ec33df198962a47e5c" category="paragraph"><block ref="c9eaceb67ff025ec33df198962a47e5c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dc55f28c2dedb56c79b4f1cf6663cc76" category="list-text">此時會出現一則訊息、表示您無法在安裝啟動後暫停或停止完成安裝。按一下「確定」以繼續。</block>
   <block id="c1ec08e67ce2ac0aaa8acbb806bdcb87" category="paragraph"><block ref="c1ec08e67ce2ac0aaa8acbb806bdcb87" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="84ccd33f0cf8671c91d0b35966cd4bfc" category="inline-link-macro">下一步：VMware vCenter Server 6.7U2和vSphere叢集組態</block>
-  <block id="b8267a82f6eba51e14c28c7809060c29" category="paragraph"><block ref="b8267a82f6eba51e14c28c7809060c29" category="inline-link-macro-rx"></block></block>
   <block id="0d4f52ab3825e474b7dc617451d93a84" category="summary">以Cisco驗證設計或NetApp驗證架構的形式提供的參考架構。FlexPod如果差異不會導致部署不受支援的組態、則允許根據特定CVD或NVA的客戶需求而產生的差異。</block>
   <block id="0164ef13019afdd105f57a94f373730a" category="section-title">融合式基礎架構產品組合FlexPod</block>
   <block id="2727a7c39a35aa7db530c5e91b43108e" category="paragraph">以Cisco驗證設計（CVD）或NetApp驗證架構（NVA）的形式提供參考架構。FlexPod如果差異不會導致部署不受支援的組態、則允許根據特定CVD或NVA的客戶需求而產生的差異。</block>
@@ -7204,8 +7195,6 @@
   <block id="1652c10523b89eeb824221f2ff92550c" category="paragraph">這些步驟提供有關移動VM交換檔位置的詳細資料。</block>
   <block id="b6abbf0226ef43662dc3ba8758477628" category="paragraph"><block ref="b6abbf0226ef43662dc3ba8758477628" category="inline-image-macro-rx" type="image"></block></block>
   <block id="56eb1d06de3dc848cd5deb341ffb09cb" category="paragraph"><block ref="56eb1d06de3dc848cd5deb341ffb09cb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2a6def9cea619ed05c8a19762cb1f386" category="inline-link-macro">下一步：VMware vCenter Server 6.7U2安裝程序</block>
-  <block id="3bfa8686431d666d40aa9d9633a22f8e" category="paragraph"><block ref="3bfa8686431d666d40aa9d9633a22f8e" category="inline-link-macro-rx"></block></block>
   <block id="019dc6de8e76037cb2c701eebcc7885a" category="summary">若要深入瞭解本文件所述資訊、請參閱下列文件和/或網站。</block>
   <block id="16dfba14481ba8b67fd1c1d9e0f32d2a" category="inline-link">NetApp</block>
   <block id="bfa7a16f47eedd5d989ebf2d0428b576" category="paragraph"><block ref="92ecca9733c1884030999a9bb401e205" category="inline-link-rx"></block>。<block ref="50abdc2ca21ff2b3aebf336064078561" category="inline-link-rx"></block>.com</block>
@@ -7475,8 +7464,6 @@
   <block id="9f2d14e6a1e3a8e76a5e5c913a338616" category="list-text">對eth1重複步驟3和4、確認上行鏈路連接埠對eth1設定為1。</block>
   <block id="59cf5e87e60bc8dac3259a7e875cc396" category="paragraph"><block ref="59cf5e87e60bc8dac3259a7e875cc396" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89fc9ed38d4fd4f87870644db30e1dce" category="admonition">對於每個初始Cisco UCS伺服器節點、以及新增至環境的每個額外Cisco UCS伺服器節點、必須重複此程序。</block>
-  <block id="4274bde26272a75e2e5256091306e24c" category="inline-link-macro">下一步：NetApp AFF 解決方案儲存部署程序（第2部分）</block>
-  <block id="ef72a944184a2b0d5e5c18a1925f9f82" category="paragraph"><block ref="ef72a944184a2b0d5e5c18a1925f9f82" category="inline-link-macro-rx"></block></block>
   <block id="cf330859b2ad0c199a7115236a00301b" category="section-title">NetApp AFF 推出ONTAP 支援NetApp 9.4的NetApp產品版A220系列</block>
   <block id="69eb600743385e09f1817ed2115dd3d8" category="paragraph">本解決方案採用兩種最新的NetApp產品：NetApp AFF 解決方案A220和ONTAP 《產品名稱與名稱》9.4軟體。</block>
   <block id="b26fc919cdf51f47525ea1a80e97e6bd" category="inline-link">A系列首頁AFF</block>
@@ -7546,8 +7533,6 @@
   <block id="c21e81c3aab0aab4acd336440fc7e817" category="doc">NetApp AFF 產品區儲存部署程序（第2部分）</block>
   <block id="3f7e69d024465486273ba92b509f7277" category="section-title">設定ONTAP 不支援SAN開機儲存設備</block>
   <block id="3ae16a42048bad6c5b188bae7827a446" category="paragraph">若要建立igroup、請從叢集管理節點SSH連線執行下列命令。若要檢視此步驟中建立的三個igroup、請執行「igroup show」命令。</block>
-  <block id="bec21043b4f499ec8a85c4cfd7ed39e9" category="inline-link-macro">下一步：VMware vSphere 6.7U2部署程序</block>
-  <block id="2906e22aba2f3403519d99d40550af4f" category="paragraph"><block ref="2906e22aba2f3403519d99d40550af4f" category="inline-link-macro-rx"></block></block>
   <block id="77e5ffad27392f3ddf5d4e4f8fc3a54a" category="list-text">《VMware vSphere 6.7與NetApp《VMware vCenter A220部署指南》的《Express with VMware vSphere 6.7 and NetApp》（英文）FlexPod AFF</block>
   <block id="bec8480e44f09ae603216b18012cb269" category="inline-link"><block ref="bec8480e44f09ae603216b18012cb269" category="inline-link-rx"></block></block>
   <block id="1ed73ab53e78b7093d8e11511c2c0c0b" category="paragraph"><block ref="1ed73ab53e78b7093d8e11511c2c0c0b" category="inline-link-rx"></block></block>
@@ -7621,8 +7606,6 @@
   <block id="f0948daafded56e6a14593770312a596" category="admonition">本解決方案驗證使用的MTU為9000。不過、您可以針對應用程式需求、為MTU設定不同的值。務必在FlexPod 整個解決方案中設定相同的MTU值。元件之間的MTU組態不正確、會導致封包遭到丟棄、而這些封包需要再次傳輸、進而影響解決方案的整體效能。</block>
   <block id="ccafafe48cdce6143d7b8a0010cb0fca" category="section-title">上行連結至現有的網路基礎架構</block>
   <block id="2745234fb1e856e55967112d4b955056" category="paragraph">視可用的網路基礎架構而定、有數種方法和功能可用來上行鏈路FlexPod 到整個環境。如果存在現有的Cisco Nexus環境、NetApp建議使用VPC、將FlexPod 包含在整個過程中的Cisco Nexus 31108交換器上行鏈路到基礎架構中。上行鏈路可以是10GbE基礎架構解決方案的10GbE上行鏈路、或是1GbE基礎架構解決方案的1GbE（若有需要）。上述程序可用來建立上行鏈路vPC至現有環境。完成組態設定後、請務必執行copy start（複本開始）以儲存每個交換器上的組態。</block>
-  <block id="247059a0bddaa322f546623f7644064e" category="inline-link-macro">下一步：NetApp儲存部署程序（第1部分）</block>
-  <block id="386f19251e645f33bc526e1a77e86b2a" category="paragraph"><block ref="386f19251e645f33bc526e1a77e86b2a" category="inline-link-macro-rx"></block></block>
   <block id="5d7f9156f70734a70d089a6126b120fe" category="summary">若要設定VMware vCenter Server 6.7和vSphere叢集、請完成本頁所述的步驟。</block>
   <block id="cb087a13cbb839a16f79d2e04d726f0e" category="doc">VMware vCenter Server 6.7U2與vSphere叢集組態</block>
   <block id="6c4d37fc356ba2d14eabd3231002618f" category="list-text">瀏覽至「https://\&lt;&lt;FQDN」或「IP of vCenter&gt;//vSphere-client/」。</block>
@@ -7641,8 +7624,6 @@
   <block id="e1fe825d50948b1de80f51051945d8d6" category="paragraph"><block ref="e1fe825d50948b1de80f51051945d8d6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b643406b1f5d5f8c203b27fe6e2440e" category="paragraph"><block ref="6b643406b1f5d5f8c203b27fe6e2440e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9456898bc9e0e275a5115029a91fe08b" category="admonition">此驗證中的「ip_address_of_core傾印收集器」是vCenter IP。</block>
-  <block id="b8aceddd74a5705bde51f5d406654c25" category="inline-link-macro">下一步：NetApp虛擬儲存主控台9.6部署程序</block>
-  <block id="d996b7ec2bff23ae65c92ee64cb5289d" category="paragraph"><block ref="d996b7ec2bff23ae65c92ee64cb5289d" category="inline-link-macro-rx"></block></block>
   <block id="05c49f0c0dc2bd05cc149d6733b32561" category="doc">NVA-1125-設計：FlexPod 採用Cisco UCS C系列和AFF VA220系列的支援不限</block>
   <block id="815dd82632714637b59a5976f7156445" category="paragraph">NetApp Savita Kumari與下列公司合作：<block ref="4d9c1ec1584e887e0af42904bd173b15" category="inline-image-macro-rx" type="image"></block></block>
   <block id="950e1cbffc7e71debbf35b96d633f935" category="paragraph">NetApp Express是一種預先設計的最佳實務資料中心架構、建置於Cisco Unified Computing System（Cisco UCS）、Cisco Nexus系列交換器及NetApp等基礎之上。FlexPod AFF而在整個IT基礎架構環境中、管理協同作用的規模也較小、因此與不支援資料中心的元件相同。FlexPod FlexPod支援虛擬化、裸機作業系統和企業工作負載的最佳平台、就是資料中心和不支援的平台。FlexPod FlexPod</block>
@@ -7737,8 +7718,6 @@
   <block id="a0e23446a66b1f3b62c87542b03c4a0c" category="admonition">新增額外的Cisco UCS C系列伺服器時、您必須建立額外的開機LUN。</block>
   <block id="b61ec8a6584e8053e237f93973f50289" category="section-title">新增基礎架構SVM管理員</block>
   <block id="61035b7df4ae78c3b522047b643dc8f1" category="paragraph">下表列出新增SVM管理員所需的資訊。</block>
-  <block id="544704a08fc56ac416305629315b2dfb" category="inline-link-macro">下一步：部署Cisco UCS C系列機架伺服器</block>
-  <block id="b2ccf3d51a0d36659f4cb4a6524fe4d2" category="paragraph"><block ref="b2ccf3d51a0d36659f4cb4a6524fe4d2" category="inline-link-macro-rx"></block></block>
   <block id="17cfc2f2b50e58c93aaf0a477ff54037" category="sidebar">解決方案文件FlexPod</block>
   <block id="af0963a66759af7047416c9d85f32efe" category="sidebar">–從這裡開始FlexPod</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新增功能</block>
@@ -8972,8 +8951,6 @@
   <block id="3c28f1f86cce7b9f6cccd84c353320aa" category="paragraph"><block ref="3c28f1f86cce7b9f6cccd84c353320aa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baf8ff06d7e7509dbb1525fc95dee350" category="list-text">提供下列GitHub儲存庫詳細資料：</block>
   <block id="f00cb64c44901d8b140ee5334ba42392" category="inline-link-macro">「設定環境先決條件」</block>
-  <block id="4a470f461c007e22030142a71b593456" category="list-text">在*儲存庫名稱*中、輸入一節中詳述的儲存庫名稱 <block ref="3bd0a1108a23c22c460b332b6044d46b" category="inline-link-macro-rx"></block>。</block>
-  <block id="7ad0c2df34976d7bd8b12ea9e4d942f5" category="list-text">請提供OAUTH Token ID、如一節所述 <block ref="3bd0a1108a23c22c460b332b6044d46b" category="inline-link-macro-rx"></block>。</block>
   <block id="cc52ae3c0b42500f9340757e4535abe9" category="list-text">選取*自動執行觸發*選項。</block>
   <block id="7dc4834a62425cc62d13478addab1f09" category="paragraph"><block ref="7dc4834a62425cc62d13478addab1f09" category="inline-image-macro-rx" type="image"></block></block>
   <block id="51b0e138743de6b27eb2983b1e789a5d" category="paragraph">這完成了在Terraform Cloud for Business帳戶中建立工作區的工作。</block>
@@ -9060,7 +9037,6 @@
   <block id="e97bbbb4aa99cae4a317dc1978ea02ce" category="list-text">*值。*輸入NetApp Cloud Manager API作業的重新整理權杖。</block>
   <block id="c0635c122427dfcc192d6c29ee84e3fb" category="list-text">*說明。*重新整理權杖。</block>
   <block id="253f26b8ee128a839e34d1b24a799e82" category="inline-link-macro">「設定環境先決條件」。</block>
-  <block id="0873f157a13b94ec2c2cb69ff4d2f25d" category="admonition">如需取得NetApp Cloud Manager API作業更新權杖的詳細資訊、請參閱一節 <block ref="e494838bdd9d1128badc766b5008a232" category="inline-link-macro-rx"></block></block>
   <block id="d05613edc0c7136089b620dec8c8d9de" category="paragraph"><block ref="d05613edc0c7136089b620dec8c8d9de" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca0fb47f75ab6fca4e951b8cbe658bdd" category="list-text">新增所有Terraform敏感變數、如下表所示。您也可以提供預設值。</block>
   <block id="eb8e560b05e9ad296a7e85c8465ee698" category="cell">Terraform敏感變數名稱</block>
@@ -9779,4 +9755,26 @@
   <block id="33f06c93ff0e249c6d028973d21932bc" category="list-text">在使用者介面「庫存」區段的「層級」頁下方新增「本機層級」和「雲端層級」索引標籤。</block>
   <block id="cebb5bee9f2c3fd7a29eb3a7ad7f1530" category="list-text">節點欄現在會顯示在使用者介面「詳細目錄」區段「連接埠」頁面下方的「名稱」欄之後。</block>
   <block id="59829409d4681e66c64ba39915db7b13" category="list-text">如果使用 FQDN 將 ONTAP 叢集新增至 AIQUM 、則「儲存設備詳細目錄檢查」頁面將不會填入。使用者必須使用 IP 位址將 ONTAP 叢集新增至 AIQUM 。</block>
+  <block id="d94305499731d4ac990a20b7cb6a6b4a" category="inline-link-macro">下一步： NetApp 儲存部署程序（第 1 部分）。</block>
+  <block id="dd36bf94d255fd9e55d53f5078ad6906" category="paragraph"><block ref="dd36bf94d255fd9e55d53f5078ad6906" category="inline-link-macro-rx"></block></block>
+  <block id="3a968620de3cd9fc31efff82d9d2dd0d" category="inline-link-macro">下一步： VMware vCenter Server 6.7U2 安裝程序。</block>
+  <block id="91b9e7776b52469178a5fcad4f7049d4" category="paragraph"><block ref="91b9e7776b52469178a5fcad4f7049d4" category="inline-link-macro-rx"></block></block>
+  <block id="c31eb7dd2056b91419c41baff0842aaf" category="inline-link-macro">下一步：部署 Cisco UCS C 系列機架伺服器。</block>
+  <block id="2a98494dbd4dedcebbd5a3476a698b17" category="paragraph"><block ref="2a98494dbd4dedcebbd5a3476a698b17" category="inline-link-macro-rx"></block></block>
+  <block id="45e53425d2653d2fd2ae777132d44bc3" category="inline-link-macro">下一步： VMware vCenter Server 6.7U2 和 vSphere 叢集組態。</block>
+  <block id="88dee804fe15990dd6758ede5645d123" category="paragraph"><block ref="88dee804fe15990dd6758ede5645d123" category="inline-link-macro-rx"></block></block>
+  <block id="2cbbb0371173c8b4294155288d3624cb" category="inline-link-macro">下一步： VMware vSphere 6.7U2 部署程序。</block>
+  <block id="b464058fe2eea54a63e15e6ffa6535a9" category="paragraph"><block ref="b464058fe2eea54a63e15e6ffa6535a9" category="inline-link-macro-rx"></block></block>
+  <block id="3c5de8afb134500847c2d82befc7f7fc" category="inline-link-macro">下一步： NetApp AFF 儲存部署程序（第 2 部分）。</block>
+  <block id="df5c4529e338fe5628fc632a67bcf0b3" category="paragraph"><block ref="df5c4529e338fe5628fc632a67bcf0b3" category="inline-link-macro-rx"></block></block>
+  <block id="a604e2599b5650f99b6243a6cb88caad" category="inline-link-macro">下一步： NetApp 虛擬儲存主控台 9.6 部署程序。</block>
+  <block id="77ea3e0cb183c71de77cbce4440e970f" category="paragraph"><block ref="77ea3e0cb183c71de77cbce4440e970f" category="inline-link-macro-rx"></block></block>
+  <block id="79be172bb4d7292680bc827a6a2ed941" category="admonition">FabricPool 授權為叢集範圍內的授權。購買授權時、您應該擁有 UUID <block ref="97c6b1d9f961d2fb9b8a976962d5c444" prefix="(" category="inline-code"></block>）。如需其他授權資訊、請參閱<block ref="e79e2253f35b48ecc5164c2e28ca127e" category="inline-link-rx"></block>。</block>
+  <block id="6a2bfb8b978ae1e7f363e2c5bc9a3ac5" category="list-text">在*儲存庫名稱*中、輸入一節中詳述的儲存庫名稱 <block ref="e4d59a400fe59f0e4cb4fc1d6c22c1f7" category="inline-link-macro-rx"></block>。</block>
+  <block id="f55293d2d6bdc95bcc1d0f10029daa94" category="list-text">請提供OAUTH Token ID、如一節所述 <block ref="e4d59a400fe59f0e4cb4fc1d6c22c1f7" category="inline-link-macro-rx"></block>。</block>
+  <block id="a998205fac8a4b4c95fce6d91339404d" category="admonition">如需取得NetApp Cloud Manager API作業更新權杖的詳細資訊、請參閱一節 <block ref="35d1f0e345aa61afd6d94e7e18e21e57" category="inline-link-macro-rx"></block></block>
+  <block id="7349a4a610dc5667a30d21a51a3ab405" category="inline-link-macro"><block ref="7349a4a610dc5667a30d21a51a3ab405" category="inline-link-rx"></block></block>
+  <block id="c5278a5ee46f3950c6449cea7119ca37" category="cell"><block ref="c5278a5ee46f3950c6449cea7119ca37" category="inline-link-macro-rx"></block></block>
+  <block id="040d804b2c70516766d21ab594bc39bb" category="cell"><block ref="040d804b2c70516766d21ab594bc39bb" category="inline-link-rx"></block></block>
+  <block id="0d9b0b32a4432dbeaa0425b3a43bf813" category="list-text">*創新與敏捷度* FlexPod 推薦使用Epic、Cerner、Meditech等EHRs、以及Agfa、GE、飛利浦等影像系統、作為理想的平台。如需詳細資訊、請參閱<block ref="e3215a4a4d4097ca1d3d2b989f46a542" category="inline-link-rx"></block> 以及目標平台架構、請參閱Epic使用者網路。在上執行基因組學<block ref="24f2c347deb06bba4de59a5266702e7d" category="inline-link-rx"></block> 讓醫療組織能夠靈活地繼續創新之路。利用此功能、組織架構的改變自然就能實現。FlexPod當企業組織採用FlexPod 統一化的解決平台時、醫療IT專家就能撥備時間、精力和資源來進行創新、因此能夠靈活因應生態系統的需求。</block>
 </blocks>

@@ -226,7 +226,7 @@ NOTE: 磁碟機零件編號會根據您要購買的磁碟大小和尺寸規格�
 | NetApp支援授權 | 產品編號 | 技術規格 
 
 
-| 現場4小時；月數：SupportEdge 36 | CS -O2 - 4小時 | link:www.netapp.com/us/support/supportedge.html["http://www.netapp.com/us/support/supportedge.html"] 
+| 現場4小時；月數：SupportEdge 36 | CS -O2 - 4小時 | link:https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf["https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf"] 
 |===
 
 
@@ -238,7 +238,7 @@ NOTE: 磁碟機零件編號會根據您要購買的磁碟大小和尺寸規格�
 | NetApp支援授權 | 產品編號 | 技術規格 
 
 
-| 硬體支援Premium 4小時現場服務；月數：36 | Svc-O2/4hr-E .3+| link:www.netapp.com/us/support/supportedge.html["http://www.netapp.com/us/support/supportedge.html"] 
+| 硬體支援Premium 4小時現場服務；月數：36 | Svc-O2/4hr-E .3+| link:https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf["https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf"] 
 
 
 | 軟體支援 | SW-SSP-O2/4HR-E 

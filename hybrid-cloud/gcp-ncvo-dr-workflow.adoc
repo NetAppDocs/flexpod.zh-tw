@@ -443,8 +443,8 @@ image:gcp-ncvo-image56.png["快照"]
 
 . 提供下列GitHub儲存庫詳細資料：
 +
-.. 在*儲存庫名稱*中、輸入一節中詳述的儲存庫名稱 link:p-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["「設定環境先決條件」"]。
-.. 請提供OAUTH Token ID、如一節所述 link:p-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["「設定環境先決條件」"]。
+.. 在*儲存庫名稱*中、輸入一節中詳述的儲存庫名稱 link:gcp-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["「設定環境先決條件」"]。
+.. 請提供OAUTH Token ID、如一節所述 link:gcp-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["「設定環境先決條件」"]。
 .. 選取*自動執行觸發*選項。
 +
 image:gcp-ncvo-image57.png["快照"]
@@ -624,7 +624,7 @@ image:gcp-ncvo-image66.png["快照"]
 ** *說明。*重新整理權杖。
 +
 
-NOTE: 如需取得NetApp Cloud Manager API作業更新權杖的詳細資訊、請參閱一節 link:p-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["「設定環境先決條件」。"]
+NOTE: 如需取得NetApp Cloud Manager API作業更新權杖的詳細資訊、請參閱一節 link:gcp-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["「設定環境先決條件」。"]
 
 +
 image:gcp-ncvo-image67.png["快照"]

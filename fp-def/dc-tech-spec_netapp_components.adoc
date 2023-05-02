@@ -53,7 +53,7 @@ NetApp儲存控制器為FlexPod 支援開機和應用程式資料儲存的功能
 | Cisco Nexus 3132Q-V | https://mysupport.netapp.com/documentation/docweb/index.html?productID=62377&language=en-US["NetApp文件：Cisco Nexus 3132Q-V交換器"] 
 
 
-| Cisco Nexus 9336C-FX2 | https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336/9336-overview.html["NetApp文件：Cisco Nexus 9336C-FX2交換器"] 
+| Cisco Nexus 9336C-FX2 | https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/["NetApp文件：Cisco Nexus 9336C-FX2交換器"] 
 |===
 
 

@@ -399,4 +399,4 @@ NOTE: 對於每個初始Cisco UCS伺服器節點、以及新增至環境的每�
 
 
 
-link:express-c-series-c190-design_netapp_aff_storage_deployment_procedure_@part_2@.html["下一步：NetApp AFF 解決方案儲存部署程序（第2部分）"]
+link:express-c-series-c190-deploy_netapp_aff_storage_deployment_procedure_@part_2@.html["下一步： NetApp AFF 儲存部署程序（第 2 部分）。"]

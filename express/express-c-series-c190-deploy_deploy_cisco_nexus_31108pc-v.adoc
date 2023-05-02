@@ -440,4 +440,4 @@ NOTE: 若要透過新增其他Cisco UCS伺服器來擴充解決方案、請使�
 
 視可用的網路基礎架構而定、有數種方法和功能可用來上行鏈路FlexPod 到整個環境。如果存在現有的Cisco Nexus環境、NetApp建議使用VPC、將FlexPod 包含在整個過程中的Cisco Nexus 31108交換器上行鏈路到基礎架構中。上行鏈路可以是10GbE基礎架構解決方案的10GbE上行鏈路、或是1GbE基礎架構解決方案的1GbE（若有需要）。上述程序可用來建立上行鏈路vPC至現有環境。完成組態設定後、請務必執行copy start（複本開始）以儲存每個交換器上的組態。
 
-link:express-c-series-c190-design_netapp_storage_deployment_procedure_@part_1@.html["下一步：NetApp儲存部署程序（第1部分）"]
+link:express-c-series-c190-deploy_netapp_storage_deployment_procedure_@part_1@.html["下一步： NetApp 儲存部署程序（第 1 部分）。"]

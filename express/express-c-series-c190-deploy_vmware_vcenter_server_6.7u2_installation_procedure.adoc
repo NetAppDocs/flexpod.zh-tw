@@ -110,4 +110,4 @@ image:express-c-series-c190-deploy_image44.png["錯誤：缺少圖形影像"]
 . 安裝程式可點選用來存取vCenter Server的連結。
 
 
-link:express-c-series-c190-design_vmware_vcenter_server_6.7u2_and_vsphere_clustering_configuration.html["下一步：VMware vCenter Server 6.7U2和vSphere叢集組態"]
+link:express-c-series-c190-deploy_vmware_vcenter_server_6.7u2_and_vsphere_clustering_configuration.html["下一步： VMware vCenter Server 6.7U2 和 vSphere 叢集組態。"]

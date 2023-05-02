@@ -134,4 +134,4 @@ volume modify -space-guarantee none
 僅可從不含任何資訊的叢集刪除此功能的認證。FabricPool FabricPool
 
 
-NOTE: 不只是叢集式授權。FabricPool購買授權時、您應該有可用的UUID（「cluster identify show」）。如需其他授權資訊、請參閱 https://kb.netapp.com/support/s/article/ka21A0000008qb3QAA/ONTAP-FabricPool-FP-Licensing-Overview["NetApp知識庫"^]。
+NOTE: FabricPool 授權為叢集範圍內的授權。購買授權時、您應該擁有 UUID (`cluster identify show`）。如需其他授權資訊、請參閱 https://kb.netapp.com/onprem/ontap/dm/FabricPool/ONTAP_FabricPool_(FP)_Licensing_Overview["NetApp知識庫"^]。

@@ -105,4 +105,4 @@ NOTE: 此驗證中的「ip_address_of_core傾印收集器」是vCenter IP。
 
 
 
-link:express-c-series-c190-design_netapp_virtual_storage_console_9.6_deployment_procedures.html["下一步：NetApp虛擬儲存主控台9.6部署程序"]
+link:express-c-series-c190-deploy_netapp_virtual_storage_console_9.6_deployment_procedures.html["下一步： NetApp 虛擬儲存主控台 9.6 部署程序。"]

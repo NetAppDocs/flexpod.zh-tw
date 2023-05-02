@@ -1004,4 +1004,4 @@ security login unlock –username vsadmin –vserver Infra-SVM
 ....
 
 
-link:express-c-series-c190-design_deploy_cisco_ucs_c-series_rack_server.html["下一步：部署Cisco UCS C系列機架伺服器"]
+link:express-c-series-c190-deploy_deploy_cisco_ucs_c-series_rack_server.html["下一步：部署 Cisco UCS C 系列機架伺服器。"]
