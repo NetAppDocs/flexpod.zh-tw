@@ -104,7 +104,7 @@ NOTE: 某些客戶環境可能會同時執行多個MEDITECH正式作業工作負
 | Cisco UCS刀鋒伺服器 | 4 x B200 M5 | 每個處理器均配備2個14核心、2.6GHz或更快的時鐘速度、以及384GB BIOS 3.2(3#) 
 
 
-| Cisco UCS虛擬介面卡 | 4個UCS 1440 | VMware ESXi fNIC FC驅動程式：1.6.0.47 VMware ESXi eNIC乙太網路驅動程式：1.0.27.0（請參閱互通性對照表： https://ucshcltool.cloudapps.cisco.com/public/)[] 
+| Cisco UCS虛擬介面卡 | 4個UCS 1440 | VMware ESXi fNIC FC驅動程式：1.6.0.47 VMware ESXi eNIC乙太網路驅動程式：1.0.27.0（請參閱互通性對照表： 
 
 
 | 2個Cisco UCS Fabric互連（FI） | 2個UCS 6454 FI | 第4代光纖互連、支援10/25/100Gb乙太網路和32GB FC 
@@ -180,7 +180,7 @@ NOTE: 某些客戶環境可能會同時執行多個MEDITECH正式作業工作負
 | Cisco UCS刀鋒伺服器 | 8 x B200 M5 | 每個系統各有2個24核心、2.7GHz和768GB BIOS 3.2（3#） 
 
 
-| Cisco UCS虛擬介面卡（VIC） | 8個UCS 1440 VIC | VMware ESXi fNIC FC驅動程式：1.6.0.47 VMware ESXi eNIC乙太網路驅動程式：1.0.27.0（請參閱互通性對照表： https://ucshcltool.cloudapps.cisco.com/public/)[] 
+| Cisco UCS虛擬介面卡（VIC） | 8個UCS 1440 VIC | VMware ESXi fNIC FC驅動程式：1.6.0.47 VMware ESXi eNIC乙太網路驅動程式：1.0.27.0（請參閱互通性對照表： 
 
 
 | 2個Cisco UCS網路互連（FI） | 2個UCS 6454 FI | 第4代光纖互連、支援10GB / 25GB/100Gb乙太網路和32GB FC 
