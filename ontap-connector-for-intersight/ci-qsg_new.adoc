@@ -18,6 +18,16 @@ summary: Cisco Intersight推出新版本、為您帶來新功能、增強功能�
 
 
 
+== 2023 年 6 月
+
+
+NOTE: 必須升級至 NetApp Active IQ Unified Manager 9.13RC1 、才能確保與最新版本相容並享有完整功能。
+
+* NetApp 儲存工作的更新名稱。請參閱 link:ci-qsg_use_cases.html["使用案例3使用無設計表單自訂工作流程"^] 以取得重新命名工作的完整清單。
+
+
+
+
 == 2023 年 4 月
 
 * 在使用者介面的「庫存」區段中的「原則」頁面下新增保護原則（ SnapMirror ）和 Snapshot 原則索引標籤。
@@ -90,7 +100,7 @@ NOTE: 為確保未來版本的相容性與完整功能、建議您將NetApp Acti
 * 新增AutoSupport 功能至叢集庫存
 * 新增「CDPD.enable」選項至節點
 * 新增CDP鄰近的物件
-* 在Cisco Intersight中新增NetApp工作流程儲存工作。請參閱 link:ci-qsg_use_cases.html["使用案例3使用無設計表單自訂工作流程"] 以取得NetApp儲存工作的完整清單。
+* 在Cisco Intersight中新增NetApp工作流程儲存工作。請參閱 link:ci-qsg_use_cases.html["使用案例3使用無設計表單自訂工作流程"^] 以取得NetApp儲存工作的完整清單。
 
 
 
@@ -117,7 +127,7 @@ NOTE: 為確保未來版本的相容性與完整功能、建議您將NetApp Acti
 
 == 2021年10月
 
-* 更新了Cisco Intersight中可用的NetApp儲存工作清單。請參閱 link:ci-qsg_use_cases.html["使用案例3使用無設計表單自訂工作流程"] 以取得NetApp儲存工作的完整清單。
+* 更新了Cisco Intersight中可用的NetApp儲存工作清單。請參閱 link:ci-qsg_use_cases.html["使用案例3使用無設計表單自訂工作流程"^] 以取得NetApp儲存工作的完整清單。
 * 已新增「叢集」清單頁下方的「健全狀況」欄。
 * 所選叢集的「General（一般）」頁面下方現在提供更多詳細資料。
 * NTP伺服器表格現在可透過導覽窗格存取。

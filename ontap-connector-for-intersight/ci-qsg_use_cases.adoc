@@ -79,52 +79,51 @@ summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個�
 以下是Cisco Intersight提供的NetApp儲存工作：
 
 +
-** 新增儲存匯出原則至Volume
-** 將啟動器連接至儲存主機
-** 中斷儲存匯出原則與Volume的連線
-** 編輯儲存虛擬機器的Aggregate
-** 編輯儲存匯出原則規則
-** 編輯儲存Snapshot原則
-** 編輯儲存Snapshot原則排程
-** 展開Storage LUN
-** 展開儲存Volume
-** 尋找NetApp igroup LUN Map
-** 依ID尋找儲存LUN
-** 依ID尋找儲存Volume
-** 新的儲存匯出原則
-** 新的儲存匯出原則規則
-** 全新NetApp儲存光纖通道介面
-** 新的儲存主機
-** 新的儲存IP介面
-** 新的儲存LUN
-** 新的儲存LUN ID
-** 全新NetApp儲存NAS智慧型磁碟區
-** 全新NetApp儲存智慧LUN
-** 新的儲存Snapshot原則
-** 新的儲存Snapshot原則排程
-** 全新儲存虛擬機器
-** 全新儲存Volume
-** 新的儲存Volume Snapshot
-** 移除儲存裝置匯出原則
-** 移除儲存匯出原則規則
-** 移除儲存FC介面
-** 移除儲存主機
-** 移除儲存IP介面
-** 移除儲存LUN
-** 移除儲存LUN ID
-** 移除NetApp Storage Smart LUN
-** 移除儲存Snapshot原則
-** 移除儲存Snapshot原則排程
-** 移除儲存虛擬機器
-** 移除儲存Volume
-** 移除儲存Volume Snapshot
-** 重新命名儲存Volume Snapshot
+** 將匯出原則新增至 NetApp Volume
+** 將啟動器新增至 NetApp 啟動器群組
+** 新增規則至 NetApp 匯出原則
+** 將排程新增至 NetApp Snapshot 原則
+** 編輯儲存虛擬機器的 NetApp 集合體
+** 編輯 NetApp 匯出原則規則
+** 編輯 NetApp Snapshot 原則
+** 編輯 NetApp 快照原則排程
+** 展開 NetApp LUN
+** 尋找 NetApp 啟動器群組 LUN 對應
+** 依 ID 尋找 NetApp LUN
+** 依 ID 尋找 NetApp Volume
+** 新的 NetApp 匯出原則
+** 全新 NetApp FC 資料介面
+** 新的 NetApp 啟動器群組
+** 全新 NetApp iSCSI 資料介面
+** 新的 NetApp LUN
+** 新的 NetApp LUN 對應
+** 全新 NetApp NAS 資料介面
+** 全新 NetApp NAS 智慧型 Volume
+** 全新 NetApp Smart LUN
+** 新的 NetApp Snapshot 原則
+** 全新 NetApp 儲存虛擬機器
+** 新的 NetApp Volume
+** 全新 NetApp Volume Snapshot
+** 從 NetApp Volume 移除匯出原則
+** 移除 NetApp 匯出原則
+** 移除 NetApp FC 資料介面
+** 移除 NetApp 啟動器群組
+** 移除 NetApp IP 介面
+** 移除 NetApp LUN
+** 移除 NetApp LUN 對應
+** 移除 NetApp NAS 智慧型 Volume
+** 移除 NetApp Smart LUN
+** 移除 NetApp Snapshot 原則
+** 移除 NetApp 儲存虛擬機器
+** 移除 NetApp Volume
+** 移除 NetApp Volume Snapshot
+** 從 NetApp 匯出原則移除規則
+** 從 NetApp Snapshot 原則移除排程
+** 重新命名 NetApp Volume Snapshot
+** 更新 NetApp Volume 容量
 +
-
-NOTE: 新的Storage NAS Smart Volume和新的Storage Smart LUN工作只能搭配ONTAP 使用。目前支援的最低版本為支援的更新版本。ONTAP
-
-
-
-
-
 若要深入瞭解如何使用NetApp儲存設備和虛擬化工作來自訂工作流程、請觀看影片 https://tv.netapp.com/detail/video/6228095945001["Cisco Intersight中的NetApp ONTAP 解決方案儲存協調"^]。
+
+
+
+
