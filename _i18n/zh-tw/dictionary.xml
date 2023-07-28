@@ -9735,7 +9735,6 @@
   <block id="c5278a5ee46f3950c6449cea7119ca37" category="cell"><block ref="c5278a5ee46f3950c6449cea7119ca37" category="inline-link-macro-rx"></block></block>
   <block id="040d804b2c70516766d21ab594bc39bb" category="cell"><block ref="040d804b2c70516766d21ab594bc39bb" category="inline-link-rx"></block></block>
   <block id="0d9b0b32a4432dbeaa0425b3a43bf813" category="list-text">*創新與敏捷度* FlexPod 推薦使用Epic、Cerner、Meditech等EHRs、以及Agfa、GE、飛利浦等影像系統、作為理想的平台。如需詳細資訊、請參閱<block ref="e3215a4a4d4097ca1d3d2b989f46a542" category="inline-link-rx"></block> 以及目標平台架構、請參閱Epic使用者網路。在上執行基因組學<block ref="24f2c347deb06bba4de59a5266702e7d" category="inline-link-rx"></block> 讓醫療組織能夠靈活地繼續創新之路。利用此功能、組織架構的改變自然就能實現。FlexPod當企業組織採用FlexPod 統一化的解決平台時、醫療IT專家就能撥備時間、精力和資源來進行創新、因此能夠靈活因應生態系統的需求。</block>
-  <block id="32c88669445a60f20d5c4768cafb4635" category="paragraph">如果您尚未安裝或升級至 Active IQ Unified Manager （目前為 9.13RC1 、需要最新版本）。如需相關指示、請前往 <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>。</block>
   <block id="9944591da8cbd48d8dd6e6366955da50" category="list-text">將匯出原則新增至 NetApp Volume</block>
   <block id="39fcfcb06d577fe28a1681ec59bd8813" category="list-text">將啟動器新增至 NetApp 啟動器群組</block>
   <block id="316ae23c10623d9e2fd5c26d0162e4e1" category="list-text">新增規則至 NetApp 匯出原則</block>
@@ -9778,10 +9777,50 @@
   <block id="7d9b1145d4ddecd2b63b6017eb559a79" category="list-text">從 NetApp Snapshot 原則移除排程</block>
   <block id="fcfa83f92e088a38cb0b8b964782a825" category="list-text">重新命名 NetApp Volume Snapshot</block>
   <block id="cf1b3d281850307ef3dfced3bacedd94" category="list-text">更新 NetApp Volume 容量</block>
-  <block id="76d2b8dc750167185cbc6e1c83deac4f" category="cell">需要最新版本的 NetApp Active IQ Unified Manager （目前為 9.13RC1 ）</block>
   <block id="411d690288852abddc39378b2989bfda" category="section-title">2023 年 6 月</block>
   <block id="b4099ff97cb0b64945972224373faec4" category="admonition">必須升級至 NetApp Active IQ Unified Manager 9.13RC1 、才能確保與最新版本相容並享有完整功能。</block>
   <block id="4afd182647adde3ae53ba9636f8ecd85" category="list-text">NetApp 儲存工作的更新名稱。請參閱 <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> 以取得重新命名工作的完整清單。</block>
   <block id="2d24bfd4ad96e334ad70f500b56563c3" category="list-text">在Cisco Intersight中新增NetApp工作流程儲存工作。請參閱 <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> 以取得NetApp儲存工作的完整清單。</block>
   <block id="c0d6fe9e8f745815653bfbc202c74e93" category="list-text">更新了Cisco Intersight中可用的NetApp儲存工作清單。請參閱 <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> 以取得NetApp儲存工作的完整清單。</block>
+  <block id="cef4011c89ea914920838c57c1277b96" category="cell">需要最新版本的 NetApp Active IQ Unified Manager （目前為 9.13GA ）</block>
+  <block id="fb5978407d362c06c4a1c8ab72f464f1" category="section-title">2023 年 7 月</block>
+  <block id="f6134ed465dbb55c3531c607933bd957" category="admonition">必須升級至 NetApp Active IQ Unified Manager 9.13GA 、才能確保與最新版本相容並享有完整功能。</block>
+  <block id="4a743225a883b79a064e0fe794bed4bc" category="list-text">NetApp 儲存工作的更新名稱。如需重新命名工作的完整清單、請參閱使用案例 3 使用無設計師表單的自訂工作流程。</block>
+  <block id="ee3ed84cc0530093ff0cafb58fa20c87" category="list-text">NFS 介面 IP 位址已新增為新 NetApp NAS 智慧型 Volume 工作的輸出。</block>
+  <block id="9dda9b1a19688571959dbba112145ceb" category="list-text">檢查 ASUP 傳輸是否為 HTTPS 已新增至檢查索引標籤。</block>
+  <block id="71d5edf744a368462afa22987d57ce39" category="list-text">現在、所有階層的正確階層類型都會正確顯示在 Tiers 使用者介面下。</block>
+  <block id="254d491c7abffdd56f4bbf1a450d16bd" category="list-text">所有相容的授權現在都會正確顯示在「授權」頁面下。</block>
+  <block id="1ac60a3870a02f53c35001a558aa411b" category="list-text">現在「共用」頁面上會顯示不含或不含主目錄的 CIFS 共用準確值。</block>
+  <block id="db6a99019304bf55663227604fa38d88" category="list-text">現在已啟用 LUN 頁面上對應欄的排序與篩選。</block>
+  <block id="bf8347272101ad3e5a1f5a7d4a1e1c3d" category="list-text">排序與篩選功能現在已啟用「 NTP 伺服器」頁面上的「驗證已啟用」欄。</block>
+  <block id="dd7a106f5abebdf1130d273be23edf53" category="list-text">在「檢查」標籤中新增檢查項目及下列對應類別。</block>
+  <block id="e6593966d8e9ac936d00c88ec980ca67" category="list-text">防勒索軟體</block>
+  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">可用度</block>
+  <block id="6311ae17c1ee52b36e68aaf4ad066387" category="list-text">其他</block>
+  <block id="ccc2c146b1c8e887b8cb561649b51add" category="list-text">在「詳細目錄」檢視下、現在使用的是報告、而非實體使用的容量。</block>
+  <block id="a45b01faef5c490c90c647f2428032f0" category="paragraph">如果您尚未安裝或升級至 Active IQ Unified Manager （目前為 9.13GA 、需要最新版本）。如需相關指示、請前往 <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>。</block>
+  <block id="d3b7d0dfd7a4c0712106720b7a263dcc" category="list-text">將 ACL 新增至 NetApp CIFS 共用</block>
+  <block id="e38df0ad25eaed709eb4fc30b431f674" category="list-text">將用戶端比對新增至 NetApp 匯出原則規則</block>
+  <block id="c8750c2c8ef4365e348e3f2d6f7e0a60" category="list-text">確認 NetApp 授權狀態</block>
+  <block id="ce2e9853e33335f3e809f3c2fbd4e78e" category="list-text">確認 NetApp 儲存虛擬機器 FCP 傳輸協定狀態</block>
+  <block id="d3e8f4c6bd53e8eacce2b51f384bcbd5" category="list-text">編輯 NetApp 非同步 SnapMirror 原則</block>
+  <block id="c1aa3662728ce7708fedccdcb4affbf7" category="list-text">編輯 NetApp CIFS 共用 ACL 權限</block>
+  <block id="24d1f1e8d23b508ab9bf5d7afcf636f7" category="list-text">編輯 NetApp Volume 安全樣式</block>
+  <block id="614b87abecdd3f70114678982ebbbb9f" category="list-text">編輯 NetApp Volume Snapshot 原則</block>
+  <block id="c6898dbc38b65e6a09c4b5997d317aeb" category="list-text">啟用 NetApp CIFS 服務</block>
+  <block id="50b2cba14f218a621d87273c301bbde0" category="list-text">全新 NetApp 非同步 SnapMirror 原則</block>
+  <block id="35e279bd6fe2769eca059a8faedc6f43" category="list-text">全新 NetApp CIFS 伺服器</block>
+  <block id="d1d30c3a3d93e98e502928eaaca114bc" category="list-text">全新 NetApp CIFS 共用</block>
+  <block id="bda45d06eebbcdeab16a923fd8fdd01d" category="list-text">SVM 根 Volume 的新 NetApp 負載共用鏡像</block>
+  <block id="6fc90f6f641bcbf5f0e70c9bba86b0a9" category="list-text">全新的 NetApp SnapMirror Volume 關係</block>
+  <block id="28c1a1abaac15f55ead6b402d02df1c8" category="list-text">註冊 NetApp 儲存虛擬機器的 DNS</block>
+  <block id="8ad01dcf4f5fb308079c8c54b8393fac" category="list-text">從 NetApp CIFS 共用移除 ACL</block>
+  <block id="f58fa9ccd1ffe4112c82ac2f86a775bc" category="list-text">從 NetApp 匯出原則規則移除用戶端比對</block>
+  <block id="baed5857e762ed3ffc693f7c65215f5c" category="list-text">從 NetApp 啟動器群組移除啟動器</block>
+  <block id="7fd0848e19c01ad760f8c9f13445e04a" category="list-text">移除 NetApp CIFS 伺服器</block>
+  <block id="ab79cf9b18a0947935193e49992783ea" category="list-text">移除 NetApp CIFS 共用</block>
+  <block id="4a61f0238ebd321bf19f499a028504d8" category="list-text">移除 SVM 根 Volume 的 NetApp 負載共用鏡像</block>
+  <block id="6436adc56d37fa0f43192638e893196c" category="list-text">移除 NetApp SnapMirror 對 Volume 的關係</block>
+  <block id="26d4a176845d0e66ac5ee3e91c2d833e" category="list-text">刪除 NetApp SnapMirror 策略</block>
+  <block id="55b6a7c6b2794c0f9cf3d79716818187" category="list-text">更新 SVM 根 Volume 的 NetApp 負載共用鏡像</block>
 </blocks>

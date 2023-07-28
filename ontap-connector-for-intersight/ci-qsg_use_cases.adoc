@@ -79,15 +79,27 @@ summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個�
 以下是Cisco Intersight提供的NetApp儲存工作：
 
 +
+** 將 ACL 新增至 NetApp CIFS 共用
+** 將用戶端比對新增至 NetApp 匯出原則規則
 ** 將匯出原則新增至 NetApp Volume
 ** 將啟動器新增至 NetApp 啟動器群組
 ** 新增規則至 NetApp 匯出原則
 ** 將排程新增至 NetApp Snapshot 原則
+** 確認 NetApp 授權狀態
+** 確認 NetApp 儲存虛擬機器 FCP 傳輸協定狀態
 ** 編輯儲存虛擬機器的 NetApp 集合體
+** 編輯 NetApp 非同步 SnapMirror 原則
+** 編輯 NetApp CIFS 共用 ACL 權限
 ** 編輯 NetApp 匯出原則規則
 ** 編輯 NetApp Snapshot 原則
 ** 編輯 NetApp 快照原則排程
+** 編輯 NetApp Volume 安全樣式
+** 編輯 NetApp Volume Snapshot 原則
+** 啟用 NetApp CIFS 服務
 ** 展開 NetApp LUN
+** 全新 NetApp 非同步 SnapMirror 原則
+** 全新 NetApp CIFS 伺服器
+** 全新 NetApp CIFS 共用
 ** 尋找 NetApp 啟動器群組 LUN 對應
 ** 依 ID 尋找 NetApp LUN
 ** 依 ID 尋找 NetApp Volume
@@ -95,24 +107,35 @@ summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個�
 ** 全新 NetApp FC 資料介面
 ** 新的 NetApp 啟動器群組
 ** 全新 NetApp iSCSI 資料介面
+** SVM 根 Volume 的新 NetApp 負載共用鏡像
 ** 新的 NetApp LUN
 ** 新的 NetApp LUN 對應
 ** 全新 NetApp NAS 資料介面
 ** 全新 NetApp NAS 智慧型 Volume
 ** 全新 NetApp Smart LUN
+** 全新的 NetApp SnapMirror Volume 關係
 ** 新的 NetApp Snapshot 原則
 ** 全新 NetApp 儲存虛擬機器
 ** 新的 NetApp Volume
 ** 全新 NetApp Volume Snapshot
+** 註冊 NetApp 儲存虛擬機器的 DNS
+** 從 NetApp CIFS 共用移除 ACL
+** 從 NetApp 匯出原則規則移除用戶端比對
 ** 從 NetApp Volume 移除匯出原則
+** 從 NetApp 啟動器群組移除啟動器
+** 移除 NetApp CIFS 伺服器
+** 移除 NetApp CIFS 共用
 ** 移除 NetApp 匯出原則
 ** 移除 NetApp FC 資料介面
 ** 移除 NetApp 啟動器群組
 ** 移除 NetApp IP 介面
+** 移除 SVM 根 Volume 的 NetApp 負載共用鏡像
 ** 移除 NetApp LUN
 ** 移除 NetApp LUN 對應
 ** 移除 NetApp NAS 智慧型 Volume
 ** 移除 NetApp Smart LUN
+** 移除 NetApp SnapMirror 對 Volume 的關係
+** 刪除 NetApp SnapMirror 策略
 ** 移除 NetApp Snapshot 原則
 ** 移除 NetApp 儲存虛擬機器
 ** 移除 NetApp Volume
@@ -120,6 +143,7 @@ summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個�
 ** 從 NetApp 匯出原則移除規則
 ** 從 NetApp Snapshot 原則移除排程
 ** 重新命名 NetApp Volume Snapshot
+** 更新 SVM 根 Volume 的 NetApp 負載共用鏡像
 ** 更新 NetApp Volume 容量
 +
 若要深入瞭解如何使用NetApp儲存設備和虛擬化工作來自訂工作流程、請觀看影片 https://tv.netapp.com/detail/video/6228095945001["Cisco Intersight中的NetApp ONTAP 解決方案儲存協調"^]。
