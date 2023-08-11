@@ -107,26 +107,6 @@ entries:
     url: "/express/express-c-series-aff220-deploy_conclusion.html"
   - title: 何處可找到其他資訊
     url: "/express/express-c-series-aff220-deploy_where_to_find_additional_information.html"
-- title: "《VMware vSphere 6.7U1與NetApp VMware Infrastructure A220搭配直接附加IP型儲存設計指南》的《Express
-    with VMware vSphere 6.7U1 and NetApp》（英文）FlexPod AFF"
-  type: solutions
-  entries:
-  - title: 總覽
-    url: "/express/express-direct-attach-design_overview.html"
-  - title: 方案摘要
-    url: "/express/express-direct-attach-design_program_summary.html"
-  - title: 解決方案總覽
-    url: "/express/express-direct-attach-design_solution_overview.html"
-  - title: 技術需求
-    url: "/express/express-direct-attach-design_technology_requirements.html"
-  - title: 設計選擇
-    url: "/express/express-direct-attach-design_design_choices.html"
-  - title: 解決方案驗證
-    url: "/express/express-direct-attach-design_solution_verification.html"
-  - title: 結論
-    url: "/express/express-direct-attach-design_conclusion.html"
-  - title: 何處可找到其他資訊
-    url: "/express/express-direct-attach-design_where_to_find_additional_information.html"
 - title: 採用VMware vSphere 6.7U1與NetApp VMware Infrastructure A220搭配直接附加的IP型儲存設備的VMware
     Express FlexPod AFF
   type: solutions
