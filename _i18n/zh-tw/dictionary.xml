@@ -6327,35 +6327,25 @@
   <block id="62e3899fe2adfc651dc44b617edd0895" category="list-text">執行下列命令：</block>
   <block id="39955daa0d7162ba51cac7450a554eeb" category="paragraph">執行最後一個命令後、會出現「已驗證已設定的netdump伺服器正在執行」訊息。</block>
   <block id="e6447ee2303eb27076059f12f3ae2506" category="admonition">若有任何額外的主機新增FlexPod 至不景速查系統、則必須完成此程序。</block>
-  <block id="2f52a417cf08962c5338f828bd55534e" category="summary">以Cisco驗證設計或NetApp驗證架構的形式提供參考架構。FlexPod如果這些差異並未建立不受支援的組態、則允許根據特定CVD或NVA的客戶需求來進行差異。</block>
   <block id="6091ca16495cdce90805252a1c12f4e6" category="doc">方案摘要</block>
   <block id="a72cd47c21c9d3780302fc3493a90796" category="paragraph">此解決方案屬於融合式基礎架構方案的一部分。FlexPod FlexPod</block>
   <block id="cead35c99d984e0fe4e51ed8e4f58757" category="section-title">融合式基礎架構方案FlexPod</block>
   <block id="2e47b5f6465cb01eb47dae2cbdf4fb97" category="paragraph">以Cisco驗證設計（CVD）或NetApp驗證架構（NVA）的形式提供參考架構。FlexPod如果這些差異並未建立不受支援的組態、則允許根據特定CVD或NVA的客戶需求來進行差異。</block>
-  <block id="e00073f26b14e82128a1281359dc9142" category="paragraph">如下圖所示FlexPod 、此功能包含三種解決方案：FlexPod 《ExExpress》（英文）、FlexPod 《Extre Datacenter》（英文）和FlexPod 《ExSelect》（英文）：</block>
   <block id="368f7b76a737d2872904747bf89c1f7c" category="list-text">*《*》《*》《*》《*》《*》《*》《*》《*》《*》《*》《*》《*》《* FlexPod</block>
   <block id="9600ec92824a72e1fb56ccb4ea014cad" category="list-text">*《Datacenter》*提供最佳的多用途基礎、適用於各種工作負載和應用程式。FlexPod</block>
   <block id="d3f57d548a6524122ca7f33363420de2" category="list-text">*《選擇》*整合了《不二資料中心》的最佳功能、並針對特定應用程式量身打造基礎架構。FlexPod FlexPod</block>
   <block id="923baf107dc23ca10f968a4fdecd4f4f" category="paragraph">下圖顯示解決方案的技術元件。</block>
-  <block id="ade96a6c8aea15bf0fc22bf711cfc77d" category="paragraph"><block ref="ade96a6c8aea15bf0fc22bf711cfc77d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b5cdc3592ba292cb5ec966e2cfc70079" category="section-title">NetApp認證架構方案</block>
   <block id="8eb06a0a609575560d5ae6a9400caafe" category="paragraph">NVA方案為客戶提供通過驗證的NetApp解決方案架構。NVA提供具備下列特質的NetApp解決方案架構：</block>
   <block id="46fc1ef2317c947381fe8bb6d2e4dc2e" category="list-text">經過徹底測試</block>
   <block id="331336c4e13ca9b575b3f22501605278" category="list-text">是規範性的</block>
   <block id="f1680a13e5357cb0c908a8eb9294653f" category="list-text">將部署風險降至最低</block>
   <block id="7bf2dc4c4353a3c3eb7cd2f0f6651332" category="list-text">加速上市時間</block>
-  <block id="3cff1065cfd26e5131b97009c9eadea0" category="paragraph">本指南詳細說明FlexPod 採用直接附加NetApp儲存設備的NetApp Express設計。以下各節列出本解決方案設計所使用的元件。</block>
   <block id="34df2039718349f1b8c838bff98ae8fa" category="section-title">硬體元件</block>
-  <block id="390f2f7e22320be8787c460218420df9" category="list-text">NetApp AFF 產品編號A220或FAS NetApp產品編號2750/2720</block>
   <block id="a264f13796acac12fcffa39692c998d8" category="list-text">Cisco UCS Mini</block>
-  <block id="7cf66a30a1442044fb7752c9aee2b3f2" category="list-text">Cisco UCS VIC 1440/1480</block>
   <block id="ca5412259abfc7ed9db7bf2e1c69e321" category="list-text">Cisco Nexus 3000系列交換器</block>
   <block id="7d19d593db0bb056876a9535cbced90a" category="section-title">軟體元件</block>
-  <block id="10a002328d32e241bc0792cf3b4346e4" category="list-text">VMware vSphere 6.7U1.</block>
-  <block id="6bced0178c77b4913c30dccad8d04cab" category="list-text">Cisco UCS Manager 4.0（1b）</block>
-  <block id="b6851f63ac6c75841ca7a445ef6e2daa" category="list-text">Cisco NXOS韌體7.0（3）I6（1）</block>
   <block id="5cb451e1c66a533348d9c913d8c630e3" category="inline-link-macro">下一步：解決方案總覽。</block>
-  <block id="0bc38c1b911cf68b934df2f00b07478c" category="paragraph"><block ref="0bc38c1b911cf68b934df2f00b07478c" category="inline-link-macro-rx"></block></block>
   <block id="491646c8637a467d0fff4544e3eca8bf" category="summary">本節說明NetApp虛擬儲存主控台（VSC）的部署程序。</block>
   <block id="108fd6e322adcd8718b22de2421c6390" category="doc">NetApp虛擬儲存主控台9.6部署程序</block>
   <block id="2b9aac62357e52bedef887d4163c7ac3" category="section-title">安裝Virtual Storage Console 9.6</block>
@@ -6461,21 +6451,13 @@
   <block id="ff031a8920ee03c1864f03eacf9163cf" category="paragraph"><block ref="ff031a8920ee03c1864f03eacf9163cf" category="inline-link-macro-rx"></block></block>
   <block id="2d51913551bd5a0cb3f2c584874f57a7" category="summary">藉由提供使用領先業界元件的驗證設計、支援簡單有效的解決方案。FlexPod</block>
   <block id="24f7c1dfe794eeb5fbd5e42af40077d3" category="paragraph">藉由提供使用領先業界元件的驗證設計、支援簡單有效的解決方案。FlexPod藉由新增元件來擴充、FlexPod 即可針對特定業務需求量身打造。支援中小企業、ROBO及其他需要專屬解決方案的企業。FlexPod</block>
-  <block id="e45645eef6ccec7b7c30243e58df6f21" category="summary">以執行混合式虛擬化工作負載為設計目標。FlexPod它的目標對象為遠端辦公室和分公司、以及中小型企業。對於想要實作專屬解決方案的大型企業而言、這也是最理想的選擇。全新FlexPod 的VMware vCenter Express解決方案的主要驅動因素是將ONTAP 諸如下列新技術的產品加入FlexPod 到更新的技術中：例如：VMware vSphere 9.5、FAS27xx和AFF220、VMware vSphere 6.7U1到ArcExpress。</block>
-  <block id="52698dab5b8a1edc0e7edc6555a7c349" category="paragraph">以執行混合式虛擬化工作負載為設計目標。FlexPod它的目標對象為遠端辦公室和分公司、以及中小型企業。對於想要實作專屬解決方案的大型企業而言、這也是最理想的選擇。全新FlexPod 的VMware Express解決方案的主要驅動因素是將ONTAP 諸如下列新技術的產品加入FlexPod 到更新的技術中：例如：VMware vSphere 9.5、FAS27xx/AFF220、VMware vSphere 6.7U1至VMware Express。</block>
   <block id="e6842d133ec9e79d69211eaca058fd8d" category="paragraph">下圖顯示FlexPod 包含在《ExExpress解決方案」中的硬體元件。</block>
-  <block id="8ca297509b2df5f9cdffacc6f1b874d9" category="paragraph"><block ref="8ca297509b2df5f9cdffacc6f1b874d9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7d72768d53613a119b71f82f423bf956" category="paragraph">本文件適用於想要善用專為提高IT效率及推動IT創新所打造基礎架構的使用者。本文件的對象包括但不限於銷售工程師、現場顧問、專業服務人員、IT經理、 合作夥伴工程師與客戶。</block>
-  <block id="24197b7f84d6dcb91a70d4590d6f0d4b" category="paragraph">本解決方案採用NetApp、Cisco及VMware的最新技術。其特色為AFF ：執行ONTAP VMware vSphere 6.7U1的NetApp 4329.5、雙Cisco Nexus 31108PCV交換器、以及Cisco UCS B200 M5伺服器。這套通過驗證的解決方案採用透過10GbE技術的Direct Connect IP儲存設備。</block>
   <block id="a0b3e8573a8aa6021ff3f10e3f501c91" category="paragraph">下圖說明FlexPod 採用VMware vSphere 6.7U1 IP型Direct Connect架構的VMware Express。</block>
-  <block id="e2f737abf73f71e3ca6a669027e768e5" category="paragraph"><block ref="e2f737abf73f71e3ca6a669027e768e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf9bdab57c82171f2cc9bcebdc37b2c2" category="section-title">使用案例摘要</block>
   <block id="2f801b9c90233bf4f0706e88158fede7" category="paragraph">此解決方案可應用於多種使用案例、包括：FlexPod</block>
   <block id="980eb96df5e5fc2a94a68ebcb2f66a49" category="list-text">ROBO</block>
   <block id="cf849e9c3d43f86649aba16f6aaa3555" category="list-text">中小企業</block>
-  <block id="e668c208962da5c11986295dfc7aa09d" category="list-text">需要專屬且具成本效益的解決方案FlexPod 的環境、最適合虛擬化和混合式工作負載。</block>
   <block id="17c85b13746cebabb0963001ee4caa47" category="inline-link-macro">下一步：技術需求。</block>
-  <block id="4b672d0e02a93f988661ea77c1a6a42f" category="paragraph"><block ref="4b672d0e02a93f988661ea77c1a6a42f" category="inline-link-macro-rx"></block></block>
   <block id="06c29c048e05fd257432214b6917d1cf" category="summary">作者想要肯定某些個人對此設計的支援與貢獻。</block>
   <block id="722805f0eca75447eb2d3878d0092a62" category="paragraph">作者感謝下列人員對此設計的支援與貢獻：</block>
   <block id="d62cb2f8501b4fe779ad5e17e011b1cc" category="list-text">Paul Nonosfrid Onocray</block>
@@ -6504,16 +6486,10 @@
   <block id="522c33efdda0b8dc6ce90c991beb9666" category="cell">1.1.2</block>
   <block id="f5af094c429d3c74cde8180b5ceb0219" category="inline-link-macro">下一步：設計選擇。</block>
   <block id="5bada24f2bf2dcaa09e0545f94b9c40b" category="paragraph"><block ref="5bada24f2bf2dcaa09e0545f94b9c40b" category="inline-link-macro-rx"></block></block>
-  <block id="3e60c613b0991005eeadc499a26027a4" category="summary">此為預先設計的最佳實務架構、建置於Cisco Unified Computing System、Cisco Nexus系列交換器及NetApp®。FlexPod AFF而在整個IT基礎架構環境中、管理協同作用的規模也較小、因此與不支援資料中心的元件相同。FlexPod FlexPod</block>
-  <block id="970814cc2c27a3ccef19f1a470046cb9" category="doc">NVA-1130-設計：FlexPod 以VMware vSphere 6.7U1搭配NetApp AFF 432-搭配直接附加的IP型儲存設備、實現VMware Express的效能</block>
   <block id="920a1229ece64c4767f712716efcbe38" category="paragraph">NetApp的Sree LakshMI Lanka</block>
   <block id="f7e763eb20919ad9b34da4b2a516bb54" category="paragraph">產業趨勢顯示、資料中心已向共享基礎架構和雲端運算領域進行大規模的轉型。此外、企業組織也需要一套簡單有效的解決方案、讓遠端辦公室和分公司都能運用他們在資料中心熟悉的技術。</block>
-  <block id="cc0afb87ca78ab9a0bee6646cc15e370" category="paragraph">此為預先設計的最佳實務架構、建置於Cisco Unified Computing System（Cisco UCS）、Cisco Nexus系列交換器及NetApp等基礎之上。FlexPod AFF而在整個IT基礎架構環境中、管理協同作用的規模也較小、因此與不支援資料中心的元件相同。FlexPod FlexPod支援虛擬化、裸機作業系統和企業工作負載的最佳平台、就是資料中心和不支援的平台。FlexPod FlexPod</block>
-  <block id="1c5a1040ac4cc4080420e7f328cf5c29" category="paragraph">支援基礎組態的支援功能可讓您靈活調整規模並最佳化、以因應多種不同的使用案例和需求。FlexPod FlexPod現有FlexPod 的VMware資料中心客戶可以FlexPod 使用他們習慣使用的工具來管理自己的VMware Express、而新FlexPod 的VMware Express客戶也能隨著FlexPod 環境的成長、輕鬆因應如何管理VMware資料中心的需求。</block>
-  <block id="298ea17cac70cc060e022974ed4706ad" category="paragraph">適用於遠端辦公室或分公司（ROBO）、以及中小型企業的最佳基礎架構基礎。FlexPod對於想要為專屬工作負載提供基礎架構的客戶而言、這也是最佳解決方案。</block>
   <block id="de7a2dd0eb3b41a749fec34d09012e9b" category="paragraph">支援簡單易管理的基礎架構、幾乎適用於任何工作負載。FlexPod</block>
   <block id="acf940e9255ec3c7ce20bd34e362c16a" category="inline-link-macro">下一步：方案摘要。</block>
-  <block id="d7037fdd0e1ba36ff788bcb6fb1e0c57" category="paragraph"><block ref="d7037fdd0e1ba36ff788bcb6fb1e0c57" category="inline-link-macro-rx"></block></block>
   <block id="6db83abec45c2de6c1a299f3ac7b170f" category="summary">不只是使用不需要的功能、更需要搭配軟硬體元件。FlexPod此外、還會說明在系統中新增Hypervisor節點所需的硬體元件（單位為兩個）FlexPod 。</block>
   <block id="99ea43c773133a96b0d062cee6418bce" category="paragraph">無論選擇何種Hypervisor、所有FlexPod 的SESHExpress組態都使用相同的硬體。因此、即使業務需求改變、也能在相同FlexPod 的SExpress硬體上執行任一Hypervisor。</block>
   <block id="5a65dfc9b8877098de398e29aea7e690" category="paragraph">下表列出所有FlexPod 的Express組態所需的硬體元件。</block>
@@ -6809,8 +6785,6 @@
   <block id="8a19f4974471708984f4a96cbb88acab" category="cell">Cisco UCS Fabric互連A</block>
   <block id="fd1fae3a468192dbf96fc127305c2567" category="paragraph">下表列出Cisco UCS Fabric Interconnect B的佈線資訊</block>
   <block id="80dfa47c2ceded6e6f295b07789aa5a1" category="cell">Cisco UCS Fabric互連B</block>
-  <block id="dcd4ef476939e3f77c51b0f7524f6790" category="paragraph">藉由提供使用領先業界元件的驗證設計、支援簡單有效的解決方案。FlexPod藉由擴充及提供Hypervisor平台選項、FlexPod 即可針對特定業務需求量身打造。針對中小企業、ROBO及其他需要專屬解決方案的企業而設計的支援。FlexPod</block>
-  <block id="5bef22e5064667f4017bd5bd97792767" category="paragraph"><block ref="5bef22e5064667f4017bd5bd97792767" category="inline-link-macro-rx"></block></block>
   <block id="a9dbd072d83cb337b01c311943422edf" category="paragraph">下表列出FlexPod 所有的「不只是」功能表組態所需的硬體元件。</block>
   <block id="ff4cba978473defd6b3cd5056facd057" category="cell">Cisco C220 M5伺服器</block>
   <block id="48e8c51ab8e8e666702fc93744545f2c" category="cell">Cisco Nexus 3172P交換器</block>
@@ -6831,66 +6805,12 @@
   <block id="84dad5eac68671e99192ded16a6b45de" category="summary">本頁所列的技術是在設計此設計的過程中選擇的。每項技術都能在FlexPod 《支援不限需求的基礎架構解決方案：</block>
   <block id="4b559551dbe9daaff7bfb7f8ddd57dc8" category="doc">設計選擇</block>
   <block id="aebe68ffc143aeddd9287594ca0a06ec" category="paragraph">在設計此設計的過程中、我們選擇了下列技術。每項技術都能在FlexPod 《支援不限需求的基礎架構解決方案：</block>
-  <block id="6e30e3d78d08968b31eb6678203d2fc0" category="section-title">NetApp AFF S20220或FAS27xx系列ONTAP 搭配《S209.5》</block>
-  <block id="b247ff523957611373b5a446ea9ee079" category="paragraph">此解決方案使用FAS 兩種最新的NetApp產品、即NetApp S2750或FAS 是採用AFF 《Se 9.5》技術的《NetApp》（NetApp）2720和《Se A220》（NetApp）系統ONTAP 。</block>
-  <block id="0b1df62fb1c0427a2b152a4075e86f86" category="section-title">FAS2750/FAS2720系統</block>
-  <block id="230d20d84ae15d53310ab6281c9aa965" category="paragraph">NetApp FAS2700系列專為支援更多IT需求而設計、NetApp FAS2700混合式儲存陣列提供比同級系統更高的價值。執行NetApp ONTAP 支援資料儲存軟體的FAS2700可提供高效能、領先業界的雲端整合、支援更廣泛的工作負載、並無縫擴充效能與容量、進而簡化管理成長與複雜度的工作。</block>
-  <block id="e1c31a069f02226b8ab9d47f53ec3624" category="inline-link">FAS2700混合式儲存系統產品頁面</block>
-  <block id="4c28ea2433ec0b30514131edceae43ec" category="paragraph">如需FAS2700硬體系統的詳細資訊、請參閱<block ref="d64b69eb2f82f123a0f6197c09be65e3" category="inline-link-rx"></block>。</block>
   <block id="b7fd98415b49fad63bd1c70591fdfcf1" category="section-title">VA220系統AFF</block>
-  <block id="231155812e638254d25136e7c658b0b9" category="paragraph">全新更新AFF 的適用於中小企業環境的更新版《產品介紹：NetApp在這個市場區隔中的領先地位、效能比前代產品高出30%。</block>
-  <block id="741dae1bdcf713a3a3360933b437f7c5" category="paragraph">NetApp AFF 產品支援NetApp功能、可提供業界最高的效能、優異的靈活度、以及同級最佳的資料管理與雲端整合、協助您滿足企業的儲存需求。結合業界第一款端點對端點NVMe技術與NetApp ONTAP 支援資料管理軟體、AFF 可加速、管理及保護業務關鍵資料。有了這個功能完善的系統、您就能輕鬆且無風險地轉換至Flash、以利數位轉型。AFF</block>
-  <block id="0d9dced465768611d4ca22fcfcd38fe8" category="paragraph"><block ref="0d9dced465768611d4ca22fcfcd38fe8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7dfa8d5abc505016f90204da97112673" category="inline-link">NetApp AFF 產品介紹</block>
-  <block id="370adf8e455f5f20b31987996d04b276" category="paragraph">如需AFF 更多有關《Arse A220硬體系統的資訊、請參閱<block ref="7699692f9a18fa56740f3f1efa37559d" category="inline-link-rx"></block>。</block>
-  <block id="0fcf2ee62acd9eae83b609a0e7ecaa72" category="section-title">版本9.5 ONTAP</block>
-  <block id="1190d1a31ebaa2ca1ddb571b6dab5210" category="paragraph">全新NetApp ONTAP S25 9.5軟體具備多項重大增強功能、旨在讓資料中心與雲端之間的資料管理無縫銜接。</block>
-  <block id="20e9d66db8204f25263d84e7d3206bd7" category="paragraph">支援混合雲的支援範圍涵蓋內部部署到雲端、然後再從內部部署到雲端、是資料架構的基礎。ONTAP</block>
-  <block id="82bf0a957e72889ee56e68735c5d6992" category="paragraph">適用於《Sfor the Sfor the Sfor the Sfor the Sfor the Sfor the Sfor the Sfor the Sfor the ONTAP FlexPod最重要的是NetApp致力於提高儲存效率、這可能是小型部署最重要的功能之一。全新推出的支援NVMe的功能、可在ONTAP 更新版本的更新版本中、於更新版本推出NetApp儲存效率功能、例如重複資料刪除、壓縮、壓實及精簡配置NetApp Memory Accelerated Data 。由於NetApp WAFL 元數據系統一律會寫入4KB區塊、因此當區塊未使用所分配的4KB空間時、壓縮功能會將多個區塊合併成4KB區塊。</block>
   <block id="67aecab353cdb62ae537a3a6ef787df6" category="inline-link">資料管理軟體資料表ONTAP</block>
-  <block id="9ed2361a5bb872f2de082d0ae274d3d4" category="paragraph">這些只是一些輔助FlexPod 功能的關鍵功能、可補強《不知道如何解決這個問題。如需ONTAP 更多有關功能與功能的詳細資訊、請參閱<block ref="77ef5399543fc3a1e70b98d04d6a8530" category="inline-link-rx"></block>。</block>
-  <block id="2a5fc4f27c0d6ff3a32a694675454582" category="paragraph">如需ONTAP 更多關於NetApp的資訊、請參閱NetApp<block ref="acaccc868f6222e64c0f11237becafd9" category="inline-link-rx"></block>、更新後納入ONTAP 了S9.5。</block>
-  <block id="64697becc3436900e007a58747c6bcc5" category="section-title">Cisco Nexus 3000系列</block>
-  <block id="a7cbaeff192b5f9f6af88db4cb61057f" category="paragraph">下圖所示的Cisco Nexus 31108PC-V是一款功能強大且具成本效益的交換器、提供1/10/40/100Gbps交換能力。它提供48個1/1-Gbps連接埠、以及40/100-Gbps上行鏈路、提供靈活彈性。</block>
   <block id="65616b47a64dd1f2f0def7e9a8ba8095" category="paragraph">由於所有不同的Cisco Nexus系列機型都能執行相同的基礎作業系統NX-OS、FlexPod 因此在《不實時資料中心》和《不FlexPod 實時資料中心》解決方案中、都支援多種Cisco Nexus機型。</block>
-  <block id="7013d1d40a328711facf36da6fcae836" category="paragraph"><block ref="7013d1d40a328711facf36da6fcae836" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="42cd01c1558a7b36c81fabb73cea0392" category="paragraph">Cisco Nexus 31108提供全方位的第2層功能集、包括虛擬LAN（VLAN）、IEEE 802.1Q主幹連線、以及連結集合控制傳輸協定（LACP）。將授權新增至系統、即可提供額外的第3層功能。</block>
-  <block id="e724811e47a7141b174880660c645622" category="inline-link">Cisco Nexus 31108PC-V交換器產品資訊</block>
-  <block id="fa363fe0707e6a492c5cd3367527eea5" category="paragraph">如需Cisco Nexus 3000系列的詳細資訊、請參閱<block ref="18ad85204da80d4264e7926ddf3372bd" category="inline-link-rx"></block>。</block>
   <block id="538d1e0a5689cf1d6c02da051f837ecb" category="section-title">Cisco UCS B系列</block>
-  <block id="4a5ddb88cfb1fd0437ad551f21d7a1ea" category="inline-link">統一化架構</block>
-  <block id="e29ffa47eb4a30db801bb470a66a44c0" category="paragraph">Cisco UCS 5108刀鋒伺服器機箱徹底革新刀鋒型系統的使用與部署。透過整合<block ref="b4917c31979e198c746ea794693e6b5b" category="inline-link-rx"></block> Cisco Unified Computing System採用光纖延伸器技術、可讓機箱：</block>
-  <block id="23153947dc03329fe3a6c264a87d4343" category="list-text">包含較少的實體元件</block>
-  <block id="3d718d0c3ae11322cd34d34dbcabd480" category="list-text">不需要獨立管理</block>
-  <block id="259a0f786e3a00ab652733583cd1d428" category="list-text">比傳統刀鋒伺服器機箱更具能源效率</block>
-  <block id="3469beb4dca4591b74f735db7d8eb485" category="paragraph">這種簡易性可免除專屬機箱管理和刀鋒交換器的需求、減少纜線配置、並可擴充至20個機箱、而不會增加複雜度。Cisco UCS 5108刀鋒伺服器機箱是Cisco Unified Computing System的一部分、可為資料中心提供簡易性和IT回應能力的關鍵元件。</block>
-  <block id="66e00ca76380206343be6f3a0d0f1d5a" category="paragraph">下圖所示的Cisco UCS B系列B200M5伺服器、是選擇FlexPod 用於此功能的原因在於其多種組態選項、可讓您針對FlexPod 特定的需求進行調整、以利進行不需使用的動作。</block>
-  <block id="11fa8668c913da0fac8fe2fd0fb91afe" category="paragraph"><block ref="11fa8668c913da0fac8fe2fd0fb91afe" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d1ef7a2d808b7ba8d4d6c4f59cc69d07" category="paragraph">企業級Cisco UCS B200 M5刀鋒伺服器以半寬刀鋒尺寸規格擴充Cisco UCS產品組合的功能。Cisco UCS B200 M5刀鋒伺服器運用最新的Intel Xeon處理器可擴充系列CPU的強大功能、可擴充的RAM高達3072GB（使用128GB DIMM）、兩個固態硬碟（SSD）或HDD、以及高達80Gbps的處理量連線能力。</block>
-  <block id="f490824de02053a745564bdf49968bcc" category="inline-link">Cisco UCS B200 M5刀鋒伺服器規格表</block>
-  <block id="e63d3138bb002a22b2718550e4c90f78" category="paragraph">如需Cisco UCS B200 M5刀鋒伺服器的詳細資訊、請參閱<block ref="1cf2c09900a3362a6185f42c57ff1f7e" category="inline-link-rx"></block>。</block>
-  <block id="253104ef14ebb79e25290a8b2ebc01aa" category="section-title">Cisco UCS虛擬介面卡1440/1480</block>
-  <block id="dd092054978fab3a1f80e0c46eff123a" category="paragraph">Cisco UCS VIC 1440是雙埠40Gbps或雙4 x 10Gbps乙太網路/FCoE功能模組化主機板LAN（mLOM）、專為M5系列Cisco UCS B系列刀鋒伺服器所設計。搭配選用的連接埠擴充器使用時、Cisco UCS VIC 1440功能可用於兩個40Gbps乙太網路連接埠。Cisco UCS VIC 1440提供原則型、無狀態、敏捷的伺服器基礎架構、可呈現給主機PCIe標準相容介面、這些介面可動態設定為NIC或HBA。</block>
-  <block id="96ddccafd32cbad360621ab2631443ba" category="paragraph">下圖所示的Cisco UCS VIC 1480與VIC 1440相似、只不過是夾層卡。</block>
-  <block id="454400bcf7f3263327d2a922bb1e2c65" category="paragraph"><block ref="454400bcf7f3263327d2a922bb1e2c65" category="inline-image-macro-rx" type="image"></block></block>
   <block id="843cba364221d61db228a8077756b335" category="inline-link">Cisco UCS虛擬介面卡1400系列資料表</block>
-  <block id="bdd289ff775d486e0c3aa90098267d5c" category="paragraph">如需Cisco VIC 1440 / 1480的詳細資訊、請參閱<block ref="d707d369ea1f7f021ea02c53dc5e5dda" category="inline-link-rx"></block>。</block>
-  <block id="925db1346daa765d179e142830c945cd" category="paragraph">VMware vSphere 6.7U1是FlexPod 一套Hypervisor選項、可搭配使用。VMware vSphere可讓組織減少電力和散熱設備佔用空間、同時確認已購買的運算容量已充分運用。此外、VMware vSphere可在vSphere主機叢集（VMware Distributed Resource Scheduler或VMware DRS）之間、提供硬體故障保護（VMware高可用度或VMware HA）及運算資源負載平衡功能。</block>
-  <block id="8a4768a722d7527cbe86721776d857b3" category="paragraph">VMware vSphere 6.7U1採用最新的VMware創新技術。此設計中使用的VMware vCenter Server Appliance（VCSA）新增了許多新功能、例如VMware vSphere Update Manager整合。VCSA也首次提供原生vCenter高可用度。若要將叢集功能新增至主機、並使用VMware HA和VMware DRS等功能、則需要VMware vCenter Server。</block>
-  <block id="f340477f92189f6652904c3add941918" category="paragraph">VMware vSphere 6.7U1也具備多項增強的核心功能。VMware HA第一次推出協調式重新啟動功能、因此在發生HA事件時、虛擬機器會以適當的順序重新啟動。此外、DRS演算法現已增強、並推出更多組態選項、以更精細地控制vSphere內部的運算資源。</block>
-  <block id="3c7ac568c47f7fc40b61f2b1fda55d72" category="paragraph">vSphere Web Client是VMware vSphere環境的管理工具首選。vSphere Web Client已有多項使用者增強功能、例如主畫面重組。例如、庫存樹狀結構現在是登入時的預設檢視。</block>
-  <block id="02456b82e5a07caa3cc2f568e2b3e342" category="inline-link">vSphere：適用於混合式雲端的高效安全平台</block>
-  <block id="9b1b5a1685b372f07c4f786abd40ef02" category="paragraph">如需VMware vSphere的詳細資訊、請參閱<block ref="5a1eeb2a0fea5e52fd534f20cf64447e" category="inline-link-rx"></block>。</block>
-  <block id="12e744622815cbcc5b2278da824f6417" category="inline-link">VMware vSphere 6.7的新功能。</block>
-  <block id="a0d87d18e518149944b58f6d9cddf472" category="paragraph">如需VMware vSphere 6.7U1新功能的詳細資訊、請參閱<block ref="d928ba2839f56e2ba82808437984a23e" category="inline-link-rx"></block></block>
-  <block id="1c2e68844c49b718af0d0ccb239a21dd" category="paragraph">如需ONTAP 支援VMware HCL的支援功能、請參閱<block ref="45bfb35eaade6b56e4f31adaaa8e4220" category="inline-link-rx"></block>。</block>
-  <block id="ccefe13bb6474061826460a1ae7cc33b" category="section-title">VMware vSphere與NetApp整合</block>
-  <block id="145b9c2e152c7223879864696f169c98" category="paragraph">VMware vSphere和NetApp有兩個主要的整合點。第一個是NetApp虛擬儲存主控台（VSC）。虛擬儲存主控台是VMware vCenter的外掛程式。此外掛程式可讓虛擬化管理員從熟悉的vCenter管理介面管理儲存設備。只要按幾下滑鼠、即可將VMware資料存放區部署到多個主機。這種緊密結合的整合、對於管理時間極高的分公司和小型組織而言、是非常重要的。</block>
-  <block id="d8052967ab202a6129ec7f3d4711ff7b" category="paragraph">第二項整合是適用於VMware VAAI的NetApp NFS外掛程式。雖然VAAI原生受區塊傳輸協定支援、但所有儲存陣列都需要VAAI外掛程式、才能提供適用於NFS的VAAI整合功能。部分NFS VAAI整合包括空間保留和複本卸載。VAAI外掛程式可透過VSC安裝。</block>
-  <block id="bc0607947d6fc29b8db9b3a462520461" category="inline-link">NetApp虛擬基礎架構管理產品頁面</block>
-  <block id="ffb3ae9234b082e3fc3ce7f85b569e77" category="paragraph">如需有關適用於VMware vSphere的NetApp VSC的詳細資訊、請參閱<block ref="aabb067f84c6d660aa72e6e3c8528716" category="inline-link-rx"></block>。</block>
   <block id="cc6b6b6f826cec578741b322169e9007" category="inline-link-macro">下一步：解決方案驗證。</block>
-  <block id="0784dd9b5a3f95830355422859d104c1" category="paragraph"><block ref="0784dd9b5a3f95830355422859d104c1" category="inline-link-macro-rx"></block></block>
   <block id="42410e327a0ce04fa742d89a538f918e" category="summary">若要建立igroup、您需要iSCSI啟動器IQN、而且必須完成下列步驟。</block>
   <block id="3aef79b738968110f1fd04a84213dacb" category="doc">NetApp AFF 解決方案儲存部署程序（第2部分）</block>
   <block id="29e24bcc9e1053f473430c39b8cfaa1f" category="section-title">支援SAN開機儲存設定ONTAP</block>
@@ -7174,12 +7094,6 @@
   <block id="e2d855673271d9c17e5213d3631ed572" category="paragraph">《指南》的《Express》FlexPod</block>
   <block id="51eba3131729aa4891b7befebe35372c" category="inline-link"><block ref="51eba3131729aa4891b7befebe35372c" category="inline-link-rx"></block></block>
   <block id="bfc850a3c1e3653444a8f23f59fba92b" category="paragraph"><block ref="bfc850a3c1e3653444a8f23f59fba92b" category="inline-link-rx"></block></block>
-  <block id="fa09ec8bcc6ec901a841f373312569a0" category="paragraph">無論選擇何種Hypervisor、所有FlexPod 的SESHExpress組態都使用相同的硬體。因此、即使業務需求改變、也能在相同FlexPod 的SExpress硬體上執行任一Hypervisor。</block>
-  <block id="31ea9666e692abe3feb5f8899d677f6c" category="cell">VA220 HA配對AFF</block>
-  <block id="f9017cb204acd69fcf08029e2ce280ff" category="cell">Cisco UCS虛擬介面卡（VIC）1440、適用於B200 M5伺服器</block>
-  <block id="485ea27c18f0f52f1b499ba0528a6862" category="cell">Cisco UCS Mini搭配兩個整合式UCS FI-M-6324光纖互連</block>
-  <block id="ab29a89dd74c91768ed4275191ac232b" category="cell">適用於Cisco UCS網路互連FI-6324UP</block>
-  <block id="3b5df09023ee3a2ec99ea3c35c3fe9ea" category="paragraph"><block ref="3b5df09023ee3a2ec99ea3c35c3fe9ea" category="inline-link-macro-rx"></block></block>
   <block id="423a9d2efae5248cfec941a4f2209d46" category="paragraph">下表列出FlexPod 了執行不需執行的硬體元件。在解決方案的任何實作中使用的硬體元件、可能會因客戶需求而異。</block>
   <block id="a8168122a0376d0f3c2a79124f258e87" category="cell">C190雙節點叢集AFF</block>
   <block id="79491ba99142dd840143ed599449daf6" category="cell">Cisco Nexus 31108PC-V交換器</block>
@@ -7257,10 +7171,6 @@
   <block id="2fd4d9993c08ed7b050345228eae6466" category="paragraph">下表列出NetApp AFF NetApp NetApp NetApp NetApp C190儲存控制器A的纜線資訊</block>
   <block id="1813f8ef4914d5e86874d77dc7a3a346" category="cell">本機連接埠</block>
   <block id="ac4ccb2313cef907f512a16dd82a0ad2" category="paragraph">下表列出NetApp AFF NetApp NetApp NetApp NetApp C190儲存控制器B的纜線資訊</block>
-  <block id="a4a3871d8b3bf543cd7db5ec3c9ab72b" category="summary">根據此解決方案的基本原則FlexPod 、FlexPod Cisco與NetApp資料中心的架構設計師與工程師已徹底測試過此架構。從備援和可用度到每項個別功能、整個FlexPod 流程都經過驗證、可為客戶建立信心、並建立對設計流程的信任感。</block>
-  <block id="fc3f1e9c796a0a527093ad513cb99616" category="paragraph">Cisco與NetApp設計並打造FlexPod 出一套適用於其客戶的卓越基礎架構平台。由於採用領先業界的元件設計、因此客戶可以信賴FlexPod 以支援功能為基礎的功能。根據此解決方案的基本原則FlexPod 、FlexPod Cisco與NetApp資料中心的架構設計師與工程師已徹底測試過此架構。從備援和可用度到每項個別功能、整個FlexPod 流程都經過驗證、可為客戶建立信心、並建立對設計流程的信任感。</block>
-  <block id="5558ad67c2e9ea988825050415810b82" category="paragraph">VMware vSphere 6.7U1 Hypervisor已通過FlexPod 有關不實的Express基礎架構元件的驗證。此驗證包括使用10GbE連線選項的iSCSI Direct Connect SAN開機連線和NFS Direct Connect資料存放區。</block>
-  <block id="2174227024b97b8a29f3fdaed88f0ae2" category="paragraph"><block ref="2174227024b97b8a29f3fdaed88f0ae2" category="inline-link-macro-rx"></block></block>
   <block id="2f5a52aeb740fb7dc198d69ddbee4910" category="paragraph">藉由提供使用領先業界元件的驗證設計、支援簡單有效的解決方案。FlexPod藉由增加額外元件來擴充、FlexPod 即可針對特定業務需求量身打造。設計過程中考慮到中小企業、ROBO及其他需要專屬解決方案的企業。FlexPod</block>
   <block id="1b302e164cc42bd6107ca6042d03cc6a" category="summary">本節所列的技術是在架構設計階段選擇的。每項技術都能在FlexPod 《支援不限需求的基礎架構解決方案：</block>
   <block id="1cb9d956e2cf5fcb066ad4125d13cd40" category="section-title">NetApp AFF 推出ONTAP 支援NetApp功能的C190系列產品</block>
@@ -7538,8 +7448,6 @@
   <block id="bb451481e26e511fe03c69a1058cc460" category="paragraph"><block ref="bb451481e26e511fe03c69a1058cc460" category="inline-link-macro-rx"></block></block>
   <block id="4266bfd7b550d5c65b5619e4baf9ddf3" category="summary">以下是本文件的版本歷程記錄。</block>
   <block id="aafb48343bbcbc586f011c8f87a52d7f" category="cell">2019年11月</block>
-  <block id="fccf6882b91cb961a97a9187a8a54a3b" category="inline-link"><block ref="fccf6882b91cb961a97a9187a8a54a3b" category="inline-link-rx"></block></block>
-  <block id="0856e6e8bd0cec5a876a3a0f2ae0e15e" category="paragraph"><block ref="0856e6e8bd0cec5a876a3a0f2ae0e15e" category="inline-link-rx"></block></block>
   <block id="c2ffa08183bd2bfb9908487bd95e6fe0" category="doc">NVA-1123-Deploy：FlexPod 《使用VMware vSphere 6.7和NetApp AFF 功能的Arse-Express部署指南》</block>
   <block id="b1d98a9b9af249f2ef744a52b6571827" category="paragraph">NetApp Express是預先設計的最佳實務資料中心架構、建置於Cisco Unified Computing System（Cisco UCS）、Cisco Nexus系列交換器及NetApp儲存技術之上。FlexPod與之類似的是、在整個IT基礎架構環境中、透過更小規模的方式、實現管理協同效益。FlexPod FlexPod支援虛擬化、裸機作業系統和企業工作負載的最佳平台、就是資料中心和不支援的平台。FlexPod FlexPod</block>
   <block id="db4467d7921f6cb9bfca1c2ea4bb7084" category="paragraph">支援基礎組態的支援中心及支援中心、可靈活調整規模及最佳化、以因應多種不同的使用案例和需求。FlexPod FlexPod現有FlexPod 的VMware資料中心客戶可以FlexPod 使用他們習慣使用的工具來管理自己的VMware Express系統。全新FlexPod 的Express客戶可隨FlexPod 環境的成長、輕鬆因應如何管理「不支援的資料中心」。</block>
@@ -7757,7 +7665,6 @@
   <block id="7e53631cecdaca27311853b3764c71cc" category="sidebar">《採用Cisco UCS C系列與NetApp功能的Express部署指南》（英文）FlexPod AFF</block>
   <block id="25bc6de1f2d2200763e7ace40aa93da8" category="sidebar">包含Cisco UCS C系列和《支援不支援的Express設計指南》（英文）FlexPod AFF</block>
   <block id="de642bfe655fa5e4487b8fa7bf3108b6" category="sidebar">《採用Cisco UCS C系列與《支援不支援的Express部署指南》（英文）FlexPod AFF</block>
-  <block id="56c337b582442869dc983cd1c84cca9d" category="sidebar">《VMware vSphere 6.7U1與NetApp VMware Infrastructure A220搭配直接附加IP型儲存設計指南》的《Express with VMware vSphere 6.7U1 and NetApp》（英文）FlexPod AFF</block>
   <block id="acee2d26489d7279c997d8552933cebe" category="sidebar">採用VMware vSphere 6.7U1與NetApp VMware Infrastructure A220搭配直接附加的IP型儲存設備的VMware Express FlexPod AFF</block>
   <block id="910af13beca7193218f534b5af1d8881" category="sidebar">技術需求</block>
   <block id="eaf16f7a69c3f115b88a6d34c8665431" category="sidebar">虛擬桌面基礎架構</block>
@@ -9704,7 +9611,6 @@
   <block id="b3e0099b048c24efc807f9dd8dad5387" category="sidebar">FlexPod Datacenter 搭配 IBM Cloud Private 、搭配 Cisco UCS Manager 、 NetApp ONTAP 9.3 AFF 和 VMware vSphere 6.5U1 - 設計</block>
   <block id="2834c2489e66234d739bc68190c533f8" category="sidebar">FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備 - 設計</block>
   <block id="0a60298d1cecc2b46fc00c3b49fad269" category="sidebar">FlexPod Datacenter for Hybrid Cloud 搭配 Cisco CloudCenter 和 NetApp 私有儲存設備 - 部署</block>
-  <block id="3684bd581345640f9a259d9a0657db7e" category="list-text">NVA-1131-Deploy ： FlexPod Express 搭配 VMware vSphere 6.7UI 和 NetApp AFF A220 、搭配直接附加的 IP 型儲存 NVA 部署</block>
   <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">2023 年 4 月</block>
   <block id="4616e97717152ad6ebe9ea5b5148926e" category="list-text">在使用者介面的「庫存」區段中的「原則」頁面下新增保護原則（ SnapMirror ）和 Snapshot 原則索引標籤。</block>
   <block id="70d106565a3a540dfd0f8bab83e76a38" category="list-text">在使用者介面的 [ 清查 ] 區段下新增了 [NFS 用戶端 ] 頁面。</block>
@@ -9823,4 +9729,8 @@
   <block id="6436adc56d37fa0f43192638e893196c" category="list-text">移除 NetApp SnapMirror 對 Volume 的關係</block>
   <block id="26d4a176845d0e66ac5ee3e91c2d833e" category="list-text">刪除 NetApp SnapMirror 策略</block>
   <block id="55b6a7c6b2794c0f9cf3d79716818187" category="list-text">更新 SVM 根 Volume 的 NetApp 負載共用鏡像</block>
+  <block id="6d6bbe0ff14c220c87649b72d24ad927" category="section-title">2023 年 8 月</block>
+  <block id="ee1a60bf8afd48f5c57ef8a62da497e2" category="list-text">改進了新的 NetApp Smart LUN 工作、以清楚指出建立新啟動器群組或選取現有啟動器群組的可用選擇選項。當使用者現在選取方塊以建立新的啟動器群組時、用於選擇現有啟動器群組的參數將不再可用。如果使用者取消選取此方塊以建立新的啟動器群組、則現有的啟動器群組參數就會變成可用。</block>
+  <block id="1223b61ead710c697d121bc4c8df6a60" category="list-text">增強了新的 NetApp LUN 映射和刪除 NetApp LUN 映射任務。LUN 與啟動器群組之間的新關係現已更新。執行工作時、會立即更新 LUN 和啟動器群組的 UI 清查。</block>
+  <block id="cda91d963199f150b4c27541606d0790" category="list-text">現在、檢查頁面會在使用者第一次登入時正確載入、不再需要重新整理。</block>
 </blocks>
