@@ -7600,15 +7600,6 @@
   <block id="b61ec8a6584e8053e237f93973f50289" category="section-title">新增基礎架構SVM管理員</block>
   <block id="61035b7df4ae78c3b522047b643dc8f1" category="paragraph">下表列出新增SVM管理員所需的資訊。</block>
   <block id="17cfc2f2b50e58c93aaf0a477ff54037" category="sidebar">解決方案文件FlexPod</block>
-  <block id="af0963a66759af7047416c9d85f32efe" category="sidebar">–從這裡開始FlexPod</block>
-  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新增功能</block>
-  <block id="17c3771ed0b6c1ae15740eff715e9922" category="sidebar">影片與示範</block>
-  <block id="d6b9ea32b921a9f56de32062ba4b94f3" category="sidebar">部落格</block>
-  <block id="cfa345d8fdba7b2e9598cce9c0e3c744" category="sidebar">AI與現代化資料分析功能FlexPod 、搭配</block>
-  <block id="7d15915b1c0d83b2d07ba91bb371d99c" category="sidebar">商業應用程式與企業資料庫FlexPod</block>
-  <block id="9651c3a3b7cbc999c2c50c39dbf61c04" category="sidebar">混合雲FlexPod 與功能</block>
-  <block id="7cb27dbb321a2dda7b1a59417ac87d24" category="sidebar">適用於VDI FlexPod</block>
-  <block id="e24bc29daa40702c050f7f3b61476c6f" category="sidebar">以功能為本的醫療照護FlexPod</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="b1b5d8cebde8af104d3749c7d984f391" category="sidebar">可解析度FlexPod</block>
   <block id="1f1a6514305e31e63aa9ce9e1338aa48" category="sidebar">部分技術規格FlexPod</block>
@@ -9688,7 +9679,6 @@
   <block id="4afd182647adde3ae53ba9636f8ecd85" category="list-text">NetApp 儲存工作的更新名稱。請參閱 <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> 以取得重新命名工作的完整清單。</block>
   <block id="2d24bfd4ad96e334ad70f500b56563c3" category="list-text">在Cisco Intersight中新增NetApp工作流程儲存工作。請參閱 <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> 以取得NetApp儲存工作的完整清單。</block>
   <block id="c0d6fe9e8f745815653bfbc202c74e93" category="list-text">更新了Cisco Intersight中可用的NetApp儲存工作清單。請參閱 <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> 以取得NetApp儲存工作的完整清單。</block>
-  <block id="cef4011c89ea914920838c57c1277b96" category="cell">需要最新版本的 NetApp Active IQ Unified Manager （目前為 9.13GA ）</block>
   <block id="fb5978407d362c06c4a1c8ab72f464f1" category="section-title">2023 年 7 月</block>
   <block id="f6134ed465dbb55c3531c607933bd957" category="admonition">必須升級至 NetApp Active IQ Unified Manager 9.13GA 、才能確保與最新版本相容並享有完整功能。</block>
   <block id="4a743225a883b79a064e0fe794bed4bc" category="list-text">NetApp 儲存工作的更新名稱。如需重新命名工作的完整清單、請參閱使用案例 3 使用無設計師表單的自訂工作流程。</block>
@@ -9704,7 +9694,6 @@
   <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">可用度</block>
   <block id="6311ae17c1ee52b36e68aaf4ad066387" category="list-text">其他</block>
   <block id="ccc2c146b1c8e887b8cb561649b51add" category="list-text">在「詳細目錄」檢視下、現在使用的是報告、而非實體使用的容量。</block>
-  <block id="a45b01faef5c490c90c647f2428032f0" category="paragraph">如果您尚未安裝或升級至 Active IQ Unified Manager （目前為 9.13GA 、需要最新版本）。如需相關指示、請前往 <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>。</block>
   <block id="d3b7d0dfd7a4c0712106720b7a263dcc" category="list-text">將 ACL 新增至 NetApp CIFS 共用</block>
   <block id="e38df0ad25eaed709eb4fc30b431f674" category="list-text">將用戶端比對新增至 NetApp 匯出原則規則</block>
   <block id="c8750c2c8ef4365e348e3f2d6f7e0a60" category="list-text">確認 NetApp 授權狀態</block>
@@ -9733,4 +9722,10 @@
   <block id="ee1a60bf8afd48f5c57ef8a62da497e2" category="list-text">改進了新的 NetApp Smart LUN 工作、以清楚指出建立新啟動器群組或選取現有啟動器群組的可用選擇選項。當使用者現在選取方塊以建立新的啟動器群組時、用於選擇現有啟動器群組的參數將不再可用。如果使用者取消選取此方塊以建立新的啟動器群組、則現有的啟動器群組參數就會變成可用。</block>
   <block id="1223b61ead710c697d121bc4c8df6a60" category="list-text">增強了新的 NetApp LUN 映射和刪除 NetApp LUN 映射任務。LUN 與啟動器群組之間的新關係現已更新。執行工作時、會立即更新 LUN 和啟動器群組的 UI 清查。</block>
   <block id="cda91d963199f150b4c27541606d0790" category="list-text">現在、檢查頁面會在使用者第一次登入時正確載入、不再需要重新整理。</block>
+  <block id="b58b1adee5f08a2f37b40ee17c3097e8" category="cell">需要最新版本的 NetApp Active IQ Unified Manager （目前為 9.14RC1 ）</block>
+  <block id="b225002f4ba131c321e0dc8d89d5a8ad" category="paragraph">如果您尚未安裝或升級至 Active IQ Unified Manager （目前為 9.14RC1 、需要最新版本）。如需相關指示、請前往 <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>。</block>
+  <block id="e245b121672965eb5c120373beb6ebe2" category="image-alt">「部署 OVF 範本」畫面的快照</block>
+  <block id="fb784db76f57bc935639ba5340089d77" category="section-title">2023 年 11 月</block>
+  <block id="0860efb25683aa716ffcd95186cf7353" category="admonition">必須升級至 NetApp Active IQ Unified Manager 9.14RC1 、才能確保與最新版本相容並享有完整功能。</block>
+  <block id="5c49c1696b71ecb277e29a00e385c986" category="list-text">在使用者介面的「清查」區段下新增 NVMe 命名空間頁面。</block>
 </blocks>

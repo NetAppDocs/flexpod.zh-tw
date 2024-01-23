@@ -20,7 +20,7 @@ summary: 開始之前、請先安裝或升級AIQ UM、建立Cisco Intersight帳�
 
 == 安裝或升級NetApp Active IQ Unified Manager 產品
 
-如果您尚未安裝或升級至 Active IQ Unified Manager （目前為 9.13GA 、需要最新版本）。如需相關指示、請前往 link:https://docs.netapp.com/us-en/active-iq-unified-manager/["NetApp Active IQ Unified Manager 產品文件"]。
+如果您尚未安裝或升級至 Active IQ Unified Manager （目前為 9.14RC1 、需要最新版本）。如需相關指示、請前往 link:https://docs.netapp.com/us-en/active-iq-unified-manager/["NetApp Active IQ Unified Manager 產品文件"]。
 
 
 
@@ -47,10 +47,10 @@ image::ci-qsg_image2.png[部署OVF範本步驟5組態的快照]
 
 .. 在「*自訂範本*」頁面上、自訂OVF範本的部署內容。系統管理員密碼適用於本機使用者：admin(`WebUI/CLI/ssh）。
 +
-image::ci-qsg_image3.png[錯誤：缺少圖形影像]
+image::ci-qsg_image3.png[「部署 OVF 範本」畫面的快照]
 
 +
-image::ci-qsg_image4.png[錯誤：缺少圖形影像]
+image::ci-qsg_image4.png[「部署 OVF 範本」畫面的快照]
 
 .. 單擊 * 下一步 * 。
 
