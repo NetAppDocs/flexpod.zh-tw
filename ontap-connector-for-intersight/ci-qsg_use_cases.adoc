@@ -33,34 +33,45 @@ summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個�
 
 
 
-== 使用案例2：使用參考工作流程進行NetApp儲存協調
+== 使用案例 2 ：使用參考工作流程的 NetApp 儲存協調
 
-當Cisco Intersight提供NetApp儲存設備和vCenter環境時、您可以執行隨裝即用的端點對端點參考工作流程、包括儲存設備和虛擬化工作。
+當 NetApp 儲存設備和 vCenter 環境可在 Cisco Intersight 中使用時、您可以透過使用 GitHub 中的端點對端參考工作流程 https://github.com/ucs-compute-solutions/FlexPod-Intersight-Workflow["FlexPod Intersight Workflow 儲存庫"^]。
+
+參考工作流程包括儲存和虛擬化工作。儲存庫的 README 檔案提供執行工作流程所需的先決條件、實用資源的連結（包括如何匯入工作流程的文件）、以及每個參考工作流程的文件連結。
+
+每個工作流程在儲存庫中都有一個資料夾、其中包含兩個檔案：
+
+* 要下載並匯入 Intersight 的 JSON 檔案、
+* 文件檔案、提供工作流程中工作、工作流程輸入及工作流程執行範例的檢視。
+
+
+執行下列步驟以匯入及使用參考工作流程：
 
 . 部署Intersight assist OVA（vCenter環境中的OnPrem工作）。
 . 在Intersight小幫手中新增NetApp AIQ UM裝置。
 . 透過Intersight小幫手將vCenter目標新增至Intersight。
-. 執行隨裝即用的參考工作流程。
-+
-以下是參考工作流程清單：
-
-+
-** 全新NAS資料存放區
-** 新的儲存匯出原則
-** 新的儲存主機
-** 全新儲存介面
-** 全新儲存虛擬機器
-** 新增虛擬機器
-** 新的VMFS資料存放區
-** 移除NAS資料存放區
-** 移除儲存匯出原則
-** 移除儲存主機
-** 移除VMFS資料存放區
-** 更新NAS資料存放區
-** 更新儲存主機
-** 更新VMFS資料存放區
+. 從 FlexPod Intersight 工作流程儲存庫下載 JSON 檔案以取得參考工作流程。
+. 將工作流程匯入到 Intersight 、然後執行工作流程。
 
 
+以下是 GitHub FlexPod 對 Intersight 工作流程儲存庫的可用工作流程清單：
+
+* 將啟動器新增至 NetApp 啟動器群組
+* NetApp Volume 的新匯出原則
+* 使用 NetApp 智慧型磁碟區的新 NAS 資料存放區
+* 全新 NetApp FC 資料介面
+* 新的 NetApp 啟動器群組
+* 全新 NetApp iSCSI 資料介面
+* 全新 NetApp NAS 資料介面
+* 全新 NetApp 儲存虛擬機器
+* 使用 NetApp Smart LUN 的新 VMFS 資料存放區
+* 從 NetApp 啟動器群組移除啟動器
+* 使用 NetApp 智慧型磁碟區移除 NAS 資料存放區
+* 移除 NetApp 匯出原則
+* 移除 NetApp 啟動器群組
+* 使用 NetApp 智慧 LUN 移除 VMFS 資料存放區
+* 使用 NetApp 智慧型磁碟區更新 NAS 資料存放區
+* 使用 NetApp 智慧 LUN 更新 VMFS 資料存放區
 
 
 

@@ -29,24 +29,7 @@
   <block id="2a304a1348456ccd2234cd71a81bd338" category="inline-link">連結</block>
   <block id="c93483174eb31dc7fbbe326f1c100f35" category="paragraph">以下是<block ref="e0428282d0e7de772227d65a22541ae5" category="inline-link-rx"></block> 展示ONTAP Cisco Intersight的NetApp NetApp資料儲存監控功能的影片。</block>
   <block id="4eddc275f6028504b4d1bbed1e6ae1cb" category="section-title">使用案例2：使用參考工作流程進行NetApp儲存協調</block>
-  <block id="71db33e46e7cd195a5435b5bbd459f00" category="paragraph">當Cisco Intersight提供NetApp儲存設備和vCenter環境時、您可以執行隨裝即用的端點對端點參考工作流程、包括儲存設備和虛擬化工作。</block>
   <block id="ad394a42593fccfc9f89e6e10730a3c0" category="list-text">透過Intersight小幫手將vCenter目標新增至Intersight。</block>
-  <block id="e5b3d0fd155bb870e4420af06394bbd3" category="list-text">執行隨裝即用的參考工作流程。</block>
-  <block id="084d65e339ce13f9808de5cb168533ee" category="paragraph">以下是參考工作流程清單：</block>
-  <block id="6bdb241b38971486dbf0ae65713629b5" category="list-text">全新儲存介面</block>
-  <block id="41015c59f24c8d0a295bb008dcab894b" category="list-text">新的VMFS資料存放區</block>
-  <block id="90b8d6dbd471d96a6eb81c26e4950f66" category="list-text">更新VMFS資料存放區</block>
-  <block id="c8294275582a7d8cf8eb396e416bd5bc" category="list-text">移除VMFS資料存放區</block>
-  <block id="221275b515f2f2d061278fa891fba037" category="list-text">全新NAS資料存放區</block>
-  <block id="b4ce0f100a8ef985df3d96c1de352e59" category="list-text">更新NAS資料存放區</block>
-  <block id="2be427f143fe2c7535d3255ff3acb81b" category="list-text">移除NAS資料存放區</block>
-  <block id="cf585ac30084d99acfaf33e5e4dd62d1" category="list-text">新的儲存主機</block>
-  <block id="b3899145c67672c8bd99a3b4d43bf690" category="list-text">更新儲存主機</block>
-  <block id="c9c602ce9bba0253c26a1e2982260f1c" category="list-text">移除儲存主機</block>
-  <block id="e6e0c10af4047ddf4cc255b55df46dac" category="list-text">新的儲存匯出原則</block>
-  <block id="eda4446acba9d8508e0d513c13d3d9da" category="list-text">移除儲存匯出原則</block>
-  <block id="7c482940e2cbbc8b34c0ea99ea5d46d4" category="list-text">全新儲存虛擬機器</block>
-  <block id="09a4d46ab76931825b888683878c6c76" category="list-text">新增虛擬機器</block>
   <block id="97e1e380ad6fec970bc1c31e70c64a7a" category="section-title">使用案例3：使用無設計人員表單自訂工作流程</block>
   <block id="ebdd07b29e304318f596e225db587279" category="paragraph">當NetApp儲存設備和vCenter環境可在Cisco Intersight中使用時、您可以使用NetApp儲存設備和虛擬化工作來建立自訂工作流程。</block>
   <block id="28138f5b00c14f915db4af5bc22c6e89" category="list-text">部署Intersight輔助OVA（vCenter環境中的OnPrem工作）</block>
@@ -9726,6 +9709,26 @@
   <block id="b225002f4ba131c321e0dc8d89d5a8ad" category="paragraph">如果您尚未安裝或升級至 Active IQ Unified Manager （目前為 9.14RC1 、需要最新版本）。如需相關指示、請前往 <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>。</block>
   <block id="e245b121672965eb5c120373beb6ebe2" category="image-alt">「部署 OVF 範本」畫面的快照</block>
   <block id="fb784db76f57bc935639ba5340089d77" category="section-title">2023 年 11 月</block>
-  <block id="0860efb25683aa716ffcd95186cf7353" category="admonition">必須升級至 NetApp Active IQ Unified Manager 9.14RC1 、才能確保與最新版本相容並享有完整功能。</block>
   <block id="5c49c1696b71ecb277e29a00e385c986" category="list-text">在使用者介面的「清查」區段下新增 NVMe 命名空間頁面。</block>
+  <block id="3edb98d021e3054db284901ca7c19c71" category="section-title">使用案例 2 ：使用參考工作流程的 NetApp 儲存協調</block>
+  <block id="4deb0bcf6ee79bb6231b1d9a8236ee7f" category="inline-link">FlexPod Intersight Workflow 儲存庫</block>
+  <block id="801e3380644b27475e0559db15c18ffe" category="paragraph">當 NetApp 儲存設備和 vCenter 環境可在 Cisco Intersight 中使用時、您可以透過使用 GitHub 中的端點對端參考工作流程<block ref="dbef3ce40b045312da2d2a3590390d56" category="inline-link-rx"></block>。</block>
+  <block id="a7b8d77df644cec5edd41602f8bde9fe" category="paragraph">參考工作流程包括儲存和虛擬化工作。儲存庫的 README 檔案提供執行工作流程所需的先決條件、實用資源的連結（包括如何匯入工作流程的文件）、以及每個參考工作流程的文件連結。</block>
+  <block id="42ee80278c64c0335ab90c3ca11e5fc2" category="paragraph">每個工作流程在儲存庫中都有一個資料夾、其中包含兩個檔案：</block>
+  <block id="f74336cac868327b942a18cba977b140" category="list-text">要下載並匯入 Intersight 的 JSON 檔案、</block>
+  <block id="4efec42a58f3f78364a340527d6a91c5" category="list-text">文件檔案、提供工作流程中工作、工作流程輸入及工作流程執行範例的檢視。</block>
+  <block id="75a064044a86e35e2e078856b448e6ce" category="paragraph">執行下列步驟以匯入及使用參考工作流程：</block>
+  <block id="1ff531cef47fff4cf5489daaf767913b" category="list-text">從 FlexPod Intersight 工作流程儲存庫下載 JSON 檔案以取得參考工作流程。</block>
+  <block id="e6b633ef88a5f19ab750e7561b73ba79" category="list-text">將工作流程匯入到 Intersight 、然後執行工作流程。</block>
+  <block id="e23b10811291830d7473d61a83fea7b7" category="paragraph">以下是 GitHub FlexPod 對 Intersight 工作流程儲存庫的可用工作流程清單：</block>
+  <block id="ad1cc7a77d25ebba82b62c73eb10b612" category="list-text">NetApp Volume 的新匯出原則</block>
+  <block id="71305ad3f6f06f57de106696ca53fcc9" category="list-text">使用 NetApp 智慧型磁碟區的新 NAS 資料存放區</block>
+  <block id="6fcc1f9b74af784c1c904dd8f98d13bc" category="list-text">使用 NetApp Smart LUN 的新 VMFS 資料存放區</block>
+  <block id="26d33b228398e0c75f8ce7e3c24ece85" category="list-text">從 NetApp 啟動器群組移除啟動器</block>
+  <block id="2c727aeb2c8679c2588db34d4518e88b" category="list-text">使用 NetApp 智慧型磁碟區移除 NAS 資料存放區</block>
+  <block id="cb623d65e44d9911c481d53db6546cfd" category="list-text">使用 NetApp 智慧 LUN 移除 VMFS 資料存放區</block>
+  <block id="84c6562e9555586ee56eb4096f52f8d2" category="list-text">使用 NetApp 智慧型磁碟區更新 NAS 資料存放區</block>
+  <block id="eade77a2815c8954887e241cc8a7cdbd" category="list-text">使用 NetApp 智慧 LUN 更新 VMFS 資料存放區</block>
+  <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">2024 年 1 月</block>
+  <block id="1dbf0a61b61f004514eb71c762bdda23" category="list-text">NetApp 儲存協調功能使用參考工作流程、現在可透過在 GitHub 下載<block ref="dbef3ce40b045312da2d2a3590390d56" category="inline-link-rx"></block>。如需 GitHub 新參考工作流程的詳細資訊、請參閱 <block ref="603c2ccdc54cec25fe66c69c148f7dcb" category="inline-link-macro-rx"></block>。</block>
 </blocks>
