@@ -21,4 +21,13 @@ summary: NetApp與Cisco攜手合作、提供Cisco Intersight、這是FlexPod 一
 
 NetApp與Cisco攜手合作、提供Cisco Intersight、這是FlexPod 一套單一窗格的視覺系統、可檢視整個過程。這項簡化的整合功能可為FlexPod 整個基礎架構和FlexPod 解決方案中的所有元件、打造統一化的管理平台。Cisco Intersight可讓您監控NetApp儲存設備、Cisco運算和VMware庫存。它也能讓您協調或自動化工作流程、以同時完成儲存和虛擬化工作。
 
-如需詳細資訊、請參閱 https://www.netapp.com/pdf.html?item=/media/25001-tr-4883.pdf["TR 4883：FlexPod 使用ONTAP NetApp 9.8的「資料中心」ONTAP 、適用於Cisco Intersight的「資料中心」、以及Cisco Intersight託管模式"^]。
+.相關資訊
+若要深入瞭解、請參閱下列文件與網站：
+
+https://www.netapp.com/pdf.html?item=/media/25001-tr-4883.pdf["TR 4883：FlexPod 使用ONTAP NetApp 9.8的「資料中心」ONTAP 、適用於Cisco Intersight的「資料中心」、以及Cisco Intersight託管模式"^]
+
+https://intersight.com/help/saas["Cisco Intersight 說明中心"^]
+
+https://intersight.com/help/saas/getting_started/overview["Cisco Intersight入門總覽"^]
+
+https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html["Intersight Appliance安裝與升級指南"^]

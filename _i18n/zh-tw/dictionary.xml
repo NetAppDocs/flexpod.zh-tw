@@ -95,12 +95,9 @@
   <block id="576d68d6992169cd3bb02c001107e7c3" category="list-text">此快照顯示依容量使用率列出的前5大儲存磁碟區Widget。</block>
   <block id="0052563506ed9ab396a7ac543d56f145" category="inline-image-macro">快照顯示依容量使用率列出的前5大儲存磁碟區小工具</block>
   <block id="5790ebb9a8027e9d9e85946b4ff80af5" category="paragraph"><block ref="5790ebb9a8027e9d9e85946b4ff80af5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fa776a6d8035e935e3ca744e1a9a7d09" category="summary">若要深入瞭解、請參閱參考文件和網站。</block>
   <block id="d95867deadfe690e40f42068d6b59df8" category="doc">參考資料</block>
   <block id="937072d3e0f7b646b7f3f24a312489f8" category="paragraph">若要深入瞭解、請參閱下列文件與網站：</block>
   <block id="4c797a8e70e93514000fabd2051b5ddb" category="paragraph"><block ref="4c797a8e70e93514000fabd2051b5ddb" category="inline-link-rx"></block></block>
-  <block id="7b3308b95aec192d46bc92dd7fb02cb2" category="inline-link">Cisco Intersight託管模式FlexPod 、適用於</block>
-  <block id="2155a8941fd728202c18dade730100d6" category="paragraph"><block ref="2155a8941fd728202c18dade730100d6" category="inline-link-rx"></block></block>
   <block id="0580772620331f949057ed6afbb098ea" category="inline-link">Cisco Intersight入門總覽</block>
   <block id="4d49c14c4afe96eb88aaef6d6588599b" category="inline-link">Intersight Appliance安裝與升級指南</block>
   <block id="5cce77ecfcdbd5857d67110262f7b5a9" category="paragraph"><block ref="5cce77ecfcdbd5857d67110262f7b5a9" category="inline-link-rx"></block></block>
@@ -149,18 +146,8 @@
   <block id="29d1db03b55072fc401d11d7d0750f61" category="cell">部分9.7P1及更新版本ONTAP</block>
   <block id="45699291c017a65a90e4bb25860f4315" category="cell">NetApp Active IQ Unified Manager</block>
   <block id="5dc8e3707996259deb52abdfee00eac9" category="cell">NetApp儲存陣列</block>
-  <block id="00b515e766e1cba805399ff9eb813a8f" category="cell">支援所有的支援功能、包括所有的支援功能、支援所有的支援功能、包括更新版本的支援ONTAP ASA AFF FAS ONTAP</block>
   <block id="1f8e8bd6bc1c4895f936485882fbdf9d" category="cell">虛擬化Hypervisor</block>
-  <block id="4ca6768d140e70826f7716d07807dc17" category="cell">vSphere 6.7及更新版本</block>
-  <block id="72070c9ef3f94bc3718c44ba73d4ccc3" category="admonition">請參閱<block ref="2c43cbcc5ede8fefeab295a68acd4cdb" category="inline-link-rx"></block> 適用於Cisco UCS運算元件和UCSM版本的最低需求。</block>
   <block id="4aa6cd6038c4fecb0c308ca4d3dcdea0" category="section-title">Cisco Intersight授權要求</block>
-  <block id="679eff4aa4d3a357123f3400b7f819f4" category="paragraph">Cisco Intersight以訂購方式授權、並提供多種授權版本供您選擇。不同授權類型的功能也隨之增加。您可以購買一年、三年或五年的訂閱期間、並選擇所選訂閱期間所需的Cisco UCS Server Volume層。當您存取Cisco Intersight入口網站並索取裝置時、每個Cisco端點都會自動包含Cisco Intersight Base、而且不需額外付費。</block>
-  <block id="c4c01460eb0fd0e7d30ef65622dc7cb2" category="paragraph">您可以使用Cisco訂購工具購買下列任何較高層的Intersight授權：</block>
-  <block id="fbd64fb1c56050f38cf0c2d9441004af" category="list-text">* Cisco Intersight Essentials。* Essentials包含基礎層的所有功能、以及其他功能、包括Cisco UCS Central和Cisco IMC主管權限、含服務設定檔的原則型組態、韌體管理、以及與硬體相容性清單（HCL）的相容性評估。</block>
-  <block id="8a30fe4ae6d8d0310e0d329493bc21c3" category="list-text">* Cisco Intersight Advantage * Advantage提供基礎層級和基礎層級的所有功能。其中包括儲存小工具、儲存設備庫存、儲存容量和儲存使用率、以及跨網域的實體運算、實體儲存設備和虛擬環境（VMware ESXi）庫存關聯。</block>
-  <block id="97f9beafe8a267c8b35e2fb7235394ab" category="list-text">* Cisco Intersight Premier *除了優勢層提供的功能之外、Cisco Intersight Premier還提供跨Cisco UCS及協力廠商系統（包括虛擬機器（VM）（VMware vCenter）和實體儲存設備（NetApp儲存設備）的私有雲端基礎架構即服務（IaaS）協調功能。</block>
-  <block id="d4780504a816544f6e2645b57ea78a79" category="inline-link">Cisco授權</block>
-  <block id="926dfe010cd806b1815f2e2e910d07ee" category="paragraph">如需各種授權層級所涵蓋功能的詳細資訊、請參閱<block ref="8697cd039441f6238fc2562e0fa792ae" category="inline-link-rx"></block>。</block>
   <block id="5c6023ee4b202fd210e040f3256ae3bb" category="summary">技術規格提供FlexPod 有關解決方案中硬體元件的詳細資料、例如機箱、FEXs、伺服器、交換器、 和儲存控制器。</block>
   <block id="545eb122d6490808d1415c5c5bdd774c" category="doc">技術規格與參考資料</block>
   <block id="bad8a4f88c94235d7705cc936c07c298" category="section-title">Cisco UCS B系列刀鋒伺服器機箱</block>
@@ -9731,4 +9718,19 @@
   <block id="eade77a2815c8954887e241cc8a7cdbd" category="list-text">使用 NetApp 智慧 LUN 更新 VMFS 資料存放區</block>
   <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">2024 年 1 月</block>
   <block id="1dbf0a61b61f004514eb71c762bdda23" category="list-text">NetApp 儲存協調功能使用參考工作流程、現在可透過在 GitHub 下載<block ref="dbef3ce40b045312da2d2a3590390d56" category="inline-link-rx"></block>。如需 GitHub 新參考工作流程的詳細資訊、請參閱 <block ref="603c2ccdc54cec25fe66c69c148f7dcb" category="inline-link-macro-rx"></block>。</block>
+  <block id="21fdbbe30d03ba60217ad219e4a43475" category="paragraph">驗證您是否符合 NetApp ONTAP 儲存設備與 Cisco Intersight 整合的硬體、軟體和授權要求。</block>
+  <block id="cf37c5cba207938e4c97f3bcf9ffabc9" category="cell">ONTAP 9.7P1 及更新版本支援的所有 ONTAP ASA 、 AFF 及 FAS 儲存陣列</block>
+  <block id="de19bc9421b3493cb471fb68d644f614" category="cell">vSphere 7.0 及更新版本</block>
+  <block id="2bab0c7a59bda4a6cf8bb732310f19d1" category="inline-link">Cisco Intersight 支援的系統</block>
+  <block id="4583b551e49cf84018c42a34fc90472b" category="admonition">請參閱<block ref="c301da257433e3b44d89736f9cb32482" category="inline-link-rx"></block> 適用於Cisco UCS運算元件和UCSM版本的最低需求。</block>
+  <block id="c6992d015712de0f9935c930f87d1e24" category="paragraph">Cisco Intersight 提供基礎架構服務和 Cloud Orchestrator 服務等服務、以管理、自動化及最佳化實體儲存設備（ NetApp 儲存設備）。您可以使用這些服務來管理 Cisco UCS 伺服器和 Cisco HyperFlex 系統。基礎架構服務和 Cloud Orchestrator 服務使用多層的訂閱型授權模式。您可以選擇所選訂閱期間所需的 Cisco UCS Server Volume 層級。</block>
+  <block id="73940e6c81db7305c6108d57163a6bd9" category="paragraph-title">授權模式</block>
+  <block id="0eeef496e6954ad0d16a059fafdc5e38" category="paragraph">Cisco Intersight Infrastructure Services 授權模式已簡化、現在提供下列兩層：</block>
+  <block id="cebf91fe773dd5685c20ef3bff0017f3" category="list-text">* Cisco Intersight Infrastructure Services Essentials * ： Essentials 授權層提供伺服器管理功能、包括全球健全狀況監控功能、庫存、透過 Cisco TAC 整合提供主動式支援、多重驗證、以及提供 SDK 和 API 存取。</block>
+  <block id="0ef1beaa09215da1b27e26da9c01b73b" category="list-text">* Cisco Intersight Infrastructure Services Advantage* ：「優勢」授權層提供進階伺服器管理功能、提供更高的可見度、生態系統整合、 Cisco 與協力廠商軟硬體的自動化、以及提供多網域解決方案。</block>
+  <block id="f5e1db835ff4b10b4a6531770f9643e9" category="inline-link">基礎架構服務授權</block>
+  <block id="2c355e53fd6c41fd8e75d57ff3e446e3" category="paragraph">如需各種授權層級所涵蓋功能的詳細資訊、請參閱<block ref="b733a46c0b54e4d9837584b6621e33e9" category="inline-link-rx"></block>。</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="paragraph-title">相關資訊</block>
+  <block id="cb2f26cdcb58be1d59a4186132027351" category="inline-link">Cisco Intersight 說明中心</block>
+  <block id="cbdd42cc134bfbfb08861472ec705bb4" category="paragraph"><block ref="cbdd42cc134bfbfb08861472ec705bb4" category="inline-link-rx"></block></block>
 </blocks>

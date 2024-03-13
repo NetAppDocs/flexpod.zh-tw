@@ -14,7 +14,7 @@ summary: 檢查您是否符合與ONTAP Cisco Intersight整合NetApp®儲存設�
 
 
 [role="lead"]
-檢查您是否符合與ONTAP Cisco Intersight整合NetApp®儲存設備的硬體、軟體及授權要求。
+驗證您是否符合 NetApp ONTAP 儲存設備與 Cisco Intersight 整合的硬體、軟體和授權要求。
 
 
 
@@ -32,25 +32,25 @@ summary: 檢查您是否符合與ONTAP Cisco Intersight整合NetApp®儲存設�
 | NetApp Active IQ Unified Manager | 需要最新版本的 NetApp Active IQ Unified Manager （目前為 9.14RC1 ） 
 
 
-| NetApp儲存陣列 | 支援所有的支援功能、包括所有的支援功能、支援所有的支援功能、包括更新版本的支援ONTAP ASA AFF FAS ONTAP 
+| NetApp儲存陣列 | ONTAP 9.7P1 及更新版本支援的所有 ONTAP ASA 、 AFF 及 FAS 儲存陣列 
 
 
-| 虛擬化Hypervisor | vSphere 6.7及更新版本 
+| 虛擬化Hypervisor | vSphere 7.0 及更新版本 
 |===
 
-NOTE: 請參閱 https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/flexpod/cisco-imm-for-flexpod.html["Cisco Intersight託管模式FlexPod 、適用於"^] 適用於Cisco UCS運算元件和UCSM版本的最低需求。
+NOTE: 請參閱 https://intersight.com/help/saas/supported_systems["Cisco Intersight 支援的系統"^] 適用於Cisco UCS運算元件和UCSM版本的最低需求。
 
 
 
 == Cisco Intersight授權要求
 
-Cisco Intersight以訂購方式授權、並提供多種授權版本供您選擇。不同授權類型的功能也隨之增加。您可以購買一年、三年或五年的訂閱期間、並選擇所選訂閱期間所需的Cisco UCS Server Volume層。當您存取Cisco Intersight入口網站並索取裝置時、每個Cisco端點都會自動包含Cisco Intersight Base、而且不需額外付費。
+Cisco Intersight 提供基礎架構服務和 Cloud Orchestrator 服務等服務、以管理、自動化及最佳化實體儲存設備（ NetApp 儲存設備）。您可以使用這些服務來管理 Cisco UCS 伺服器和 Cisco HyperFlex 系統。基礎架構服務和 Cloud Orchestrator 服務使用多層的訂閱型授權模式。您可以選擇所選訂閱期間所需的 Cisco UCS Server Volume 層級。
 
-您可以使用Cisco訂購工具購買下列任何較高層的Intersight授權：
+.授權模式
+Cisco Intersight Infrastructure Services 授權模式已簡化、現在提供下列兩層：
 
-* * Cisco Intersight Essentials。* Essentials包含基礎層的所有功能、以及其他功能、包括Cisco UCS Central和Cisco IMC主管權限、含服務設定檔的原則型組態、韌體管理、以及與硬體相容性清單（HCL）的相容性評估。
-* * Cisco Intersight Advantage * Advantage提供基礎層級和基礎層級的所有功能。其中包括儲存小工具、儲存設備庫存、儲存容量和儲存使用率、以及跨網域的實體運算、實體儲存設備和虛擬環境（VMware ESXi）庫存關聯。
-* * Cisco Intersight Premier *除了優勢層提供的功能之外、Cisco Intersight Premier還提供跨Cisco UCS及協力廠商系統（包括虛擬機器（VM）（VMware vCenter）和實體儲存設備（NetApp儲存設備）的私有雲端基礎架構即服務（IaaS）協調功能。
+* * Cisco Intersight Infrastructure Services Essentials * ： Essentials 授權層提供伺服器管理功能、包括全球健全狀況監控功能、庫存、透過 Cisco TAC 整合提供主動式支援、多重驗證、以及提供 SDK 和 API 存取。
+* * Cisco Intersight Infrastructure Services Advantage* ：「優勢」授權層提供進階伺服器管理功能、提供更高的可見度、生態系統整合、 Cisco 與協力廠商軟硬體的自動化、以及提供多網域解決方案。
 
 
-如需各種授權層級所涵蓋功能的詳細資訊、請參閱 https://intersight.com/help/getting_started#intersight_licensing["Cisco授權"]。
+如需各種授權層級所涵蓋功能的詳細資訊、請參閱 https://intersight.com/help/saas/getting_started/licensing_requirements/lic_infra#licensing_model["基礎架構服務授權"^]。
