@@ -22,3 +22,5 @@ sidebar:
   - section: security
   - section: ontap-connector-for-intersight
   - section: infrastructure
+  - title: 法律聲明
+    url: "/legal-notices.html"

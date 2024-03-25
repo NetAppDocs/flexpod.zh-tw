@@ -1,0 +1,54 @@
+---
+indexpage:
+  title: 解決方案FlexPod
+  summary: 支援解決方案是一套策略與技術功能、強調NetApp產品與服務組合、以支援客戶最關鍵的業務需求。FlexPod
+  keywords: flexpod, solutions, netapp, cisco, deployments, portfolio, cloud, ontap
+  lead: FlexPod 平台採用 NetApp 和 Cisco 的突破性技術、並受到全球數千家客戶的信賴、能夠克服並超越簡化部署以實現同級最佳資料中心架構的挑戰。FlexPod
+    是由預先驗證的儲存、網路和伺服器技術所組成、旨在提升 IT 回應組織需求的能力、降低運算成本、並提供最長的正常運作時間和最小的風險。透過簡化資料和應用程式的交付、您的企業就能在邊緣、核心或雲端上執行新的服務和工作負載。
+  tiles:
+  - title: "–從這裡開始FlexPod"
+    links:
+    - title: 新增功能
+      url: https://fieldportal.netapp.com/content/1668183
+    - title: 影片與示範
+      url: https://tv.netapp.com/search?q=FlexPod
+    - title: 部落格
+      url: https://blog.netapp.com/tag/Flexpod/
+  - title: AI與現代化資料分析功能FlexPod 、搭配
+    links:
+    - title: 新增功能
+      url: https://www.flexpod.com/solutions/use-cases/machine-learning/
+    - title: 影片與示範
+      url: https://tv.netapp.com/search?q=FlexPod%20AI
+    - title: 部落格
+      url: https://blog.netapp.com/tag/Flexpod/
+  - title: 商業應用程式與企業資料庫FlexPod
+    links:
+    - title: 影片與示範
+      url: https://tv.netapp.com/search?q=FlexPod%20SAP
+    - title: 部落格
+      url: https://blog.netapp.com/tag/Flexpod/
+  - title: 混合雲FlexPod 與功能
+    links:
+    - title: 新增功能
+      url: https://flexpod.com/solutions/use-cases/hybrid-cloud/
+    - title: 影片與示範
+      url: https://tv.netapp.com/search?q=FlexPod%20Hybrid%20Cloud
+    - title: 部落格
+      url: https://blog.netapp.com/tag/Flexpod/
+  - title: 適用於VDI FlexPod
+    links:
+    - title: 新增功能
+      url: https://www.flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/
+    - title: 影片與示範
+      url: https://tv.netapp.com/search?q=FlexPod%20VDI
+    - title: 部落格
+      url: https://blog.netapp.com/tag/Flexpod/
+  - title: 以功能為本的醫療照護FlexPod
+    links:
+    - title: 新增功能
+      url: https://flexpod.com/solutions/verticals/healthcare/
+    - title: 影片與示範
+      url: https://tv.netapp.com/search?q=FlexPod%20Healthcare
+    - title: 部落格
+      url: https://blog.netapp.com/tag/Healthcare/
