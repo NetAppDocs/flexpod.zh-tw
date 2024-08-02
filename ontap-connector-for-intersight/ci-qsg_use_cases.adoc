@@ -26,9 +26,6 @@ summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個�
 . 在Intersight小幫手中新增NetApp AIQ UM裝置。
 . 前往* Storage *並瀏覽NetApp儲存設備庫存。
 . 在*監控儀表板*中新增*適用於NetApp儲存設備的小工具*。
-+
-以下是 https://tv.netapp.com/detail/video/6228096841001["連結"^] 展示ONTAP Cisco Intersight的NetApp NetApp資料儲存監控功能的影片。
-
 
 
 
@@ -156,9 +153,6 @@ summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個�
 ** 重新命名 NetApp Volume Snapshot
 ** 更新 SVM 根 Volume 的 NetApp 負載共用鏡像
 ** 更新 NetApp Volume 容量
-+
-若要深入瞭解如何使用NetApp儲存設備和虛擬化工作來自訂工作流程、請觀看影片 https://tv.netapp.com/detail/video/6228095945001["Cisco Intersight中的NetApp ONTAP 解決方案儲存協調"^]。
-
 
 
 

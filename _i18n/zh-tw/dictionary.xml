@@ -9,8 +9,6 @@
   <block id="69d7ba5974ce4e202ff6a3283926751f" category="paragraph">如需詳細資訊、請參閱<block ref="7233dd15fab01808b5955c7429b5aebc" category="inline-link-rx"></block>。</block>
   <block id="f9d402f73c06490b49744c7260f10c18" category="summary">安裝Cisco Intersight assist之後、您就可以申請NetApp儲存設備和虛擬化設備。</block>
   <block id="7351a1047aea1d8e523aae1df309c347" category="doc">請款目標</block>
-  <block id="ff2e4aa830d38c99b2010a91bd562775" category="inline-link">透過Cisco Intersight assist索取目標。</block>
-  <block id="6bc0022874ff4b98cf45584e525e1f00" category="paragraph">安裝Cisco Intersight assist之後、您就可以申請NetApp儲存設備和虛擬化設備。返回* Intersight目標*頁面、並新增vCenter和NetApp Active IQ Unified Manager 的目標。如需報銷程序的詳細資訊、請觀看影片<block ref="30d5424c5fce71a06fbbaa3ffc76fb0e" category="inline-link-rx"></block></block>
   <block id="c27675fd33dbae852257d83ae0b40ee3" category="admonition">請確定Active IQ Unified Manager 已啟用NetApp Sure（AIQ UM）API閘道。</block>
   <block id="94a25ce3cfde50ac05004124838a8585" category="inline-image-macro">已啟用NetApp AIQ UM API閘道的快照</block>
   <block id="ad16b87ea1c3124b9265af68c137ab53" category="paragraph"><block ref="ad16b87ea1c3124b9265af68c137ab53" category="inline-image-macro-rx" type="image"></block></block>
@@ -27,7 +25,6 @@
   <block id="3565f69c284244db8d5ca84b622ee9f7" category="list-text">前往* Storage *並瀏覽NetApp儲存設備庫存。</block>
   <block id="e409ef30600b1f6d6feda5ec5cf2b09a" category="list-text">在*監控儀表板*中新增*適用於NetApp儲存設備的小工具*。</block>
   <block id="2a304a1348456ccd2234cd71a81bd338" category="inline-link">連結</block>
-  <block id="c93483174eb31dc7fbbe326f1c100f35" category="paragraph">以下是<block ref="e0428282d0e7de772227d65a22541ae5" category="inline-link-rx"></block> 展示ONTAP Cisco Intersight的NetApp NetApp資料儲存監控功能的影片。</block>
   <block id="4eddc275f6028504b4d1bbed1e6ae1cb" category="section-title">使用案例2：使用參考工作流程進行NetApp儲存協調</block>
   <block id="ad394a42593fccfc9f89e6e10730a3c0" category="list-text">透過Intersight小幫手將vCenter目標新增至Intersight。</block>
   <block id="97e1e380ad6fec970bc1c31e70c64a7a" category="section-title">使用案例3：使用無設計人員表單自訂工作流程</block>
@@ -38,8 +35,6 @@
   <block id="054075501dbbc3039c5d0b5dab12a766" category="list-text">選取*建立工作流程*。</block>
   <block id="17fd08459c8a5f34d6f93f908fc4fc70" category="list-text">將儲存與虛擬化工作新增至工作流程。</block>
   <block id="16823263a74001ecb22c9fecdb2d8af2" category="paragraph">以下是Cisco Intersight提供的NetApp儲存工作：</block>
-  <block id="aed9e8ce86d6b67ac26c7d1937461e90" category="inline-link">Cisco Intersight中的NetApp ONTAP 解決方案儲存協調</block>
-  <block id="efd91dc6276bbe52b654d531a05b3658" category="paragraph">若要深入瞭解如何使用NetApp儲存設備和虛擬化工作來自訂工作流程、請觀看影片<block ref="9c51a52bc77cfd7dca26d970b0100330" category="inline-link-rx"></block>。</block>
   <block id="0b7287babbe3c16553a6f9cd3e22a10b" category="summary">Cisco Intersight推出新版本、為您帶來新功能、增強功能及錯誤修復。</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新功能</block>
   <block id="8a53d76b23b9bd398a76313ad1fa9a21" category="paragraph">本節列出Cisco Intersight搭配NetApp ONTAP ®儲存設備的新功能。</block>
@@ -9754,4 +9749,5 @@
   <block id="9651c3a3b7cbc999c2c50c39dbf61c04" category="sidebar">混合雲FlexPod 與功能</block>
   <block id="7cb27dbb321a2dda7b1a59417ac87d24" category="sidebar">適用於VDI FlexPod</block>
   <block id="e24bc29daa40702c050f7f3b61476c6f" category="sidebar">以功能為本的醫療照護FlexPod</block>
+  <block id="da1ad8cf23727f17cd3ee56b1280c387" category="paragraph">安裝Cisco Intersight assist之後、您就可以申請NetApp儲存設備和虛擬化設備。返回* Intersight目標*頁面、並新增vCenter和NetApp Active IQ Unified Manager 的目標。</block>
 </blocks>

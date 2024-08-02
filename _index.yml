@@ -11,7 +11,7 @@ indexpage:
     - title: 新增功能
       url: https://fieldportal.netapp.com/content/1668183
     - title: 影片與示範
-      url: https://tv.netapp.com/search?q=FlexPod
+      url: https://media.netapp.com/search?q=FlexPod
     - title: 部落格
       url: https://blog.netapp.com/tag/Flexpod/
   - title: AI與現代化資料分析功能FlexPod 、搭配
@@ -19,13 +19,11 @@ indexpage:
     - title: 新增功能
       url: https://www.flexpod.com/solutions/use-cases/machine-learning/
     - title: 影片與示範
-      url: https://tv.netapp.com/search?q=FlexPod%20AI
+      url: https://media.netapp.com/search?q=FlexPod%20AI
     - title: 部落格
       url: https://blog.netapp.com/tag/Flexpod/
   - title: 商業應用程式與企業資料庫FlexPod
     links:
-    - title: 影片與示範
-      url: https://tv.netapp.com/search?q=FlexPod%20SAP
     - title: 部落格
       url: https://blog.netapp.com/tag/Flexpod/
   - title: 混合雲FlexPod 與功能
@@ -33,22 +31,18 @@ indexpage:
     - title: 新增功能
       url: https://flexpod.com/solutions/use-cases/hybrid-cloud/
     - title: 影片與示範
-      url: https://tv.netapp.com/search?q=FlexPod%20Hybrid%20Cloud
+      url: https://media.netapp.com/search?q=FlexPod%20Hybrid%20Cloud
     - title: 部落格
       url: https://blog.netapp.com/tag/Flexpod/
   - title: 適用於VDI FlexPod
     links:
     - title: 新增功能
       url: https://www.flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/
-    - title: 影片與示範
-      url: https://tv.netapp.com/search?q=FlexPod%20VDI
     - title: 部落格
       url: https://blog.netapp.com/tag/Flexpod/
   - title: 以功能為本的醫療照護FlexPod
     links:
     - title: 新增功能
       url: https://flexpod.com/solutions/verticals/healthcare/
-    - title: 影片與示範
-      url: https://tv.netapp.com/search?q=FlexPod%20Healthcare
     - title: 部落格
       url: https://blog.netapp.com/tag/Healthcare/
