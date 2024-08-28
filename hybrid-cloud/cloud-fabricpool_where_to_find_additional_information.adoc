@@ -18,7 +18,7 @@ summary: 若要深入瞭解本文所述資訊、請檢閱下列文件和/或網�
 
 * 最佳實務做法FabricPool
 +
-http://www.netapp.com/us/media/tr-4598.pdf["www.netapp.com/us/media/tr-4598.pdf"^]
+https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["www.netapp.com/us/media/tr-4598.pdf"^]
 
 * NetApp 產品文件
 +
@@ -26,6 +26,6 @@ https://docs.netapp.com["https://docs.netapp.com"^]
 
 * TR-4036：FlexPod 《資料中心技術規格》
 +
-https://www.netapp.com/us/media/tr-4036.pdf["https://www.netapp.com/us/media/tr-4036.pdf"^]
+https://docs.netapp.com/us-en/flexpod/fp-def/dc-tech-spec_solution_overview.html["https://www.netapp.com/us/media/tr-4036.pdf"^]
 
 

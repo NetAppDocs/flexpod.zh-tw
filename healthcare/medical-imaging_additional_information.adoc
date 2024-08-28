@@ -26,7 +26,7 @@ https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_dat
 
 * 包含《解決方案簡介》的Datacenter Oracle資料庫備份FlexPod SnapCenter
 +
-https://www.netapp.com/us/media/sb-3999.pdf["https://www.netapp.com/us/media/sb-3999.pdf"^]
+https://www.netapp.com/pdf.html?item=/media/16973-sb-3999pdf.pdf["https://www.netapp.com/us/media/sb-3999.pdf"^]
 
 * 採用Oracle RAC資料庫的Datacenter搭配Cisco UCS和NetApp解決方案A系列FlexPod AFF
 +
@@ -50,7 +50,7 @@ https://fieldportal.netapp.com/content/734702["https://fieldportal.netapp.com/co
 
 * TR-47700：SnapCenter 適用於Oracle資料庫的支援
 +
-https://www.netapp.com/us/media/tr-4700.pdf["https://www.netapp.com/us/media/tr-4700.pdf"^]
+https://www.netapp.com/pdf.html?item=/media/12403-tr4700pdf.pdf["https://www.netapp.com/us/media/tr-4700.pdf"^]
 
 * NetApp 產品文件
 +

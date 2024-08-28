@@ -62,7 +62,7 @@ NetApp公司Jaya Kishore Esanakula和Atul Bhaludia
 * ACO醫療組織的映像與媒體管理、無論映像的記錄系統為何、都能使用單一平台、透過醫療領域的數位影像與通訊等通訊協定（ https://www.dicomstandard.org/about/["Dicom"^]）和對Dicom持續物件的網路存取（ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3447090/["WADO."^]）
 * 健康資訊交換（ https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/what-hie["HIE"^]）包括內嵌在訊息中的影像。
 * 手持設備、無線掃描裝置（例如手機上附有口袋型手持式超音波掃描儀）等行動設備、需要具備DoD層級安全性、可靠性及邊緣、核心及雲端延遲能力的健全網路基礎架構。 https://www.netapp.com/us/data-fabric.aspx["採用NetApp技術的資料架構"^] 為組織提供大規模的這項功能。
-* 較新的醫療儀器具有指數級的儲存需求；例如、CT和MRI每種醫療儀器都需要數百MB的容量、但數位化的病理影像（包括整張投影片影像）可能只有幾GB的大小。設計採用的是FlexPod https://www.netapp.com/us/media/sb-flexpod-advantage-performance-agility-economics.pdf["效能、可靠性和擴充能力是基本特徵"^]。
+* 較新的醫療儀器具有指數級的儲存需求；例如、CT和MRI每種醫療儀器都需要數百MB的容量、但數位化的病理影像（包括整張投影片影像）可能只有幾GB的大小。FlexPod 是與 https://www.netapp.com/pdf.html?item=/media/16926-sb-flexpod-advantage-performance-agility-economicspdf.pdf["效能、可靠性和擴充能力是基本特徵"^]一起設計的。
 
 
 架構完善的醫療影像系統平台是創新的核心。此架構以領先業界的儲存效率、提供靈活的運算與儲存功能。FlexPod
@@ -94,8 +94,8 @@ NetApp公司Jaya Kishore Esanakula和Atul Bhaludia
 * *敏捷度* FlexPod 。*藉由領先業界的工作流程自動化、協調與管理工具、您的IT團隊可以更快回應業務要求。這些業務要求可涵蓋醫療影像備份和額外測試與訓練環境的資源配置、以及針對人口健全狀況管理計畫的分析資料庫複製。
 * *更高的生產力。*您可以快速部署及擴充此解決方案、以獲得最佳的臨床工作者使用者體驗。
 * *資料架構。*您的資料架構採用NetApp技術、可跨越實體界限、跨應用程式、在不同站台之間相互編織資料。您的資料架構採用NetApp技術、專為資料導向企業打造、資料是在多個位置建立和使用、通常需要運用資料、並與其他位置、應用程式和基礎架構共用。因此、您想要以一致且整合的方式來管理IT。此解決方案提供一種管理資料的方法、讓您的IT團隊能夠掌控一切、並簡化不斷增加的IT複雜度。
-* *《NetApp》協助降低儲存成本、而不影響效能、效率、安全性或保護。FabricPool ONTAP FabricPool不需重新建構應用程式基礎架構、即可降低儲存TCO、使企業應用程式透明化、並善用雲端效率。FabricPool利用NetApp的儲存分層功能、更有效率地使用介紹性快閃儲存設備、讓您受益匪淺。FlexPod FabricPool ONTAP如需完整資訊、請參閱 https://www.netapp.com/us/media/tr-4801.pdf["包含此功能的FlexPod FabricPool"^]。
-* *不安全。*安全性是我們的根本。FlexPod FlexPod過去幾年、勒索軟體已成為重大且日益嚴重的威脅。勒索軟體是以加密方法為基礎的惡意軟體、使用密碼編譯來建置惡意軟體。此惡意軟體可以同時使用對稱和非對稱金鑰加密來鎖定受害者的資料、並要求贖金提供金鑰來解密資料。如需瞭FlexPod 解如何協助減輕勒索軟體等威脅、請參閱 https://www.netapp.com/us/media/tr-4802.pdf["勒索軟體解決方案"^]。而美國聯邦資訊處理標準（Federal Information Processing Standard）也是此基礎架構元件FlexPod https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf["（FIPS）140-2"^] 符合法規。
+* * FabricPool 。 *NetApp ONTAP FabricPool 有助於降低儲存成本、同時不影響效能、效率、安全性或保護。不需重新建構應用程式基礎架構、即可降低儲存TCO、使企業應用程式透明化、並善用雲端效率。FabricPool利用NetApp的儲存分層功能、更有效率地使用介紹性快閃儲存設備、讓您受益匪淺。FlexPod FabricPool ONTAP如需完整資訊 https://docs.netapp.com/us-en/flexpod/hybrid-cloud/cloud-fabricpool_introduction.html["包含此功能的FlexPod FabricPool"^]、請參閱。
+* * FlexPod 安全性。 *安全性是 FlexPod 的基礎。過去幾年、勒索軟體已成為重大且日益嚴重的威脅。勒索軟體是以加密方法為基礎的惡意軟體、使用密碼編譯來建置惡意軟體。此惡意軟體可以同時使用對稱和非對稱金鑰加密來鎖定受害者的資料、並要求贖金提供金鑰來解密資料。若要瞭解 FlexPod 如何協助緩解勒索軟體等威脅、請參閱 https://docs.netapp.com/us-en/flexpod/security/security-ransomware_what_is_ransomware.html["勒索軟體解決方案"^]。FlexPod 基礎架構元件也 https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf["（FIPS）140-2"^]符合聯邦資訊處理標準。
 * *《合作支援》* NetApp與Cisco已建立一套強大、可擴充且靈活的支援模式《支援》、以符合獨特的支援需求、滿足融合式基礎架構的需求。FlexPod FlexPod FlexPod此模式結合了NetApp與Cisco的經驗、資源與技術支援專業、無論FlexPod 問題發生在何處、都能提供簡化的流程來識別及解決您的支援問題。《支援支援團隊合作模式：FlexPod 協助您確認FlexPod 您的《支援團隊合作模式：確保您的《支援團隊合作模式：高效運作、並從最新的技術中獲益」、同時提供經驗豐富的團隊協助您解決整合問題。
 +
 如果您的醫療機構執行業務關鍵應用程式、那麼支援支援合作特別重要。FlexPod下圖概述FlexPod 了《支援不合作》模式。

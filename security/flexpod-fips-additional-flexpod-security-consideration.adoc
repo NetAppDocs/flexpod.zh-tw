@@ -22,7 +22,7 @@ HIT系統的不同元件需要將資料儲存在SMB/CIFS、NFS、ext4和NTFS檔�
 
 當部署FlexPod 在一個不受限的系統中時、HIT可提供醫療產業特有的多項優點。下列清單是這些優點的詳細說明：
 
-* *安全*。FlexPod安全性是FlexPod 整個過程的基礎。過去幾年、勒索軟體已成為威脅。勒索軟體是一種以密碼學為基礎的惡意軟體、使用密碼編譯來建置惡意軟體。此惡意軟體可以同時使用對稱和非對稱金鑰加密來鎖定受害者的資料、並要求贖金提供金鑰來解密資料。若要瞭解FlexPod 此解決方案如何協助減輕勒索軟體等威脅、請參閱 https://www.netapp.com/us/media/tr-4802.pdf["TR-4802：勒索軟體解決方案"^]。此外、還包括了許多基礎架構元件FlexPod https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf["符合FIPS 140-2標準"^]。
+* *安全*。FlexPod安全性是FlexPod 整個過程的基礎。過去幾年、勒索軟體已成為威脅。勒索軟體是一種以密碼學為基礎的惡意軟體、使用密碼編譯來建置惡意軟體。此惡意軟體可以同時使用對稱和非對稱金鑰加密來鎖定受害者的資料、並要求贖金提供金鑰來解密資料。若要瞭解 FlexPod 解決方案如何協助減輕勒索軟體等威脅、請參閱 https://docs.netapp.com/us-en/flexpod/security/security-ransomware_what_is_ransomware.html["TR-4802：勒索軟體解決方案"^]。FlexPod 基礎架構元件也包括 https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf["符合FIPS 140-2標準"^]在內。
 * * Cisco Intersight * Cisco Intersight是一款創新的雲端型管理即服務平台、提供單一窗口來進行完整堆疊FlexPod 的功能、以利進行全面的視覺化管理與協調。Intersight平台使用FIPS 140-2安全性相容的密碼編譯模組。此平台的頻外管理架構使其超出某些標準或稽核的範圍、例如HIPAA。網路上的任何個人識別健全狀況資訊都不會傳送至Intersight入口網站。
 * * NetApp FPolicy技術。* NetApp FPolicy（名稱檔案原則的演進）是檔案存取通知架構、可用來監控及管理NFS或SMB/CIFS傳輸協定上的檔案存取。這項技術已成為ONTAP VMware資料管理軟體的一部分超過十年、對於協助偵測勒索軟體非常有用。這款Zero Trust引擎提供額外的安全措施、超越存取控制清單（ACL）的權限。FPolicy有兩種操作模式：原生和外部：
 +

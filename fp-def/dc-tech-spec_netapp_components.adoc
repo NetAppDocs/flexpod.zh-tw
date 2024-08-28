@@ -108,5 +108,5 @@ NetApp支援是要求使用的功能、但這些授權的零件編號會因您�
 | NetApp支援授權 | 產品編號 | 技術規格 
 
 
-| 現場4小時—月：SupportEdge Premium 36 | CS -O2 - 4小時 | https://www.netapp.com/us/media/supportedge-premium-product-description.pdf["NetApp SupportEdge Premium"] 
+| 現場4小時—月：SupportEdge Premium 36 | CS -O2 - 4小時 | https://www.netapp.com/pdf.html?item=/media/8745-supportedge-premium-product-description.pdf["NetApp SupportEdge Premium"^] 
 |===

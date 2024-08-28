@@ -67,11 +67,11 @@ image:fp-express-tech-spec_image6.png["錯誤：缺少圖形影像"]
 
 仍FlexPod 支援先前通過驗證的支援架構。架構與部署文件包括：
 
-* link:http://www.netapp.com/us/media/nva-0016-flexpod-express.pdf["採用Cisco UCS C系列和NetApp FAS2500系列的支援FlexPod"]
-* link:http://www.netapp.com/us/media/nva-0020-deploy.pdf["採用VMware vSphere 6.0的VMware Express：小型和中型組態FlexPod"]
-* link:http://www.netapp.com/us/media/nva-0017-flexpod-express.pdf["VMware vSphere 6.0的VMware Express：大型組態FlexPod"]
-* link:http://www.netapp.com/us/media/nva-0021-deploy.pdf["採用Microsoft Windows Server 2012 R2 Hyper-V的示例：小型和中型組態FlexPod"]
-* link:http://www.netapp.com/us/media/tr-4350.pdf["採用Microsoft Windows Server 2012 R2 Hyper-V的RxExpress：大型組態FlexPod"]
+* link:https://www.netapp.com/pdf.html?item=/media/12441-nva-0016-flexpod-express.pdf["採用Cisco UCS C系列和NetApp FAS2500系列的支援FlexPod"^]
+* link:https://www.netapp.com/pdf.html?item=/media/12442-nva-0020-deploy.pdf["採用VMware vSphere 6.0的VMware Express：小型和中型組態FlexPod"^]
+* link:https://www.netapp.com/pdf.html?item=/media/12443-nva-0017-flexpod-express.pdf["VMware vSphere 6.0的VMware Express：大型組態FlexPod"^]
+* link:https://www.netapp.com/pdf.html?item=/media/12444-nva-0021-deploypdf.pdf["採用Microsoft Windows Server 2012 R2 Hyper-V的示例：小型和中型組態FlexPod"^]
+* link:https://www.netapp.com/pdf.html?item=/media/12445-tr-4350.pdf["採用Microsoft Windows Server 2012 R2 Hyper-V的RxExpress：大型組態FlexPod"^]
 
 
 

@@ -24,4 +24,4 @@ http://docs[]。 http://docs.netapp.com/["NetApp"^].com
 
 NVA-1139設計：FlexPod 採用Cisco UCS C系列和NetApp AFF UC190系列的支援功能
 
-https://www.netapp.com/us/media/nva-1139-design.pdf["https://www.netapp.com/us/media/nva-1139-design.pdf"^]
+https://docs.netapp.com/us-en/flexpod/express/express-c-series-c190-design_executive_summary.html["https://www.netapp.com/us/media/nva-1139-design.pdf"^]

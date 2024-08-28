@@ -22,6 +22,6 @@ http://docs.netapp.com["http://docs.netapp.com"^]
 
 * VMware vSphere 6.7與NetApp《VMware vCenter A220設計指南》的《Express with VMware vSphere 6.7 and NetApp》（英文）FlexPod AFF
 +
-https://www.netapp.com/us/media/nva-1125-design.pdf["https://www.netapp.com/us/media/nva-1125-design.pdf"^]
+https://docs.netapp.com/us-en/flexpod/express/express-c-series-aff220-design_executive_summary.html["https://www.netapp.com/us/media/nva-1125-design.pdf"^]
 
 

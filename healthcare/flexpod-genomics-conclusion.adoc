@@ -42,7 +42,7 @@ https://www.flexpod.com/idc-white-paper/["https://www.flexpod.com/idc-white-pape
 
 * 醫療業的AI
 +
-https://www.netapp.com/us/media/na-369.pdf["https://www.netapp.com/us/media/na-369.pdf"^]
+https://www.netapp.com/pdf.html?item=/media/7393-na-369pdf.pdf["https://www.netapp.com/us/media/na-369.pdf"^]
 
 * 適用於醫療業的可讓您輕鬆轉型FlexPod
 +

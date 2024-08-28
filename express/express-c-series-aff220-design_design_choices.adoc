@@ -37,7 +37,7 @@ image:express-c-series-aff220-design_image5.png["錯誤：缺少圖形影像"]
 
 image:express-c-series-aff220-design_image6.png["錯誤：缺少圖形影像"]
 
-這些只是一些輔助FlexPod 功能的關鍵功能、可補強《不知道如何解決這個問題。如需ONTAP 更多有關功能與功能的詳細資訊、請參閱 https://www.netapp.com/us/media/ds-3231.pdf["資料管理軟體資料表ONTAP"^]。另請參閱NetApp http://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"^]已更新為ONTAP 包含了更新的版本9.4。
+這些只是一些輔助FlexPod 功能的關鍵功能、可補強《不知道如何解決這個問題。如需 ONTAP 9 4 其他功能的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/7413-ds-3231.pdf["資料管理軟體資料表ONTAP"^]。另外，請參閱 NetApp http://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"^] （已更新爲包括 ONTAP 9 ）。 4
 
 
 

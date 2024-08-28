@@ -206,6 +206,6 @@ NetApp建議採用下列虛擬化最佳實務做法：
 * 確定VM OS VMDK裝載於快速的第1層儲存設備。
 * 與醫療影像系統廠商合作、找出最佳方法來準備VM範本、以便快速部署和維護。
 * 管理、儲存和正式作業網路需要將LAN隔離用於資料庫、並使用隔離的VLAN來執行VMware VMotion。
-* 使用NetApp儲存陣列型複寫技術、稱為 https://www.netapp.com/us/media/tr-4015.pdf["SnapMirror"^] 而非vSphere型複寫。
+* 使用稱為的 NetApp 儲存陣列型複寫技術 https://www.netapp.com/pdf.html?item=/media/17229-tr4015pdf.pdf["SnapMirror"^]、而非 vSphere 型複寫。
 * 使用利用VMware API的備份技術；備份時間應超出正常的正式作業時間。
 

@@ -36,7 +36,7 @@ https://fieldportal.netapp.com/content/902303[]
 
 * 《NetApp ONTAP ®9強化指南》
 +
-https://www.netapp.com/us/media/tr-4569.pdf[]
+https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf[]
 
 * NetApp加密電源指南
 +
@@ -44,11 +44,11 @@ https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-nve%2Fhome
 
 * NVE與NAE資料表
 +
-https://www.netapp.com/us/media/ds-3899.pdf[]
+https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf[]
 
 * NSE資料表
 +
-https://www.netapp.com/us/media/ds-3213-en.pdf[]
+https://www.netapp.com/pdf.html?item=/media/7563-ds-3213-en.pdf[]
 
 * 供應說明文件中心 ONTAP
 +
@@ -120,7 +120,7 @@ https://www.netapp.com/media/19793-tr-4865.pdf[]
 
 * 醫療業的AI
 +
-https://www.netapp.com/us/media/na-369.pdf[]
+https://www.netapp.com/pdf.html?item=/media/7393-na-369pdf.pdf[]
 
 * 適用於醫療業的可讓您輕鬆轉型FlexPod
 +

@@ -49,7 +49,7 @@ image:flexpod-fips-image3.png["錯誤：缺少圖形影像"]
 
 NOTE: NVE使用經FIPS 140-2第1級驗證的軟體密碼編譯模組。
 
-如需NVE的詳細資訊、請參閱 https://www.netapp.com/us/media/ds-3899.pdf["NVE資料表"^]。
+如需 NVE 的詳細資訊、請參閱 https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NVE資料表"^]。
 
 NVE可保護雲端中的資料。支援支援FIPS 140-2的資料加密功能。Cloud Volumes ONTAP Azure NetApp Files
 
@@ -110,7 +110,7 @@ image:flexpod-fips-image4.png["錯誤：缺少圖形影像"]
 
 NOTE: NSE會在每個磁碟機上使用硬體加密、並通過FIPS 140-2第2級驗證。
 
-如需NSE的詳細資訊、請參閱 https://www.netapp.com/us/media/ds-3213-en.pdf["NSE資料表"^]。
+如需 NSE 的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/7563-ds-3213-en.pdf["NSE資料表"^]。
 
 
 

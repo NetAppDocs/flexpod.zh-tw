@@ -26,7 +26,7 @@ https://fieldportal.netapp.com/content/248456["https://fieldportal.netapp.com/co
 
 * 適用於MEDITECH環境的NetApp規模調整準則。
 +
-http://www.netapp.com/us/media/tr-4190.pdf["www.netapp.com/us/media/tr-4190.pdf"^]
+https://www.netapp.com/pdf.html?item=/media/19872-tr-4190.pdf["www.netapp.com/us/media/tr-4190.pdf"^]
 
 * 適用於Epic EHR部署的資料中心FlexPod
 +

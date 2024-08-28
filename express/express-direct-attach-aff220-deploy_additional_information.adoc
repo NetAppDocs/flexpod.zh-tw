@@ -18,7 +18,7 @@ summary: 若要深入瞭解本文所述資訊、請檢閱下列文件和/或網�
 
 * NVA-1130-設計：FlexPod 以VMware vSphere 6.7U1搭配NetApp AFF ERAS220、採用直接附加IP =型儲存NVA設計的VMware Express
 +
-https://www.netapp.com/us/media/nva-1130-design.pdf["https://www.netapp.com/us/media/nva-1130-design.pdf"^]
+https://docs.netapp.com/us-en/flexpod/express/express-direct-attach-aff220-deploy_program_summary.html["https://www.netapp.com/us/media/nva-1130-design.pdf"^]
 
 * 系統文件中心AFF FAS
 +

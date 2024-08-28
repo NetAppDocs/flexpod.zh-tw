@@ -78,8 +78,8 @@ Cisco與NetApp的解決方案運用高效能、模組化、預先驗證、融合
 
 下列技術報告和其他文件與本技術報告有關、並構成一套完整的文件、可在FlexPod 整個基礎架構上調整規模、設計及部署MEDITECH。
 
-* https://www.netapp.com/us/media/tr-4753.pdf["TR-4753：FlexPod 《適用於MEDITECH的資料中心部署指南》"^]
-* https://www.netapp.com/us/media/tr-4190.pdf["TR-4190：適用於MEDITECH環境的NetApp規模調整準則"^]
+* https://docs.netapp.com/us-en/flexpod/healthcare/ehr-meditech-deploy_overview.html["TR-4753：FlexPod 《適用於MEDITECH的資料中心部署指南》"^]
+* https://www.netapp.com/pdf.html?item=/media/19872-tr-4190.pdf["TR-4190：適用於MEDITECH環境的NetApp規模調整準則"^]
 * https://fieldportal.netapp.com/content/248456["TR-4319：適用於MEDITECH環境的NetApp部署指南"^]
 
 

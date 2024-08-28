@@ -51,4 +51,4 @@ image:fp-express-tech-spec_image2.png["錯誤：缺少圖形影像"]
 
 image:fp-express-tech-spec_image3.png["錯誤：缺少圖形影像"]
 
-如需此組態的詳細資訊、請參閱 https://www.netapp.com/us/media/nva-1131-deploy.pdf["採用VMware vSphere 6.7U1與NetApp VMware Infrastructure A220的VMware Express搭配直接附加IP型儲存設備FlexPod AFF"^]。
+如需此組態的詳細資訊，請參閱 https://docs.netapp.com/us-en/flexpod/express/express-direct-attach-aff220-deploy_program_summary.html["採用VMware vSphere 6.7U1與NetApp VMware Infrastructure A220的VMware Express搭配直接附加IP型儲存設備FlexPod AFF"^]。

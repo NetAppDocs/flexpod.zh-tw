@@ -40,7 +40,7 @@ link:flexpod-genomics-introduction.html["上一篇：簡介。"]
 image:flexpod-genomics-image3.png["錯誤：缺少圖形影像"]
 
 * *實現基因組互通性* ONTAP FlexCache 。*效能不只是一種遠端快取功能、可簡化檔案發佈、減少WAN延遲、並降低WAN頻寬成本（ https://www.netapp.com/knowledge-center/what-is-flex-cache/["參考資料"^]）。基因變異辨識與註釋期間的重要活動之一、就是臨床醫師之間的協同作業。即使協同作業的臨床醫師位於不同的地理區域、也能提升資料處理量。ONTAP FlexCache根據*。BAM檔案的一般大小（1GB至100s GB）、基礎平台必須能為不同地理位置的臨床醫師提供檔案。利用此技術、基因資料與應用程式可真正做好多站台的準備、讓全球各地研究人員之間的協同作業無縫銜接、並具備低延遲和高處理量。FlexPod ONTAP FlexCache在多站台環境中執行基因組學應用程式的醫療組織、可以使用資料架構進行橫向擴充、以平衡管理與成本與速度。
-* *智慧使用儲存平台。* FlexPod 利用ONTAP 功能不只自動分層、更採用NetApp Fabric Pool技術、簡化資料管理。可協助降低儲存成本、而不會影響效能、效率、安全性或保護。FabricPool不需重新建構應用程式基礎架構、即可降低儲存TCO、使企業應用程式透明化、並善用雲端效率。FabricPool利用NetApp的儲存分層功能、更有效率地使用介紹性快閃儲存設備、讓您受益匪淺。FlexPod FabricPool ONTAP如需詳細資訊、請參閱 https://www.netapp.com/us/media/tr-4801.pdf["包含此功能的FlexPod FabricPool"^]。下圖提供FabricPool 關於支援及其效益的高階概述。
+* * 儲存平台的智慧運用 *採用 ONTAP 自動分層和 NetApp Fabric Pool 技術的 FlexPod 可簡化資料管理。可協助降低儲存成本、而不會影響效能、效率、安全性或保護。FabricPool不需重新建構應用程式基礎架構、即可降低儲存TCO、使企業應用程式透明化、並善用雲端效率。FabricPool利用NetApp的儲存分層功能、更有效率地使用介紹性快閃儲存設備、讓您受益匪淺。FlexPod FabricPool ONTAP如需更多資訊、請參閱 https://docs.netapp.com/us-en/flexpod/hybrid-cloud/cloud-fabricpool_introduction.html["包含此功能的FlexPod FabricPool"^]。下圖提供FabricPool 關於支援及其效益的高階概述。
 
 
 image:flexpod-genomics-image4.png["錯誤：缺少圖形影像"]

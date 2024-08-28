@@ -352,7 +352,7 @@ NetApp磁碟的技術規格包括尺寸規格、磁碟容量、磁碟RPM、支�
 | 元件 | 儲存控制器資料表 
 
 
-| E2800 | http://www.netapp.com/us/media/ds-3805.pdf[] 
+| E2800 | https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf[] 
 |===
 
 

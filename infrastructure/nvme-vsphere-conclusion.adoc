@@ -86,7 +86,7 @@ http://www.vmware.com/products/vcenter-server/overview.html["http://www.vmware.c
 
 * 現代化SAN的最佳實務做法
 +
-https://www.netapp.com/us/media/tr-4080.pdf["https://www.netapp.com/us/media/tr-4080.pdf"^]
+https://www.netapp.com/pdf.html?item=/media/10680-tr4080pdf.pdf["https://www.netapp.com/us/media/tr-4080.pdf"^]
 
 * 推出適用於FlexPod NVMe的端點對端點NVMe
 +
