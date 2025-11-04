@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: hybrid-cloud/fhc-cvoe-solution-components.html 
-keywords: flexpod, epic, bluexp, connector, cvo, active iq, unified manager, cisco, intersight, vsphere, vcenter 
+keywords: flexpod, epic, netapp console, connector, cvo, active iq, unified manager, cisco, intersight, vsphere, vcenter 
 summary: 本節概述本解決方案所需的各種元件。 
 ---
 = 解決方案元件
@@ -47,21 +47,21 @@ link:fhc-cvoe-solution-overview.html["上一篇：解決方案總覽。"]
 * 健全的資料保護、備份、還原及業務持續運作
 
 
-通過EHR驗證、並支援內含Cisco UCS、搭載Intel Xeon處理器、Red Hat Enterprise Linux（RHEL）及VMware ESXi虛擬化的平台FlexPod 。此平台加上EHR在執行ONTAP 支援的NetApp儲存設備上的「高舒適度」等級、讓客戶有信心透過FlexPod 可連線至任何公有雲供應商的功能、在完全託管的私有雲中執行醫療應用程式。
+FlexPod已獲得 EHR 認證，並支援包含Cisco UCS、Intel Xeon 處理器、Red Hat Enterprise Linux (RHEL) 和 VMware ESXiCisco化的平台。該平台，加上 EHR 對運行ONTAP的NetApp存儲的高舒適度評級，使您能夠通過FlexPod在完全託管的私有雲中運行您的醫療保健應用程序，該私有雲還可以連接到任何公共雲提供商。
 
 
 
-== NetApp BlueXP
+== NetApp Console
 
-BlueXP（前身為NetApp Cloud Manager）是企業級SaaS型管理平台、可讓IT專家和雲端架構設計師使用NetApp雲端解決方案集中管理混合式多雲端基礎架構。它提供集中式系統、可檢視及管理內部部署與雲端儲存設備、支援混合式、多個雲端供應商與帳戶。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-family/index.html["藍圖"^]。
+NetApp Console是一個企業級的、基於 SaaS 的管理平台，它使 IT 專家和雲端架構師能夠使用NetApp雲端解決方案集中管理其混合多雲基礎架構。它提供了一個集中式系統，用於查看和管理您的本地和雲端存儲，支援混合雲、多雲提供者和帳戶。有關詳細信息，請參閱 link:https://docs.netapp.com/us-en/console-family/index.html["NetApp Console文檔"^]。
 
 
 
-== 連接器
+== 控制台代理
 
-Connector執行個體可讓BlueXP管理公有雲環境中的資源和程序。需要連接器才能使用BlueXP提供的許多功能、而且可以部署在雲端或內部部署網路中。
+控制台代理實例使控制台能夠管理公有雲環境中的資源和程序。控制台提供的許多功能都需要控制台代理，它可以部署在雲端或本地網路中。
 
-下列位置支援連接器：
+控制台代理在以下位置受支援：
 
 * Amazon Web Services
 * Microsoft Azure
@@ -69,7 +69,7 @@ Connector執行個體可讓BlueXP管理公有雲環境中的資源和程序。�
 * 內部部署
 
 
-若要深入瞭解Connector、請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["連接器頁面"^]。
+link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["了解有關控制台代理的更多信息"^]。
 
 
 
@@ -88,7 +88,7 @@ NetApp Cloud Volumes ONTAP 解決方案是軟體定義的儲存產品、可在ON
 * *隱私權法規遵循控管措施。*與Cloud Data Sense整合可協助您瞭解資料內容、並識別敏感資料。
 
 
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/["Cloud Volumes ONTAP"^]。
+更多詳細信息，請參閱link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/["Cloud Volumes ONTAP"^]。
 
 
 
@@ -98,7 +98,7 @@ NetApp Active IQ Unified Manager 支援透過ONTAP 單一、重新設計且直�
 
 有些事件也提供補救行動、可用來修正問題。您可以設定事件的自訂警示、以便在發生問題時、透過電子郵件和SNMP設陷通知您。利用此功能、您可以預測容量和使用趨勢、以便在發生問題之前採取行動、避免因應短期決策而導致長期的額外問題、藉此規劃使用者的儲存需求Active IQ Unified Manager 。
 
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^]。
+有關詳細信息，請參閱 link:https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^]。
 
 
 
@@ -121,7 +121,7 @@ image:fhc-cvoe-image3.png["此快照顯示Cisco Intersight儀表板的「伺服�
 
 VMware vSphere是一種虛擬化平台、可將大量的基礎架構（包括CPU、儲存設備和網路）整體管理為無縫、多功能且動態的作業環境。與管理個別機器的傳統作業系統不同、VMware vSphere會將整個資料中心的基礎架構集合在一起、建立一個資源強大的單一儲存設備、以便快速動態地分配給任何需要的應用程式。
 
-如需VMware vSphere及其元件的詳細資訊、請參閱 https://www.vmware.com/products/vsphere.html["VMware vSphere"^]。
+有關 VMware vSphere 及其組件的更多信息，請參閱link:https://www.vmware.com/products/vsphere.html["VMware vSphere"^]。
 
 
 
@@ -129,13 +129,13 @@ VMware vSphere是一種虛擬化平台、可將大量的基礎架構（包括CPU
 
 VMware vCenter Server可從單一主控台統一管理所有主機和VM、並集合叢集、主機和VM的效能監控。VMware vCenter Server可讓系統管理員深入瞭解運算叢集、主機、VM、儲存設備、來賓作業系統、 以及虛擬基礎架構的其他重要元件。VMware vCenter可管理VMware vSphere環境中的豐富功能集。
 
-如需詳細資訊、請參閱 https://www.vmware.com/products/vcenter.html["VMware vCenter"^]。
+詳細資訊請參見link:https://www.vmware.com/products/vcenter.html["VMware vCenter"^]。
 
 
 
 == 硬體與軟體版本
 
-此混合雲解決方案可延伸至FlexPod 執行中所定義之受支援軟體、韌體和硬體版本的任何支援環境 http://support.netapp.com/matrix/["NetApp 互通性對照表工具"^]、 https://ucshcltool.cloudapps.cisco.com/public/["UCS硬體與軟體相容性"^]和 https://www.vmware.com/resources/compatibility/search.php["VMware相容性指南"^]。
+這種混合雲解決方案可以擴展到任何運行支援版本的軟體、韌體和硬體的FlexPod環境，具體定義見：link:http://support.netapp.com/matrix/["NetApp 互通性對照表工具"^] ，link:https://ucshcltool.cloudapps.cisco.com/public/["UCS硬體與軟體相容性"^] ， 和link:https://www.vmware.com/resources/compatibility/search.php["VMware相容性指南"^]。
 
 下表顯示內部部署FlexPod 的更新版軟硬體。
 
@@ -175,13 +175,13 @@ VMware vCenter Server可從單一主控台統一管理所有主機和VM、並集
 
 |  | Cisco Intersight輔助虛擬應用裝置 | 1.0.9-342. 
 |===
-下表顯示NetApp BlueXP和Cloud Volumes ONTAP 更新版本。
+下表顯示了控制台和Cloud Volumes ONTAP版本。
 
 |===
 | 廠商 | 產品 | 版本 
 
 
-| NetApp | 藍圖 | 3.9.24 
+| NetApp | 安慰 | 3.9.24 
 
 
 |  | Cloud Volumes ONTAP | 零點9.11. ONTAP 

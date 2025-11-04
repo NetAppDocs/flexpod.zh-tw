@@ -26,9 +26,9 @@ https://www.flexpod.com["https://www.flexpod.com"^]
 +
 https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html["https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html"^]
 
-* NetApp BlueXP
+* NetApp Console
 +
-https://bluexp.netapp.com/["https://bluexp.netapp.com/"^]
+https://console.netapp.com/["https://console.netapp.com/"^]
 
 * NetApp Cloud Volumes ONTAP
 +
@@ -70,7 +70,7 @@ http://www.vmware.com/resources/compatibility/search.php["http://www.vmware.com/
 
 
 
-=== 版本歷程記錄
+== 版本歷程記錄
 
 |===
 | 版本 | 日期 | 文件版本歷程記錄 

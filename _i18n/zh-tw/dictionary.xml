@@ -406,13 +406,9 @@
   <block id="0ba0549652aeb08deee908e7e20e4817" category="paragraph">E系列SANtricity 的支援軟體是在E系列儲存系統上執行的作業系統。提供高度靈活的系統、可滿足各種應用程式需求、並提供內建的高可用度和各種資料保護功能。SANtricity</block>
   <block id="54ea526e0f7043f1dc938cd7369a4327" category="inline-link">產品頁面SANtricity</block>
   <block id="6b5301ce1cf7e0e48684f0dfb047d000" category="paragraph">如需詳細資訊、請參閱<block ref="886f8cec6f6fad388084013f5ad16d82" category="inline-link-rx"></block>。</block>
-  <block id="f851abbfc6782d860c83bc1a0125aab6" category="summary">本文件所述的一套規則定義了這個架構。FlexPod</block>
   <block id="fe82ba76fe70a6f0f9c5f3d28aeec7af" category="doc">支援FlexPod 的或已驗證的支援的支援的</block>
   <block id="9c935488ffd9d690797737609e542dc0" category="inline-link">Cisco UCS硬體與軟體相容清單</block>
   <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">NetApp互通性對照表工具IMT （不含）</block>
-  <block id="8a44cc5dad4aab86ca8e9bb04572e5d3" category="paragraph">本文件所述的一套規則定義了這個架構。FlexPod硬體元件和軟體組態必須受到支援<block ref="61c091fce51d2baac5905f12dd7d74cc" category="inline-link-rx"></block> 和<block ref="538106ddbedb569903f8e17bb643549d" category="inline-link-rx"></block>。</block>
-  <block id="8cb6ab7daf5f6512c6c1289edc16c8b3" category="paragraph">每個Cisco驗證設計（CVD）或NetApp驗證架構（NVA）都是可能FlexPod 的組態。Cisco與NetApp會記錄這些組態組合、並透過廣泛的端點對端點測試加以驗證。如果不符合這些組態的支援範本、且所有元件均列於Cisco UCS硬體與軟體相容清單和NetApp中、則完全支援不符合這些組態的部署FlexPod<block ref="af8f174925a8fa1af2321b8d8c2fd047" category="inline-link-rx"></block>。</block>
-  <block id="d89512b42806f0e10dc033c022ad8da0" category="paragraph">例如、如果軟體、硬體和組態符合本文所定義的準則、則完全支援新增更多儲存控制器或Cisco UCS伺服器、以及將軟體升級至較新版本。</block>
   <block id="7501c5e58e67ce758d854a0f76243785" category="doc">支援各種平台FlexPod</block>
   <block id="056341ce6698d2ac20eb4372437840eb" category="paragraph">共有兩FlexPod 個支援平台：</block>
   <block id="636457f24ee3c090c70b60896394af32" category="list-text">*《資料中心》*。此平台是可大幅擴充的虛擬資料中心基礎架構、適用於企業工作負載應用程式、虛擬化、虛擬桌面基礎架構（VDI）、以及公有雲、私有雲和混合雲工作負載。FlexPod</block>
@@ -8913,13 +8909,7 @@
   <block id="3e77b8f2742f9c6c9e5431bb6a507cc0" category="list-text">EHR應用程式的高可用度</block>
   <block id="0bf306b1478661b1ec659d3d45732ce6" category="list-text">在資料中心內輕鬆實作EHR</block>
   <block id="2104af181edd8195e9eacb28f07d9434" category="list-text">靈活度與擴充性、可透過新的EHR版本或應用程式來實現成長</block>
-  <block id="1273c8a63109161e6fd1f18d6998523f" category="section-title">NetApp BlueXP</block>
-  <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link">藍圖</block>
-  <block id="86706cdade6ef7fa7ccfbed73633a085" category="paragraph">BlueXP（前身為NetApp Cloud Manager）是企業級SaaS型管理平台、可讓IT專家和雲端架構設計師使用NetApp雲端解決方案集中管理混合式多雲端基礎架構。它提供集中式系統、可檢視及管理內部部署與雲端儲存設備、支援混合式、多個雲端供應商與帳戶。如需詳細資訊、請參閱<block ref="c49cacac9cbe82dcff36ada88ba62aa3" category="inline-link-rx"></block>。</block>
-  <block id="4a57221499144728a51c7c142151ff99" category="paragraph">Connector執行個體可讓BlueXP管理公有雲環境中的資源和程序。需要連接器才能使用BlueXP提供的許多功能、而且可以部署在雲端或內部部署網路中。</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">Amazon Web Services</block>
-  <block id="2b67002d6ae85695255d5b11d87ad4f9" category="inline-link">連接器頁面</block>
-  <block id="16ebdde355ef4d26be04b26ee6d7fa0b" category="paragraph">若要深入瞭解Connector、請參閱<block ref="e42e7c023a6426e00bdab88e3da61750" category="inline-link-rx"></block>。</block>
   <block id="c60f68ec44b35a0517cbafe7674533a5" category="paragraph">NetApp Cloud Volumes ONTAP 解決方案是軟體定義的儲存產品、可在ONTAP 雲端上執行支援功能的資料管理軟體、為檔案和區塊工作負載提供進階的資料管理功能。有了VMware、您就能最佳化雲端儲存成本並提升應用程式效能、同時強化資料保護、安全性和法規遵循。Cloud Volumes ONTAP</block>
   <block id="4609b2ec221cd53f6393d4cb39d72e44" category="paragraph">主要效益包括：</block>
   <block id="e23903dbee02d0245e9e2a9925c0de7e" category="list-text">*儲存效率。*運用內建的重複資料刪除技術、資料壓縮、精簡配置及即時複製功能、將儲存成本降至最低。</block>
@@ -8929,10 +8919,8 @@
   <block id="a5e354c191fac9e25f3c021fc8c26f95" category="list-text">*應用程式一致性。*使用NetApp SnapCenter 技術提供NetApp Snapshot複本的一致性。</block>
   <block id="49ba707e38fab31302d74ed6035b7b6a" category="list-text">*資料安全* Cloud Volumes ONTAP 。*支援資料加密、並提供防範病毒和勒索軟體的功能。</block>
   <block id="fb7530359018c603d255f4166fac0989" category="list-text">*隱私權法規遵循控管措施。*與Cloud Data Sense整合可協助您瞭解資料內容、並識別敏感資料。</block>
-  <block id="7e99e6f3cec58f33634ade4a045940dd" category="paragraph">如需詳細資訊、請參閱<block ref="033ab3fc8f9702cf5575035400051f3c" category="inline-link-rx"></block>。</block>
   <block id="d651c4691a6e4f3142e3285cf428be56" category="paragraph">NetApp Active IQ Unified Manager 支援透過ONTAP 單一、重新設計且直覺化的介面、監控您的不只是單一儲存叢集、還能提供社群智慧和AI分析的情報。它可針對儲存環境及其上執行的虛擬機器、提供全方位的作業、效能及主動深入見解。當儲存基礎架構發生問題時、Unified Manager可通知您有關問題的詳細資料、以協助識別根本原因。虛擬機器儀表板可讓您檢視虛擬機器的效能統計資料、以便從vSphere主機到網路、最後到儲存設備的整個I/O路徑進行調查。</block>
   <block id="3ec67a89c8d9bb619e61b959e0545b87" category="paragraph">有些事件也提供補救行動、可用來修正問題。您可以設定事件的自訂警示、以便在發生問題時、透過電子郵件和SNMP設陷通知您。利用此功能、您可以預測容量和使用趨勢、以便在發生問題之前採取行動、避免因應短期決策而導致長期的額外問題、藉此規劃使用者的儲存需求Active IQ Unified Manager 。</block>
-  <block id="741c1d29b00ec68cceea4339c66bdb0c" category="paragraph">如需詳細資訊、請參閱<block ref="5ed6ecd932db92d4be0f0df08b269167" category="inline-link-rx"></block>。</block>
   <block id="5a981475ccbda636d6a9cb7217af26c6" category="list-text">*更快的交付速度。* Intersight是以雲端或客戶資料中心的服務形式提供、因為它採用敏捷的軟體開發模式、所以能頻繁更新並持續創新。如此一來、客戶就能專注於支援關鍵業務需求。</block>
   <block id="e1b057d476283a101d41159976595d9b" category="list-text">*簡化營運。* Intersight使用單一、安全的SaaS交付工具、搭配通用的庫存、驗證及API、可在整個堆疊和所有位置上運作、消除跨團隊的封閉環境、藉此簡化營運。這可讓您在內部部署、VM、K8s、無伺服器、自動化、 在內部部署和公有雲中都能進行最佳化和成本控管。</block>
   <block id="77b358ad4e140d740fa2599c8a7f62fa" category="list-text">*持續最佳化。*您可以使用Cisco Intersight提供的智慧功能、跨越每個層面、以及Cisco技術支援中心、持續最佳化您的環境。這項情報會轉換成建議的可自動執行的行動、讓您能夠即時因應任何變更：從移動工作負載、監控實體伺服器的健全狀況、到為您使用的公有雲提供降低成本的建議。</block>
@@ -8940,21 +8928,16 @@
   <block id="a1e238eb5133f8ba9ef943d0ca1f4386" category="inline-image-macro">此快照顯示Cisco Intersight儀表板的「伺服器」頁面。</block>
   <block id="232db9801da9dbffd7813bb0d1da4932" category="paragraph"><block ref="232db9801da9dbffd7813bb0d1da4932" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d29934deaff2fa7ad8706b3bd343fc8" category="paragraph">VMware vSphere是一種虛擬化平台、可將大量的基礎架構（包括CPU、儲存設備和網路）整體管理為無縫、多功能且動態的作業環境。與管理個別機器的傳統作業系統不同、VMware vSphere會將整個資料中心的基礎架構集合在一起、建立一個資源強大的單一儲存設備、以便快速動態地分配給任何需要的應用程式。</block>
-  <block id="14dd1fa2215e85083149ed9dbcaac36f" category="paragraph">如需VMware vSphere及其元件的詳細資訊、請參閱<block ref="132550c60ca513f9467cdf8b8e5be374" category="inline-link-rx"></block>。</block>
-  <block id="8177a4c659f3243b88184f64fdcf336f" category="paragraph">如需詳細資訊、請參閱<block ref="c89de84f757c8786a48c9aa0b968e518" category="inline-link-rx"></block>。</block>
   <block id="8e49c91bd6e083400edaa7e4c4cbe004" category="inline-link">UCS硬體與軟體相容性</block>
-  <block id="4a21f9217be897575a9189e84bd0e081" category="paragraph">此混合雲解決方案可延伸至FlexPod 執行中所定義之受支援軟體、韌體和硬體版本的任何支援環境<block ref="f0e87d28a2a99025f9c80d8d1bdd0531" category="inline-link-rx"></block>、<block ref="d5e89872bc8a01087e3135e29553f803" category="inline-link-rx"></block>和<block ref="45bfb35eaade6b56e4f31adaaa8e4220" category="inline-link-rx"></block>。</block>
   <block id="60a5da8ed4056c86f5aeb022fb68eba0" category="paragraph">下表顯示內部部署FlexPod 的更新版軟硬體。</block>
   <block id="31c28e6832955fd4c45744375ac4359a" category="cell">9.3（9）</block>
   <block id="3beeed950a1dfde9ba566c9c665a6ced" category="cell">零點9.11.1P2 ONTAP</block>
   <block id="d139f97e5732d34a7e780cb587235560" category="cell">9.11p1</block>
-  <block id="9f4f07012506ae075214903c0f90d7ac" category="paragraph">下表顯示NetApp BlueXP和Cloud Volumes ONTAP 更新版本。</block>
   <block id="ec9ceefe0c19f4c029008c23e3c947b7" category="cell">廠商</block>
   <block id="378cba5c9b9583240c8818c6b5e8d353" category="cell">3.9.24</block>
   <block id="a7e58f7cec27a367b87b7b14facc4770" category="cell">零點9.11. ONTAP</block>
   <block id="3297b2d6f7954aaf186dde01d3bfaf89" category="inline-link-macro">下一步：安裝與組態。</block>
   <block id="2e855e8818bf9715d28c73608e612bb3" category="paragraph"><block ref="2e855e8818bf9715d28c73608e612bb3" category="inline-link-macro-rx"></block></block>
-  <block id="82bbf014db8c4200075a18b78d3e8157" category="summary">本節說明如何安裝及設定Cloud Volumes ONTAP 功能、包括功能性的功能、FlexPod 例如功能性的功能、功能性的功能、功能性的功能、ONTAP 以及功能性的功能。</block>
   <block id="3ae884df8a4c051e3c5bc2bfd2abb958" category="paragraph"><block ref="3ae884df8a4c051e3c5bc2bfd2abb958" category="inline-link-macro-rx"></block></block>
   <block id="5bab49ebc7307b18250d34ab49ad7d56" category="section-title">NetApp Cloud Volumes ONTAP 產品部署</block>
   <block id="c51f64e47355713b19b4b070f06cd89c" category="paragraph">完成下列步驟以設定Cloud Volumes ONTAP 您的實例：</block>
@@ -8962,18 +8945,11 @@
   <block id="e2d7265c104a3d2a653a9599f73803e5" category="paragraph">您必須擷取公有雲服務供應商的環境詳細資料、才能進行解決方案組態。例如、針對Amazon Web Services（AWS）環境準備、您需要AWS存取金鑰、AWS密碼金鑰、以及其他網路詳細資料、例如區域、VPC、子網路等。</block>
   <block id="b9b6f6047d12fc6eb5861a04c3391329" category="list-text">設定VPC端點閘道。</block>
   <block id="9739c55ac13fd999cc773776ec6daccd" category="paragraph">VPC端點閘道是啟用VPC與AWS S3服務之間連線的必要條件。這是用來在CVO（具有閘道類型的端點）上啟用備份。</block>
-  <block id="40e6332017647e19469becbeecd11965" category="list-text">存取NetApp BlueXP。</block>
-  <block id="bf685716d4823f2fa095e70ecb925d80" category="paragraph">若要存取NetApp BlueXP和其他雲端服務、您必須先註冊<block ref="cb1fef2883a60666ba1c342fa03fa642" category="inline-link-rx"></block>。若要在BlueXP帳戶中設定工作區和使用者、請按一下<block ref="4dcc9f157c326d4ba2daf9bed2a2d103" category="inline-link-rx"></block>。您需要擁有權限的帳戶、才能直接從BlueXP在雲端供應商中部署Connector。您可以從下載BlueXP原則<block ref="eaf63e684016dad3d469ad538eb69a99" category="inline-link-rx"></block>。</block>
-  <block id="768248474884633840844012e1eb1297" category="list-text">部署Connector。</block>
-  <block id="1a9262c286befb116396b1a42a77d07a" category="paragraph">在新增Cloud Volume ONTAP 的運作環境之前、您必須先部署Connector。如果您嘗試在Cloud Volumes ONTAP 沒有連接器的情況下建立第一個運作環境、則BlueXP會提示您。若要從BlueXP在AWS中部署Connector、請參閱此<block ref="2304b6526983a781df64b1f7373e5ed0" category="inline-link-rx"></block>。</block>
   <block id="fd70542ca3772813a4c7191cedbbfa1f" category="list-text">在Cloud Volumes ONTAP AWS中啟動</block>
   <block id="16a03230ebe4950ee9356150a20d672a" category="inline-link">請閱讀逐步指示</block>
   <block id="3a4d750f50017d54614cf5d495abb92d" category="paragraph">您可以 Cloud Volumes ONTAP 在單一系統組態中或 AWS 中以 HA 配對的形式啟動功能。<block ref="5a6f6aea79f64db108e3d43d324900fc" category="inline-link-rx"></block>。</block>
   <block id="30c327439c4965f96cde1b8ad90d4fba" category="inline-link">AWS的功能快速入門指南Cloud Volumes ONTAP</block>
   <block id="83f216cc939bebc8b874bff64532526b" category="paragraph">如需這些步驟的詳細資訊、請參閱<block ref="2001919d2275365d169803e8763b2360" category="inline-link-rx"></block>。</block>
-  <block id="e4ec9e71bec0a95630591cb6f88d13d1" category="paragraph">在這個解決方案中、我們已在Cloud Volumes ONTAP AWS中部署單節點的效能不整系統。下圖說明採用單節點CVO執行個體的NetApp BlueXP儀表板。</block>
-  <block id="b85833a46f6ccfc54ea1b46747ff9bda" category="inline-image-macro">此螢幕快照顯示NetApp BlueXP畫版畫面、其中顯示「My Working Environments（我的工作環境）」。</block>
-  <block id="e8a534ab37b00c97801c062906fa1909" category="paragraph"><block ref="e8a534ab37b00c97801c062906fa1909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6494739090e31c91779d5b1ae056881c" category="section-title">內部部署FlexPod 的內部部署</block>
   <block id="73a3588eac7abd3bbe0602fc71d7322a" category="paragraph">若要瞭解FlexPod UCS X系列、VMware及NetApp ONTAP 的功能不全、請參閱<block ref="35e9ae622703e5e9f707c46a163e0a74" category="inline-link-rx"></block> 設計指南：本文件提供設計指南、可將Cisco Intersight託管UCS X系列平台整合到FlexPod 「支援資料中心」基礎架構中。</block>
   <block id="af2e955267eb0fc88e73f50acfba1bb8" category="inline-link">本部署指南</block>
@@ -8998,20 +8974,9 @@
   <block id="ed28ab3e84850a9c5c8d45ed17c9cfce" category="list-text">建立igroup。</block>
   <block id="220a876b8e20111ad0a651acc95a55e6" category="paragraph">igroup用於允許伺服器存取LUN。若為Linux主機、可在檔案中找到伺服器IQN<block ref="22565a44e8f73044eb2029acbb069639" prefix=" " category="inline-code"></block>。</block>
   <block id="d88adf3556471c5417cf8c83c9e875cf" category="list-text">將LUN對應至igroup。</block>
-  <block id="185798efdc1b4079a60887e047bc6a23" category="section-title">將內部部署FlexPod 的資料儲存設備新增至藍圖XP</block>
-  <block id="d10cc49484a078f7867c17c226f12db5" category="paragraph">請完成下列步驟FlexPod 、使用NetApp BlueXP將您的整套儲存設備新增至工作環境。</block>
-  <block id="242bcf24d0329e5d7dd2468b648d12e3" category="list-text">從導覽功能表中、選取* Storage *&gt;* Canvas*。</block>
-  <block id="7d613f340824eb9c65d2bc768aa43577" category="list-text">在「畫版」頁面上、按一下「*新增工作環境*」、然後選取「*內部部署*」。</block>
   <block id="c1ecb58d124bd18daa47a09a05244c42" category="list-text">選取*內部部署ONTAP 的S--。單擊 * 下一步 * 。</block>
-  <block id="2e58a9a8cdc9651ecad74d2f2bfdaf5c" category="inline-image-macro">此螢幕快照顯示已ONTAP 選取內部部署功能的BlueXP新增工作群組頁面。</block>
-  <block id="6db4053e4bd84f28389116c8290b3d49" category="paragraph"><block ref="6db4053e4bd84f28389116c8290b3d49" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4b8e0998a4e5151e2188c1d096326d0" category="list-text">在「叢集詳細資料」頁面上、輸入叢集管理IP位址和管理員使用者帳戶的密碼ONTAP 。然後按一下「*新增*」。</block>
-  <block id="335b8d730a2f0487e442f91ea9c84906" category="inline-image-macro">此螢幕快照顯示「BlueXP Discover ONTAP 」（探索）「叢集」頁面、其中包含ONTAP 「叢集詳細資料」項目。</block>
-  <block id="97c18388177f0f05359f2b12abccde9d" category="paragraph"><block ref="97c18388177f0f05359f2b12abccde9d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3e7cf4927d323dbc38b104e2c251cb3b" category="list-text">在「詳細資料與認證」頁面上、輸入工作環境的名稱與說明、然後按一下「*執行*」。</block>
-  <block id="8ffad5c27dd53aaf492789494bb00774" category="paragraph">BlueXP會探索ONTAP 整個叢集、並將其新增為在Canvas.上的工作環境。</block>
-  <block id="5279c23924f3332fe1d8119a66f0140b" category="inline-image-macro">此螢幕快照顯示「藍圖XP畫版」頁面、右側則是最近新增的工作環境。</block>
-  <block id="e52fd2ebaf723448aaf9cbb1749fb0b0" category="paragraph"><block ref="e52fd2ebaf723448aaf9cbb1749fb0b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c5fbee6586294d81141f8dd158707985" category="inline-link">探索內部部署ONTAP 的叢集</block>
   <block id="c0a677dd25d6582ecb21203c7091df2c" category="paragraph">如需詳細資訊、請參閱頁面<block ref="6585a34a169ce9e8b8f4633a3f458722" category="inline-link-rx"></block>。</block>
   <block id="c8188720796c445c231833759dc4c4df" category="inline-link-macro">下一步：SAN組態。</block>
@@ -9037,7 +9002,6 @@
   <block id="ad6c7399ef512bb120b90c0e854635b1" category="paragraph">此選項用於解除檔案系統凍結、並允許繼續作業。凍結所封鎖的任何檔案系統修改都會解除封鎖、並允許完成。</block>
   <block id="f2ddfe11dbb395a190d1396ae5aafb10" category="paragraph">應用程式一致的快照功能也可以使用NetApp SnapCenter 解決方案來執行、NetApp解決方案能夠完整協調上述流程SnapCenter 、作為上述流程的一部分。如需詳細資訊、請參閱<block ref="9a5e2070b6e96d49a5b2b2037cad6de1" category="inline-link-rx"></block>。</block>
   <block id="e856e073c795e5296f084eb44fe5ec0b" category="list-text">執行SnapMirror更新作業、使正式作業和DR系統保持同步。</block>
-  <block id="323bc6842dd43908b96304e186c466c4" category="paragraph">SnapMirror更新也可透過BlueXP GUI的「* Replication *（複寫*）」索引標籤執行。</block>
   <block id="f84f8db19826515d042a16c1c41844f3" category="list-text">根據先前擷取的應用程式快照建立FlexClone執行個體。</block>
   <block id="d29c32719375e3ddeb3a0fd915e4824e" category="paragraph">對於先前的工作、也可以建立新的快照、但您必須依照上述步驟進行、以確保應用程式一致性。</block>
   <block id="024831ed0625c177829f55af8469b7c6" category="list-text">啟動FlexClone Volume以在雲端上顯示EHR執行個體。</block>
@@ -9054,13 +9018,8 @@
   <block id="ea33c9d3c2f7386981446c49afecf7fd" category="inline-image-macro">此螢幕擷取畫面會在Storage VM下拉式清單中顯示Stop（停止）選項。</block>
   <block id="afa53371621859e17a9eef316a9dadc2" category="paragraph"><block ref="afa53371621859e17a9eef316a9dadc2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f55dfdff995ff8e99fbcf080cbdab8b3" category="paragraph">請確定SnapMirror複寫已設定在ONTAP 內部部署的支援範FlexPod 圍內、以供執行個體使用、Cloud Volumes ONTAP 並在AWS中設定為可建立常用的應用程式快照。</block>
-  <block id="d001e5a48ff9eda2ff6ebe5a8f4ce599" category="paragraph">在SVM停止之後<block ref="d0f08a44974997af7b6852c24d0e3397" prefix=" " category="inline-code"></block> 在BlueXP中看不到Volume。</block>
-  <block id="f689c908b10788bf6784367f1c1cdaa7" category="inline-image-macro">Volume現在可在Volume Summary（Volume摘要）畫面中看到。</block>
-  <block id="644f592a21f22f1f8c1970739b40a3fb" category="paragraph"><block ref="644f592a21f22f1f8c1970739b40a3fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf076cd6cea48d6b14ef787dcb383803" category="list-text">在CVO中啟動DR。</block>
   <block id="934ddf12f1f595715bb64e253baf0e1c" category="list-text">打破內部ONTAP 環境的SnapMirror與Cloud Volumes ONTAP 內部環境的複寫關係、並推廣CVO目的地Volume <block ref="51756a7cd46039c313c68e20e7a0b665" prefix="(" category="inline-code"></block>）上線。</block>
-  <block id="766193daf219e3b8b36da8fef00be705" category="inline-image-macro">隨即顯示中斷關係選項畫面。</block>
-  <block id="d862b36512bb7760c45cdbac86a29142" category="paragraph"><block ref="d862b36512bb7760c45cdbac86a29142" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6d13bccc90b9d45570ea809fb5bb73e" category="paragraph">SnapMirror關係中斷後、目的地Volume類型會從資料保護（DP）變更為讀取/寫入（RW）。</block>
   <block id="f70740da9dc5ca03b70be6657203c689" category="list-text">啟動Cloud Volumes ONTAP 目的地Volume in the目的地、在雲端的EC2執行個體上顯示EHR執行個體。</block>
   <block id="b6fda559fae5076177688bc6a37bd296" category="list-text">若要存取雲端EHR執行個體上的資料和檔案系統、請先探索ONTAP 此解決方案的功能、並驗證多重路徑狀態。</block>
@@ -9068,12 +9027,8 @@
   <block id="7eee0206d656107aaa9bf7ef120e3a6a" category="list-text">最後、掛載檔案系統並顯示檔案系統資訊。</block>
   <block id="44082e3b46953d4812f448608d99c165" category="paragraph">此輸出顯示使用者可透過網路存取複寫的資料、直到正式作業站台從災難中恢復為止。</block>
   <block id="5eb76e69410671397b51abb1486b04c5" category="list-text">反轉SnapMirror關係。此作業會反轉來源與目的地磁碟區的角色。</block>
-  <block id="70de9e5727789fc80f8c267cee97857b" category="inline-image-macro">此螢幕快照會顯示「反轉關係」選項方塊。</block>
-  <block id="c34c0a97ee9ae9befa95cac2eccbfce6" category="paragraph"><block ref="c34c0a97ee9ae9befa95cac2eccbfce6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="36a647ac73bb4bdfebf7a153741b2776" category="paragraph">執行此作業時、來自原始來源Volume的內容會被目的地Volume的內容覆寫。當您想要重新啟動離線的來源 Volume 時、這很有幫助。</block>
   <block id="63974febe7228f8947e403575b8a5be9" category="paragraph">現在是CVO Volume <block ref="51756a7cd46039c313c68e20e7a0b665" prefix="(" category="inline-code"></block>）成為來源磁碟區、內部部署磁碟區 <block ref="d0f08a44974997af7b6852c24d0e3397" prefix="(" category="inline-code"></block>）成為目的地Volume。</block>
-  <block id="0b96f7e6a117dd76b8402d0d6f5ab1e3" category="inline-image-macro">此快照顯示在BlueXP中建立的Volume Replication關係。</block>
-  <block id="023e534a4542a35221ad8bdfd50410f8" category="paragraph"><block ref="023e534a4542a35221ad8bdfd50410f8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eed0aa95ddb1d5b18d3345619165fa48" category="paragraph">在上次資料複寫與停用來源磁碟區之間寫入原始來源磁碟區的任何資料都不會保留。</block>
   <block id="c733edd0a3b856f20a3450e503872404" category="list-text">若要驗證CVO磁碟區的寫入存取權、請在雲端的EHR執行個體上建立新檔案。</block>
   <block id="435cfa710838757baa56054c58eaa065" category="paragraph">當正式作業站台當機時、用戶端仍可存取資料、也可寫入Cloud Volumes ONTAP 目前為來源Volume的靜態Volume。</block>
@@ -9086,12 +9041,8 @@
   <block id="fa412d6f3ed1cdce0c9504a29ba1e705" category="inline-image-macro">此螢幕快照顯示如何使用Storage VM頁面中的下拉式功能表來啟動特定VM。</block>
   <block id="6360291b5531c8cea4e3757f24ab6ee6" category="paragraph"><block ref="6360291b5531c8cea4e3757f24ab6ee6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="505be9c431e7e6a3d9ab21aa9836e430" category="list-text">打破Cloud Volumes ONTAP 內部部署ONTAP 的SnapMirror複寫關係、並推廣內部部署的Volume <block ref="d0f08a44974997af7b6852c24d0e3397" prefix="(" category="inline-code"></block>）回歸正式作業。</block>
-  <block id="f8c5c8900560b7f5f88ad1a1b0452323" category="inline-image-macro">此螢幕快照顯示如何打破關係。</block>
-  <block id="60be8181bec8e1c79a51e6a775c1bd19" category="paragraph"><block ref="60be8181bec8e1c79a51e6a775c1bd19" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dc7bbc0ee640af98c03d036df40f0d54" category="paragraph">SnapMirror關係中斷之後、內部部署磁碟區類型會從資料保護（DP）變更為讀取/寫入（RW）。</block>
   <block id="623ebbbee4018b0d7cbdc8d8c6acebe8" category="list-text">反轉SnapMirror關係。現在、內部部署ONTAP 的《The On-One-Volume》（內部部署） <block ref="d0f08a44974997af7b6852c24d0e3397" prefix="(" category="inline-code"></block>）會像以前一樣變成來源Volume、Cloud Volumes ONTAP 也會變成《The》的《The》（來源）Volume <block ref="51756a7cd46039c313c68e20e7a0b665" prefix="(" category="inline-code"></block>）成為目的地Volume。</block>
-  <block id="67125b7d0d392d3e4c04bfe907340005" category="inline-image-macro">此螢幕快照顯示如何反轉關聯。</block>
-  <block id="275cd7fafe6d9246b8d8f9fd0f7c5096" category="paragraph"><block ref="275cd7fafe6d9246b8d8f9fd0f7c5096" category="inline-image-macro-rx" type="image"></block></block>
   <block id="43904594c7f37138b8a6a7fbb0821f09" category="paragraph">依照這些步驟、我們已成功還原原始組態。</block>
   <block id="6f7d95f45cae151358074a51f8bda042" category="list-text">重新啟動內部部署的EHR執行個體。掛載檔案系統、並確認<block ref="a48d2779dabc70e43a053fc28dc9817c" prefix=" " category="inline-code"></block> 您在雲端的EHR執行個體上建立的正式作業中斷時、現在也存在於此處。</block>
   <block id="9b48b9c9ec9d99fc619c2b4e9c3088e0" category="inline-image-macro">此快照顯示如何在內部部署的EHR執行個體上尋找新檔案。</block>
@@ -9137,53 +9088,24 @@
   <block id="a60707f257f506c44c1e10144156d5e9" category="inline-link-macro">使用CLI命令進行LVM管理</block>
   <block id="d73dc830af99cfb8368789a4c3d84d86" category="paragraph">如需這些工作的詳細資訊、請參閱頁面 <block ref="f7acd9c17b6c2b5bf77f636a82f0e1c2" category="inline-link-macro-rx"></block>。</block>
   <block id="87dc154a226feafc8c0f6636a4ea0662" category="section-title">資料產生</block>
-  <block id="cb5e12adb8d3d69bbc383a99257d07ad" category="paragraph"><block ref="dcab5c9276bd8f6380cf433d2dcedb15" prefix="" category="inline-code"></block> 是EHR I/O模擬器（GenerateIO）的Perl指令碼資料產生器。LUN內部的資料會以EHR產生<block ref="dcab5c9276bd8f6380cf433d2dcedb15" prefix=" " category="inline-code"></block> 指令碼：指令碼的設計目的是建立類似於EHR資料庫內的資料。</block>
   <block id="319a752029e11f63c3140a62a53db058" category="paragraph">執行時<block ref="dcab5c9276bd8f6380cf433d2dcedb15" prefix=" " category="inline-code"></block> 指令碼預設會使用85%的檔案系統來產生資料。</block>
   <block id="461de58baf1ddbd210b1035b18213197" category="section-title">設定內部部署ONTAP 的SnapMirror與Cloud Volumes ONTAP 功能不全的SnapMirror複寫</block>
   <block id="aeeec0576922eb4490b5fabadc6c4e36" category="paragraph">NetApp SnapMirror可透過LAN或WAN高速複寫資料、因此您可以在虛擬與傳統環境中同時獲得高資料可用度與快速資料複寫。當您將資料複寫到NetApp儲存系統並持續更新次要資料時、資料會保持最新狀態、並在需要時隨時保持可用。不需要外部複寫伺服器。</block>
   <block id="43dc5858e7d75f61be0cbcf94cdd063a" category="paragraph">完成下列步驟、在內部部署ONTAP 的整套系統和CVO之間設定SnapMirror複寫。</block>
-  <block id="ed1ae78d9c48d41bec72a9c42dc93ab6" category="list-text">在畫版中、選取包含來源磁碟區的工作環境、將其拖曳至您要複寫磁碟區的工作環境、然後選取* Replication *。</block>
-  <block id="ced6bf0a07ab417ed245905cbb4fffdd" category="inline-image-macro">此螢幕快照會顯示BlueXP畫版畫面、並在下拉式清單中選取「Replication」（複寫）以供內部ONTAP 執行個體使用。</block>
-  <block id="8745ff3584d6c922dd10bb2e6e879388" category="paragraph"><block ref="8745ff3584d6c922dd10bb2e6e879388" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f58a624f61e7a0b14fe75113e79b80e4" category="paragraph">其餘步驟說明如何在Cloud Volumes ONTAP 不同時執行的ONTAP 功能叢集之間建立同步關係。</block>
   <block id="fb22d62f3618bb54d94521b93977ea24" category="list-text">*來源與目的地對等關係設定。*如果出現此頁面、請選取叢集對等關係的所有叢集間生命體。</block>
-  <block id="8ad0d7eecc1850f9b0d7760d733eb445" category="inline-image-macro">此螢幕快照顯示BlueXP來源對等安裝畫面。</block>
-  <block id="805d4e2b6be4d061cea83ff81e86ce3f" category="paragraph"><block ref="805d4e2b6be4d061cea83ff81e86ce3f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="471316ca4a7c0b900d3e29454976b380" category="list-text">*來源Volume選擇。*選取您要複寫的磁碟區。</block>
-  <block id="17b42b0578816d664354fe39dd36d9ec" category="inline-image-macro">此螢幕快照會顯示BlueXP來源Volume選擇畫面、其中一個磁碟區顯示14個。</block>
-  <block id="fd7e53126c9c2f0d3d521224c240f2bb" category="paragraph"><block ref="fd7e53126c9c2f0d3d521224c240f2bb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb3ca3a4bc2c65c65ad46e9da97cfa77" category="list-text">*目的地磁碟類型與分層。*如果目標Cloud Volumes ONTAP 是一個支援系統、請選取目的地磁碟類型、然後選擇是否要啟用資料分層。</block>
-  <block id="5e6f51795b917e63d0d64c2bbe446057" category="inline-image-macro">此螢幕快照顯示已選取「通用SSD」的「藍圖XP目的地磁碟類型」畫面。</block>
-  <block id="d7f9eb49d72dd80d22af8195658ae1df" category="paragraph"><block ref="d7f9eb49d72dd80d22af8195658ae1df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="61e1f5dff1c3c703419d8f9417353c10" category="list-text">*目的地Volume名稱：*指定目的地Volume名稱、然後選擇目的地Aggregate。如果目的地是ONTAP 一個不必要的叢集、您也必須指定目的地儲存VM。</block>
-  <block id="ffd54736aab02566f0aed4f26b6d451e" category="inline-image-macro">此螢幕快照會顯示BlueXP目的地Volume名稱畫面、其中包含輸入的相關資訊。</block>
-  <block id="2e90fb57705348109b4c21ed96ed2d4d" category="paragraph"><block ref="2e90fb57705348109b4c21ed96ed2d4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b939322583091b8a68286d2af517298" category="list-text">*最大傳輸率。*指定資料傳輸的最大傳輸率（以百萬位元組/秒為單位）。</block>
-  <block id="db7a4259027bf60f3551baa3a7796bdd" category="inline-image-macro">此螢幕快照會顯示BlueXP最大傳輸率畫面、並輸入100 MB/s。</block>
-  <block id="fec5ed9e5476a19f12514f55bb56df45" category="paragraph"><block ref="fec5ed9e5476a19f12514f55bb56df45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="43b69288e2e4056e2603dc7b20958252" category="inline-link">深入瞭解複寫原則</block>
   <block id="005c5c7ed7587e61292456c462fac4f6" category="list-text">*複寫原則。*選擇預設原則或按一下*其他原則*、然後選取其中一個進階原則。如需協助、<block ref="9e8cabf6943ebb9704914b1bfc9f0945" category="inline-link-rx"></block>。</block>
-  <block id="5100273ef265c2d8671bda9f1665b34b" category="inline-image-macro">此螢幕快照顯示「藍圖XP複寫原則」頁面、其中顯示預設原則為「鏡射」或「鏡射」和「備份」。</block>
-  <block id="61ddf602d164361a34a47fefce91b58d" category="paragraph"><block ref="61ddf602d164361a34a47fefce91b58d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb5df7c19fc4406009723468c0e62d1a" category="list-text">*排程。*選擇一次性複本或週期性排程。有多個預設排程可供使用。如果您想要不同的排程、則必須在上建立新的排程<block ref="253a62e31bdaa8ecd365852c9c6f48bf" prefix=" " category="inline-code"></block> 使用System Manager。</block>
-  <block id="23df5b4ceef0390eec3d131dbad9de9c" category="inline-image-macro">此螢幕快照顯示藍圖XP複寫設定排程畫面、其中顯示多個時間選項。</block>
-  <block id="52c012ee5512a15cbadd9fd508b9883d" category="paragraph"><block ref="52c012ee5512a15cbadd9fd508b9883d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="681b9f7f2e3fb5823a548eaf46772740" category="list-text">*檢閱*檢閱*檢閱您的選擇、然後按一下*執行*。</block>
-  <block id="bd032e5c50284e702a4cd13a09c21ed2" category="inline-image-macro">此螢幕快照顯示「藍圖XP複寫設定審查與核准」畫面。</block>
-  <block id="09b478cd7d21f4268dd1bb3c20cebf08" category="paragraph"><block ref="09b478cd7d21f4268dd1bb3c20cebf08" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8cbeafabda07bd5d65eb9aa0c0d2b357" category="paragraph">如需這些組態步驟的詳細資訊、請參閱<block ref="31b0fd71dd59dff102791c5263ebe9d0" category="inline-link-rx"></block>。</block>
-  <block id="7dfc3e202f3b7ca9ec0050cbaf1e45ec" category="paragraph">BlueXP會啟動資料複寫程序。現在、您可以看到* Replication *服務是在內部部署ONTAP 的作業系統與Cloud Volumes ONTAP 內部部署的作業系統之間建立的。</block>
-  <block id="d070f19e4b4354bb4c58d3987a88160b" category="inline-image-macro">此螢幕快照顯示了BlueXP畫版畫面、其中複寫服務描繪為CVO執行個體與內部部署ONTAP 的更新執行個體之間的一行。</block>
-  <block id="5d5e1a4ee1a6e0ef804f3d348d06921b" category="paragraph"><block ref="5d5e1a4ee1a6e0ef804f3d348d06921b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ae2434cdcfd33a5c2fe29bf123d2b92" category="paragraph">在這個叢集中、您可以看到新建立的Volume Cloud Volumes ONTAP 。</block>
-  <block id="4859f4cdec8e1861cb7a996b3c25d3bd" category="inline-image-macro">此螢幕快照會顯示BluedXP Volumes索引標籤、並顯示新的Volume。</block>
-  <block id="6aefe6c7a2813c1c3fcf4fbb7a05ccd6" category="paragraph"><block ref="6aefe6c7a2813c1c3fcf4fbb7a05ccd6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2cbdde181a38a501a583654789ddc62c" category="paragraph">您也可以確認內部部署Volume與雲端Volume之間已建立SnapMirror關係。</block>
-  <block id="f41eab09be0f98ef254a74ab0772de58" category="inline-image-macro">此螢幕快照會顯示「藍圖XP複製」索引標籤、其中包含剛剛建立之複寫關係的相關資訊。</block>
-  <block id="b08a32ae423fad92a0a509c0cccade9f" category="paragraph"><block ref="b08a32ae423fad92a0a509c0cccade9f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e55baf8c5f94e26f12395e9c1bae6505" category="paragraph">如需複寫工作的詳細資訊、請參閱* Replication *（複寫*）索引標籤。</block>
-  <block id="8ac544572f2ee9ec241cf2a7261f841d" category="inline-image-macro">此螢幕擷取畫面會在「複製」索引標籤下顯示延伸資訊。</block>
-  <block id="aa7f3d4b43ec32726c63713b983c8b40" category="paragraph"><block ref="aa7f3d4b43ec32726c63713b983c8b40" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87766c280f27a90ee12d6c50496cd8c4" category="paragraph"><block ref="87766c280f27a90ee12d6c50496cd8c4" category="inline-link-macro-rx"></block></block>
   <block id="1948f572a268d346b7127bd97bba5c72" category="summary">NetApp為企業應用程式（包括醫療）提供單一資料管理解決方案、我們能夠引導醫院完成數位轉型的過程。NetApp Cloud Volumes ONTAP 支援醫療資料管理解決方案、可將資料從FlexPod 「支援資料中心」有效率地複寫到Cloud Volumes ONTAP 部署在AWS等公有雲上的「支援中心」。</block>
   <block id="77ae9bf42d08b53b81e79bcd90939853" category="doc">TR-4960：FlexPod 《以Cloud Volumes ONTAP Epic為基礎的混合雲》</block>
@@ -9205,15 +9127,9 @@
   <block id="7007d499776b2bfa8941c62754598088" category="list-text">*自訂的保護。Cloud Volumes ONTAP *支援區塊層級的資料複寫功能、可透過ONTAP 遞增式更新、將目的地保持在最新狀態。使用者可以指定同步排程、以決定何時傳輸來源的變更。這可為各種醫療資料提供自訂的保護。</block>
   <block id="77bb4fcf677f48b0d8952ec06061ae73" category="list-text">*容錯移轉與容錯回復。*發生災難時、儲存管理員可以快速設定容錯移轉至雲端磁碟區。當主要站台恢復時、DR環境中建立的新資料會同步回來源磁碟區、以便重新建立次要資料複寫。如此一來、便能輕鬆恢復醫療資料而不中斷營運。</block>
   <block id="dc7918d634ea584c506bbf88e388c7b8" category="list-text">*效率。*二線雲端複本的儲存空間和成本、是使用資料壓縮、精簡配置和重複資料刪除技術最佳化的。醫療資料會以壓縮和重複資料刪除的形式、在區塊層級傳輸、以提升傳輸速度。資料也會自動分層至低成本的物件儲存設備、而且只有在存取時才會恢復至高效能儲存設備、例如在DR案例中。如此可大幅降低持續儲存成本。</block>
-  <block id="3da933609e167649418f9b96fc190f9b" category="list-text">*勒索軟體保護。* NetApp BlueXP勒索軟體保護功能可掃描內部部署和雲端環境的資料來源、偵測安全漏洞、並提供目前的安全狀態和風險評分。然後提供可行的建議、您可以進一步調查並遵循以進行補救。如此一來、您就能保護重要的醫療資料免受勒索軟體攻擊。</block>
-  <block id="fe31b114e110e2af1fd930bf2da53e7a" category="paragraph">本節說明解決方案的邏輯拓撲。下圖所示為解決方案拓撲、包括FlexPod 內部部署環境的功能不全、Cloud Volumes ONTAP 在Amazon Web Services（AWS）上執行的NetApp Sing（CVO）、以及NetApp BlueXP SaaS平台。</block>
-  <block id="f0f63a1e62017f4c7d4b8fc95de5055d" category="inline-image-macro">此影像描述FlexPod 在公有ONTAP 雲中執行的執行個體與NetApp Cloud Volumes ONTAP 的SnapMirror之間進行SnapMirror複寫。</block>
-  <block id="59fdaa90d546a53d932ddc47fc4a4d12" category="paragraph"><block ref="59fdaa90d546a53d932ddc47fc4a4d12" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96b3193f9bd9b4980fd69f862b8b0791" category="paragraph">端點之間的控制平面和資料平面會清楚標示出來。資料平面會在ONTAP 執行於FAS All Flash的整個過程中執行、並FlexPod 透過安全的站台對站台VPN連線、在AWS中執行NetApp CVO執行個體之間執行。將醫療工作負載資料從內部部署FlexPod 的「支援資料中心」複寫到NetApp Cloud Volumes ONTAP 解決方案、是由NetApp SnapMirror複寫來處理。此解決方案也支援選擇性備份及分層保存在NetApp CVO執行個體中的冷資料至AWS S3。</block>
   <block id="69bfd0a80e68c85caea0b9999fc6ba41" category="paragraph"><block ref="69bfd0a80e68c85caea0b9999fc6ba41" category="inline-link-macro-rx"></block></block>
   <block id="0c308b16788e826f96a07e6a1d6c3629" category="paragraph"><block ref="0c308b16788e826f96a07e6a1d6c3629" category="inline-link-macro-rx"></block></block>
-  <block id="43e0b63bc072ee0888a5c27056246b4c" category="inline-link"><block ref="43e0b63bc072ee0888a5c27056246b4c" category="inline-link-rx"></block></block>
-  <block id="29ba8e8610e036b3f180753a1567b2de" category="paragraph"><block ref="29ba8e8610e036b3f180753a1567b2de" category="inline-link-rx"></block></block>
   <block id="695439b8fa8598673f34199f94044423" category="inline-link"><block ref="695439b8fa8598673f34199f94044423" category="inline-link-rx"></block></block>
   <block id="5d8b5cf0cf78cc9a93bb58b4d8b64c3b" category="paragraph"><block ref="5d8b5cf0cf78cc9a93bb58b4d8b64c3b" category="inline-link-rx"></block></block>
   <block id="486388bbe4cda183a0e74df6ada2a454" category="list-text">在AWS中快速入門Cloud Volumes ONTAP</block>
@@ -9235,7 +9151,6 @@
   <block id="c1138e31cf3bd66be11eeb4877babdd1" category="sidebar">採用Epic的混合雲Cloud Volumes ONTAP FlexPod</block>
   <block id="1522a775ace254939b906658e7521ca9" category="section-title">EHR</block>
   <block id="ba8a69a3d262e3d66f6f5cdc83781213" category="paragraph">電子健康記錄（EHRs）為中型和大型醫療組織、醫院和整合式醫療組織製作軟體。客戶也包括社區醫院、學術機構、兒童組織、安全網供應商及多醫院系統。EHR整合式軟體涵蓋臨床、存取和營收功能、並延伸至家中。</block>
-  <block id="df788b689025995ee4f69e5d3ecf444d" category="paragraph">通過EHR驗證、並支援內含Cisco UCS、搭載Intel Xeon處理器、Red Hat Enterprise Linux（RHEL）及VMware ESXi虛擬化的平台FlexPod 。此平台加上EHR在執行ONTAP 支援的NetApp儲存設備上的「高舒適度」等級、讓客戶有信心透過FlexPod 可連線至任何公有雲供應商的功能、在完全託管的私有雲中執行醫療應用程式。</block>
   <block id="53daffada2671da93073fbf613b0c7f6" category="summary">本文件說明使用最新硬體與軟體產品的 FlexPod 參考架構、並提供在 VMware ESXi 虛擬化環境中代管 Microsoft SQL Server 2019 資料庫的部署建議。</block>
   <block id="ac8ab1f328e99fe87fc6a46ababbad87" category="paragraph">Gopu Narasimha Reddy 、 Cisco Sanjeev Naldurgkar 、 Cisco Atul Bhalodia 、 NetApp</block>
   <block id="a3f5786e88d487e3db751ad3e2f32297" category="paragraph">本文件說明使用最新硬體與軟體產品的 FlexPod 參考架構、並提供在 VMware ESXi 虛擬化環境中代管 Microsoft SQL Server 2019 資料庫的部署建議。此解決方案也使用 Cisco Workload Optimization Manager （ CWOM ）、針對 SQL 工作負載和基礎架構、提供自動化建議、以達到最佳且有效率的資源使用率。</block>
@@ -9751,4 +9666,48 @@
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="43240d20188b8ece0dea0d19f25bca8e" category="paragraph">Astra Trident以 pod 的形式部署在 Kubernetes 叢集上，為您的 Kubernetes 工作負載提供動態儲存編排服務。它使您的容器化應用程式能夠快速輕鬆地使用 NetApp 廣泛的產品組合中的持久存儲，其中包括NetApp ONTAP （NetApp AFF、 NetApp FAS、 NetApp ONTAP Select、Cloud 和Amazon FSx for NetApp ONTAP ）、 Azure NetApp Files NetApp Element軟體（NetApp SolidFire .在FlexPod環境中， Astra Trident用於動態配置和管理由託管在ONTAP儲存平台（例如NetApp AFF和FAS系統以及Cloud Volumes ONTAP）上的NetApp FlexVol捲和 LUN 支援的容器的持久卷。Trident在Astra Control 提供的應用保護方案的實施中也發揮關鍵作用。有關Astra Trident的更多信息，請參閱<block ref="a4e84d4448e67c302cfd652fac18bef7" category="inline-link-rx"></block></block>
+  <block id="43876a7baad9b163422baffbc251343e" category="list-text">銷售訂單中需要包含的相關銷售屬性：</block>
+  <block id="dd67a759871b4a5f3afa8f25d59b8886" category="list-text">FlexPod權益</block>
+  <block id="05ca7330784d84200d4a867bf1e7f701" category="list-text">FlexPod解決方案支援權限</block>
+  <block id="0662382e873bd21e2208226491d8dde5" category="summary">本節介紹如何安裝和設定Cloud Volumes ONTAP、 FlexPod、 ONTAP儲存和NetApp Console。</block>
+  <block id="e1e90293550a157b4304d07e50558a74" category="list-text">存取NetApp Console。</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="inline-link">NetApp Console</block>
+  <block id="8bd88a6e146388c50931a9b4474ac68b" category="inline-link">NetApp Console設定與管理</block>
+  <block id="da00efd9428c26d42c9c04886bd1dbae" category="inline-link">NetApp Console的權限摘要</block>
+  <block id="33d6154a2418074930f690d4b1724852" category="paragraph">要存取控制台和其他雲端服務，您需要註冊。<block ref="05d5f8d1d49f7e89885d2707f683c4b6" category="inline-link-rx"></block> 。有關在控制台帳戶中設定工作區和使用者的信息，請參閱<block ref="a904afc19eaeee2b40eab823cbda7f56" category="inline-link-rx"></block>。您需要一個具有權限的帳戶，才能直接從控制台在您的雲端提供者部署控制台代理程式。若要取得所需的權限，請參閱<block ref="ffebd836aecbd6850b7db8839f85486b" category="inline-link-rx"></block>。</block>
+  <block id="5be7d5b5674442802785ccdef68829df" category="list-text">部署控制台代理程式。</block>
+  <block id="7ff9f8e2467774df163161a38d2d5040" category="inline-link">AWS 中的控制台代理安裝選項</block>
+  <block id="85dfb70b82a75be4f57b2a26e7d5718e" category="paragraph">在新增 Cloud Volume ONTAP系統之前，必須先部署控制台代理程式。如果您嘗試在沒有安裝控制台代理的情況下建立第一個Cloud Volumes ONTAP系統，控制台會提示您。若要從控制台在 AWS 中部署控制台代理，請參閱下列內容：<block ref="3a0091a78ac20a95fb375f609c255319" category="inline-link-rx"></block> 。</block>
+  <block id="1d1240bd548a4a1a867b70292eb1aeed" category="paragraph">在這個解決方案中，我們在 AWS 上部署了一個單節點Cloud Volumes ONTAP系統。</block>
+  <block id="1316c5dcc0ef8a6f769bb78e02e5f9ac" category="section-title">將本機FlexPod儲存加入到NetApp Console</block>
+  <block id="518b5ab1b48ff0f4544aa74af3d40ce9" category="paragraph">使用控制台完成以下步驟，將FlexPod儲存新增至系統中。</block>
+  <block id="34ac0f69e71574f430e41994e4a0da31" category="list-text">從導覽選單中，選擇“儲存”&gt;“系統”。</block>
+  <block id="32dcbcd0ce3b64308d2958a48ffdeb6b" category="list-text">在“系統”頁面上，按一下“新增系統”，然後選擇“本機部署”。</block>
+  <block id="bed271321bea87b15191f74d654222c7" category="paragraph">控制台發現ONTAP集群，並將其作為系統添加到「系統」頁面。</block>
+  <block id="aea408788718a766aeaaec0678fa8dc6" category="paragraph"><block ref="dcab5c9276bd8f6380cf433d2dcedb15" prefix="" category="inline-code"></block>是一個用於 EHR I/O 模擬器 (GenerateIO) 的 perl 腳本資料產生器。 LUN 內的資料由 EHR 產生。<block ref="dcab5c9276bd8f6380cf433d2dcedb15" prefix=" " category="inline-code"></block>腳本。該腳本旨在創建與 EHR 資料庫中的數據類似的數據。</block>
+  <block id="6cf426082c7adab94ff07f99dd09a2ae" category="list-text">在「系統」中，選擇包含來源磁碟區的系統，將其拖曳到要將磁碟區複製到的系統，然後選擇「複製」。</block>
+  <block id="b68c7714983d2dc7aff474dc403e9041" category="paragraph">控制台啟動資料複製過程。在此階段，您可以看到在本機ONTAP系統和Cloud Volumes ONTAP之間建立的 *複製* 服務。</block>
+  <block id="5a5aa5dac0e47ab81b175a57d39b2dfd" category="paragraph">FlexPod已獲得 EHR 認證，並支援包含Cisco UCS、Intel Xeon 處理器、Red Hat Enterprise Linux (RHEL) 和 VMware ESXiCisco化的平台。該平台，加上 EHR 對運行ONTAP的NetApp存儲的高舒適度評級，使您能夠通過FlexPod在完全託管的私有雲中運行您的醫療保健應用程序，該私有雲還可以連接到任何公共雲提供商。</block>
+  <block id="454bb1110d6093b9ef29fd01d063b03f" category="inline-link-macro">NetApp Console文檔</block>
+  <block id="b983bfbe5ec8438db9fb9f19759e3f18" category="paragraph">NetApp Console是一個企業級的、基於 SaaS 的管理平台，它使 IT 專家和雲端架構師能夠使用NetApp雲端解決方案集中管理其混合多雲基礎架構。它提供了一個集中式系統，用於查看和管理您的本地和雲端存儲，支援混合雲、多雲提供者和帳戶。有關詳細信息，請參閱 <block ref="b36082d025a157f945bec9c31f710a3a" category="inline-link-macro-rx"></block>。</block>
+  <block id="e76758412e5a64841b8710e5fb81ab0c" category="section-title">控制台代理</block>
+  <block id="01374633e0b85e5293668e1923426944" category="paragraph">控制台代理實例使控制台能夠管理公有雲環境中的資源和程序。控制台提供的許多功能都需要控制台代理，它可以部署在雲端或本地網路中。</block>
+  <block id="c91f8697394a7fb28c9a83b44582be31" category="paragraph">控制台代理在以下位置受支援：</block>
+  <block id="919907c49b488683fa1ddd5c9088c12b" category="inline-link-macro">了解有關控制台代理的更多信息</block>
+  <block id="ee89ef5b55c2a87a184f43025decfd81" category="paragraph"><block ref="68dba57e2e701d62034c5f00a445ccac" category="inline-link-macro-rx"></block>。</block>
+  <block id="3cf6200e8b00427c9442b10b8f274da7" category="paragraph">更多詳細信息，請參閱<block ref="a3566b6709d68a3a1029f44b325eadaa" category="inline-link-macro-rx"></block>。</block>
+  <block id="824ae54596b9693994b0149193fdad01" category="paragraph">有關詳細信息，請參閱 <block ref="72c51d15f00a20805275a2725e33f916" category="inline-link-macro-rx"></block>。</block>
+  <block id="c65f23ce2d02c64e04c3c7376ef78b2e" category="paragraph">有關 VMware vSphere 及其組件的更多信息，請參閱<block ref="1f73295bb656325bbd336b162a02c12d" category="inline-link-macro-rx"></block>。</block>
+  <block id="9279f26780ded18d0540905e2f4c2443" category="paragraph">詳細資訊請參見<block ref="fc0491c933cd37e813a120bdaa5242bb" category="inline-link-macro-rx"></block>。</block>
+  <block id="a000b140fe824ced4237ae63f1c6e298" category="paragraph">這種混合雲解決方案可以擴展到任何運行支援版本的軟體、韌體和硬體的FlexPod環境，具體定義見：<block ref="d81b4b28c891206234cb1654e6016fc1" category="inline-link-macro-rx"></block> ，<block ref="a20168bfee610ed2009269dc61511d00" category="inline-link-macro-rx"></block> ， 和<block ref="cbb6475bbf94049e4e0384caf6c1ee3e" category="inline-link-macro-rx"></block>。</block>
+  <block id="e560e67994c1662218988a427804df78" category="paragraph">下表顯示了控制台和Cloud Volumes ONTAP版本。</block>
+  <block id="bccaa4aa80831b76c11240a16447975f" category="cell">安慰</block>
+  <block id="1e4a345000c59774abe93a846772304d" category="list-text">*勒索軟體防護* NetApp Console勒索軟體防護功能可掃描本地和雲端環境中的資料來源，偵測安全漏洞，並提供其當前的安全狀態和風險評分。然後它會提供可操作的建議，您可以進一步調查並遵循這些建議進行補救。這可以幫助您保護關鍵的醫療保健資料免受勒索軟體攻擊。</block>
+  <block id="9d5f4724eb780613e5541d9d830a30e3" category="paragraph">本節描述解決方案的邏輯拓撲結構。下圖表示由FlexPod本地環境、運行在 Amazon Web Services (AWS) 上的NetApp Cloud Volumes ONTAP (CVO) 和NetApp Console SaaS 平台組成的解決方案拓撲。</block>
+  <block id="41b0131c2b3a5dcd8f82bebcbf9ffabf" category="inline-image-macro">此圖描繪了在運行ONTAP的 FlexPod實例和在公有雲中運行的NetApp Cloud Volumes ONTAP之間進行SnapMirror複製。</block>
+  <block id="6d1c1ae7e8b364338a632417548ce94f" category="paragraph"><block ref="6d1c1ae7e8b364338a632417548ce94f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="83c3fc170ad6edab0bc095c039e09aeb" category="paragraph">也可以透過NetApp ConsoleGUI 的「複製」標籤執行SnapMirror更新。</block>
+  <block id="1ae823e8252cefe82659e80378adf180" category="paragraph">SVM停止運作後，<block ref="d0f08a44974997af7b6852c24d0e3397" prefix=" " category="inline-code"></block>控制台中不顯示音量。</block>
+  <block id="0d6e5faf80b288a1d3277954d0b55ae8" category="inline-link"><block ref="0d6e5faf80b288a1d3277954d0b55ae8" category="inline-link-rx"></block></block>
+  <block id="17a7b956a1673e2b7eed84e47e417df1" category="paragraph"><block ref="17a7b956a1673e2b7eed84e47e417df1" category="inline-link-rx"></block></block>
 </blocks>

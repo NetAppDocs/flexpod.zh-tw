@@ -23,6 +23,12 @@ summary: 此架構具有下列額外的互通性與支援相關需求FlexPod
 ** 支援NetApp設備的支援SupportEdge Advisor SupportEdge Premium
 
 
+* 銷售訂單中需要包含的相關銷售屬性：
++
+** FlexPod權益
+** FlexPod解決方案支援權限
+
+
 
 
 如需詳細資訊、請參閱NetApp http://mysupport.netapp.com/matrix["IMT"^]。

@@ -72,7 +72,7 @@ singlecvoaws::> snapmirror update -destination-path svm_singlecvoaws:hc_iscsi_vo
 Operation is queued: snapmirror update of destination “svm_singlecvoaws:hc_iscsi_vol_copy”.
 ....
 +
-SnapMirror更新也可透過BlueXP GUI的「* Replication *（複寫*）」索引標籤執行。
+也可以透過NetApp ConsoleGUI 的「複製」標籤執行SnapMirror更新。
 
 . 根據先前擷取的應用程式快照建立FlexClone執行個體。
 +
@@ -87,7 +87,7 @@ singlecvoaws::> volume clone create -flexclone kamini_clone -type RW -parent-vse
 . 啟動FlexClone Volume以在雲端上顯示EHR執行個體。
 +
 ....
-singlecvoaws::> lun mapping create –vserver svm_singlecvoaws –path /vol/kamini_clone/iscsi_lun1 -igroup ehr-igroup –lun-id 0
+singlecvoaws::> lun mapping create -vserver svm_singlecvoaws -path /vol/kamini_clone/iscsi_lun1 -igroup ehr-igroup -lun-id 0
 
 singlecvoaws::> lun mapping show
 Vserver     Path                                  Igroup    LUN ID  Protocol
@@ -162,17 +162,11 @@ image:fhc-cvoe-image21.png["此螢幕擷取畫面會在Storage VM下拉式清單
 請確定SnapMirror複寫已設定在ONTAP 內部部署的支援範FlexPod 圍內、以供執行個體使用、Cloud Volumes ONTAP 並在AWS中設定為可建立常用的應用程式快照。
 
 +
-在SVM停止之後 `hc_iscsi_vol` 在BlueXP中看不到Volume。
-
-+
-image:fhc-cvoe-image22.png["Volume現在可在Volume Summary（Volume摘要）畫面中看到。"]
+SVM停止運作後， `hc_iscsi_vol`控制台中不顯示音量。
 
 . 在CVO中啟動DR。
 +
 .. 打破內部ONTAP 環境的SnapMirror與Cloud Volumes ONTAP 內部環境的複寫關係、並推廣CVO目的地Volume (`hc_iscsi_vol_copy`）上線。
-+
-image:fhc-cvoe-image23.png["隨即顯示中斷關係選項畫面。"]
-
 +
 SnapMirror關係中斷後、目的地Volume類型會從資料保護（DP）變更為讀取/寫入（RW）。
 
@@ -186,7 +180,7 @@ svm_singlecvoaws hc_iscsi_vol_copy RW
 .. 啟動Cloud Volumes ONTAP 目的地Volume in the目的地、在雲端的EC2執行個體上顯示EHR執行個體。
 +
 ....
-singlecvoaws::> lun mapping create –vserver svm_singlecvoaws –path /vol/hc_iscsi_vol_copy/iscsi_lun1 -igroup ehr-igroup –lun-id 0
+singlecvoaws::> lun mapping create -vserver svm_singlecvoaws -path /vol/hc_iscsi_vol_copy/iscsi_lun1 -igroup ehr-igroup -lun-id 0
 
 singlecvoaws::> lun mapping show
 Vserver     Path                                Igroup   LUN ID  Protocol
@@ -237,16 +231,10 @@ Filesystem                 1K-blocks  Used      Available  Use%  Mounted on
 
 .. 反轉SnapMirror關係。此作業會反轉來源與目的地磁碟區的角色。
 +
-image:fhc-cvoe-image24.png["此螢幕快照會顯示「反轉關係」選項方塊。"]
-
-+
 執行此作業時、來自原始來源Volume的內容會被目的地Volume的內容覆寫。當您想要重新啟動離線的來源 Volume 時、這很有幫助。
 
 +
 現在是CVO Volume (`hc_iscsi_vol_copy`）成為來源磁碟區、內部部署磁碟區 (`hc_iscsi_vol`）成為目的地Volume。
-
-+
-image:fhc-cvoe-image25.png["此快照顯示在BlueXP中建立的Volume Replication關係。"]
 
 +
 在上次資料複寫與停用來源磁碟區之間寫入原始來源磁碟區的任何資料都不會保留。
@@ -283,9 +271,6 @@ image:fhc-cvoe-image26.png["此螢幕快照顯示如何使用Storage VM頁面中
 
 . 打破Cloud Volumes ONTAP 內部部署ONTAP 的SnapMirror複寫關係、並推廣內部部署的Volume (`hc_iscsi_vol`）回歸正式作業。
 +
-image:fhc-cvoe-image27.png["此螢幕快照顯示如何打破關係。"]
-
-+
 SnapMirror關係中斷之後、內部部署磁碟區類型會從資料保護（DP）變更為讀取/寫入（RW）。
 
 +
@@ -296,9 +281,6 @@ vserver        volume       type
 Healthcare_SVM hc_iscsi_vol RW
 ....
 . 反轉SnapMirror關係。現在、內部部署ONTAP 的《The On-One-Volume》（內部部署） (`hc_iscsi_vol`）會像以前一樣變成來源Volume、Cloud Volumes ONTAP 也會變成《The》的《The》（來源）Volume (`hc_iscsi_vol_copy`）成為目的地Volume。
-+
-image:fhc-cvoe-image28.png["此螢幕快照顯示如何反轉關聯。"]
-
 +
 依照這些步驟、我們已成功還原原始組態。
 

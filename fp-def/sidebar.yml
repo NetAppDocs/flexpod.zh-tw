@@ -48,8 +48,6 @@ entries:
     url: "/fp-def/dc-tech-spec_flexpod_platforms.html"
   - title: 範例FlexPod
     url: "/fp-def/dc-tech-spec_flexpod_rules.html"
-  - title: 支援FlexPod 的或已驗證的支援的支援的
-    url: "/fp-def/dc-tech-spec_supported_versus_validated_flexpod_configurations.html"
   - title: NetApp ONTAP
     url: "/fp-def/dc-tech-spec_netapp_ontap.html"
   - title: Cisco Nexus交換操作模式
