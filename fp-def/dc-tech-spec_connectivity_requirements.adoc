@@ -18,7 +18,7 @@ summary: 以下列出FlexPod 有關整合功能組態的連線需求。
 
 * 所有元件都需要個別的100Mbps乙太網路/1Gb乙太網路頻外管理網路。
 * NetApp建議您在整個環境中啟用巨型框架支援、但不需要。
-* Cisco UCS Fabric互連應用裝置連接埠建議僅用於iSCSI和NAS連線。
+* 建議僅將獨立式 Cisco UCS Fabric Interconnect 應用裝置連接埠用於 iSCSI 連線。當 NAS 連線與應用裝置連接埠搭配使用時，在某些故障情況下需要額外的 Nexus / 相容交換器。
 * 核心FlexPod 不需在核心不整組件之間放置額外的設備。
 
 

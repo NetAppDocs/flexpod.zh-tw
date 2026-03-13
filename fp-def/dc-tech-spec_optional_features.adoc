@@ -56,7 +56,7 @@ image:dc-tech-spec_image12.png["錯誤：缺少圖形影像"]
 
 現有的32G FC SAN傳輸可用於同時傳輸NVMe和SCSI工作負載。
 
-下圖說明FlexPod 採用Cisco MDS的適用於FC的「功能不整資料中心」。
+下圖展示了採用 Cisco MDS 的 FlexPod Datacenter for FC。
 
 如需FlexPod 更多有關「效能優勢」的詳細資訊、請參閱 https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741907.html["推出端點對端點NVMe for FlexPod 《支援不全》白皮書。"^]
 
