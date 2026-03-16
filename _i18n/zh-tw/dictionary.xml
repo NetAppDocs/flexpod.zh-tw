@@ -9245,8 +9245,6 @@
   <block id="f63c99bc92f7bc3f7b439ecf41cac3e8" category="paragraph">FabricPool 需要 ONTAP 9.2 或更新版本。其他 FabricPool 要求取決於所使用的 ONTAP 版本以及所連接的雲端層級。在 ONTAP 9.8 之前的版本中，FabricPool 僅支援 SSD 本地層級。對 HDD 聚合的支援已於 ONTAP 9.8 中新增。對於像 NetApp AFF C190 這類具有固定且相對較小容量的入門級 AFF 平台，FabricPool 能夠非常有效地將非活躍資料移至雲端層級。</block>
   <block id="d468c66669ca3541addf2625862a45c3" category="list-text">除了以下平台外，所有能夠運行 ONTAP 9.2 的平台都支援 NetApp FAS FabricPool：</block>
   <block id="0ef00e20c875ece8831080e8f1bbb3c2" category="list-text">FAS2554 、 FAS2552 、 FAS2520</block>
-  <block id="8e772168b909da1192f1390eefebf46a" category="admonition">請參閱<block ref="4a10a242abfc417db8b7f541b42667ce" category="inline-link-rx"></block> [NetApp Hardware Universe^] 以獲取有關支援 FabricPool 平台的最新資訊。</block>
-  <block id="b4175dd799877e6f2e03c951f0c6669e" category="list-text">NetApp ONTAP Select [NOTE] NetApp 建議使用全 SSD FabricPool 本機層。</block>
   <block id="cace94490e6f78c8158ef33aaf3690a1" category="list-text">Amazon S3（Standard、Standard-IA、One Zone-IA、Intelligent-Tiering、Glacier Instant Retrieval）</block>
   <block id="2ef43a2bc7cabeb4a5df5a73553f38d9" category="list-text">Google Cloud Storage （Multi-Regional、Regional、Nearline、Coldline、Archive）</block>
   <block id="ab53c57de26665bffe42f38b84a1dcf1" category="list-text">NetApp StorageGRID 10.3 及更新版本</block>
@@ -9257,4 +9255,8 @@
   <block id="744133334e4697a948297d67bcb2b599" category="list-text">適用於 Google Cloud 的 NetApp Cloud Volumes</block>
   <block id="0c16ab47cc76c62a7a3f488898b16c5f" category="list-text">NetApp Cloud Volumes ONTAP for AWS</block>
   <block id="82b968b6479bb7577ee3b6f333ea4527" category="list-text">NetApp Cloud Volumes ONTAP for Azure</block>
+  <block id="653e35b244515da6e28d0b4768efb3b4" category="cell">2 x C19/C20 或 2 x C14/C19</block>
+  <block id="9c731b980c2b703bfdb439c7056b1bfd" category="admonition">請參閱<block ref="c4dd6ba7b5ae102345b7377110dc849b" category="inline-link-rx"></block>以獲取有關 FabricPool 支援平台的最新資訊。</block>
+  <block id="00ae925249b1dcd734cdb679b48bf8f7" category="list-text">NetApp ONTAP Select</block>
+  <block id="9044f591b913b8cf0cc25f90afe3223c" category="admonition">NetApp 建議使用全 SSD FabricPool 本地層。</block>
 </blocks>
