@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: fp-def/fp-express-tech-spec__power_and_cabling_requirements.html 
+permalink: fp-def/fp-express-tech-spec_power_and_cabling_requirements.html 
 keywords: power, cabling, requirements, flexpod, express, cisco, ucs, minimum, cabling 
 summary: 本節說明FlexPod 功能和最低纜線需求、以利執行不需使用的功能。 
 ---

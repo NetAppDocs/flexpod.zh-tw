@@ -22,7 +22,7 @@ link:gcp-ncvo-cisco-intersight-configuration.html["先前版本：Cisco Intersig
 . 請提供相關的Terraform Cloud帳戶詳細資料、以申請或建立Terraform雲端目標。
 . 建立私有雲端的Terraform Cloud Agent目標、讓客戶能在資料中心安裝代理程式、並與Terraform Cloud進行通訊。
 +
-如需詳細資訊、請參閱 https://intersight.com/help/saas/features/terraform_cloud/admin["此連結"^]。
+欲了解更多資訊，請關注 https://community.cisco.com/t5/data-center-and-cloud-knowledge-base/intersight-service-for-terraform/ta-p/4301093["此連結"^]。
 
 
 

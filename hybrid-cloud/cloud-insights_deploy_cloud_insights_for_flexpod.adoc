@@ -29,7 +29,7 @@ summary: 必須完成下列工作、才能部署Cloud Insights 適用於FlexPod 
 
 若要註冊NetApp Cloud Insights 支援服務、請完成下列步驟：
 
-. 前往 https://cloud.netapp.com/cloud-insights["https://cloud.netapp.com/cloud-insights"^]
+. 前往 https://www.netapp.com/data-infrastructure-insights/["https://www.netapp.com/data-infrastructure-insights/"^]
 . 按一下畫面中央的按鈕以開始14天免費試用、或按一下右上角的連結以註冊或登入現有的NetApp Cloud Central帳戶。
 
 

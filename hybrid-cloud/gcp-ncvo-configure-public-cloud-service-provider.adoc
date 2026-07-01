@@ -17,12 +17,12 @@ link:gcp-ncvo-terraform-cloud-integration-with-ico-prerequisite.html["先前：T
 
 
 
-== 程序1：存取NetApp Cloud Manager
+== 步驟 1：存取 NetApp Console
 
-若要存取NetApp Cloud Manager和其他雲端服務、您必須先註冊 https://cloud.netapp.com/["NetApp Cloud Central"^]。
+若要存取 NetApp 雲端服務，請使用 https://console.netapp.com["NetApp Console"^]註冊並登入。
 
 
-NOTE: 若要在Cloud Central帳戶中設定工作區和使用者、請按一下 https://docs.netapp.com/us-en/occm/task_setting_up_cloud_central_accounts.html["請按這裡"^]。
+NOTE: 若要設定 NetApp Console 帳戶中的工作區和使用者，請按一下 https://docs.netapp.com/us-en/occm/task_setting_up_cloud_central_accounts.html["請按這裡"^]。
 
 
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/fp-express-tech-spec_connectivity_requirements.html 
-keywords: connectivity, requirements, flexpod, express, aff, fas, asa 
+keywords: connectivity, requirements, flexpod, express, aff, fas, e, series 
 summary: 本節說明FlexPod 不同版本的《不一樣》的連線需求。 
 ---
 = 連線需求
@@ -18,13 +18,35 @@ summary: 本節說明FlexPod 不同版本的《不一樣》的連線需求。
 
 
 
-== FlexPod Express 與 NetApp AFF/ASA/FAS 的連線要求
+== FlexPod Express 與 NetApp FAS 的連線要求
 
-FlexPod Express 與 NetApp AFF/ ASA/ FAS 的連線需求包括：
+FlexPod Express 與 NetApp FAS 的連線需求包括：
 
-* NetApp 儲存控制器必須直接連接到 Cisco Nexus 交換器。
-* 對於 UCS X 系列 Direct 部署，NetApp 儲存控制器可以直接連接到嵌入式 Fabric Interconnect。
+* NetApp FAS 儲存控制器必須直接連接到 Cisco Nexus 交換器，但在 Cisco UCS 管理的設定中除外；在該設定中，儲存控制器連接到交換矩陣互連。
 * 核心FlexPod 不需在核心不整元件之間放置額外設備。
-* 需要使用虛擬連接埠通道 (vPC) 將 Cisco Nexus 9000 系列交換器連接到 NetApp 儲存控制器。
+* 需要使用虛擬連接埠通道 (vPC) 將 Cisco Nexus 3000/9000 系列交換器連接到 NetApp 儲存控制器。
+* 雖然這不是必要的、但建議在整個環境中啟用巨型框架支援。
+
+
+
+
+== FlexPod Express 與 NetApp E 系列的連線需求
+
+FlexPod Express 與 E 系列的連線需求包括：
+
+* E-Series 儲存控制器必須直接連接到光纖互連網路。
+* 核心 FlexPod 元件之間不應串聯放置任何其他設備。
+* 在交換矩陣互連和乙太網路交換器之間需要 vPC。
+
+
+
+
+== FlexPod Express 與 NetApp AFF 的連線需求
+
+FlexPod Express 與 NetApp AFF 的連線需求包括：
+
+* NetApp AFF 儲存控制器必須直接連接到 Cisco Nexus 交換器，但在 Cisco UCS 管理的組態中除外，在該組態中，儲存控制器連接到網路交換矩陣互連。
+* 核心FlexPod 不需在核心不整元件之間放置額外設備。
+* 需要使用虛擬連接埠通道 (vPC) 將 Cisco Nexus 3000/9000 系列交換器連接到 NetApp 儲存控制器。
 * 雖然這不是必要的、但建議在整個環境中啟用巨型框架支援。
 

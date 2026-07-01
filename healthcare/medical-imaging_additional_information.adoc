@@ -44,9 +44,9 @@ https://flexpod.com/solutions/use-cases/microsoft-sql-server/["https://flexpod.c
 +
 https://flexpod.com/["https://flexpod.com/"^]
 
-* https://fieldportal.netapp.com/content/734702["適用於MongoDB的NetApp解決方案"^] 解決方案簡介（需要NetApp登入）
+* NetApp MongoDB 解決方案簡介（需要 NetApp 登入）
 +
-https://fieldportal.netapp.com/content/734702["https://fieldportal.netapp.com/content/734702"^]
+https://fieldportal.netapp.com/s/article/solution-brief-netapp-solutions-for-mongodb-1690217002398["https://fieldportal.netapp.com/s/article/solution-brief-netapp-solutions-for-mongodb-1690217002398"^]
 
 * TR-47700：SnapCenter 適用於Oracle資料庫的支援
 +

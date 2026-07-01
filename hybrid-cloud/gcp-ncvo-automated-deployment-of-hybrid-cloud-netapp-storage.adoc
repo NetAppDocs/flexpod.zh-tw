@@ -75,7 +75,7 @@ image:gcp-ncvo-image6.png["此影像顯示Cloud Volumes ONTAP 高句麗雲端的
 
 您需要GitHub帳戶來裝載Terraform程式碼。Intersight Orchestrator在Terraform Cloud for Business帳戶中建立新的工作區。此工作區已設定版本控制工作流程。為此、您必須將Terraform組態保留在GitHub儲存庫中、並在建立工作區時提供作為輸入。
 
-https://github.com/NetApp-Automation/FlexPod-hybrid-cloud-for-GCP-with-Intersight-and-CVO["此GitHub連結"^] 提供含有各種資源的Terraform組態。您可以在GitHub帳戶中分頁此儲存庫並製作複本。
+https://github.com/ucs-compute-solutions/cvo_snapmirror["此GitHub連結"^] 提供包含各種資源的 Terraform 配置。您可以 fork 此儲存庫並在您的 GitHub 帳戶中建立副本。
 
 在此儲存庫中、「provider .tf」定義了所需的Terraform供應商。NetApp Cloud Manager的Terraform供應商已使用。
 

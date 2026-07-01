@@ -30,7 +30,7 @@ link:nvme-vsphere-test-results.html["上一篇：測試結果。"]
 
 * Cisco統一化運算系統（UCS）
 +
-http://www.cisco.com/en/US/products/ps10265/index.html["http://www.cisco.com/en/US/products/ps10265/index.html"^]
+https://www.cisco.com/site/us/en/products/computing/servers-unified-computing-systems/index.html["https://www.cisco.com/site/us/en/products/computing/servers-unified-computing-systems/index.html"^]
 
 * Cisco UCS 6400Series Fabric Interconnects資料表
 +
@@ -42,7 +42,7 @@ http://www.cisco.com/en/US/products/ps10279/index.html["http://www.cisco.com/en/
 
 * Cisco UCS B系列刀鋒伺服器
 +
-http://www.cisco.com/en/US/partner/products/ps10280/index.html["http://www.cisco.com/en/US/partner/products/ps10280/index.html"^]
+https://www.cisco.com/site/us/en/products/computing/servers-unified-computing-systems/ucs-b-series-blade-servers/index.html["https://www.cisco.com/site/us/en/products/computing/servers-unified-computing-systems/ucs-b-series-blade-servers/index.html"^]
 
 * Cisco UCS C系列機架伺服器
 +
@@ -78,11 +78,11 @@ http://www.netapp.com/us/products/storage-systems/all-flash-array/aff-a-series.a
 
 * VMware vSphere
 +
-https://www.vmware.com/products/vsphere["https://www.vmware.com/products/vsphere"^]
+https://www.vmware.com/products/cloud-infrastructure/vsphere["https://www.vmware.com/products/cloud-infrastructure/vsphere"^]
 
 * VMware vCenter Server
 +
-http://www.vmware.com/products/vcenter-server/overview.html["http://www.vmware.com/products/vcenter-server/overview.html"^]
+https://www.vmware.com/products/cloud-infrastructure/vcenter/future-overview["https://www.vmware.com/products/cloud-infrastructure/vcenter/future-overview"^]
 
 * 現代化SAN的最佳實務做法
 +
@@ -100,15 +100,15 @@ https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-
 
 * NetApp 互通性對照表工具
 +
-http://support.netapp.com/matrix/["http://support.netapp.com/matrix/"^]
+http://mysupport.netapp.com/matrix["http://mysupport.netapp.com/matrix"^]
 
 * Cisco UCS硬體相容性對照表
 +
 https://ucshcltool.cloudapps.cisco.com/public/["https://ucshcltool.cloudapps.cisco.com/public/"^]
 
-* VMware相容性指南
+* VMware by Broadcom 相容性指南
 +
-http://www.vmware.com/resources/compatibility["http://www.vmware.com/resources/compatibility"^]
+https://compatibilityguide.broadcom.com/["https://compatibilityguide.broadcom.com/"^]
 
 
 

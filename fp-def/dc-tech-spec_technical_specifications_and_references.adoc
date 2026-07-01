@@ -390,19 +390,19 @@ NetApp儲存控制器的技術規格包括下列元件：
 | 元件 | A系列控制器平台文件AFF 
 
 
-| NetApp AFF 產品-A800 | https://docs.netapp.com/us-en/ontap-systems/a800/index.html["解答A800平台文件AFF"] 
+| NetApp AFF 產品-A800 | https://docs.netapp.com/us-en/ontap-systems/a800/install-setup.html["解答A800平台文件AFF"] 
 
 
-| NetApp AFF 解決方案 | https://docs.netapp.com/us-en/ontap-systems/fas9000/index.html["VMware平台文件AFF"] 
+| NetApp AFF 解決方案 | https://docs.netapp.com/us-en/ontap-systems/a700/install-setup.html["VMware平台文件AFF"] 
 
 
-| NetApp AFF 產品系列A700s | https://docs.netapp.com/us-en/ontap-systems/a700s/index.html["《Se A700s Platform Documentation》（《Se A700 AFF"] 
+| NetApp AFF 產品系列A700s | https://docs.netapp.com/us-en/ontap-systems/a700s/install-setup.html["《Se A700s Platform Documentation》（《Se A700 AFF"] 
 
 
-| NetApp AFF 產品-A400 | https://docs.netapp.com/us-en/ontap-systems/a400/index.html["VMware平台文件AFF"] 
+| NetApp AFF 產品-A400 | https://docs.netapp.com/us-en/ontap-systems/a400/install-setup.html["VMware平台文件AFF"] 
 
 
-| NetApp AFF 產品-A250 | https://docs.netapp.com/us-en/ontap-systems/a250/index.html["VA250平台文件AFF"] 
+| NetApp AFF 產品-A250 | https://docs.netapp.com/us-en/ontap-systems/a250/install-setup.html["VA250平台文件AFF"] 
 |===
 
 

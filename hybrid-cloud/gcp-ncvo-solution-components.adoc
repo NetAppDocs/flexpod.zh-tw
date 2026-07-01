@@ -65,7 +65,7 @@ Cisco Intersight授權層如下：
 
 
 
-如需每個授權所支援之Intersight授權和功能的詳細資訊、請參閱 https://intersight.com/help/saas/getting_started/licensing_requirements["請按這裡"^]。
+有關 Intersight 授權及每種授權所支援功能的詳細資訊，請參閱 https://intersight.com/help/saas/getting_started/licensing_requirements/lic_infra["請按這裡"^]。
 
 
 NOTE: 在此解決方案中、我們使用Intersight Cloud Orchestrator和Intersight Service for HashiCorp Terraform。這些功能適用於具有Intersight Premier授權的使用者、因此必須啟用此授權層級。
@@ -84,7 +84,7 @@ Cisco Intersight協助可協助您將端點裝置新增至Cisco Intersight。資
 
 Cisco Intersight虛擬應用裝置可在Cisco Intersight虛擬應用裝置中使用Cisco Intersight輔助功能、此應用裝置以開放式虛擬應用裝置（OVA）檔案格式的可部署虛擬機器形式散佈。您可以在ESXi伺服器上安裝應用裝置。如需詳細資訊、請參閱 https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-installation-guides-list.html["Cisco Intersight Virtual Appliance入門指南"^]。
 
-在Intersight中申請Intersight assist之後、您可以使用Intersight assist選項來申請端點裝置。如需詳細資訊、請參閱 https://intersight.com/help/getting_started["快速入門"^]。
+在 Intersight 系統中申請 Intersight Assist 服務後，您可以使用「透過 Intersight Assist 申請」選項來申請終端設備。如需更多資訊，請參閱 https://intersight.com/help/saas/getting_started/overview["快速入門"^]。
 
 
 
@@ -157,7 +157,7 @@ VMware vCenter Server可從單一主控台統一管理所有主機和VM、並集
 此環境中的網路為ACI型。如需詳細資訊、請參閱 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9k_aci.html["請按這裡"^]。
 
 * 如需詳細資訊、請參閱下列連結：
-* http://support.netapp.com/matrix/["NetApp 互通性對照表工具"^]
+* http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
 * http://www.vmware.com/resources/compatibility/search.php["VMware相容性指南"^]
 * https://www.cisco.com/web/techdoc/ucs/interoperability/matrix/matrix.html["Cisco UCS硬體與軟體互通性工具"^]
 

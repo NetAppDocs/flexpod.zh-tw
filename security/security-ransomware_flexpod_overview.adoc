@@ -22,6 +22,6 @@ image:security-ransomware_image2.png["錯誤：缺少圖形影像"]
 
 這個系統的主要優勢FlexPod 在於它是針對數個工作負載預先設計、整合及驗證的系統。每項解決方案驗證都會發佈詳細的設計與部署指南。這些文件包括您必須採用的最佳實務做法、讓工作負載能夠順暢地在FlexPod 運轉於整個過程中。這些解決方案是以同級最佳的運算、網路和儲存產品打造而成、並提供多項功能、著重於整個基礎架構的安全性和強化。
 
-https://newsroom.ibm.com/2018-04-04-IBM-X-Force-Report-Fewer-Records-Breached-In-2017-As-Cybercriminals-Focused-On-Ransomware-And-Destructive-Attacks["IBM的X-Force威脅情報索引"^] 「造成三分之二的資料外洩事件的人為錯誤、包括錯誤設定的雲端基礎架構中歷史記錄的增加率達420%。」
+根據 https://www.ibm.com/think/x-force/threat-intelligence-index-2026-securing-identities-ai-detection-risk-management["2026 IBM X‑Force Threat Intelligence Index"^]，漏洞利用已成為網路安全事件的主要原因，人工智慧使攻擊者能夠快速發現並利用安全漏洞。
 
 有了NetApp驗證系統、您就能透過Ansible教戰手冊、根據Cisco驗證設計（CVD）和NetApp驗證架構（NVA）中所述的最佳實務做法、執行基礎架構的端點對端點設定、避免誤用基礎架構。FlexPod

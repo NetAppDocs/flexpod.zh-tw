@@ -135,7 +135,7 @@ Snapshot技術是以重新導向寫入技術為基礎。它最初只包含中繼
 
 image:medical-imaging_image4.png["錯誤：缺少圖形影像"]
 
-全球數千家企業使用NetApp MetroCluster 的支援組態、無論是在資料中心內外、都能實現高可用度（HA）、零資料遺失及不中斷營運。不需使用任何功能、即可在不同位置或故障領域的兩個叢集之間同步鏡射資料和組態。MetroCluster ONTAP ONTAP透過自動處理兩個目標、提供持續可用的應用程式儲存：透過同步鏡射寫入叢集的資料、實現零恢復點目標（RPO）MetroCluster 。鏡射組態並在第二個站台自動存取資料MetroCluster 、達到近乎零的還原時間目標（RTO）、可在兩個站台的兩個獨立叢集之間自動鏡射資料和組態、提供簡易性。在一個叢集內配置儲存設備時、會自動鏡射到第二個站台的第二個叢集。NetApp SyncMirror 支援技術以零RPO提供所有資料的完整複本。因此、某個站台的工作負載可隨時切換至另一個站台、並繼續提供資料、而不會遺失資料。如需詳細資訊、請參閱 https://fieldportal.netapp.com/content/746482["請按這裡"^]。
+NetApp MetroCluster 配置被全球數千家企業用於實現高可用性 （HA）、零資料遺失以及資料中心內外不間斷的運作。MetroCluster 是 ONTAP 軟體的一項免費功能，可在位於不同位置或故障網域的兩個 ONTAP 叢集之間同步鏡像資料和組態。MetroCluster 透過自動處理兩個目標，為應用程式提供持續可用的儲存：透過同步鏡像寫入叢集的資料，實現零復原點目標 （RPO）。透過鏡像組態並自動存取第二個站台的資料，實現接近零復原時間目標 （RTO）。MetroCluster 透過在兩個站台的兩個獨立叢集之間自動鏡像資料和組態，提供簡便性。在一個叢集中佈建儲存時，它會自動鏡像到第二個站台的第二個叢集。NetApp SyncMirror 技術提供所有資料的完整副本，實現零 RPO。因此，一個站台的工作負載可以隨時切換到另一個站台，並在不遺失資料的情況下繼續提供資料服務。更多資訊請參閱 https://fieldportal.netapp.com/s/article/tr4705-netapp-metrocluster-solution-architecture-and-design-1693982882873["請按這裡"^]。
 
 
 

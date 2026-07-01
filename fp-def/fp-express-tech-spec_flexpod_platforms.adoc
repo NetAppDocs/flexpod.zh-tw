@@ -14,9 +14,9 @@ summary: 本文件提供FlexPod 有關《不支援不支援的技術規格》。
 
 
 [role="lead"]
-共有兩FlexPod 個支援平台：
+共有三個FlexPod平台：
 
-* *FlexPod Datacenter。*此平台是可大規模擴充的虛擬資料中心基礎架構、適用於工作負載企業應用程式、虛擬化、VDI 及公有雲和私有雲。FlexPod Datacenter 有自己的規格、記錄於 https://docs.netapp.com/us-en/flexpod/fp-def/dc-tech-spec_solution_overview.html["資料中心技術規格FlexPod"^]。
+* *FlexPod Datacenter。*此平台是可大規模擴充的虛擬資料中心基礎架構、適用於工作負載企業應用程式、虛擬化、VDI 及公有雲和私有雲。FlexPod Datacenter 有自己的規格、記錄於 https://docs.netapp.com/us-en/flexpod/fp-def/dc-tech-spec_solution_overview.html["TR-4036：FlexPod 《資料中心技術規格》"^]。
 * *《Express》*此平台是一款精巧的融合式基礎架構、專為遠端辦公室和邊緣使用案例而設計。FlexPod
 
 

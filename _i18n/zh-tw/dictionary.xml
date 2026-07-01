@@ -108,7 +108,6 @@
   <block id="aa25073241475f2c4563ce55f18ce420" category="inline-link"><block ref="aa25073241475f2c4563ce55f18ce420" category="inline-link-rx"></block></block>
   <block id="90326a7760e456c0211e27abf75c60ad" category="list-text">建立Cisco Intersight帳戶。請造訪<block ref="bc7923bba70b3cb9cf6e98b34e2d7948" category="inline-link-rx"></block> 建立Intersight帳戶。您必須擁有有效的Cisco ID才能建立Cisco Intersight帳戶。</block>
   <block id="3c8df105fd752bbf269c1ad99181994c" category="inline-link">software.cisco.com</block>
-  <block id="5dafc61db3f99b3325eb07a53fdadf5a" category="list-text">請至下載Intersight Virtual Appliance<block ref="c3f4b1532ffc2bbf067c9bed78c127ee" category="inline-link-rx"></block>。如需詳細資訊、請前往<block ref="615894daff458d913cb094922f7eec37" category="inline-link-rx"></block>。</block>
   <block id="2b70343738f7a785cf3d0064f0a39b32" category="list-text">部署OVA。部署OVA時需要DNS和NTP。</block>
   <block id="b46368b8756e258c478ad0209aafb836" category="list-text">在部署OVA之前、請先使用A/PTR和CNAME別名記錄來設定DNS。請參閱以下範例。</block>
   <block id="9d6318b0d30a534802e63b46fbc2f7c1" category="inline-image-macro">用於A/PTR記錄的主機名稱範例</block>
@@ -118,7 +117,6 @@
   <block id="3ee38327895dc648b6f1f999e57babca" category="list-text">在「*自訂範本*」頁面上、自訂OVF範本的部署內容。系統管理員密碼適用於本機使用者：admin(`WebUI/CLI/ssh）。</block>
   <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">單擊 * 下一步 * 。</block>
   <block id="88ade68952e1a8d9f1c49b5ed85b5af5" category="list-text">部署後的Intersight輔助設備。</block>
-  <block id="dba06e35ee25a3095d873c4534514037" category="list-text">瀏覽至<block ref="f9e0ea639036dbfc655ff5cf553db753" category="inline-link-rx"></block> 以完成裝置的安裝後設定。</block>
   <block id="bca0d681ab79310b7d18a7976928af12" category="paragraph">安裝程序會自動開始。視Intersight.com的頻寬而定、安裝可能需要一小時的時間。在VM開機後、安全站台也可能需要數秒鐘的時間才能運作。</block>
   <block id="3920eddb38a93c54b93b962bbdea7c26" category="list-text">* Intersight assist。*此部署可讓SaaS模式連線至Cisco Intersight。</block>
   <block id="32f55ec9f00aee8539ca16e146d53713" category="inline-image-macro">Intersight部署選項的快照</block>
@@ -352,19 +350,14 @@
   <block id="99d338f252ec9d84ad8431a31de3a262" category="cell">A系列控制器平台文件AFF</block>
   <block id="a6d988e2bc1676553a68b4bd3414e350" category="cell">NetApp AFF 產品-A800</block>
   <block id="4d9751fc3b79bdb88b990f65afd7c6d4" category="inline-link">解答A800平台文件AFF</block>
-  <block id="a65bc179cb3e5725fe6126fd001c8afe" category="cell"><block ref="a65bc179cb3e5725fe6126fd001c8afe" category="inline-link-rx"></block></block>
   <block id="9fd776d575e784a04bf5628e0db4f43c" category="cell">NetApp AFF 解決方案</block>
   <block id="cc959946765e8b246923e4ef7f1bf3be" category="inline-link">VMware平台文件AFF</block>
-  <block id="376c9339140cac7719692f574b0d8949" category="cell"><block ref="376c9339140cac7719692f574b0d8949" category="inline-link-rx"></block></block>
   <block id="4c888568e86a3e3bc15e53b2a91a4ca2" category="cell">NetApp AFF 產品系列A700s</block>
   <block id="049e978eaf17ad2f7d9e7561d653c22f" category="inline-link">《Se A700s Platform Documentation》（《Se A700 AFF</block>
-  <block id="73e154a912a6da332d5666ef47db16e0" category="cell"><block ref="73e154a912a6da332d5666ef47db16e0" category="inline-link-rx"></block></block>
   <block id="6b1a2fb636318f0f5c51b7506abc53ad" category="cell">NetApp AFF 產品-A400</block>
   <block id="b9866313cde2044a8dd77a6b0e794e61" category="inline-link">VMware平台文件AFF</block>
-  <block id="fba10836ef83cfe0730ad0e55e0ce8a0" category="cell"><block ref="fba10836ef83cfe0730ad0e55e0ce8a0" category="inline-link-rx"></block></block>
   <block id="25297dbc8df2aecff2fa2e9e47638d35" category="cell">NetApp AFF 產品-A250</block>
   <block id="3ac00041ac1bd123acdee59cdfc05a50" category="inline-link">VA250平台文件AFF</block>
-  <block id="5936e0c2771ef74069a005d2fb9355a5" category="cell"><block ref="5936e0c2771ef74069a005d2fb9355a5" category="inline-link-rx"></block></block>
   <block id="107d17c23965093bdabe46bc6b6ba610" category="section-title">A系列AFF ASA</block>
   <block id="dbb86a37ca706fad417eb540ecf9bff8" category="paragraph">支援所有目前的NetApp AFF ASA 解決方案A系列儲存控制器機型、可在FlexPod 支援中使用。如需更多資訊、請參閱All SAN Array文件資源ONTAP AFF 、《完整SAN陣列系統》技術報告、以及《NetApp Hardware Universe 效益管理系統》。請參閱下表所列的平台專屬文件、以瞭解特定AFF 的《某些特定的功能表》的詳細資訊。</block>
   <block id="8edae448eb4c721effbdf809fd185881" category="cell">NetApp AFF ASA 產品-A800</block>
@@ -975,7 +968,6 @@
   <block id="e6426bd86d0d3af225952b63c263f83d" category="summary">以下列出更多FlexPod 關於此功能的要求。</block>
   <block id="99850d99c802817315214eb8be6522a3" category="paragraph">其他關於Express的要求FlexPod 包括：</block>
   <block id="67e78efd215ff62dd9c56a052712f4b3" category="list-text">SMARTnet支援Cisco設備</block>
-  <block id="975553b14d65150985ded5e645ea34a3" category="list-text">所有軟體元件都必須在中列出及支援<block ref="542750ff2ff69f0b5f9f0ab1166bb952" category="inline-link-rx"></block>。</block>
   <block id="aa0f4a94fdeef146af0a597f526d5c88" category="list-text">所有NetApp硬體元件都必須在上列出及支援<block ref="6a8cef5b71adde6301ea0984592ea5c1" category="inline-link-rx"></block>。</block>
   <block id="37dca77319b34332b146930ec37563f5" category="inline-link">Cisco HCL</block>
   <block id="66b98d07c85cd975d27be516745403c1" category="list-text">所有的Cisco硬體元件都必須在上列出及支援<block ref="243ee419838ead03039b3c014c885e78" category="inline-link-rx"></block>。</block>
@@ -1053,7 +1045,6 @@
   <block id="1e770a345ddd07125ec0d9d9a3af0940" category="admonition">NetApp必須列出並支援在支援中使用的軟體FlexPod<block ref="af8f174925a8fa1af2321b8d8c2fd047" category="inline-link-rx"></block>。某些功能可能需要比所列版本更新的軟體版本。</block>
   <block id="d160bac159341d29786704d75c654a94" category="summary">本節說明FlexPod 不同版本的更新版的最低軟體需求。</block>
   <block id="5d3fc3ec55d4860715dad56a4cecaf8c" category="doc">最低軟體需求</block>
-  <block id="b01f33018dd67adc34ac91d2b1bb8acf" category="paragraph">所有軟體都必須在中列出及支援<block ref="542750ff2ff69f0b5f9f0ab1166bb952" category="inline-link-rx"></block>。某些軟體功能可能需要比先前架構所列最低版本更新的程式碼版本。</block>
   <block id="64253ff18621f1451be7a39f52dd1ca0" category="summary">本節說明FlexPod 不同版本的《不一樣》的連線需求。</block>
   <block id="c74efeb9e8a209000cc3750e2028fe8e" category="list-text">核心FlexPod 不需在核心不整元件之間放置額外設備。</block>
   <block id="dbf427db07f695dc99a56e396fa4671e" category="list-text">雖然這不是必要的、但建議在整個環境中啟用巨型框架支援。</block>
@@ -1185,8 +1176,6 @@
   <block id="d031ad489c1827b287842edadd860f15" category="cell">介面卡類型</block>
   <block id="8af9795e6697653dfee633cd279cd456" category="cell">SFP+（含光纖）</block>
   <block id="79b1697033c0e2b83758b0b66609d603" category="paragraph">FAS8000系列控制器支援X1117A-R6 SFP+介面卡。</block>
-  <block id="39e0a90cfd87242281414555409ad7af" category="inline-link">NetApp 10GbE介面卡資料表</block>
-  <block id="617af44da02df2a13554583efd13fba8" category="paragraph">FAS2600和FAS2500系列儲存系統內建10GbE連接埠。如需詳細資訊、請參閱<block ref="ed2ddcebc6b23bc265d3bd1106f3c06b" category="inline-link-rx"></block>。</block>
   <block id="8e97e7d2e56e43626a61b257691677ac" category="inline-link">介面卡區段</block>
   <block id="42cd3646ffe893ecce3ea5bc19a2027d" category="admonition">如需AFF 更多有關以功能性為基礎的介面卡詳細資料FAS 、請參閱<block ref="2780838f83b72e7bfe589b803df5684f" category="inline-link-rx"></block> 在整個過程中、Hardware Universe</block>
   <block id="7ba62199c2bd520e6d19e1dc62b35f56" category="paragraph">下表列出目前的NetApp FAS 解決方案磁碟櫃選項。</block>
@@ -1308,15 +1297,11 @@
   <block id="0f68b904e33d9ac04605aecc958bcf52" category="section-title">其他資訊</block>
   <block id="7d5b957cd473f6eaf5ad335a9c63c4ff" category="paragraph">若要深入瞭解本文所述資訊、請檢閱下列文件和 / 或網站：</block>
   <block id="21b8b4e69eb4bcd7890b3ce6dff80e12" category="list-text">Cisco統一化運算系統（UCS）</block>
-  <block id="584b12a2ac3f6fd3e0e7049156fdd91c" category="inline-link"><block ref="584b12a2ac3f6fd3e0e7049156fdd91c" category="inline-link-rx"></block></block>
-  <block id="3c65018c18cf8ce78db5681a338977ae" category="paragraph"><block ref="3c65018c18cf8ce78db5681a338977ae" category="inline-link-rx"></block></block>
   <block id="a9bc4af6dc522e2b661cd4b6503061e4" category="list-text">Cisco UCS 6400Series Fabric Interconnects資料表</block>
   <block id="71a8d27297a8ea56627190298acb7a23" category="inline-link"><block ref="71a8d27297a8ea56627190298acb7a23" category="inline-link-rx"></block></block>
   <block id="ae0111867c908af61ab7655ef25c16fb" category="paragraph"><block ref="ae0111867c908af61ab7655ef25c16fb" category="inline-link-rx"></block></block>
   <block id="a3dbaa31ff645cd7a47a13288a226f5d" category="inline-link"><block ref="a3dbaa31ff645cd7a47a13288a226f5d" category="inline-link-rx"></block></block>
   <block id="a34348cc0f49f6f3fb873c621819ae6a" category="paragraph"><block ref="a34348cc0f49f6f3fb873c621819ae6a" category="inline-link-rx"></block></block>
-  <block id="aa03af91e97e3a7938de166d258e0470" category="inline-link"><block ref="aa03af91e97e3a7938de166d258e0470" category="inline-link-rx"></block></block>
-  <block id="6020fe19150345d99b481804bbc989d5" category="paragraph"><block ref="6020fe19150345d99b481804bbc989d5" category="inline-link-rx"></block></block>
   <block id="cd2d76930423ad7cca8537acf2a3068d" category="inline-link"><block ref="cd2d76930423ad7cca8537acf2a3068d" category="inline-link-rx"></block></block>
   <block id="6cd4f16d8b1f703abed74c85ee281843" category="paragraph"><block ref="6cd4f16d8b1f703abed74c85ee281843" category="inline-link-rx"></block></block>
   <block id="3e18b63e5077aa1deedf66c411dc8962" category="list-text">Cisco Unified Computing System介面卡</block>
@@ -1340,11 +1325,7 @@
   <block id="c6a079892f1cff76919834401bb28e4c" category="inline-link"><block ref="c6a079892f1cff76919834401bb28e4c" category="inline-link-rx"></block></block>
   <block id="91fbc750242e3f6e73b7346d7de4255d" category="paragraph"><block ref="91fbc750242e3f6e73b7346d7de4255d" category="inline-link-rx"></block></block>
   <block id="8887a9a417a1629326acdb917d224337" category="list-text">VMware vSphere</block>
-  <block id="0efcb78d6dd86f734d5f4bc64ccf8c30" category="inline-link"><block ref="0efcb78d6dd86f734d5f4bc64ccf8c30" category="inline-link-rx"></block></block>
-  <block id="08b9bce1e64e2ff433f4a5d4ab2d177f" category="paragraph"><block ref="08b9bce1e64e2ff433f4a5d4ab2d177f" category="inline-link-rx"></block></block>
   <block id="7b992155512beae7a0c0bcd838bf53bc" category="list-text">VMware vCenter Server</block>
-  <block id="1437b8b2e8fc7321b26cb3260b2497de" category="inline-link"><block ref="1437b8b2e8fc7321b26cb3260b2497de" category="inline-link-rx"></block></block>
-  <block id="3d6f191554274501ba88fe69ea6ba807" category="paragraph"><block ref="3d6f191554274501ba88fe69ea6ba807" category="inline-link-rx"></block></block>
   <block id="581a5130c89459868713aba87d5ddef8" category="list-text">現代化SAN的最佳實務做法</block>
   <block id="28cf8118bed6bfff2d8c5e8b980c1d1d" category="inline-link"><block ref="28cf8118bed6bfff2d8c5e8b980c1d1d" category="inline-link-rx"></block></block>
   <block id="0d226f32134d70adc638b78bc53393a8" category="list-text">推出適用於FlexPod NVMe的端點對端點NVMe</block>
@@ -1352,14 +1333,10 @@
   <block id="7b00214f336cfd8e3b6c48d0df0025a3" category="paragraph"><block ref="7b00214f336cfd8e3b6c48d0df0025a3" category="inline-link-rx"></block></block>
   <block id="7aaf95441fd5c24881cd267924f4466b" category="section-title">互通性對照表</block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="list-text">NetApp 互通性對照表工具</block>
-  <block id="0919916303e590e1fc82d7bf4eecfa6b" category="inline-link"><block ref="0919916303e590e1fc82d7bf4eecfa6b" category="inline-link-rx"></block></block>
-  <block id="85974e66cddabad7238a4eec399c793e" category="paragraph"><block ref="85974e66cddabad7238a4eec399c793e" category="inline-link-rx"></block></block>
   <block id="569e776974c7eff044e2da8f8153566d" category="list-text">Cisco UCS硬體相容性對照表</block>
   <block id="70896e149d49fd7ef77574e6cd6467d1" category="inline-link"><block ref="70896e149d49fd7ef77574e6cd6467d1" category="inline-link-rx"></block></block>
   <block id="e069122d2e90856ce8a194155dfe6294" category="paragraph"><block ref="e069122d2e90856ce8a194155dfe6294" category="inline-link-rx"></block></block>
   <block id="e08175c6fa64cba68719dea85ebd9d34" category="list-text">VMware相容性指南</block>
-  <block id="33a5856b62b0795c60374ac94b38ff05" category="inline-link"><block ref="33a5856b62b0795c60374ac94b38ff05" category="inline-link-rx"></block></block>
-  <block id="d6ac65bf36b9bb86fd269d9f52d82cf3" category="paragraph"><block ref="d6ac65bf36b9bb86fd269d9f52d82cf3" category="inline-link-rx"></block></block>
   <block id="0407c27180c9b019e644e8ad4c6a9324" category="section-title">感謝</block>
   <block id="0b761cfbb2be11fcc3bd9c4447e089c4" category="paragraph">作者感謝Cisco與Scott Lane的John George、以及NetApp的Bobby Oommen在專案執行期間所提供的協助與指導。</block>
   <block id="adb629e7b9571b85f36338a7308d3ea7" category="summary">本節提供FC-NVMe關於FlexPod 驗證測試的高階摘要。其中包括測試環境/組態、以及針對FC-NVMe FlexPod for VMware vSphere 7執行工作負載測試所採用的測試計畫。</block>
@@ -1714,7 +1691,6 @@
   <block id="c058cf7314b3fcfed2a8983544102202" category="paragraph">醫療產業在未來幾年將面臨重大改變。COVID正在加速醫療創新、將推動產業發展至少數年。這項改變的核心是、必須讓醫療業在處理傳染病時更具彈性、更經濟實惠、更容易取得、而且不犧牲可靠性。</block>
   <block id="5b7f30b6157536e3e2c1a4a3bee59b7e" category="paragraph">這項醫療變革的基礎是設計完善的平台。衡量平台的關鍵指標之一、就是平台變更容易實作。速度是新的規模、資料保護絕不會受到影響。支援臨床工作者的臨床系統正在建立和使用一些全球最重要的資料。NetApp已將重要資料提供給臨床醫師需要的病患照護、無論是內部部署、雲端或混合式環境。混合式多雲端環境是IT架構的最先進技術。</block>
   <block id="b6b5fbb5ab8b9105dff1687fdb37a1ef" category="inline-link">負責的照護組織</block>
-  <block id="7f9823ef457373961bfb662960d75a5a" category="paragraph">我們所知的醫療服務是以供應商（醫生、護士、放射科醫師、醫療裝置技術人員等）和病患為中心。當我們將病患和供應商緊密整合在一起、使地理位置成為資料點時、當供應商和病患需要時、基礎平台的可用度就變得更加重要。此平台必須在長期內兼具效率與成本效益。為了降低病患照護成本、<block ref="3e6f845ddcd345f0fc57064c50c40bc6" category="inline-link-rx"></block> （Acos）將由高效的平台賦予能力。</block>
   <block id="07cea192166797fb4b3569a4f4c53113" category="paragraph">在醫療組織使用的醫療資訊系統方面、建置與購買的問題往往只有單一答案：購買。這可能是因為許多主觀原因。多年來所做的採購決策、可能會建立異質資訊系統。每個系統都有一組特定的平台需求、以供部署。最重要的問題是資訊系統所需的大量、多樣化的儲存傳輸協定和效能等級、使平台標準化和最佳作業效率成為重大挑戰。醫療機構無法專注於關鍵任務問題、因為他們的注意力因瑣碎的營運需求而分散、例如需要多元化技能、因而需要留住中小企業的大型平台。</block>
   <block id="a4d0489efeffd856044329f6139a2347" category="paragraph">挑戰可分為下列類別：</block>
   <block id="57ebf82b2ccccff7e8a311234b6a032d" category="list-text">異質儲存需求</block>
@@ -1908,10 +1884,6 @@
   <block id="99074e2be4a23f8c72f4dbbb9f7713cd" category="list-text">適用於Microsoft SQL Server FlexPod</block>
   <block id="4bfd12a70dc5aca25050ffed66a69baf" category="inline-link"><block ref="4bfd12a70dc5aca25050ffed66a69baf" category="inline-link-rx"></block></block>
   <block id="944191196c4e08e68a0f4392568f098e" category="paragraph"><block ref="944191196c4e08e68a0f4392568f098e" category="inline-link-rx"></block></block>
-  <block id="9ea4420c6a4382725394398cf4bb0e52" category="inline-link">適用於MongoDB的NetApp解決方案</block>
-  <block id="f6cf7b1078d73eee729899396fc643d0" category="list-text"><block ref="47f53740b83d5f4a49541b7dd8b86749" category="inline-link-rx"></block> 解決方案簡介（需要NetApp登入）</block>
-  <block id="16e2ddfe693bba6f5871847f602f4b91" category="inline-link"><block ref="16e2ddfe693bba6f5871847f602f4b91" category="inline-link-rx"></block></block>
-  <block id="cd1f731b891717ba30c52133b163f1a1" category="paragraph"><block ref="cd1f731b891717ba30c52133b163f1a1" category="inline-link-rx"></block></block>
   <block id="550ff411af842971b5bef45c5d9d1a59" category="list-text">TR-47700：SnapCenter 適用於Oracle資料庫的支援</block>
   <block id="43522657c8f1a5c2e1329e74dea52592" category="inline-link"><block ref="43522657c8f1a5c2e1329e74dea52592" category="inline-link-rx"></block></block>
   <block id="470e33cee2a0a930ccdebb855f6d92d6" category="list-text">適用於虛擬桌面基礎架構（VDI）解決方案FlexPod</block>
@@ -2047,7 +2019,6 @@
   <block id="28d0edd045e05cf5af64e35ae0c4c6ef" category="cell">低</block>
   <block id="f53274f881c8f0dae30e4f0c238256c0" category="paragraph">下圖顯示SnapCenter 了這個架構。</block>
   <block id="92585118fc5e0d58f5a951b5c873b949" category="paragraph"><block ref="92585118fc5e0d58f5a951b5c873b949" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3b6e79f039ad52fd0bc1fba926cffa9b" category="paragraph">全球數千家企業使用NetApp MetroCluster 的支援組態、無論是在資料中心內外、都能實現高可用度（HA）、零資料遺失及不中斷營運。不需使用任何功能、即可在不同位置或故障領域的兩個叢集之間同步鏡射資料和組態。MetroCluster ONTAP ONTAP透過自動處理兩個目標、提供持續可用的應用程式儲存：透過同步鏡射寫入叢集的資料、實現零恢復點目標（RPO）MetroCluster 。鏡射組態並在第二個站台自動存取資料MetroCluster 、達到近乎零的還原時間目標（RTO）、可在兩個站台的兩個獨立叢集之間自動鏡射資料和組態、提供簡易性。在一個叢集內配置儲存設備時、會自動鏡射到第二個站台的第二個叢集。NetApp SyncMirror 支援技術以零RPO提供所有資料的完整複本。因此、某個站台的工作負載可隨時切換至另一個站台、並繼續提供資料、而不會遺失資料。如需詳細資訊、請參閱<block ref="f798c4eaf45d4350820daeae4e62718a" category="inline-link-rx"></block>。</block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">網路</block>
   <block id="b384503e4e17e110125d290ec3005c96" category="paragraph">一對Cisco Nexus交換器可為從運算到儲存設備的IP流量、以及醫療影像系統映像檢視器的外部用戶端、提供備援路徑：</block>
   <block id="48ad68303902eb083297472047da1473" category="list-text">整合使用連接埠通道和VPC的連結、可實現更高頻寬和高可用度的設計：</block>
@@ -2608,10 +2579,6 @@
   <block id="dd0abb5bf55fbf07bd4b6cbe25c9528e" category="paragraph">購買任何新的一套更新版的叢集時、都會隨附免費的10TB容量、以期為基礎FabricPool 的版次更新授權ONTAP 、不過可能需要額外的支援成本。可以1TB為單位購買各種不含任何容量的不含彈性授權（包括現有授權的額外容量）FabricPool 。</block>
   <block id="8105972a850e9e688b4486ea7d2ed719" category="paragraph">僅可從不含任何資訊的叢集刪除此功能的認證。FabricPool FabricPool</block>
   <block id="55d00560611b7ac6ad1fbc07da675be3" category="inline-link">NetApp知識庫</block>
-  <block id="9b477d427eec353b19e985f723c091e3" category="summary">您可透過獨立IT分析公司Evaluator Group取得《The》《The NetApp經濟計算機》（英文）FabricPool 、協助您預測內部部署與雲端之間的成本節約效益、以利儲存冷資料。</block>
-  <block id="6f48d1fb7c7073c6f1c817cb15e915a2" category="doc">擁有成本</block>
-  <block id="93787b18aa3cb5e7c602c81ff4a5cab7" category="inline-link">《經濟計算機》FabricPool</block>
-  <block id="acc6194529c3fe7386d1070f9bc6721b" category="paragraph">。<block ref="cb1d7d9c15c6943bf40cdba6418a7b94" category="inline-link-rx"></block> 可透過獨立的IT分析公司Evaluator Group取得、以協助規劃內部部署與雲端之間的成本節約效益、以利儲存冷資料。此計算機提供簡單的介面、可判斷在效能層儲存不常存取資料的成本、而不會在資料生命週期的剩餘時間將資料傳送至雲端層。根據5年計算結果、來源容量、資料成長、快照容量和冷資料百分比等四大關鍵因素、都是用來判斷一段時間內的儲存成本。</block>
   <block id="4471714cf0730b5cb864c79e81756ef9" category="summary">儲存區是儲存資料的物件存放區容器。您必須提供儲存資料的儲存區名稱和位置、才能將資料新增至雲端層的集合體。</block>
   <block id="0c90d0707b02f2117495ccc11546a8ce" category="doc">建立AWS S3儲存區</block>
   <block id="76b61601dc72940671a724ad56f158f2" category="admonition">無法使用OnCommand 無法建立的整合套件、OnCommand 不可以使用「無法」功能的「無法」、「無法」使用「無法」功能來建立。ONTAP</block>
@@ -2630,9 +2597,6 @@
   <block id="484215d2338137a5b8a1b1e9c5220520" category="paragraph"><block ref="484215d2338137a5b8a1b1e9c5220520" category="inline-link-macro-rx"></block></block>
   <block id="15c3cfaed853a426f1875bde46231c4a" category="summary">您可以觀看使用NetApp Cloud Insights 解決方案的影片示範。</block>
   <block id="de42653a3a04e4aefa258105632011d4" category="doc">影片與示範</block>
-  <block id="f0e69e5af144a617a479b790fcd74805" category="paragraph">您可以觀看使用NetApp Cloud Insights 功能來評估內部部署環境中資源的影片示範<block ref="37a1d5c7c8f40a676418c3dba0f819a2" category="inline-link-rx"></block>。</block>
-  <block id="046a323c45865786ada3564c7973c727" category="paragraph">您可以觀看影片、示範如何使用NetApp Cloud Insights 功能來監控基礎架構、以及設定基礎架構的警示臨界值<block ref="05a01b9079dd58e5716d177b918b2e8f" category="inline-link-rx"></block>。</block>
-  <block id="24b6310384eda7515a0019b7fafe21e4" category="paragraph">您可以觀看使用NetApp Cloud Insights 功能來評估環境中個別應用程式的影片示範<block ref="05ff47242997e6489455533d5b1e4fca" category="inline-link-rx"></block>。</block>
   <block id="430067b93f45cfe1f5279eba328f01b2" category="summary">物件存放區必須先新增至集合體、ONTAP 並由資訊技術辨識、方可附加至集合體。此工作可透過OnCommand 《系統管理程式》或ONTAP 《系統資訊管理系統》CLI完成。</block>
   <block id="25932034408de6817818ee9636628b4d" category="doc">新增雲端階層至ONTAP 架構</block>
   <block id="458fc3b536ecba82f785fac80ce78e5b" category="paragraph">支援Amazon S3、IBM Object Cloud Storage及Microsoft Azure Blob Storage物件儲存為雲端層。FabricPool</block>
@@ -2674,8 +2638,6 @@
   <block id="0dc0144aa6c9a3c94cb0eb7a02fcb4f2" category="list-text">將受監控的儲存系統從FlexPod 「整個資料中心」新增Cloud Insights 至「</block>
   <block id="8dab6e8cb99bebf3621cea67b2b9011b" category="section-title">註冊NetApp Cloud Insights 解決方案服務</block>
   <block id="a4af0f5a7ab2b6a0d9f4f6066aa00846" category="paragraph">若要註冊NetApp Cloud Insights 支援服務、請完成下列步驟：</block>
-  <block id="b0e3f3a6b584be5c18e0f8ba47b65374" category="inline-link"><block ref="b0e3f3a6b584be5c18e0f8ba47b65374" category="inline-link-rx"></block></block>
-  <block id="31cdabbfe370365043de159c5b831a64" category="list-text">前往<block ref="cffd9e1d3e11f7611ea9a17e06c7b890" category="inline-link-rx"></block></block>
   <block id="1a049e3beaafc2cdafaa2cde6e968b36" category="list-text">按一下畫面中央的按鈕以開始14天免費試用、或按一下右上角的連結以註冊或登入現有的NetApp Cloud Central帳戶。</block>
   <block id="877aa14e13209fc6f38eee6e04d200f3" category="section-title">建立VMware虛擬機器以設定為採購單位</block>
   <block id="6578aa89884716e49971cec53e1f2bdb" category="paragraph">若要建立VMware VM以設定為採購單位、請完成下列步驟：</block>
@@ -2889,7 +2851,6 @@
   <block id="ce32f5e5232b1171dd6eb85b8d1561a0" category="inline-link"><block ref="ce32f5e5232b1171dd6eb85b8d1561a0" category="inline-link-rx"></block></block>
   <block id="b19b900f2598945601cf4f891e72b8f5" category="paragraph"><block ref="b19b900f2598945601cf4f891e72b8f5" category="inline-link-rx"></block></block>
   <block id="a1722ee1a41c4364dfc3dcf1cca5c81b" category="list-text">NetApp Cloud Insights</block>
-  <block id="e7973c4bdef412fe59814d5057bed220" category="paragraph"><block ref="e7973c4bdef412fe59814d5057bed220" category="inline-link-rx"></block></block>
   <block id="27c60f533d97e7abe459fc5e42faecab" category="summary">不同組織、不同業務單位、甚至組織內不同業務單位之間的雲端發展歷程各不相同。</block>
   <block id="58dee79bfdb6cb1eb27169cebde168b9" category="paragraph">不同組織、不同業務單位、甚至組織內不同業務單位之間的雲端發展歷程各不相同。有些人選擇快速採用、有些則採取較保守的方法。無論組織規模大小、雲端採用速度如何、均可將其納入雲端策略、進一步展現出效益與擴充性優勢。FabricPool FlexPod</block>
   <block id="e2cbcbad978355b36ab798b7f3399991" category="summary">在考量規模時、應評估下列事項。</block>
@@ -2977,7 +2938,6 @@
   <block id="5aeaa6d8ef03bc5f49185431ec147dcc" category="paragraph"><block ref="5aeaa6d8ef03bc5f49185431ec147dcc" category="inline-link-rx"></block></block>
   <block id="20038822e4002375d07dbbaa2f842177" category="list-text">NetApp與聯邦資訊處理標準（FIPS）出版品140-2</block>
   <block id="01ad4c25dc606d42af63966d1d192007" category="paragraph"><block ref="01ad4c25dc606d42af63966d1d192007" category="inline-link-rx"></block></block>
-  <block id="381d74f2d7dbcffad4ff739176b2ab91" category="paragraph"><block ref="381d74f2d7dbcffad4ff739176b2ab91" category="inline-link-rx"></block></block>
   <block id="b142182673eaef19aa257c978e64bdf6" category="list-text">《NetApp ONTAP ®9強化指南》</block>
   <block id="32a205a6c059cf9285d47b38c93cfe7e" category="paragraph"><block ref="32a205a6c059cf9285d47b38c93cfe7e" category="inline-link-rx"></block></block>
   <block id="8976b0d9a3096c54654d952ae6a99888" category="list-text">NVE與NAE資料表</block>
@@ -2987,9 +2947,6 @@
   <block id="6770ff13f95abd8619a19519877aedf9" category="list-text">NetApp密碼編譯安全模組</block>
   <block id="02817beae9581784d8cd2f39ddda543b" category="paragraph"><block ref="02817beae9581784d8cd2f39ddda543b" category="inline-link-rx"></block></block>
   <block id="bf7fa6fb49dfa01515f774f7a86c6270" category="list-text">中型和大型醫療組織的網路安全實務做法</block>
-  <block id="d1bf3cb27e5807caa3600fcdce477355" category="paragraph"><block ref="d1bf3cb27e5807caa3600fcdce477355" category="inline-link-rx"></block></block>
-  <block id="3f6b1e7f286b82aada2164eae419754f" category="list-text">Cisco與密碼編譯模組驗證方案（CMVP）</block>
-  <block id="2035d7965b0d9306904545b7f1299daf" category="paragraph"><block ref="1f6cf078065ad92d550c7f8fc06953cd" category="inline-link-rx"></block></block>
   <block id="8f8e7f38245f5c357d275915df1fb3d6" category="list-text">NetApp儲存加密、NVMe自我加密磁碟機、NetApp Volume加密及NetApp Aggregate加密</block>
   <block id="617326e2119d8781b2c939871e7a5f48" category="paragraph"><block ref="617326e2119d8781b2c939871e7a5f48" category="inline-link-rx"></block></block>
   <block id="64f1ff1b6f99d34e2d1a43f8332c7947" category="list-text">NetApp Volume Encryption與NetApp Aggregate Encryption</block>
@@ -3004,12 +2961,6 @@
   <block id="55281df24e22fc716f53cc920cd0aec7" category="paragraph"><block ref="55281df24e22fc716f53cc920cd0aec7" category="inline-link-rx"></block></block>
   <block id="f4bb968e88fa8aec8a3ffd847dc271cd" category="list-text">《Datacenter for Epic EHR部署指南》FlexPod</block>
   <block id="60f9956fcc06affd8fe2e969cb45d71c" category="paragraph"><block ref="60f9956fcc06affd8fe2e969cb45d71c" category="inline-link-rx"></block></block>
-  <block id="79a4caf33538b199d14af02115050e0a" category="list-text">適用於MEDITECH軟體的資料中心基礎架構FlexPod</block>
-  <block id="ffa60417e05d983180333283807f72ae" category="paragraph"><block ref="ffa60417e05d983180333283807f72ae" category="inline-link-rx"></block></block>
-  <block id="a6fa8ad627834c7f49f4a12b4702211f" category="list-text">此功能延伸至MEDITECH軟體FlexPod</block>
-  <block id="54e915e9182cbe8568777d8c06952ce7" category="paragraph"><block ref="54e915e9182cbe8568777d8c06952ce7" category="inline-link-rx"></block></block>
-  <block id="a82a8aeb527fe34165f76582a421e44d" category="list-text">適用於MEDITECH方向調整指南FlexPod</block>
-  <block id="fd7e77eecd78dc94c6676881733fcd14" category="paragraph"><block ref="fd7e77eecd78dc94c6676881733fcd14" category="inline-link-rx"></block></block>
   <block id="a63e6ef2bab4a03e7407c66118723fd7" category="list-text">醫療影像用的FlexPod</block>
   <block id="e997ca20dd931bcae1a9cc1d32eeeca7" category="paragraph"><block ref="e997ca20dd931bcae1a9cc1d32eeeca7" category="inline-link-rx"></block></block>
   <block id="2af4f6ea027bdaba1ccaa895b5f614b0" category="list-text">醫療業的AI</block>
@@ -3183,8 +3134,6 @@
   <block id="a5043e3ef490045b45671ca3a56a694f" category="paragraph">下圖說明FlexPod 了這個架構、並清楚強調堆疊所有層級的高可用度。儲存設備、網路和運算的基礎架構元件的設定方式、可在其中一個元件故障時、立即將作業容錯移轉至正常合作夥伴。</block>
   <block id="c4d1af1300de238be1f57c88bf98ea46" category="paragraph"><block ref="c4d1af1300de238be1f57c88bf98ea46" category="inline-image-macro-rx" type="image"></block></block>
   <block id="26164d712a996eabd187b84bc3703995" category="paragraph">這個系統的主要優勢FlexPod 在於它是針對數個工作負載預先設計、整合及驗證的系統。每項解決方案驗證都會發佈詳細的設計與部署指南。這些文件包括您必須採用的最佳實務做法、讓工作負載能夠順暢地在FlexPod 運轉於整個過程中。這些解決方案是以同級最佳的運算、網路和儲存產品打造而成、並提供多項功能、著重於整個基礎架構的安全性和強化。</block>
-  <block id="b60718454d2068090cd0bd43b946c32c" category="inline-link">IBM的X-Force威脅情報索引</block>
-  <block id="594eff6f972f5982ad1c591479a4b561" category="paragraph"><block ref="2ff3259942eacfea766f37cf75b410ba" category="inline-link-rx"></block> 「造成三分之二的資料外洩事件的人為錯誤、包括錯誤設定的雲端基礎架構中歷史記錄的增加率達420%。」</block>
   <block id="fafd09285dab7fa844f5addddf50c37b" category="paragraph">有了NetApp驗證系統、您就能透過Ansible教戰手冊、根據Cisco驗證設計（CVD）和NetApp驗證架構（NVA）中所述的最佳實務做法、執行基礎架構的端點對端點設定、避免誤用基礎架構。FlexPod</block>
   <block id="fe8bcda42a9f0414fc9db0c2d6474f5e" category="summary">作者感謝下列人士對本指南的建立所做的貢獻。</block>
   <block id="fe4e25b5e6abf87d32e419c8c482e130" category="paragraph">作者感謝下列人士對建立本文件的支持：</block>
@@ -3967,8 +3916,6 @@
   <block id="de8402faa342fc9625bdaa3961573a1b" category="inline-link"><block ref="de8402faa342fc9625bdaa3961573a1b" category="inline-link-rx"></block></block>
   <block id="eda0ad9ec468bbcaad6eca5eb6ef6925" category="paragraph"><block ref="eda0ad9ec468bbcaad6eca5eb6ef6925" category="inline-link-rx"></block></block>
   <block id="d50e63b9f70efedde8dc093be8ec12b2" category="list-text">VMware vSphere Metro儲存叢集建議實務做法</block>
-  <block id="9e211a0ec0ebb7c473ed61cbc37819a8" category="inline-link"><block ref="9e211a0ec0ebb7c473ed61cbc37819a8" category="inline-link-rx"></block></block>
-  <block id="734feebed99ef4959e1522728f6dbd8a" category="paragraph"><block ref="734feebed99ef4959e1522728f6dbd8a" category="inline-link-rx"></block></block>
   <block id="c912dc73def9e5758eb6e130fd3b21ee" category="list-text">NetApp ONTAP 功能與NetApp SnapMirror營運不中斷（SMBC）搭配VMware vSphere Metro儲存叢集（VMSC）。（83370）</block>
   <block id="e42e1f7327a67ae6a4439a303fc9c81d" category="inline-link"><block ref="e42e1f7327a67ae6a4439a303fc9c81d" category="inline-link-rx"></block></block>
   <block id="077317c6b779e004e75e33d28168bab8" category="paragraph"><block ref="077317c6b779e004e75e33d28168bab8" category="inline-link-rx"></block></block>
@@ -4159,7 +4106,6 @@
   <block id="dcc192ee7aed2a831bb0d6fafe725ef2" category="cell">若要規劃儲存系統的實體位置、請參閱下列各節：電氣需求支援的電源線內建連接埠和纜線</block>
   <block id="22f78a96796d22d06c6c67652a374ffa" category="section-title">儲存控制器</block>
   <block id="43ec737c25d215dc63630469843edccb" category="inline-link">VA220文件AFF</block>
-  <block id="02f4c139149d7f6083cbd0a67d25405c" category="paragraph">請遵循中控制器的實體安裝程序<block ref="a4401f1ea395e59960342bc517a0d1f3" category="inline-link-rx"></block>。</block>
   <block id="2250c54f5c304c93069c82c99f4ca884" category="section-title">NetApp ONTAP 產品9.5</block>
   <block id="a2ac46f2d662b535ab5f334845a5a6fc" category="section-title">組態工作表</block>
   <block id="51f86e32047159bc776651e8bcbe118a" category="inline-link">《軟件安裝指南》（英文）ONTAP</block>
@@ -4876,8 +4822,6 @@
   <block id="42517a4412c6bae63573e134c857ea68" category="list-text">輸入Web伺服器的IP位址。</block>
   <block id="a6591ad3c8c50eee0e146461730ffe27" category="admonition">DNS伺服器IP未早於KVM IP輸入、因此必須輸入Web伺服器的IP、而非主機名稱。</block>
   <block id="48f9052b3e96f2cf416eabc2133d7b5c" category="list-text">輸入「VMware-VMv遮 板安裝程式-6.7.0.Update 01-10302608.x86_64 .ISO」作為遠端檔案名稱。</block>
-  <block id="50603cae16b0f4df56f5033198e74879" category="inline-link">VMware下載</block>
-  <block id="24048bf1fc307de2f6129d54a9b9a2ca" category="paragraph">此VMware ESXi 6.7U1 ISO可從下載<block ref="0dd2cf12af65deb6e27700b3adfd193a" category="inline-link-rx"></block>。</block>
   <block id="014b60c254c89d337d7bb35d4c29036c" category="list-text">在「遠端路徑」欄位中輸入ISO檔案的Web伺服器路徑。</block>
   <block id="d4a0d23fcb0f3ba5491888bf2cca00fc" category="list-text">按一下「確定」以建立vMedia掛載。</block>
   <block id="f5c2a16ddc7d17bce242e425cde03905" category="list-text">按一下「確定」、然後再按一下「確定」以完成建立vMedia原則。</block>
@@ -5012,10 +4956,6 @@
   <block id="53aba6c5db3aafce3826c8a3afbc5607" category="paragraph">在VMware環境中安裝ESXi有幾種方法。這些程序著重於如何使用Cisco UCS Manager內建的KVM主控台和虛擬媒體功能、將遠端安裝媒體對應至個別伺服器、並連線至其開機LUN。</block>
   <block id="ca81e21e704a07428405d79362c25e04" category="section-title">下載適用於ESXi 6.7U1的Cisco自訂映像</block>
   <block id="d0ef05145a9f76bec8d3d9892283c756" category="paragraph">如果尚未下載VMware ESXi自訂映像、請完成下列步驟以完成下載：</block>
-  <block id="d9d9b70ad08b8aadced6f1980ebe1fd6" category="list-text">按一下下列連結：https://my.vmware.com/group/vmware/details?downloadGroup=OEM-ESXI67U1-CISCO&amp;productId=742[VMware vSphere Hypervisor（ESXi）6.7U1.</block>
-  <block id="db4fee8311bc338a43457019cfa66d87" category="inline-link">vmware.com</block>
-  <block id="a42bc8c1cb14a781652f8e1c0567e1a1" category="list-text">您需要的是使用者ID和密碼<block ref="42426f5809ddbc214c08e25917addf90" category="inline-link-rx"></block> 下載此軟體。</block>
-  <block id="1fe98aa66849b4692ae12d07b96f3993" category="list-text">下載.'ISO'檔案。</block>
   <block id="d15c82447138e3da9b9afa86d9110e1b" category="paragraph">Cisco UCS IP KVM可讓系統管理員透過遠端媒體開始安裝作業系統。必須登入Cisco UCS環境才能執行IP KVM。</block>
   <block id="251dfccc86f6feef5115d7b27c8b1fe4" category="paragraph">若要登入Cisco UCS環境、請完成下列步驟：</block>
   <block id="21920fd2a626e4134de91fddffc3c34d" category="list-text">開啟網頁瀏覽器、然後輸入Cisco UCS叢集位址的IP位址。此步驟會啟動Cisco UCS Manager應用程式。</block>
@@ -5855,9 +5795,6 @@
   <block id="a46d2b28851dd7bedf26b965d1d401d1" category="list-text">選取「Power（電源）」功能表、然後選擇「Power Cycle System（Cold Boot）（系統關機後再開機按一下是。</block>
   <block id="5c5147ee287a8bea25c4cbc696589e80" category="section-title">安裝VMware ESXi</block>
   <block id="df0929e946eab42404a156a77c4eb79a" category="paragraph">下列步驟說明如何在每個主機上安裝VMware ESXi。</block>
-  <block id="e13fb3bcc23e4c7beb8f98c4f3751ac8" category="section-title">下載ESXi 6.7 Cisco自訂映像</block>
-  <block id="52db27afcb53934ed886b0950cc92cde" category="inline-link">VMware vSphere下載頁面</block>
-  <block id="74e2c5d4910788ca1349bc371eb9484c" category="list-text">瀏覽至<block ref="4d81386dd31f204a9bca765338af0e7f" category="inline-link-rx"></block> 適用於自訂ISO。</block>
   <block id="2da9cbe6bb2e798743f8e88b57db0bed" category="list-text">按一下「適用於ESXi 6.7 GA安裝CD的Cisco自訂映像」旁的「移至下載」。</block>
   <block id="804d2c2420f547067ef592c59260ffae" category="list-text">下載Cisco Custom Image for ESXi 6.7 GA Install CD（ISO）。</block>
   <block id="46b1c014f33288e347814f755917f656" category="list-text">系統開機時、機器會偵測是否有VMware ESXi安裝媒體。</block>
@@ -6017,7 +5954,6 @@
   <block id="8a62cfc8a918355a529b07f023cb052f" category="doc">VMware vSphere 6.7U2部署程序</block>
   <block id="e25e3f0ac4e0ab08485a8a611c163f61" category="paragraph"><block ref="e25e3f0ac4e0ab08485a8a611c163f61" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c6b47fb21e3ee0e2b0c9dc878d0c166e" category="list-text">瀏覽至VMware ESXi 6.7U2安裝程式ISO映像檔、然後按一下「Open（開啟）」。按一下「對應裝置」。</block>
-  <block id="e17f48eb4f849d5130a82b114de7f8b8" category="section-title">下載ESXi 6.7U2 Cisco自訂映像</block>
   <block id="dff0d9cbf5f3d1cec8baffaf266adffd" category="list-text">按一下ESXi 6.7U2安裝CD的Cisco自訂映像旁的「Go To Downloads（下載）」。</block>
   <block id="7c3ef44b40aee14d33a275014ca0cce9" category="list-text">下載適用於ESXi 6.7U2安裝CD（ISO）的Cisco自訂映像。</block>
   <block id="01c27b5dcf7381e979c749897a870d5f" category="list-text">從顯示的功能表中選取VMware ESXi安裝程式。安裝程式會載入、可能需要數分鐘的時間。</block>
@@ -6094,8 +6030,6 @@
   <block id="b6abbf0226ef43662dc3ba8758477628" category="paragraph"><block ref="b6abbf0226ef43662dc3ba8758477628" category="inline-image-macro-rx" type="image"></block></block>
   <block id="56eb1d06de3dc848cd5deb341ffb09cb" category="paragraph"><block ref="56eb1d06de3dc848cd5deb341ffb09cb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="019dc6de8e76037cb2c701eebcc7885a" category="summary">若要深入瞭解本文件所述資訊、請參閱下列文件和/或網站。</block>
-  <block id="16dfba14481ba8b67fd1c1d9e0f32d2a" category="inline-link">NetApp</block>
-  <block id="bfa7a16f47eedd5d989ebf2d0428b576" category="paragraph"><block ref="92ecca9733c1884030999a9bb401e205" category="inline-link-rx"></block>。<block ref="50abdc2ca21ff2b3aebf336064078561" category="inline-link-rx"></block>.com</block>
   <block id="e2d855673271d9c17e5213d3631ed572" category="paragraph">《指南》的《Express》FlexPod</block>
   <block id="51eba3131729aa4891b7befebe35372c" category="inline-link"><block ref="51eba3131729aa4891b7befebe35372c" category="inline-link-rx"></block></block>
   <block id="423a9d2efae5248cfec941a4f2209d46" category="paragraph">下表列出FlexPod 了執行不需執行的硬體元件。在解決方案的任何實作中使用的硬體元件、可能會因客戶需求而異。</block>
@@ -6490,7 +6424,6 @@
   <block id="2745234fb1e856e55967112d4b955056" category="paragraph">視可用的網路基礎架構而定、有數種方法和功能可用來上行鏈路FlexPod 到整個環境。如果存在現有的Cisco Nexus環境、NetApp建議使用VPC、將FlexPod 包含在整個過程中的Cisco Nexus 31108交換器上行鏈路到基礎架構中。上行鏈路可以是10GbE基礎架構解決方案的10GbE上行鏈路、或是1GbE基礎架構解決方案的1GbE（若有需要）。上述程序可用來建立上行鏈路vPC至現有環境。完成組態設定後、請務必執行copy start（複本開始）以儲存每個交換器上的組態。</block>
   <block id="5d7f9156f70734a70d089a6126b120fe" category="summary">若要設定VMware vCenter Server 6.7和vSphere叢集、請完成本頁所述的步驟。</block>
   <block id="cb087a13cbb839a16f79d2e04d726f0e" category="doc">VMware vCenter Server 6.7U2與vSphere叢集組態</block>
-  <block id="6c4d37fc356ba2d14eabd3231002618f" category="list-text">瀏覽至「https://\&lt;&lt;FQDN」或「IP of vCenter&gt;//vSphere-client/」。</block>
   <block id="6b72dbdc289bad21059099fb962088fd" category="list-text">以使用者名稱mailto：Administrator @ vspehre.erl[系統管理員]@ vsphere.local登入、以及您在VCSA設定程序期間輸入的SSO密碼。</block>
   <block id="b3fffd6f51909b1a70f7f50afcf17529" category="section-title">建立vSphere叢集</block>
   <block id="2d4d22fc6726eacfaa1ca9e7a949c264" category="paragraph"><block ref="2d4d22fc6726eacfaa1ca9e7a949c264" category="inline-image-macro-rx" type="image"></block></block>
@@ -6499,8 +6432,6 @@
   <block id="c1fa51874b124097c190f327b99c7f05" category="paragraph"><block ref="c1fa51874b124097c190f327b99c7f05" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e48ebcd0f26cb8ecf274a184dfe0aa9a" category="section-title">在ESXi主機上設定coredump</block>
   <block id="08a3053580c96492e9ca9f9a0fb9e085" category="paragraph">若要在ESXi主機上設定coredump、請完成下列步驟：</block>
-  <block id="e10ca1adb349a5228f7573a244805247" category="inline-link">vCenter</block>
-  <block id="03302d337e74e97b2fc9d2e59de878b1" category="list-text">登入https：//<block ref="3ee5cda4b1a6e60c69e4c78d80c9a202" category="inline-link-rx"></block> IP：5480/、輸入root作為使用者名稱、然後輸入root密碼。</block>
   <block id="4b05eace4eba9420f8625d70c90207aa" category="list-text">按一下「服務」、然後選取「VMware vSphere ESXi傾印收集器」。</block>
   <block id="fae193f3d012fe7c498bfc14c25cccc2" category="list-text">啟動VMware vSphere ESXi傾印收集器服務。</block>
   <block id="e1fe825d50948b1de80f51051945d8d6" category="paragraph"><block ref="e1fe825d50948b1de80f51051945d8d6" category="inline-image-macro-rx" type="image"></block></block>
@@ -6726,9 +6657,6 @@
   <block id="0fe3c69c48bc9700b5dd37f69ca26199" category="list-text">Cisco Intersight資料表</block>
   <block id="c56152678911fb0d557c41fdcf1d3213" category="inline-link"><block ref="c56152678911fb0d557c41fdcf1d3213" category="inline-link-rx"></block></block>
   <block id="c96bb6046b6069eb7298cd0b0b6b70fd" category="paragraph"><block ref="c96bb6046b6069eb7298cd0b0b6b70fd" category="inline-link-rx"></block></block>
-  <block id="bbd2995f138fe5b371240b2cc17190c1" category="list-text">NetApp Cloud Manager</block>
-  <block id="bd7b6098f4f7dbe0051346d24f5d0f68" category="inline-link"><block ref="bd7b6098f4f7dbe0051346d24f5d0f68" category="inline-link-rx"></block></block>
-  <block id="197ee6c8d2fbb82b68e7c9367a5d827f" category="paragraph"><block ref="197ee6c8d2fbb82b68e7c9367a5d827f" category="inline-link-rx"></block></block>
   <block id="1071731ddee094093ebd4eb4a8559261" category="section-title">解決方案拓撲</block>
   <block id="49528b9b8c2513c486a45891563dc129" category="inline-link-macro">下一步：解決方案元件。</block>
   <block id="1cfbe904270ce36b1f0360ab064cf453" category="doc">安裝與組態</block>
@@ -6742,18 +6670,12 @@
   <block id="d543fe011b5ca59d76b0601285d35c3a" category="paragraph">此解決方案可透過FlexPod Cisco Intersight Cloud Orchestrator提供的自動化與協調功能、輕鬆且便利地在混合雲上管理內部部署的功能和資料複寫。</block>
   <block id="d3b7c913cd04ebfec0e9ec32cb6fd58c" category="section-title">GitHub</block>
   <block id="6ccd6e595c753175e7ea6b9c3c00feb9" category="list-text">使用的所有Terraform組態</block>
-  <block id="c179b6fa575bc7fa32dfb7610146c685" category="inline-link"><block ref="c179b6fa575bc7fa32dfb7610146c685" category="inline-link-rx"></block></block>
-  <block id="68e15b733420e402fbbb000ebeca5961" category="paragraph"><block ref="68e15b733420e402fbbb000ebeca5961" category="inline-link-rx"></block></block>
   <block id="f8ea35d5f1082c0d4ebadcaeb5c4ce9b" category="list-text">用於匯入工作流程的Json檔案</block>
   <block id="d36eb67bdeda5d26432b94d3b21665aa" category="inline-link"><block ref="d36eb67bdeda5d26432b94d3b21665aa" category="inline-link-rx"></block></block>
   <block id="7ee1c41b1421d2dc52ff2a6c0ca34454" category="paragraph"><block ref="7ee1c41b1421d2dc52ff2a6c0ca34454" category="inline-link-rx"></block></block>
   <block id="a9ec7bb4f4f0cf0273cc7a2d54798374" category="list-text">Cisco Intersight說明中心</block>
   <block id="325ef16488c41cabfb77587d00f90537" category="list-text">Cisco Intersight Cloud Orchestrator文件：</block>
-  <block id="fa212deb4193a2682a5adc2e636644bd" category="inline-link"><block ref="fa212deb4193a2682a5adc2e636644bd" category="inline-link-rx"></block></block>
-  <block id="99839072ce01f98f3b6cf15b8382c597" category="paragraph"><block ref="99839072ce01f98f3b6cf15b8382c597" category="inline-link-rx"></block></block>
   <block id="30de9c74ca24ef6c8bab1b4a84f1fde5" category="list-text">Cisco Intersight Service for HashiCorp Terraform文件</block>
-  <block id="3eb9b36a3168b0f6da765e2ada88617d" category="inline-link"><block ref="3eb9b36a3168b0f6da765e2ada88617d" category="inline-link-rx"></block></block>
-  <block id="fd09af68db9c0dfd650f7c4e78a460f8" category="paragraph"><block ref="fd09af68db9c0dfd650f7c4e78a460f8" category="inline-link-rx"></block></block>
   <block id="3060910bb320ad2fd34d07464c85725f" category="inline-link"><block ref="3060910bb320ad2fd34d07464c85725f" category="inline-link-rx"></block></block>
   <block id="6fbda78dbf9544421ca94656af2d60d0" category="paragraph"><block ref="6fbda78dbf9544421ca94656af2d60d0" category="inline-link-rx"></block></block>
   <block id="04d452bb65ecf39ba22501bcfe33a74d" category="list-text">Cisco Intersight Cloud Orchestrator資料表</block>
@@ -6769,21 +6691,10 @@
   <block id="f58e06fa88f4c2a1b6785754a9e0a782" category="section-title">NetApp Cloud Volumes ONTAP 產品參考文件</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="9fdeec9ecb7581b5b8e2d2a5fcc66adc" category="paragraph"><block ref="9fdeec9ecb7581b5b8e2d2a5fcc66adc" category="inline-link-rx"></block></block>
-  <block id="384f18164b60938c5ad89d5effb32d7b" category="list-text">NetApp TCO計算機Cloud Volumes ONTAP</block>
-  <block id="1464cfd03ef9221a5c46576dbb5acaaf" category="paragraph"><block ref="1464cfd03ef9221a5c46576dbb5acaaf" category="inline-link-rx"></block></block>
-  <block id="89a8336752fe296450613297e4b900cf" category="list-text">Sizer Cloud Volumes ONTAP</block>
-  <block id="60bd11ea0e09744eaeccf06ad57d256f" category="inline-link"><block ref="60bd11ea0e09744eaeccf06ad57d256f" category="inline-link-rx"></block></block>
-  <block id="a86cb95749eab7bd0c6a482d4da0d720" category="paragraph"><block ref="a86cb95749eab7bd0c6a482d4da0d720" category="inline-link-rx"></block></block>
-  <block id="77484b50042596806200eb9ad8a1034b" category="list-text">雲端評估工具</block>
-  <block id="1069773ac12400966d826141fdef9d8b" category="paragraph"><block ref="1069773ac12400966d826141fdef9d8b" category="inline-link-rx"></block></block>
-  <block id="e2616fc1fdb50365b35d1d5473ed3dce" category="list-text">NetApp混合雲</block>
-  <block id="9fcffeb3a73be8377997a3dbce512929" category="paragraph"><block ref="9fcffeb3a73be8377997a3dbce512929" category="inline-link-rx"></block></block>
   <block id="23efdbe8862f0b39feb5fee8ba6a9555" category="list-text">Cloud Manager API文件</block>
   <block id="3fa5dc240c6c9a67734c097894aad63a" category="inline-link"><block ref="3fa5dc240c6c9a67734c097894aad63a" category="inline-link-rx"></block></block>
   <block id="c832101e61c0299f840aa2fb0dc54a5f" category="paragraph"><block ref="c832101e61c0299f840aa2fb0dc54a5f" category="inline-link-rx"></block></block>
   <block id="b9a6d65bed31fdf5f2527866fa0dfd9d" category="section-title">疑難排解問題</block>
-  <block id="868df23d9e8dc922a264062fa79c2241" category="inline-link"><block ref="868df23d9e8dc922a264062fa79c2241" category="inline-link-rx"></block></block>
-  <block id="3f6b4966cbc4a579bb0f9bef161c8fa5" category="paragraph"><block ref="3f6b4966cbc4a579bb0f9bef161c8fa5" category="inline-link-rx"></block></block>
   <block id="303e96f80576360d0c7b07ae7528fa4b" category="section-title">Terraform</block>
   <block id="2286ccbf59b9435994947e88725c76e8" category="list-text">Terraform Cloud</block>
   <block id="e07006e711ecd6f73bd7048090b7e2ab" category="inline-link"><block ref="e07006e711ecd6f73bd7048090b7e2ab" category="inline-link-rx"></block></block>
@@ -6796,8 +6707,6 @@
   <block id="99bdab1ba48d99c6b9acd194ae1eb5df" category="paragraph"><block ref="99bdab1ba48d99c6b9acd194ae1eb5df" category="inline-link-rx"></block></block>
   <block id="c731f72e1d22a7c5e01a7cb789a8885e" category="section-title">GCP</block>
   <block id="369e0f23a1a6dd50bf713d3771a63ab4" category="list-text">適用於GCP的高可用度ONTAP</block>
-  <block id="ad697fee8b8edd1e753ec60060dd1394" category="inline-link"><block ref="ad697fee8b8edd1e753ec60060dd1394" category="inline-link-rx"></block></block>
-  <block id="abfe0d8c399de2e80383ac64ea642a0f" category="paragraph"><block ref="abfe0d8c399de2e80383ac64ea642a0f" category="inline-link-rx"></block></block>
   <block id="08c7c6c7a0eaf45b1812976fa5f40a08" category="list-text">GCP環境</block>
   <block id="07cd340ee20e09fd5ad828c27798a62c" category="inline-link"><block ref="07cd340ee20e09fd5ad828c27798a62c" category="inline-link-rx"></block></block>
   <block id="fe6eee3642045f58dd18597ab300a43a" category="paragraph"><block ref="fe6eee3642045f58dd18597ab300a43a" category="inline-link-rx"></block></block>
@@ -6824,7 +6733,6 @@
   <block id="32085592ea7375e22d4e50fb250ab93b" category="list-text">* Cisco Intersight Premier *除了優勢層提供的功能之外、Cisco Intersight Premier還提供下列功能：</block>
   <block id="8689723938ad68dca4800a06de385d61" category="list-text">Intersight Cloud Orchestrator（ICO）適用於Cisco與協力廠商運算、網路、儲存設備、整合式系統、虛擬化、 容器和公有雲平台</block>
   <block id="7c7cb6774a222f136c322cbd6271909f" category="list-text">Cisco UCS Director的完整訂購權利、不需額外付費。</block>
-  <block id="c138302b39330092178afca4d6a1b99d" category="paragraph">如需每個授權所支援之Intersight授權和功能的詳細資訊、請參閱<block ref="7eb168891f5d1b0113edfcdbba242d25" category="inline-link-rx"></block>。</block>
   <block id="635a4cf8fefd5a9d753528bc767bfc5f" category="admonition">在此解決方案中、我們使用Intersight Cloud Orchestrator和Intersight Service for HashiCorp Terraform。這些功能適用於具有Intersight Premier授權的使用者、因此必須啟用此授權層級。</block>
   <block id="c4111b747373051b5b95ba533ab26cda" category="section-title">Terraform Cloud與ICO整合</block>
   <block id="c905a15b564036aed889ec79a12b2b42" category="paragraph">您可以使用Cisco Intersight Cloud Orchestrator（ICO）建立及執行稱為Terraform Cloud（TFC）API的工作流程。「叫用Web API要求」工作可支援以Terraform Cloud做為目標、並可使用HTTP方法設定Terraform Cloud API。因此、工作流程可以結合使用一般API工作和其他作業來呼叫多個Terraform Cloud API的工作。您需要Premier授權才能使用ICO功能。</block>
@@ -6833,7 +6741,6 @@
   <block id="8b83e74c5234b94ef4aa50c7e8355cf7" category="inline-link">Cisco Intersight Virtual Appliance入門指南</block>
   <block id="30f75ac7800191b38f765a03e95e4e92" category="paragraph">Cisco Intersight虛擬應用裝置可在Cisco Intersight虛擬應用裝置中使用Cisco Intersight輔助功能、此應用裝置以開放式虛擬應用裝置（OVA）檔案格式的可部署虛擬機器形式散佈。您可以在ESXi伺服器上安裝應用裝置。如需詳細資訊、請參閱<block ref="9ec2007768c9abd4b84d3e74335f0c5f" category="inline-link-rx"></block>。</block>
   <block id="bf647454e36069fd16f1a7a35cf6a865" category="inline-link">快速入門</block>
-  <block id="ec0f396f2d3d02970c125145260fcc38" category="paragraph">在Intersight中申請Intersight assist之後、您可以使用Intersight assist選項來申請端點裝置。如需詳細資訊、請參閱<block ref="5c61a46cbaf3644182eeea7ed23b0ac8" category="inline-link-rx"></block>。</block>
   <block id="4bd50825ba17a2acb595707efca60c74" category="list-text">運用內建的重複資料刪除技術、資料壓縮、精簡配置及複製技術、將儲存成本降至最低。</block>
   <block id="5b22d57ae20a13353e0800be8fda5c50" category="list-text">在雲端環境發生故障時、提供企業級的可靠性和持續營運。</block>
   <block id="d14748164dcd7407330b974fba978880" category="list-text">NetApp SnapMirror是領先業界的複寫技術、可將內部部署的資料複寫到雲端、因此您可以輕鬆取得次要複本、以供多種使用案例使用。Cloud Volumes ONTAP</block>
@@ -6853,7 +6760,6 @@
   <block id="2c6e4ca4692997fe4d11c99c80dfbb47" category="paragraph">在內部部署環境中、用作基礎平台的功能就是根據所述的準則與規格來部署FlexPod<block ref="f10eda6a1028e8f651dae68f5081fe48" category="inline-link-rx"></block>。</block>
   <block id="7dc4cb6e5cc764021edf603ee8086766" category="paragraph">此環境中的網路為ACI型。如需詳細資訊、請參閱<block ref="52978bee2b81a5e001ad2371304c6c3c" category="inline-link-rx"></block>。</block>
   <block id="0de80610a4cf8c45d9737ee7c93ff699" category="list-text">如需詳細資訊、請參閱下列連結：</block>
-  <block id="78bb864de2f3628a86c0e8e70bb5087d" category="list-text"><block ref="78bb864de2f3628a86c0e8e70bb5087d" category="inline-link-rx"></block></block>
   <block id="0d87b9270aecd2565c2b1c531fbb959b" category="list-text"><block ref="0d87b9270aecd2565c2b1c531fbb959b" category="inline-link-rx"></block></block>
   <block id="071525c85bdb987cadd64553952b977b" category="list-text"><block ref="071525c85bdb987cadd64553952b977b" category="inline-link-rx"></block></block>
   <block id="b9ac0f5a408543b25267c7b18f92a793" category="paragraph">下表顯示FlexPod 了有關硬體與軟體版本的資訊。</block>
@@ -6940,10 +6846,7 @@
   <block id="296905c924222c83eef2d46cfc06670c" category="doc">設定公有雲服務供應商</block>
   <block id="a93bd8fac0274b3d8a9a725b02a7006e" category="inline-link-macro">先前：Terraform Cloud與ICO整合的先決條件。</block>
   <block id="14f746f4385eed664c63e7c2ceb0c33f" category="paragraph"><block ref="14f746f4385eed664c63e7c2ceb0c33f" category="inline-link-macro-rx"></block></block>
-  <block id="60d1ed6349be5d3bad11d86129f158ce" category="section-title">程序1：存取NetApp Cloud Manager</block>
   <block id="49fc376ed35249f3841846ede4dab884" category="inline-link">NetApp Cloud Central</block>
-  <block id="881118b4505a907203f96d7d4bb2464b" category="paragraph">若要存取NetApp Cloud Manager和其他雲端服務、您必須先註冊<block ref="25c9ce3f64e912d3750c233c5edfffad" category="inline-link-rx"></block>。</block>
-  <block id="4f39c070d98fb8261f08a9f4af4bfcea" category="admonition">若要在Cloud Central帳戶中設定工作區和使用者、請按一下<block ref="8db968382215ca64c3ec159bc6512f38" category="inline-link-rx"></block>。</block>
   <block id="2e4179358198d20865e3e24968e6d2d5" category="section-title">程序2：部署Connector</block>
   <block id="4d12f9411baea75a585912a995cd84b2" category="paragraph">若要在Google Cloud中部署Connector、請參閱這一點<block ref="7d420e21b1b4b492131970b38e3c7184" category="inline-link-rx"></block>。</block>
   <block id="5dcab386a1ca963fc73435340cd17e59" category="inline-link-macro">下一步：自動部署混合雲NetApp儲存設備。</block>
@@ -6955,7 +6858,6 @@
   <block id="a6988e0328985acf7d14b582d5555880" category="section-title">程序1：連接Cisco Intersight和Terraform Cloud</block>
   <block id="ee8cc5791df61140cfb2aea76b83f8bf" category="list-text">請提供相關的Terraform Cloud帳戶詳細資料、以申請或建立Terraform雲端目標。</block>
   <block id="2d3d08c3c299f80b1db3e3ab39bd5e9d" category="list-text">建立私有雲端的Terraform Cloud Agent目標、讓客戶能在資料中心安裝代理程式、並與Terraform Cloud進行通訊。</block>
-  <block id="e795699f1e20cc25510953719622f9d5" category="paragraph">如需詳細資訊、請參閱<block ref="b0ae32ca311a918c6584fdf584508f49" category="inline-link-rx"></block>。</block>
   <block id="3c8df17370cf0099f92c862dacb4d915" category="section-title">程序2：產生使用者權杖</block>
   <block id="50ee5c7def2aa3f096824e3771b588e8" category="paragraph">在新增Terraform Cloud目標時、您必須從Terraform Cloud設定頁面提供使用者名稱和API權杖。</block>
   <block id="f0748d5a29db5c42275c71bacbf7b318" category="inline-link"><block ref="f0748d5a29db5c42275c71bacbf7b318" category="inline-link-rx"></block></block>
@@ -7026,7 +6928,6 @@
   <block id="4a6c7893abd7ef92fb09d3359e17324d" category="section-title">GitHub儲存庫</block>
   <block id="6e44f8632722e86d98fe7e921e8cddd3" category="paragraph">您需要GitHub帳戶來裝載Terraform程式碼。Intersight Orchestrator在Terraform Cloud for Business帳戶中建立新的工作區。此工作區已設定版本控制工作流程。為此、您必須將Terraform組態保留在GitHub儲存庫中、並在建立工作區時提供作為輸入。</block>
   <block id="f36238daba7154b059d99557a05d4b86" category="inline-link">此GitHub連結</block>
-  <block id="2a1ab138896d11febbe935a77aa86ff3" category="paragraph"><block ref="187a40dfe1da2425129f8bce9ad2adb6" category="inline-link-rx"></block> 提供含有各種資源的Terraform組態。您可以在GitHub帳戶中分頁此儲存庫並製作複本。</block>
   <block id="58d1c40a160c26ce9b569468f46bf446" category="paragraph">在此儲存庫中、「provider .tf」定義了所需的Terraform供應商。NetApp Cloud Manager的Terraform供應商已使用。</block>
   <block id="17762b2242b4236a9aa2db59ff7bbe61" category="paragraph">variables.tf包含所有的變數宣告。這些變數的值會輸入為Intersight Cloud Orchestrator的工作流程輸入。這是將值傳遞到工作區並執行Terraform組態的便利方法。</block>
   <block id="6d6e98862becc20ef7c3d6a7a2551efe" category="paragraph">「rsources.tf」定義將內部環境ONTAP 的內部部署功能添加到工作環境、在Cloud Volumes ONTAP Google Cloud上建立單一節點的叢集、在內部部署與Cloud Volumes ONTAP 內部部署之間建立SnapMirror關係、在Cloud Volumes ONTAP 整個過程中建立一個雲端磁碟區等所需的各種資源。</block>
@@ -7583,7 +7484,6 @@
   <block id="6494739090e31c91779d5b1ae056881c" category="section-title">內部部署FlexPod 的內部部署</block>
   <block id="73a3588eac7abd3bbe0602fc71d7322a" category="paragraph">若要瞭解FlexPod UCS X系列、VMware及NetApp ONTAP 的功能不全、請參閱<block ref="35e9ae622703e5e9f707c46a163e0a74" category="inline-link-rx"></block> 設計指南：本文件提供設計指南、可將Cisco Intersight託管UCS X系列平台整合到FlexPod 「支援資料中心」基礎架構中。</block>
   <block id="af2e955267eb0fc88e73f50acfba1bb8" category="inline-link">本部署指南</block>
-  <block id="323eb6e2b16a1d67b853a4abb140333a" category="paragraph">如需部署內部部署FlexPod 的資訊實例、請參閱<block ref="97bc661be69e16506c7b7d98e48c6bf7" category="inline-link-rx"></block>。</block>
   <block id="21002c93598b066c39c08e307cebb549" category="paragraph">本文件提供部署指南、可將Cisco Intersight託管UCS X系列平台整合到FlexPod 一套Datacenter基礎架構中。本文件涵蓋成功部署的組態和最佳實務做法。</block>
   <block id="21b6d1b90774505daa15a9be831436a9" category="inline-link">設計指南</block>
   <block id="9c47a213311911c0334417506858d557" category="inline-link">部署指南</block>
@@ -8213,17 +8113,13 @@
   <block id="cf37c5cba207938e4c97f3bcf9ffabc9" category="cell">ONTAP 9.7P1 及更新版本支援的所有 ONTAP ASA 、 AFF 及 FAS 儲存陣列</block>
   <block id="de19bc9421b3493cb471fb68d644f614" category="cell">vSphere 7.0 及更新版本</block>
   <block id="2bab0c7a59bda4a6cf8bb732310f19d1" category="inline-link">Cisco Intersight 支援的系統</block>
-  <block id="4583b551e49cf84018c42a34fc90472b" category="admonition">請參閱<block ref="c301da257433e3b44d89736f9cb32482" category="inline-link-rx"></block> 適用於Cisco UCS運算元件和UCSM版本的最低需求。</block>
   <block id="c6992d015712de0f9935c930f87d1e24" category="paragraph">Cisco Intersight 提供基礎架構服務和 Cloud Orchestrator 服務等服務、以管理、自動化及最佳化實體儲存設備（ NetApp 儲存設備）。您可以使用這些服務來管理 Cisco UCS 伺服器和 Cisco HyperFlex 系統。基礎架構服務和 Cloud Orchestrator 服務使用多層的訂閱型授權模式。您可以選擇所選訂閱期間所需的 Cisco UCS Server Volume 層級。</block>
   <block id="73940e6c81db7305c6108d57163a6bd9" category="paragraph-title">授權模式</block>
   <block id="0eeef496e6954ad0d16a059fafdc5e38" category="paragraph">Cisco Intersight Infrastructure Services 授權模式已簡化、現在提供下列兩層：</block>
   <block id="cebf91fe773dd5685c20ef3bff0017f3" category="list-text">* Cisco Intersight Infrastructure Services Essentials * ： Essentials 授權層提供伺服器管理功能、包括全球健全狀況監控功能、庫存、透過 Cisco TAC 整合提供主動式支援、多重驗證、以及提供 SDK 和 API 存取。</block>
   <block id="0ef1beaa09215da1b27e26da9c01b73b" category="list-text">* Cisco Intersight Infrastructure Services Advantage* ：「優勢」授權層提供進階伺服器管理功能、提供更高的可見度、生態系統整合、 Cisco 與協力廠商軟硬體的自動化、以及提供多網域解決方案。</block>
   <block id="f5e1db835ff4b10b4a6531770f9643e9" category="inline-link">基礎架構服務授權</block>
-  <block id="2c355e53fd6c41fd8e75d57ff3e446e3" category="paragraph">如需各種授權層級所涵蓋功能的詳細資訊、請參閱<block ref="b733a46c0b54e4d9837584b6621e33e9" category="inline-link-rx"></block>。</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="paragraph-title">相關資訊</block>
-  <block id="cb2f26cdcb58be1d59a4186132027351" category="inline-link">Cisco Intersight 說明中心</block>
-  <block id="cbdd42cc134bfbfb08861472ec705bb4" category="paragraph"><block ref="cbdd42cc134bfbfb08861472ec705bb4" category="inline-link-rx"></block></block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
@@ -8323,7 +8219,6 @@
   <block id="824ae54596b9693994b0149193fdad01" category="paragraph">有關詳細信息，請參閱 <block ref="72c51d15f00a20805275a2725e33f916" category="inline-link-macro-rx"></block>。</block>
   <block id="c65f23ce2d02c64e04c3c7376ef78b2e" category="paragraph">有關 VMware vSphere 及其組件的更多信息，請參閱<block ref="1f73295bb656325bbd336b162a02c12d" category="inline-link-macro-rx"></block>。</block>
   <block id="9279f26780ded18d0540905e2f4c2443" category="paragraph">詳細資訊請參見<block ref="fc0491c933cd37e813a120bdaa5242bb" category="inline-link-macro-rx"></block>。</block>
-  <block id="a000b140fe824ced4237ae63f1c6e298" category="paragraph">這種混合雲解決方案可以擴展到任何運行支援版本的軟體、韌體和硬體的FlexPod環境，具體定義見：<block ref="d81b4b28c891206234cb1654e6016fc1" category="inline-link-macro-rx"></block> ，<block ref="a20168bfee610ed2009269dc61511d00" category="inline-link-macro-rx"></block> ， 和<block ref="cbb6475bbf94049e4e0384caf6c1ee3e" category="inline-link-macro-rx"></block>。</block>
   <block id="e560e67994c1662218988a427804df78" category="paragraph">下表顯示了控制台和Cloud Volumes ONTAP版本。</block>
   <block id="bccaa4aa80831b76c11240a16447975f" category="cell">安慰</block>
   <block id="1e4a345000c59774abe93a846772304d" category="list-text">*勒索軟體防護* NetApp Console勒索軟體防護功能可掃描本地和雲端環境中的資料來源，偵測安全漏洞，並提供其當前的安全狀態和風險評分。然後它會提供可操作的建議，您可以進一步調查並遵循這些建議進行補救。這可以幫助您保護關鍵的醫療保健資料免受勒索軟體攻擊。</block>
@@ -8353,142 +8248,239 @@
   <block id="9c731b980c2b703bfdb439c7056b1bfd" category="admonition">請參閱<block ref="c4dd6ba7b5ae102345b7377110dc849b" category="inline-link-rx"></block>以獲取有關 FabricPool 支援平台的最新資訊。</block>
   <block id="00ae925249b1dcd734cdb679b48bf8f7" category="list-text">NetApp ONTAP Select</block>
   <block id="9044f591b913b8cf0cc25f90afe3223c" category="admonition">NetApp 建議使用全 SSD FabricPool 本地層。</block>
-  <block id="0e658e993dc6099a0da46bca02ad983c" category="paragraph">所有 NetApp FAS、AFF 和 ASA 系統都安裝了 NetApp ONTAP 軟體。FlexPod 已通過 ONTAP 軟體驗證，提供高度可擴充的儲存架構，可實現不中斷營運、不中斷升級和敏捷的資料基礎架構。</block>
-  <block id="b08cac487db6961f4830fe1f50d9a631" category="section-title">Cisco UCS X-Series Direct</block>
-  <block id="ab2c83112d1106959a02c067da964635" category="paragraph">Cisco UCS X-Series Direct 是一種新的架構，它將一對 Cisco UCS Fabric Interconnect 9108 100G 與 Cisco UCS X9508 機箱和 Cisco UCS X-Series 運算節點整合在一起，從而提供 UCS X-Series Direct 解決方案。</block>
-  <block id="4e5bfcd6b58f1477e32ceb617ea2e6a2" category="paragraph">Cisco UCS X 系列 Direct 由下列元件組成：</block>
-  <block id="33d22df2af89abdeaab64f6e62aa4d2a" category="list-text">Cisco UCS 9108 100G Fabric Interconnect</block>
-  <block id="9a983605bcc1b03c274722ab5b4fceb7" category="list-text">Cisco UCS X9508 機箱</block>
-  <block id="7297a8a246f4107073155eb7adf8aad6" category="list-text">Cisco UCS X 系列運算節點</block>
-  <block id="171463d07e5f804b6e4a5d00f05a9948" category="list-text">選用元件：PCIe 節點和 X-Fabric 模組</block>
-  <block id="fa54d292263dba156a82cbe5d7634e25" category="inline-link">Cisco UCS X 系列 Direct 資料表</block>
-  <block id="7bd2db3d7d274705cd97bce1a15ba083" category="admonition">有關 UCS X-Direct 的完整技術規格，請參閱此連結：<block ref="c6d158517f0137b0ee0fc81034309271" category="inline-link-rx"></block>。</block>
-  <block id="52812d5e9f7f85a41759657770889b4b" category="paragraph">有關 X 系列 Direct 組件的技術規格，請參閱下表。</block>
-  <block id="5108f9823153bf86d424465411769c7e" category="cell">UCS 9108 100G Fabric Interconnect</block>
-  <block id="6667cc003527f70428fbb3f46d896e10" category="cell">UCSX-S9108-100G</block>
-  <block id="c78a25b3d391b3eabe5a4f6e3a159d89" category="inline-link">Cisco UCS 9108 Fabric Interconnect</block>
-  <block id="55941e76508015eb43dd9b6db66a8de4" category="cell"><block ref="55941e76508015eb43dd9b6db66a8de4" category="inline-link-rx"></block></block>
-  <block id="3fbecaa187bec4c0133ee458cb18648e" category="cell">Cisco UCS X 系列機箱</block>
-  <block id="c42738d7d96a10ba2e13752c497fe352" category="cell"><block ref="d2f7a165d8728317906bc29daa2c85b4" category="inline-link-rx"></block></block>
-  <block id="85a845d3a2419a09e5bc3078a0e2c402" category="cell">Cisco UCS X210c M7</block>
-  <block id="542ae9366fc15c0eac09d9ca0b343ff2" category="cell">UCSX-210C-M7</block>
-  <block id="c80b1ea5b264dcbe01ea1ca703f6ff74" category="inline-link">Cisco UCS X210c M7 運算節點</block>
-  <block id="54705fac3253e295c3859b5ee543daf0" category="cell"><block ref="54705fac3253e295c3859b5ee543daf0" category="inline-link-rx"></block></block>
-  <block id="aa868f34642b235e56aa100dd29911a6" category="cell">Cisco UCS X210c M8</block>
-  <block id="a6d64f93d7c6293dd77985bd9b59413b" category="cell">UCSX-210C-M8</block>
-  <block id="e735a8b9647bb22edf3884aab9bab721" category="inline-link">Cisco UCS X210c M8 運算節點</block>
-  <block id="87a2bf74f615f8df54eaed3038c2180f" category="cell"><block ref="87a2bf74f615f8df54eaed3038c2180f" category="inline-link-rx"></block></block>
-  <block id="1fa094101a30dc8d5c01d55ec4e0b2c3" category="cell">Cisco UCS X215c M8</block>
-  <block id="79ee6ae5e350f7d2d17d88640b427dea" category="cell">UCSX-215C-M8</block>
-  <block id="ebcf4fed81a8ec58e9fa2bb56b56655e" category="inline-link">Cisco UCS X215c M8 運算節點</block>
-  <block id="213d905938651850e0700aec995d4f25" category="cell"><block ref="213d905938651850e0700aec995d4f25" category="inline-link-rx"></block></block>
-  <block id="7d6476a168f796512cd343dbf6647c45" category="cell">Cisco UCS X410c M7</block>
-  <block id="f15000df0fa439ce16f3435962ac49e5" category="cell">UCSX-410C-M7</block>
-  <block id="12951cf21eec347ba4258854c54626b0" category="inline-link">Cisco UCS X410c M7 運算節點</block>
-  <block id="eb3c277cb9640d4d78fda6eb48405ca2" category="cell"><block ref="eb3c277cb9640d4d78fda6eb48405ca2" category="inline-link-rx"></block></block>
-  <block id="db8fcd946f3ea3ecbb5f6df26d108975" category="cell">Cisco UCS X410c M8</block>
-  <block id="be22b28321184ab2c1fab5ff51ab7621" category="cell">UCSX-410C-M8</block>
-  <block id="fec8623d55f39e0df72c4d65c9a8a88c" category="inline-link">Cisco UCS X410c M8 運算節點</block>
-  <block id="d534d9e405380c188e8251558dc9a224" category="cell"><block ref="d534d9e405380c188e8251558dc9a224" category="inline-link-rx"></block></block>
-  <block id="03bd80ec3d64c289030b272008786311" category="cell">Cisco UCS X 系列模組</block>
-  <block id="e1aac65c2b6e24c8e8adc95e43ed62ee" category="cell">Cisco UCS 9108 Intelligent Fabric Module</block>
-  <block id="fcfe8e82e41744adc21a0e98c9d0fb10" category="cell">UCSX-I-9108-100G</block>
-  <block id="ccd4443b7fa96e36677438df98acd96a" category="cell"><block ref="ccd4443b7fa96e36677438df98acd96a" category="inline-link-rx"></block></block>
-  <block id="033b7fd69c0efbd849f830986d5a238a" category="cell">Cisco UCS X9516 X-Fabric 模組</block>
-  <block id="93f609c9836071de030ad98eb9986168" category="cell">UCSX-FS-9516</block>
-  <block id="093c482cedd34b9160b239bf45baa595" category="cell"><block ref="093c482cedd34b9160b239bf45baa595" category="inline-link-rx"></block></block>
-  <block id="134a2787cf332fffd37a3606fe4f65f6" category="cell">Cisco UCS X9416 X-Fabric 模組</block>
-  <block id="6d746fe8059da3c9368ddffe8db53eff" category="cell">UCSX-FS-9416</block>
-  <block id="ef67dfcf39e97948851ebbffb6b5749d" category="cell"><block ref="dd8de1fc1eca8661d0b04dfdd09619f7" category="inline-link-rx"></block></block>
-  <block id="d4a1f2b08ae3c30faec4f877f6be7b6b" category="paragraph">Cisco UCS C 系列機架式伺服器提供 1 機架單元（RU）和 2 機架單元（RU）兩種規格，並配備多種 CPU、記憶體和 I/O 選項。下表列出的零件號碼為基礎伺服器的零件號碼。不包含 CPU、記憶體、硬碟、週邊元件互連高速（PCIe）卡。FlexPod 基礎架構支援多種組態選項。</block>
-  <block id="08f285120864063a3664f0b981e85974" category="cell">Cisco UCS C220 M7</block>
-  <block id="185f87b891565a026a599afc6ccf6509" category="cell">UCSC-C220-M7</block>
-  <block id="59bb7a4168ca0727f0e8657c561faece" category="inline-link">Cisco UCS C220 M7 機架式伺服器</block>
-  <block id="bcff2c86efe0c36653739dbee8dcf43d" category="cell"><block ref="bcff2c86efe0c36653739dbee8dcf43d" category="inline-link-rx"></block></block>
-  <block id="0d88de12c1b3aba2b9ffac63dc85d4af" category="cell">Cisco UCS C220 M8</block>
-  <block id="f5ccd1d71c2ed21d0f2d220921fb6e39" category="cell">UCSC-C220-M8</block>
-  <block id="79c949339648467243f2664b108888d1" category="inline-link">Cisco UCS C220 M8 機架式伺服器</block>
-  <block id="0e0837a63f73d1416f17f871c1d92529" category="cell"><block ref="0e0837a63f73d1416f17f871c1d92529" category="inline-link-rx"></block></block>
-  <block id="08f90c3f9daaa88b26f047dc5d0cf3b2" category="cell"><block ref="08f90c3f9daaa88b26f047dc5d0cf3b2" category="inline-link-rx"></block></block>
-  <block id="c49cf51806c8304f47ef0af1cc3583b1" category="cell">Cisco UCS C225 M8</block>
-  <block id="5eb4b81081e3e747c520c2d5f4dc8ccf" category="cell">UCSC-C225-M8</block>
-  <block id="32de8c4c7d70c5cef467c42019e17abb" category="inline-link">Cisco UCS C225 M8 機架式伺服器</block>
-  <block id="a15976f50db7ffc9d0598d204824066c" category="cell"><block ref="a15976f50db7ffc9d0598d204824066c" category="inline-link-rx"></block></block>
-  <block id="d08f7047cb41d3f3eb07a1d246224cc8" category="cell">Cisco UCS C240 M7</block>
-  <block id="0ba1dc11236b9c5fb6ffb144afc496e4" category="cell">UCSC-C240-M7</block>
-  <block id="d9a53386c52a3a8c8f311cc1dd2f9a89" category="inline-link">Cisco UCS C240 M7 機架式伺服器</block>
-  <block id="c61bd2b7a38a51c0719fb6de44c82b54" category="cell"><block ref="c61bd2b7a38a51c0719fb6de44c82b54" category="inline-link-rx"></block></block>
-  <block id="98b8f38cb9a13ca8642e515e19c5bcae" category="cell">Cisco UCS C240 M8</block>
-  <block id="5d9fc3ec46a458610c3b12248cb0d9a9" category="cell">UCSC-C240-M8</block>
-  <block id="4480a773cf291aad9f12830614e6a55c" category="inline-link">Cisco UCS C240 M8 機架式伺服器</block>
-  <block id="540548b7de484075cad2e648e62b24d4" category="cell"><block ref="540548b7de484075cad2e648e62b24d4" category="inline-link-rx"></block></block>
-  <block id="fbf3f8d4623d9c4266b5e270ab5a0ee9" category="cell"><block ref="fbf3f8d4623d9c4266b5e270ab5a0ee9" category="inline-link-rx"></block></block>
-  <block id="1088a815c23b6f882393e6097af48661" category="cell">Cisco UCS C245 M8</block>
-  <block id="2c29504598d658ae397498e3692de0bb" category="cell">UCSC-C245-M8</block>
-  <block id="2e53148601f2552843e772c481eceb95" category="inline-link">Cisco UCS C245 M8 機架式伺服器</block>
-  <block id="efa98f10731ee80849f96960caa9f2dc" category="cell"><block ref="efa98f10731ee80849f96960caa9f2dc" category="inline-link-rx"></block></block>
-  <block id="39a715608f33f16328cd082d89f0295b" category="section-title">Cisco Nexus 交換器</block>
-  <block id="e07fa2542b3d02c0ddf222a6690071dc" category="paragraph">FlexPod 架構需要備援 Cisco Nexus 交換器。</block>
-  <block id="e887ad7f00d6c8bf280bc10e3fee2f52" category="cell">Cisco Nexus 交換機</block>
-  <block id="a0159b12a4e3470c15426cabb652f158" category="cell">Cisco Nexus 9200 系列交換器</block>
-  <block id="c805c717b2ff719e7f051f990444a02e" category="cell"><block ref="c805c717b2ff719e7f051f990444a02e" category="inline-link-rx"></block></block>
-  <block id="a388b76dc45ac18e52a3b75efb35834a" category="cell">Cisco Nexus 9300 系列交換器</block>
-  <block id="db7c6a8cf8fb1bedef955b74c1d48458" category="cell"><block ref="db7c6a8cf8fb1bedef955b74c1d48458" category="inline-link-rx"></block></block>
-  <block id="05529d9f87f535089b136d6e6c79152a" category="paragraph">在 FlexPod Express 架構中的所有 Cisco 設備都需要有效的 TSANet 支援合約。</block>
-  <block id="c03e321ec861308530b2664bf76c15c5" category="admonition">所需的授權和相應的零件編號可能因產品和組態而異。建議在訂購前與您的 Cisco 或 NetApp 銷售代表確認授權需求。</block>
-  <block id="b7f43873760e77ea41c49202022ab227" category="cell">TSANet</block>
-  <block id="3ea0d3685f27390f9fe371eab129dce9" category="cell"><block ref="3ea0d3685f27390f9fe371eab129dce9" category="inline-link-rx"></block></block>
-  <block id="0d23eba7274fadde661e961150cfe90c" category="section-title">FlexPod Express 與 NetApp AFF/ASA/FAS 的連線要求</block>
-  <block id="9d2250f706e841221ec2094f92705927" category="paragraph">FlexPod Express 與 NetApp AFF/ ASA/ FAS 的連線需求包括：</block>
-  <block id="ed36393f337de9358b449ee681cedeee" category="list-text">NetApp 儲存控制器必須直接連接到 Cisco Nexus 交換器。</block>
-  <block id="13aa4a26afcbbdb8ccf34184d272233a" category="list-text">對於 UCS X 系列 Direct 部署，NetApp 儲存控制器可以直接連接到嵌入式 Fabric Interconnect。</block>
-  <block id="708c875b65201b1171582654c9785698" category="list-text">需要使用虛擬連接埠通道 (vPC) 將 Cisco Nexus 9000 系列交換器連接到 NetApp 儲存控制器。</block>
-  <block id="3aff03b52067b9fd44f45fb876653a9c" category="list-text">*FlexPod Datacenter。*此平台是可大規模擴充的虛擬資料中心基礎架構、適用於工作負載企業應用程式、虛擬化、VDI 及公有雲和私有雲。FlexPod Datacenter 有自己的規格、記錄於<block ref="0bb629a24a99e06d4ec011831def694a" category="inline-link-rx"></block>。</block>
-  <block id="1fd1ccb51d4008bf4d6e7734454719d8" category="section-title">FlexPod Express 搭配 NetApp AFF/ASA/FAS</block>
-  <block id="07fabd6fde589c0dfb293502119057ad" category="paragraph">使用 NetApp AFF、ASA 或 FAS 控制器作為底層儲存的 FlexPod Express 解決方案，其硬體需求包括本節所述的組態。</block>
-  <block id="75b256e594cf5a8ba03273e8a68f2c27" category="paragraph">以下是 FlexPod Express 的最低硬體需求：</block>
-  <block id="7013f56669c02dbe795614370d0c956e" category="list-text">兩台採用冗餘配置的 10Gbps 標準乙太網路交換器（Cisco Nexus 9200 和 9300 機型）</block>
-  <block id="737ae7047a573165eadb480d2b9b3a7e" category="list-text">Cisco UCS C 系列獨立機架伺服器，採用基於 CIMC 的獨立機架伺服器組態或 Intersight 管理組態（IMM）或 Cisco UCS X 系列 Direct，採用 Cisco IMM 組態</block>
-  <block id="0c31792ebf62debf53351a3c946658a4" category="list-text">兩台入門級 NetApp AFF（A20、A30 或 C30）、NetApp ASA（A20、A30 或 C30）或 NetApp FAS（2750 或 2820）系列控制器，以高可用性（HA）對組態部署為雙節點叢集</block>
-  <block id="518388d8bf47fef25a51b033351e90c6" category="section-title">FlexPod Express 與 NetApp AFF/ASA/FAS 的軟體要求</block>
-  <block id="c73c43926cb72083a2e88ddeea8dfb6e" category="paragraph">FlexPod Express 搭配 NetApp AFF／ASA／FAS 的軟體需求包括：</block>
-  <block id="fa39e3184058dc78c3eadf7b10e6ffa9" category="list-text">ONTAP 9.16 或更新版本</block>
-  <block id="cfa57e5262733289daf4a15d534d7a2e" category="list-text">Cisco NX-OS 版本 10.4（6）M 或更新版本</block>
-  <block id="4e6a4646d756c190e8091d8c86e93232" category="admonition">本節列出的所有軟體版本都是本文件後續章節中列出的硬體元件（NetApp 和 Cisco 元件）的最低要求。</block>
   <block id="a05525388d2fadefda4af92395d016ea" category="summary">NetApp 儲存控制器在 FlexPod Express 架構中提供開機與應用程式資料儲存的儲存基礎。本節列出 FlexPod Express 架構中不同的 NetApp 儲存選項。</block>
-  <block id="8cf756e67e6fe3a58a1405610ba75ad9" category="paragraph">FlexPod Express 架構需要冗餘的 AFF、ASA 或 FAS 系列控制器。這些控制器運行 ONTAP 軟體。訂購儲存控制器時，可選擇預先安裝所需的軟體版本。對於 ONTAP，叢集可以採用一對叢集互連交換器進行部署，也可以採用無交換器叢集配置。</block>
-  <block id="d5c565b8a9c9c59fa0b692c9cbf65edd" category="admonition">無交換器叢集組態僅支援雙節點組態。超過 4 個節點的組態需要叢集互連交換器，雙節點組態則為選用。</block>
-  <block id="230b6be042c6a9e09ceea70fd8e2f108" category="paragraph">根據所選儲存平台的不同，可提供不同的選項和組態。有關這些附加元件的詳細資訊，請諮詢您的銷售代表。</block>
-  <block id="ee65a1f1b80c1d59eba7dc665cc831bc" category="paragraph">下表所列的控制器系列適用於 FlexPod 解決方案，因為它們與 Cisco Nexus 交換器的連接無縫銜接。有關各控制器型號的具體相容性詳情，請參閱<block ref="0012c2b4de81607ee8d0f71acdd6c9ab" category="inline-link-rx"></block>。</block>
-  <block id="b77cf317a6bb3b0806632ae61052e3ed" category="cell">NetApp 入門級儲存系列，適用於 FlexPod Express</block>
-  <block id="ae80ae2c7480651e65f11ec1f29d6ede" category="cell">A20</block>
-  <block id="a0ab09bcd71cc8c8e831f022615b28a4" category="cell"><block ref="a0ab09bcd71cc8c8e831f022615b28a4" category="inline-link-rx"></block></block>
-  <block id="1d54842ba417c6ef95e35c602a80d5ac" category="cell">A30</block>
-  <block id="71642a8ed4161123d0530fb7e39a80f1" category="cell">AFF C 系列</block>
-  <block id="9c5fd388a2ee6ceb65d30336d2fec257" category="cell">C30</block>
-  <block id="6488de7d247a06b442a5018b0d91bfc6" category="inline-link">AFF C 系列文件</block>
-  <block id="369fac7daa2f8b7e7c135f15db1bd0ed" category="cell"><block ref="369fac7daa2f8b7e7c135f15db1bd0ed" category="inline-link-rx"></block></block>
-  <block id="e74e816dd7cc6f70a065fed35442bdba" category="cell">ASA A 系列</block>
-  <block id="f19fecfa4cd02d0595de1ba8660070b8" category="inline-link">ASA A 系列文件</block>
-  <block id="411495c9b6bc6c820abb1fe113fdc63d" category="cell"><block ref="411495c9b6bc6c820abb1fe113fdc63d" category="inline-link-rx"></block></block>
-  <block id="eab12603d471c1206ae118fe245f03eb" category="cell">ASA C 系列</block>
-  <block id="06ebd0c9afc2e42f48a4879187f7162c" category="inline-link">ASA C 系列文件</block>
-  <block id="6ccb8264c017c1314bf9d314e2d2275c" category="cell"><block ref="6ccb8264c017c1314bf9d314e2d2275c" category="inline-link-rx"></block></block>
-  <block id="149f0ea389848f479bd80af6375b383b" category="cell">FAS</block>
-  <block id="82d9aaf29409f2b1321f31e9bf87f742" category="cell">FAS 2750</block>
-  <block id="b547a5d94845d9471423356c66873bd5" category="inline-link">FAS 說明文件</block>
-  <block id="3948a9d911a4ab4fca76092210e66452" category="cell"><block ref="3948a9d911a4ab4fca76092210e66452" category="inline-link-rx"></block></block>
-  <block id="7ec34d91a495121e75b876eb6b33c2ae" category="cell">FAS 2820</block>
-  <block id="c7dd26489686f8b76f6a64795f0045f8" category="paragraph">儲存控制器至少需要一個 NetApp 磁碟櫃。</block>
-  <block id="228f628b17255facbba7695d9af12a80" category="cell"><block ref="228f628b17255facbba7695d9af12a80" category="inline-link-rx"></block></block>
-  <block id="c740766e109ecd59d174dc2f65176922" category="cell">NS224 搭配 NSM100B</block>
-  <block id="2a5e4b862dd1bf5a3b1fa887c48e6ea0" category="paragraph">下表列出 NetApp 軟體授權選項。</block>
-  <block id="a2a63972aa167453b51ce7c5db322251" category="cell">ONTAP One 或 ONTAP base 適用於 AFF 和 FAS</block>
-  <block id="bb6c553e84ebdbce5d573cf1afb7fecb" category="cell">適用於 ASA 的 ONTAP One for SAN</block>
-  <block id="9bbe0d8f02cd9da80ec2e9b5e267d5d9" category="paragraph">下表列出 NetApp AFF、ASA 和 FAS 儲存系統的 NetApp 支援授權選項。</block>
-  <block id="794dd8ccd88e23abed65ea05ccfbfe66" category="summary">FlexPod Express 是預先設計的最佳實務架構，它是基於 Cisco Unified Computing System（Cisco UCS）和 Cisco Nexus 系列交換器所建置，儲存層則使用 NetApp AFF、ASA 或 FAS 儲存系統建置。</block>
-  <block id="52303a3cfdeba922a67c70e8c2711113" category="paragraph">FlexPod Express 是一種預先設計、符合最佳實務的架構，它是基於 Cisco Unified Computing System（Cisco UCS）和 Cisco Nexus 系列交換器所建置，儲存層則採用 NetApp AFF、ASA 或 FAS 入門級儲存系統。FlexPod Express 是一個適用於執行各種虛擬化 Hypervisor、裸機作業系統（OS）和企業工作負載的理想平台。</block>
-  <block id="068b348153ec2cbed13b621268bdd199" category="paragraph">FlexPod Express 不僅提供基本配置，而且具有靈活性，可調整大小和最佳化，以適應許多不同的使用情境和要求。</block>
-  <block id="2a409f1fa2a150f2253ac127248488e4" category="paragraph">FlexPod Express 支援執行 NetApp ONTAP 作業系統的儲存系統。</block>
-  <block id="7cd01b7a129748a09b50303734dbf37d" category="paragraph">NetApp ONTAP 軟體是運作在 AFF、ASA 和 FAS 儲存系統上的作業系統。ONTAP 提供高度可擴充的儲存架構，可實現不中斷營運、不中斷升級和敏捷的資料基礎架構。</block>
+  <block id="54a9695c1cd20fe3c1b3de7d2d0849da" category="section-title">下載 ESXi 6.7 Cisco 自訂鏡像</block>
+  <block id="a6b0b2988c5db0d3f9904da3baa7fb5d" category="inline-link">Broadcom 支援入口網站下載網站</block>
+  <block id="322c1bf6212e7c54c320d39396d4813e" category="list-text">導覽至<block ref="5d4583965b99d38471744b638e2c1be9" category="inline-link-rx"></block>自訂 ISO 頁面。</block>
+  <block id="5dfe98d918fd68be7991890eae196c52" category="list-text">導航至<block ref="bac24f0712f47dd060823c6839812795" prefix=" " category="inline-code"></block>。</block>
+  <block id="a4bb6a234ad5eb67804c313bb9a8b3db" category="list-text">登入<block ref="3a2c98d485b24d204e43f97cb6f53439" prefix=" " category="inline-code"></block>，輸入使用者名稱 root，然後輸入 root 密碼。</block>
+  <block id="9155aed337ee7c7997d16763eddc06ed" category="section-title">下載 ESXi 6.7U2 Cisco 自訂鏡像</block>
+  <block id="fcee695f2f7ba8610259081393553d28" category="paragraph">請依照控制器的實體安裝步驟進行操作<block ref="55c19dfac75c3e1e113dbbd2306df844" category="inline-link-rx"></block>。</block>
+  <block id="40d02a779b2450667ba336919cc7e091" category="inline-link">Broadcom 支援入口網站</block>
+  <block id="44980665d39eb3ec10ac74979c971f75" category="paragraph">此 VMware ESXi 6.7U1 ISO 可從<block ref="62d63f643136def6e65f14623c41490c" category="inline-link-rx"></block>下載。</block>
+  <block id="9d83aeccf8d8debf48e5f4fd74b3d3cf" category="inline-link"><block ref="9d83aeccf8d8debf48e5f4fd74b3d3cf" category="inline-link-rx"></block></block>
+  <block id="743c0a3df47aac48f177d62ceb7f336d" category="list-text">登入 Broadcom 支援入口網站下載網站：<block ref="e87d8afd489832c9d1fd6eec5d27241b" category="inline-link-rx"></block>。</block>
+  <block id="f7156768144eb78e823d0ea5e26d3d42" category="list-text">您需要 Broadcom 使用者 ID 和密碼。請尋找 VMware vSphere Hypervisor (ESXi) 自訂 ISO 映像。</block>
+  <block id="6506f4046660ce0a9578499159b36cf4" category="list-text">下載適用於 ESXi 6.7U1 安裝光碟的 Cisco 自訂映像。</block>
+  <block id="902f3bc4fd17fe0c7c7b29b3a9e8b8fb" category="inline-link"><block ref="902f3bc4fd17fe0c7c7b29b3a9e8b8fb" category="inline-link-rx"></block></block>
+  <block id="479ab8e92c9bac02359037d3bcc3b88b" category="list-text"><block ref="479ab8e92c9bac02359037d3bcc3b88b" category="inline-link-rx"></block></block>
+  <block id="77792692000223d564fe9c4202e6912a" category="inline-link"><block ref="77792692000223d564fe9c4202e6912a" category="inline-link-rx"></block></block>
+  <block id="637d31c7df418f03993d74ecc50deacf" category="paragraph"><block ref="637d31c7df418f03993d74ecc50deacf" category="inline-link-rx"></block></block>
+  <block id="cc910127c1a0f3009d24973fab296857" category="paragraph">NetApp ONTAP 軟體安裝於所有 NetApp FAS、AFF 和 AFF All SAN Array （ASA） 系統上。FlexPod 已通過 ONTAP 軟體驗證，提供高度可擴充的儲存架構，實現不中斷營運、不中斷升級及靈活的資料基礎架構。</block>
+  <block id="739cf53af4853827057722abde32c3cf" category="cell"><block ref="739cf53af4853827057722abde32c3cf" category="inline-link-rx"></block></block>
+  <block id="ced9b756e7f783d951a40abd247b9d8b" category="cell"><block ref="ced9b756e7f783d951a40abd247b9d8b" category="inline-link-rx"></block></block>
+  <block id="8ee7373db859b7cc6585ca3318999cc0" category="cell"><block ref="8ee7373db859b7cc6585ca3318999cc0" category="inline-link-rx"></block></block>
+  <block id="1ac623e46f5ff04e5081a3242f25e551" category="cell"><block ref="1ac623e46f5ff04e5081a3242f25e551" category="inline-link-rx"></block></block>
+  <block id="6ae41a6d5ab9be50ac1fd70e15a3605b" category="cell"><block ref="6ae41a6d5ab9be50ac1fd70e15a3605b" category="inline-link-rx"></block></block>
+  <block id="161416633732939174f0084bee4e12dd" category="paragraph">目前 Cisco UCS Mini 平台支援的 Cisco UCS B 系列刀鋒伺服器為 B200 M5 和 B420 M4。其他刀鋒伺服器將在 Cisco UCS Mini 平台獲得支援後列入下表。</block>
+  <block id="f38b8b587e9f14b9e73f43bca53aaca6" category="cell">Cisco UCS B系列伺服器</block>
+  <block id="3f39eebc8fd17c2feb641e92c34d12c0" category="cell">UCSB-B200-M5</block>
+  <block id="0c62844a851844dee772ec980d29820f" category="cell"><block ref="0c62844a851844dee772ec980d29820f" category="inline-link-rx"></block></block>
+  <block id="9c08b0397caf8f25e294bcbc2a0e51e0" category="cell">UCSB-B200-M4</block>
+  <block id="ac1175516123e986fbebc9c380c91cb2" category="cell"><block ref="ac1175516123e986fbebc9c380c91cb2" category="inline-link-rx"></block></block>
+  <block id="1bb38dda39bfc4b450ad1fa6b1f2f10f" category="cell">UCSB-B420-M4</block>
+  <block id="5d83ae1d88bf36bed0b1d2449b04f153" category="cell"><block ref="5d83ae1d88bf36bed0b1d2449b04f153" category="inline-link-rx"></block></block>
+  <block id="5cc6fea3917960a74b91b7c9e2facb0e" category="paragraph">Cisco UCS C 系列刀鋒伺服器提供單機架單元 （RU） 和雙機架單元 （RU） 兩種規格，並配備多種 CPU、記憶體和 I/O 選項。下表所列的零件號碼為基礎伺服器的零件號碼，不包含 CPU、記憶體、磁碟機、PCIe 卡或 Cisco FEX。FlexPod 提供並支援多種配置選項。</block>
+  <block id="efb31487552780cc76e9a29d20184693" category="cell">UCSC-C220-M4S</block>
+  <block id="5f3ecc5f801e8e8bb5df99c057b684fa" category="cell">UCSC-C240-M4S</block>
+  <block id="1ba4695c60f2d279f93eed3eb2152ba9" category="cell"><block ref="1ba4695c60f2d279f93eed3eb2152ba9" category="inline-link-rx"></block></block>
+  <block id="1ca9137ed7dc87266aed4d3e04a87f0d" category="cell">UCSC-C460-M4</block>
+  <block id="4135b1f88de8126a1b6c689f2a5518c9" category="cell"><block ref="4135b1f88de8126a1b6c689f2a5518c9" category="inline-link-rx"></block></block>
+  <block id="f43aaff2468c45d0f90ab6e5ed1b9cf5" category="paragraph">所有 FlexPod Express 架構都需要備援交換器。</block>
+  <block id="52915eb93f26eeee40e30d06f695984e" category="paragraph">FlexPod Express 搭配 NetApp AFF 或 FAS 架構，使用 Cisco Nexus 31108 交換器建置。FlexPod Express 搭配 Cisco UCS Mini （Cisco UCS 管理型）架構，已使用 Cisco Nexus 3524 交換器完成驗證。此組態也可使用標準交換器部署。</block>
+  <block id="fc9e9a0b578a9b8d829c2cb6bd084c68" category="paragraph">FlexPod Express with E-Series 可以與標準交換器一起部署。</block>
+  <block id="4f96a991d5f91ae3be3cc9021d2c6e2b" category="paragraph">下表列出 Cisco Nexus 系列機箱的零件號碼；其中不包括額外的 SFP 或附加模組。</block>
+  <block id="2bbe88f083e6858cdfe374ccaf6be275" category="cell">Cisco Nexus 系列交換機</block>
+  <block id="5ad9a3010c89c80bb3aa7a0affd03857" category="cell">N3K-C3048TP-1GE</block>
+  <block id="bca15c4c99e7cd3f6ddc54c4b4612d5d" category="cell"><block ref="bca15c4c99e7cd3f6ddc54c4b4612d5d" category="inline-link-rx"></block></block>
+  <block id="f9be542096d7b1ab5d2d93607faeda17" category="cell">N3K-C31108PC-V</block>
+  <block id="3707cb9d69f6ca356e13d71259590dd3" category="cell">N9K-C9396PX</block>
+  <block id="3b73c0ec0414b0e1e64751a894762753" category="cell"><block ref="3b73c0ec0414b0e1e64751a894762753" category="inline-link-rx"></block></block>
+  <block id="c7e9fa4b09131bf2dca41fb8fb160730" category="cell">Cisco Nexus 3172</block>
+  <block id="8c04dff9e93fca86fc136c09b31a6a42" category="cell">N3K-C3172</block>
+  <block id="603af49aa411100c77de6e505d0b6801" category="cell"><block ref="603af49aa411100c77de6e505d0b6801" category="inline-link-rx"></block></block>
+  <block id="11651dc58d0730f5034b8d0eb347e9a6" category="paragraph">在 FlexPod Express 架構中的所有 Cisco 設備都需要有效的 SMARTnet 支援合約。</block>
+  <block id="41ff4d4c2bfb1ad6625676e61801ba88" category="admonition">所需的授權及其零件編號應由您的銷售代表核實，因為不同產品的授權可能有所不同。</block>
+  <block id="8f16724e5369868d6e34483257829468" category="cell">SMARTnet 24x7x4</block>
+  <block id="f312eeb62002bbf3617b218baf8ae4da" category="cell"><block ref="f312eeb62002bbf3617b218baf8ae4da" category="inline-link-rx"></block></block>
+  <block id="28a658c09df622f2d6f953483678d3a2" category="section-title">FlexPod Express 與 NetApp FAS 的連線要求</block>
+  <block id="2467c21b33489260420ee026bba07a71" category="paragraph">FlexPod Express 與 NetApp FAS 的連線需求包括：</block>
+  <block id="e8a8ee9f387175a38ab3cd7ab8c9c450" category="list-text">NetApp FAS 儲存控制器必須直接連接到 Cisco Nexus 交換器，但在 Cisco UCS 管理的設定中除外；在該設定中，儲存控制器連接到交換矩陣互連。</block>
+  <block id="20f5c05d802f86a9dc5a71123dcf7f90" category="list-text">需要使用虛擬連接埠通道 (vPC) 將 Cisco Nexus 3000/9000 系列交換器連接到 NetApp 儲存控制器。</block>
+  <block id="e504d8cf4401a55e1b0165ee1b3e65c1" category="section-title">FlexPod Express 與 NetApp E 系列的連線需求</block>
+  <block id="828aa04bde11fb714ecad3836974965c" category="paragraph">FlexPod Express 與 E 系列的連線需求包括：</block>
+  <block id="78f7b3e86fb75185493f675cd8008b43" category="list-text">E-Series 儲存控制器必須直接連接到光纖互連網路。</block>
+  <block id="5b364171b0c8793377902d6d0651c2ca" category="list-text">核心 FlexPod 元件之間不應串聯放置任何其他設備。</block>
+  <block id="e8f973aa66dd486a45698bd79073f3a3" category="list-text">在交換矩陣互連和乙太網路交換器之間需要 vPC。</block>
+  <block id="a11b95a855c1b54b057581b64e849672" category="section-title">FlexPod Express 與 NetApp AFF 的連線需求</block>
+  <block id="16badd8a3ee31de86136a03964051924" category="paragraph">FlexPod Express 與 NetApp AFF 的連線需求包括：</block>
+  <block id="20a982ddbb8534dcddbeb2403b3aa48b" category="list-text">NetApp AFF 儲存控制器必須直接連接到 Cisco Nexus 交換器，但在 Cisco UCS 管理的組態中除外，在該組態中，儲存控制器連接到網路交換矩陣互連。</block>
+  <block id="929267c420e3d3c55cf94c77cb6278ff" category="paragraph">共有三個FlexPod平台：</block>
+  <block id="b751a075630ee799e9ae603044754240" category="list-text">*FlexPod Datacenter。*此平台是可大規模擴充的虛擬資料中心基礎架構、適用於工作負載企業應用程式、虛擬化、VDI 及公有雲和私有雲。FlexPod Datacenter 有自己的規格、記錄於<block ref="c74831bb1a85ac0f8575eb8eeac86329" category="inline-link-rx"></block>。</block>
+  <block id="003f30db243c2dbde6df76f3c72b3ee0" category="section-title">FlexPod Express 搭配 NetApp FAS</block>
+  <block id="84daec59b75a10e0cd013d1db7a434f5" category="paragraph">使用 NetApp FAS 控制器作為底層儲存的 FlexPod Express 解決方案，其硬體需求包括本節所述的組態。</block>
+  <block id="d889bada95a4507597263f4085f7eb35" category="section-title">基於 CIMC 的配置（獨立機架伺服器）</block>
+  <block id="dbf88aea6907acd1a2ddf8af6778500b" category="paragraph">Cisco Integrated Management Controller （CIMC） 設定包含下列硬體元件：</block>
+  <block id="77adde3767ae2cc82097445aa8b15e86" category="list-text">兩台 10Gbps 標準乙太網路交換器採用冗餘配置（建議使用 Cisco Nexus 31108，也支援 Cisco Nexus 3000 和 9000 型號）</block>
+  <block id="98b00d8d43ad07f702f22f5c8b541ca2" category="list-text">Cisco UCS C系列獨立機架式伺服器</block>
+  <block id="e5974ac049da72bf0d9c2228215d373b" category="list-text">兩台 AFF C190、AFF A250、FAS2600 或 FAS 2700 系列控制器以高可用性 （HA） 配對組態部署為雙節點叢集</block>
+  <block id="1bd4b426108264f2676dc78d9d2018da" category="section-title">Cisco UCS 管理配置</block>
+  <block id="b2d15a256201c5ef01bc4171f55f63a5" category="paragraph">Cisco UCS 管理的確認流程包含下列硬體元件：</block>
+  <block id="ff7cdf168363b590d56a466baa3afde4" category="list-text">兩台採用冗餘配置的 10Gbps 標準乙太網路交換器（建議使用 Cisco Nexus 3524）</block>
+  <block id="406d169fa8f2549e3ad818dfcdb19b11" category="list-text">一台 Cisco UCS 5108 交流電 （AC） 刀片伺服器機箱</block>
+  <block id="086baf60c6e72c66b3d26f73749806e4" category="list-text">兩台 Cisco UCS 6324 交換矩陣互連設備</block>
+  <block id="441c43a56d0619fd5ae52f04a07feaf6" category="list-text">Cisco UCS B-Series 伺服器（至少四台 Cisco UCS B200 M5 刀鋒伺服器）</block>
+  <block id="6e1c422f8099cdf6eb51d54a7f387fc7" category="list-text">兩台 AFF C190、AFF A250、FAS2750 或 FAS2720 控制器組成 HA 配對配置（每台控制器需要兩個可用的統一目標介面卡 2 [UTA2] 連接埠）</block>
+  <block id="0a83f68af275e8c4353563c551c8994b" category="section-title">FlexPod Express 搭配 E-Series</block>
+  <block id="b0a4ddda393f203e4b071531f5a7f619" category="paragraph">FlexPod Express 搭配 E 系列入門級配置的硬體需求包括：</block>
+  <block id="5b0208ade6c01d9081b5843bdfb89e40" category="list-text">一台 Cisco UCS Mini 機箱 5108 AC2 或 DC2（Cisco UCS 6324 交換矩陣互連僅支援 AC2 和 DC2 機箱）</block>
+  <block id="6b83128e0bebf22e449e2c64d1d04814" category="list-text">Cisco UCS B 系列伺服器（至少兩台 Cisco UCS B200 M4 刀鋒伺服器）</block>
+  <block id="78b8483558b26cd46fee2865b0cd79f8" category="list-text">一套配備至少 12 個磁碟機的 E-Series E2824 儲存系統的 HA 配對配置</block>
+  <block id="a280fbd318da098dcb3ca49ce43a800a" category="list-text">兩台 10Gbps 標準乙太網路交換器採用冗餘配置（可使用資料中心現有的交換器）</block>
+  <block id="de4db249ee3e2be867ce1546536f4ab0" category="paragraph">這些硬體組件是建置解決方案初始配置所必需的；如有需要，可以添加額外的刀鋒伺服器和磁碟機。E-Series E2824 儲存系統可以升級到更高等級的平台，也可以作為全快閃系統運作。</block>
+  <block id="986180b457f622bd099ee2687cd8378d" category="section-title">FlexPod Express with NetApp AFF 或 FAS 的軟體需求</block>
+  <block id="be062f8ed4a46c02546491540d98e022" category="paragraph">FlexPod Express with NetApp FAS 的軟體需求包括：</block>
+  <block id="d3426be49616eaf1b7e70f69c8de7848" category="list-text">ONTAP 9.1 或更新版本</block>
+  <block id="224933be9d4d10a0fbff60cbd71f2cb1" category="list-text">Cisco NX-OS 版本 7.0(3)I6(1) 或更高版本</block>
+  <block id="e076f9c04b344d5f8b351379153e417e" category="list-text">在 Cisco UCS 管理的設定中，Cisco UCS Manager UCS 4.0(1b)</block>
+  <block id="4f57ab945a6e1a3245b614a26defc06b" category="paragraph">所有軟體都必須在<block ref="c096c26abcc89f6d566b79687074dc7b" category="inline-link-rx"></block>中列出並獲得支援。某些軟體功能可能需要比先前架構中列出的最低版本更新的程式碼版本。</block>
+  <block id="4ba8114dd624dc2130553b7742f70d88" category="section-title">NetApp FAS</block>
+  <block id="6f4427b59f55f6827f3d3145a95ee28d" category="paragraph">在 FlexPod Express 架構中，需要備援的 AFF C190、AFF A220 或 FAS2750 系列控制器。這些控制器執行 ONTAP 軟體。訂購儲存控制器時，可以預先在控制器上載入偏好的軟體版本。對於 ONTAP，可以使用一對叢集互連交換器或在無交換器叢集組態中部署叢集。</block>
+  <block id="791ddb7a7ddefe9ef8c91c03bbd4fd71" category="paragraph">下表所列零件編號適用於空控制器。根據所選儲存平台，可提供不同的選項和配置。有關這些附加元件的詳細資訊，請諮詢您的銷售代表。</block>
+  <block id="3eab1bbd4a3f05ea0803f3bcf5fac9e5" category="cell">FAS2750</block>
+  <block id="a95aa28d4b3530db8d3db453e8c20ab5" category="cell"><block ref="a95aa28d4b3530db8d3db453e8c20ab5" category="inline-link-rx"></block></block>
+  <block id="16327cd02ebd080bd4ab1439ff960ddc" category="cell">FAS2720</block>
+  <block id="b6000f9eed7f8ea9ee4632bd2f77961a" category="cell">AFF C190</block>
+  <block id="cbea754cca3463101f74bfb7d1bc03d6" category="cell"><block ref="cbea754cca3463101f74bfb7d1bc03d6" category="inline-link-rx"></block></block>
+  <block id="8fd3ca5f66dff5be16e79560dd28171e" category="cell">AFF A220</block>
+  <block id="3781cddbae6140211cb434f6417882ce" category="section-title">E系列儲存</block>
+  <block id="4902aa44336408dddd38c0479fe504ef" category="paragraph">FlexPod Express 架構需要一組 NetApp E2800 系列控制器的 HA 配對。這些控制器執行 SANtricity OS。</block>
+  <block id="53c263cd06df58fafb10fa135e0f2e44" category="cell"><block ref="53c263cd06df58fafb10fa135e0f2e44" category="inline-link-rx"></block></block>
+  <block id="de2be91fbb0de06f0b2732c5a99e11c3" category="section-title">NetApp 乙太網路擴充模組</block>
+  <block id="8dfa7ec1924d6836cd846ce203c23dc5" category="paragraph">下表列出 NetApp FAS10GbE 介面卡選項。</block>
+  <block id="7f3028ae831db8dc789fcaf5083b67a1" category="cell">NetApp X1117A</block>
+  <block id="7ebf4cf225b0039554b11ba9739e96f6" category="cell"><block ref="7ebf4cf225b0039554b11ba9739e96f6" category="inline-link-rx"></block></block>
+  <block id="032ae7705e1b64f4c8f06ff0e9b7e2c3" category="paragraph">FAS2500 和 2600 系列儲存系統均配備板載 10GbE 連接埠。</block>
+  <block id="e23d7f86a0278da7e86ce88ca3098b9f" category="paragraph">NetApp X1117A 適配器適用於 FAS8020 儲存系統。</block>
+  <block id="f54e4b7933ef38204949d3a83481962e" category="paragraph">下表列出 E-Series 10GbE 介面卡選項。</block>
+  <block id="989d8b1efd9728a1f4403d859cfafa07" category="cell">10GbE iSCSI/16Gb FC 4埠</block>
+  <block id="8deedaecaf3bd8a376053c8fe5b36120" category="cell">10GbE iSCSI/16Gb FC 2 埠</block>
+  <block id="1bc638deca35e86ccf9d6865333e96a6" category="paragraph">E2824 系列儲存系統具有板載 10GbE 連接埠。</block>
+  <block id="97b5213b54614d160f129b298de19346" category="paragraph">10GbE iSCSI/16Gb FC 4 連接埠主機介面卡 （HIC） 可用於增加連接埠密度。</block>
+  <block id="aff526161ed70a6f9d6b85b6800e12d8" category="paragraph">根據 SANtricity OS 中啟動的功能，板載連接埠和 HIC 可作為 iSCSI 適配器或 FC 適配器使用。</block>
+  <block id="8dc2a05b711e433f817d77bc37b8e318" category="paragraph">有關支援的介面卡選項的詳細資訊，請參閱<block ref="ad8f1191d953a17400c53bce24cbde3e" category="inline-link-rx"></block>的介面卡部分。</block>
+  <block id="e587981e2cc19bde7c343adbd392b487" category="paragraph">儲存控制器至少需要一個 NetApp 磁碟櫃。所選的 NetApp 磁碟櫃類型決定了該磁碟櫃內可用的磁碟機類型。</block>
+  <block id="aa2619dafbcb6dd49712ffa15d6e70ca" category="paragraph">FAS2700 和 FAS2600 系列控制器提供包含雙儲存控制器和硬碟的整合配置，所有硬碟均安裝在同一機殼內。此配置支援 SATA 或 SAS 硬碟；因此，除非效能或容量需求需要更多硬碟位，否則無需額外的外部硬碟架。</block>
+  <block id="01c732ddbe5cf9a405604940095bb567" category="paragraph">所有磁碟架零件編號均指配備兩個 AC PSU 的空磁碟架。如需其他零件編號，請諮詢您的銷售代表。</block>
+  <block id="2ccff5b6fc2b318863489fe23166a10f" category="paragraph">磁碟機的零件號碼會根據您購買的磁碟尺寸和外形規格而有所不同。請諮詢您的銷售代表以取得更多零件號碼。</block>
+  <block id="44f1e702e4381b727b9b467e6deb1457" category="cell">DS212C-0-12</block>
+  <block id="e19c8e25dcabb60416fbaf4aa1df046b" category="inline-link-macro">磁碟櫃和儲存媒體技術規格 NetApp Hardware Universe 支援的磁碟機</block>
+  <block id="2bec892ce742e8c73332c7bc09f14b12" category="cell"><block ref="2bec892ce742e8c73332c7bc09f14b12" category="inline-link-macro-rx"></block></block>
+  <block id="633f96f7409deb7e8f37e73fd09d0b49" category="cell">DS224C-0-24</block>
+  <block id="8420e25ff187188cdf1350dea3e0da50" category="cell">DS460C-0-60</block>
+  <block id="947b2a122e29ff37898607afe1982ac4" category="inline-link-macro">磁碟櫃和儲存媒體技術規格 NetApp Hardware Universe 支援的磁碟機</block>
+  <block id="5ff0f5fdd5ee93de0b72179921b632c7" category="cell"><block ref="5ff0f5fdd5ee93de0b72179921b632c7" category="inline-link-macro-rx"></block></block>
+  <block id="5c8ec48c5b82542591c0713df834204e" category="cell">X559A-R6</block>
+  <block id="be38be39f95912dc5d7540b6eab3675b" category="cell">X24M-R6</block>
+  <block id="a35582cda1497b785cabaa95e67fda6e" category="cell">DS4486</block>
+  <block id="dd80b8e252131fa8d01cd79345fa248a" category="cell">DS4486-144TB-R5-C</block>
+  <block id="78377b1fee9a1d92a41f9a862331f66a" category="paragraph">對於機殼內不包含任何硬碟的儲存控制器，至少需要一個 NetApp 磁碟架。所選的 NetApp 磁碟架類型決定了該磁碟架內可用的硬碟類型。</block>
+  <block id="6a70b0dc6f4898b15d42b97a834778d0" category="paragraph">E2800 系列控制器提供一種配置，包含雙儲存控制器以及安裝在支援的磁碟機櫃內的磁碟。此配置可選配 SSD 或 SAS 硬碟。</block>
+  <block id="f69937b358d3964065cdd4699ed6cc71" category="paragraph">下表列出了 NetApp 磁碟櫃選項以及每種磁碟櫃類型支援的磁碟機，您可以在 NetApp Hardware Universe 上找到這些資訊。請點選 Hardware Universe 連結，選擇您正在使用的 ONTAP 版本，然後選擇磁碟櫃類型。在磁碟櫃影像下方，點選 Supported Drives 即可查看特定 ONTAP 版本和磁碟櫃支援的磁碟機。</block>
+  <block id="57bbc77af8a105b9a809e104576e41f3" category="cell">E-X5730A-DM-0E-C</block>
+  <block id="b6392f00acb980e1e1e3a8d82c32aa0a" category="cell">E-X5721A-DM-0E-C</block>
+  <block id="1968845ff3f8eb770c5023b2b97452ca" category="cell">E-X5723A-DM-0E-C</block>
+  <block id="0af8a804b712d0825208533faf65cb71" category="cell"><block ref="0af8a804b712d0825208533faf65cb71" category="inline-link-macro-rx"></block></block>
+  <block id="e9cdd46337310a645aec0a674a365f9c" category="paragraph">下表列出了 NetApp FAS 軟體授權選項。</block>
+  <block id="fa222d7270c823d42a7aa65b759f6af1" category="cell">基礎叢集授權</block>
+  <block id="b3a478327ab835bf2518a6dcd305aca6" category="paragraph">下表列出了 E 系列軟體授權選項。</block>
+  <block id="5a020197814e93aa70dec9cef71cbea2" category="cell">標準配置</block>
+  <block id="ad28f33b7e604cc3e6f9e3bdbb376b87" category="cell">進階功能</block>
+  <block id="1d6cb8d880e983c90f1b5fe9f10dec29" category="paragraph">下表列出 NetApp FAS 的 NetApp 支援授權選項。</block>
+  <block id="813e53e7bb54b15e72348ce9fe93dbdc" category="paragraph">下表列出 NetApp E-Series 儲存的支援授權選項。</block>
+  <block id="ef63debe35aa2ea907cf5d6ba93bbca3" category="cell">硬體支援 Premium 4 小時現場服務；服務期限：36 個月</block>
+  <block id="3700267a6a1c84c57290ba35d60b6065" category="cell">SVC-O2-4HR-E</block>
+  <block id="9f65492afee4fdfba75618fed6d0f9dd" category="cell">軟體支援</block>
+  <block id="35650dfddfa3359e3aa85c6716443b52" category="cell">SW-SSP-O2-4HR-E</block>
+  <block id="6fa548f2ea82ea7bbec17cd526290147" category="cell">初始安裝</block>
+  <block id="bb0003710f860d01ecd5e29fd0d58e46" category="cell">SVC-INST-O2-4HR-E</block>
+  <block id="71af4499971f2d160ae892ec655fadf6" category="list-text">所有軟體元件都必須在<block ref="c096c26abcc89f6d566b79687074dc7b" category="inline-link-rx"></block>中列出並受到支援。</block>
+  <block id="cbd798af29c6d6c7309a2099d7629d42" category="summary">FlexPod Express 是一個預先設計的最佳實務架構，以 Cisco 統一運算系統 （Cisco UCS） 和 Cisco Nexus 系列交換器為基礎構建，儲存層則使用 NetApp FAS 或 NetApp E-Series 儲存設備構建。</block>
+  <block id="835c125660e1b86697ee2951435a5d2d" category="doc">TR-4293：FlexPod Express 技術規格</block>
+  <block id="59dad7986b7e1d4c7d25feadecf54af7" category="paragraph">Karthick Radhakrishnan、Arvind Ramakrishnan、Lindsey Street、Savita Kumari、NetApp</block>
+  <block id="01b5eb7de901fc377f6709faad98f27e" category="paragraph">FlexPod Express 是一個預先設計、符合最佳實務的架構，它是基於 Cisco 統一運算系統 （Cisco UCS） 和 Cisco Nexus 系列交換器構建，儲存層則採用 NetApp FAS 或 NetApp E-Series 儲存。FlexPod Express 是一個適用於執行各種虛擬化 Hypervisor、裸機作業系統 （OS） 和企業級工作負載的理想平台。</block>
+  <block id="b57f077428dce4df34f2d8532f2648c5" category="paragraph">FlexPod Express 不僅提供基本配置，還具有高度的靈活性，可根據不同的使用情境和需求進行調整和最佳化。本文檔依所使用的儲存系統對 FlexPod Express 配置進行分類，分為 FlexPod Express with NetApp FAS 和 FlexPod Express with E-Series 兩類。</block>
+  <block id="5906d6dbdea0ad13566afd9cead9fc2c" category="paragraph">FlexPod Express 支援執行 NetApp ONTAP 或 SANtricity 作業系統的儲存系統。</block>
+  <block id="07bb9fea02eb345871ff44646d8ceb97" category="paragraph">NetApp ONTAP 軟體是運作在 AFF 和 FAS 儲存系統上的作業系統。ONTAP 提供高度可擴充的儲存架構，可實現不中斷營運、不中斷升級及靈活的資料基礎架構。</block>
+  <block id="02a5537e181da938c0f5cb453ba3d4a7" category="section-title">E-Series SANtricity 軟體</block>
+  <block id="0ba0549652aeb08deee908e7e20e4817" category="paragraph">E-Series SANtricity 軟體是運作在 E-Series 儲存系統上的作業系統。SANtricity 提供高度靈活的系統，可滿足各種應用程式需求，並提供內建的高可用性和多種資料保護功能。</block>
+  <block id="54ea526e0f7043f1dc938cd7369a4327" category="inline-link">SANtricity 產品頁面</block>
+  <block id="6b5301ce1cf7e0e48684f0dfb047d000" category="paragraph">如需更多資訊，請參閱<block ref="886f8cec6f6fad388084013f5ad16d82" category="inline-link-rx"></block>。</block>
+  <block id="bcf39a73b92a800a77b3a63b0bf1937c" category="paragraph">FAS2600 和 FAS2500 系列儲存系統均配備板載 10GbE 連接埠。</block>
+  <block id="af112978bf9cee28fb168e71aab3d4ae" category="list-text">NetApp MongoDB 解決方案簡介（需要 NetApp 登入）</block>
+  <block id="a8bddb0790f3d82f5935ad877c2c8f3d" category="inline-link"><block ref="a8bddb0790f3d82f5935ad877c2c8f3d" category="inline-link-rx"></block></block>
+  <block id="594630526d34281f26c3bf5187f5e3d8" category="paragraph"><block ref="594630526d34281f26c3bf5187f5e3d8" category="inline-link-rx"></block></block>
+  <block id="9072e73f90a3122db465943dc5f6d767" category="paragraph">NetApp MetroCluster 配置被全球數千家企業用於實現高可用性 （HA）、零資料遺失以及資料中心內外不間斷的運作。MetroCluster 是 ONTAP 軟體的一項免費功能，可在位於不同位置或故障網域的兩個 ONTAP 叢集之間同步鏡像資料和組態。MetroCluster 透過自動處理兩個目標，為應用程式提供持續可用的儲存：透過同步鏡像寫入叢集的資料，實現零復原點目標 （RPO）。透過鏡像組態並自動存取第二個站台的資料，實現接近零復原時間目標 （RTO）。MetroCluster 透過在兩個站台的兩個獨立叢集之間自動鏡像資料和組態，提供簡便性。在一個叢集中佈建儲存時，它會自動鏡像到第二個站台的第二個叢集。NetApp SyncMirror 技術提供所有資料的完整副本，實現零 RPO。因此，一個站台的工作負載可以隨時切換到另一個站台，並在不遺失資料的情況下繼續提供資料服務。更多資訊請參閱<block ref="252ef593d9bf7568715463e2b3001bf8" category="inline-link-rx"></block>。</block>
+  <block id="f6ffd6bf62da0ce01cbe488ec1418d21" category="paragraph">我們所熟知的醫療保健體系圍繞著醫療服務提供者（醫生、護士、放射科醫生、醫療器材技術人員等）和病人。隨著病患和醫療服務提供者之間的聯繫日益緊密，地理位置僅成為一個資料點，底層平台在醫患雙方需要時能否及時可用就顯得尤為重要。該平台必須兼具高效性和長期成本效益。對於致力於進一步降低病患照護成本的醫療服務<block ref="ab98a32d34bc836c52b92cfa7414def8" category="inline-link-rx"></block>組織（ACOs）而言，高效率的平台將發揮至關重要的作用。</block>
+  <block id="eac92879caa54910e9169210a18a9d55" category="inline-link"><block ref="eac92879caa54910e9169210a18a9d55" category="inline-link-rx"></block></block>
+  <block id="8dc3cc0536a8251a95cbfb9dd2145b04" category="paragraph"><block ref="8dc3cc0536a8251a95cbfb9dd2145b04" category="inline-link-rx"></block></block>
+  <block id="45c6f93bf9f8120226b783ad681fec82" category="list-text">前往<block ref="1a6ddf831e19d017e65c54311bc584aa" category="inline-link-rx"></block></block>
+  <block id="3913141072581612ae2bfd91092b484e" category="paragraph">您可以觀看使用 NetApp Cloud Insights 評估本機環境中資源的影片示範<block ref="b2bb736e53b4c001a8a17d1e11b4d1bf" category="inline-link-rx"></block>。</block>
+  <block id="52a79d4479bf84a37e89c5b8ec6b4c7f" category="paragraph">您可以觀看使用 NetApp Cloud Insights 監控基礎架構和設定基礎架構警報閾值的影片示範<block ref="7bc8151d4d6167d26ea25f36941d767a" category="inline-link-rx"></block>。</block>
+  <block id="c890cbf91870285dfdd5a206c2fb76d6" category="paragraph">您可以觀看使用 NetApp Cloud Insights 評估環境中各個應用程式的影片示範<block ref="9bb4f23901e78efb446e662a5ae34659" category="inline-link-rx"></block>。</block>
+  <block id="7eb93c97191aa85a3e31ed480f203263" category="paragraph">有關部署內部部署 FlexPod 執行個體的資訊，請參閱<block ref="bae411419211640056aad5f544f480c8" category="inline-link-rx"></block>。</block>
+  <block id="b1d4a5bda603212c4fc59416f18bc0d2" category="paragraph">這種混合雲解決方案可以擴展到任何執行受支援版本軟體、韌體和硬體的 FlexPod 環境，如 <block ref="7c51cb770ac84a1429ed1cfe6c686aed" category="inline-link-macro-rx"></block>、<block ref="a20168bfee610ed2009269dc61511d00" category="inline-link-macro-rx"></block> 和 <block ref="cbb6475bbf94049e4e0384caf6c1ee3e" category="inline-link-macro-rx"></block> 中所定義。</block>
+  <block id="222d8e5a0fdec5985578ded88a4e4d85" category="paragraph"><block ref="249cb40fa7ed87208513fa23cd46ae4c" category="inline-link-rx"></block> 提供包含各種資源的 Terraform 配置。您可以 fork 此儲存庫並在您的 GitHub 帳戶中建立副本。</block>
+  <block id="0f3bf8a9ffdd4619fcc663464541d59d" category="inline-link"><block ref="0f3bf8a9ffdd4619fcc663464541d59d" category="inline-link-rx"></block></block>
+  <block id="c92914690511779fbf2503e8fcd3f2c7" category="paragraph"><block ref="c92914690511779fbf2503e8fcd3f2c7" category="inline-link-rx"></block></block>
+  <block id="680572ba4dc720705a61e764d220b1f5" category="inline-link"><block ref="680572ba4dc720705a61e764d220b1f5" category="inline-link-rx"></block></block>
+  <block id="3f4cc33bf5f3a1764b92423b02b234d9" category="paragraph"><block ref="3f4cc33bf5f3a1764b92423b02b234d9" category="inline-link-rx"></block></block>
+  <block id="0f2060dca00d162a310b2e9b2ee6a228" category="inline-link"><block ref="0f2060dca00d162a310b2e9b2ee6a228" category="inline-link-rx"></block></block>
+  <block id="73627b62b6a728236bfefb959cf1c235" category="paragraph"><block ref="73627b62b6a728236bfefb959cf1c235" category="inline-link-rx"></block></block>
+  <block id="f59de4cd614cd1a5960d3d22777ffe33" category="list-text">NetApp Console 文件：</block>
+  <block id="32559fe6e51036691cb42e3da18251e9" category="inline-link"><block ref="32559fe6e51036691cb42e3da18251e9" category="inline-link-rx"></block></block>
+  <block id="b4cb3c46a9e9ff5f25134751246405aa" category="paragraph"><block ref="b4cb3c46a9e9ff5f25134751246405aa" category="inline-link-rx"></block></block>
+  <block id="e46e22ef8a2b00306ce9c649021cdc4b" category="list-text">使用 NetApp Cloud Volumes ONTAP 的 Google Cloud TCO 計算器</block>
+  <block id="24744d54d7c99fece20fa2ff1120effa" category="paragraph"><block ref="24744d54d7c99fece20fa2ff1120effa" category="inline-link-rx"></block></block>
+  <block id="3c72c5293c7d6ed3bda09c8b51058ef3" category="list-text">Cloud Volumes ONTAP 容量規劃與成本估算：</block>
+  <block id="5464f7e2ca3ff7aa9678e86317d0b0fb" category="inline-link"><block ref="5464f7e2ca3ff7aa9678e86317d0b0fb" category="inline-link-rx"></block></block>
+  <block id="74806931bf05a1a68e7aef23d309c7cb" category="paragraph"><block ref="74806931bf05a1a68e7aef23d309c7cb" category="inline-link-rx"></block></block>
+  <block id="8c3a80132003147785efcf214e7631b9" category="list-text">雲端評估和基礎架構分析：</block>
+  <block id="76cf7e9e0100c3eb1457ea1056a8b147" category="paragraph"><block ref="76cf7e9e0100c3eb1457ea1056a8b147" category="inline-link-rx"></block></block>
+  <block id="fbb0fa1820ca1e3b967b638efefd672e" category="list-text">NetApp 混合雲解決方案：</block>
+  <block id="e8272f4112948f3f5ddc64ddf367012d" category="paragraph"><block ref="e8272f4112948f3f5ddc64ddf367012d" category="inline-link-rx"></block></block>
+  <block id="31869323f4b0f35832c7bc2e618d40c4" category="inline-link"><block ref="31869323f4b0f35832c7bc2e618d40c4" category="inline-link-rx"></block></block>
+  <block id="e268063468b59d945b6a60feb3cd1b5a" category="paragraph"><block ref="e268063468b59d945b6a60feb3cd1b5a" category="inline-link-rx"></block></block>
+  <block id="8dbe2c8a4fcad36ec86570dae008ae81" category="inline-link"><block ref="8dbe2c8a4fcad36ec86570dae008ae81" category="inline-link-rx"></block></block>
+  <block id="56a35c8ac97d1a860866ac6c618547b5" category="paragraph"><block ref="56a35c8ac97d1a860866ac6c618547b5" category="inline-link-rx"></block></block>
+  <block id="da1dceee99e65c289c26e3c1f156af22" category="section-title">步驟 1：存取 NetApp Console</block>
+  <block id="03cceb640d7d424485e2f4bf06eed018" category="paragraph">若要存取 NetApp 雲端服務，請使用<block ref="9fa63571706fcef6edc9d423212e6d10" category="inline-link-rx"></block>註冊並登入。</block>
+  <block id="d4a899579b6853e163300951004b1398" category="admonition">若要設定 NetApp Console 帳戶中的工作區和使用者，請按一下<block ref="8db968382215ca64c3ec159bc6512f38" category="inline-link-rx"></block>。</block>
+  <block id="631df54d299fac62e8619d987f899f79" category="paragraph">有關 Intersight 授權及每種授權所支援功能的詳細資訊，請參閱<block ref="554fbb4e00c01e04bb1090698fc7fb9e" category="inline-link-rx"></block>。</block>
+  <block id="2978d65906424975a611d6cdc7809c52" category="paragraph">在 Intersight 系統中申請 Intersight Assist 服務後，您可以使用「透過 Intersight Assist 申請」選項來申請終端設備。如需更多資訊，請參閱<block ref="b4b0ec369f4031cd6c31c3a8574d1e94" category="inline-link-rx"></block>。</block>
+  <block id="b1540a3ec25c7d8277b499a1cc1d920b" category="list-text"><block ref="b1540a3ec25c7d8277b499a1cc1d920b" category="inline-link-rx"></block></block>
+  <block id="8b7f5e75850c8e24596cdb72a54b27b4" category="paragraph">欲了解更多資訊，請關注<block ref="76d1d4d493c32804475e771815c49791" category="inline-link-rx"></block>。</block>
+  <block id="35e4a9978e683cd211b5a5ba48d0dfa2" category="inline-link"><block ref="35e4a9978e683cd211b5a5ba48d0dfa2" category="inline-link-rx"></block></block>
+  <block id="a9ff4d14a90b319ee78034d83481f4cc" category="paragraph"><block ref="a9ff4d14a90b319ee78034d83481f4cc" category="inline-link-rx"></block></block>
+  <block id="5561d7f69d67b69992d0635627f24798" category="inline-link"><block ref="5561d7f69d67b69992d0635627f24798" category="inline-link-rx"></block></block>
+  <block id="f732bf18d99eee83401aee19562b2315" category="paragraph"><block ref="f732bf18d99eee83401aee19562b2315" category="inline-link-rx"></block></block>
+  <block id="a0caaf8cd1166bac894ef6d959888518" category="inline-link"><block ref="a0caaf8cd1166bac894ef6d959888518" category="inline-link-rx"></block></block>
+  <block id="5c778aeb4f5b52e2318c8eac3cadcd24" category="paragraph"><block ref="5c778aeb4f5b52e2318c8eac3cadcd24" category="inline-link-rx"></block></block>
+  <block id="485235e5177a461d564dcd468e96afd7" category="inline-link"><block ref="485235e5177a461d564dcd468e96afd7" category="inline-link-rx"></block></block>
+  <block id="2a4aae2008e93ad78dfcadf65463f015" category="paragraph"><block ref="2a4aae2008e93ad78dfcadf65463f015" category="inline-link-rx"></block></block>
+  <block id="4a8ba7de37bb1595fe75580ba3bc84a0" category="list-text">VMware by Broadcom 相容性指南</block>
+  <block id="4e868d7f3498fd4dc9bbe8132010721a" category="inline-link"><block ref="4e868d7f3498fd4dc9bbe8132010721a" category="inline-link-rx"></block></block>
+  <block id="9dd8f644913713ee9b6bdbd9e7e03af3" category="paragraph"><block ref="9dd8f644913713ee9b6bdbd9e7e03af3" category="inline-link-rx"></block></block>
+  <block id="41048e193d64c3af1328380b825fed4f" category="list-text">請至 <block ref="b3630449269c76740e4291e621f6febd" category="inline-link-rx"></block> 下載 Cisco Intersight Virtual Appliance。如需更多資訊，請前往 <block ref="615894daff458d913cb094922f7eec37" category="inline-link-rx"></block>。</block>
+  <block id="7f2ce29845910147648bf27ce6c85361" category="list-text">瀏覽至<block ref="257227cb65acf3b2172014ee0ada9206" prefix=" " category="inline-code"></block>以完成設備的安裝後設定。</block>
+  <block id="8f32ab8f3ff903aac651b0b5d64a537d" category="admonition">有關 Cisco UCS 計算元件和 UCSM 版本的最低要求，請參閱<block ref="3d6e5156f379efad227592659beca5ef" category="inline-link-rx"></block>。</block>
+  <block id="1f0959472c490db731aef4df43c76bcf" category="paragraph">如需瞭解各種授權層級所涵蓋功能的詳細資訊，請前往<block ref="84da4971ea1dce018cc4c538da0b57e0" category="inline-link-rx"></block>。</block>
+  <block id="8f72166809bd14273400709b3f6cfcd9" category="inline-link">Cisco Intersight SaaS 說明中心</block>
+  <block id="e8ac26e3a0e8241a8797e926a8dee395" category="paragraph"><block ref="e8ac26e3a0e8241a8797e926a8dee395" category="inline-link-rx"></block></block>
+  <block id="31a8bd5b6513f4b28a49b0f4fa593ea1" category="paragraph"><block ref="31a8bd5b6513f4b28a49b0f4fa593ea1" category="inline-link-rx"></block></block>
+  <block id="dbcf0c0af59248a26baac52cf95548ba" category="paragraph"><block ref="dbcf0c0af59248a26baac52cf95548ba" category="inline-link-rx"></block></block>
+  <block id="bf0fa264ebff0a1dd06b44917432af6c" category="list-text">加密模組驗證計劃 (CMVP)。NIST CMVP 資料庫，用於儲存已驗證的加密模組，包括 Cisco 產品。</block>
+  <block id="68f4b2a68639107f1b9c2abd797f0fdd" category="paragraph"><block ref="68f4b2a68639107f1b9c2abd797f0fdd" category="inline-link-rx"></block></block>
+  <block id="01746a889bf1ac1270477dda1b827f3b" category="inline-link">2026 IBM X‑Force Threat Intelligence Index</block>
+  <block id="a4c3cafba2f5af9c423c8bbff3746437" category="paragraph">根據<block ref="fc482ff1efeaa57e047ef3bbed9c0c66" category="inline-link-rx"></block>，漏洞利用已成為網路安全事件的主要原因，人工智慧使攻擊者能夠快速發現並利用安全漏洞。</block>
 </blocks>

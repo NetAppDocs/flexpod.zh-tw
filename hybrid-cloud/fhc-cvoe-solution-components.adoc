@@ -135,7 +135,7 @@ VMware vCenter Server可從單一主控台統一管理所有主機和VM、並集
 
 == 硬體與軟體版本
 
-這種混合雲解決方案可以擴展到任何運行支援版本的軟體、韌體和硬體的FlexPod環境，具體定義見：link:http://support.netapp.com/matrix/["NetApp 互通性對照表工具"^] ，link:https://ucshcltool.cloudapps.cisco.com/public/["UCS硬體與軟體相容性"^] ， 和link:https://www.vmware.com/resources/compatibility/search.php["VMware相容性指南"^]。
+這種混合雲解決方案可以擴展到任何執行受支援版本軟體、韌體和硬體的 FlexPod 環境，如 link:http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]、link:https://ucshcltool.cloudapps.cisco.com/public/["UCS硬體與軟體相容性"^] 和 link:https://www.vmware.com/resources/compatibility/search.php["VMware相容性指南"^] 中所定義。
 
 下表顯示內部部署FlexPod 的更新版軟硬體。
 

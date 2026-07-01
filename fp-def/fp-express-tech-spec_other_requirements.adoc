@@ -22,7 +22,7 @@ summary: 以下列出更多FlexPod 關於此功能的要求。
 ** 支援NetApp設備的支援SupportEdge Advisor SupportEdge Premium
 
 
-* 所有軟體元件都必須在中列出及支援 http://support.netapp.com/matrix/["NetApp IMT"^]。
+* 所有軟體元件都必須在 http://mysupport.netapp.com/matrix["NetApp IMT"^]中列出並受到支援。
 * 所有NetApp硬體元件都必須在上列出及支援 https://hwu.netapp.com/Home/Index["NetApp Hardware Universe"^]。
 * 所有的Cisco硬體元件都必須在上列出及支援 https://ucshcltool.cloudapps.cisco.com/public/["Cisco HCL"^]。
 

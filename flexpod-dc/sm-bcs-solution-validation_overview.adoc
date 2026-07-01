@@ -34,7 +34,7 @@ image:sm-bcs-image16.png["錯誤：缺少圖形影像"]
 
 下表列出用於解決方案驗證的硬體與軟體。請務必注意、Cisco、NetApp及VMware均有互通性對照表、可用來判斷FlexPod 是否支援任何特定的實作VMware：
 
-* http://support.netapp.com/matrix/["http://support.netapp.com/matrix/"^]
+* http://mysupport.netapp.com/matrix["http://mysupport.netapp.com/matrix"^]
 * http://www.cisco.com/web/techdoc/ucs/interoperability/matrix/matrix.html["Cisco UCS硬體與軟體互通性工具"^]
 * http://www.vmware.com/resources/compatibility/search.php["http://www.vmware.com/resources/compatibility/search.php"^]
 

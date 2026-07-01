@@ -124,7 +124,7 @@ https://core.vmware.com/resource/vmware-vsphere-metro-storage-cluster-vmsc["http
 
 * VMware vSphere Metro儲存叢集建議實務做法
 +
-https://core.vmware.com/resource/vmware-vsphere-metro-storage-cluster-recommended-practices["https://core.vmware.com/resource/vmware-vsphere-metro-storage-cluster-recommended-practices"^]
+https://www.vmware.com/docs/vmw-vmware-vsphere-metro-storage-cluster-recommended-practices["https://www.vmware.com/docs/vmw-vmware-vsphere-metro-storage-cluster-recommended-practices"^]
 
 * NetApp ONTAP 功能與NetApp SnapMirror營運不中斷（SMBC）搭配VMware vSphere Metro儲存叢集（VMSC）。（83370）
 +
