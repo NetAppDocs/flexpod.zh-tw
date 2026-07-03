@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/fp-express-tech-spec_power_and_cabling_requirements.html 
-keywords: power, cabling, requirements, flexpod, express, cisco, ucs, minimum, cabling 
-summary: 本節說明FlexPod 功能和最低纜線需求、以利執行不需使用的功能。 
+keywords: power, cabling, requirements, flexpod, express, cisco, ucs, cabling 
+summary: 本節介紹 FlexPod Express 設計的電源需求和磁碟櫃佈線指南。 
 ---
-= 電源和纜線需求
+= 電源和佈線指南
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,168 +14,50 @@ summary: 本節說明FlexPod 功能和最低纜線需求、以利執行不需使
 
 
 [role="lead"]
-本節說明FlexPod 功能和最低纜線需求、以利執行不需使用的功能。
+本節介紹 FlexPod Express 設計的電源需求和佈線指南。
 
 
 
 == 電力需求
 
-電力需求以美國為基礎規格並假設使用AC電源。其他國家/地區可能有不同的電力需求。大多數元件也提供直流電（DC）電源選項。如需所需最大電力的其他資料、以及其他詳細的電力資訊、請參閱每個硬體元件的詳細技術規格。
+FlexPod Express 的電源需求因 FlexPod Express 組態的安裝位置而異。
+
+有關所需最大功率的更多資料以及其他詳細的功率資訊，請參閱每個硬體元件的 link:https://docs.netapp.com/us-en/flexpod/fp-def/fp-express-tech-spec_technical_specifications_and_references.html["技術規格"^]。
 
 如需詳細的Cisco UCS電源資料、請參閱 http://www.cisco.com/assets/cdc_content_elements/flash/dataCenter/cisco_ucs_power_calculator/["Cisco UCS電源計算機"^]。
 
-下表列出每個裝置所需的電源連接埠。
+有關 NetApp 儲存控制器電源資料，請參閱 http://hwu.netapp.com/Controller/Index?platformTypeId=6780858["NetApp Hardware Universe"^]。在 *Platforms* 下，選擇您要使用的儲存平台（例如 AFF A20），選擇 ONTAP 版本，然後按一下 *Show Results*。電源線資料列於 *Supported Power Cords* 部分，有關尺寸、重量、功率等詳細資訊，請參閱 *Size, Weight, Acoustic, Power* 部分。
+
+
+
+== 佈線指南
+
+本節提供 FlexPod Express 設計的一般佈線指南。
+
+* 確保運算和儲存連線的備援連線能力。
+* 連接速度必須與所連接的組件相容。
+* 有關特定拓撲結構的其他佈線指南，請參閱 link:https://docs.netapp.com/us-en/flexpod/fp-def/fp-express-tech-spec_flexpod_express_topologies.html["FlexPod Express 拓撲"^] 章節。
+
+
+下表提供可用於 FlexPod Express 設計的 NetApp 磁碟櫃佈線指南。
 
 |===
-| Cisco Nexus交換器 | 需要電源線 
 
 
-| Cisco Nexus 3048 | 每個Cisco Nexus 3000系列交換器2條C13/C14電源線 
+| 磁碟櫃 | 佈線指南 
 
 
-| Cisco Nexus 3524 | 每個Cisco Nexus 3000系列交換器2條C13/C14電源線 
-
-
-| Cisco Nexus 9396 | 每個Cisco Nexus 9000系列交換器2條C13/C14電源線 
-|===
-|===
-| Cisco UCS機箱 | 需要電源線 
-
-
-| Cisco UCS 5108 | 每個Cisco UCS機箱2個CAP-US615P-C19-US/CAP-US520-C19-US 
-|===
-|===
-| Cisco UCS B系列伺服器 | 需要電源線 
-
-
-| Cisco UCS B200 M4 | 不適用；刀鋒伺服器採用機箱 
-
-
-| Cisco UCS B420 M4 | 不適用；刀鋒伺服器採用機箱 
-
-
-| Cisco UCS B200 M5 | 不適用；刀鋒伺服器採用機箱 
-
-
-| Cisco UCS B480 M5 | 不適用；刀鋒伺服器採用機箱 
-|===
-|===
-| Cisco UCS C系列伺服器 | 需要電源連接埠 
-
-
-| Cisco UCS C220 M4 .3+| 每個Cisco UCS伺服器2條C13/C14電源線 
-
-
-| Cisco UCS C240 M4 
-
-
-| Cisco UCS C460 M4 Cisco UCS C220 M5 Cisco UCS C240 M5 Cisco UCS C480 M5 
-|===
-|===
-| NetApp FAS 產品控制器 | 所需電源連接埠（每個HA配對） 
-
-
-| FAS2554 | 2個C13/C14 
-
-
-| FAS2552 | 2個C13/C14 
-
-
-| FAS2520 | 2個C13/C14 
-
-
-| FAS8020 | 2個C13/C14 
-|===
-|===
-| E系列控制器 | 所需電源連接埠（每個HA配對） 
-
-
-| E2824 | 2 x C14/C20 
-|===
-|===
-| NetApp FAS 產品磁碟櫃 | 需要電源連接埠 
-
-
-| DS212C | 2個C13/C14 
-
-
-| DS224C | 2個C13/C14 
-
-
-| DS460C | 2 x C19/C20 或 2 x C14/C19 
-
-
-| DS2246 | 2個C13/C14 
-
-
-| DS4246 | 4個C13/C14 
-|===
-|===
-| E系列磁碟櫃 | 需要電源連接埠 
-
-
-| DE460C | 2 x C19/C20 或 2 x C14/C19 
-
-
-| DE224C | 2 x C14/C20 
-
-
-| DE212C | 2 x C14/C20 
-|===
-
-
-== 最低纜線需求
-
-本節說明FlexPod 適用於不適用的不適用纜線需求。大多數FlexPod 的執行功能都需要額外的纜線、但數量會因部署規模和範圍而異。
-
-下表列出每個裝置所需的最低纜線數量。
-
-|===
-| Cisco Nexus 3000系列交換器 | 需要纜線 
-
-
-| Cisco Nexus 31108. .5+| 每個交換器至少有兩條10GbE光纖或雙軸纜線 
-
-
-| Cisco Nexus 3172PQ 
-
-
-| Cisco Nexus 3048 
-
-
-| Cisco Nexus 3524 
-
-
-| Cisco Nexus 9396 
-
-
-| DS212C |  
-
-
-| DS2246 .4+| SAS纜線數量取決於磁碟櫃的特定組態 
-
-
-| DS460C 
+| DS212C .3+| link:https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html#configuration-rules["SAS 佈線規則"^] 
 
 
 | DS224C 
 
 
-| DS4246 
+| DS460C 
 
 
-| E2800  a| 
-* 每個控制器至少有一條Gigabit乙太網路（1GbE）纜線可供管理
-* 每個控制器至少有兩條10GbE纜線（適用於iSCSI）、或兩條FC纜線符合速度需求
+| NS224 .2+| link:https://docs.netapp.com/us-en/ontap-systems/drive-shelves/index.html["NS224 機櫃需求與最佳實務"^] 
 
 
-
-
-| DE460C | 每個磁碟櫃2條Mini-SAS HD纜線 
-
-
-| DE224C | 每個磁碟櫃2條Mini-SAS HD纜線 
-
-
-| DE212C | 每個磁碟櫃2條Mini-SAS HD纜線 
+| NS224 搭配 NSM100B 
 |===

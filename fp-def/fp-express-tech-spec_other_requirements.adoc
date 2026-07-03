@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/fp-express-tech-spec_other_requirements.html 
-keywords: requirements, flexpod, express, software, hardware, cisco, imt, hcl 
+keywords: requirements, flexpod, express, vmware, broadcom 
 summary: 以下列出更多FlexPod 關於此功能的要求。 
 ---
 = 其他需求
@@ -16,13 +16,6 @@ summary: 以下列出更多FlexPod 關於此功能的要求。
 [role="lead"]
 其他關於Express的要求FlexPod 包括：
 
-* 所有設備都需要有效的支援合約、包括：
-+
-** SMARTnet支援Cisco設備
-** 支援NetApp設備的支援SupportEdge Advisor SupportEdge Premium
-
-
-* 所有軟體元件都必須在 http://mysupport.netapp.com/matrix["NetApp IMT"^]中列出並受到支援。
-* 所有NetApp硬體元件都必須在上列出及支援 https://hwu.netapp.com/Home/Index["NetApp Hardware Universe"^]。
-* 所有的Cisco硬體元件都必須在上列出及支援 https://ucshcltool.cloudapps.cisco.com/public/["Cisco HCL"^]。
+* 如果您打算使用 VMware ESXi 作為 Hypervisor，請參閱 link:https://compatibilityguide.broadcom.com/["Broadcom 相容性指南"] 以確認您的硬體和軟體元件是否受支援。
+* 對於基於 OpenShift 的部署，請確保您擁有與 OpenShift 相容的必要硬體和軟體元件。如需詳細資訊，請參閱 link:https://catalog.redhat.com/en/search["OpenShift 目錄"]。
 

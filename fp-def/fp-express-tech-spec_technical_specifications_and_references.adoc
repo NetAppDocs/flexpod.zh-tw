@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/fp-express-tech-spec_technical_specifications_and_references.html 
-keywords: technical, specifications, references, blade, servers, ucs, b, series, rack, disk, shelves, fas, adapters, controllers 
+keywords: technical, specifications, references, servers, ucs, rack, disk, shelves, aff, asa, fas, x-series-direct, c-series, adapters, controllers 
 summary: 本節說明FlexPod 每個《ExExpress》元件的其他重要技術規格。 
 ---
 = 技術規格與參考資料
@@ -18,380 +18,230 @@ summary: 本節說明FlexPod 每個《ExExpress》元件的其他重要技術規
 
 
 
-== Cisco UCS B系列刀鋒伺服器
+== Cisco UCS X 系列直連式機箱
 
-下表列出Cisco UCS B系列刀鋒伺服器選項。
+如下表所示，Cisco UCS X-Series Direct 機殼的技術規格包括以下組件：
+
+* 機架單元數量
+* 最大節點數
+* 統一化架構功能
+* IFMS的I/O支架數量
+
 
 |===
-| 元件 | Cisco UCS B200 M4 | Cisco UCS B420 M4 | Cisco UCS B200 M5 
+| 元件 | Cisco UCS X9508 機箱 
 
 
-| 處理器支援 | Intel Xeon E5-2600 | Intel Xeon E5-4600 | Intel Xeon可擴充處理器 
+| 機架單元 | 7. 
 
 
-| 最大記憶體容量 | 24個DIMM、最大768GB | 48個DIMM、最多3TB | 24個DIMM、最多3072 GB 
+| 最大節點數 | 8. 
 
 
-| 記憶體大小與速度 | 32GB DDR4；2133MHz | 64GB DDR4；2400 MHz | 16GB、32GB、64GB及128GB DDR4；2666 MHz 
+| 能夠統一化架構 | 是的 
 
 
-| SAN開機支援 | 是的 | 是的 | 是的 
+| IFMS的I/O支架 | 兩個用於Cisco UCS 9108智慧型光纖模組（IFMS）的支架 
+|===
+如需詳細資訊、請參閱 link:https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.html["Cisco UCS X958 X系列機箱資料表"^]。
 
 
-| 夾層I/O介面卡插槽 | 2. | 3. | 2、前後、包括GPU支援 
+
+== Cisco UCS X-Series Direct 運算節點
+
+Cisco UCS X 系列運算節點的技術規格包括以下元件：
+
+* 處理器插槽數
+* 處理器支援
+* 記憶體容量
+* 規模與速度
+* SAN開機支援
+* 夾層介面卡插槽數
+* I/O最大處理量
+* 尺寸規格
+* 每個機箱的最大運算節點數
 
 
-| I/O最大處理量 | 80Gbps | 160Gbps | 80Gbps 
+有關 Cisco UCS X-Series Direct 運算節點的技術規格，請參考下表。
+
 |===
 
 
-== Cisco UCS C系列機架伺服器
+| 元件 | Cisco UCS資料表 
 
-下表列出Cisco UCS C系列機架伺服器選項。
 
+| Cisco UCS X210c M7 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m7-compute-node-ds.html["Cisco UCS X210c M7 運算節點"] 
+
+
+| Cisco UCS X210c M8 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.html["Cisco UCS X210c M8 運算節點"] 
+
+
+| Cisco UCS X215c M8 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node-ds.html["Cisco UCS X215c M8 運算節點"] 
+
+
+| Cisco UCS X410c M7 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-ds.html["Cisco UCS X410c M7 運算節點"] 
+
+
+| Cisco UCS X410c M8 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m8-compute-node-ds.html["Cisco UCS X410c M8 運算節點"] 
 |===
-| 元件 | Cisco UCS C220 M4 | Cisco UCS C240 M4 | Cisco UCS C460 M4 | Cisco UCS C220 M5 
 
 
-| 處理器支援 | 1或2個Intel E5-2600系列 | 1或2個Intel Xeon E5-2600系列 | 2或4個Intel Xeon E7-4800/8800系列 | Intel Xeon可擴充處理器（1或2個） 
+== Cisco UCS X-Series Direct 網狀架構互連
 
-
-| 最大記憶體容量 | 1.5GB | 1.5TB | 6TB | 3072 GB 
-
-
-| PCIe插槽 | 2. | 6. | 10. | 2. 
-
-
-| 尺寸規格 | 1RU | 2RU | 4RU | 1 RU 
-|===
-下表列出Cisco UCS C系列機架伺服器選項的資料表。
+Cisco UCS X 系列交換矩陣互連的技術規格包括外形尺寸、連接埠和擴充插槽總數以及吞吐量。下表列出 Cisco UCS X 系列交換矩陣互連的資料表。
 
 |===
 | 元件 | Cisco UCS資料表 
 
 
-| Cisco UCS C220 M4 | http://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c220m4-sff-spec-sheet.pdf[] 
-
-
-| Cisco UCS C240 M4 | http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c240-m4-rack-server/datasheet-c78-732455.html[] 
-
-
-| Cisco UCS C460 M4 | http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c460-m4-rack-server/datasheet-c78-730907.html[] 
-
-
-| Cisco UCS C220 M5 | https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c220m5-sff-specsheet.pdf[] 
+| Cisco UCS 9108 100G Fabric Interconnect | https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-fabric-interconnect-9108-100g.pdf["Cisco UCS 9108 100G Fabric Interconnect"] 
 |===
 
 
-== Cisco Nexus 3000系列交換器
+== Cisco UCS C系列機架伺服器
 
-下表列出Cisco Nexus 3000系列交換器選項。
-
-|===
-| 元件 | Cisco Nexus 3048 | Cisco Nexus 3524 | Cisco Nexus 31108. | Cisco Nexus 3172PQ 
-
-
-| 尺寸規格 | 1RU | 1RU | 1RU | 1 RU 
-
-
-| 最多1Gbps連接埠 | 48 | 24 | 48（10/40/100Gbps） | 72個1/10GbE連接埠、或48個1/10GbE加上6個40GbE連接埠 
-
-
-| 轉送率 | 132Mbps | 360Mbps | 1.2Bpps | 1個單點 
-
-
-| 巨型框架支援 | 是的 | 是的 | 是的 | 是的 
-|===
-下表列出Cisco Nexus 3000系列交換器選項的資料表。
+Cisco UCS C 系列機架式伺服器的技術規格包括處理器支援、最大記憶體容量、PCIe 插槽數量和外形尺寸。有關相容 UCS 伺服器型號的更多詳細資訊，請參閱 https://ucshcltool.cloudapps.cisco.com/public/["Cisco硬體相容性"^]清單。下表列出 C 系列機架式伺服器的資料表。
 
 |===
-| 元件 | Cisco Nexus產品型錄 
+| 元件 | Cisco UCS資料表 
 
 
-| Cisco Nexus 31108. | http://www.cisco.com/c/en/us/products/switches/nexus-31108pc-v-switch/index.html[] 
+| Cisco UCS C220 M7 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m7-rack-server-ds.html["Cisco UCS C220 M7 機架式伺服器"] 
 
 
-| Cisco Nexus 3172PQ | https://www.cisco.com/c/en/us/products/switches/nexus-3172pq-switch/index.html[] 
+| Cisco UCS C220 M8 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-ds.html["Cisco UCS C220 M8 機架式伺服器"] 
 
 
-| Cisco Nexus 3048 | https://www.cisco.com/c/en/us/products/switches/nexus-3048-switch/index.html[] 
+| Cisco UCS C225 M6. | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m6-sff-rack-server-ds.html["Cisco UCS C225 M6機架伺服器"] 
 
 
-| Cisco Nexus 3172PQ-XL | https://www.cisco.com/c/en/us/products/switches/nexus-3172pq-switch/index.html[] 
+| Cisco UCS C240 M7 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m7-rack-server-ds.html["Cisco UCS C240 M7 機架式伺服器"] 
 
 
-| Cisco Nexus 3548 XL | https://www.cisco.com/c/en/us/products/switches/nexus-3548-x-switch/index.html[] 
+| Cisco UCS C240 M8 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-ds.html["Cisco UCS C240 M8 機架式伺服器"] 
 
 
-| Cisco Nexus 3524 XL | https://www.cisco.com/c/en/us/products/switches/nexus-3524-x-switch/index.html[] 
+| Cisco UCS C245 M6. | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c245-m6-sff-rack-server-ds.html["Cisco UCS C245 M6機架伺服器"] 
 
 
-| Cisco Nexus 3548 | https://www.cisco.com/c/en/us/products/switches/nexus-3548-x-switch/index.html[] 
-
-
-| Cisco Nexus 3524 | https://www.cisco.com/c/en/us/products/switches/nexus-3524-x-switch/index.html[] 
+| Cisco UCS C245 M8 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c245-m8-rack-server-ds.html["Cisco UCS C245 M8 機架式伺服器"] 
 |===
-下表列出Cisco Nexus 9000系列交換器選項。
-
-|===
-| 元件 | Cisco Nexus 9396 | Cisco Nexus 9372 
 
 
-| 尺寸規格 | 2RU | 1RU 
+== Cisco Nexus交換器
 
-
-| 最大連接埠數 | 60 | 54 
-
-
-| 10Gbps SFP+上行鏈路連接埠 | 48 | 48 
-|===
-下表列出Cisco Nexus 9000系列交換器選項資料表。
+Cisco Nexus 交換器的技術規格包含在各型號的資料手冊中。規格包括外形尺寸；管理模組、交換矩陣模組和線路卡插槽的數量；以及最大連接埠數。這些資料手冊可在下表中找到。
 
 |===
 | 元件 | Cisco Nexus資料表 
 
 
-| Cisco Nexus 9396 | http://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-736967.html[] 
+| Cisco Nexus 9200系列 | https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-735989.html["Cisco Nexus 9200系列交換器"] 
 
 
-| Cisco Nexus 9372 | http://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-736967.html[] 
-
-
-| Nexus 9396X | https://www.cisco.com/c/en/us/products/switches/nexus-9396px-switch/index.html?dtid=osscdc000283[] 
+| Cisco Nexus 9300系列 | https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-736967.html["Cisco Nexus 9300系列交換器"] 
 |===
 
 
-== NetApp FAS 解決方案儲存控制器
+== NetApp儲存控制器
 
-下表列出目前的NetApp FAS 功能區儲存控制器選項。
-
-|===
-| 目前的元件 | FAS2620 | FAS2650 
+NetApp 儲存控制器的技術規格包括平台配置、最大原始容量、記憶體、外形尺寸、ONTAP 版本需求、磁碟櫃等。
 
 
-| 組態 | 2U機箱內有2個控制器 | 4U機箱內有2個控制器 
 
+=== NetApp AFF A系列
 
-| 最大原始容量 | 1440TB | 1243TB 
-
-
-| 內部磁碟機 | 12. | 24 
-
-
-| 磁碟機數量上限（內部與外部） | 144. | 144. 
-
-
-| 最大Volume大小 2+| 100TB 
-
-
-| 最大Aggregate大小 2+| 4TB 
-
-
-| LUN的最大數量 2+| 每個控制器2、048個 
-
-
-| 支援儲存網路 2+| iSCSI、FC、FCoE、NFS和CIFS 
-
-
-| NetApp FlexVol 的最大資料量 2+| 每個控制器1、000個。 
-
-
-| NetApp Snapshot複本的最大數量 2+| 每個控制器255000 
-
-
-| 最大NetApp Flash Pool智慧型資料快取 2+| 24TB 
-|===
-
-NOTE: 如需FAS 有關「效能不均」儲存控制器選項的詳細資訊、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2032["系統的功能FAS"^] 部分。Hardware Universe如需AFF 瞭解更多資訊、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=5265148["系統的功能AFF"^] 區段。
-
-下表列出FAS8020控制器系統的特性。
+入門級 NetApp AFF A 系列儲存控制器支援用於 FlexPod Express。更多資訊請參閱 https://www.netapp.com/pdf.html?item=/media/7828-ds-3582-aff-a-series-ai-era.pdf["AFF A系列技術規格"^]資料表及 https://hwu.netapp.com/["NetApp Hardware Universe"^]。如需特定 AFF 型號的詳細資訊，請參閱下表所列的平台專屬文件。
 
 |===
-| 元件 | FAS8020 
+| 元件 | A系列控制器平台文件AFF 
 
 
-| 組態 | 3U機箱中的2個控制器 
+| NetApp AFF A20 | https://docs.netapp.com/us-en/ontap-systems/a20-30-50/a20-key-specifications.html#aff-a20-specifications-at-a-glance["AFF A20 主要規格"] 
 
 
-| 最大原始容量 | 2880TB 
-
-
-| 最大磁碟機數量 | 480 
-
-
-| 最大Volume大小 | 70TB 
-
-
-| 最大Aggregate大小 | 324TB 
-
-
-| LUN的最大數量 | 每個控制器8、192個 
-
-
-| 支援儲存網路 | iSCSI、FC、NFS和CIFS 
-
-
-| 最大FlexVol 數量的不重 | 每個控制器1、000個 
-
-
-| Snapshot複本的最大數量 | 每個控制器255000 
-
-
-| 最大NetApp Flash Cache智慧型資料快取 | 3TB 
-
-
-| Flash Pool資料快取上限 | 24TB 
-|===
-下表列出NetApp儲存控制器的資料表。
-
-|===
-| 元件 | 儲存控制器資料表 
-
-
-| FAS2600系列 | http://www.netapp.com/us/products/storage-systems/fas2600/fas2600-tech-specs.aspx[] 
-
-
-| FAS2500系列 | http://www.netapp.com/us/products/storage-systems/fas2500/fas2500-tech-specs.aspx[] 
-
-
-| FAS8000系列 | http://www.netapp.com/us/products/storage-systems/fas8000/fas8000-tech-specs.aspx[] 
+| NetApp AFF A30 | https://docs.netapp.com/us-en/ontap-systems/a20-30-50/a30-key-specifications.html#aff-a30-specifications-at-a-glance["AFF A30 主要規格"] 
 |===
 
 
-== NetApp FAS 乙太網路介面卡
+=== NetApp AFF C 系列
 
-下表列出NetApp FAS 10GbE介面卡。
-
-|===
-| 元件 | X1117A-R6 
-
-
-| 連接埠數 | 2. 
-
-
-| 介面卡類型 | SFP+（含光纖） 
-|===
-FAS8000系列控制器支援X1117A-R6 SFP+介面卡。
-
-FAS2600 和 FAS2500 系列儲存系統均配備板載 10GbE 連接埠。
-
-
-NOTE: 如需AFF 更多有關以功能性為基礎的介面卡詳細資料FAS 、請參閱 https://hwu.netapp.com/Adapter/Index["介面卡區段"^] 在整個過程中、Hardware Universe
-
-
-
-== NetApp FAS 產品磁碟櫃
-
-下表列出目前的NetApp FAS 解決方案磁碟櫃選項。
+入門級 NetApp AFF C 系列儲存控制器支援用於 FlexPod Express。更多資訊請參閱 https://www.netapp.com/pdf.html?item=/media/81583-ds-4240-aff-c-series.pdf["AFF C-Series 技術規格"^]資料表及 https://hwu.netapp.com/["NetApp Hardware Universe"^]。有關特定 AFF 型號的詳細資訊，請參閱下表所列的平台專屬文件。
 
 |===
-| 元件 | DS460C | DS224C | DS212C | DS2246 | DS4246 
+| 元件 | AFF C 系列控制器平台文件 
 
 
-| 尺寸規格 | 4RU | 2RU | 2RU | 2RU | 4RU 
-
-
-| 每個機箱的磁碟機 | 60 | 24 | 12. | 24 | 24 
-
-
-| 磁碟機尺寸規格 | 3.5吋大尺寸規格 | 2.5吋小尺寸規格 | 3.5吋大尺寸規格 | 2.5吋小尺寸規格 | 3.5吋大尺寸規格 
-
-
-| 機櫃I/O模組 | 雙IOM12模組 | 雙IOM12模組 | 雙IOM12模組 | 雙IOM6模組 | 雙IOM6模組 
-|===
-如需詳細資訊、請參閱NetApp磁碟櫃資料表。
-
-
-NOTE: 如需磁碟櫃的詳細資訊、請參閱NetApp Hardware Universe 解決方案 https://hwu.netapp.com/Shelves/Index?osTypeId=2032["磁碟櫃區段"^]。
-
-
-
-== NetApp FAS 解決方案磁碟機
-
-NetApp磁碟的技術規格包括尺寸規格、磁碟容量、磁碟RPM、支援控制器及Data ONTAP 版本要求、請參閱上的「磁碟機」一節 http://hwu.netapp.com/Drives/Index?queryId=1581392["NetApp Hardware Universe"^]。
-
-
-
-== E系列儲存控制器
-
-下表列出目前的E系列儲存控制器選項。
-
-|===
-| 目前的元件 | E2812. | E2824 | E2860 
-
-
-| 組態 | 2U機箱內有2個控制器 | 2U機箱內有2個控制器 | 4U機箱內有2個控制器 
-
-
-| 最大原始容量 | 1800 TB | 1756.8TB | 1800 TB 
-
-
-| 內部磁碟機 | 12. | 24 | 60 
-
-
-| 磁碟機數量上限（內部與外部） 3+| 180 
-
-
-| 最大SSD 3+| 120 
-
-
-| 磁碟集區Volume的最大Volume大小 3+| 1024TB 
-
-
-| 最大磁碟集區數 3+| 20 
-
-
-| 支援儲存網路 3+| iSCSI與FC 
-
-
-| 最大磁碟區數 3+| 512 
-|===
-下表列出目前E系列儲存控制器的資料表。
-
-|===
-| 元件 | 儲存控制器資料表 
-
-
-| E2800 | https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf[] 
+| NetApp AFF C30 | https://docs.netapp.com/us-en/ontap-systems/c30-60/c30-key-specifications.html["AFF C30 主要規格"] 
 |===
 
 
-== E系列介面卡
+=== NetApp ASA A-Series
 
-下表列出E系列介面卡。
-
-|===
-| 元件 | X-56023-00-0E-C | X-56025-00-0E-C | X-56027-00-0E-C | X-56024-0E-C | X-56026-00-0E-C 
-
-
-| 連接埠數 | 2. | 4. | 4. | 2. | 2. 
-
-
-| 介面卡類型 | 10Gb Base-T | 16G FC與10GbE iSCSI | SAS | 16G FC與10GbE iSCSI | SAS 
-|===
-
-
-== E系列磁碟櫃
-
-下表列出E系列磁碟櫃選項。
+NetApp ASA A 系列儲存控制器的入門型號支援在 FlexPod Express 環境中使用。更多資訊請參閱 https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["NetApp ASA A 系列技術規格"^]產品規格書及 https://hwu.netapp.com/["NetApp Hardware Universe"^]。如需特定 ASA 型號的詳細資訊，請參閱下表所列的平台專屬文件。
 
 |===
-| 元件 | DE212C | DE224C | DE460C 
+| 元件 | NetApp ASA A 系列控制器平台文件 
 
 
-| 尺寸規格 | 2RU | 2RU | 4RU 
+| NetApp ASA A20 | https://docs.netapp.com/us-en/ontap-systems/asa-r2-key-specifications/asa-a20-key-specifications.html["ASA A20 主要規格"] 
 
 
-| 每個機箱的磁碟機 | 12. | 24 | 60 
-
-
-| 磁碟機尺寸規格 | 2.5吋小尺寸規格3.5吋 | 2.5吋 | 2.5吋小尺寸規格3.5吋 
-
-
-| 機櫃I/O模組 | IOM12 | IOM12 | IOM12 
+| NetApp ASA A30 | https://docs.netapp.com/us-en/ontap-systems/asa-r2-key-specifications/asa-a30-key-specifications.html["ASA A30 主要規格"] 
 |===
 
 
-== E系列磁碟機
+=== NetApp ASA C 系列
 
-NetApp磁碟機的技術規格包括尺寸規格、磁碟容量、磁碟RPM、支援控制器及SANtricity 版本要求、請參閱上的「磁碟機」一節 http://hwu.netapp.com/Drives/Index?queryId=1844075["NetApp Hardware Universe"^]。
+NetApp ASA C 系列儲存控制器的入門型號支援在 FlexPod Express 環境中使用。更多資訊請參閱 https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["NetApp ASA C 系列技術規格"^]資料表及 https://hwu.netapp.com/["NetApp Hardware Universe"^]。有關特定 ASA 型號的詳細資訊，請參閱下表所列的平台專屬文件。
+
+|===
+| 元件 | NetApp ASA C 系列控制器平台文件 
+
+
+| NetApp ASA C30 | https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["ASA C30 主要規格"] 
+|===
+
+
+=== NetApp FAS 系列
+
+入門級 FAS 儲存控制器支援用於 FlexPod Express。所有 FAS 系列儲存控制器的詳細規格可在 https://hwu.netapp.com/["NetApp Hardware Universe"^]中找到。有關特定 FAS 型號的詳細資訊，請參閱下表列出的平台專屬文件。
+
+|===
+| 元件 | 系列控制器平台文件FAS 
+
+
+| FAS2750 系列 | https://docs.netapp.com/us-en/ontap-systems/fas2700/overview.html["FAS2750 主要規格"^] 
+
+
+| FAS2820 系列 | https://docs.netapp.com/us-en/ontap-systems/fas2800/overview.html["FAS2820 主要規格"^] 
+|===
+
+
+=== NetApp磁碟櫃
+
+NetApp 磁碟櫃的技術規格包括外形尺寸、每個機箱的磁碟機數量以及機架 I/O 模組；這些文件可在下表中找到。如需更多資訊，請參閱 https://hwu.netapp.com/["NetApp Hardware Universe"^]。
+
+|===
+| 元件 | NetApp FAS/AFF磁碟櫃文件 
+
+
+| NetApp DS212C磁碟櫃 | https://www.netapp.com/data-storage/disk-shelves-storage-media/["DS212C磁碟櫃文件"] 
+
+
+| NetApp DS224C磁碟櫃 | https://www.netapp.com/data-storage/disk-shelves-storage-media/["DS224C磁碟櫃文件"] 
+
+
+| NetApp DS460C磁碟櫃 | https://www.netapp.com/data-storage/disk-shelves-storage-media/["DS460C磁碟櫃文件"] 
+
+
+| NetApp NS224 磁碟架 | https://www.netapp.com/data-storage/disk-shelves-storage-media/["NS224磁碟櫃文件"] 
+
+
+| NS224 附 NSM 100B 磁碟架 | https://www.netapp.com/data-storage/disk-shelves-storage-media/["配備 NSM 100B 的 NS224 磁碟櫃文件"] 
+|===
+
+
+=== NetApp推動
+
+NetApp磁碟機的技術規格包括尺寸規格、磁碟容量、磁碟RPM、支援控制器及ONTAP 版本要求。這些規格可在的「磁碟機」區段中找到 http://hwu.netapp.com/Drives/Index?queryId=1581392["NetApp Hardware Universe"^]。

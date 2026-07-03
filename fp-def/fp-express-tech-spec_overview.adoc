@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/fp-express-tech-spec_overview.html 
-keywords: flexpod, express, technical, specifications, architecture, cisco, ucs 
-summary: FlexPod Express 是一個預先設計的最佳實務架構，以 Cisco 統一運算系統 （Cisco UCS） 和 Cisco Nexus 系列交換器為基礎構建，儲存層則使用 NetApp FAS 或 NetApp E-Series 儲存設備構建。 
+keywords: flexpod, express, technical, specifications, architecture, cisco, ucs, netapp, aff, asa, fas 
+summary: FlexPod Express 是預先設計的最佳實務架構，它是基於 Cisco Unified Computing System（Cisco UCS）和 Cisco Nexus 系列交換器所建置，儲存層則使用 NetApp AFF、ASA 或 FAS 儲存系統建置。 
 ---
-= TR-4293：FlexPod Express 技術規格
+= 部分技術規格FlexPod
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -13,9 +13,7 @@ summary: FlexPod Express 是一個預先設計的最佳實務架構，以 Cisco 
 :imagesdir: ./../media/
 
 
-Karthick Radhakrishnan、Arvind Ramakrishnan、Lindsey Street、Savita Kumari、NetApp
-
 [role="lead"]
-FlexPod Express 是一個預先設計、符合最佳實務的架構，它是基於 Cisco 統一運算系統 （Cisco UCS） 和 Cisco Nexus 系列交換器構建，儲存層則採用 NetApp FAS 或 NetApp E-Series 儲存。FlexPod Express 是一個適用於執行各種虛擬化 Hypervisor、裸機作業系統 （OS） 和企業級工作負載的理想平台。
+FlexPod Express 是一個預先設計、符合最佳實務的架構，它是基於 Cisco 統一運算系統 （Cisco UCS） 和 Cisco Nexus 系列交換器構建，儲存層則採用 NetApp AFF、ASA 或 FAS 入門級儲存系統。FlexPod Express 是一個適合在中小型環境、遠端辦公室和分公司 （ROBO） 部署以及邊緣位置執行各種虛擬化 Hypervisor、裸機作業系統 （OS） 和企業級工作負載的平台。
 
-FlexPod Express 不僅提供基本配置，還具有高度的靈活性，可根據不同的使用情境和需求進行調整和最佳化。本文檔依所使用的儲存系統對 FlexPod Express 配置進行分類，分為 FlexPod Express with NetApp FAS 和 FlexPod Express with E-Series 兩類。
+FlexPod Express 不僅提供基本配置，還具有高度的靈活性，可根據不同的使用情境和需求進行調整和最佳化。

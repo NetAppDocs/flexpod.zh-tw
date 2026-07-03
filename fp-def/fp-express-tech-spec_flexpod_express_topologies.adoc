@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_flexpod_express_topologies.html 
+keywords: topologies, iSCSI boot, Cisco UCS X-Series Direct, direct-attached ASA, FC boot, IP-based SAN, FC-based SAN 
+summary: 本節介紹 FlexPod Express 的範例拓撲。 
+---
+= FlexPod Express 拓撲
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+本節介紹 FlexPod Express 的範例拓撲。
+
+
+
+== UCS X-Series Direct 直連式 FC 和基於 IP 的 SAN
+
+下圖顯示了適用於基於 IP 和基於 FC 的 SAN 的 UCS X-Series Direct 和直接連接 ASA 範例拓撲。
+
+image:fp-express-tech-spec_image11.png["UCS X-Series Direct 和直接連接 ASA 拓撲，適用於以 IP 為基礎和以 FC 為基礎的 SAN"]
+
+此拓撲結構的連接要求包括：
+
+* ASA 叢集連線：對於 2 節點 ASA 叢集，控制器可以直接用纜線連接在一起，而無需使用叢集交換器。
+* 儲存乙太網路連接：NetApp 儲存控制器可直接連接至嵌入式光纖互連。ASA 中的兩個儲存控制器分別連接到由 FI A 和 FI B 提供的兩個獨立的 IP SAN 光纖。
+* FI 網路上行鏈路連接：對於基於 IP 的 SAN 連接，上行鏈路 Nexus 交換器不參與 SAN 資料路徑。SAN I/O 直接從 UCS 運算節點經由其與 FI A 或 FI B 的連線到達 ASA 儲存。因此，支援 VLAN 和 vPC 的現有機架頂部交換器可用於為 FlexPod SAN 解決方案環境提供外部網路存取。
+* 對於基於 FC 的 SAN 連線，UCS FI (FC) 連接埠需要設定為分支連接埠。
+* 當 Cisco UCS 用於 FC 型 SAN 解決方案時，應將其設定為 FC 交換模式。
+
+
+Cisco UCS X-Series Direct 也可以像一般 X-Series 一樣使用交換器連接的儲存設備，但使用的是嵌入式交換矩陣互連，而非外部交換矩陣互連。
+
+有關此組態的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/135828-flexpod-san-ucs-xdirect-asa-nva-deploy-guide.pdf["FlexPod 採用 Cisco UCS X-Series Direct 和 NetApp ASA 的 SAN 解決方案"^]。
+
+[NOTE]
+====
+上述範例拓撲結構指的是使用 NetApp ASA 的直連儲存解決方案。但是，同樣的拓撲結構也適用於 NetApp AFF 和 FAS。
+
+對於使用 NetApp AFF 或 FAS 儲存的 IP 型直連 NAS 儲存組態，需要正確設定上行鏈路 Nexus 交換器以支援某些故障情境。如需其他組態資訊，請參閱以下連結。
+
+https://www.netapp.com/pdf.html?item=/media/22621-nva-1154-DESIGN.pdf[]
+
+https://www.netapp.com/pdf.html?item=/media/21938-nva-1154-DEPLOY.pdf[]
+
+====
+
+
+== UCS C 系列伺服器交換器連接的 IP 型存儲
+
+下圖顯示了 Cisco UCS C 系列獨立式和 NetApp AFF。
+
+image:fp-express-tech-spec_image12.png["Cisco UCS C-Series 獨立伺服器和 NetApp AFF"]
+
+此拓撲結構的連接要求包括：
+
+* AFF 叢集連線：對於 2 節點 AFF 叢集，控制器可以直接用纜線連接在一起，而無需使用叢集交換器。
+* 儲存乙太網路連接：NetApp 儲存控制器必須直接連接到 Cisco Nexus 交換器。
+* 需要使用虛擬連接埠通道 (vPC) 將 Cisco Nexus 交換器連接到 NetApp 儲存控制器。
+* 此解決方案最多可擴充至 5 台 UCS C 系列獨立伺服器，每台伺服器的每個交換器需要兩個交換器連接埠。
+
+
+Cisco UCS C 系列可透過 CIMC 或 Cisco Intersight 獨立管理進行管理。
+
+
+NOTE: 上述範例拓樸結構指的是使用 NetApp AFF 的直連儲存解決方案。但是，相同的拓樸結構也可用於 NetApp ASA 和 FAS。
+
+有關此組態的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/88340-NVA-FlexpodExpress_C220_A250_NexusFinal.pdf["FlexPod Express 適用於 VMware vSphere 8.0，支援 Cisco UCS C-Series Standalone 和 NetApp AFF"^]。

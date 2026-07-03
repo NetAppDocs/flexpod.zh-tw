@@ -20,229 +20,103 @@ NetApp儲存控制器為FlexPod 支援開機和應用程式資料儲存的功能
 
 == NetApp儲存控制器選項
 
+FlexPod Express 架構需要冗餘的 AFF、ASA 或 FAS 系列控制器。這些控制器執行 ONTAP 軟體。訂購儲存控制器時，可以預先在控制器上載入偏好的軟體版本。對於 ONTAP，可以使用一對叢集互連交換器或在無交換器叢集組態中部署叢集。
 
 
-== NetApp FAS
+NOTE: 無交換器叢集組態僅支援雙節點組態。超過 4 個節點的組態需要叢集互連交換器，雙節點組態則為選用。
 
-在 FlexPod Express 架構中，需要備援的 AFF C190、AFF A220 或 FAS2750 系列控制器。這些控制器執行 ONTAP 軟體。訂購儲存控制器時，可以預先在控制器上載入偏好的軟體版本。對於 ONTAP，可以使用一對叢集互連交換器或在無交換器叢集組態中部署叢集。
+根據所選儲存平台，可提供不同的選項和配置。有關這些附加元件的詳細資訊，請諮詢您的銷售代表。
 
-下表所列零件編號適用於空控制器。根據所選儲存平台，可提供不同的選項和配置。有關這些附加元件的詳細資訊，請諮詢您的銷售代表。
-
-|===
-| 儲存控制器 | 零件編號FAS | 技術規格 
-
-
-| FAS2750 | 根據所選的個別選項 | https://www.netapp.com/us/products/storage-systems/hybrid-flash-array/fas2700.aspx[] 
-
-
-| FAS2720 | 根據所選的個別選項 | https://www.netapp.com/us/products/storage-systems/hybrid-flash-array/fas2700.aspx[] 
-
-
-| AFF C190 | 根據所選的個別選項 | https://www.netapp.com/us/products/entry-level-aff.aspx[] 
-
-
-| AFF A220 | 根據所選的個別選項 | https://www.netapp.com/us/documentation/all-flash-fas.aspx[] 
-
-
-| FAS2620 | 根據所選的個別選項 | http://www.netapp.com/us/products/storage-systems/fas2600/fas2600-tech-specs.aspx[] 
-
-
-| FAS2650 | 根據所選的個別選項 | http://www.netapp.com/us/products/storage-systems/fas2600/fas2600-tech-specs.aspx[] 
-|===
-
-
-=== E系列儲存
-
-FlexPod Express 架構需要一組 NetApp E2800 系列控制器的 HA 配對。這些控制器執行 SANtricity OS。
-
-下表所列零件編號適用於空控制器。根據所選儲存平台，可提供不同的選項和配置。有關這些附加元件的詳細資訊，請諮詢您的銷售代表。
+下表所列的控制器系列適用於 FlexPod 解決方案，因為它們與 Cisco Nexus 交換器的連接無縫銜接。有關各控制器型號的具體相容性詳情，請參閱 http://hwu.netapp.com/["NetApp Hardware Universe"^]。
 
 |===
-| 儲存控制器 | 產品編號 | 技術規格 
+| NetApp 入門級儲存系列，適用於 FlexPod Express | 模型 | 技術規格 
 
 
-| E2800 | 根據所選的個別選項 | http://www.netapp.com/us/products/storage-systems/e2800/e2800-tech-specs.aspx[] 
+.2+| A系列AFF | A20 .3+| https://www.netapp.com/pdf.html?item=/media/7828-ds-3582-aff-a-series-ai-era.pdf["AFF 說明文件"] 
+
+
+| A30 
+
+
+| AFF C 系列 | C30 
+
+
+.2+| ASA A 系列 | A20 .3+| https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["ASA 說明文件"] 
+
+
+| A30 
+
+
+| ASA C 系列 | C30 
+
+
+.2+| FAS | FAS 2750 .2+| https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS 說明文件"] 
+
+
+| FAS 2820 
 |===
-
-
-== NetApp 乙太網路擴充模組
-
-
-
-=== NetApp FAS
-
-下表列出 NetApp FAS10GbE 介面卡選項。
-
-|===
-| 元件 | 產品編號 | 技術規格 
-
-
-| NetApp X1117A | X1117A-R6 | https://library.netapp.com/ecm/ecm_download_file/ECMM1280307[] 
-|===
-[NOTE]
-====
-FAS2500 和 2600 系列儲存系統均配備板載 10GbE 連接埠。
-
-NetApp X1117A 適配器適用於 FAS8020 儲存系統。
-
-====
-
-
-=== E系列儲存
-
-下表列出 E-Series 10GbE 介面卡選項。
-
-|===
-| 元件 | 產品編號 
-
-
-| 10GbE iSCSI/16Gb FC 4埠 | X-56025-00-0E-C 
-
-
-| 10GbE iSCSI/16Gb FC 2 埠 | X-56024-0E-C 
-|===
-[NOTE]
-====
-E2824 系列儲存系統具有板載 10GbE 連接埠。
-
-10GbE iSCSI/16Gb FC 4 連接埠主機介面卡 （HIC） 可用於增加連接埠密度。
-
-====
-根據 SANtricity OS 中啟動的功能，板載連接埠和 HIC 可作為 iSCSI 適配器或 FC 適配器使用。
-
-有關支援的介面卡選項的詳細資訊，請參閱 https://hwu.netapp.com/Adapter/Index["NetApp Hardware Universe"^]的介面卡部分。
-
 
 
 == NetApp磁碟櫃與磁碟
 
+儲存控制器至少需要一個 NetApp 磁碟櫃。
+
+所選的NetApp機櫃類型決定該機櫃中可用的磁碟機類型。
 
 
-== NetApp FAS
+NOTE: 如需所有磁碟櫃和磁碟零件編號、請洽詢您的銷售代表。
 
-儲存控制器至少需要一個 NetApp 磁碟櫃。所選的 NetApp 磁碟櫃類型決定了該磁碟櫃內可用的磁碟機類型。
+下表列出了 NetApp 磁碟架選項（適用於 FlexPod Express），以及其技術規格的連結。
 
-FAS2700 和 FAS2600 系列控制器提供包含雙儲存控制器和硬碟的整合配置，所有硬碟均安裝在同一機殼內。此配置支援 SATA 或 SAS 硬碟；因此，除非效能或容量需求需要更多硬碟位，否則無需額外的外部硬碟架。
-
-[NOTE]
-====
-所有磁碟架零件編號均指配備兩個 AC PSU 的空磁碟架。如需其他零件編號，請諮詢您的銷售代表。
-
-磁碟機的零件號碼會根據您購買的磁碟尺寸和外形規格而有所不同。請諮詢您的銷售代表以取得更多零件號碼。
-
-====
-下表列出NetApp磁碟櫃選項、以及每種磁碟櫃類型所支援的磁碟機、這些磁碟機可在NetApp Hardware Universe 支援上找到。點選Hardware Universe 「更新」連結、選擇ONTAP 您所使用的版本、然後選擇機櫃類型。在機櫃映像下、按一下「Supported Drives（支援的磁碟機）」以查看特定版本ONTAP 的支援的磁碟機、以及磁碟櫃。
+若要取得磁碟櫃支援的磁碟機列表，請前往 link:https://hwu.netapp.com/DetailViews/Home.aspx["NetApp Hardware Universe"^]，在 *Products > Storage > Shelves* 下選擇 *ONTAP (AFF, ASA, FAS)*，然後選擇您正在使用的 ONTAP 版本，再選擇磁碟櫃類型（例如：*DS212C*），然後按一下 *Show Results*。按一下 *Supported Drives* 即可查看特定 ONTAP 版本和磁碟櫃支援的磁碟機。
 
 |===
-| 磁碟櫃 | 產品編號 | 技術規格 
+| 磁碟櫃 | 技術規格 
 
 
-| DS212C | DS212C-0-12 | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["磁碟櫃和儲存媒體技術規格 NetApp Hardware Universe 支援的磁碟機"] 
+| DS212C .5+| https://www.netapp.com/data-storage/disk-shelves-storage-media/["磁碟架和儲存媒體"] 
 
 
-| DS224C | DS224C-0-24 | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["磁碟櫃和儲存媒體技術規格 NetApp Hardware Universe 支援的磁碟機"] 
+| DS224C 
 
 
-| DS460C | DS460C-0-60 | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["磁碟櫃和儲存媒體技術規格 NetApp Hardware Universe 支援的磁碟機"] 
+| DS460C 
 
 
-| DS2246 | X559A-R6 | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["磁碟櫃和儲存媒體技術規格 NetApp Hardware Universe 支援的磁碟機"] 
+| NS224 
 
 
-| DS4246 | X24M-R6 | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["磁碟櫃和儲存媒體技術規格 NetApp Hardware Universe 支援的磁碟機"] 
-
-
-| DS4486 | DS4486-144TB-R5-C | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["磁碟櫃和儲存媒體技術規格 NetApp Hardware Universe 支援的磁碟機"] 
-|===
-
-
-=== E系列儲存
-
-對於機殼內不包含任何硬碟的儲存控制器，至少需要一個 NetApp 磁碟架。所選的 NetApp 磁碟架類型決定了該磁碟架內可用的硬碟類型。
-
-E2800 系列控制器提供一種配置，包含雙儲存控制器以及安裝在支援的磁碟機櫃內的磁碟。此配置可選配 SSD 或 SAS 硬碟。
-
-
-NOTE: 磁碟機的零件號碼會根據您購買的磁碟尺寸和外形規格而有所不同。請諮詢您的銷售代表以取得更多零件號碼。
-
-下表列出了 NetApp 磁碟櫃選項以及每種磁碟櫃類型支援的磁碟機，您可以在 NetApp Hardware Universe 上找到這些資訊。請點選 Hardware Universe 連結，選擇您正在使用的 ONTAP 版本，然後選擇磁碟櫃類型。在磁碟櫃影像下方，點選 Supported Drives 即可查看特定 ONTAP 版本和磁碟櫃支援的磁碟機。
-
-|===
-| 磁碟櫃 | 產品編號 | 技術規格 
-
-
-| DE460C | E-X5730A-DM-0E-C | link:http://www.netapp.com/us/products/storage-systems/e2800/e2800-tech-specs.aspx["NetApp Hardware Universe 支援磁碟櫃技術規格磁碟機"] 
-
-
-| DE224C | E-X5721A-DM-0E-C | link:http://www.netapp.com/us/products/storage-systems/e2800/e2800-tech-specs.aspx["NetApp Hardware Universe 支援磁碟櫃技術規格磁碟機"] 
-
-
-| DE212C | E-X5723A-DM-0E-C | link:https://hwu.netapp.com/Shelves/Index?osTypeId=2357027["NetApp Hardware Universe 支援磁碟櫃技術規格磁碟機"] 
+| NS224 搭配 NSM100B 
 |===
 
 
 == NetApp軟體授權選項
 
-
-
-=== NetApp FAS
-
-下表列出了 NetApp FAS 軟體授權選項。
+下表列出 NetApp 軟體授權選項。
 
 |===
-| NetApp軟體授權 | 產品編號 | 技術規格 
+| NetApp軟體授權 | 技術規格 
 
 
-| 基礎叢集授權 2+| 如需更多授權資訊、請洽詢您的NetApp銷售團隊。 
+| ONTAP One 適用於 AFF 和 FAS .2+| 如需更多授權資訊、請洽詢您的NetApp銷售團隊。 
+
+
+| 適用於 ASA 的 ONTAP One for SAN 
 |===
+有關 NetApp 軟體授權的詳細資訊，請參閱此連結： https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one["NetApp軟體授權"^]。
 
-
-=== E系列儲存
-
-下表列出了 E 系列軟體授權選項。
-
-|===
-| NetApp軟體授權 | 產品編號 | 技術規格 
-
-
-| 標準配置 2.2+| 如需更多授權資訊、請洽詢您的NetApp銷售團隊。 
-
-
-| 進階功能 
-|===
 
 
 == NetApp支援授權選項
 
 需要使用支援、而這些授權的零件編號會根據所選的選項而有所不同。SupportEdge Premium FlexPod
 
-
-
-=== NetApp FAS
-
-下表列出 NetApp FAS 的 NetApp 支援授權選項。
+下表列出 NetApp AFF、ASA 和 FAS 儲存系統的 NetApp 支援授權選項。
 
 |===
-| NetApp支援授權 | 產品編號 | 技術規格 
+| NetApp支援授權 | 技術規格 
 
 
-| 現場4小時；月數：SupportEdge 36 | CS -O2 - 4小時 | link:https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf["https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf"] 
-|===
-
-
-=== E系列儲存
-
-下表列出 NetApp E-Series 儲存的支援授權選項。
-
-|===
-| NetApp支援授權 | 產品編號 | 技術規格 
-
-
-| 硬體支援 Premium 4 小時現場服務；服務期限：36 個月 | SVC-O2-4HR-E .3+| link:https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf["https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf"] 
-
-
-| 軟體支援 | SW-SSP-O2-4HR-E 
-
-
-| 初始安裝 | SVC-INST-O2-4HR-E 
+| NetApp SupportEdge | https://www.netapp.com/netapp-services/[] 
 |===

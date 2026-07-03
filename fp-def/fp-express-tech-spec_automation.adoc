@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_automation.html 
+keywords: flexpod express, automation, IaC, GitHub repository, Ansible 
+summary: FlexPod Express 的自動化部署可透過包含 Ansible playbook 和相關基礎架構即程式碼資產的 GitHub 儲存庫來實現。 
+---
+= FlexPod Express 自動化部署
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+FlexPod Express 可透過 FlexPod Express GitHub 程式碼倉庫實現自動化部署。這些程式碼倉庫包含 Ansible playbook 和相關文件，以簡化 FlexPod Express 基礎架構即程式碼 （IaC） 的部署。
+
+這些 GitHub 程式碼庫為部署 FlexPod Express 配置提供了一種結構化的方法，使用戶能夠自動化地設定和管理其基礎架構。這些程式碼庫包含 FlexPod Express 設計中各個元件的 playbook，確保使用者能夠有效率、一致且可靠地部署和維護其環境。
+
+若要自動化部署 FlexPod Express 與 Cisco UCS C 系列伺服器、Cisco Nexus 交換器和 ONTAP，請參閱 link:https://github.com/ucs-compute-solutions/FlexPod-Express-Intersight["此 GitHub 儲存庫"^] 及對應的 link:https://www.netapp.com/media/91691-flex-pod-express-nva-ia-c.pdf["NVA"^]。您也可以使用儲存庫中的 VMware 角色來部署基於 VMware 的環境。
+
+若要自動部署配備 Cisco UCS X-Series Direct 伺服器、Cisco Nexus 交換器和 NetApp ONTAP 的 FlexPod Express，請參閱 link:https://github.com/ucs-compute-solutions/FlexPod-IMM-OpenShift["此 GitHub 儲存庫"^]。您可以使用此儲存庫中的 Playbook 來啟動 FlexPod Express 基礎架構，然後使用此 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_rh_openshift_bm_iac_deploy.html.["CVD"^] 在其上部署 OpenShift。
