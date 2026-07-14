@@ -20,6 +20,7 @@ link:flexpod-fips-control-plane-versus-data-plane.html["上一個：控制面與
 
 
 
+[[cisco-ucs-and-fabric-interconnect]]
 == Cisco UCS與Fabric互連
 
 Cisco UCS Manager是從Cisco Fabric Interconnects（FIS）部署及執行。

@@ -18,6 +18,7 @@ summary: 本節說明FlexPod 不同版本的《不一樣》的最低硬體需求
 
 
 
+[[flexpod-express-with-netapp-aff-asa-fas]]
 == FlexPod Express 搭配 NetApp AFF/ASA/FAS
 
 使用 NetApp AFF、ASA 或 FAS 控制器作為底層儲存的 FlexPod Express 解決方案，其硬體需求包括本節所述的組態。
@@ -26,5 +27,5 @@ summary: 本節說明FlexPod 不同版本的《不一樣》的最低硬體需求
 
 * 兩台採用冗餘配置的 10Gbps 標準乙太網路交換器（Cisco Nexus 9200 和 9300 機型）
 * Cisco UCS C 系列獨立機架伺服器，採用基於 CIMC 的獨立機架伺服器設定或 Intersight 獨立設定，或 Cisco UCS X 系列 Direct，採用 Cisco Intersight 管理設定 （IMM）。
-* 兩台入門級 NetApp AFF（A20、A30 或 C30）、NetApp ASA（A20、A30 或 C30）或 NetApp FAS（2750 或 2820）系列控制器，以高可用性（HA）對組態部署為雙節點叢集
+* 兩台入門級 NetApp AFF （A20、A30 或 C30）、NetApp ASA （A20、A30 或 C30）或 NetApp FAS （2750、2820 或 FAS 50）系列控制器，以高可用性 （HA） 配對組態部署為雙節點叢集
 

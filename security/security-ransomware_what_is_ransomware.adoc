@@ -24,6 +24,7 @@ Arvind Ramakrishnan、NetApp
 
 
 
+[[how-does-ransomware-work]]
 == 勒索軟體如何運作？
 
 下列步驟說明勒索軟體如何使用密碼編譯來加密受害者的資料、而不需讓受害者有任何解密或恢復空間：
@@ -39,6 +40,7 @@ Arvind Ramakrishnan、NetApp
 
 
 
+[[challenges]]
 == 挑戰
 
 受到勒索軟體攻擊時、個人和組織會面臨下列挑戰：
@@ -53,6 +55,7 @@ Arvind Ramakrishnan、NetApp
 
 
 
+[[who-is-at-risk]]
 == 誰有風險？
 
 任何人都可能遭受勒索軟體攻擊、包括個人和大型組織。未實作明確定義的安全措施和實務做法的組織、更容易遭受此類攻擊。攻擊對大型組織的影響可能比個人承受的影響大幾倍。
@@ -71,6 +74,7 @@ Arvind Ramakrishnan、NetApp
 
 
 
+[[how-does-ransomware-enter-a-system-or-spread]]
 == 勒索軟體如何進入系統或擴散？
 
 勒索軟體可透過多種方式進入系統或擴散至其他系統。在當今世界中、幾乎所有系統都透過網際網路、LAN、WAN等方式彼此連線。在這些系統之間產生和交換的資料量只會增加。
@@ -88,6 +92,7 @@ Arvind Ramakrishnan、NetApp
 
 
 
+[[consequences-of-data-loss]]
 == 資料遺失的後果
 
 資料遺失的後果或影響可能比組織預期的影響更廣泛。影響可能會因停機時間或組織無法存取其資料的期間而有所不同。攻擊持續時間越長、對組織的營收、品牌和聲譽的影響就越大。組織也可能面臨法律問題、生產力大幅下降。
@@ -96,6 +101,7 @@ Arvind Ramakrishnan、NetApp
 
 
 
+[[financial-effects]]
 == 財務影響
 
 根據最近的資料 https://www.mcafee.com/enterprise/en-us/assets/executive-summaries/es-economic-impact-cybercrime.pdf["McAfee報告"^]全球網路犯罪所造成的成本約為6、000億美元、約佔全球國內生產總值的0.8 %。如果將這筆金額與全球不斷成長的4.2兆美元網際網路經濟進行比較、則相當於14%的成長稅。
@@ -104,6 +110,7 @@ Arvind Ramakrishnan、NetApp
 
 
 
+[[what-is-the-solution]]
 == 解決方案為何？
 
 只有實作主動式災難恢復計畫、才能在停機時間最短的情況下、從勒索軟體攻擊中恢復。從攻擊中恢復的能力很好、但完全預防攻擊是理想的做法。

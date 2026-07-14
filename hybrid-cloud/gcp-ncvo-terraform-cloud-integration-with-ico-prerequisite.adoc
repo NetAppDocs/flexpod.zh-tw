@@ -17,6 +17,7 @@ link:gcp-ncvo-cisco-intersight-configuration.html["先前版本：Cisco Intersig
 
 
 
+[[procedure-1-connect-cisco-intersight-and-terraform-cloud]]
 == 程序1：連接Cisco Intersight和Terraform Cloud
 
 . 請提供相關的Terraform Cloud帳戶詳細資料、以申請或建立Terraform雲端目標。
@@ -28,6 +29,7 @@ link:gcp-ncvo-cisco-intersight-configuration.html["先前版本：Cisco Intersig
 
 
 
+[[procedure-2-generate-user-token]]
 == 程序2：產生使用者權杖
 
 在新增Terraform Cloud目標時、您必須從Terraform Cloud設定頁面提供使用者名稱和API權杖。
@@ -39,6 +41,7 @@ link:gcp-ncvo-cisco-intersight-configuration.html["先前版本：Cisco Intersig
 
 
 
+[[procedure-3-claim-terraform-cloud-target]]
 == 程序3：請款Terraform Cloud Target
 
 . 以帳戶管理員、裝置管理員或裝置技術人員權限登入Intersight。
@@ -64,6 +67,7 @@ image:gcp-ncvo-image4.png["預設託管主機欄位的快照。"]
 
 
 
+[[procedure-4-add-terraform-cloud-agents]]
 == 程序4：新增Terraform Cloud代理程式
 
 先決條件：

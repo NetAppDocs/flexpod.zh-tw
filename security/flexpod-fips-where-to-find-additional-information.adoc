@@ -122,6 +122,7 @@ https://flexpod.com/[]
 
 
 
+[[acknowledgements]]
 == 感謝
 
 * NetApp技術行銷工程師Abhinav Singh
@@ -133,6 +134,7 @@ https://flexpod.com/[]
 
 
 
+[[version-history]]
 == 版本歷程記錄
 
 |===

@@ -8031,7 +8031,6 @@
   <block id="6667cc003527f70428fbb3f46d896e10" category="cell">UCSX-S9108-100G</block>
   <block id="c78a25b3d391b3eabe5a4f6e3a159d89" category="inline-link">Cisco UCS 9108 Fabric Interconnect</block>
   <block id="55941e76508015eb43dd9b6db66a8de4" category="cell"><block ref="55941e76508015eb43dd9b6db66a8de4" category="inline-link-rx"></block></block>
-  <block id="3fbecaa187bec4c0133ee458cb18648e" category="cell">Cisco UCS X 系列機箱</block>
   <block id="c42738d7d96a10ba2e13752c497fe352" category="cell"><block ref="d2f7a165d8728317906bc29daa2c85b4" category="inline-link-rx"></block></block>
   <block id="85a845d3a2419a09e5bc3078a0e2c402" category="cell">Cisco UCS X210c M7</block>
   <block id="542ae9366fc15c0eac09d9ca0b343ff2" category="cell">UCSX-210C-M7</block>
@@ -8053,7 +8052,6 @@
   <block id="be22b28321184ab2c1fab5ff51ab7621" category="cell">UCSX-410C-M8</block>
   <block id="fec8623d55f39e0df72c4d65c9a8a88c" category="inline-link">Cisco UCS X410c M8 運算節點</block>
   <block id="d534d9e405380c188e8251558dc9a224" category="cell"><block ref="d534d9e405380c188e8251558dc9a224" category="inline-link-rx"></block></block>
-  <block id="03bd80ec3d64c289030b272008786311" category="cell">Cisco UCS X 系列模組</block>
   <block id="e1aac65c2b6e24c8e8adc95e43ed62ee" category="cell">Cisco UCS 9108 Intelligent Fabric Module</block>
   <block id="fcfe8e82e41744adc21a0e98c9d0fb10" category="cell">UCSX-I-9108-100G</block>
   <block id="ccd4443b7fa96e36677438df98acd96a" category="cell"><block ref="ccd4443b7fa96e36677438df98acd96a" category="inline-link-rx"></block></block>
@@ -8165,15 +8163,12 @@
   <block id="75b256e594cf5a8ba03273e8a68f2c27" category="paragraph">以下是 FlexPod Express 的最低硬體需求：</block>
   <block id="7013f56669c02dbe795614370d0c956e" category="list-text">兩台採用冗餘配置的 10Gbps 標準乙太網路交換器（Cisco Nexus 9200 和 9300 機型）</block>
   <block id="5f7768fa622b0c0e0bf05d27d8097e12" category="list-text">Cisco UCS C 系列獨立機架伺服器，採用基於 CIMC 的獨立機架伺服器設定或 Intersight 獨立設定，或 Cisco UCS X 系列 Direct，採用 Cisco Intersight 管理設定 （IMM）。</block>
-  <block id="0c31792ebf62debf53351a3c946658a4" category="list-text">兩台入門級 NetApp AFF（A20、A30 或 C30）、NetApp ASA（A20、A30 或 C30）或 NetApp FAS（2750 或 2820）系列控制器，以高可用性（HA）對組態部署為雙節點叢集</block>
   <block id="8cf756e67e6fe3a58a1405610ba75ad9" category="paragraph">FlexPod Express 架構需要冗餘的 AFF、ASA 或 FAS 系列控制器。這些控制器執行 ONTAP 軟體。訂購儲存控制器時，可以預先在控制器上載入偏好的軟體版本。對於 ONTAP，可以使用一對叢集互連交換器或在無交換器叢集組態中部署叢集。</block>
   <block id="d5c565b8a9c9c59fa0b692c9cbf65edd" category="admonition">無交換器叢集組態僅支援雙節點組態。超過 4 個節點的組態需要叢集互連交換器，雙節點組態則為選用。</block>
   <block id="230b6be042c6a9e09ceea70fd8e2f108" category="paragraph">根據所選儲存平台，可提供不同的選項和配置。有關這些附加元件的詳細資訊，請諮詢您的銷售代表。</block>
   <block id="ee65a1f1b80c1d59eba7dc665cc831bc" category="paragraph">下表所列的控制器系列適用於 FlexPod 解決方案，因為它們與 Cisco Nexus 交換器的連接無縫銜接。有關各控制器型號的具體相容性詳情，請參閱<block ref="0012c2b4de81607ee8d0f71acdd6c9ab" category="inline-link-rx"></block>。</block>
   <block id="b77cf317a6bb3b0806632ae61052e3ed" category="cell">NetApp 入門級儲存系列，適用於 FlexPod Express</block>
   <block id="ae80ae2c7480651e65f11ec1f29d6ede" category="cell">A20</block>
-  <block id="98b45ac98f4772440f6942c51078aa23" category="inline-link">AFF 說明文件</block>
-  <block id="6d13a3761ec1ece04280d9fdb13740bf" category="cell"><block ref="6d13a3761ec1ece04280d9fdb13740bf" category="inline-link-rx"></block></block>
   <block id="1d54842ba417c6ef95e35c602a80d5ac" category="cell">A30</block>
   <block id="71642a8ed4161123d0530fb7e39a80f1" category="cell">AFF C 系列</block>
   <block id="9c5fd388a2ee6ceb65d30336d2fec257" category="cell">C30</block>
@@ -8186,7 +8181,6 @@
   <block id="b547a5d94845d9471423356c66873bd5" category="inline-link">FAS 說明文件</block>
   <block id="3948a9d911a4ab4fca76092210e66452" category="cell"><block ref="3948a9d911a4ab4fca76092210e66452" category="inline-link-rx"></block></block>
   <block id="7ec34d91a495121e75b876eb6b33c2ae" category="cell">FAS 2820</block>
-  <block id="c7dd26489686f8b76f6a64795f0045f8" category="paragraph">儲存控制器至少需要一個 NetApp 磁碟櫃。</block>
   <block id="41f841d43d71df7ac7a2d1ce1640196e" category="paragraph">下表列出了 NetApp 磁碟架選項（適用於 FlexPod Express），以及其技術規格的連結。</block>
   <block id="16e64e489b2d626c25c6029238c8e02d" category="paragraph">若要取得磁碟櫃支援的磁碟機列表，請前往 <block ref="c65ee892665eec3b19fff276893fb369" category="inline-link-macro-rx"></block>，在 *Products &gt; Storage &gt; Shelves* 下選擇 *ONTAP (AFF, ASA, FAS)*，然後選擇您正在使用的 ONTAP 版本，再選擇磁碟櫃類型（例如：*DS212C*），然後按一下 *Show Results*。按一下 *Supported Drives* 即可查看特定 ONTAP 版本和磁碟櫃支援的磁碟機。</block>
   <block id="c0b9422f8b99654ad5dfbd724b636b92" category="inline-link">磁碟架和儲存媒體</block>
@@ -8256,10 +8250,7 @@
   <block id="9f3b2feb20361c715e59b7853fc3a7dd" category="section-title">Cisco UCS X-Series Direct 運算節點</block>
   <block id="41d8de6dde920afd25cc68ca8470d268" category="paragraph">Cisco UCS X 系列運算節點的技術規格包括以下元件：</block>
   <block id="976d05ff90bf8350cd3dedc969b4638a" category="paragraph">有關 Cisco UCS X-Series Direct 運算節點的技術規格，請參考下表。</block>
-  <block id="b96ae558e1b68647f125ce2c624b2088" category="section-title">Cisco UCS X-Series Direct 網狀架構互連</block>
-  <block id="d6bdf6edbbba7a7263f55a78214d7fe4" category="paragraph">Cisco UCS X 系列交換矩陣互連的技術規格包括外形尺寸、連接埠和擴充插槽總數以及吞吐量。下表列出 Cisco UCS X 系列交換矩陣互連的資料表。</block>
   <block id="cd09ca628a1311fa28883fcb363e7fb4" category="cell"><block ref="cd09ca628a1311fa28883fcb363e7fb4" category="inline-link-rx"></block></block>
-  <block id="ccdfc1e80180dba9409464250526cffc" category="paragraph">Cisco UCS C 系列機架式伺服器的技術規格包括處理器支援、最大記憶體容量、PCIe 插槽數量和外形尺寸。有關相容 UCS 伺服器型號的更多詳細資訊，請參閱<block ref="1420345f3000e0fcdfadf0c24d8bc000" category="inline-link-rx"></block>清單。下表列出 C 系列機架式伺服器的資料表。</block>
   <block id="68ef22421a5462490103f0f4dd00e1bb" category="paragraph">Cisco Nexus 交換器的技術規格包含在各型號的資料手冊中。規格包括外形尺寸；管理模組、交換矩陣模組和線路卡插槽的數量；以及最大連接埠數。這些資料手冊可在下表中找到。</block>
   <block id="30a68969b283f9f5fa98ed149daced0d" category="paragraph">NetApp 儲存控制器的技術規格包括平台配置、最大原始容量、記憶體、外形尺寸、ONTAP 版本需求、磁碟櫃等。</block>
   <block id="beb9bc47e7d0013a58697d31a3843ac6" category="inline-link">AFF A系列技術規格</block>
@@ -8308,4 +8299,57 @@
   <block id="0e7d997a5eeb1bf4a8fca9cc98549100" category="inline-link">配備 NSM 100B 的 NS224 磁碟櫃文件</block>
   <block id="8c86738df84f57b90dec50a017ceb7d9" category="cell"><block ref="8c86738df84f57b90dec50a017ceb7d9" category="inline-link-rx"></block></block>
   <block id="f674169036173cc4a9f01e223c275c8d" category="sidebar">自動化部署</block>
+  <block id="316a99a42cbbc4b239d852b672b39d4b" category="list-text">NetApp FlexPod 首頁</block>
+  <block id="add9a9edabbf3562a9337cdf146ea5bd" category="list-text">Cisco FlexPod 首頁</block>
+  <block id="6a105bdea4f9f755cc118f6097fdc896" category="inline-link"><block ref="6a105bdea4f9f755cc118f6097fdc896" category="inline-link-rx"></block></block>
+  <block id="716e40476d464a447f655388df0dd8b5" category="paragraph"><block ref="716e40476d464a447f655388df0dd8b5" category="inline-link-rx"></block></block>
+  <block id="b60704649fcb67a9da6cbc2a3bd02169" category="cell">Cisco UCS X-Series Direct 網狀架構互連</block>
+  <block id="e8159cf1a120c2dad2cc824e86940263" category="cell">Cisco UCS X-Series Direct Chassis</block>
+  <block id="bc45afcc0add16ec7c135f59e6c4aa6e" category="cell">Cisco UCS X-Series Direct 運算節點</block>
+  <block id="b3d8dafdc485f8b4be4dfdc0bd0f19bc" category="cell">Cisco UCS X系列直連模組</block>
+  <block id="05a30dd9183a15551e30711d095839b2" category="section-title">Cisco Unified Edge</block>
+  <block id="229e1796d0166c16a41eba6650efda05" category="paragraph">Cisco Unified Edge 是一款支援 AI 的系統，它融合了運算、網路、儲存和安全功能，重新定義了邊緣運算。其模組化設計面向未來、節能高效、易於維護，可針對當前工作負載和使用案例進行客製化，同時能夠適應快速發展的 AI 環境。</block>
+  <block id="8054dca6f3cc09aaffac8c2a0e0b82a8" category="inline-link-macro">Cisco Unified Edge 概覽。</block>
+  <block id="76c88334c465067f22921bf2136b014f" category="paragraph">如需快速了解 Cisco Unified Edge 的功能與特性，請參閱<block ref="243b31f685febd29a18b2b20d754e04f" category="inline-link-macro-rx"></block></block>
+  <block id="9012ae91b5629dee8af2f3183f8e53f6" category="paragraph">Cisco Unified Edge 由下列元件構成：</block>
+  <block id="74704c58c0b25fd36045df51735a1ca5" category="list-text">Cisco UCS XE9305 機箱</block>
+  <block id="5ab1116a529bba2d805247fbccdea67e" category="list-text">兩台 Cisco Unified Edge Management Controllers，內建 25G 交換機</block>
+  <block id="6303bcf4348925a98b812af76019c64a" category="list-text">運算節點 - 選擇</block>
+  <block id="399f8c6595645afb3afe8b7f19963fe9" category="list-text">Cisco UCS XE130c M8 運算節點</block>
+  <block id="2c04fc30223433f4a729c55a69d01954" category="list-text">Cisco UCS XE150c M8 運算節點</block>
+  <block id="d4596e0a5989187943f8238341521b14" category="paragraph">下表列出 Cisco Unified Edge 機箱和運算節點選項。</block>
+  <block id="a0dcd4323b3a5f80da1b9875ed5c5979" category="cell">Cisco Unified Edge 機殼</block>
+  <block id="3f08020e24294d582d148b911e1cc4a2" category="cell">UCSXE-9305-U</block>
+  <block id="2f8c8167cbd5b188c2acb5b0a76ab823" category="cell"><block ref="2f8c8167cbd5b188c2acb5b0a76ab823" category="inline-link-rx"></block></block>
+  <block id="3be0b9eb854192d2431d15457d10d8a7" category="cell">Cisco Unified Edge 運算節點</block>
+  <block id="209cd1b2adaf0192afee5eb93e3dd701" category="cell">UCSXE-130C-M8</block>
+  <block id="1eb104e144deb30940d14e57122c736a" category="cell"><block ref="1eb104e144deb30940d14e57122c736a" category="inline-link-rx"></block></block>
+  <block id="22bd40a63ed2c9c49187fbd0583bf9fe" category="cell">UCSXE-150C-M8</block>
+  <block id="7930817dcb9af22b46e0b2ab1c7127fb" category="cell"><block ref="7930817dcb9af22b46e0b2ab1c7127fb" category="inline-link-rx"></block></block>
+  <block id="161c9027d6afcc8652df79c032c01c41" category="list-text">兩台入門級 NetApp AFF （A20、A30 或 C30）、NetApp ASA （A20、A30 或 C30）或 NetApp FAS （2750、2820 或 FAS 50）系列控制器，以高可用性 （HA） 配對組態部署為雙節點叢集</block>
+  <block id="a0ab09bcd71cc8c8e831f022615b28a4" category="cell"><block ref="a0ab09bcd71cc8c8e831f022615b28a4" category="inline-link-rx"></block></block>
+  <block id="6488de7d247a06b442a5018b0d91bfc6" category="inline-link">AFF C 系列文件</block>
+  <block id="369fac7daa2f8b7e7c135f15db1bd0ed" category="cell"><block ref="369fac7daa2f8b7e7c135f15db1bd0ed" category="inline-link-rx"></block></block>
+  <block id="f5b8033d4491de22da52d561547096c6" category="cell">FAS 50</block>
+  <block id="c13941eabb373c3b7fd4f5a42e258085" category="paragraph">對於沒有內建磁碟架的儲存控制器，至少需要一個 NetApp 磁碟架。所選的 NetApp 磁碟架類型決定了該磁碟架內可用的磁碟機類型。</block>
+  <block id="a2d8dae03bf192729241cfd600818da2" category="paragraph">Cisco UCS X 系列直連式交換矩陣的技術規格包括外形尺寸、連接埠和擴充插槽總數以及吞吐量。請參閱下表中的 Cisco UCS X 系列直連式交換矩陣資料表。</block>
+  <block id="7140bad7adf4e3f9b9bc2475033ab125" category="section-title">Cisco UCS XE9305 機殼（Cisco Unified Edge）</block>
+  <block id="824fd2aa31faf7685a99b9dd0650e48a" category="paragraph">如下表所示，Cisco UCS XE9305 機殼的技術規格包括以下組件：</block>
+  <block id="93701061c125de903ca058eafa2b253f" category="cell">Cisco UCS XE9305 機箱</block>
+  <block id="e682f8a3fbfd1bdeaa40c62f0d55bf53" category="cell">5 個 Cisco UCS XE130c M8 運算節點或 2 個 Cisco UCS XE150c M8 運算節點</block>
+  <block id="c4a00a11f1f529b07078feef29c1537c" category="inline-link-macro">Cisco UCS XE9305 機箱資料表</block>
+  <block id="513dbd1ff0722f6bb8c0c7e64f29f76b" category="paragraph">如需更多資訊、請參閱 <block ref="6de15b1fcd20027c9f2069260fd57caf" category="inline-link-macro-rx"></block> 。</block>
+  <block id="a0dad3f3d4475c3befd877cc6682747d" category="section-title">Cisco UCS 運算節點，適用於 Cisco Unified Edge</block>
+  <block id="278925fac07ad7dbf8f837dce0d0ac44" category="paragraph">Cisco Unified Edge 的 Cisco UCS 運算節點的技術規格包括以下元件：</block>
+  <block id="c9ec92a82b650fa95ba2f0e26022cd35" category="list-text">GPU 支援</block>
+  <block id="351a618532afa82052492a3628f763b7" category="paragraph">運算節點也支援 GPU，其中 XE130c M8 支援 NVIDIA L4 GPU，XE150c M8 支援 NVIDIA RTX PRO 4500 / 6000 Blackwell Server Edition GPU。有關 Cisco UCS 統一邊緣運算節點的技術規格，請參閱下表。</block>
+  <block id="aadadeab6a26b56379fe31b52f9e94c7" category="cell"><block ref="aadadeab6a26b56379fe31b52f9e94c7" category="inline-link-rx"></block></block>
+  <block id="5b1873f6cccb0f18dc6c9c4b88ad68f2" category="cell"><block ref="5b1873f6cccb0f18dc6c9c4b88ad68f2" category="inline-link-rx"></block></block>
+  <block id="0defdd0a0cad8694d75f5d415c59e852" category="inline-link-macro">Cisco Unified Edge 資料表列表</block>
+  <block id="cfccf5d08c64aba24da167d5ee87ec4e" category="paragraph">如需其他詳細資訊，請參閱 <block ref="361368a75a3a97c843641aad773ba359" category="inline-link-macro-rx"></block>。</block>
+  <block id="682a7264c9b56e8c0fc15a778aaf4962" category="paragraph">Cisco UCS C 系列機架式伺服器的技術規格包括處理器支援、最大記憶體容量、PCIe 插槽數量和外形尺寸。有關相容 UCS 伺服器型號的更多詳細資訊，請參閱<block ref="1420345f3000e0fcdfadf0c24d8bc000" category="inline-link-rx"></block>清單。</block>
+  <block id="0fc3d759fbf04ff8c70754496e367364" category="paragraph">有關 Cisco UCS C 系列機架伺服器的技術規格，請參閱下表。</block>
+  <block id="b64e0ef8e38bdf1b18a60607d7d0f675" category="cell">FAS50 系列</block>
+  <block id="59454cc1e7857ff5697ed2ce10f85c1e" category="inline-link">FAS50 主要規格</block>
+  <block id="e1b46a8875c248d2454b135fe5ab3fc1" category="cell"><block ref="e1b46a8875c248d2454b135fe5ab3fc1" category="inline-link-rx"></block></block>
 </blocks>

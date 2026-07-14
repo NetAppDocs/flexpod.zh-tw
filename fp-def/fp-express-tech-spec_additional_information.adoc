@@ -16,6 +16,14 @@ summary: 若要深入瞭解本文所述資訊、請參閱下列文件與網站
 [role="lead"]
 若要深入瞭解本文所述資訊、請參閱下列文件與網站：
 
+* NetApp FlexPod 首頁
++
+https://www.netapp.com/flexpod/["https://www.netapp.com/flexpod/"^]
+
+* Cisco FlexPod 首頁
++
+https://www.cisco.com/site/us/en/solutions/computing/converged-infrastructure/flexpod/index.html["https://www.cisco.com/site/us/en/solutions/computing/converged-infrastructure/flexpod/index.html"^]
+
 * NetApp 產品文件
 +
 https://docs.netapp.com/["https://docs.netapp.com/"^]
@@ -27,10 +35,6 @@ https://docs.netapp.com/us-en/ontap-family/index.html["https://docs.netapp.com/u
 * ONTAP 硬體系統文件
 +
 https://docs.netapp.com/us-en/ontap-systems-family/index.html["https://docs.netapp.com/us-en/ontap-systems-family/index.html"^]
-
-* 首頁FlexPod
-+
-https://www.netapp.com/flexpod/["https://www.netapp.com/flexpod/"^]
 
 * NetApp互通性對照表工具IMT （不含）
 +

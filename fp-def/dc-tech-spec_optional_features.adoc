@@ -18,6 +18,7 @@ NetApp支援多種選用元件、以進一步強化FlexPod 「資料中心架構
 
 
 
+[[metrocluster]]
 == MetroCluster
 
 支援兩種不同的NetApp支援功能、可在雙節點或四節點叢集組態中持續提供可用度。FlexPod MetroCluster支援同步複寫以處理關鍵工作負載。MetroCluster它需要雙站台組態、並與Cisco交換器相連。站台之間的最大支援距離約為186英里（300公里）MetroCluster 、MetroCluster 而若為景點、則可增加至約435英里（700公里）。下圖分別說明FlexPod 採用NetApp MetroCluster 技術的「資料中心」、FlexPod 以及採用NetApp MetroCluster 產品介紹的「資料中心」、以及採用NetApp產品介紹的「資料中心」。
@@ -50,6 +51,7 @@ image:dc-tech-spec_image12.png["錯誤：缺少圖形影像"]
 
 
 
+[[end-to-end-fc-nvme]]
 == 端點對端點FC-NVMe
 
 端點對端點FC-NVMe可無縫延伸客戶現有的SAN基礎架構、以利即時應用程式、同時提供更高的IOPS與處理量、並減少延遲。
@@ -66,6 +68,7 @@ image:dc-tech-spec_image3.png["錯誤：缺少圖形影像"]
 
 
 
+[[fc-san-boot-through-cisco-mds]]
 == FC SAN透過Cisco MDS開機
 
 為了使用專屬的SAN網路來提升擴充性、FlexPod 透過Cisco MDS交換器和Nexus交換器支援FC、例如Cisco Nexus 93108Tc-FX。Cisco MDS的FC SAN開機選項具有下列授權與硬體需求：
@@ -85,6 +88,7 @@ image:dc-tech-spec_image5.png["錯誤：缺少圖形影像"]
 
 
 
+[[fc-san-boot-with-cisco-nexus]]
 == 使用Cisco Nexus開機FC SAN
 
 傳統FC SAN開機選項具有下列授權與硬體需求：
@@ -107,6 +111,7 @@ image:dc-tech-spec_image6.png["錯誤：缺少圖形影像"]
 
 
 
+[[fcoe-san-boot-option]]
 == FCoE SAN開機選項
 
 FCoE SAN開機選項具有下列授權與硬體需求：
@@ -128,6 +133,7 @@ image:dc-tech-spec_image7.png["錯誤：缺少圖形影像"]
 
 
 
+[[iscsi-boot-option]]
 == iSCSI開機選項
 
 iSCSI開機選項具有下列授權與硬體需求：
@@ -143,6 +149,7 @@ image:dc-tech-spec_image8.png["錯誤：缺少圖形影像"]
 
 
 
+[[cisco-ucs-direct-connect-with-netapp-storage]]
 == Cisco UCS直接連接NetApp儲存設備
 
 NetApp AFF 的功能與FAS 功能不需使用任何上游SAN交換器、即可直接連接至Cisco UCS網路互連。

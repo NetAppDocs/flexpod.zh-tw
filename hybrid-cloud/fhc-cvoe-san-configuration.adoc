@@ -23,6 +23,7 @@ NOTE: 下列組態步驟是本解決方案中使用的CentOS 8主機專屬的設
 
 
 
+[[netapp-host-utility-kit]]
 == NetApp主機公用程式套件
 
 NetApp建議您在連線至及存取NetApp儲存系統的主機作業系統上安裝NetApp主機公用程式套件（主機公用程式）。支援原生Microsoft多重路徑I/O（MPIO）。作業系統必須支援非對稱邏輯單元存取（ALUA）、才能執行多重路徑作業。安裝主機公用程式會設定NetApp儲存設備的主機匯流排介面卡（HBA）設定。
@@ -34,6 +35,7 @@ NetApp主機公用程式可下載 https://mysupport.netapp.com/site/products/all
 ....
 
 
+[[discover-ontap-storage]]
 == 探索ONTAP 功能
 
 請確定iSCSI服務在應登入時執行。若要為目標上的特定入口網站或目標上的所有入口網站設定登入模式、請使用 `iscsiadm` 命令。
@@ -59,6 +61,7 @@ Healthcare_SVM                       /dev/sdc host34  iSCSI    200g    cDOT
 ....
 
 
+[[configure-multipathing]]
 == 設定多重路徑
 
 Device Mapper多路徑（DM-多 路徑）是Linux中的原生多重路徑公用程式。它可用於備援和改善效能。它會彙總或合併伺服器與儲存設備之間的多重I/O路徑、因此在作業系統層級建立單一裝置。
@@ -116,6 +119,7 @@ NOTE: 如需這些步驟的詳細資訊、請參閱 https://docs.netapp.com/us-e
 
 
 
+[[create-physical-volume]]
 == 建立實體磁碟區
 
 使用 `pvcreate` 初始化區塊裝置以做為實體磁碟區的命令。初始化類似於格式化檔案系統。
@@ -126,6 +130,7 @@ Physical volume "/dev/sdb" successfully created.
 ....
 
 
+[[create-volume-group]]
 == 建立Volume群組
 
 若要從一或多個實體磁碟區建立磁碟區群組、請使用 `vgcreate` 命令。此命令會依名稱建立新的磁碟區群組、並至少新增一個實體磁碟區。
@@ -161,6 +166,7 @@ Volume group "datavg" successfully created.
 ....
 
 
+[[create-logical-volume]]
 == 建立邏輯Volume
 
 當您建立邏輯Volume時、邏輯Volume會使用組成Volume群組的實體磁碟區上的可用範圍、從Volume群組中進行切分。
@@ -173,6 +179,7 @@ Logical volume "datalv" created.
 
 
 
+[[create-file-system]]
 == 建立檔案系統
 
 ....
@@ -190,6 +197,7 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 ....
 
 
+[[make-folder-to-mount]]
 == 建立要掛載的資料夾
 
 ....
@@ -197,6 +205,7 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 ....
 
 
+[[mount-the-file-system]]
 == 掛載檔案系統
 
 ....
@@ -219,6 +228,7 @@ tmpfs                       1620652       0   1620652   0% /run/user/0
 
 
 
+[[data-generation]]
 == 資料產生
 
  `Dgen.pl`是一個用於 EHR I/O 模擬器 (GenerateIO) 的 perl 腳本資料產生器。 LUN 內的資料由 EHR 產生。 `Dgen.pl`腳本。該腳本旨在創建與 EHR 資料庫中的數據類似的數據。
@@ -240,6 +250,7 @@ Filesystem                 1K-blocks  Used       Available  Use%  Mounted on
 
 
 
+[[configure-snapmirror-replication-between-on-premises-ontap-and-cloud-volumes-ontap]]
 == 設定內部部署ONTAP 的SnapMirror與Cloud Volumes ONTAP 功能不全的SnapMirror複寫
 
 NetApp SnapMirror可透過LAN或WAN高速複寫資料、因此您可以在虛擬與傳統環境中同時獲得高資料可用度與快速資料複寫。當您將資料複寫到NetApp儲存系統並持續更新次要資料時、資料會保持最新狀態、並在需要時隨時保持可用。不需要外部複寫伺服器。

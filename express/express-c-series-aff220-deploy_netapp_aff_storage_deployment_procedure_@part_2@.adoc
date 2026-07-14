@@ -15,10 +15,12 @@ summary: 若要建立igroup、您需要iSCSI啟動器IQN、而且必須完成下
 
 
 
+[[ontap-san-boot-storage-setup]]
 == 支援SAN開機儲存設定ONTAP
 
 
 
+[[create-iscsi-igroups]]
 === 建立iSCSI igroup
 
 若要建立igroup、請完成下列步驟：
@@ -39,6 +41,7 @@ NOTE: 新增其他Cisco UCS C系列伺服器時、必須完成此步驟。
 
 
 
+[[map-boot-luns-to-igroups]]
 == 將開機LUN對應至igroup
 
 若要將開機LUN對應至igroup、請從叢集管理SSH連線執行下列命令：

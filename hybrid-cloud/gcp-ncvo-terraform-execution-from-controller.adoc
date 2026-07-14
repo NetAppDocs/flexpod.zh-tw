@@ -20,6 +20,7 @@ link:gcp-ncvo-dr-workflow.html["上一個：DR工作流程。"]
 
 
 
+[[prerequisites]]
 == 先決條件
 
 解決方案的設定從能夠存取網際網路的管理工作站開始、並開始使用Terraform的有效安裝。
@@ -28,6 +29,7 @@ link:gcp-ncvo-dr-workflow.html["上一個：DR工作流程。"]
 
 
 
+[[clone-github-repo]]
 == Clone GitHub repo
 
 此程序的第一步是將GitHub repo複製到管理工作站上的新空白資料夾。若要複製GitHub儲存庫、請完成下列步驟：

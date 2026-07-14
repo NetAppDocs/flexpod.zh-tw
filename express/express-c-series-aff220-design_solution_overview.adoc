@@ -17,12 +17,14 @@ image:express-c-series-aff220-design_image3.png["錯誤：缺少圖形影像"]
 
 
 
+[[target-audience]]
 == 目標對象
 
 本文件適用於想要善用專為提高IT效率及推動IT創新所打造基礎架構的使用者。本文件的對象包括但不限於銷售工程師、現場顧問、專業服務人員、IT經理、 合作夥伴工程師與客戶。
 
 
 
+[[solution-technology]]
 == 解決方案技術
 
 本解決方案採用NetApp、Cisco及VMware的最新技術。本解決方案採用全新NetApp AFF S3220系統、可執行ONTAP VMware vSphere 6.7的S得9.4軟體、雙Cisco Nexus 3172P交換器、以及Cisco UCS C220 M5機架伺服器。這套通過驗證的解決方案採用10-Gigabit乙太網路（10GbE）技術。下圖為總覽。同時新增兩個Hypervisor節點、FlexPod 以配合組織不斷演變的業務需求、同時提供擴充指南。

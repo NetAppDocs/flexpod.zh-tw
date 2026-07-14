@@ -21,6 +21,7 @@ NetApp的Jyh-hing-CHEN CHEN
 
 
 
+[[flexpod-solution]]
 == 解決方案FlexPod
 
 NetApp是融合式基礎架構資料中心架構的最佳實務做法、包含Cisco和NetApp的下列元件：FlexPod
@@ -42,6 +43,7 @@ image:sm-bcs-image2.png["錯誤：缺少圖形影像"]
 
 
 
+[[disaster-recovery-and-business-continuity]]
 == 災難恢復與營運不中斷
 
 公司可以採用多種方法、確保能迅速從災難中恢復應用程式和資料服務。制定災難恢復（DR）和業務持續性（BC）計畫、實作符合業務目標的解決方案、並定期測試災難情境、讓公司能夠在發生災難後、從災難中恢復、並在發生災難後繼續提供關鍵業務服務。
@@ -54,6 +56,7 @@ image:sm-bcs-image2.png["錯誤：缺少圖形影像"]
 
 
 
+[[recovery-point-objective-and-recovery-time-objective]]
 == 恢復點目標和恢復時間目標
 
 恢復點目標（RPO）會測量您可以承受的損失資料量、或是您可以恢復資料的點。有了每日備份計畫、公司可能會損失一天的資料價值、因為自上次備份以來對資料所做的變更可能會在災難中遺失。對於業務關鍵型和任務關鍵型資料服務、您可能需要零RPO和相關的計畫和基礎架構、才能在不遺失任何資料的情況下保護資料。
@@ -62,6 +65,7 @@ image:sm-bcs-image2.png["錯誤：缺少圖形影像"]
 
 
 
+[[sm-bc]]
 == SM - BC
 
 從推出支援功能的支援功能中、您ONTAP 可以保護SAN工作負載、透過NetApp SMBC實現透明的應用程式容錯移轉。您可以在兩AFF 個仰賴資料ASA 複寫的不穩定叢集或兩個使用者介面叢集之間建立一致的群組關係、以達到零RPO和接近零RTO。

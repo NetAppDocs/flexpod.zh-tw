@@ -18,6 +18,7 @@ summary: 不只是使用不需要的功能、更需要搭配軟硬體元件。Fl
 
 
 
+[[hardware-requirements]]
 == 硬體需求
 
 無論選擇何種Hypervisor、所有FlexPod 的SESHExpress組態都使用相同的硬體。因此、即使業務需求改變、也能在相同FlexPod 的SExpress硬體上執行任一Hypervisor。
@@ -58,6 +59,7 @@ summary: 不只是使用不需要的功能、更需要搭配軟硬體元件。Fl
 |===
 
 
+[[software-requirements]]
 == 軟體需求
 
 下表列出實作FlexPod 《不適用》解決方案架構所需的軟體元件。

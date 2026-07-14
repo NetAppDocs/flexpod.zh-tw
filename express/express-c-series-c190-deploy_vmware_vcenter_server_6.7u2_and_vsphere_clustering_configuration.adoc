@@ -25,6 +25,7 @@ summary: 若要設定VMware vCenter Server 6.7和vSphere叢集、請完成本頁
 
 
 
+[[create-a-vsphere-cluster]]
 == 建立vSphere叢集
 
 若要建立vSphere叢集、請完成下列步驟：
@@ -40,6 +41,7 @@ image:express-c-series-c190-deploy_image45.png["錯誤：缺少圖形影像"]
 
 
 
+[[add-the-esxi-hosts-to-the-cluster]]
 == 將ESXi主機新增至叢集
 
 若要將ESXi主機新增至叢集、請完成下列步驟：
@@ -73,6 +75,7 @@ NOTE: 若有任何額外的主機新增FlexPod 至不完整的功能組態、則
 
 
 
+[[configure-coredump-on-the-esxi-hosts]]
 == 在ESXi主機上設定coredump
 
 若要在ESXi主機上設定coredump、請完成下列步驟：

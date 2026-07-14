@@ -17,6 +17,7 @@ link:gcp-ncvo-terraform-cloud-integration-with-ico-prerequisite.html["先前：T
 
 
 
+[[procedure-1-access-netapp-console]]
 == 步驟 1：存取 NetApp Console
 
 若要存取 NetApp 雲端服務，請使用 https://console.netapp.com["NetApp Console"^]註冊並登入。
@@ -26,6 +27,7 @@ NOTE: 若要設定 NetApp Console 帳戶中的工作區和使用者，請按一�
 
 
 
+[[procedure-2-deploy-connector]]
 == 程序2：部署Connector
 
 若要在Google Cloud中部署Connector、請參閱這一點 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#creating-a-connector-in-google-cloud["連結"^]。

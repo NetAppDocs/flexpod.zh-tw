@@ -18,6 +18,7 @@ summary: 在宣告目標之後、如果您擁有Advantage層級授權、則NetAp
 
 
 
+[[storage-inventory-overview]]
 == 儲存設備庫存總覽
 
 下列螢幕快照會顯示*作業>儲存設備*畫面。
@@ -33,6 +34,7 @@ image:ci-qsg_image10.png["快照顯示儲存叢集概觀"]
 
 
 
+[[storage-widgets]]
 == 儲存小工具
 
 若要檢視儲存小工具、請瀏覽至*監控>儀表板>檢視NetApp儲存小工具*。

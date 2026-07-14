@@ -25,6 +25,7 @@ summary: 您可以完成下列步驟、設定VMware vCenter Server 6.7和vSphere
 
 
 
+[[create-vsphere-cluster]]
 == 建立vSphere叢集
 
 完成下列步驟以建立vSphere叢集：
@@ -40,6 +41,7 @@ image:express-c-series-aff220-deploy_image49.png["錯誤：缺少圖形影像"]
 
 
 
+[[add-esxi-hosts-to-cluster]]
 == 將ESXi主機新增至叢集
 
 . 在叢集上按一下滑鼠右鍵、然後選取新增主機。
@@ -67,6 +69,7 @@ NOTE: 如有需要、可於稍後完成此步驟。
 
 
 
+[[configure-coredump-on-esxi-hosts]]
 == 在ESXi主機上設定coredump
 
 . 使用SSH連線至管理IP ESXi主機、輸入root作為使用者名稱、然後輸入root密碼。

@@ -18,6 +18,7 @@ summary: 供應電源和纜線的需求最低。FlexPod
 
 
 
+[[power-requirements]]
 == 電力需求
 
 根據安裝「支援資料中心」組態的位置、FlexPod 對「支援資料中心」的電源需求各有不同FlexPod 。
@@ -30,6 +31,7 @@ summary: 供應電源和纜線的需求最低。FlexPod
 
 
 
+[[minimum-cable-requirements]]
 == 最低纜線需求
 
 每FlexPod 次部署「Datacenter」時、所需的纜線和介面卡數量和類型會有所不同。纜線類型、收發器類型和編號是在設計過程中根據您的需求而決定。下表列出所需的最低纜線數量。

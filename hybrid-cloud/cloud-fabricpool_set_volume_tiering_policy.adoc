@@ -42,6 +42,7 @@ summary:
 
 
 
+[[oncommand-system-manager]]
 == 系統管理程式OnCommand
 
 若要使用OnCommand 《不實系統管理程式》變更磁碟區的分層原則、請完成下列步驟：
@@ -58,6 +59,7 @@ image:cloud-fabricpool_image16.png["錯誤：缺少圖形影像"]
 
 
 
+[[ontap-cli]]
 == CLI ONTAP
 
 若要使用ONTAP CLI變更磁碟區的分層原則、請執行下列命令：

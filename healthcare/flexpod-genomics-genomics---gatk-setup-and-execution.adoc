@@ -24,6 +24,7 @@ link:flexpod-genomics-solution-infrastructure-hardware-and-software-components.h
 
 
 
+[[from-sample-to-variant-identification-annotation-and-prediction]]
 == 從樣本到變體識別、註釋和預測
 
 高層級的基因組學可分為下列步驟。這份清單並非詳盡無遺：
@@ -66,6 +67,7 @@ image:flexpod-genomics-image8.png["錯誤：缺少圖形影像"]
 
 
 
+[[genome-analysis-toolkit-gatk]]
 == 基因組分析工具套件（網關）
 
 GAT是以資料科學平台的形式開發 https://www.broadinstitute.org/about-us["廣泛研究所"^]。GATE是一組開放原始碼工具、可進行基因組分析、特別是變種探索、識別、註釋和基因分型。網格連結的好處之一是工具和或命令集可以鏈結在一起、形成完整的工作流程。廣泛機構所面臨的主要挑戰如下：
@@ -84,6 +86,7 @@ GAT是以資料科學平台的形式開發 https://www.broadinstitute.org/about-
 
 
 
+[[flexpod-setup]]
 == 系統設定FlexPod
 
 基因組學工作負載驗證包括FlexPod 一套完整的功能、可從零開始設定一套完整的基礎架構平台。此平台具備高可用度、可獨立擴充、例如網路、儲存設備和運算都可獨立擴充。FlexPod我們使用下列Cisco驗證設計指南做為參考架構文件、來設定FlexPod 這個環境： https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html["VMware vSphere 7.0與NetApp VMware vCenter 9.7的資料中心FlexPod ONTAP"^]。請參閱FlexPod 下列的《不完整平台設定摘要：
@@ -131,6 +134,7 @@ image:flexpod-genomics-image17.png["錯誤：缺少圖形影像"]
 
 
 
+[[gatk-setup-and-execution]]
 == 網關設定與執行
 
 在RedHat Enterprise 8.3 Linux VM上安裝下列先決條件：
@@ -149,6 +153,7 @@ image:flexpod-genomics-image17.png["錯誤：缺少圖形影像"]
 
 
 
+[[cromwell-engine]]
 === Cromwell引擎
 
 Cromwell是開放原始碼引擎、專為科學工作流程所設計、可實現工作流程管理。克倫威爾引擎可在兩個引擎中執行 https://cromwell.readthedocs.io/en/stable/Modes/["模式"^]、伺服器模式或單一工作流程執行模式。您可以使用來控制Cromwell引擎的行為 https://github.com/broadinstitute/cromwell/blob/develop/cromwell.example.backends/cromwell.examples.conf["Cromwell引擎組態檔"^]。
@@ -187,6 +192,7 @@ Cromwell是開放原始碼引擎、專為科學工作流程所設計、可實現
 
 
 
+[[execution-of-gatk-using-the-jar-file]]
 === 使用Jar檔案執行GK
 
 讓我們來看看使用Hplotype變體呼叫者執行的單一變體呼叫管線。
@@ -214,6 +220,7 @@ HaplotypeCaller \
 
 
 
+[[execution-of-gatk-using-gatk-script]]
 === 使用./gatk指令碼執行網關
 
 可以使用「/gatk」指令碼來執行GatK工具套件。讓我們來檢查下列命令：
@@ -238,6 +245,7 @@ HaplotypeCaller \
 
 
 
+[[execution-of-gatk-using-cromwell-engine]]
 === 使用Cromwell引擎執行網關
 
 我們使用Cromwell引擎來管理網關執行。讓我們來檢查命令列及其參數。

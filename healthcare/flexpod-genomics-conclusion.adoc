@@ -20,6 +20,7 @@ link:flexpod-genomics-appendix-d-gpu-setup.html["上一篇：GPU設定。"]
 
 
 
+[[where-to-find-additional-information]]
 == 何處可找到其他資訊
 
 若要深入瞭解本文所述資訊、請檢閱下列文件與網站：
@@ -72,6 +73,7 @@ https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_ope
 
 
 
+[[version-history]]
 == 版本歷程記錄
 
 |===

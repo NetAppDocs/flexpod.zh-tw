@@ -18,6 +18,7 @@ summary: 本節說明FlexPod 不同版本的《不一樣》的連線需求。
 
 
 
+[[connectivity-requirements-for-flexpod-express-with-netapp-aff-asa-fas]]
 == FlexPod Express 與 NetApp AFF/ASA/FAS 的連線要求
 
 FlexPod Express 與 NetApp AFF/ ASA/ FAS 的連線需求通常包括：

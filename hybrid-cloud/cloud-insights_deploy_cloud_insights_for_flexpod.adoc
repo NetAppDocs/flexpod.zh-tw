@@ -25,6 +25,7 @@ summary: 必須完成下列工作、才能部署Cloud Insights 適用於FlexPod 
 
 
 
+[[sign-up-for-the-netapp-cloud-insights-service]]
 == 註冊NetApp Cloud Insights 解決方案服務
 
 若要註冊NetApp Cloud Insights 支援服務、請完成下列步驟：
@@ -35,6 +36,7 @@ summary: 必須完成下列工作、才能部署Cloud Insights 適用於FlexPod 
 
 
 
+[[create-a-vmware-virtual-machine-to-configure-as-an-acquisition-unit]]
 == 建立VMware虛擬機器以設定為採購單位
 
 若要建立VMware VM以設定為採購單位、請完成下列步驟：
@@ -70,6 +72,7 @@ image:cloud-insights_image5.png["錯誤：缺少圖形影像"]
 
 
 
+[[install-red-hat-enterprise-linux]]
 == 安裝Red Hat Enterprise Linux
 
 若要安裝Red Hat Enterprise Linux、請完成下列步驟：
@@ -126,6 +129,7 @@ image:cloud-insights_image12.png["錯誤：缺少圖形影像"]
 
 
 
+[[create-an-acquisition-unit-instance-in-the-cloud-insights-portal-and-install-the-software]]
 == 在Cloud Insights 這個入口網站上建立一個擷取單元執行個體、然後安裝軟體
 
 若要在Cloud Insights 這個入口網站上建立擷取單元執行個體並安裝軟體、請完成下列步驟：
@@ -163,6 +167,7 @@ image:cloud-insights_image18.png["錯誤：缺少圖形影像"]
 
 
 
+[[add-the-monitored-storage-system-from-the-flexpod-datacenter-to-cloud-insights]]
 == 將受監控的儲存系統從FlexPod 「整個資料中心」新增Cloud Insights 至「
 
 若要從ONTAP 功能區部署中新增功能區、FlexPod 請完成下列步驟：

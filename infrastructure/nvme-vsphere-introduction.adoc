@@ -34,12 +34,14 @@ NetApp ONTAP 支援9.5及更新版本、提供完整的FC-NVMe解決方案。不
 
 
 
+[[objective]]
 == 目標
 
 本解決方案針對VMware vSphere 7 FlexPod 的VMware vSphere 7 on VMware提供FC-NVMe效能的高階摘要。此解決方案已通過驗證、可成功通過FC-NVMe流量、並擷取各種資料區塊大小的FC-NVMe效能規格表。
 
 
 
+[[solution-benefits]]
 == 解決方案效益
 
 適用於FlexPod 整個流程的端點對端點NVMe為客戶提供卓越價值、並提供下列解決方案優勢：

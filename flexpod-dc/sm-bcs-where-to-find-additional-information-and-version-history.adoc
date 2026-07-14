@@ -20,6 +20,7 @@ link:sm-bcs-conclusion.html["上一篇：結論。"]
 
 
 
+[[flexpod]]
 == FlexPod
 
 * 首頁FlexPod
@@ -78,6 +79,7 @@ https://github.com/NetApp/harvest/releases["https://github.com/NetApp/harvest/re
 
 
 
+[[sm-bc]]
 == SM - BC
 
 * SM - BC
@@ -112,6 +114,7 @@ https://docs.netapp.com/us-en/ontap/mediator/index.html["https://docs.netapp.com
 
 
 
+[[vmware-vsphere-ha-and-vsphere-metro-storage-cluster]]
 == VMware vSphere HA與vSphere Metro儲存叢集
 
 * 建立及使用vSphere HA叢集
@@ -138,6 +141,7 @@ https://community.netapp.com/t5/Tech-ONTAP-Blogs/Protect-tier-1-applications-and
 
 
 
+[[microsoft-sql-and-hammerdb]]
 == Microsoft SQL和HammerDB
 
 * Microsoft SQL Server 2019
@@ -156,6 +160,7 @@ https://www.hammerdb.com["https://www.hammerdb.com"^]
 
 
 
+[[compatibility-matrix]]
 == 相容性對照表
 
 * Cisco UCS硬體相容性對照表
@@ -178,6 +183,7 @@ http://www.vmware.com/resources/compatibility/search.php["http://www.vmware.com/
 
 
 
+[[version-history]]
 == 版本歷程記錄
 
 |===

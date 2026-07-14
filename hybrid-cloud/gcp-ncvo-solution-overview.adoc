@@ -17,6 +17,7 @@ NetApp的Ruchika Lahoti
 
 
 
+[[introduction]]
 == 簡介
 
 利用災難恢復（DR）保護資料、是維持企業營運不中斷的關鍵目標。災難恢復可讓組織將業務作業容錯移轉至次要位置、然後以高效率且可靠的方式、將其恢復及容錯回復至主要站台。許多問題、例如自然災害、網路故障、軟體弱點和人為錯誤、都讓開發災難恢復策略成為IT的首要優先考量。
@@ -42,12 +43,14 @@ image:gcp-ncvo-image1.png["解決方案總覽。"]
 
 
 
+[[audience]]
 == 目標對象
 
 本文件的對象包括但不限於：銷售工程師、現場顧問、專業服務、IT經理、 合作夥伴工程師、站台可靠性工程師、雲端架構設計師、雲端工程師、以及想要善用基礎架構以提供IT效率並實現IT創新的客戶。
 
 
 
+[[solution-topology]]
 == 解決方案拓撲
 
 本節說明解決方案的邏輯拓撲。下圖顯示內部部署FlexPod 的解決方案拓撲、Cloud Volumes ONTAP 在Google Cloud、Cisco Intersight和NetApp Cloud Manager上執行的NetApp EFlash。

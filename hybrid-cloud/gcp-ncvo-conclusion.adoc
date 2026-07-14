@@ -26,12 +26,14 @@ link:gcp-ncvo-solution-validation.html["先前版本：解決方案驗證。"]
 
 
 
+[[where-to-find-additional-information]]
 == 何處可找到其他資訊
 
 若要深入瞭解本文所述資訊、請檢閱下列文件和 / 或網站：
 
 
 
+[[github]]
 === GitHub
 
 * 使用的所有Terraform組態
@@ -46,6 +48,7 @@ https://github.com/ucs-compute-solutions/FlexPod_DR_Workflows["https://github.co
 
 
 
+[[cisco-intersight]]
 === Cisco Intersight
 
 * Cisco Intersight說明中心
@@ -76,6 +79,7 @@ https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/inter
 
 
 
+[[flexpod]]
 === FlexPod
 
 * 首頁FlexPod
@@ -94,6 +98,7 @@ https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xse
 
 
 
+[[interoperability]]
 === 互通性
 
 * NetApp 互通性對照表工具
@@ -112,6 +117,7 @@ http://www.vmware.com/resources/compatibility/search.php["http://www.vmware.com/
 
 
 
+[[netapp-cloud-volumes-ontap-reference-documents]]
 === NetApp Cloud Volumes ONTAP 產品參考文件
 
 * NetApp Console 文件：
@@ -146,12 +152,14 @@ https://docs.netapp.com/us-en/occm/reference_infrastructure_as_code.html["https:
 
 
 
+[[troubleshooting-issues]]
 === 疑難排解問題
 
 https://kb.netapp.com/Cloud/ncds/nds/cvo/cvo_kbs["https://kb.netapp.com/Cloud/ncds/nds/cvo/cvo_kbs"^]
 
 
 
+[[terraform]]
 === Terraform
 
 * Terraform Cloud
@@ -170,6 +178,7 @@ https://registry.terraform.io/providers/NetApp/netapp-cloudmanager/lates["https:
 
 
 
+[[gcp]]
 === GCP
 
 * 適用於GCP的高可用度ONTAP

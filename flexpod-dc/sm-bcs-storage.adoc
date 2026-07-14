@@ -20,6 +20,7 @@ link:sm-bcs-network.html["先前版本：解決方案驗證-網路。"]
 
 
 
+[[connectivity]]
 == 連線能力
 
 本機站台的Nexus交換器可提供本機UCS FI和刀鋒伺服器的儲存連線功能。透過站台之間的Nexus交換器連線、遠端UCS刀鋒伺服器也能存取儲存設備。下圖和表格顯示每個站台儲存控制器的儲存連線圖和連線清單。
@@ -67,6 +68,7 @@ image:sm-bcs-image22.png["錯誤：缺少圖形影像"]
 |===
 
 
+[[connections-and-interfaces]]
 == 連線與介面
 
 每個儲存控制器上有兩個實體連接埠連接至每個Nexus交換器、以進行頻寬集合和備援、以供此驗證之用。這四個連線會參與儲存設備上的介面群組組態。Nexus交換器上的對應連接埠會加入vPC以進行連結集合和恢復。
@@ -77,6 +79,7 @@ image:sm-bcs-image23.png["錯誤：缺少圖形影像"]
 
 
 
+[[san-boot]]
 == SAN開機
 
 NetApp建議FlexPod 在整個解決方案中為Cisco UCS伺服器實作SAN開機。實作SAN開機可讓您安全地保護NetApp儲存系統內的作業系統、提供更好的效能與靈活度。本解決方案已驗證iSCSI SAN開機。
@@ -89,6 +92,7 @@ image:sm-bcs-image24.png["錯誤：缺少圖形影像"]
 
 
 
+[[cluster-peering]]
 == 叢集對等
 
 透過叢集間生命體進行通訊的叢集對等端點。ONTAP使用適用於這兩個叢集的「系統管理程式」、您可以在「保護」>「總覽」窗格下建立所需的叢集間生命體。ONTAP
@@ -113,6 +117,7 @@ image:sm-bcs-image28.png["錯誤：缺少圖形影像"]
 
 
 
+[[ontap-mediator-installation-and-configuration]]
 == 安裝與組態設定ONTAP
 
 此功能可在SMBC關係中、為不實叢集建立仲裁。ONTAP ONTAP當偵測到故障時、它會協調自動容錯移轉、並有助於避免每個叢集同時嘗試將控制權建立為主要叢集時發生腦分割情況。
@@ -129,6 +134,7 @@ image:sm-bcs-image30.png["錯誤：缺少圖形影像"]
 
 
 
+[[sm-bc-consistency-group]]
 == SMBC一致性群組
 
 一致性群組可針對橫跨指定磁碟區集合的應用程式工作負載、提供寫入順序一致性保證。對於《產品介紹》（《產品介紹》）9.10.1、以下是一些重要限制與限制。ONTAP
@@ -177,6 +183,7 @@ image:sm-bcs-image34.png["錯誤：缺少圖形影像"]
 
 
 
+[[volumes-luns-and-host-mappings]]
 == 磁碟區、LUN及主機對應
 
 建立一致性群組之後、SnapMirror會同步來源和目的地磁碟區、讓資料永遠保持同步。遠端站台的目的地磁碟區會以_目的地結尾來傳送磁碟區名稱。例如、對於站台A叢集中的ESXi磁碟區、站台B中有相對應的ESXi_a_dest資料保護（DP）磁碟區

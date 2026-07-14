@@ -28,6 +28,7 @@ image:cloud-fabricpool_image8.png["錯誤：缺少圖形影像"]
 
 
 
+[[license-capacity]]
 == 授權容量
 
 您可以使用ONTAP 「View CLI」或OnCommand 「View System Manager」來檢視授權容量。若要查看授權容量、請在ONTAP CLI中執行下列命令：

@@ -22,6 +22,7 @@ NetApp的Alan Cowles
 
 
 
+[[customer-value]]
 == 客戶價值
 
 此處詳述的解決方案可為有興趣使用全功能監控解決方案的客戶、提供價值、讓ONTAP 他們能在混合雲環境中部署以供主儲存系統使用的功能完整。這包括FlexPod 使用NetApp AFF 功能和FAS 功能完善的儲存系統的各種功能。

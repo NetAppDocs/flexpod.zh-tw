@@ -18,6 +18,7 @@ summary: 本節介紹 FlexPod Express 的範例拓撲。
 
 
 
+[[ucs-x-series-direct-with-direct-attached-fc-and-ip-based-san]]
 == UCS X-Series Direct 直連式 FC 和基於 IP 的 SAN
 
 下圖顯示了適用於基於 IP 和基於 FC 的 SAN 的 UCS X-Series Direct 和直接連接 ASA 範例拓撲。
@@ -50,6 +51,7 @@ https://www.netapp.com/pdf.html?item=/media/21938-nva-1154-DEPLOY.pdf[]
 ====
 
 
+[[ucs-c-series-servers-switch-attached-ip-based-storage]]
 == UCS C 系列伺服器交換器連接的 IP 型存儲
 
 下圖顯示了 Cisco UCS C 系列獨立式和 NetApp AFF。

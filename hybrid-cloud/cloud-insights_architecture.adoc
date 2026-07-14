@@ -18,6 +18,7 @@ summary: 在本節中、我們將複習FlexPod 一下「不經認證的資料中
 
 
 
+[[solution-technology]]
 == 解決方案技術
 
 「VMware資料中心」解決方案包含下列最低元件、可提供高度可用、易於擴充、已驗證及支援的融合式基礎架構環境。FlexPod
@@ -62,6 +63,7 @@ summary: 在本節中、我們將複習FlexPod 一下「不經認證的資料中
 |===
 
 
+[[architectural-diagram]]
 == 架構圖
 
 下圖顯示解決方案架構。
@@ -70,6 +72,7 @@ image:cloud-insights_image2.png["錯誤：缺少圖形影像"]
 
 
 
+[[hardware-requirements]]
 == 硬體需求
 
 下表列出實作解決方案所需的硬體元件。在解決方案的任何特定實作中使用的硬體元件、可能會因客戶需求而異。
@@ -97,6 +100,7 @@ image:cloud-insights_image2.png["錯誤：缺少圖形影像"]
 |===
 
 
+[[software-requirements]]
 == 軟體需求
 
 下表列出實作解決方案所需的軟體元件。在解決方案的任何特定實作中使用的軟體元件、可能會因客戶需求而異。
@@ -124,6 +128,7 @@ image:cloud-insights_image2.png["錯誤：缺少圖形影像"]
 |===
 
 
+[[use-case-details]]
 == 使用案例詳細資料
 
 本解決方案適用於下列使用案例：

@@ -26,6 +26,7 @@ image:flexpod-fips-image6.png["錯誤：缺少圖形影像"]
 
 
 
+[[solution-infrastructure-hardware-and-software-components]]
 == 解決方案基礎架構硬體與軟體元件
 
 以下兩個圖分別列出在FlexPod 執行支援的FIPS測試期間、分別使用的硬體和軟體元件。這些表格中的建議為範例、您應該與NetApp中小型企業合作、確保這些元件適合貴組織。此外、請確定支援中的元件和版本 https://mysupport.netapp.com/matrix/["NetApp 互通性對照表工具"^] （部分）IMT 和 https://ucshcltool.cloudapps.cisco.com/public/["Cisco硬體相容清單（HCL）"^]。

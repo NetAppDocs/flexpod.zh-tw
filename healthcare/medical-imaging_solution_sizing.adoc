@@ -15,6 +15,7 @@ summary: 本節說明研究數量及對應的基礎架構需求。
 
 
 
+[[storage-sizing]]
 == 儲存規模調整
 
 本節說明研究數量及對應的基礎架構需求。
@@ -62,6 +63,7 @@ summary: 本節說明研究數量及對應的基礎架構需求。
 |===
 
 
+[[compute-sizing]]
 == 運算規模
 
 下表列出小型、中型和大型醫療影像系統的運算需求。
@@ -104,6 +106,7 @@ summary: 本節說明研究數量及對應的基礎架構需求。
 |===
 
 
+[[networking-and-cisco-ucs-infrastructure-sizing]]
 == 網路與Cisco UCS基礎架構規模調整
 
 下表列出小型、中型和大型醫療影像系統的網路和Cisco UCS基礎架構需求。
