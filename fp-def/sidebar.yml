@@ -3,7 +3,6 @@ section: fp-def
 title: 可解析度FlexPod
 entries:
 - title: 部分技術規格FlexPod
-  type: solutions
   entries:
   - title: 總覽
     url: "/fp-def/fp-express-tech-spec_overview.html"
@@ -42,7 +41,6 @@ entries:
   - title: 其他資訊
     url: "/fp-def/fp-express-tech-spec_additional_information.html"
 - title: 資料中心技術規格FlexPod
-  type: solutions
   entries:
   - title: 總覽
     url: "/fp-def/dc-tech-spec_solution_overview.html"

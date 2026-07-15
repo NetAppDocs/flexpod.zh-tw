@@ -17,7 +17,7 @@ summary:
 :imagesdir: ./../media/
 
 
-NetApp Savita Kumari與下列公司合作：image:cisco logo.png["錯誤：缺少圖形影像"]
+Savita Kumari，NetApp 與以下機構合作：image:cisco logo.png[""]
 
 [role="lead"]
 產業趨勢顯示、資料中心已向共享基礎架構和雲端運算領域進行大規模的轉型。此外、企業組織也需要一套簡單有效的解決方案、讓遠端辦公室和分公司都能運用他們在資料中心熟悉的技術。

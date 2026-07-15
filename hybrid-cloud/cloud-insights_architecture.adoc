@@ -68,7 +68,7 @@ summary: 在本節中、我們將複習FlexPod 一下「不經認證的資料中
 
 下圖顯示解決方案架構。
 
-image:cloud-insights_image2.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image2.png[""]
 
 
 
@@ -133,7 +133,7 @@ image:cloud-insights_image2.png["錯誤：缺少圖形影像"]
 
 本解決方案適用於下列使用案例：
 
-* 利用提供給NetApp Active IQ 的資料來分析環境、以評估儲存系統風險、並提出儲存最佳化建議。
+* 利用提供給 NetApp Digital Advisor 的資料分析環境，以評估儲存系統風險並提出儲存最佳化建議。
 * 即時ONTAP 檢查系統統計資料、以疑難排解部署FlexPod 在「Real-Datacenter」解決方案中的「無法解決」儲存系統問題。
 * 產生自訂的儀表板、輕鬆監控ONTAP 部署FlexPod 在「Datacenter融合式基礎架構」中的各種顯示器儲存系統的特定興趣點。
 

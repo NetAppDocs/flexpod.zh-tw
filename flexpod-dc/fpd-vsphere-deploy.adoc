@@ -20,7 +20,7 @@ John George 、 Cisco Sree Lakshmi Lanka 、 NetApp
 * Cisco UCS C系列
 
 
-此外還包括 Cisco Intersight 和 NetApp Active IQ SaaS 管理平台。
+此外，還包括 Cisco Intersight 和 NetApp Active IQ Digital Advisor （也稱為 Digital Advisor）SaaS 管理平台。
 
 FlexPod Datacenter 搭配 NetApp ONTAP 9.7 、 Cisco UCS 統一化軟體版本 4.1(2) 及 VMware vSphere 7.0 、包含預先設計的最佳實務資料中心架構、建置於 Cisco 統一運算系統（ Cisco UCS ）、 Cisco Nexus 9000 系列交換器、 MDS 9000 多層架構交換器、 以及執行 ONTAP 9.7 資料管理軟體的 NetApp AFF A 系列儲存陣列。
 

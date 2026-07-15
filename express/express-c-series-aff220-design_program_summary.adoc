@@ -27,7 +27,7 @@ summary: 以Cisco驗證設計或NetApp驗證架構的形式提供的參考架構
 * *《選擇》*整合了《不二資料中心》的最佳功能、並針對特定應用程式量身打造基礎架構。FlexPod FlexPod
 
 
-image:express-c-series-aff220-design_image2.png["錯誤：缺少圖形影像"]
+image:express-c-series-aff220-design_image2.png[""]
 
 
 

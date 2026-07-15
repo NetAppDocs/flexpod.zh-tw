@@ -44,7 +44,7 @@ summary: 必須完成下列工作、才能部署Cloud Insights 適用於FlexPod 
 . 啟動Web瀏覽器並登入VMware vSphere、然後選取您要裝載VM的叢集。
 . 在該叢集上按一下滑鼠右鍵、然後從功能表中選取「Create a Virtual Machine（建立虛擬機器）」。
 +
-image:cloud-insights_image3.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image3.png[""]
 
 . 在「New Virtual Machine（新增虛擬機器）」精靈中、按一下「Next
 . 指定虛擬機器的名稱、然後選取您要安裝的資料中心、再按「Next（下一步）」。
@@ -53,7 +53,7 @@ image:cloud-insights_image3.png["錯誤：缺少圖形影像"]
 . 確認VM的相容模式設定為「ESXi 6.7或更新版本」、然後按「Next（下一步）」。
 . 選取「Guest OS Family Linux、Guest OS Version：Red Hat Enterprise Linux 7（64位元）」。
 +
-image:cloud-insights_image4.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image4.png[""]
 
 . 下一頁可自訂VM上的硬體資源。此功能需要下列資源。Cloud Insights選取資源後、按一下「Next（下一步）」：
 +
@@ -63,7 +63,7 @@ image:cloud-insights_image4.png["錯誤：缺少圖形影像"]
 .. 可透過FlexPod 連接埠443上的SSL連線、連線到「支援資料中心」和Cloud Insights 「支援服務器」中的資源的網路。
 .. 所選Linux套裝作業系統（Red Hat Enterprise Linux）的ISO映像。
 +
-image:cloud-insights_image5.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image5.png[""]
 
 
 
@@ -79,7 +79,7 @@ image:cloud-insights_image5.png["錯誤：缺少圖形影像"]
 
 . 開啟VM電源、按一下視窗以啟動虛擬主控台、然後選取安裝Red Hat Enterprise Linux 7.6的選項。
 +
-image:cloud-insights_image6.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image6.png[""]
 
 . 選取偏好的語言、然後按一下「Continue（繼續）」。
 +
@@ -90,14 +90,14 @@ image:cloud-insights_image6.png["錯誤：缺少圖形影像"]
 .. 若要自訂伺服器的分割區、請按一下安裝目的地。
 .. 確認已選取100GiB的VMware虛擬磁碟、並勾選黑色核取符號、然後選取「I will Configure Partitioning（我要設定分割區）」選項按鈕。
 +
-image:cloud-insights_image7.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image7.png[""]
 
 .. 按一下「完成」。
 +
 此時會顯示一個新功能表、供您自訂分割區表格。每個專用25 GB的容量用於「/opt/netapp」和「/var/log/netapp」。您可以自動將其餘的儲存設備分配給系統。
 
 +
-image:cloud-insights_image8.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image8.png[""]
 
 .. 若要返回「安裝摘要」、請按一下「完成」。
 
@@ -107,7 +107,7 @@ image:cloud-insights_image8.png["錯誤：缺少圖形影像"]
 .. 輸入伺服器的主機名稱。
 .. 按一下滑桿按鈕來開啟網路介面卡。如果網路上已設定動態主機組態傳輸協定（DHCP）、您將會收到IP位址。如果不是、請按一下「Configure（設定）」、然後手動指派位址。
 +
-image:cloud-insights_image9.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image9.png[""]
 
 .. 。按一下「完成」以返回「安裝摘要」。
 
@@ -115,15 +115,15 @@ image:cloud-insights_image9.png["錯誤：缺少圖形影像"]
 . 在「安裝摘要」頁面上、按一下「開始安裝」。
 . 在「安裝進度」頁面上、您可以設定root密碼或建立本機使用者帳戶。安裝完成後、按一下重新開機以重新啟動伺服器。
 +
-image:cloud-insights_image10.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image10.png[""]
 
 . 系統重新開機後、請登入伺服器並向Red Hat訂閱管理程式註冊。
 +
-image:cloud-insights_image11.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image11.png[""]
 
 . 附加Red Hat Enterprise Linux的可用訂閱。
 +
-image:cloud-insights_image12.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image12.png[""]
 
 
 
@@ -136,32 +136,32 @@ image:cloud-insights_image12.png["錯誤：缺少圖形影像"]
 
 . 在畫面主頁Cloud Insights 的左側主功能表中、將游標移到管理項目上、然後從功能表中選取「Data Collectors...（資料收集器）」。
 +
-image:cloud-insights_image13.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image13.png[""]
 
 . 在「資料收集器」頁面的頂端中央、按一下「擷取單位」的連結。
 +
-image:cloud-insights_image14.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image14.png[""]
 
 . 若要建立新的擷取單位、請按一下右側的按鈕。
 +
-image:cloud-insights_image15.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image15.png[""]
 
 . 選取您要用來裝載擷取裝置的作業系統、然後依照步驟從網頁複製安裝指令碼。
 +
 在此範例中、它是Linux伺服器、提供片段片段和Token、可貼到主機的CLI中。網頁會等待接收裝置連線。
 
 +
-image:cloud-insights_image16.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image16.png[""]
 
 . 將程式碼片段貼到已佈建的Red Hat Enterprise Linux機器的CLI中、然後按一下Enter。
 +
-image:cloud-insights_image17.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image17.png[""]
 
 +
 安裝程式會下載壓縮的套件並開始安裝。安裝完成後、您會收到一則訊息、指出收購單位已向NetApp Cloud Insights 推出註冊。
 
 +
-image:cloud-insights_image18.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image18.png[""]
 
 
 
@@ -174,24 +174,24 @@ image:cloud-insights_image18.png["錯誤：缺少圖形影像"]
 
 . 返回Cloud Insights 到資訊入口網站上的「擷取單位」頁面、找到所列的新登記單位。若要顯示單位摘要、請按一下單位。
 +
-image:cloud-insights_image19.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image19.png[""]
 
 . 若要啟動精靈以新增儲存系統、請在「摘要」頁面上、按一下建立資料收集器的按鈕。第一頁會顯示可從中收集資料的所有系統。使用搜尋列來搜尋ONTAP 功能。
 +
-image:cloud-insights_image20.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image20.png[""]
 
 . 選擇ONTAP 「支援資料管理軟體」。
 +
 畫面上會顯示一個頁面、讓您命名部署、並選取您要使用的擷取設備。您可以提供ONTAP 適用於該系統的連線資訊和認證資料、並測試連線以確認。
 
 +
-image:cloud-insights_image21.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image21.png[""]
 
 . 按一下「完成設定」。
 +
 入口網站會返回「資料收集器」頁面、資料收集器會開始第一次輪詢、以收集ONTAP 來自「The Datacenter」中的「The效益管理系統」的資料FlexPod 。
 
 +
-image:cloud-insights_image22.png["錯誤：缺少圖形影像"]
+image:cloud-insights_image22.png[""]
 
 

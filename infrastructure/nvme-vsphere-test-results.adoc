@@ -20,31 +20,31 @@ link:nvme-vsphere-testing-approach.html["上一篇：測試方法。"]
 
 下圖說明使用8KB區塊大小執行100%隨機讀取工作負載時的發現結果。
 
-image:nvme-vsphere-image3.png["錯誤：缺少圖形影像"]
+image:nvme-vsphere-image3.png[""]
 
 在我們的測試中、我們發現系統的IOPS超過120萬次、但伺服器端延遲僅低於0.35毫秒。
 
 下圖說明使用8KB區塊大小執行100%隨機寫入工作負載時的發現結果。
 
-image:nvme-vsphere-image4.png["錯誤：缺少圖形影像"]
+image:nvme-vsphere-image4.png[""]
 
 在我們的測試中、我們發現系統達到將近300k IOPS、同時維持不到1毫秒的伺服器端延遲。
 
 對於8KB區塊大小、80%隨機讀取和20%寫入、我們觀察到下列結果：
 
-image:nvme-vsphere-image5.png["錯誤：缺少圖形影像"]
+image:nvme-vsphere-image5.png[""]
 
 在我們的測試中、我們發現系統達到超過100萬IOPS、同時維持不到1毫秒的伺服器端延遲。
 
 對於64KB區塊大小和100%循序讀取、我們觀察到下列結果：
 
-image:nvme-vsphere-image6.png["錯誤：缺少圖形影像"]
+image:nvme-vsphere-image6.png[""]
 
 在我們的測試中、我們發現系統達到約250k IOPS、同時維持不到1毫秒的伺服器端延遲。
 
 對於64KB區塊大小和100%循序寫入、我們觀察到下列結果：
 
-image:nvme-vsphere-image7.png["錯誤：缺少圖形影像"]
+image:nvme-vsphere-image7.png[""]
 
 在我們的測試中、我們發現系統達到約120k IOPS、同時維持不到1毫秒的伺服器端延遲。
 

@@ -15,7 +15,7 @@ summary: 本解決方案針對VMware vSphere 7 FlexPod 的VMware vSphere 7 on VM
 
 Chris Schmittt和Kamini Singh、NetApp
 
-與下列合作夥伴合作：image:cisco logo.png["錯誤：缺少圖形影像"]
+合作夥伴：image:cisco logo.png[""]
 
 [role="lead"]
 NVMe資料儲存標準是新興的核心技術、為目前和未來的記憶體技術提供極高的頻寬和極低延遲的儲存存取、正在轉變企業資料儲存設備的存取與傳輸。NVMe會以NVMe命令集取代SCSI命令集。
@@ -26,7 +26,7 @@ NVMe是專為非揮發性Flash磁碟機、多核心CPU和GB記憶體所設計。
 
 下圖顯示FlexPod 了零組件系列。
 
-image:nvme-vsphere-image1.png["錯誤：缺少圖形影像"]
+image:nvme-vsphere-image1.png[""]
 
 支援以支援FC-NVMe的理想平台。FlexPod可在現有Cisco UCS B200 M5或M6伺服器、Cisco UCS C系列M5或M6機架伺服器中新增Cisco UCS VIC 1400系列和連接埠擴充器、以及簡單且不中斷的軟體升級至Cisco UCS系統、Cisco MDS 32Gbps交換器、 以及NetApp AFF 的不完整儲存陣列。支援的硬體和軟體就位之後、FC-NVMe的組態就跟FCP組態類似。
 

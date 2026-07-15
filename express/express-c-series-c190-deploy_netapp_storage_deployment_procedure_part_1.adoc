@@ -315,7 +315,7 @@ NOTE: 您也可以輸入替代的NTP伺服器。來自於「」的IP位址「10.
 NOTE: 您至少必須先設定事件通知方法、才能繼續進行。您可以選擇任何方法。
 
 +
-image:express-c-series-c190-deploy_image4.png["錯誤：缺少圖形影像"]
+image:express-c-series-c190-deploy_image4.png[""]
 
 +
 當系統指出叢集組態已完成時、請按一下管理叢集以設定儲存設備。

@@ -4,7 +4,6 @@ title: Cisco Intersight搭配NetApp ONTAP 解決方案儲存設備
 entries:
 - title: 簡介
   url: "/ontap-connector-for-intersight/index.html"
-  type: solutions
 - title: 新增功能
   url: "/ontap-connector-for-intersight/ci-qsg_new.html"
 - title: 需求

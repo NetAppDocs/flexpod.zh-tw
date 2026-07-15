@@ -3,7 +3,6 @@ section: security
 title: 功能與安全性FlexPod
 entries:
 - title: 解決方案FlexPod
-  type: solutions
   entries:
   - title: 什麼是勒索軟體？
     url: "/security/security-ransomware_what_is_ransomware.html"
@@ -22,7 +21,6 @@ entries:
   - title: 其他資訊
     url: "/security/security-ransomware_additional_information.html"
 - title: FIPS 140-2 FlexPod 安全性認證的醫療解決方案
-  type: solutions
   entries:
   - title: 簡介
     url: "/security/flexpod-fips-introduction.html"

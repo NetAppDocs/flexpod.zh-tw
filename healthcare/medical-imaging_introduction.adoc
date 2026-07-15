@@ -103,7 +103,7 @@ NetApp公司Jaya Kishore Esanakula和Atul Bhaludia
 
 
 
-image:medical-imaging_image2.png["錯誤：缺少圖形影像"]
+image:medical-imaging_image2.png[""]
 
 
 

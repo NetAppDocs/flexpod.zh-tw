@@ -271,7 +271,7 @@ interface:
 . 按一下引導式設定以設定叢集。
 . 輸入「」<<var_clustername>>作為叢集名稱、輸入「」<<var_nodeA>>」、然後針對您要設定的每個節點輸入「」。輸入您要用於儲存系統的密碼。選取「無交換器叢集」作為叢集類型。輸入叢集基礎授權。
 +
-image:express-c-series-aff220-deploy_image6.png["錯誤：缺少圖形影像"]
+image:express-c-series-aff220-deploy_image6.png[""]
 
 . 您也可以輸入叢集、NFS和iSCSI的功能授權。
 . 您會看到一則狀態訊息、指出正在建立叢集。此狀態訊息會循環顯示多個狀態。此程序需要幾分鐘的時間。
@@ -298,7 +298,7 @@ image:express-c-series-aff220-deploy_image6.png["錯誤：缺少圖形影像"]
 您至少必須先設定事件通知方法、才能繼續進行。您可以選擇任何方法。
 
 +
-image:express-c-series-aff220-deploy_image7.png["錯誤：缺少圖形影像"]
+image:express-c-series-aff220-deploy_image7.png[""]
 
 
 

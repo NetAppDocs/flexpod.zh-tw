@@ -3,7 +3,6 @@ section: express
 title: Express FlexPod
 entries:
 - title: "《採用Cisco UCS C系列與NetApp功能的Express設計指南》FlexPod AFF"
-  type: solutions
   entries:
   - title: 總覽
     url: "/express/express-c-series-c190-design_executive_summary.html"
@@ -18,7 +17,6 @@ entries:
   - title: 何處可找到其他資訊
     url: "/express/express-c-series-c190-design_where_to_find_additional_information.html"
 - title: "《採用Cisco UCS C系列與NetApp功能的Express部署指南》（英文）FlexPod AFF"
-  type: solutions
   entries:
   - title: 總覽
     url: "/express/express-c-series-c190-deploy_program_summary_overview.html"
@@ -57,7 +55,6 @@ entries:
   - title: 版本歷程記錄
     url: "/express/express-c-series-c190-deploy_version_history.html"
 - title: 包含Cisco UCS C系列和《支援不支援的Express設計指南》（英文）FlexPod AFF
-  type: solutions
   entries:
   - title: 總覽
     url: "/express/express-c-series-aff220-design_executive_summary.html"
@@ -76,7 +73,6 @@ entries:
   - title: 何處可找到其他資訊
     url: "/express/express-c-series-aff220-design_where_to_find_additional_information.html"
 - title: "《採用Cisco UCS C系列與《支援不支援的Express部署指南》（英文）FlexPod AFF"
-  type: solutions
   entries:
   - title: 總覽
     url: "/express/express-c-series-aff220-deploy_program_summary.html"
@@ -109,7 +105,6 @@ entries:
     url: "/express/express-c-series-aff220-deploy_where_to_find_additional_information.html"
 - title: 採用VMware vSphere 6.7U1與NetApp VMware Infrastructure A220搭配直接附加的IP型儲存設備的VMware
     Express FlexPod AFF
-  type: solutions
   entries:
   - title: 總覽
     url: "/express/express-direct-attach-aff220-deploy_program_summary.html"

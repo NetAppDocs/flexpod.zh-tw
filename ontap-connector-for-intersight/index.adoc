@@ -13,7 +13,7 @@ summary: NetApp與Cisco攜手合作、提供Cisco Intersight、這是FlexPod 一
 :imagesdir: ./../media/
 
 
-與下列合作夥伴合作：image:cisco logo.png["錯誤：缺少圖形影像"]
+合作夥伴：image:cisco logo.png[""]
 
 
 

@@ -90,7 +90,7 @@ NOTE: 停用或刪除叢集間LIF會中斷與雲端層的通訊。
 
 NOTE: 在低效能環境中使用FabricPool VMware時、必須持續滿足用戶端應用程式的最低效能要求、並應據此調整恢復時間目標。
 
-image:cloud-fabricpool_image6.png["錯誤：缺少圖形影像"]
+image:cloud-fabricpool_image6.png[""]
 
 
 
@@ -114,7 +114,7 @@ storage aggregate object-store profiler show
 ....
 雲端層的效能與效能層的效能並不類似（通常是每秒GB）。雖然能夠輕鬆提供SATA級的效能、但對於不需要SATA級效能的分層解決方案、它們也能承受高達10秒的延遲和低處理量。FabricPool
 
-image:cloud-fabricpool_image7.png["錯誤：缺少圖形影像"]
+image:cloud-fabricpool_image7.png[""]
 
 
 
@@ -142,7 +142,7 @@ volume modify -space-guarantee none
 
 當儲存在雲端層的資料量（已用容量）達到授權容量時、分層至雲端層會停止。在授權容量增加之前、其他資料（包括使用All Tiering原則的SnapMirror複本至磁碟區）將無法分層。雖然分層作業停止、但仍可從雲端層存取資料。在授權容量增加之前、SSD上仍會保留額外的冷資料。
 
-購買任何新的一套更新版的叢集時、都會隨附免費的10TB容量、以期為基礎FabricPool 的版次更新授權ONTAP 、不過可能需要額外的支援成本。可以1TB為單位購買各種不含任何容量的不含彈性授權（包括現有授權的額外容量）FabricPool 。
+FabricPool 授權（包括現有授權的額外容量）可以以 1TB 為單位購買。
 
 僅可從不含任何資訊的叢集刪除此功能的認證。FabricPool FabricPool
 

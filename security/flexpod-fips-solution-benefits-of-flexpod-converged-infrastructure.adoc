@@ -22,7 +22,7 @@ link:flexpod-fips-flexpod-netapp-ontap-storage-and-fips-140-2.html["上一篇：
 
 下圖說明FlexPod FIPS設定與驗證所用的不實系統。我們運用了 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html["採用VMware vSphere 7.0與NetApp的解決方案資料中心9.7 Cisco驗證設計（CVD）FlexPod ONTAP"^] 在設定過程中。
 
-image:flexpod-fips-image6.png["錯誤：缺少圖形影像"]
+image:flexpod-fips-image6.png[""]
 
 
 

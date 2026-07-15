@@ -18,7 +18,7 @@ summary: 此參考驗證的纜線連接方式如下圖與表格所示。
 
 此圖顯示參考驗證纜線。
 
-image:express-c-series-c190-deploy_image3.png["錯誤：缺少圖形影像"]
+image:express-c-series-c190-deploy_image3.png[""]
 
 下表列出Cisco Nexus交換器31108PC-V-A的纜線資訊
 

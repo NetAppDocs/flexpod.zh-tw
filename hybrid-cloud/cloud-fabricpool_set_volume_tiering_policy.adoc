@@ -53,7 +53,7 @@ summary:
 . 選取要套用至磁碟區的分層原則。
 . 按一下儲存。
 +
-image:cloud-fabricpool_image16.png["錯誤：缺少圖形影像"]
+image:cloud-fabricpool_image16.png[""]
 
 
 

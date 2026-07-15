@@ -3,7 +3,6 @@ section: flexpod-dc
 title: 資料中心FlexPod
 entries:
 - title: 包含NetApp SnapMirror營運不中斷和功能不再是資料中心FlexPod ONTAP
-  type: solutions
   entries:
   - title: 簡介
     url: "/flexpod-dc/sm-bcs-introduction.html"

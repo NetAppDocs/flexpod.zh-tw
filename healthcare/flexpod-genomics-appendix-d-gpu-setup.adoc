@@ -27,10 +27,10 @@ link:flexpod-genomics-appendix-c.html["上一篇：使用Cromwell引擎執行網
 
 . 我們在UCS B200 M5伺服器的夾層插槽中使用PCIe NVIDIA Tesla P6 GPU。
 +
-image:flexpod-genomics-image18.png["錯誤：缺少圖形影像"]
+image:flexpod-genomics-image18.png[""]
 
 +
-image:flexpod-genomics-image19.png["錯誤：缺少圖形影像"]
+image:flexpod-genomics-image19.png[""]
 
 . 在此設定中、我們已在NVIDIA合作夥伴入口網站上註冊、並取得評估授權（也稱為授權）、以便在運算模式下使用GPU。
 . 我們已從NVIDIA合作夥伴網站下載所需的NVIDIA vGPU軟體。
@@ -75,32 +75,32 @@ Wed Aug 18 21:37:19 2021
 ....
 . 使用vCenter、 https://blogs.vmware.com/apps/2018/09/using-gpus-with-virtual-machines-on-vsphere-part-2-vmdirectpath-i-o.html["設定"^] 圖形裝置設定為「Shared Direct（共享直接）」。
 +
-image:flexpod-genomics-image20.png["錯誤：缺少圖形影像"]
+image:flexpod-genomics-image20.png[""]
 
 +
-image:flexpod-genomics-image21.png["錯誤：缺少圖形影像"]
+image:flexpod-genomics-image21.png[""]
 
 . 確定RedHat VM已停用安全開機。
 . 確定VM Boot Options韌體已設定為EFI.. https://docs.vmware.com/en/VMware-vSphere-Bitfusion/3.0/Install-Guide/GUID-2005A8C6-4FDC-46DF-BB6B-989F6E91F3E2.html["參考資料"^]）。
 +
-image:flexpod-genomics-image22.png["錯誤：缺少圖形影像"]
+image:flexpod-genomics-image22.png[""]
 
 . 請確定下列「PARAMS」已新增至「VM選項」進階「編輯組態」。「pciPassThree.64bitMMIOSIezeGB」參數的值取決於GPU記憶體和指派給VM的GPU數量。例如：
 +
 .. 如果VM被指派4 x 32GB V100 GPU、則此值應為128。
 .. 如果VM被指派4 x 16GB p6 GPU、則此值應為64。
 +
-image:flexpod-genomics-image23.png["錯誤：缺少圖形影像"]
+image:flexpod-genomics-image23.png[""]
 
 +
-image:flexpod-genomics-image24.png["錯誤：缺少圖形影像"]
+image:flexpod-genomics-image24.png[""]
 
 
 
 . 在vCenter中將vGPU新增為新的PCI裝置至虛擬機器時、請務必選取NVIDIA GRID vGPU作為PCI裝置類型。
 . 選擇適合使用GPU、GPU記憶體及使用目的的正確GPU設定檔：例如、圖形與運算。
 +
-image:flexpod-genomics-image25.png["錯誤：缺少圖形影像"]
+image:flexpod-genomics-image25.png[""]
 
 . 在RedHat Linux VM上、您可以執行下列命令來安裝NVIDIA驅動程式：
 +
@@ -159,7 +159,7 @@ Wed Aug 18 20:30:56 2021
 
 . 重新啟動VM之後、您應該會在授權伺服器的授權用戶端下看到一個項目、如下所示。
 +
-image:flexpod-genomics-image26.png["錯誤：缺少圖形影像"]
+image:flexpod-genomics-image26.png[""]
 
 . 如需下載網關軟體的詳細資訊、請參閱解決方案設定一節。
 . 在GK能夠在內部部署使用GPU之後、工作流程說明語言為*。WDL具有如下所示的執行時間屬性。

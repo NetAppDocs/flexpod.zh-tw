@@ -33,7 +33,7 @@ Cisco Nexus 9000系列交換器支援兩種操作模式：
 
 採用NX-OS的解決方案可在運算、網路和儲存層中完全備援。FlexPod從裝置或交通路況路徑的觀點來看、沒有單點故障。下圖顯示FlexPod 這項FC-NVMe驗證所使用的最新版外觀設計的各種元素的連線。
 
-image:nvme-vsphere-image2.png["錯誤：缺少圖形影像"]
+image:nvme-vsphere-image2.png[""]
 
 從FC SAN的觀點來看、此設計使用最新的第四代Cisco UCS 6454架構互連、以及在伺服器中使用連接埠擴充器的Cisco UCS VIC 1400平台。Cisco UCS機箱中的Cisco UCS B200 M6刀鋒伺服器使用Cisco UCS VIC 1440、連接埠擴充裝置連接至Cisco UCS 2408光纖延伸裝置IOM、而每個乙太網路光纖通道（FCoE）虛擬主機匯流排介面卡（vHBA）的速度都是40Gbps。Cisco UCS管理的Cisco UCS C220 M5機架伺服器使用Cisco UCS VIC 1457、每個Fabric互連有兩個25Gbps介面。每個C220 M5 FCoE vHBA的速度為50Gbps。
 

@@ -25,7 +25,7 @@ link:sm-bcs-network.html["先前版本：解決方案驗證-網路。"]
 
 本機站台的Nexus交換器可提供本機UCS FI和刀鋒伺服器的儲存連線功能。透過站台之間的Nexus交換器連線、遠端UCS刀鋒伺服器也能存取儲存設備。下圖和表格顯示每個站台儲存控制器的儲存連線圖和連線清單。
 
-image:sm-bcs-image22.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image22.png[""]
 
 |===
 | 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
@@ -75,7 +75,7 @@ image:sm-bcs-image22.png["錯誤：缺少圖形影像"]
 
 頻內管理、叢集間及NFS/iSCSI資料儲存傳輸協定均使用VLAN。在介面群組上建立VLAN連接埠、以隔離不同類型的流量。各個功能的邏輯介面（LIF）會建立在對應的VLAN連接埠之上。下圖顯示實體連線、介面群組、VLAN連接埠和邏輯介面之間的關係。
 
-image:sm-bcs-image23.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image23.png[""]
 
 
 
@@ -88,7 +88,7 @@ NetApp建議FlexPod 在整個解決方案中為Cisco UCS伺服器實作SAN開機
 
 每個iSCSI開機LUN都會對應至透過iSCSI LIF從其開機的伺服器、方法是將開機LUN與其開機igroup中的伺服器iSCSI合格名稱（IQN）建立關聯。伺服器的開機igroup包含兩個IQN、每個VNIC / SAN架構一個IQN。此功能只能讓授權伺服器存取專為該伺服器所建立的開機LUN。
 
-image:sm-bcs-image24.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image24.png[""]
 
 
 
@@ -97,21 +97,21 @@ image:sm-bcs-image24.png["錯誤：缺少圖形影像"]
 
 透過叢集間生命體進行通訊的叢集對等端點。ONTAP使用適用於這兩個叢集的「系統管理程式」、您可以在「保護」>「總覽」窗格下建立所需的叢集間生命體。ONTAP
 
-image:sm-bcs-image25.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image25.png[""]
 
 若要將兩個叢集對齊在一起、請完成下列步驟：
 
 . 在第一個叢集中產生叢集對等複雜密碼。
 +
-image:sm-bcs-image26.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image26.png[""]
 
 . 在第二個叢集中叫用對等叢集選項、並提供通關密碼和叢集間LIF資訊。
 +
-image:sm-bcs-image27.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image27.png[""]
 
 . System Manager Protection（系統管理員保護）> Overview（概觀）窗格會顯示叢集對等端點資訊。
 +
-image:sm-bcs-image28.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image28.png[""]
 
 
 
@@ -126,11 +126,11 @@ image:sm-bcs-image28.png["錯誤：缺少圖形影像"]
 
 安裝完這個功能後、您可以將這個功能的安全證書新增到整個叢集、然後在System Manager Protection（系統管理員保護）> Overview（總覽）窗格中設定這個功能。ONTAP ONTAP ONTAP ONTAP下列螢幕快照顯示ONTAP 了「畫面資訊」組態GUI。
 
-image:sm-bcs-image29.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image29.png[""]
 
 提供必要資訊後、設定ONTAP 的「功能不全」便會出現在「系統管理員保護」>「總覽」窗格中。
 
-image:sm-bcs-image30.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image30.png[""]
 
 
 
@@ -148,7 +148,7 @@ image:sm-bcs-image30.png["錯誤：缺少圖形影像"]
 
 針對驗證組態、ONTAP 使用VMware System Manager建立一致性群組、以保護ESXi開機LUN和兩個站台的共享資料存放區LUN。若要存取一致性群組建立對話方塊、請前往「Protection（保護）」>「Overview（概觀）」>「Protect for Business Continuity（保護營運不中斷）」>「Protect Consistency若要建立一致性群組、請提供所需的來源磁碟區、目的地叢集及目的地儲存虛擬機器資訊、以供建立。
 
-image:sm-bcs-image31.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image31.png[""]
 
 下表列出所建立的四個一致性群組、以及驗證測試所需的每個一致性群組所包含的磁碟區。
 
@@ -171,15 +171,15 @@ image:sm-bcs-image31.png["錯誤：缺少圖形影像"]
 
 此快照顯示站台A的一致性群組關係
 
-image:sm-bcs-image32.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image32.png[""]
 
 此螢幕快照顯示站台B的一致性群組關係
 
-image:sm-bcs-image33.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image33.png[""]
 
 此螢幕快照顯示CG_infra_datastore_b群組的一致性群組關係詳細資料。
 
-image:sm-bcs-image34.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image34.png[""]
 
 
 
@@ -190,20 +190,20 @@ image:sm-bcs-image34.png["錯誤：缺少圖形影像"]
 
 此螢幕快照顯示站台A的Volume資訊
 
-image:sm-bcs-image35.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image35.png[""]
 
 此螢幕快照顯示站台B的Volume資訊
 
-image:sm-bcs-image36.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image36.png[""]
 
 為了便於透明的應用程式容錯移轉、鏡射的SM至BC LUN也必須從目的地叢集對應至主機。如此一來、主機就能從來源叢集和目的地叢集正確查看LUN的路徑。以下兩個螢幕擷取畫面會擷取站台A和站台B的「igroup show」和「LUN show」輸出。使用建立的對應、叢集中的每個ESXi主機都會將自己的SAN開機LUN視為ID 0、以及所有四個共享iSCSI資料存放區LUN。
 
 此快照顯示站台A叢集的主機igroup和LUN對應。
 
-image:sm-bcs-image37.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image37.png[""]
 
 此快照顯示站台B叢集的主機igroup和LUN對應。
 
-image:sm-bcs-image38.png["錯誤：缺少圖形影像"]
+image:sm-bcs-image38.png[""]
 
 link:sm-bcs-virtualization.html["下一步：解決方案驗證-虛擬化。"]
