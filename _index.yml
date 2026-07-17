@@ -9,40 +9,20 @@ indexpage:
   - title: "–從這裡開始FlexPod"
     links:
     - title: 新增功能
-      url: https://fieldportal.netapp.com/s/informationpage?flexpod
+      url: https://www.netapp.com/flexpod/
     - title: 影片與示範
-      url: https://media.netapp.com/search?q=FlexPod
+      url: https://www.netapp.com/video/search/#q=flexpod&t=Videos&sort=%40videopublisheddate_mktg%20descending&layout=card
     - title: 部落格
-      url: https://blog.netapp.com/tag/Flexpod/
-  - title: AI與現代化資料分析功能FlexPod 、搭配
+      url: https://www.netapp.com/blog/#q=flexpod&t=Blogs&sort=%40publish_date_mktg%20descending&layout=card
+  - title: FlexPod 設計指南
     links:
-    - title: 新增功能
-      url: https://www.flexpod.com/solutions/use-cases/machine-learning/
-    - title: 影片與示範
-      url: https://media.netapp.com/search?q=FlexPod%20AI
-    - title: 部落格
-      url: https://blog.netapp.com/tag/Flexpod/
-  - title: 商業應用程式與企業資料庫FlexPod
+    - title: FlexPod 驗證設計指南
+      url: https://www.netapp.com/flexpod/validated-designs/
+    - title: FlexPod 設計指南
+      url: https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html
+  - title: FlexPod 技術規格
     links:
-    - title: 部落格
-      url: https://blog.netapp.com/tag/Flexpod/
-  - title: 混合雲FlexPod 與功能
-    links:
-    - title: 新增功能
-      url: https://flexpod.com/solutions/use-cases/hybrid-cloud/
-    - title: 影片與示範
-      url: https://media.netapp.com/search?q=FlexPod%20Hybrid%20Cloud
-    - title: 部落格
-      url: https://blog.netapp.com/tag/Flexpod/
-  - title: 適用於VDI FlexPod
-    links:
-    - title: 新增功能
-      url: https://www.flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/
-    - title: 部落格
-      url: https://blog.netapp.com/tag/Flexpod/
-  - title: 以功能為本的醫療照護FlexPod
-    links:
-    - title: 新增功能
-      url: https://flexpod.com/solutions/verticals/healthcare/
-    - title: 部落格
-      url: https://blog.netapp.com/tag/Healthcare/
+    - title: 部分技術規格FlexPod
+      url: "/fp-def/fp-express-tech-spec_overview.html"
+    - title: 資料中心技術規格FlexPod
+      url: "/fp-def/dc-tech-spec_solution_overview.html"

@@ -7386,11 +7386,6 @@
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新增功能</block>
   <block id="17c3771ed0b6c1ae15740eff715e9922" category="sidebar">影片與示範</block>
   <block id="d6b9ea32b921a9f56de32062ba4b94f3" category="sidebar">部落格</block>
-  <block id="cfa345d8fdba7b2e9598cce9c0e3c744" category="sidebar">AI與現代化資料分析功能FlexPod 、搭配</block>
-  <block id="7d15915b1c0d83b2d07ba91bb371d99c" category="sidebar">商業應用程式與企業資料庫FlexPod</block>
-  <block id="9651c3a3b7cbc999c2c50c39dbf61c04" category="sidebar">混合雲FlexPod 與功能</block>
-  <block id="7cb27dbb321a2dda7b1a59417ac87d24" category="sidebar">適用於VDI FlexPod</block>
-  <block id="e24bc29daa40702c050f7f3b61476c6f" category="sidebar">以功能為本的醫療照護FlexPod</block>
   <block id="da1ad8cf23727f17cd3ee56b1280c387" category="paragraph">安裝Cisco Intersight assist之後、您就可以申請NetApp儲存設備和虛擬化設備。返回* Intersight目標*頁面、並新增vCenter和NetApp Active IQ Unified Manager 的目標。</block>
   <block id="2e5893c243d41c5a61c4efaa83f3a294" category="paragraph"><block ref="2e5893c243d41c5a61c4efaa83f3a294" category="inline-link-rx"></block></block>
   <block id="19829de524ac9c6ea351e3ffc56ea16e" category="paragraph">這些只是一些輔助FlexPod 功能的關鍵功能、可補強《不知道如何解決這個問題。如需 ONTAP 9 4 其他功能的詳細資訊，請參閱<block ref="c633298bec990e426b7e2b06b94ab53d" category="inline-link-rx"></block>。另外，請參閱 NetApp<block ref="acaccc868f6222e64c0f11237becafd9" category="inline-link-rx"></block> （已更新爲包括 ONTAP 9 ）。 4</block>
@@ -7755,7 +7750,6 @@
   <block id="7013f56669c02dbe795614370d0c956e" category="list-text">兩台採用冗餘配置的 10Gbps 標準乙太網路交換器（Cisco Nexus 9200 和 9300 機型）</block>
   <block id="5f7768fa622b0c0e0bf05d27d8097e12" category="list-text">Cisco UCS C 系列獨立機架伺服器，採用基於 CIMC 的獨立機架伺服器設定或 Intersight 獨立設定，或 Cisco UCS X 系列 Direct，採用 Cisco Intersight 管理設定 （IMM）。</block>
   <block id="8cf756e67e6fe3a58a1405610ba75ad9" category="paragraph">FlexPod Express 架構需要冗餘的 AFF、ASA 或 FAS 系列控制器。這些控制器執行 ONTAP 軟體。訂購儲存控制器時，可以預先在控制器上載入偏好的軟體版本。對於 ONTAP，可以使用一對叢集互連交換器或在無交換器叢集組態中部署叢集。</block>
-  <block id="d5c565b8a9c9c59fa0b692c9cbf65edd" category="admonition">無交換器叢集組態僅支援雙節點組態。超過 4 個節點的組態需要叢集互連交換器，雙節點組態則為選用。</block>
   <block id="230b6be042c6a9e09ceea70fd8e2f108" category="paragraph">根據所選儲存平台，可提供不同的選項和配置。有關這些附加元件的詳細資訊，請諮詢您的銷售代表。</block>
   <block id="ee65a1f1b80c1d59eba7dc665cc831bc" category="paragraph">下表所列的控制器系列適用於 FlexPod 解決方案，因為它們與 Cisco Nexus 交換器的連接無縫銜接。有關各控制器型號的具體相容性詳情，請參閱<block ref="0012c2b4de81607ee8d0f71acdd6c9ab" category="inline-link-rx"></block>。</block>
   <block id="b77cf317a6bb3b0806632ae61052e3ed" category="cell">NetApp 入門級儲存系列，適用於 FlexPod Express</block>
@@ -8351,4 +8345,8 @@
   <block id="111f4df7e87e518570ab7b1b197da1ff" category="paragraph"><block ref="111f4df7e87e518570ab7b1b197da1ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f8b76f392fdab66088707ea680cdf9c" category="paragraph"><block ref="3f8b76f392fdab66088707ea680cdf9c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="01d78a1cc76d70d71c21461704721f1f" category="paragraph"><block ref="01d78a1cc76d70d71c21461704721f1f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d31ed23a1faa3e74607a17176c090e5e" category="admonition">無交換器式叢集組態僅適用於雙節點組態。具有 4 個或更多節點的組態需要叢集互連交換器，雙節點組態則可選用。</block>
+  <block id="29d1fb15319805edca77b8cc05b35dfb" category="sidebar">FlexPod 設計指南</block>
+  <block id="26672345b32420d3708cd3bd0f7b1e88" category="sidebar">FlexPod 驗證設計指南</block>
+  <block id="21b29303b1c3acf1c3bbd54b69cf697d" category="sidebar">FlexPod 技術規格</block>
 </blocks>
