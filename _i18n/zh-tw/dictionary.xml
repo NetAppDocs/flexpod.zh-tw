@@ -7586,8 +7586,6 @@
   <block id="611f2f2f4feb7733fb592961b7ca409c" category="paragraph"><block ref="611f2f2f4feb7733fb592961b7ca409c" category="inline-link-rx"></block></block>
   <block id="eccbfb8e55244ced2c05dead60816337" category="inline-link"><block ref="eccbfb8e55244ced2c05dead60816337" category="inline-link-rx"></block></block>
   <block id="2485bc6384a0018bf9378518acc91743" category="paragraph"><block ref="2485bc6384a0018bf9378518acc91743" category="inline-link-rx"></block></block>
-  <block id="4ada3eb5b908caaedb757052562dfcf5" category="inline-link"><block ref="4ada3eb5b908caaedb757052562dfcf5" category="inline-link-rx"></block></block>
-  <block id="24770c78cf2f66c4e8079edb81405132" category="paragraph"><block ref="24770c78cf2f66c4e8079edb81405132" category="inline-link-rx"></block></block>
   <block id="39c90ea315f24fb17b3b30ec1987e361" category="inline-link"><block ref="39c90ea315f24fb17b3b30ec1987e361" category="inline-link-rx"></block></block>
   <block id="1adcadc2d283b69776aea48ef9ef3f4b" category="paragraph"><block ref="1adcadc2d283b69776aea48ef9ef3f4b" category="inline-link-rx"></block></block>
   <block id="6ae13600af8af9b0e91f83cbd7d1e186" category="summary">FlexPod Express 的自動化部署可透過包含 Ansible playbook 和相關基礎架構即程式碼資產的 GitHub 儲存庫來實現。</block>
@@ -7647,7 +7645,6 @@
   <block id="a0f49019bc8a064550050fb534c14269" category="cell">Cisco UCS X440p PCIe 節點</block>
   <block id="d16c6aa33fa0ef266f3034a6a1d66f6b" category="cell">UCSX-440P</block>
   <block id="076a11c9b6ed229748bf8bfdef576be3" category="cell"><block ref="076a11c9b6ed229748bf8bfdef576be3" category="inline-link-rx"></block></block>
-  <block id="d4a1f2b08ae3c30faec4f877f6be7b6b" category="paragraph">Cisco UCS C 系列機架式伺服器提供 1 機架單元（RU）和 2 機架單元（RU）兩種規格，並配備多種 CPU、記憶體和 I/O 選項。下表列出的零件號碼為基礎伺服器的零件號碼。不包含 CPU、記憶體、硬碟、週邊元件互連高速（PCIe）卡。FlexPod 基礎架構支援多種組態選項。</block>
   <block id="08f285120864063a3664f0b981e85974" category="cell">Cisco UCS C220 M7</block>
   <block id="185f87b891565a026a599afc6ccf6509" category="cell">UCSC-C220-M7</block>
   <block id="59bb7a4168ca0727f0e8657c561faece" category="inline-link">Cisco UCS C220 M7 機架式伺服器</block>
@@ -7823,7 +7820,6 @@
   <block id="d9840af1ac16f87a0bb7e7f1809db902" category="list-text">請參考此連結以取得 <block ref="96023dfc35aca322ee97bb49ea64a936" category="inline-link-macro-rx"></block> 的最新版本。</block>
   <block id="088e44397be81dfaef19721061770e89" category="inline-link-macro">Cisco Intersight 獨立模式和 CIMC 韌體</block>
   <block id="45daa6ca74d4e8647074c8bec564a3cb" category="list-text">請參考此連結以取得 <block ref="159389d00e7441b1c53d85747f17d0eb" category="inline-link-macro-rx"></block> 的最新版本</block>
-  <block id="eb1620e661fb6f17871cdab3b694c032" category="admonition">所有軟體元件必須在<block ref="542750ff2ff69f0b5f9f0ab1166bb952" category="inline-link-rx"></block>中列出並受到支援，所有 NetApp 硬體元件和 ONTAP 版本必須在<block ref="6a8cef5b71adde6301ea0984592ea5c1" category="inline-link-rx"></block>中列出並受到支援，所有 Cisco 硬體元件必須在<block ref="243ee419838ead03039b3c014c885e78" category="inline-link-rx"></block>中列出並受到支援。</block>
   <block id="2a409f1fa2a150f2253ac127248488e4" category="paragraph">FlexPod Express 支援執行 NetApp ONTAP 作業系統的儲存系統。</block>
   <block id="ef7609bdef2cdaafd40275f9e5433c35" category="paragraph">NetApp ONTAP 軟體是運作在 AFF、ASA 和 FAS 儲存系統上的作業系統。ONTAP 提供高度可擴充的儲存架構，支援無中斷作業、無中斷升級和敏捷的資料基礎架構。透過 ONTAP One 授權模式，所有企業資料服務均包含在單一套件中，簡化部署與管理，同時提供對進階功能的完整存取。ONTAP 透過 SnapMirror 複寫與災難復原，以及 SnapCenter 應用程式一致性備份與還原等技術，提供強大的資料保護。此外，ONTAP 還整合了內建安全功能，包括自主勒索軟體防護和加密，以保護資料免受現代威脅的侵害。ONTAP 亦支援與混合雲的無縫整合，提供 SnapMirror Cloud 和 S3 型複寫等功能，實現資料在內部部署與雲端環境之間的移動，同時維持一致性與可控性。</block>
   <block id="bf0ebcdca54fe8f97b947c021c0fc6ba" category="paragraph">如需 ONTAP 的詳細資訊，請參閱<block ref="1438085fbc66bc2984b1f8fc6f5a6806" category="inline-link-rx"></block>。</block>
@@ -8349,4 +8345,8 @@
   <block id="29d1fb15319805edca77b8cc05b35dfb" category="sidebar">FlexPod 設計指南</block>
   <block id="26672345b32420d3708cd3bd0f7b1e88" category="sidebar">FlexPod 驗證設計指南</block>
   <block id="21b29303b1c3acf1c3bbd54b69cf697d" category="sidebar">FlexPod 技術規格</block>
+  <block id="40f38a28ba17dc0cd24161109cb1b8f0" category="inline-link"><block ref="40f38a28ba17dc0cd24161109cb1b8f0" category="inline-link-rx"></block></block>
+  <block id="503753b7cfdba11f6ff233c6f8d878b2" category="paragraph"><block ref="503753b7cfdba11f6ff233c6f8d878b2" category="inline-link-rx"></block></block>
+  <block id="f4bf1ab74cf7b6fb7a56eaa53745e1ae" category="paragraph">Cisco UCS C 系列機架式伺服器提供 1、2 和 4 機架單元 (RU) 三種規格，並配備多種 CPU、記憶體容量和 I/O 選項。下表列出的零件號碼為基礎伺服器的零件號碼。不包含 CPU、記憶體容量、硬碟和周邊元件互連 Express (PCIe) 卡。FlexPod 架構支援多種組態選項。</block>
+  <block id="a60ddb965dcf6f25c87e72a37c8252c4" category="admonition">所有軟體元件必須在<block ref="8058bb2e300c0b28cc61110596fbc6e0" category="inline-link-rx"></block>中列出並受到支援，所有 NetApp 硬體元件和 ONTAP 版本必須在<block ref="6a8cef5b71adde6301ea0984592ea5c1" category="inline-link-rx"></block>中列出並受到支援，所有 Cisco 硬體元件必須在<block ref="243ee419838ead03039b3c014c885e78" category="inline-link-rx"></block>中列出並受到支援。</block>
 </blocks>

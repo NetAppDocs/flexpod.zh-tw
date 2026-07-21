@@ -27,4 +27,4 @@ summary: 本節說明不同版本的 FlexPod Express 的建議軟體需求。
 
 
 
-NOTE: 所有軟體元件必須在 http://support.netapp.com/matrix/["NetApp IMT"^]中列出並受到支援，所有 NetApp 硬體元件和 ONTAP 版本必須在 https://hwu.netapp.com/Home/Index["NetApp Hardware Universe"^]中列出並受到支援，所有 Cisco 硬體元件必須在 https://ucshcltool.cloudapps.cisco.com/public/["Cisco HCL"^]中列出並受到支援。
+NOTE: 所有軟體元件必須在 https://imt.netapp.com/imt/#welcome["NetApp IMT"^]中列出並受到支援，所有 NetApp 硬體元件和 ONTAP 版本必須在 https://hwu.netapp.com/Home/Index["NetApp Hardware Universe"^]中列出並受到支援，所有 Cisco 硬體元件必須在 https://ucshcltool.cloudapps.cisco.com/public/["Cisco HCL"^]中列出並受到支援。

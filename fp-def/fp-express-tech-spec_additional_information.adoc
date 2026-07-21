@@ -38,7 +38,7 @@ https://docs.netapp.com/us-en/ontap-systems-family/index.html["https://docs.neta
 
 * NetApp互通性對照表工具IMT （不含）
 +
-https://mysupport.netapp.com/matrix/["https://mysupport.netapp.com/matrix"^]
+https://imt.netapp.com/imt/#welcome["https://imt.netapp.com/imt/#welcome"^]
 
 * NetApp Hardware Universe
 +

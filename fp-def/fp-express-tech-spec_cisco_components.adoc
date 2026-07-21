@@ -128,7 +128,7 @@ Cisco Unified Edge 由下列元件構成：
 [[cisco-ucs-c-series-rack-server-options]]
 == Cisco UCS C系列機架伺服器選項
 
-Cisco UCS C 系列機架式伺服器提供 1 機架單元（RU）和 2 機架單元（RU）兩種規格，並配備多種 CPU、記憶體和 I/O 選項。下表列出的零件號碼為基礎伺服器的零件號碼。不包含 CPU、記憶體、硬碟、週邊元件互連高速（PCIe）卡。FlexPod 基礎架構支援多種組態選項。
+Cisco UCS C 系列機架式伺服器提供 1、2 和 4 機架單元 (RU) 三種規格，並配備多種 CPU、記憶體容量和 I/O 選項。下表列出的零件號碼為基礎伺服器的零件號碼。不包含 CPU、記憶體容量、硬碟和周邊元件互連 Express (PCIe) 卡。FlexPod 架構支援多種組態選項。
 
 下表列出Cisco UCS C系列機架伺服器選項。
 
