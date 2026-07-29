@@ -7743,7 +7743,6 @@
   <block id="07fabd6fde589c0dfb293502119057ad" category="paragraph">使用 NetApp AFF、ASA 或 FAS 控制器作為底層儲存的 FlexPod Express 解決方案，其硬體需求包括本節所述的組態。</block>
   <block id="75b256e594cf5a8ba03273e8a68f2c27" category="paragraph">以下是 FlexPod Express 的最低硬體需求：</block>
   <block id="7013f56669c02dbe795614370d0c956e" category="list-text">兩台採用冗餘配置的 10Gbps 標準乙太網路交換器（Cisco Nexus 9200 和 9300 機型）</block>
-  <block id="5f7768fa622b0c0e0bf05d27d8097e12" category="list-text">Cisco UCS C 系列獨立機架伺服器，採用基於 CIMC 的獨立機架伺服器設定或 Intersight 獨立設定，或 Cisco UCS X 系列 Direct，採用 Cisco Intersight 管理設定 （IMM）。</block>
   <block id="8cf756e67e6fe3a58a1405610ba75ad9" category="paragraph">FlexPod Express 架構需要冗餘的 AFF、ASA 或 FAS 系列控制器。這些控制器執行 ONTAP 軟體。訂購儲存控制器時，可以預先在控制器上載入偏好的軟體版本。對於 ONTAP，可以使用一對叢集互連交換器或在無交換器叢集組態中部署叢集。</block>
   <block id="230b6be042c6a9e09ceea70fd8e2f108" category="paragraph">根據所選儲存平台，可提供不同的選項和配置。有關這些附加元件的詳細資訊，請諮詢您的銷售代表。</block>
   <block id="ee65a1f1b80c1d59eba7dc665cc831bc" category="paragraph">下表所列的控制器系列適用於 FlexPod 解決方案，因為它們與 Cisco Nexus 交換器的連接無縫銜接。有關各控制器型號的具體相容性詳情，請參閱<block ref="0012c2b4de81607ee8d0f71acdd6c9ab" category="inline-link-rx"></block>。</block>
@@ -7752,10 +7751,8 @@
   <block id="1d54842ba417c6ef95e35c602a80d5ac" category="cell">A30</block>
   <block id="71642a8ed4161123d0530fb7e39a80f1" category="cell">AFF C 系列</block>
   <block id="9c5fd388a2ee6ceb65d30336d2fec257" category="cell">C30</block>
-  <block id="e74e816dd7cc6f70a065fed35442bdba" category="cell">ASA A 系列</block>
   <block id="152c92bb93afe1127ea38c0adcfc59e7" category="inline-link">ASA 說明文件</block>
   <block id="250607b5164c46a6898f0c37fbf5e7f2" category="cell"><block ref="250607b5164c46a6898f0c37fbf5e7f2" category="inline-link-rx"></block></block>
-  <block id="eab12603d471c1206ae118fe245f03eb" category="cell">ASA C 系列</block>
   <block id="149f0ea389848f479bd80af6375b383b" category="cell">FAS</block>
   <block id="82d9aaf29409f2b1321f31e9bf87f742" category="cell">FAS 2750</block>
   <block id="b547a5d94845d9471423356c66873bd5" category="inline-link">FAS 說明文件</block>
@@ -7846,20 +7843,12 @@
   <block id="5ae1780e03f6f2fe6330117093999bce" category="cell">NetApp AFF C30</block>
   <block id="5f1e8d8da262b8e1d6aef0279e46acce" category="inline-link">AFF C30 主要規格</block>
   <block id="48bd9ed2e9b563ce06697ee9af4741d2" category="cell"><block ref="48bd9ed2e9b563ce06697ee9af4741d2" category="inline-link-rx"></block></block>
-  <block id="20befc895bdd3c5753147d0bd9801f9c" category="section-title">NetApp ASA A-Series</block>
-  <block id="76d8696e94b1dcc6fafd26e8cfafe6cd" category="inline-link">NetApp ASA A 系列技術規格</block>
-  <block id="ef7f30d4da71e49b19ad0dcd62a43e68" category="paragraph">NetApp ASA A 系列儲存控制器的入門型號支援在 FlexPod Express 環境中使用。更多資訊請參閱<block ref="e07f75b49dc7b1e59eb99a5026c2d79a" category="inline-link-rx"></block>產品規格書及<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。如需特定 ASA 型號的詳細資訊，請參閱下表所列的平台專屬文件。</block>
-  <block id="8b02ef4642c29f10f418b8edafd3ba35" category="cell">NetApp ASA A 系列控制器平台文件</block>
   <block id="64e2bfe618c1dfa2ae2b3ecbfe27bd7e" category="cell">NetApp ASA A20</block>
   <block id="fd4ef17843c8a6b3fa7f2bbacaedb1ca" category="inline-link">ASA A20 主要規格</block>
   <block id="4e1a6ff04c556f6bdbdeb04b0cc657db" category="cell"><block ref="4e1a6ff04c556f6bdbdeb04b0cc657db" category="inline-link-rx"></block></block>
   <block id="dde2e7d2b59d10ca54a92bfb685863cd" category="cell">NetApp ASA A30</block>
   <block id="97bcbb900c8b2788fdf8dfead82aa886" category="inline-link">ASA A30 主要規格</block>
   <block id="8aa3c24c81a0a19ff08ffc9b323550f1" category="cell"><block ref="8aa3c24c81a0a19ff08ffc9b323550f1" category="inline-link-rx"></block></block>
-  <block id="ecea189069d20f1668c67018a77dd10e" category="section-title">NetApp ASA C 系列</block>
-  <block id="4faa6a7b3548c8ebf5e8335c84835414" category="inline-link">NetApp ASA C 系列技術規格</block>
-  <block id="b695e800e4011f4380290539a9d8b161" category="paragraph">NetApp ASA C 系列儲存控制器的入門型號支援在 FlexPod Express 環境中使用。更多資訊請參閱<block ref="9039b49573135778d57fa448f51fc0ff" category="inline-link-rx"></block>資料表及<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。有關特定 ASA 型號的詳細資訊，請參閱下表所列的平台專屬文件。</block>
-  <block id="fd737aa8c91d9db6a7d0e43df5ce9311" category="cell">NetApp ASA C 系列控制器平台文件</block>
   <block id="0953b6c43b0d6df696f61090d726dca3" category="cell">NetApp ASA C30</block>
   <block id="b761052fedd3b5e9027bd9da05b7b26d" category="inline-link">ASA C30 主要規格</block>
   <block id="78cb25d69d4fe295ef030ff0d4eb85a2" category="cell"><block ref="78cb25d69d4fe295ef030ff0d4eb85a2" category="inline-link-rx"></block></block>
@@ -8349,4 +8338,10 @@
   <block id="d4be789c0896e734a89e386a8d00f187" category="inline-link"><block ref="d4be789c0896e734a89e386a8d00f187" category="inline-link-rx"></block></block>
   <block id="c1ba01aa51a8fc173d6a9dd15d8b5d42" category="paragraph"><block ref="c1ba01aa51a8fc173d6a9dd15d8b5d42" category="inline-link-rx"></block></block>
   <block id="9b1dcc158dd4f463eff8e0ecc95e1c0f" category="paragraph">此 FlexPod 架構由本文件中所述的一系列規則定義。硬體元件和軟體組態必須受到<block ref="55be3385fd2442b96520f981204722ea" category="inline-link-rx"></block>和<block ref="538106ddbedb569903f8e17bb643549d" category="inline-link-rx"></block>的支援。</block>
+  <block id="d5801c87d769ed7144d6149320f2c851" category="list-text">兩台 Cisco UCS C-Series 獨立式機架伺服器，採用基於 CIMC 的獨立式機架伺服器組態或 Intersight 獨立式組態；或一台 Cisco UCS X-Series Direct，採用 Cisco Intersight 管理組態 （IMM）。</block>
+  <block id="b7b46ce5d1a547db89c0bc615ff272a5" category="cell">ASA</block>
+  <block id="2b304856171196502641312a496c6d54" category="section-title">NetApp ASA</block>
+  <block id="10869ea6345111f91c959d006b281746" category="inline-link">NetApp ASA 技術規範</block>
+  <block id="80eae4b252a85f4d42cd6f7c8964dc81" category="paragraph">NetApp ASA 儲存控制器的入門級機型支援在 FlexPod Express 中使用。更多資訊請參閱<block ref="0121d7eee41574793aaf62f464ee106c" category="inline-link-rx"></block>產品型錄及<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。有關特定 ASA 型號的詳細資訊，請參閱下表所列的平台專屬文件。</block>
+  <block id="93227a3c59a6f0dd8e3e3d2920c96a7c" category="cell">NetApp ASA 控制器平台文件</block>
 </blocks>

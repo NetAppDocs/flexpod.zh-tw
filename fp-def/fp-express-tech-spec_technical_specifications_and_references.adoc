@@ -235,29 +235,19 @@ NetApp 儲存控制器的技術規格包括平台配置、最大原始容量、�
 |===
 
 
-[[netapp-asa-a-series]]
-=== NetApp ASA A-Series
+[[netapp-asa]]
+=== NetApp ASA
 
-NetApp ASA A 系列儲存控制器的入門型號支援在 FlexPod Express 環境中使用。更多資訊請參閱 https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["NetApp ASA A 系列技術規格"^]產品規格書及 https://hwu.netapp.com/["NetApp Hardware Universe"^]。如需特定 ASA 型號的詳細資訊，請參閱下表所列的平台專屬文件。
+NetApp ASA 儲存控制器的入門級機型支援在 FlexPod Express 中使用。更多資訊請參閱 https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["NetApp ASA 技術規範"^]產品型錄及 https://hwu.netapp.com/["NetApp Hardware Universe"^]。有關特定 ASA 型號的詳細資訊，請參閱下表所列的平台專屬文件。
 
 |===
-| 元件 | NetApp ASA A 系列控制器平台文件 
+| 元件 | NetApp ASA 控制器平台文件 
 
 
 | NetApp ASA A20 | https://docs.netapp.com/us-en/ontap-systems/asa-r2-key-specifications/asa-a20-key-specifications.html["ASA A20 主要規格"] 
 
 
 | NetApp ASA A30 | https://docs.netapp.com/us-en/ontap-systems/asa-r2-key-specifications/asa-a30-key-specifications.html["ASA A30 主要規格"] 
-|===
-
-
-[[netapp-asa-c-series]]
-=== NetApp ASA C 系列
-
-NetApp ASA C 系列儲存控制器的入門型號支援在 FlexPod Express 環境中使用。更多資訊請參閱 https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["NetApp ASA C 系列技術規格"^]資料表及 https://hwu.netapp.com/["NetApp Hardware Universe"^]。有關特定 ASA 型號的詳細資訊，請參閱下表所列的平台專屬文件。
-
-|===
-| 元件 | NetApp ASA C 系列控制器平台文件 
 
 
 | NetApp ASA C30 | https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["ASA C30 主要規格"] 
