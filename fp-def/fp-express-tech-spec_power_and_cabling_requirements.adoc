@@ -25,7 +25,7 @@ FlexPod Express 的電源需求因 FlexPod Express 組態的安裝位置而異�
 
 有關所需最大功率的更多資料以及其他詳細的功率資訊，請參閱每個硬體元件的 link:https://docs.netapp.com/us-en/flexpod/fp-def/fp-express-tech-spec_technical_specifications_and_references.html["技術規格"^]。
 
-如需詳細的Cisco UCS電源資料、請參閱 http://www.cisco.com/assets/cdc_content_elements/flash/dataCenter/cisco_ucs_power_calculator/["Cisco UCS電源計算機"^]。
+有關 Cisco UCS 電源資料的詳細說明，請參閱 https://ucspowercalculator.cisco.com/["Cisco UCS電源計算機"^]。
 
 有關 NetApp 儲存控制器電源資料，請參閱 http://hwu.netapp.com/Controller/Index?platformTypeId=6780858["NetApp Hardware Universe"^]。在 *Platforms* 下，選擇您要使用的儲存平台（例如 AFF A20），選擇 ONTAP 版本，然後按一下 *Show Results*。電源線資料列於 *Supported Power Cords* 部分，有關尺寸、重量、功率等詳細資訊，請參閱 *Size, Weight, Acoustic, Power* 部分。
 

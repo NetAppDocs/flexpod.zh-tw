@@ -451,7 +451,7 @@ NetApp儲存控制器的技術規格包括下列元件：
 [[netapp-disk-shelves]]
 === NetApp磁碟櫃
 
-NetApp磁碟櫃的技術規格包括尺寸規格、每個機箱的磁碟機數量、以及磁碟櫃I/O模組；您可在下表中找到本文件。如需詳細資訊、請參閱 http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["NetApp磁碟櫃與儲存媒體技術規格"^] 和 https://hwu.netapp.com/["NetApp Hardware Universe"^]。
+NetApp 磁碟機櫃的技術規格包括尺寸規格大小、每個機箱的磁碟機數量以及機櫃 I/O 模組；這些文件可在下表中找到。如需更多資訊，請參閱 https://www.netapp.com/data-storage/disk-shelves-storage-media/["NetApp磁碟櫃與儲存媒體技術規格"^]和 https://hwu.netapp.com/["NetApp Hardware Universe"^]。
 
 |===
 | 元件 | NetApp FAS/AFF磁碟櫃文件 

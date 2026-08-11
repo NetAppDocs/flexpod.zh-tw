@@ -62,7 +62,7 @@ image:dc-tech-spec_image12.png[""]
 
 如需FlexPod 更多有關「效能優勢」的詳細資訊、請參閱 https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741907.html["推出端點對端點NVMe for FlexPod 《支援不全》白皮書。"^]
 
-如需 ONTAP 實作的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/10681-tr4684pdf.pdf["TR-4684：使用NVMe實作及設定現代化SAN"^]。
+有關 ONTAP 實作的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/10681-tr4684.pdf["TR-4684：使用NVMe實作及設定現代化SAN"^]。
 
 image:dc-tech-spec_image3.png[""]
 

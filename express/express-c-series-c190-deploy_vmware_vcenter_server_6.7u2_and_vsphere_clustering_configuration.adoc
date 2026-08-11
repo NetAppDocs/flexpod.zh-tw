@@ -16,7 +16,7 @@ summary: 若要設定VMware vCenter Server 6.7和vSphere叢集、請完成本頁
 [role="lead"]
 若要設定VMware vCenter Server 6.7和vSphere叢集、請完成下列步驟：
 
-. 導航至 `https://<<FQDN or IP of vCenter>>/vsphere-client/`。
+. 導航至 `+https://<<FQDN or IP of vCenter>>/vsphere-client/+`。
 . 按一下「啟動vSphere Client」。
 . 以使用者名稱mailto：Administrator @ vspehre.erl[系統管理員]@ vsphere.local登入、以及您在VCSA設定程序期間輸入的SSO密碼。
 . 在vCenter名稱上按一下滑鼠右鍵、然後選取「New Datacenter（新增資料中心）」

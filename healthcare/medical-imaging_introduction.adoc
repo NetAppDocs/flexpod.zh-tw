@@ -62,7 +62,7 @@ NetApp公司Jaya Kishore Esanakula和Atul Bhaludia
 * ACO醫療組織的映像與媒體管理、無論映像的記錄系統為何、都能使用單一平台、透過醫療領域的數位影像與通訊等通訊協定（ https://www.dicomstandard.org/about/["Dicom"^]）和對Dicom持續物件的網路存取（ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3447090/["WADO."^]）
 * 健康資訊交換（ https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/what-hie["HIE"^]）包括內嵌在訊息中的影像。
 * 手持設備、無線掃描裝置（例如手機上附有口袋型手持式超音波掃描儀）等行動設備、需要具備DoD層級安全性、可靠性及邊緣、核心及雲端延遲能力的健全網路基礎架構。 https://www.netapp.com/us/data-fabric.aspx["採用NetApp技術的資料架構"^] 為組織提供大規模的這項功能。
-* 較新的醫療儀器具有指數級的儲存需求；例如、CT和MRI每種醫療儀器都需要數百MB的容量、但數位化的病理影像（包括整張投影片影像）可能只有幾GB的大小。FlexPod 是與 https://www.netapp.com/pdf.html?item=/media/16926-sb-flexpod-advantage-performance-agility-economicspdf.pdf["效能、可靠性和擴充能力是基本特徵"^]一起設計的。
+* 較新的造影模式具有呈指數級增長的儲存設備需求；例如，CT 和 MRI 每種模式需要數百 MB，但數位病理影像（包括全玻片影像）的大小可能達到數 GB。FlexPod 的設計採用了 https://www.netapp.com/pdf.html?item=/media/16926-sb-flexpod-advantage-performance-agility-economics.pdf["效能、可靠性和擴充能力是基本特徵"^]。
 
 
 架構完善的醫療影像系統平台是創新的核心。此架構以領先業界的儲存效率、提供靈活的運算與儲存功能。FlexPod

@@ -69,6 +69,6 @@ image:fp-express-tech-spec_image12.png["Cisco UCS C-Series 獨立伺服器和 Ne
 Cisco UCS C 系列可透過 CIMC 或 Cisco Intersight 獨立管理進行管理。
 
 
-NOTE: 上述範例拓樸結構指的是使用 NetApp AFF 的直連儲存解決方案。但是，相同的拓樸結構也可用於 NetApp ASA 和 FAS。
+NOTE: 上述範例拓撲指的是使用 NetApp AFF 的儲存解決方案。但是，相同的拓撲也可用於 NetApp ASA 和 FAS。
 
 有關此組態的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/88340-NVA-FlexpodExpress_C220_A250_NexusFinal.pdf["FlexPod Express 適用於 VMware vSphere 8.0，支援 Cisco UCS C-Series Standalone 和 NetApp AFF"^]。

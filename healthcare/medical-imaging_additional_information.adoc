@@ -16,48 +16,15 @@ summary: 若要深入瞭解本文所述資訊、請檢閱下列文件與網站�
 [role="lead"]
 若要深入瞭解本文所述資訊、請檢閱下列文件與網站：
 
-* 《Datacenter for AI/ML with Cisco UCS 480 ML for Deep Learning設計指南》FlexPod
-+
-https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html"^]
-
-* 採用VMware vSphere 6.7 U1、Cisco UCS第4代及NetApp解決方案的資料中心基礎架構FlexPod AFF
-+
-https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html"^]
-
-* 包含《解決方案簡介》的Datacenter Oracle資料庫備份FlexPod SnapCenter
-+
-https://www.netapp.com/pdf.html?item=/media/16973-sb-3999pdf.pdf["https://www.netapp.com/us/media/sb-3999.pdf"^]
-
-* 採用Oracle RAC資料庫的Datacenter搭配Cisco UCS和NetApp解決方案A系列FlexPod AFF
-+
-https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orc12cr2_affaseries.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orc12cr2_affaseries.html"^]
-
-* Oracle Linux上的Oracle RAC資料中心FlexPod
-+
-https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orcrac_12c_bm.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orcrac_12c_bm.html"^]
-
-* 適用於Microsoft SQL Server FlexPod
-+
-https://flexpod.com/solutions/use-cases/microsoft-sql-server/["https://flexpod.com/solutions/use-cases/microsoft-sql-server/"^]
-
-* Cisco與NetApp提供的解決方案FlexPod
-+
-https://flexpod.com/["https://flexpod.com/"^]
-
-* NetApp MongoDB 解決方案簡介（需要 NetApp 登入）
-+
-https://fieldportal.netapp.com/s/article/solution-brief-netapp-solutions-for-mongodb-1690217002398["https://fieldportal.netapp.com/s/article/solution-brief-netapp-solutions-for-mongodb-1690217002398"^]
-
-* TR-47700：SnapCenter 適用於Oracle資料庫的支援
-+
-https://www.netapp.com/pdf.html?item=/media/12403-tr4700pdf.pdf["https://www.netapp.com/us/media/tr-4700.pdf"^]
-
-* NetApp 產品文件
-+
-https://www.netapp.com/us/documentation/index.aspx["https://www.netapp.com/us/documentation/index.aspx"^]
-
-* 適用於虛擬桌面基礎架構（VDI）解決方案FlexPod
-+
-https://flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/["https://flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/"^]
-
+* https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html["FlexPod Datacenter 適用於 AI/ML 且配備用於深度學習之 Cisco UCS 480 ML 的設計指南"^]
+* https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html["採用VMware vSphere 6.7 U1、Cisco UCS第4代及NetApp解決方案的資料中心基礎架構FlexPod AFF"^]
+* https://www.netapp.com/pdf.html?item=/media/16973-sb-3999.pdf["包含《解決方案簡介》的Datacenter Oracle資料庫備份FlexPod SnapCenter"^]
+* https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orc12cr2_affaseries.html["採用Oracle RAC資料庫的Datacenter搭配Cisco UCS和NetApp解決方案A系列FlexPod AFF"^]
+* https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_orcrac_12c_bm.html["Oracle Linux上的Oracle RAC資料中心FlexPod"^]
+* https://flexpod.com/solutions/use-cases/microsoft-sql-server/["適用於Microsoft SQL Server FlexPod"^]
+* https://flexpod.com/["Cisco與NetApp提供的解決方案FlexPod"^]
+* https://fieldportal.netapp.com/s/article/solution-brief-netapp-solutions-for-mongodb-1690217002398["NetApp MongoDB 解決方案簡介（需要 NetApp 登入）"^]
+* https://www.netapp.com/pdf.html?item=/media/12403-tr4700.pdf["TR-47700：SnapCenter 適用於Oracle資料庫的支援"^]
+* https://docs.netapp.com/["NetApp 產品文件"^]
+* https://flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/["適用於虛擬桌面基礎架構（VDI）解決方案FlexPod"^]
 

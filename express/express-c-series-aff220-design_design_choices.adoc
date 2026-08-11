@@ -23,7 +23,7 @@ summary: 本頁所列的技術是在設計此設計的過程中選擇的。每�
 [[aff-a220-system]]
 === VA220系統AFF
 
-如需AFF 更多有關《Arse A220硬體系統的資訊、請參閱 https://www.netapp.com/us/products/storage-systems/all-flash-array/aff-a-series.aspx["A系列首頁AFF"^]。
+如需 AFF A220 硬體系統的詳細資訊，請參閱 https://www.netapp.com/aff-a-series/["A系列首頁AFF"^]。
 
 
 
@@ -40,7 +40,7 @@ image:express-c-series-aff220-design_image5.png[""]
 
 image:express-c-series-aff220-design_image6.png[""]
 
-這些只是一些輔助FlexPod 功能的關鍵功能、可補強《不知道如何解決這個問題。如需 ONTAP 9 4 其他功能的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/7413-ds-3231.pdf["資料管理軟體資料表ONTAP"^]。另外，請參閱 NetApp http://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"^] （已更新爲包括 ONTAP 9 ）。 4
+以上僅列舉了幾項補充 FlexPod Express 解決方案的重要功能。有關 ONTAP 9.4 其他特性和功能的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/7413-ds-3231-ontap-unified-data-storage-management.pdf["資料管理軟體資料表ONTAP"^]。另請參閱 NetApp http://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"^]，其中已更新以納入 ONTAP 9.4。
 
 
 

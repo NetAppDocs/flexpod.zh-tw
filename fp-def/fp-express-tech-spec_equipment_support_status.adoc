@@ -50,7 +50,7 @@ Cisco 在 Cisco 產品支援頁面上提供停售日期和停止支援日期。
 
 
 
-==== Cisco UCS 伺服器停止銷售和停止支援資訊
+==== Cisco UCS 伺服器的停售和停止支援訊息
 
 * 導航至link:https://www.cisco.com/c/en/us/support/eol/index.html["Cisco 產品支援頁面"]。
 * 在 *Product Categories* 下選擇 *Servers - UCS and HCI*，然後點擊您的伺服器類型（例如：*UCS C-Series Rack Servers*）。找到您的特定型號（例如：*UCS C220 M5*），並查看停售日期和停止支援日期。
@@ -58,7 +58,7 @@ Cisco 在 Cisco 產品支援頁面上提供停售日期和停止支援日期。
 
 
 
-==== Cisco Nexus 交換器停售和停止支援訊息
+==== Cisco Nexus 交換器停售和停止支援資訊
 
 * 導航至link:https://www.cisco.com/c/en/us/support/eol/index.html["Cisco 產品支援頁面"]。
 * 在 *Product Categories* 下選擇 *Switches*，然後點擊您的交換器類型（例如：*Nexus 9000*）。找到您的特定型號（例如：*9236C*），並尋找停售日期和停止支援日期。

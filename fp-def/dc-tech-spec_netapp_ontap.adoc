@@ -16,4 +16,4 @@ summary: NetApp ONTAP 支援軟體安裝在每FAS 個NetApp功能或AFF 功能�
 [role="lead"]
 NetApp ONTAP 軟體安裝於所有 NetApp FAS、AFF 和 AFF All SAN Array （ASA） 系統上。FlexPod 已通過 ONTAP 軟體驗證，提供高度可擴充的儲存架構，實現不中斷營運、不中斷升級及靈活的資料基礎架構。
 
-如需ONTAP 更多關於效能的資訊、請參閱 http://www.netapp.com/us/products/data-management-software/ontap.aspx["資料管理軟體ONTAP"^] 產品頁面。
+如需 ONTAP 的詳細資訊，請參閱 https://www.netapp.com/ontap-data-management-software/["資料管理軟體ONTAP"^]產品頁面。

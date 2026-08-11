@@ -527,10 +527,10 @@ NOTE: 此系統是以雙節點無交換式叢集組態設定。
 | DNS伺服器IP（您可以輸入多個） | \<<var_DNs_server_ip>> 
 
 
-| NTP伺服器A IP | << switch-A-ntp >> 
+| NTP伺服器A IP | +<< switch-a-ntp-ip >>+ 
 
 
-| NTP伺服器B IP | <<switch-b-ntp IP >> 
+| NTP伺服器B IP | +<< switch-b-ntp-ip >>+ 
 |===
 
 
