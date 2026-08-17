@@ -401,7 +401,6 @@
   <block id="2ca7c673d212fe0aac08f9e41ac63265" category="doc">NetApp元件</block>
   <block id="c1a132b08c3d15f664a4e983ca90172e" category="section-title">NetApp儲存控制器選項</block>
   <block id="5d25ef0fe80918309a18b85c097eb22c" category="cell">技術規格</block>
-  <block id="fa83b13617b7a425e389315666f6973f" category="cell"><block ref="fa83b13617b7a425e389315666f6973f" category="inline-link-rx"></block></block>
   <block id="b8d29742df41ef40fca1e44a7b490835" category="cell">產品編號</block>
   <block id="1f1fc06df75fe331417471e6222090a6" category="section-title">NetApp磁碟櫃與磁碟</block>
   <block id="acce181e1989b2478f56688da826d2ac" category="cell">磁碟櫃</block>
@@ -538,8 +537,6 @@
   <block id="ba1e118c83648b254f27cdd860d0d4ae" category="list-text">系統文件中心AFF FAS</block>
   <block id="554fd76f92a53acc4771ed399786a57d" category="inline-link"><block ref="554fd76f92a53acc4771ed399786a57d" category="inline-link-rx"></block></block>
   <block id="e33f95f1ca3f289e294b676f648401f9" category="paragraph"><block ref="e33f95f1ca3f289e294b676f648401f9" category="inline-link-rx"></block></block>
-  <block id="3f4c54c18646adc8c8ae46b11a0e57bb" category="list-text">「文件資源」頁面AFF</block>
-  <block id="951a11d67c8bd54ba3f92b6b7a568225" category="paragraph"><block ref="951a11d67c8bd54ba3f92b6b7a568225" category="inline-link-rx"></block></block>
   <block id="cbfb89e9bdfbc45048843c6b5d227182" category="list-text">FlexPod</block>
   <block id="8c1317d4f19bd6389bb778a92db3747a" category="inline-link"><block ref="8c1317d4f19bd6389bb778a92db3747a" category="inline-link-rx"></block></block>
   <block id="f2846b6af94fed2f6c4d51065b4b8e2f" category="paragraph"><block ref="f2846b6af94fed2f6c4d51065b4b8e2f" category="inline-link-rx"></block></block>
@@ -833,9 +830,6 @@
   <block id="ce9c0b8b6c23f9fbba191e4d302b977e" category="paragraph">所有儲存控制器至少需要一個NetApp磁碟櫃。</block>
   <block id="c590db225b3b8f81ea877e347416fc4b" category="paragraph">所選的NetApp機櫃類型決定該機櫃中可用的磁碟機類型。</block>
   <block id="4565123671fd7bba4b48587da9afe9f8" category="admonition">如需所有磁碟櫃和磁碟零件編號、請洽詢您的銷售代表。</block>
-  <block id="13cce1099823394337e706eafd90f01d" category="paragraph">如需受支援磁碟機的詳細資訊、請按Hardware Universe 一下下表中的NetApp功能鏈結、然後選取「Supported Drives（支援的磁碟機）」。</block>
-  <block id="50c7e0a6a44a11f0dd0f88a46fd0a446" category="inline-link">NetApp Hardware Universe 支援磁碟櫃與儲存媒體的磁碟機</block>
-  <block id="f517d5bbd97d59fddbf6fb63ae1de23f" category="cell"><block ref="f517d5bbd97d59fddbf6fb63ae1de23f" category="inline-link-rx"></block></block>
   <block id="d5740ca99d65dda0f0c3f535ec3113ea" category="paragraph">下表列出FlexPod 適用於「Datacenter」架構的NetApp軟體授權選項。NetApp軟體是FAS 以功能性和AFF 功能性控制器層級授權。</block>
   <block id="aa2dd17a631a9e61bcaf69515584e135" category="cell">軟體、完整套件（控制器）、-C</block>
   <block id="82624737d7fd71e77981f1121d913833" category="cell">SW-8XXX-COMP套件C</block>
@@ -1218,7 +1212,6 @@
   <block id="0f32b160cfcd3499a930878d29b6ed25" category="list-text">我們安裝了NVIDIA vGPU授權伺服器、並使用從NVIDIA合作夥伴網站下載的「*。bin」檔案、將授權新增至授權伺服器。</block>
   <block id="7f9f34352293614b9bebdab47afb36e8" category="list-text">請務必在NVIDIA合作夥伴入口網站上、針對您的部署選擇正確的NVIDIA vGPU軟體版本。在此設定中、我們使用的是460.73.02版驅動程式。</block>
   <block id="6afa1ca2b52709a30dc305f116845435" category="inline-link">NVIDIA vGPU管理程式</block>
-  <block id="f6dde3fe91c3309780cc23ec78a264b2" category="list-text">此命令會安裝<block ref="8dfdcc1b3def6ddf3b82101a1b233305" category="inline-link-rx"></block> 在ESXi中。</block>
   <block id="7eb52140787764d9abbdb19475dcbb73" category="list-text">重新開機ESXi伺服器之後、請執行下列命令來驗證安裝並檢查GPU的健全狀況。</block>
   <block id="e2d5a00791bce9a01f99bc6fd613a39d" category="inline-link">設定</block>
   <block id="37a453d78969a68cec2776ec753e56c9" category="list-text">使用vCenter、<block ref="88dff5fd971c4f20673419ef29670bcd" category="inline-link-rx"></block> 圖形裝置設定為「Shared Direct（共享直接）」。</block>
@@ -1285,9 +1278,6 @@
   <block id="51715f6336f71f0c342d4f6d79941b19" category="inline-link"><block ref="51715f6336f71f0c342d4f6d79941b19" category="inline-link-rx"></block></block>
   <block id="2331140ce18354b448afad499fd44f5d" category="paragraph"><block ref="2331140ce18354b448afad499fd44f5d" category="inline-link-rx"></block></block>
   <block id="7af58d14d56ca529dc2c2d10bead8369" category="list-text">Cisco與NetApp提供的解決方案FlexPod</block>
-  <block id="1a1737c8198f24d4d034d37b96784b6d" category="list-text">醫療產業的AI與分析（NetApp）</block>
-  <block id="3f6fbe0eeb0b40131d6099047ee11cf6" category="inline-link"><block ref="3f6fbe0eeb0b40131d6099047ee11cf6" category="inline-link-rx"></block></block>
-  <block id="3d59760af9fb9d0cfe13fe40ba137808" category="paragraph"><block ref="3d59760af9fb9d0cfe13fe40ba137808" category="inline-link-rx"></block></block>
   <block id="f84e9db44c6ef05870d1f60e67ce9b9b" category="list-text">醫療業的AI智慧型基礎架構選項可提升成功率</block>
   <block id="0372ba8eced17850294543c71eb6118f" category="inline-link"><block ref="0372ba8eced17850294543c71eb6118f" category="inline-link-rx"></block></block>
   <block id="faf2964740264b736e400781dfa2c882" category="paragraph"><block ref="faf2964740264b736e400781dfa2c882" category="inline-link-rx"></block></block>
@@ -1348,7 +1338,6 @@
   <block id="67fcc419cbe799bb19b8911cb363a1dd" category="inline-link">HIE</block>
   <block id="1535d7e1326740598e2e9c670065a0a1" category="list-text">健康資訊交換（<block ref="a2c8343b121451106bab40f2f2a93afd" category="inline-link-rx"></block>）包括內嵌在訊息中的影像。</block>
   <block id="907252d9f6c712cc5f8fcc12251441b1" category="inline-link">採用NetApp技術的資料架構</block>
-  <block id="424085d73e2bf68920f52c0e421ec644" category="list-text">手持設備、無線掃描裝置（例如手機上附有口袋型手持式超音波掃描儀）等行動設備、需要具備DoD層級安全性、可靠性及邊緣、核心及雲端延遲能力的健全網路基礎架構。<block ref="3eee67b0b37da60b6460fdf023f854d0" category="inline-link-rx"></block> 為組織提供大規模的這項功能。</block>
   <block id="2ea6325cbb00626fd010bdc2c9b84882" category="inline-link">效能、可靠性和擴充能力是基本特徵</block>
   <block id="37a955b83843b3a60895704bbaa81329" category="paragraph">架構完善的醫療影像系統平台是創新的核心。此架構以領先業界的儲存效率、提供靈活的運算與儲存功能。FlexPod</block>
   <block id="1ec59953da3ae57022920e20e60729a1" category="paragraph">透過在非核心架構基礎上執行影像應用程式環境FlexPod 、您的醫療機構可以預期員工生產力會有所提升、資金與營運費用也會減少。提供經過嚴格測試、預先驗證、融合式的設計與設計、可提供可預測的低延遲系統效能與高可用度。FlexPod這種方法可為醫療影像系統的使用者帶來高舒適度、最終達到最佳回應時間。</block>
@@ -2472,7 +2461,6 @@
   <block id="245ccd4cdd5cb484215315baf93697ce" category="list-text">Cisco與FIPS 140-2法規遵循</block>
   <block id="6770ff13f95abd8619a19519877aedf9" category="list-text">NetApp密碼編譯安全模組</block>
   <block id="bf7fa6fb49dfa01515f774f7a86c6270" category="list-text">中型和大型醫療組織的網路安全實務做法</block>
-  <block id="8f8e7f38245f5c357d275915df1fb3d6" category="list-text">NetApp儲存加密、NVMe自我加密磁碟機、NetApp Volume加密及NetApp Aggregate加密</block>
   <block id="64f1ff1b6f99d34e2d1a43f8332c7947" category="list-text">NetApp Volume Encryption與NetApp Aggregate Encryption</block>
   <block id="826703b67408dd5973ff8ccc401a9b8b" category="list-text">NetApp儲存加密</block>
   <block id="187fa0150d76f09beb9a3b74c448990a" category="list-text">適用於電子健康記錄系統FlexPod</block>
@@ -3034,8 +3022,6 @@
   <block id="4833f38d3ef45f44218f78ed6d010a1e" category="paragraph">對於活動訊號資料存放區、請從叢集指定四個共用資料存放區、並自動補強、如下圖所示。</block>
   <block id="9eb2bd2480a35c698be7fc3c56207ade" category="inline-link">建立及使用vSphere HA叢集</block>
   <block id="58486898b4fe52f80d7a134d74186a4c" category="inline-link">VMware vSphere Metro儲存叢集（VMSC）</block>
-  <block id="af5299e77d937d0f90b53f5c8d31f369" category="inline-link">NetApp ONTAP 功能搭配NetApp SnapMirror營運不中斷（SMBC）和VMware vSphere Metro儲存叢集（VMSC）</block>
-  <block id="fbf1a5366eed75e49cdd525f7972eadc" category="paragraph">如需VMware HA叢集和VMware vSphere Metro儲存叢集的其他最佳實務做法和組態、請參閱<block ref="e1c1274de4ccc0d5560df65f90d3e6aa" category="inline-link-rx"></block>、<block ref="4f7c5688f5dfddf1590f2246102bcda0" category="inline-link-rx"></block> 和VMware KB<block ref="82bb4696814a89c9685efdd36751466a" category="inline-link-rx"></block>。</block>
   <block id="04efca99cb9ed979fd07e0b0adfcd574" category="inline-link-macro">下一步：解決方案驗證-已驗證的案例。</block>
   <block id="3af9ad1096d1f95cac10da1c470c8ede" category="paragraph"><block ref="3af9ad1096d1f95cac10da1c470c8ede" category="inline-link-macro-rx"></block></block>
   <block id="9bba922e59a4daeddb1809c2781a44a1" category="summary">適用於整個過程的運算組態FlexPod 是以典型FlexPod 的解決方案最佳實務做法為準。下列各節將重點介紹驗證所使用的部分連線能力和組態。同時也強調一些與SM至BC相關的考量、以提供實作參考資料和指引。</block>
@@ -3325,9 +3311,6 @@
   <block id="de8402faa342fc9625bdaa3961573a1b" category="inline-link"><block ref="de8402faa342fc9625bdaa3961573a1b" category="inline-link-rx"></block></block>
   <block id="eda0ad9ec468bbcaad6eca5eb6ef6925" category="paragraph"><block ref="eda0ad9ec468bbcaad6eca5eb6ef6925" category="inline-link-rx"></block></block>
   <block id="d50e63b9f70efedde8dc093be8ec12b2" category="list-text">VMware vSphere Metro儲存叢集建議實務做法</block>
-  <block id="c912dc73def9e5758eb6e130fd3b21ee" category="list-text">NetApp ONTAP 功能與NetApp SnapMirror營運不中斷（SMBC）搭配VMware vSphere Metro儲存叢集（VMSC）。（83370）</block>
-  <block id="e42e1f7327a67ae6a4439a303fc9c81d" category="inline-link"><block ref="e42e1f7327a67ae6a4439a303fc9c81d" category="inline-link-rx"></block></block>
-  <block id="077317c6b779e004e75e33d28168bab8" category="paragraph"><block ref="077317c6b779e004e75e33d28168bab8" category="inline-link-rx"></block></block>
   <block id="0fb53f6fd950dbb18a8f27d8735f5ed7" category="list-text">利用VMware vSphere Metro儲存叢集和ONTAP VMware vCenter來保護層級1的應用程式和資料庫</block>
   <block id="1fb0c828050c8732d84945ca6ded7c37" category="inline-link"><block ref="1fb0c828050c8732d84945ca6ded7c37" category="inline-link-rx"></block></block>
   <block id="7105f117d2822e18aa8b108416306262" category="paragraph"><block ref="7105f117d2822e18aa8b108416306262" category="inline-link-rx"></block></block>
@@ -5379,8 +5362,6 @@
   <block id="71c81e313ca5e5611fec268845053370" category="list-text">12x 960GB</block>
   <block id="d992e1827eb3ff1548758374c052d046" category="list-text">18倍960GB</block>
   <block id="afa71c56dac2c20407fbf4a57d0c06a2" category="list-text">24倍960GB</block>
-  <block id="c49fff3d6f4a20cb0c09fb1e672e7447" category="inline-link">NetApp AFF 《C190 All Flash Array》頁面</block>
-  <block id="1167e6fdc62369bac1d600d8c92a5037" category="paragraph">如需AFF 有關《The整套功能與功能的完整資訊、請參閱<block ref="e04d825c3a253f91f3ef939dcda0495a" category="inline-link-rx"></block>。</block>
   <block id="9056a7d347c12638c9ac7efd641fc96b" category="section-title">部分9.6軟體ONTAP</block>
   <block id="3d50b0969e9f9350008352ef96483ea0" category="paragraph">NetApp AFF 功能完善的C190系統使用全新ONTAP 的功能完善的資料管理軟體。產業領先業界的企業資料管理軟體。ONTAP它結合了全新層級的簡易性與靈活度、以及強大的資料管理功能、儲存效率及領先業界的雲端整合。</block>
   <block id="2b39fb0a0934cfecc30ac98eb34b0bbf" category="paragraph">部分功能適用於《不只是用作解決方案的不只是用作解決方案的用作解決方案的用作解決方案。ONTAP FlexPod最重要的是NetApp對儲存效率的承諾、這可能是小型部署最重要的功能之一。特色NetApp儲存效率功能、例如重複資料刪除、壓縮、壓實及精簡配置、可在ONTAP 《支援資料的實作與精簡配置技術（NetApp Storage Eff間 效率）」中找到。NetApp WAFL 432KB系統一律會寫入4KB區塊、因此當區塊未使用其分配空間4KB時、壓實功能會將多個區塊合併成4KB區塊。下圖說明此程序。</block>
@@ -7056,10 +7037,6 @@
   <block id="0864932acc0306b831b9b6d06bd03988" category="inline-link-macro">FlexPod 資料中心結合 AI 和 ML 與 Cisco UCS 480 ML 、提供深度學習設計</block>
   <block id="5260743f63f66f308d49388afb846bd9" category="paragraph">本文件提供有關 Cisco UCS C480 ML M5 平台整合至 FlexPod 資料中心解決方案的部署詳細資料與指引、以提供統一的方法、在融合式基礎架構中提供 AI 與 ML 功能。本文件也說明 Cisco UCS C220 與 C240 平台上的 NVIDIA GPU 組態。如需本解決方案所使用平台和技術的詳細設計討論、請參閱 <block ref="3f9db80af0fcf30cd49f43d7e8392495" category="inline-link-macro-rx"></block>。</block>
   <block id="5c597e77337eb7a9f56a2e411462026e" category="paragraph"><block ref="5c597e77337eb7a9f56a2e411462026e" category="inline-link-macro-rx"></block></block>
-  <block id="ba57600ee0880eeb4a6733e4ffdb746c" category="summary">本文件提供有關 Cisco UCS C480 ML M5 平台整合至 FlexPod 資料中心解決方案的設計詳細資料、以提供整合式基礎架構內 AI 和 ML 功能的統一方法。</block>
-  <block id="54c81e9ff4b87e7057996f3d7f7e1ef9" category="paragraph">本文件提供有關 Cisco UCS C480 ML M5 平台整合至 FlexPod 資料中心解決方案的設計詳細資料、以提供整合式基礎架構內 AI 和 ML 功能的統一方法。透過提供客戶管理伺服器的能力、並結合 AI 和 ML 功能、以及他們用來管理傳統 FlexPod 系統的熟悉工具、可大幅降低部署深度學習平台的管理成本和成本。本 CVD 中的設計也包括其他 Cisco UCS 平台、例如配備兩個 NVIDIA T4 GPU 的 C220 M5 伺服器、以及配備兩個 NVIDIA V100 32GB PCIe 卡的 C240 M5 伺服器、作為處理並行 AI 和 ML 工作負載的額外選項。</block>
-  <block id="8b18888e3656f164c4bf24a7a21e4b87" category="inline-link-macro">FlexPod 資料中心、結合 AI 和 ML 與 Cisco UCS 480 ML 、提供深度學習 - 設計</block>
-  <block id="1e4b645d8f9a75e6c46cf9488d22933c" category="paragraph"><block ref="1e4b645d8f9a75e6c46cf9488d22933c" category="inline-link-macro-rx"></block></block>
   <block id="a62f414e5bdaf0b7beeb9fd03ff2d3a3" category="summary">本文件說明 Cisco ACI Multi-Pod 和 NetApp MetroCluster IP 解決方案整合至 FlexPod 資料中心、以提供高可用度的多資料中心解決方案。</block>
   <block id="4533c1ee4ca77108af5228fd5e146578" category="doc">FlexPod Datacenter 搭配 Cisco ACI Multi-Pod 、 NetApp MetroCluster IP 及 VMware vSphere 6.7 - 設計</block>
   <block id="bac896dca07603856efe39b592882a4d" category="paragraph">本文件說明 Cisco ACI Multi-Pod 和 NetApp MetroCluster IP 解決方案整合至 FlexPod 資料中心、以提供高可用度的多資料中心解決方案。多重資料中心架構能夠利用不中斷營運的工作負載移動性、在兩個資料中心之間平衡工作負載、因此可在站台之間移轉服務、而無需持續中斷。</block>
@@ -8314,7 +8291,6 @@
   <block id="03eafaadf1f43f467e0c29703ab1932f" category="list-text"><block ref="03eafaadf1f43f467e0c29703ab1932f" category="inline-link-rx"></block></block>
   <block id="ec5ce571da818f4da52a1da1e2dbd33b" category="list-text"><block ref="ec5ce571da818f4da52a1da1e2dbd33b" category="inline-link-rx"></block></block>
   <block id="c66725685883abd77914fbc7480ce223" category="list-text"><block ref="c66725685883abd77914fbc7480ce223" category="inline-link-rx"></block></block>
-  <block id="6e0e67876b025b8aabc5fb9194f724b4" category="list-text"><block ref="6e0e67876b025b8aabc5fb9194f724b4" category="inline-link-rx"></block></block>
   <block id="56d596ac1534ec88a5d46b8da9ec5a19" category="list-text"><block ref="56d596ac1534ec88a5d46b8da9ec5a19" category="inline-link-rx"></block></block>
   <block id="2a5cf8dbaae42a04d9e87f9084f8f7dc" category="list-text"><block ref="2a5cf8dbaae42a04d9e87f9084f8f7dc" category="inline-link-rx"></block></block>
   <block id="3fb849296843f6d74893a1dbb36f741b" category="list-text"><block ref="3fb849296843f6d74893a1dbb36f741b" category="inline-link-rx"></block></block>
@@ -8330,4 +8306,24 @@
   <block id="bce9908f4541b67e5acaa7389d3ac785" category="list-text"><block ref="bce9908f4541b67e5acaa7389d3ac785" category="inline-link-rx"></block></block>
   <block id="a2d81194092c58e2bbe51654477726a7" category="list-text"><block ref="a2d81194092c58e2bbe51654477726a7" category="inline-link-rx"></block></block>
   <block id="db8805d5104d5291fd66b0e18a458f18" category="list-text"><block ref="db8805d5104d5291fd66b0e18a458f18" category="inline-link-rx"></block></block>
+  <block id="54e3a9e029683c8de92be0c55d9d6816" category="inline-link">NetApp AFF C190 文件</block>
+  <block id="3f60209c2c21edecf1d0225780f34e18" category="paragraph">有關 AFF C190 硬體系統的完整資訊，請參閱<block ref="872c66a4a5bb86e831800415c5d779e2" category="inline-link-rx"></block>。</block>
+  <block id="82d00b486e3c8c053c6ba0a4535a2822" category="list-text">AFF C 系列系統文件</block>
+  <block id="7dcdb17f2cb453fdf5972fb15e133e52" category="inline-link"><block ref="7dcdb17f2cb453fdf5972fb15e133e52" category="inline-link-rx"></block></block>
+  <block id="58e7e157a307b249786e8334fa1fa99a" category="paragraph"><block ref="58e7e157a307b249786e8334fa1fa99a" category="inline-link-rx"></block></block>
+  <block id="9fbd968c2244aeb511619f306fd3defe" category="inline-link">NetApp ONTAP 搭配 SnapMirror 作用中 Sync（以前稱為 SM-BC）和 VMware vSphere Metro Storage Cluster (vMSC)</block>
+  <block id="fd496345cf0716305e18460bba3496ec" category="paragraph">有關 VMware HA 叢集和 VMware vSphere Metro 儲存設備叢集的其他最佳實務和組態，請參閱<block ref="e1c1274de4ccc0d5560df65f90d3e6aa" category="inline-link-rx"></block>、<block ref="4f7c5688f5dfddf1590f2246102bcda0" category="inline-link-rx"></block> 和<block ref="399947f596dce5740d0ee9329ffe1e45" category="inline-link-rx"></block>。</block>
+  <block id="d11030d759cf8db4404491611b16f7b9" category="list-text">NetApp ONTAP 與 SnapMirror active sync （前身為 SM-BC）搭配 VMware vSphere Metro Storage Cluster (vMSC)</block>
+  <block id="50bb0628da6c26cb935a8bff810b58ef" category="inline-link"><block ref="50bb0628da6c26cb935a8bff810b58ef" category="inline-link-rx"></block></block>
+  <block id="6a75508e103dc5c21a8907f0d27151c1" category="paragraph"><block ref="6a75508e103dc5c21a8907f0d27151c1" category="inline-link-rx"></block></block>
+  <block id="e4613e8cb67b47c815182efcb2addff3" category="paragraph">有關磁碟機櫃和儲存媒體的詳細資訊，請參閱下表中的「磁碟櫃和儲存媒體技術規格」連結。</block>
+  <block id="a502ba2e14f433f612cfb7a8c2ab4fda" category="inline-link">磁碟櫃和儲存媒體技術規格</block>
+  <block id="fb89f6fa4beb71b5f4515f1d61cd3ac7" category="cell"><block ref="fb89f6fa4beb71b5f4515f1d61cd3ac7" category="inline-link-rx"></block></block>
+  <block id="73fb97d8b411c3ab96bb7d5e7cacdcbb" category="list-text">此命令會在 ESXi 中安裝<block ref="bfe054ce9a0ac3d24a225d16ac8489a9" category="inline-link-rx"></block>。</block>
+  <block id="8255476c22d06ed95ba1918cb6fb1dbd" category="list-text">人工智慧在醫療和醫學領域的應用（NetApp）</block>
+  <block id="e91541d759de63fcaf617f7fb7713601" category="inline-link"><block ref="e91541d759de63fcaf617f7fb7713601" category="inline-link-rx"></block></block>
+  <block id="247aca982accea93869681bc1946caae" category="paragraph"><block ref="247aca982accea93869681bc1946caae" category="inline-link-rx"></block></block>
+  <block id="4fb077baab5a37c36871c89ffbf2bca7" category="list-text">行動設備，例如手持式無線掃描設備（例如，連接到手機的口袋式手持超音波掃描器），需要強大的網路基礎架構，在邊緣、核心和雲端都具備國防部級別的安全性、可靠性和延遲。<block ref="c19450dab7290b420c563bc2423a5a44" category="inline-link-rx"></block>能夠大規模地為組織提供此功能。</block>
+  <block id="3a769349ca00340f308dd6f2f643f870" category="inline-link">NetApp Storage Encryption、NetApp Volume Encryption 和 NetApp Aggregate Encryption</block>
+  <block id="b1fdfe3ff0278357981abd9dec067b7e" category="list-text"><block ref="b1fdfe3ff0278357981abd9dec067b7e" category="inline-link-rx"></block></block>
 </blocks>

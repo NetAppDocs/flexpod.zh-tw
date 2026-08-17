@@ -94,6 +94,6 @@ image:sm-bcs-image45.png[""]
 
 image:sm-bcs-image46.png[""]
 
-如需VMware HA叢集和VMware vSphere Metro儲存叢集的其他最佳實務做法和組態、請參閱 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html["建立及使用vSphere HA叢集"^]、 https://core.vmware.com/resource/vmware-vsphere-metro-storage-cluster-vmsc["VMware vSphere Metro儲存叢集（VMSC）"^] 和VMware KB https://kb.vmware.com/s/article/83370["NetApp ONTAP 功能搭配NetApp SnapMirror營運不中斷（SMBC）和VMware vSphere Metro儲存叢集（VMSC）"^]。
+有關 VMware HA 叢集和 VMware vSphere Metro 儲存設備叢集的其他最佳實務和組態，請參閱 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html["建立及使用vSphere HA叢集"^]、 https://core.vmware.com/resource/vmware-vsphere-metro-storage-cluster-vmsc["VMware vSphere Metro儲存叢集（VMSC）"^] 和 https://docs.netapp.com/us-en/netapp-solutions-virtualization/vmware/vmw-vmsc-with-smas.html["NetApp ONTAP 搭配 SnapMirror 作用中 Sync（以前稱為 SM-BC）和 VMware vSphere Metro Storage Cluster (vMSC)"^]。
 
 link:sm-bcs-validated-scenarios.html["下一步：解決方案驗證-已驗證的案例。"]

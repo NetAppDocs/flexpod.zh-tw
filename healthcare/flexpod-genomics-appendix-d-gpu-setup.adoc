@@ -37,7 +37,7 @@ image:flexpod-genomics-image19.png[""]
 . 我們從NVIDIA合作夥伴網站下載了「*。bin」檔案。
 . 我們安裝了NVIDIA vGPU授權伺服器、並使用從NVIDIA合作夥伴網站下載的「*。bin」檔案、將授權新增至授權伺服器。
 . 請務必在NVIDIA合作夥伴入口網站上、針對您的部署選擇正確的NVIDIA vGPU軟體版本。在此設定中、我們使用的是460.73.02版驅動程式。
-. 此命令會安裝 https://docs.omniverse.nvidia.com/prod_deployment/prod_deployment/installing-vgpu-manager.html["NVIDIA vGPU管理程式"^] 在ESXi中。
+. 此命令會在 ESXi 中安裝 https://docs.nvidia.com/vgpu/latest/grid-software-quick-start-guide/installing-configuring-vgpu-manager-guest-driver.html#installing-the-nvidia-virtual-gpu-manager-on-vmware-vsphere["NVIDIA vGPU管理程式"^]。
 +
 ....
 [root@localhost:~] esxcli software vib install -v /vmfs/volumes/infra_datastore_nfs/nvidia/vib/NVIDIA_bootbank_NVIDIA-VMware_ESXi_7.0_Host_Driver_460.73.02-1OEM.700.0.0.15525992.vib

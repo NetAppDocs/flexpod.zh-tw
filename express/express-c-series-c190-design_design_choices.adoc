@@ -57,7 +57,7 @@ NOTE: 若為10GBASE-T連接埠選項、您必須擁有10GBASE-T型上行鏈路�
 * 24倍960GB
 
 
-如需AFF 有關《The整套功能與功能的完整資訊、請參閱 https://www.netapp.com/us/products/entry-level-aff.aspx["NetApp AFF 《C190 All Flash Array》頁面"^]。
+有關 AFF C190 硬體系統的完整資訊，請參閱 https://docs.netapp.com/us-en/ontap-systems/c190/install-setup.html["NetApp AFF C190 文件"^]。
 
 
 

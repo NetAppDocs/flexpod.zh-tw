@@ -53,9 +53,9 @@ https://flexpod.com/solutions/verticals/healthcare/["https://flexpod.com/solutio
 +
 https://flexpod.com/["https://flexpod.com/"^]
 
-* 醫療產業的AI與分析（NetApp）
+* 人工智慧在醫療和醫學領域的應用（NetApp）
 +
-https://www.netapp.com/us/artificial-intelligence/healthcare-ai-analytics/index.aspx["https://www.netapp.com/us/artificial-intelligence/healthcare-ai-analytics/index.aspx"^]
+https://www.netapp.com/artificial-intelligence/ai-in-medicine/["https://www.netapp.com/artificial-intelligence/ai-in-medicine/"^]
 
 * 醫療業的AI智慧型基礎架構選項可提升成功率
 +

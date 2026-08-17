@@ -61,7 +61,7 @@ NetApp公司Jaya Kishore Esanakula和Atul Bhaludia
 * 在評估影像時、各組織放射科醫師之間的即時協同作業需要在終端使用者運算裝置中進行高效能的圖形處理。NetApp提供領先業界的VDI解決方案、專為高階圖形使用案例所設計及驗證。如需詳細資訊、請參閱 https://flexpod.com/solutions/use-cases/virtual-desktop-infrastructure/["請按這裡"^]。
 * ACO醫療組織的映像與媒體管理、無論映像的記錄系統為何、都能使用單一平台、透過醫療領域的數位影像與通訊等通訊協定（ https://www.dicomstandard.org/about/["Dicom"^]）和對Dicom持續物件的網路存取（ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3447090/["WADO."^]）
 * 健康資訊交換（ https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/what-hie["HIE"^]）包括內嵌在訊息中的影像。
-* 手持設備、無線掃描裝置（例如手機上附有口袋型手持式超音波掃描儀）等行動設備、需要具備DoD層級安全性、可靠性及邊緣、核心及雲端延遲能力的健全網路基礎架構。 https://www.netapp.com/us/data-fabric.aspx["採用NetApp技術的資料架構"^] 為組織提供大規模的這項功能。
+* 行動設備，例如手持式無線掃描設備（例如，連接到手機的口袋式手持超音波掃描器），需要強大的網路基礎架構，在邊緣、核心和雲端都具備國防部級別的安全性、可靠性和延遲。 https://www.netapp.com/blog/medical-imaging-cloud-disaster-recovery-meets-ai/["採用NetApp技術的資料架構"^]能夠大規模地為組織提供此功能。
 * 較新的造影模式具有呈指數級增長的儲存設備需求；例如，CT 和 MRI 每種模式需要數百 MB，但數位病理影像（包括全玻片影像）的大小可能達到數 GB。FlexPod 的設計採用了 https://www.netapp.com/pdf.html?item=/media/16926-sb-flexpod-advantage-performance-agility-economics.pdf["效能、可靠性和擴充能力是基本特徵"^]。
 
 
