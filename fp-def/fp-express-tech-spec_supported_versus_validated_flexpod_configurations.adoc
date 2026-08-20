@@ -14,7 +14,7 @@ summary: 本文件所述的一套規則定義了這個架構。FlexPod硬體元�
 
 
 [role="lead"]
-此 FlexPod 架構由本文件中所述的一系列規則定義。硬體元件和軟體組態必須受到 https://ucshcltool.cloudapps.cisco.com/public["Cisco硬體相容清單（HCL）"^]和 http://mysupport.netapp.com/matrix["NetApp互通性對照表工具IMT （不含）"^]的支援。
+此 FlexPod 架構由本文件中所述的一系列規則定義。硬體元件和軟體組態必須受到 https://ucshcltool.cloudapps.cisco.com/public["Cisco硬體相容清單（HCL）"^]和 https://imt.netapp.com["NetApp互通性對照表工具IMT （不含）"^]的支援。
 
 每個 Cisco 驗證設計 （CVD） 或 NetApp 驗證架構 （NVA） 都代表經過驗證的 FlexPod 設定。Cisco 和 NetApp 記錄這些設定組合，並透過廣泛的端對端測試進行驗證。偏離這些設定的 FlexPod 部署方案，若遵循本文件中的指南，且所有元件均在 Cisco HCL 和 NetApp IMT 中列為相容元件，則可獲得完整支援。
 

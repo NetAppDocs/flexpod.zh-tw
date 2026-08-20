@@ -7637,7 +7637,6 @@
   <block id="b939dd27134a94e2d13f7af762e19808" category="paragraph">Cisco UCS C 系列可透過 CIMC 或 Cisco Intersight 獨立管理進行管理。</block>
   <block id="fb66e225c208e8a2a8e269baeda360a9" category="inline-link">FlexPod Express 適用於 VMware vSphere 8.0，支援 Cisco UCS C-Series Standalone 和 NetApp AFF</block>
   <block id="0137ec0525e7eeef1896cc53583326f2" category="paragraph">有關此組態的詳細資訊，請參閱<block ref="e78beee96fa6f1308f0aa7c7952ea1c3" category="inline-link-rx"></block>。</block>
-  <block id="9f6736a86d887c68e1a5fedbcc1b2295" category="list-text">*FlexPod Datacenter。*該平台是一個高度可擴展的資料中心基礎架構，適用於企業工作負載和應用程式、虛擬化、虛擬桌面基礎架構 （VDI） 以及公有雲和私有雲。FlexPod Datacenter 有其自身的規範，這些規範已記錄在<block ref="0bb629a24a99e06d4ec011831def694a" category="inline-link-rx"></block>。</block>
   <block id="5819468773caa18c3772866d6fac2b68" category="paragraph">FlexPod 設計支援靈活的基礎架構，涵蓋各種硬體元件和軟體版本。</block>
   <block id="5ef33fc51fad74192692b3e420d2a93b" category="paragraph">請參考規則集建置或組裝有效的 FlexPod 組態。本文件中列出的數字和規則代表 FlexPod 的最低需求，可根據不同環境和使用案例的需要，透過使用所包含產品系列中的支援產品進行擴充。</block>
   <block id="1fd1ccb51d4008bf4d6e7734454719d8" category="section-title">FlexPod Express 搭配 NetApp AFF/ASA/FAS</block>
@@ -7660,7 +7659,6 @@
   <block id="3948a9d911a4ab4fca76092210e66452" category="cell"><block ref="3948a9d911a4ab4fca76092210e66452" category="inline-link-rx"></block></block>
   <block id="7ec34d91a495121e75b876eb6b33c2ae" category="cell">FAS 2820</block>
   <block id="41f841d43d71df7ac7a2d1ce1640196e" category="paragraph">下表列出了 NetApp 磁碟架選項（適用於 FlexPod Express），以及其技術規格的連結。</block>
-  <block id="16e64e489b2d626c25c6029238c8e02d" category="paragraph">若要取得磁碟櫃支援的磁碟機列表，請前往 <block ref="c65ee892665eec3b19fff276893fb369" category="inline-link-macro-rx"></block>，在 *Products &gt; Storage &gt; Shelves* 下選擇 *ONTAP (AFF, ASA, FAS)*，然後選擇您正在使用的 ONTAP 版本，再選擇磁碟櫃類型（例如：*DS212C*），然後按一下 *Show Results*。按一下 *Supported Drives* 即可查看特定 ONTAP 版本和磁碟櫃支援的磁碟機。</block>
   <block id="c0b9422f8b99654ad5dfbd724b636b92" category="inline-link">磁碟架和儲存媒體</block>
   <block id="dab2f46382b1c1004cea0cb20a6d2b76" category="cell"><block ref="dab2f46382b1c1004cea0cb20a6d2b76" category="inline-link-rx"></block></block>
   <block id="c740766e109ecd59d174dc2f65176922" category="cell">NS224 搭配 NSM100B</block>
@@ -7693,7 +7691,6 @@
   <block id="acedc0be8218dae26be243df372d7077" category="paragraph">FlexPod Express 的電源需求因 FlexPod Express 組態的安裝位置而異。</block>
   <block id="53225e22de8784be60c5a4d46a08baba" category="inline-link-macro">技術規格</block>
   <block id="7f4b5d087cef7844ea847ba685e58970" category="paragraph">有關所需最大功率的更多資料以及其他詳細的功率資訊，請參閱每個硬體元件的 <block ref="68813acd6f51a6f47299b1ba3c23949f" category="inline-link-macro-rx"></block>。</block>
-  <block id="f180991d5ba5b7f851fa899c4adbe26d" category="paragraph">有關 NetApp 儲存控制器電源資料，請參閱<block ref="f1e26811435ae68dfeade1ff7af15f19" category="inline-link-rx"></block>。在 *Platforms* 下，選擇您要使用的儲存平台（例如 AFF A20），選擇 ONTAP 版本，然後按一下 *Show Results*。電源線資料列於 *Supported Power Cords* 部分，有關尺寸、重量、功率等詳細資訊，請參閱 *Size, Weight, Acoustic, Power* 部分。</block>
   <block id="75ee6fb1b8a3710bcc91754ce6ec11ec" category="section-title">佈線指南</block>
   <block id="960f45bb74119e7469b1522a9ac3404a" category="paragraph">本節提供 FlexPod Express 設計的一般佈線指南。</block>
   <block id="e81f9c67c6552c3170231b2626b11ea4" category="list-text">確保運算和儲存連線的備援連線能力。</block>
@@ -7793,7 +7790,6 @@
   <block id="209cd1b2adaf0192afee5eb93e3dd701" category="cell">UCSXE-130C-M8</block>
   <block id="22bd40a63ed2c9c49187fbd0583bf9fe" category="cell">UCSXE-150C-M8</block>
   <block id="7930817dcb9af22b46e0b2ab1c7127fb" category="cell"><block ref="7930817dcb9af22b46e0b2ab1c7127fb" category="inline-link-rx"></block></block>
-  <block id="161c9027d6afcc8652df79c032c01c41" category="list-text">兩台入門級 NetApp AFF （A20、A30 或 C30）、NetApp ASA （A20、A30 或 C30）或 NetApp FAS （2750、2820 或 FAS 50）系列控制器，以高可用性 （HA） 配對組態部署為雙節點叢集</block>
   <block id="a0ab09bcd71cc8c8e831f022615b28a4" category="cell"><block ref="a0ab09bcd71cc8c8e831f022615b28a4" category="inline-link-rx"></block></block>
   <block id="6488de7d247a06b442a5018b0d91bfc6" category="inline-link">AFF C 系列文件</block>
   <block id="369fac7daa2f8b7e7c135f15db1bd0ed" category="cell"><block ref="369fac7daa2f8b7e7c135f15db1bd0ed" category="inline-link-rx"></block></block>
@@ -7814,7 +7810,6 @@
   <block id="5b1873f6cccb0f18dc6c9c4b88ad68f2" category="cell"><block ref="5b1873f6cccb0f18dc6c9c4b88ad68f2" category="inline-link-rx"></block></block>
   <block id="0defdd0a0cad8694d75f5d415c59e852" category="inline-link-macro">Cisco Unified Edge 資料表列表</block>
   <block id="cfccf5d08c64aba24da167d5ee87ec4e" category="paragraph">如需其他詳細資訊，請參閱 <block ref="361368a75a3a97c843641aad773ba359" category="inline-link-macro-rx"></block>。</block>
-  <block id="682a7264c9b56e8c0fc15a778aaf4962" category="paragraph">Cisco UCS C 系列機架式伺服器的技術規格包括處理器支援、最大記憶體容量、PCIe 插槽數量和外形尺寸。有關相容 UCS 伺服器型號的更多詳細資訊，請參閱<block ref="1420345f3000e0fcdfadf0c24d8bc000" category="inline-link-rx"></block>清單。</block>
   <block id="0fc3d759fbf04ff8c70754496e367364" category="paragraph">有關 Cisco UCS C 系列機架伺服器的技術規格，請參閱下表。</block>
   <block id="b64e0ef8e38bdf1b18a60607d7d0f675" category="cell">FAS50 系列</block>
   <block id="59454cc1e7857ff5697ed2ce10f85c1e" category="inline-link">FAS50 主要規格</block>
@@ -8231,13 +8226,9 @@
   <block id="29d1fb15319805edca77b8cc05b35dfb" category="sidebar">FlexPod 設計指南</block>
   <block id="26672345b32420d3708cd3bd0f7b1e88" category="sidebar">FlexPod 驗證設計指南</block>
   <block id="21b29303b1c3acf1c3bbd54b69cf697d" category="sidebar">FlexPod 技術規格</block>
-  <block id="40f38a28ba17dc0cd24161109cb1b8f0" category="inline-link"><block ref="40f38a28ba17dc0cd24161109cb1b8f0" category="inline-link-rx"></block></block>
-  <block id="503753b7cfdba11f6ff233c6f8d878b2" category="paragraph"><block ref="503753b7cfdba11f6ff233c6f8d878b2" category="inline-link-rx"></block></block>
   <block id="f4bf1ab74cf7b6fb7a56eaa53745e1ae" category="paragraph">Cisco UCS C 系列機架式伺服器提供 1、2 和 4 機架單元 (RU) 三種規格，並配備多種 CPU、記憶體容量和 I/O 選項。下表列出的零件號碼為基礎伺服器的零件號碼。不包含 CPU、記憶體容量、硬碟和周邊元件互連 Express (PCIe) 卡。FlexPod 架構支援多種組態選項。</block>
-  <block id="a60ddb965dcf6f25c87e72a37c8252c4" category="admonition">所有軟體元件必須在<block ref="8058bb2e300c0b28cc61110596fbc6e0" category="inline-link-rx"></block>中列出並受到支援，所有 NetApp 硬體元件和 ONTAP 版本必須在<block ref="6a8cef5b71adde6301ea0984592ea5c1" category="inline-link-rx"></block>中列出並受到支援，所有 Cisco 硬體元件必須在<block ref="243ee419838ead03039b3c014c885e78" category="inline-link-rx"></block>中列出並受到支援。</block>
   <block id="d4be789c0896e734a89e386a8d00f187" category="inline-link"><block ref="d4be789c0896e734a89e386a8d00f187" category="inline-link-rx"></block></block>
   <block id="c1ba01aa51a8fc173d6a9dd15d8b5d42" category="paragraph"><block ref="c1ba01aa51a8fc173d6a9dd15d8b5d42" category="inline-link-rx"></block></block>
-  <block id="9b1dcc158dd4f463eff8e0ecc95e1c0f" category="paragraph">此 FlexPod 架構由本文件中所述的一系列規則定義。硬體元件和軟體組態必須受到<block ref="55be3385fd2442b96520f981204722ea" category="inline-link-rx"></block>和<block ref="538106ddbedb569903f8e17bb643549d" category="inline-link-rx"></block>的支援。</block>
   <block id="d5801c87d769ed7144d6149320f2c851" category="list-text">兩台 Cisco UCS C-Series 獨立式機架伺服器，採用基於 CIMC 的獨立式機架伺服器組態或 Intersight 獨立式組態；或一台 Cisco UCS X-Series Direct，採用 Cisco Intersight 管理組態 （IMM）。</block>
   <block id="b7b46ce5d1a547db89c0bc615ff272a5" category="cell">ASA</block>
   <block id="2b304856171196502641312a496c6d54" category="section-title">NetApp ASA</block>
@@ -8326,4 +8317,15 @@
   <block id="4fb077baab5a37c36871c89ffbf2bca7" category="list-text">行動設備，例如手持式無線掃描設備（例如，連接到手機的口袋式手持超音波掃描器），需要強大的網路基礎架構，在邊緣、核心和雲端都具備國防部級別的安全性、可靠性和延遲。<block ref="c19450dab7290b420c563bc2423a5a44" category="inline-link-rx"></block>能夠大規模地為組織提供此功能。</block>
   <block id="3a769349ca00340f308dd6f2f643f870" category="inline-link">NetApp Storage Encryption、NetApp Volume Encryption 和 NetApp Aggregate Encryption</block>
   <block id="b1fdfe3ff0278357981abd9dec067b7e" category="list-text"><block ref="b1fdfe3ff0278357981abd9dec067b7e" category="inline-link-rx"></block></block>
+  <block id="978770af017c048b017c5af359bf5f3a" category="inline-link"><block ref="978770af017c048b017c5af359bf5f3a" category="inline-link-rx"></block></block>
+  <block id="b30c1439e3d638d2a1e016f035c4fb53" category="paragraph"><block ref="b30c1439e3d638d2a1e016f035c4fb53" category="inline-link-rx"></block></block>
+  <block id="8945cc7cea50b5955cfd8cd377b0700c" category="list-text">*FlexPod Datacenter。*此平台是一個易擴充的資料中心基礎架構，適用於企業工作負載和應用程式、虛擬化、AI/ML、資料庫、SAP HANA、VDI 以及公有雲和私有雲。FlexPod Datacenter 有其自身的規範，這些規範已記錄於<block ref="0bb629a24a99e06d4ec011831def694a" category="inline-link-rx"></block>。</block>
+  <block id="e324cf607a94ae60946ee320b5919119" category="list-text">兩台入門級 NetApp AFF （A20、A30 或 C30）、NetApp ASA （A20、A30 或 C30）或 NetApp FAS （2750、2820 或 50）控制器，以高可用性 (HA) 對組態部署為雙節點叢集</block>
+  <block id="985fb3b938a8c12a7f7a884960367233" category="paragraph">若要取得磁碟櫃支援的磁碟機列表，請前往 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>，在 *Products &gt; Storage &gt; Shelves* 下選擇 *ONTAP (AFF, ASA, FAS)*，然後選擇您正在使用的 ONTAP 版本，再選擇磁碟櫃類型（例如：*DS212C*），然後按一下 *Show Results*。按一下 *Supported Drives* 即可查看特定 ONTAP 版本和磁碟櫃支援的磁碟機。</block>
+  <block id="c2176dbcd3ca7bf6b416c2a75d5a1f7b" category="list-text">伺服器需要 Cisco UCS 介面卡（啟動器）。如需支援的 Cisco UCS 介面卡清單，請參閱 NetApp<block ref="b6cb02227183177f72d07f3b59ad095e" category="inline-link-rx"></block>。</block>
+  <block id="31e46954181b9ac85717bf7f60c67e08" category="paragraph">有關 NetApp 儲存控制器電源資料，請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。在 *Platforms* 下，選擇您要使用的儲存平台（例如 AFF A20），選擇 ONTAP 版本，然後按一下 *Show Results*。電源線資料列於 *Supported Power Cords* 部分，有關尺寸、重量、功率等詳細資訊，請參閱 *Size, Weight, Acoustic, Power* 部分。</block>
+  <block id="10dd36147645244c0e72d1ffe3aa4a49" category="admonition">所有軟體元件必須在<block ref="31e25e06072fc647a14615c7a66045a3" category="inline-link-rx"></block>中列出並受到支援，所有 NetApp 硬體元件和 ONTAP 版本必須在<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>中列出並受到支援，所有 Cisco 硬體元件必須在<block ref="b3caeb05ac8452369b47a54b3533876a" category="inline-link-rx"></block>中列出並受到支援。</block>
+  <block id="8e3f611ec9b924865f33f23c985d0acf" category="paragraph">此 FlexPod 架構由本文件中所述的一系列規則定義。硬體元件和軟體組態必須受到<block ref="55be3385fd2442b96520f981204722ea" category="inline-link-rx"></block>和<block ref="2c0e67bb1b88b1727e7f20c152d8cab5" category="inline-link-rx"></block>的支援。</block>
+  <block id="df2c7d0b4082997a23a9cf8653006120" category="paragraph">Cisco UCS C 系列機架式伺服器的技術規格包括處理器支援、最大記憶體容量、PCIe 插槽數量和外形尺寸。有關相容 UCS 伺服器型號的更多詳細資訊，請參閱<block ref="f892b8b8b30da287dc033705b38fc8ba" category="inline-link-rx"></block>清單。</block>
+  <block id="b3c3d20adfc10a1ff5bd9bd86265ca92" category="paragraph">NetApp 硬碟的技術規格包括尺寸規格、磁碟容量、磁碟轉速、支援的控制器以及 ONTAP 版本要求。這些規格可以在<block ref="46a2fd508bb35aee53f0a28201754188" category="inline-link-rx"></block>的「磁碟機」部分找到。</block>
 </blocks>

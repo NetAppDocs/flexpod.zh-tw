@@ -72,7 +72,7 @@ NOTE: 如需所有磁碟櫃和磁碟零件編號、請洽詢您的銷售代表�
 
 下表列出了 NetApp 磁碟架選項（適用於 FlexPod Express），以及其技術規格的連結。
 
-若要取得磁碟櫃支援的磁碟機列表，請前往 link:https://hwu.netapp.com/DetailViews/Home.aspx["NetApp Hardware Universe"^]，在 *Products > Storage > Shelves* 下選擇 *ONTAP (AFF, ASA, FAS)*，然後選擇您正在使用的 ONTAP 版本，再選擇磁碟櫃類型（例如：*DS212C*），然後按一下 *Show Results*。按一下 *Supported Drives* 即可查看特定 ONTAP 版本和磁碟櫃支援的磁碟機。
+若要取得磁碟櫃支援的磁碟機列表，請前往 link:https://hwu.netapp.com["NetApp Hardware Universe"^]，在 *Products > Storage > Shelves* 下選擇 *ONTAP (AFF, ASA, FAS)*，然後選擇您正在使用的 ONTAP 版本，再選擇磁碟櫃類型（例如：*DS212C*），然後按一下 *Show Results*。按一下 *Supported Drives* 即可查看特定 ONTAP 版本和磁碟櫃支援的磁碟機。
 
 |===
 | 磁碟櫃 | 技術規格 

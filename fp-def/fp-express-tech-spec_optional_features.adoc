@@ -41,7 +41,7 @@ NetApp 儲存控制器可以直接連接到 Cisco UCS 光纖互連，無需任�
 授權與硬體需求如下：
 
 * 需要NetApp儲存控制器上的傳輸協定授權。
-* 伺服器需要Cisco UCS介面卡（啟動器）。如需支援的Cisco UCS介面卡清單、請參閱NetApp http://mysupport.netapp.com/matrix["IMT"^]。
+* 伺服器需要 Cisco UCS 介面卡（啟動器）。如需支援的 Cisco UCS 介面卡清單，請參閱 NetApp https://imt.netapp.com["IMT"^]。
 * 需要NetApp儲存控制器上的目標介面卡。
 
 

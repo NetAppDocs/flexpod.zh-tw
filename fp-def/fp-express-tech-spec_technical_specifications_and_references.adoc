@@ -153,7 +153,7 @@ Cisco Unified Edge 的 Cisco UCS 運算節點的技術規格包括以下元件�
 [[cisco-ucs-c-series-rack-servers]]
 == Cisco UCS C系列機架伺服器
 
-Cisco UCS C 系列機架式伺服器的技術規格包括處理器支援、最大記憶體容量、PCIe 插槽數量和外形尺寸。有關相容 UCS 伺服器型號的更多詳細資訊，請參閱 https://ucshcltool.cloudapps.cisco.com/public/["Cisco硬體相容性"^]清單。
+Cisco UCS C 系列機架式伺服器的技術規格包括處理器支援、最大記憶體容量、PCIe 插槽數量和外形尺寸。有關相容 UCS 伺服器型號的更多詳細資訊，請參閱 https://ucshcltool.cloudapps.cisco.com/public["Cisco硬體相容性"^]清單。
 
 有關 Cisco UCS C 系列機架伺服器的技術規格，請參閱下表。
 
@@ -298,4 +298,4 @@ NetApp 磁碟櫃的技術規格包括外形尺寸、每個機箱的磁碟機數�
 [[netapp-drives]]
 === NetApp推動
 
-NetApp磁碟機的技術規格包括尺寸規格、磁碟容量、磁碟RPM、支援控制器及ONTAP 版本要求。這些規格可在的「磁碟機」區段中找到 http://hwu.netapp.com/Drives/Index?queryId=1581392["NetApp Hardware Universe"^]。
+NetApp 硬碟的技術規格包括尺寸規格、磁碟容量、磁碟轉速、支援的控制器以及 ONTAP 版本要求。這些規格可以在 http://hwu.netapp.com["NetApp Hardware Universe"^]的「磁碟機」部分找到。
