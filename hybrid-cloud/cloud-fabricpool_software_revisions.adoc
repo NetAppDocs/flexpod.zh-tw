@@ -10,7 +10,7 @@ summary: 下表說明已驗證的硬體和軟體版本、本頁詳述滿足基�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

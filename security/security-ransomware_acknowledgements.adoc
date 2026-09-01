@@ -10,7 +10,7 @@ summary: 作者感謝下列人士對本指南的建立所做的貢獻。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

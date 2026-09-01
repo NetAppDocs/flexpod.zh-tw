@@ -10,7 +10,7 @@ summary: 各種Cisco Nexus產品可做為特定FlexPod 功能部署的交換元�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

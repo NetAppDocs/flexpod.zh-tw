@@ -10,7 +10,7 @@ summary: 支援針對虛擬化與非虛擬化解決方案、提供一套已定�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

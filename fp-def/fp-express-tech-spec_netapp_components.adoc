@@ -10,7 +10,7 @@ summary: NetApp 儲存控制器在 FlexPod Express 架構中提供開機與應�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 針對此解決方案的網路組態FlexPod 遵循每FlexPod 個站台�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-compute.html["先前版本：解決方案驗證-運算。"]

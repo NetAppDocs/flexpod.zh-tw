@@ -10,7 +10,7 @@ summary: 透過在支援FIPS 140-2的平台上執行醫療應用程式FlexPod �
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-additional-flexpod-security-consideration.html["上一篇：FlexPod 其他的不安全考量。"]

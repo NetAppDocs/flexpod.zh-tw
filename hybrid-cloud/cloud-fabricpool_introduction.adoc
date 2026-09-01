@@ -10,7 +10,7 @@ summary: 本技術報告會在FabricPool NetApp與Cisco的融合式基礎架構�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 NetApp的Scott Kovacs

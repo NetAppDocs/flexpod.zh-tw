@@ -10,7 +10,7 @@ summary: 有了這個功能、Cisco與NetApp建立了一個既靈活又可擴充
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./..media/
+:imagesdir: ../media/
 
 
 link:nvme-vsphere-test-results.html["上一篇：測試結果。"]

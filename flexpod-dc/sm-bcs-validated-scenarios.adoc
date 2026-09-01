@@ -10,7 +10,7 @@ summary: 《Datacenter SM - BC解決方案》FlexPod 可保護資料服務、以
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-virtualization.html["先前版本：解決方案驗證-虛擬化。"]

@@ -10,7 +10,7 @@ summary: 本節列出本解決方案適用的目標對象和案例。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

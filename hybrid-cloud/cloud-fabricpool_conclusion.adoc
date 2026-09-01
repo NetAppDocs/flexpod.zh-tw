@@ -10,7 +10,7 @@ summary: 不同組織、不同業務單位、甚至組織內不同業務單位�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 檢查您是否符合與ONTAP Cisco Intersight整合NetApp®儲存設�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

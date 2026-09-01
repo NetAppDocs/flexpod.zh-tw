@@ -10,7 +10,7 @@ summary: 本節說明NetApp FlexPod NetApp NetApp NetApp Express儲存叢集設�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

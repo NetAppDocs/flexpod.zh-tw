@@ -10,7 +10,7 @@ summary: 在發佈時、網關工具並未原生支援內部部署的GPU型執�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-genomics-appendix-c.html["上一篇：使用Cromwell引擎執行網關的輸出。"]

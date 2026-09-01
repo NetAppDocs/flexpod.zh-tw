@@ -10,7 +10,7 @@ summary: 下列資訊說明FlexPod 了有關功能不完整的基本軟體需求
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

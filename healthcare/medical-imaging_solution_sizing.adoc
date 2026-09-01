@@ -10,7 +10,7 @@ summary: 本節說明研究數量及對應的基礎架構需求。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

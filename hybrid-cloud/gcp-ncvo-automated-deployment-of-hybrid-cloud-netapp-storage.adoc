@@ -10,7 +10,7 @@ summary: 本節說明混合雲NetApp儲存設備的自動化部署。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-configure-public-cloud-service-provider.html["先前版本：設定公有雲服務供應商。"]

@@ -10,7 +10,7 @@ summary: 勒索軟體是一種以密碼學為基礎的惡意軟體、這是使�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 Arvind Ramakrishnan、NetApp

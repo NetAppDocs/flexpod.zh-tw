@@ -10,7 +10,7 @@ summary: 本節說明當攻擊發生時、如何恢復終端使用者的資料�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

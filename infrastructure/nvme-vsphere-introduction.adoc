@@ -10,7 +10,7 @@ summary: 本解決方案針對VMware vSphere 7 FlexPod 的VMware vSphere 7 on VM
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 Chris Schmittt和Kamini Singh、NetApp

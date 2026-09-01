@@ -10,7 +10,7 @@ summary: 本節說明./gatk輸出的執行。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-genomics-appendix-a.html["上一步：使用Jar檔案執行GATE的輸出。"]

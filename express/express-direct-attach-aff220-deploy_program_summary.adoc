@@ -10,7 +10,7 @@ summary: 此為預先設計的最佳實務架構、建置於Cisco Unified Comput
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 NetApp的Sree LakshMI Lanka

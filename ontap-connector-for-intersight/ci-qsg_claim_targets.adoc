@@ -10,7 +10,7 @@ summary: 安裝Cisco Intersight assist之後、您就可以申請NetApp儲存設
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

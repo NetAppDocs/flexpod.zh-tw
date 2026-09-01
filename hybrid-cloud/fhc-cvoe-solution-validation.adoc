@@ -10,7 +10,7 @@ summary: 本節說明如何使用多種使用案例來驗證解決方案。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:fhc-cvoe-san-configuration.html["先前版本：SAN組態。"]

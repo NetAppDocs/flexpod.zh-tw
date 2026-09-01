@@ -10,7 +10,7 @@ summary: 您可以依照下列步驟完成NetApp AFF 解決方案儲存部署程
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

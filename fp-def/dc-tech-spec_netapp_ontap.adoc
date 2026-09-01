@@ -10,7 +10,7 @@ summary: NetApp ONTAP 支援軟體安裝在每FAS 個NetApp功能或AFF 功能�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

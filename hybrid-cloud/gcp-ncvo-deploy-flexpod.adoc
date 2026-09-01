@@ -10,7 +10,7 @@ summary: 此頁面列出部署FlexPod 某個實體執行個體所需的資源。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-solution-components.html["先前版本：解決方案元件。"]

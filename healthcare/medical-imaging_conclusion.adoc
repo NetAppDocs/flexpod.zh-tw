@@ -10,7 +10,7 @@ summary: 透過在功能完善的醫療影像環境中運作FlexPod 、您的醫
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

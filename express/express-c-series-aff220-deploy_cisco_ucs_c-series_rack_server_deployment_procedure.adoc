@@ -10,7 +10,7 @@ summary: 下節提供設定Cisco UCS C系列獨立式機架伺服器以供FlexPo
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

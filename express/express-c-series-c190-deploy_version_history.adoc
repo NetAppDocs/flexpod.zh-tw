@@ -10,7 +10,7 @@ summary: 以下是本文件的版本歷程記錄。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 |===

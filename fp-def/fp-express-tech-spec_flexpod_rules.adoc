@@ -10,7 +10,7 @@ summary: 此產品的設計提供靈活的基礎架構、涵蓋許多不同的�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

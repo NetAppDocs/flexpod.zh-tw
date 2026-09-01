@@ -10,7 +10,7 @@ summary: 本文件提供FlexPod 有關《不支援不支援的技術規格》。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

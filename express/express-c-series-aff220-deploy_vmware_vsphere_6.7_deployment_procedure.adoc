@@ -10,7 +10,7 @@ summary: 本節提供在FlexPod VMware ESXi 6.7組態中安裝VMware ESXi 6.7的
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

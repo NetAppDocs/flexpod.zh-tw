@@ -10,7 +10,7 @@ summary: 可利用符合FIPS 140-2標準的Cisco UCS伺服器來設計一套架�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-control-plane-versus-data-plane.html["上一個：控制面與資料平面。"]

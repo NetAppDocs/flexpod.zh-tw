@@ -10,7 +10,7 @@ summary: 本節提供FC-NVMe關於FlexPod 驗證測試的高階摘要。其中�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:nvme-vsphere-introduction.html["上一篇：簡介。"]

@@ -10,7 +10,7 @@ summary: Cisco是FlexPod 對此解決方案的運算和網路層做出重大貢�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

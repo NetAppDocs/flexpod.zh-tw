@@ -10,7 +10,7 @@ summary: 利用融合式基礎架構平台、醫療機構可以託管一或多�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 NetApp的JayaKishore Esanakula

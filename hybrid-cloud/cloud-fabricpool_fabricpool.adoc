@@ -10,7 +10,7 @@ summary: VMware是一套混合式儲存解決方案、採用All Flash（SSD）�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

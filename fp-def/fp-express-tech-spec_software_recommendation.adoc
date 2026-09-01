@@ -10,7 +10,7 @@ summary: 本節說明不同版本的 FlexPod Express 的建議軟體需求。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

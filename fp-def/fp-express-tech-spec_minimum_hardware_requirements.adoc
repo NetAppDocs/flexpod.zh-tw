@@ -10,7 +10,7 @@ summary: 本節說明FlexPod 不同版本的《不一樣》的最低硬體需求
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

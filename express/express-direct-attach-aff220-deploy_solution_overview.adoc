@@ -10,7 +10,7 @@ summary: 此解決方案屬於融合式基礎架構方案的一部分。FlexPod 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

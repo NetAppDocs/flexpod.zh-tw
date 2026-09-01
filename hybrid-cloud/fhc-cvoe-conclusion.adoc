@@ -10,7 +10,7 @@ summary: 建置混合雲是大多數醫療組織隨時提供資料可用度的�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:fhc-cvoe-solution-validation.html["先前版本：解決方案驗證。"]

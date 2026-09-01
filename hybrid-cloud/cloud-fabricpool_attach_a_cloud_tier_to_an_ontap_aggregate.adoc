@@ -10,7 +10,7 @@ summary: 物件存放區新增至ONTAP 及由功能區識別之後、必須附�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

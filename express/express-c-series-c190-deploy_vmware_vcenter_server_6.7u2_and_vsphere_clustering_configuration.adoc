@@ -10,7 +10,7 @@ summary: 若要設定VMware vCenter Server 6.7和vSphere叢集、請完成本頁
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

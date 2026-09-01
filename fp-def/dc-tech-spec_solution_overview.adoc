@@ -10,7 +10,7 @@ summary: 此平台是一種預先設計的最佳實務資料中心架構、建�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 Arvind Ramakrishnan和NetApp的Jyh-sen CHEN

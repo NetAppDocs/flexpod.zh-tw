@@ -10,7 +10,7 @@ summary: 此架構的設計旨在FlexPod 在在整個運算、網路和儲存堆
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

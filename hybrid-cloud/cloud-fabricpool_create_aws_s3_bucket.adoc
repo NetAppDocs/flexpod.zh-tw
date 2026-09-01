@@ -10,7 +10,7 @@ summary: 儲存區是儲存資料的物件存放區容器。您必須提供儲�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: NetApp支援多種選用元件、以進一步強化FlexPod 「資料中
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

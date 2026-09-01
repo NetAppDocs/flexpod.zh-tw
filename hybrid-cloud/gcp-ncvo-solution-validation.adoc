@@ -10,7 +10,7 @@ summary: 在本頁、我們將以範例資料複寫工作流程來重新審視�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-terraform-execution-from-controller.html["先前版本：從控制器執行Terraform。"]

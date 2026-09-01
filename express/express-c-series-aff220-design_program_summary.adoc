@@ -10,7 +10,7 @@ summary: 以Cisco驗證設計或NetApp驗證架構的形式提供的參考架構
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

@@ -10,7 +10,7 @@ summary: 如FlexPod 需深入瞭解本文件中的資訊、請參閱NetApp網站
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

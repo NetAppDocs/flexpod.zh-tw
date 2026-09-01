@@ -10,7 +10,7 @@ summary: 若要深入瞭解本文所述資訊、請檢閱下列文件和/或網�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 若要深入瞭解本文所述資訊、請檢閱下列文件和 / 或網站：

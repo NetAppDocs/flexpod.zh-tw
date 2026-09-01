@@ -10,7 +10,7 @@ summary: 本文件所述的NetApp功能可協助您在攻擊發生後數分鐘�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

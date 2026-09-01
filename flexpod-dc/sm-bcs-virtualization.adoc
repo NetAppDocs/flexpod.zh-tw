@@ -10,7 +10,7 @@ summary: 在多站台FlexPod 的「VMware SMBC」解決方案中、單一VMware 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-storage.html["先前版本：解決方案驗證-儲存設備。"]

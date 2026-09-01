@@ -10,7 +10,7 @@ summary: 此參考驗證的纜線連接方式如下圖與表格所示。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

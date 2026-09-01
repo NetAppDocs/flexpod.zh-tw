@@ -10,7 +10,7 @@ summary: 供應電源和纜線的需求最低。FlexPod
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

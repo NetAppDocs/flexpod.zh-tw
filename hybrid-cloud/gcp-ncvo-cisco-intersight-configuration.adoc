@@ -10,7 +10,7 @@ summary: 本頁列出使用FlexPod 支援功能來設定Cisco Intersight所需�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-deploy-flexpod.html["上一篇：部署FlexPod 功能"]

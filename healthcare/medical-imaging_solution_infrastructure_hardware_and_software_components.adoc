@@ -10,7 +10,7 @@ summary: 下表分別列出FlexPod 醫療影像系統的各種硬體和軟體元
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

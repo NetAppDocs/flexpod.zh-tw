@@ -10,7 +10,7 @@ summary: 開始之前、請先安裝或升級AIQ UM、建立Cisco Intersight帳�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

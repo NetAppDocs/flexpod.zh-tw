@@ -10,7 +10,7 @@ summary: 醫療威脅的本質和影響都是多方面的。全球各國政府�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-introduction.html["上一篇：簡介。"]

@@ -10,7 +10,7 @@ summary: 本節說明NetApp虛擬儲存主控台（VSC）的部署程序。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 本頁說明如何存取NetApp Cloud Manager、以及如何部署Connec
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-terraform-cloud-integration-with-ico-prerequisite.html["先前：Terraform Cloud與ICO整合的先決條件。"]

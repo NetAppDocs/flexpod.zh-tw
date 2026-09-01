@@ -10,7 +10,7 @@ summary: 在宣告目標之後、如果您擁有Advantage層級授權、則NetAp
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 利用設定及設定的功能來監控您的「不含資料的資料�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

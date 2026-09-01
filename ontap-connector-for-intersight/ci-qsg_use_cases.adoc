@@ -10,7 +10,7 @@ summary: 以下是從Cisco Intersight監控及協調NetApp儲存設備的幾個�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 若要建立igroup、您需要iSCSI啟動器IQN、而且必須完成下
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

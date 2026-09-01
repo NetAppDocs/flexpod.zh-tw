@@ -10,7 +10,7 @@ summary: 在本節中、我們將複習FlexPod 一下「不經認證的資料中
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

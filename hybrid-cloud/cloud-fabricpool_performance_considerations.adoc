@@ -10,7 +10,7 @@ summary: 在考量規模時、應評估下列事項。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

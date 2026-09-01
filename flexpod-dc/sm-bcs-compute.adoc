@@ -10,7 +10,7 @@ summary: 適用於整個過程的運算組態FlexPod 是以典型FlexPod 的解�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-solution-validation_overview.html["前置作業：解決方案驗證-總覽。"]

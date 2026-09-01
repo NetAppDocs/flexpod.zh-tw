@@ -10,7 +10,7 @@ summary: NetApp提供多種硬體、軟體和服務、包括根據標準驗證�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-flexpod-cisco-networking-and-fips-140-2.html["先前版本：FlexPod Cisco網路功能與FIPS 140-2。"]

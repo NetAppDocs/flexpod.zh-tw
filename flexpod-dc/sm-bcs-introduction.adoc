@@ -10,7 +10,7 @@ summary: 本頁介紹FlexPod 如何使用NetApp SnapMirror Business Continuity�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 NetApp的Jyh-hing-CHEN CHEN

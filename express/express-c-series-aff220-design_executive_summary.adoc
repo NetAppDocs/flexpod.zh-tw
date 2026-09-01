@@ -14,7 +14,7 @@ summary:
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 Savita Kumari，NetApp 與以下機構合作：image:cisco logo.png[""]

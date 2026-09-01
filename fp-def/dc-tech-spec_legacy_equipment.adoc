@@ -10,7 +10,7 @@ summary: 支援靈活的解決方案、可讓您使用目前由Cisco與NetApp銷
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

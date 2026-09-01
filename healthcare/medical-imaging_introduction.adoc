@@ -10,7 +10,7 @@ summary: 有了這個功能、您就能從單一平台獲得支援FC、FCoE、iS
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 NetApp公司Jaya Kishore Esanakula和Atul Bhaludia

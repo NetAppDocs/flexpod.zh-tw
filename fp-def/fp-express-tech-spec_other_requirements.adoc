@@ -10,7 +10,7 @@ summary: 以下列出更多FlexPod 關於此功能的要求。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

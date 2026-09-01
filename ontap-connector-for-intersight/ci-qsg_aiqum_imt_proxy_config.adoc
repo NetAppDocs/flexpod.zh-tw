@@ -10,7 +10,7 @@ summary: 具備Proxy伺服器組態的AIQ UM需要透過CLI進行設定、才能
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

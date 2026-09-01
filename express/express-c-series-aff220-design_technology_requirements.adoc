@@ -10,7 +10,7 @@ summary: 根據所選的Hypervisor和網路速度、不需要搭配軟硬體元�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

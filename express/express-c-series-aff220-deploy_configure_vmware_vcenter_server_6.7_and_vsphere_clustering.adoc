@@ -10,7 +10,7 @@ summary: 您可以完成下列步驟、設定VMware vCenter Server 6.7和vSphere
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

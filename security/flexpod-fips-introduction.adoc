@@ -10,7 +10,7 @@ summary: 本文件概述Cisco Unified Computing System（Cisco UCS）、Cisco Ne
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 Cisco NetApp John McAbel的JayaKishore Esanakula

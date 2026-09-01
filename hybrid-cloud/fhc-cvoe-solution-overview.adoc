@@ -10,7 +10,7 @@ summary: NetApp為企業應用程式（包括醫療）提供單一資料管理�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 NetApp的Kamini Singh

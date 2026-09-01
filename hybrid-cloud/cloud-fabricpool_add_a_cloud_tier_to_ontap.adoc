@@ -10,7 +10,7 @@ summary: 物件存放區必須先新增至集合體、ONTAP 並由資訊技術�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

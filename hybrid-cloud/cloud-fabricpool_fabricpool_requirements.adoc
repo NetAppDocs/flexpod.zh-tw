@@ -10,7 +10,7 @@ summary: 本節所列的任何平台均需使用支援支援功能的支援功�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

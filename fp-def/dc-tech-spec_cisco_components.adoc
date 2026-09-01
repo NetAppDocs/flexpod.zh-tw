@@ -10,7 +10,7 @@ summary: Cisco在FlexPod 整個解決方案運算和網路層的設計與架構�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

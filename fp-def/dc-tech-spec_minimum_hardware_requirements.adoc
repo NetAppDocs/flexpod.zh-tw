@@ -10,7 +10,7 @@ summary: 「資料中心」組態具有最低的硬體需求、包括但不限�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

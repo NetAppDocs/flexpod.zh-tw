@@ -10,7 +10,7 @@ summary: 作者建議在發生攻擊時不要支付贖金、因為這樣做可�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

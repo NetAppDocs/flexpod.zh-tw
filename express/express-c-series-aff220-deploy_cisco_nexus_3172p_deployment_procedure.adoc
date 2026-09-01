@@ -10,7 +10,7 @@ summary: 下節將詳細說明FlexPod 在SExpress環境中使用的Cisco Nexus 3
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

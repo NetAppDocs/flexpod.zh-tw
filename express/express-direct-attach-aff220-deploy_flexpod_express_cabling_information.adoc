@@ -10,7 +10,7 @@ summary: 參考驗證纜線記錄於下表。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

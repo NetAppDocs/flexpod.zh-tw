@@ -10,7 +10,7 @@ summary: 分層最低冷卻天數設定可決定在使用「自動」或「僅�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

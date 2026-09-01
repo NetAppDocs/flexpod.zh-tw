@@ -10,7 +10,7 @@ summary: 本節提供在FlexPod 融合式基礎架構平台上執行基因組學
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-genomics-introduction.html["上一篇：簡介。"]

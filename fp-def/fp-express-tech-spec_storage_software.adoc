@@ -10,7 +10,7 @@ summary: 本節所列的儲存作業系統可在FlexPod 《支援的資訊之速
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

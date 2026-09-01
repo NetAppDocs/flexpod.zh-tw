@@ -10,7 +10,7 @@ summary: FlexPod Express 的自動化部署可透過包含 Ansible playbook 和�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

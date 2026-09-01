@@ -10,7 +10,7 @@ summary: 取得NetApp授權檔案後、您可以使用OnCommand NetApp System Ma
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

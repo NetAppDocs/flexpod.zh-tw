@@ -10,7 +10,7 @@ summary: 您可以觀看使用NetApp Cloud Insights 解決方案的影片示範�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 此功能為模組化、融合式、可選擇性虛擬化、可擴充�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-solution-benefits-of-flexpod-converged-infrastructure.html["先前版本：FlexPod 解決方案優勢：融合式基礎架構。"]

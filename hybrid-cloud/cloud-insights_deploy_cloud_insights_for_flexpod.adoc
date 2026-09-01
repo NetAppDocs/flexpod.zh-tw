@@ -10,7 +10,7 @@ summary: 必須完成下列工作、才能部署Cloud Insights 適用於FlexPod 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 本節說明EHR所需的主機端組態、以使軟體能與NetApp儲�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:fhc-cvoe-installation-and-configuration.html["先前：安裝與組態。"]

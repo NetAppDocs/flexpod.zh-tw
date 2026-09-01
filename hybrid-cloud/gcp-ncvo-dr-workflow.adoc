@@ -10,7 +10,7 @@ summary: 本頁列出實作災難恢復工作流程所需的11個程序。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html["先前版本：混合雲NetApp儲存設備的自動化部署。"]

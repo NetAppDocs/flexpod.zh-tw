@@ -10,7 +10,7 @@ summary: 本節說明FlexPod 每個《ExExpress》元件的其他重要技術規
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

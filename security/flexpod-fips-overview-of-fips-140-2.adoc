@@ -10,7 +10,7 @@ summary: FIPS 140-2指定了安全系統中用於保護電腦和電信系統中�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-cybersecurity-threats-in-healthcare.html["上一篇：醫療網路安全威脅。"]

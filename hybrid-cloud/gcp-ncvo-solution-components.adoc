@@ -10,7 +10,7 @@ summary: 本節說明實作此解決方案所需的所有解決方案元件。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-solution-overview.html["上一篇：解決方案總覽。"]

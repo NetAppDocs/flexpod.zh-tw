@@ -10,7 +10,7 @@ summary: 本節將討論NetApp ONTAP VMware資料管理軟體的主要功能、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

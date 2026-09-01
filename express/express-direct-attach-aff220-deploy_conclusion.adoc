@@ -10,7 +10,7 @@ summary: 藉由提供使用領先業界元件的驗證設計、支援簡單有�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

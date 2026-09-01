@@ -10,7 +10,7 @@ summary: 技術規格提供FlexPod 有關解決方案中硬體元件的詳細資
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 此架構具有下列額外的互通性與支援相關需求FlexPod
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

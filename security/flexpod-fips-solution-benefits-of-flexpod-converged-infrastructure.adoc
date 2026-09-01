@@ -10,7 +10,7 @@ summary: 為了在FlexPod 一個不間斷系統上示範FIPS設定、我們使�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-flexpod-netapp-ontap-storage-and-fips-140-2.html["上一篇：FlexPod NetApp ONTAP 的不整合儲存技術與FIPS 140-2。"]

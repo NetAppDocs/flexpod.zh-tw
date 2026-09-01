@@ -10,7 +10,7 @@ summary: 本節將說明FlexPod 選用的功能以供選用。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

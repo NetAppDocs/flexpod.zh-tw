@@ -10,7 +10,7 @@ summary: 本技術報告中詳述的解決方案是NetApp Cloud Insights 支援�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 NetApp的Alan Cowles

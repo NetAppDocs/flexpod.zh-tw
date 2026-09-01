@@ -10,7 +10,7 @@ summary: 本節介紹 FlexPod Express 設計的電源需求和磁碟櫃佈線指
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

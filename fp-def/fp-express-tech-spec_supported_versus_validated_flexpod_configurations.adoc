@@ -10,7 +10,7 @@ summary: 本文件所述的一套規則定義了這個架構。FlexPod硬體元�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

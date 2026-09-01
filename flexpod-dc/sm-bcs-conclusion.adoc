@@ -10,7 +10,7 @@ summary: 採用SM至BC的《支援核心資料中心》採用主動式資料中�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-validated-scenarios.html["先前版本：解決方案驗證-已驗證的案例。"]

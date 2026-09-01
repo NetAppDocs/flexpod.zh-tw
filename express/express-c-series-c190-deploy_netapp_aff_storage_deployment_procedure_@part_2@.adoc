@@ -10,7 +10,7 @@ summary: 若要建立igroup、請從叢集管理節點SSH連線執行下列命�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

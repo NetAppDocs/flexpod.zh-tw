@@ -10,7 +10,7 @@ summary: 本節說明FlexPod 如何設定檔、如何使用Cromwell引擎、Jar�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-genomics-solution-infrastructure-hardware-and-software-components.html["先前版本：解決方案基礎架構硬體與軟體元件。"]

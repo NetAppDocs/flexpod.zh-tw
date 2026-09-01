@@ -10,7 +10,7 @@ summary: 此解決方案屬於「融合式基礎架構方案」的一部分。Fl
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

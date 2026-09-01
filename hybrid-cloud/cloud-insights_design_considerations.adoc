@@ -10,7 +10,7 @@ summary: 「支援資料中心」解決方案是由Cisco與NetApp設計的融合
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

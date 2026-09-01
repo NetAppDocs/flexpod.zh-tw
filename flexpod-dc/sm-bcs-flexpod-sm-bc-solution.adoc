@@ -10,7 +10,7 @@ summary: 從高層面來看FlexPod 、一套由兩FlexPod 個位元組組成的N
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-introduction.html["上一篇：簡介。"]

@@ -10,7 +10,7 @@ summary: 本節提供在FlexPod VMware vCenter Server 6.7以VMware Express組態
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

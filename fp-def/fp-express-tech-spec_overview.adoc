@@ -10,7 +10,7 @@ summary: FlexPod Express 是預先設計的最佳實務架構，它是基於 Cis
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

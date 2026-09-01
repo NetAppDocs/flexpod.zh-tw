@@ -10,7 +10,7 @@ summary: 不只是使用不需要的功能、更需要搭配軟硬體元件。Fl
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

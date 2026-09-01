@@ -10,7 +10,7 @@ summary: 在這個解決方案中、NetApp Cloud Data Service Cloud Volumes ONTA
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-solution-validation.html["先前版本：解決方案驗證。"]

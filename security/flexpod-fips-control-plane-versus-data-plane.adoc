@@ -10,7 +10,7 @@ summary: 實作FIPS 140-2策略時、務必瞭解受到保護的內容。這種�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-overview-of-fips-140-2.html["上一篇：FIPS 140-2概述。"]

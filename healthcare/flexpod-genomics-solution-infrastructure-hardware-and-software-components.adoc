@@ -10,7 +10,7 @@ summary: 本節說明本解決方案所使用的解決方案基礎架構和軟�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-genomics-benefits-of-deploying-genomic-workloads-on-flexpod.html["先前版本：將基因工作負載部署在FlexPod 架構上的優點。"]

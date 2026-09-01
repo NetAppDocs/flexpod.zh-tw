@@ -10,7 +10,7 @@ summary: 支援基礎組態的支援中心及支援中心、可靈活調整規�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 NetApp的Savita Kumari

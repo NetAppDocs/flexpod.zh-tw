@@ -10,7 +10,7 @@ summary: 本文件詳細說明如何設定完全備援、高可用FlexPod 度的
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

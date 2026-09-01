@@ -10,7 +10,7 @@ summary: 作者感謝John George對這項設計的支援與貢獻。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]
