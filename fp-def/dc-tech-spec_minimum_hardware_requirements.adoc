@@ -16,40 +16,21 @@ summary: 「資料中心」組態具有最低的硬體需求、包括但不限�
 [role="lead"]
 「資料中心」組態具有最低的硬體需求、包括但不限於交換器、網路互連、伺服器和NetApp儲存控制器。FlexPod
 
-您必須使用Cisco UCS伺服器。C系列和B系列伺服器均已用於通過驗證的設計。Cisco Nexus Fabric延伸器（FEXs）可搭配C系列伺服器選用。
-
 下列最低硬體需求為基礎：FlexPod
 
-* 備援組態中的兩個Cisco Nexus交換器。此組態可由Cisco Nexus 5000、7000或9000系列的兩個備援交換器組成。這兩個交換器應為同一機型、且應設定為相同的操作模式。
-+
-如果您要部署ACI架構、則必須遵守下列額外要求：
-
-+
-** 將Cisco Nexus 9000系列交換器部署在分葉式拓撲中。
-** 使用三個Cisco應用程式原則基礎架構控制器（APIC）。
-
-
-* 兩個Cisco UCS 6200、6300或6400系列光纖互連、採用備援組態。
-* Cisco UCS伺服器：
-+
-** 如果解決方案使用B系列伺服器、則一個Cisco UCS 5108 B系列刀鋒伺服器機箱、外加兩個Cisco UCS B系列刀鋒伺服器、外加兩個2104、2204/8、2408或2304 I/O模組（IOM）。
-** 如果解決方案使用C系列伺服器、則有兩部Cisco UCS C系列機架伺服器。
-+
-對於Cisco UCS C系列機架伺服器的大型部署、您可以選擇一對2232PP FEX模組。然而、2232PP並不是硬體需求。
+* 兩台 Cisco Nexus 交換器採用備援組態。此組態可由兩台前面提到的 Cisco Nexus 9000 系列備援交換器組成。這兩台交換器應為同一型號，並設定為相同的操作模式。
 
 
 
-* 高可用度（HA）配對組態中的兩個NetApp儲存控制器：
-+
-此組態可由任何支援的NetApp FAS 功能、AFF 功能區或ASA系列儲存控制器所組成。請參閱 https://hwu.netapp.com/["NetApp Hardware Universe"^] 申請取得支援FAS 的功能完整的功能表、包括支援的功能完整、AFF 功能完整、功能完整、功能完整ASA 、功能完整、功能完整。
+NOTE: 如果您要部署 ACI 架構，則必須遵守下列附加要求：* 將 Cisco Nexus 9000 系列交換器部署在葉脊拓撲中。* 使用三個 Cisco Application Policy Infrastructure Controllers （APIC）。
 
-+
-** HA組態需要每個控制器兩個備援介面才能存取資料；介面可以是FCoE、FC或10/25/100Gb乙太網路（GbE）。
-** 如果解決方案使用NetApp ONTAP 解決方案、則需要NetApp核准的叢集互連拓撲。如需詳細資訊、請參閱 https://hwu.netapp.com/Switch/Index["交換器"^] NetApp Hardware Universe 解決方案索引標籤。
-** 如果解決方案使用ONTAP 支援功能、則每個控制器至少需要兩個額外的10/25/100GbE連接埠、才能存取資料。
-** 對於具有兩個節點的叢集、您可以設定雙節點無交換器叢集。ONTAP
-** 對於具有兩個以上節點的叢集、需要一對叢集互連交換器。ONTAP
+* 如果使用 UCS C 系列機架伺服器或 X 系列模組化系統，則需要兩台 Cisco UCS 6400、6500 或 6600 系列 Fabric Interconnect，並採用備援組態。
+* 兩台 Cisco UCS C 系列機架伺服器，具備 FI 連線和 Intersight 管理組態 （IMM）；或 Cisco UCS X-Series Direct，具備 Cisco IMM；或 Cisco UCS X-Series Modular，具備 Cisco Intersight 管理組態 （IMM）。
 
 
-* 一個具有任何支援磁碟類型的NetApp磁碟櫃。請參閱的「磁碟櫃」索引標籤 link:https://hwu.netapp.com/Shelves/Index?osTypeId=2032["NetApp Hardware Universe"^] 以取得目前支援的磁碟櫃模型清單。
+
+NOTE: 如果您使用的是沒有 FI 連線的 UCS 機架伺服器，則可以使用 CIMC 或 Intersight 獨立式模式進行管理。
+
+* 兩台 NetApp AFF、NetApp ASA 或 NetApp FAS 控制器以高可用度 （HA） 配對組態部署為雙節點叢集。如果使用 NetApp AFX，則至少需要四台 NetApp AFX 控制器，並部署為四節點 HA 叢集，同時還需要一對叢集互連交換器。
+* 對於沒有內建磁碟架的儲存控制器，至少需要一個 NetApp 磁碟架。
 

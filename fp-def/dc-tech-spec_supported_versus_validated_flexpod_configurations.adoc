@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_supported_versus_validated_flexpod_configurations.html 
+keywords: supported, versus, validated, flexpod, datacenter, configurations, imt 
+summary: 本文件所述的一套規則定義了這個架構。FlexPod硬體元件和軟體組態必須由Cisco硬體相容清單（HCL）和NetApp IMT 支援。 
+---
+= 支援的組態與已驗證的 FlexPod 組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+此 FlexPod 架構由本文件中所述的一系列規則定義。硬體元件和軟體組態必須受到 https://ucshcltool.cloudapps.cisco.com/public["Cisco硬體相容清單（HCL）"^]和 https://imt.netapp.com["NetApp互通性對照表工具IMT （不含）"^]的支援。
+
+每個 Cisco 驗證的設計 （CVD） 或 NetApp 驗證架構 （NVA） 都代表一種經過驗證的 FlexPod 組態。Cisco 和 NetApp 會記錄這些組態組合，並透過廣泛的端對端測試加以驗證。FlexPod 部署若偏離這些組態，只要遵循本文件中的指南，且所有元件均在 Cisco HCL 和 NetApp IMT 中列為相容，即可獲得完整支援。
+
+例如，如果軟體、硬體和組態符合本文件中定義的準則，則完全支援新增儲存控制器或 Cisco UCS 伺服器以及將軟體升級至更新版本。

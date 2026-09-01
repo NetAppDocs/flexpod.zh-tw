@@ -16,24 +16,44 @@ summary: 若要深入瞭解本文所述資訊、請檢閱下列文件與網站�
 [role="lead"]
 若要深入瞭解本文所述資訊、請檢閱下列文件與網站：
 
+* NetApp FlexPod 首頁
++
+https://www.netapp.com/flexpod/["https://www.netapp.com/flexpod/"^]
+
+* Cisco FlexPod 首頁
++
+https://www.cisco.com/site/us/en/solutions/computing/converged-infrastructure/flexpod/index.html["https://www.cisco.com/site/us/en/solutions/computing/converged-infrastructure/flexpod/index.html"^]
+
 * NetApp 產品文件
 +
 https://docs.netapp.com/["https://docs.netapp.com/"^]
 
-* NetApp支援通訊
+* ONTAP 產品文件
 +
-https://mysupport.netapp.com/info/communications/index.html["https://mysupport.netapp.com/info/communications/index.html"^]
+https://docs.netapp.com/us-en/ontap-family/index.html["https://docs.netapp.com/us-en/ontap-family/index.html"^]
+
+* ONTAP 硬體系統文件
++
+https://docs.netapp.com/us-en/ontap-systems-family/index.html["https://docs.netapp.com/us-en/ontap-systems-family/index.html"^]
 
 * NetApp互通性對照表工具IMT （不含）
 +
-https://mysupport.netapp.com/matrix/["https://mysupport.netapp.com/matrix/#welcome"^]
+https://imt.netapp.com["https://imt.netapp.com"^]
 
 * NetApp Hardware Universe
 +
-https://hwu.netapp.com/["https://hwu.netapp.com/"^]
+https://hwu.netapp.com["https://hwu.netapp.com"^]
+
+* Cisco HCL
++
+https://ucshcltool.cloudapps.cisco.com/public["https://ucshcltool.cloudapps.cisco.com/public"^]
 
 * NetApp支援
 +
 https://mysupport.netapp.com/["https://mysupport.netapp.com/"^]
+
+* NetApp支援通訊
++
+https://mysupport.netapp.com/info/communications/index.html["https://mysupport.netapp.com/info/communications/index.html"^]
 
 

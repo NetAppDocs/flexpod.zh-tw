@@ -138,32 +138,14 @@
   <block id="5dc8e3707996259deb52abdfee00eac9" category="cell">NetApp儲存陣列</block>
   <block id="1f8e8bd6bc1c4895f936485882fbdf9d" category="cell">虛擬化Hypervisor</block>
   <block id="4aa6cd6038c4fecb0c308ca4d3dcdea0" category="section-title">Cisco Intersight授權要求</block>
-  <block id="5c6023ee4b202fd210e040f3256ae3bb" category="summary">技術規格提供FlexPod 有關解決方案中硬體元件的詳細資料、例如機箱、FEXs、伺服器、交換器、 和儲存控制器。</block>
   <block id="545eb122d6490808d1415c5c5bdd774c" category="doc">技術規格與參考資料</block>
-  <block id="bad8a4f88c94235d7705cc936c07c298" category="section-title">Cisco UCS B系列刀鋒伺服器機箱</block>
-  <block id="e460d5701621ecda792645b68b913078" category="paragraph">Cisco UCS B系列刀鋒伺服器機箱的技術規格如下表所示、包括下列元件：</block>
   <block id="e9778c4545c65dce1fe2fd1323d1d9ef" category="list-text">機架單元數量</block>
-  <block id="1e76fb3fac36de9d9515c8bd6a8c08cc" category="list-text">最大刀鋒數量</block>
   <block id="9a4f5fcf9e948358227c15b2fd00adac" category="list-text">統一化架構功能</block>
-  <block id="573e67f4c27e67ae76ca0f480954d3fd" category="list-text">每個伺服器的中板I/O頻寬</block>
-  <block id="95e01c8d000abee2fad49fb1734d4ee3" category="list-text">FEXs的I/O支架數量</block>
-  <block id="fe0f3cde30f9f492ce0bf4a7b00c1210" category="cell">Cisco UCS 5100系列刀鋒伺服器機箱</block>
   <block id="bc873d5c30a4e7934f33823f63911166" category="cell">機架單元</block>
-  <block id="1679091c5a880faf6fb5e6087eb1b2dc" category="cell">6.</block>
-  <block id="913f1b2ae0aed686107f7aa7e3bc9444" category="cell">最大全寬刀鋒</block>
   <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4.</block>
-  <block id="f8eb71a5e16727a5d9a7f69aaaf5c1cf" category="cell">最大半寬刀鋒</block>
   <block id="c9f0f895fb98ab9159f51fd0297e236d" category="cell">8.</block>
   <block id="31fee250716f021b3d9c44dc8abc0664" category="cell">能夠統一化架構</block>
   <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">是的</block>
-  <block id="255edba62ec60ca5c1676b36f0054cf3" category="cell">中板I/O</block>
-  <block id="c5040287abb3469d0092825f1a7a4de7" category="cell">每部伺服器I/O頻寬高達80Gbps</block>
-  <block id="edd389251fb1978736710e2fb9b6740d" category="cell">適用於FEXs的I/O支架</block>
-  <block id="904f1570c8ba0c50b7fc07f929826918" category="cell">兩個用於Cisco UCS 2104XP、2204/8XP、2408XP和2304 FEXs的托架</block>
-  <block id="4a546385bc86e8c3b4dab80a234ab65a" category="inline-link">Cisco UCS 5100系列刀鋒伺服器機箱技術資料</block>
-  <block id="eb11d9d13f69e8cf960f744b4a1b9c24" category="paragraph">如需詳細資訊、請參閱<block ref="e358baa242ace094be47e0097cdc5b3c" category="inline-link-rx"></block>。</block>
-  <block id="8731b9061e726c6b3db4589162b8561d" category="section-title">Cisco UCS B系列刀鋒伺服器</block>
-  <block id="8dad68cdbbb9a8ffe85bedab5046a794" category="paragraph">Cisco UCS B系列刀鋒伺服器的技術規格如下表所示、包括下列元件：</block>
   <block id="432e9ffb4df8ee22a77b0db18fed2d96" category="list-text">處理器插槽數</block>
   <block id="f69a707382777f98b2c2ce59f12f2a4c" category="list-text">處理器支援</block>
   <block id="8ab53cb9e687d64e60a0260c2d696eb9" category="list-text">記憶體容量</block>
@@ -172,51 +154,25 @@
   <block id="2aa17a761304ce946c92573733baa0ab" category="list-text">夾層介面卡插槽數</block>
   <block id="d80104f8b5a86d312c461bbce988f546" category="list-text">I/O最大處理量</block>
   <block id="9efd743b10abbfb56a447d476d84417e" category="list-text">尺寸規格</block>
-  <block id="c4c2ca353ebde914eae5eb3ee6ad320d" category="list-text">每個機箱的伺服器數量上限</block>
   <block id="7109b9831c1aee7996af4033af2245e5" category="cell">Cisco UCS資料表</block>
-  <block id="9367f6dc9792efedc23081b108a5e46e" category="cell">Cisco UCS B200 M6.</block>
-  <block id="3562ba647d973f1176b057c70a2a0443" category="inline-link">Cisco UCS B200 M6刀鋒伺服器</block>
-  <block id="d03de7dc86df4aeee0c38ece670efcbc" category="cell"><block ref="d03de7dc86df4aeee0c38ece670efcbc" category="inline-link-rx"></block></block>
   <block id="b2671da9828321178769ed9542695042" category="section-title">Cisco UCS C系列機架伺服器</block>
   <block id="502eb272214f8a3969413ac883ed309d" category="inline-link">Cisco硬體相容性</block>
-  <block id="539594db6fbc402732376a4908e6445a" category="paragraph">Cisco UCS C系列機架伺服器的技術規格包括處理器支援、最大記憶體容量、PCIe插槽數量、以及尺寸規格。如需相容UCS伺服器機型的其他詳細資料、請參閱<block ref="1420345f3000e0fcdfadf0c24d8bc000" category="inline-link-rx"></block> 清單。下表分別說明C系列機架伺服器資料表和Cisco UCS C系列機箱選項。</block>
-  <block id="9c1251df1e24c8cb7cbd38c2f4836a31" category="cell">Cisco UCS C220 M6.</block>
-  <block id="d74072d736dabf4108650780997348d4" category="inline-link">Cisco UCS C220 M6機架伺服器</block>
-  <block id="cdc99f88842c642faf411bcb03d51b23" category="cell"><block ref="cdc99f88842c642faf411bcb03d51b23" category="inline-link-rx"></block></block>
   <block id="134cb2fcd7956f791e9e83c46de84bed" category="cell">Cisco UCS C225 M6.</block>
   <block id="4d3f89d17921496447ee078d2fffee14" category="inline-link">Cisco UCS C225 M6機架伺服器</block>
-  <block id="26af3fca39364e55dbd211a1354f8c3d" category="cell"><block ref="26af3fca39364e55dbd211a1354f8c3d" category="inline-link-rx"></block></block>
-  <block id="085b74cee36712939842a07c08484828" category="cell">Cisco UCS C240 M6.</block>
-  <block id="475287befc3891f579846f4fad04365b" category="inline-link">Cisco UCS C240 M6機架伺服器</block>
-  <block id="a1e8232293242129cd1cf31e4fe7a56a" category="cell"><block ref="a1e8232293242129cd1cf31e4fe7a56a" category="inline-link-rx"></block></block>
   <block id="7cb699ac2bdd827b24ebab7c5cfe9de3" category="cell">Cisco UCS C245 M6.</block>
   <block id="d39f4d0fe4d1ec12e0924a75526dbcc7" category="inline-link">Cisco UCS C245 M6機架伺服器</block>
-  <block id="f444e0ee3760d489797cd37417043760" category="cell"><block ref="f444e0ee3760d489797cd37417043760" category="inline-link-rx"></block></block>
   <block id="9199b52ef0a0fb0ae9c390d1f2a4b547" category="section-title">Cisco UCS X系列機箱</block>
   <block id="e062c4739ff99b41d57b233828e6a70d" category="paragraph">Cisco UCS X系列機箱的技術規格如下表所示、包括下列元件：</block>
   <block id="655616edb2763fa526c32fc5b4dc3646" category="list-text">最大節點數</block>
   <block id="f010ecd8871829fccf072c45d9303703" category="list-text">IFMS的I/O支架數量</block>
-  <block id="1c53572c6621131de05143ffd02b77eb" category="cell">Cisco UCS 9508 X系列運算節點機箱</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7.</block>
   <block id="9fcd3fdf657d58915085167aeda73f8c" category="cell">IFMS的I/O支架</block>
   <block id="1bf0ed5a72e3088f3041a2613d763d09" category="cell">兩個用於Cisco UCS 9108智慧型光纖模組（IFMS）的支架</block>
   <block id="4e6d7fc309c44a3039917bf31ae90a44" category="inline-link-macro">Cisco UCS X958 X系列機箱資料表</block>
   <block id="8da71c07bd539f4d456e0b1d98cbdbef" category="paragraph">如需詳細資訊、請參閱 <block ref="5c66b10e4aaaeb44ce24b56292e2b4ff" category="inline-link-macro-rx"></block>。</block>
   <block id="29496dbb7e2d48a49c36fa2e3631c920" category="section-title">Cisco UCS X系列運算節點</block>
-  <block id="10b60d0d12f87da4fdd5d86969b10e57" category="paragraph">Cisco UCS X系列運算節點的技術規格如下表所示、包括下列元件：</block>
   <block id="ba4532070e058c495c632836d34d8120" category="list-text">每個機箱的最大運算節點數</block>
   <block id="53968ff28116cf22d7e6ebf3841bd871" category="cell">Cisco UCS X210 c M6.</block>
-  <block id="162f963cf06856a87b0d8dee5d843776" category="inline-link">Cisco UCS X210 c M6運算節點</block>
-  <block id="cf9f0c1cd26145b85b35ae6e6b63fe76" category="cell"><block ref="376004058cab648d219769ed0e0b6dc3" category="inline-link-rx"></block></block>
-  <block id="c1129e1482a0749cc3a76e71693cd660" category="section-title">GPU建議FlexPod 使用支援AI、ML和DL</block>
-  <block id="eb15ff603d7a4cfd03ec21c2259cb551" category="paragraph">下表所列的Cisco UCS C系列機架伺服器可用於FlexPod 支援AI、ML和DL工作負載的VMware架構。Cisco UCS C480 ML M5伺服器專為AI、ML和DL工作負載所打造、使用NVIDIA的SXM2型GPU、而其他伺服器則使用PCIe型GPU。</block>
-  <block id="7fcbe0697ef92e59c1302c9100c308ae" category="paragraph">下表也列出可搭配這些伺服器使用的建議GPU。</block>
-  <block id="9aa1b03934893d7134a660af4204f2a9" category="cell">伺服器</block>
-  <block id="c9c42178ba31eb2b6b1fa19218d82381" category="cell">GPU</block>
-  <block id="e095ad80d900786110d53ecd5cbd3e3e" category="cell">NVIDIA T4</block>
-  <block id="58f43c2bb3a97e83a0b8d65d21002781" category="cell">NVIDIA Tesla A10、A100</block>
-  <block id="b9830d915994d2d90b9750c5314a78c5" category="section-title">Cisco UCS VIC介面卡、適用於Cisco UCS B系列刀鋒伺服器</block>
-  <block id="2808bcb1c92a1ab9e4ac1fbe8ac8ba55" category="paragraph">Cisco UCS B系列刀鋒伺服器的Cisco UCS虛擬介面卡（VIC）介面卡技術規格包括下列元件：</block>
   <block id="04dd8a21ab2ea0866c7eb1f31be00db0" category="list-text">上行鏈路連接埠數量</block>
   <block id="02943dc226f1b5af671a80503852a622" category="list-text">每個連接埠的效能（IOPS）</block>
   <block id="dd4fe0cc913f704600b97d1f5dd285de" category="list-text">強大威力</block>
@@ -227,80 +183,22 @@
   <block id="b697c0399cbb8d0f82308587f4b4694a" category="paragraph">所有目前已驗FlexPod 證的不完整架構都使用Cisco UCS VIC。如果NetApp列出其他介面卡、則會支援這些介面卡<block ref="af8f174925a8fa1af2321b8d8c2fd047" category="inline-link-rx"></block> 並與您部署FlexPod 的支援功能相容、但可能無法提供對應參考架構中所述的所有功能。下表說明Cisco UCS VIC介面卡資料表。</block>
   <block id="1d1cda1ead4c5003d44cf4c3071e1532" category="cell">Cisco UCS虛擬介面卡</block>
   <block id="8095c6b526d8a24e37cc9e13ba6dc34f" category="inline-link">Cisco UCS VIC資料表</block>
-  <block id="b80e9073edf4852dfda2d60f85462d11" category="cell"><block ref="b80e9073edf4852dfda2d60f85462d11" category="inline-link-rx"></block></block>
   <block id="e1e3a3281a9199465a66e17d5e143cfd" category="section-title">Cisco UCS網路互連</block>
-  <block id="77a8e849da6d1d3659c32b38889c6105" category="paragraph">Cisco UCS架構互連的技術規格包括尺寸規格、連接埠和擴充插槽總數、以及處理量容量。下表說明Cisco UCS網路互連資料表。</block>
-  <block id="7cf0deb5f59cc7878d0d9692b9648137" category="cell">Cisco UCS 6248UP</block>
-  <block id="b73866af172091e38195f6cf719288bf" category="inline-link">Cisco UCS 6200系列光纖互連</block>
-  <block id="15e3b5fc13257a951f517c4c9e3f2076" category="cell"><block ref="15e3b5fc13257a951f517c4c9e3f2076" category="inline-link-rx"></block></block>
-  <block id="4d4499f593190dd3dea3bbd8621ff5d9" category="cell">Cisco UCS 6296UP</block>
-  <block id="78cd0fb3ce3412770e22ba1ab4e57eff" category="cell">Cisco UCS 6324</block>
-  <block id="c5b1109f1477c1b0cab336154975ca37" category="inline-link">Cisco UCS 6324光纖互連</block>
-  <block id="beecd8d9a233b67d1c4d28d99f1b6363" category="cell"><block ref="beecd8d9a233b67d1c4d28d99f1b6363" category="inline-link-rx"></block></block>
-  <block id="5f07f5b1f7951d415ce0f87e40038c50" category="cell">Cisco UCS 6300</block>
-  <block id="e5980d2085d15d443a4dd3b87cbe26d2" category="inline-link">Cisco UCS 6300系列光纖互連</block>
-  <block id="924ec903d77ee1313cd42700d24b7def" category="cell"><block ref="924ec903d77ee1313cd42700d24b7def" category="inline-link-rx"></block></block>
   <block id="116e3e0f0ca40ca2bcfa7c4ca8d4eb9d" category="cell">Cisco UCS 6454.</block>
   <block id="575bf6ed06f93e66b3ea6ab887c82df3" category="inline-link">Cisco UCS 6400系列光纖互連</block>
-  <block id="e8e40bee2ce9cfe671b11163531a47ad" category="cell"><block ref="e8e40bee2ce9cfe671b11163531a47ad" category="inline-link-rx"></block></block>
-  <block id="7af92ef5b4c20f25a6e46edf4a7e3ff7" category="section-title">Cisco Nexus 5000系列交換器</block>
-  <block id="50348ed1abb87fd98023ec98136955ce" category="paragraph">Cisco Nexus 5000系列交換器的技術規格、包括尺寸規格、連接埠總數、以及第3層模組與子卡支援、均包含在每個機型系列的資料表中。這些資料表可在下表中找到。</block>
   <block id="d972d8b6d6414fa6535b61883a3bb2c3" category="cell">Cisco Nexus資料表</block>
-  <block id="2f84398b854ea0316eed5a32abe45ae3" category="cell">Cisco Nexus 5548UP</block>
-  <block id="37a9f1a454866d83a4073a66eb4c2674" category="inline-link">Cisco Nexus 5548UP交換器</block>
-  <block id="ed991524ec99bb6c375a0c5f119b6673" category="cell"><block ref="ed991524ec99bb6c375a0c5f119b6673" category="inline-link-rx"></block></block>
-  <block id="a19773ef487daeaca48251eae2704dbd" category="cell">Cisco Nexus 5596UP（2U）</block>
-  <block id="60e71566787cf853416e14949a1ef677" category="inline-link">Cisco Nexus 5596UP交換器</block>
-  <block id="a980cb584f0da33ff90061f7b87daf2f" category="cell"><block ref="a980cb584f0da33ff90061f7b87daf2f" category="inline-link-rx"></block></block>
-  <block id="2a3969d045bb8f7795214f5158e5f859" category="cell">Cisco Nexus 56128P</block>
-  <block id="81d539a6db59faa93e6e6a32bc708565" category="inline-link">Cisco Nexus 56128P交換器</block>
-  <block id="b794fb51c5d24a41e1843a54a9bfe4ae" category="cell"><block ref="b794fb51c5d24a41e1843a54a9bfe4ae" category="inline-link-rx"></block></block>
-  <block id="4fbceb23915b0b825546f7709b6b2f34" category="cell">Cisco Nexus 5672UP</block>
-  <block id="214cc162713db8102acbf134e2e5cb18" category="inline-link">Cisco Nexus 5672UP交換器</block>
-  <block id="740cad0bafcc4ca69fafcd681918779c" category="cell"><block ref="740cad0bafcc4ca69fafcd681918779c" category="inline-link-rx"></block></block>
-  <block id="90457ca00ecca4c1094994e5e43adcba" category="section-title">Cisco Nexus 7000系列交換器</block>
-  <block id="3fb8219e28a30e6e51eb933e4b9a7bc3" category="paragraph">Cisco Nexus 7000系列交換器的技術規格、包括尺寸規格和連接埠數量上限、均包含在每個機型系列的資料表中。這些資料表可在下表中找到。</block>
-  <block id="2b56450ff205774f878fc798344a04f2" category="cell">Cisco Nexus 7004</block>
-  <block id="ccae356e282b9138c77040cbc94e75ae" category="inline-link">Cisco Nexus 7000系列交換器</block>
-  <block id="9cd35a381b6e27d72e0c6ae928a9bc9c" category="cell"><block ref="9cd35a381b6e27d72e0c6ae928a9bc9c" category="inline-link-rx"></block></block>
-  <block id="8ed0b86de9309df566b166117004cffb" category="cell">Cisco Nexus 7009</block>
-  <block id="04a2270e60d476614c8c2ed6a55691b4" category="cell">Cisco Nexus 7010</block>
-  <block id="5c62d9e3aa11122d43517d55f03752cd" category="cell">Cisco Nexus 7018</block>
-  <block id="5ef560115f06c7b3c7102de4a5922487" category="cell">Cisco Nexus 702</block>
-  <block id="2fff187d61dd6892276539e2d9b0aeb0" category="inline-link">Cisco Nexus 7700系列交換器</block>
-  <block id="52051f7fb620560888594c168b90a7d5" category="cell"><block ref="52051f7fb620560888594c168b90a7d5" category="inline-link-rx"></block></block>
-  <block id="adc6db01702cb3a8b992e5c65944f6cc" category="cell">Cisco Nexus 7706</block>
-  <block id="e5ba3eab09589d61e10512618462ba4e" category="cell">Cisco Nexus 7710</block>
-  <block id="7c7a570fe247bb8a8798f03973911ffe" category="cell">Cisco Nexus 7718</block>
   <block id="fff53aa00491dfa2757c5bc1882d3fc4" category="section-title">Cisco Nexus 9000系列交換器</block>
-  <block id="960cce82ef27777d46db9d25da5558c9" category="paragraph">Cisco Nexus 9000系列交換器的技術規格均包含在每種機型的資料表中。規格包括尺寸規格、監督員數量、架構模組和線路卡插槽數、以及連接埠數量上限。這些資料表可在下表中找到。</block>
-  <block id="966f8299dfacb3f37fd7b8116f1a892e" category="cell">Cisco Nexus 9000系列</block>
   <block id="454d8bacc17503d670940b88fdf44b2a" category="inline-link">Cisco Nexus 9000系列交換器</block>
-  <block id="39ba3604f396427c85fd5eb928753df6" category="cell"><block ref="39ba3604f396427c85fd5eb928753df6" category="inline-link-rx"></block></block>
   <block id="eddd0f6750fbc340e8a37817b86399da" category="cell">Cisco Nexus 9500系列</block>
   <block id="7350e2b8479b332b48c9f99884053882" category="inline-link">Cisco Nexus 9500系列交換器</block>
-  <block id="25b711b093ac8ec4023db7d15d5a6a42" category="cell"><block ref="25b711b093ac8ec4023db7d15d5a6a42" category="inline-link-rx"></block></block>
   <block id="4483ff1264ea4cc7b5d7d56b7a706adb" category="cell">Cisco Nexus 9300系列</block>
   <block id="4722a9e1fa8c9af5ebeb18a9a7224afe" category="inline-link">Cisco Nexus 9300系列交換器</block>
-  <block id="08fd7267b9ba8a790088f9fc636cf6e6" category="cell"><block ref="08fd7267b9ba8a790088f9fc636cf6e6" category="inline-link-rx"></block></block>
-  <block id="d88839f4e89e359db2b5eea8c6d2f44c" category="cell">Cisco Nexus 9336PQ ACI Spine交換器</block>
-  <block id="5fd8ba790715cf314da8e19cf432600f" category="cell"><block ref="5fd8ba790715cf314da8e19cf432600f" category="inline-link-rx"></block></block>
   <block id="3dae437cc4ee663c90aa0d8941c467ce" category="cell">Cisco Nexus 9200系列</block>
-  <block id="96b8695ed77b61b47ed50df0bde7f0cb" category="inline-link">Cisco Nexus 9200平台交換器</block>
-  <block id="0da8e0d813062972e837eca1b2681eb5" category="cell"><block ref="0da8e0d813062972e837eca1b2681eb5" category="inline-link-rx"></block></block>
   <block id="5a0139be91ce8f341315613ebe34fd66" category="section-title">Cisco應用程式原則基礎架構控制器</block>
-  <block id="9776493a0c3806ca52d65e43850f3bdd" category="paragraph">部署Cisco ACI時、除了區段中的項目外 <block ref="a22aed988bc8d4ed05ef770b259766da" category="inline-link-macro-rx"></block>、您必須設定三個Cisco APIC。下表列出Cisco APIC資料表。</block>
   <block id="24b436b4a9d980eb990eae7f99f5f572" category="cell">Cisco應用程式原則基礎架構資料表</block>
   <block id="b6a48fd75875d7af47c47bb6a2818958" category="cell">Cisco應用程式原則基礎架構控制器</block>
   <block id="91c649cc4f7a23ecf76b89240204db6c" category="inline-link">Cisco APIC資料表</block>
   <block id="d4e9ec54bc8ae263e5c35e54f4308171" category="cell"><block ref="d4e9ec54bc8ae263e5c35e54f4308171" category="inline-link-rx"></block></block>
-  <block id="18950dd22655de9ea68a4192d642183e" category="section-title">Cisco Nexus Fabric extender詳細資料</block>
-  <block id="084b30a032a0bf4f8bf1cbce503333f0" category="paragraph">Cisco Nexus FEX的技術規格包括速度、固定連接埠和連結的數量、以及尺寸規格。</block>
-  <block id="3035e1e55d4946b57bfb37db63031ac0" category="paragraph">下表列出Cisco Nexus 2000系列FEX產品型錄。</block>
-  <block id="d60c9acc412e96528ed75dbe8c6cb8c3" category="cell">Cisco Nexus Fabric extender資料表</block>
-  <block id="8a7c8a76548d4b88a8c008ddc1f07831" category="cell">Cisco Nexus 2000系列光纖延伸器</block>
-  <block id="e59f11d895b51eecd1843d9ee61a4c55" category="inline-link">Nexus 2000系列FEX產品型錄</block>
-  <block id="68158df18220fedcc1f0861bc5a69e4a" category="cell"><block ref="68158df18220fedcc1f0861bc5a69e4a" category="inline-link-rx"></block></block>
   <block id="8f5c05fc76439bf3f7caf38a54061280" category="section-title">SFP模組</block>
   <block id="eadd12fcaf5a77f9a1f93e88f6ddc569" category="paragraph">如需SFP模組的相關資訊、請參閱下列資源：</block>
   <block id="0b99b171bade461eb3a4d0957e502d1b" category="inline-link">Cisco 10 Gigabit模組</block>
@@ -317,64 +215,14 @@
   <block id="d292e45de49590eb69254a62260b19a8" category="inline-link">Cisco收發器模組</block>
   <block id="87a2aabd308b6eaee26682ea23eb0ec1" category="list-text">如需所有支援的Cisco SFP和收發器模組相關資訊、請參閱<block ref="c3b59541d930d7421f4a99244101c663" category="inline-link-rx"></block> 和<block ref="4c4d013116e8da032e0d68d8c9ec8f73" category="inline-link-rx"></block>。</block>
   <block id="8b970e5f88daef6ea2a62ab13f6d441d" category="section-title">NetApp儲存控制器</block>
-  <block id="c776cd4dac9d48d1f8e155ef64fd092d" category="paragraph">NetApp儲存控制器的技術規格包括下列元件：</block>
-  <block id="03385f0deb47541770de68a2500e1c48" category="list-text">機箱組態</block>
-  <block id="806097d2f871ac03396f2bcad7a4316a" category="list-text">記憶體容量</block>
-  <block id="c573c022f04f509a11d1c8ed2b980249" category="list-text">NetApp FlashCache快取</block>
-  <block id="f64bc191156dac76ffce8622c16cb21d" category="list-text">Aggregate大小</block>
-  <block id="6bb41960470a19d97556b9240ac0b3ff" category="list-text">Volume大小</block>
-  <block id="0af38a14209cc9bc1b292891a3e005da" category="list-text">LUN數量</block>
-  <block id="18802578b081f15e9f7077a49ba75819" category="list-text">支援的網路儲存設備</block>
-  <block id="d29d0bc0b0f5fe9cda62baf04b713836" category="list-text">NetApp FlexVol 的最大資料量</block>
-  <block id="19acffd0e8e9a24a5633acba17a63c64" category="list-text">支援的SAN主機數量上限</block>
-  <block id="b441412a52771cc2c951a3c1fd336788" category="list-text">Snapshot複本的最大數量</block>
-  <block id="edcb43f36a43de604ebe0c3134f2df4c" category="section-title">支援FAS</block>
   <block id="e5e09031843479ef9ef8cbbd4c2f404c" category="inline-link">NetApp Hardware Universe</block>
-  <block id="5db2e4261da384e80f15127c4ee22890" category="paragraph">所有可用的FAS 版本的不支援使用於FlexPod 一套資料中心的儲存控制器。如需所有FAS 的詳細規格、請參閱<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。請參閱下表所列的平台專屬文件、以取得特定FAS 的功能介紹。</block>
   <block id="269268ccb99b0633e3aa811a9d379bd4" category="cell">系列控制器平台文件FAS</block>
-  <block id="5dbe6318c0e33df82115090386f676a0" category="cell">FAS9000系列</block>
-  <block id="8c732c0d3940f54af569403bb2e77413" category="inline-link">FAS9000系列產品型錄</block>
-  <block id="29184268b37f59569228269cc9f66455" category="cell">FAS8700系列</block>
-  <block id="9055cb9debfe6ad605b03b6994bb617b" category="inline-link">FAS8700系列產品型錄</block>
-  <block id="372a67565826a013c3a98f8b425b9b88" category="cell">FAS8300系列</block>
-  <block id="b0f1efc75eac6747a8909dd3edea2685" category="inline-link">FAS8300系列產品型錄</block>
-  <block id="09d7147606356cb9d75c440889619ed0" category="cell">FAS500f系列</block>
-  <block id="ea3f409de93f78c56764dda52d76dd0d" category="inline-link">FAS500f系列產品型錄</block>
-  <block id="117a2e13cbfbc5b019f43395e19aa7a4" category="cell"><block ref="117a2e13cbfbc5b019f43395e19aa7a4" category="inline-link-rx"></block></block>
-  <block id="0ed5b642dc7e3b67019e2e2a7b885a69" category="cell">FAS2700系列</block>
-  <block id="935842d1c7846b72aa6cab118db76153" category="inline-link">FAS2700系列產品型錄</block>
   <block id="8ef73cf5ea5a09bb4cb7393f715d2618" category="section-title">A系列AFF</block>
-  <block id="baae0cceb9b7043b8b2dd03e6efa83f8" category="inline-link">技術規格AFF</block>
   <block id="99d338f252ec9d84ad8431a31de3a262" category="cell">A系列控制器平台文件AFF</block>
   <block id="a6d988e2bc1676553a68b4bd3414e350" category="cell">NetApp AFF 產品-A800</block>
-  <block id="4d9751fc3b79bdb88b990f65afd7c6d4" category="inline-link">解答A800平台文件AFF</block>
-  <block id="9fd776d575e784a04bf5628e0db4f43c" category="cell">NetApp AFF 解決方案</block>
-  <block id="cc959946765e8b246923e4ef7f1bf3be" category="inline-link">VMware平台文件AFF</block>
-  <block id="4c888568e86a3e3bc15e53b2a91a4ca2" category="cell">NetApp AFF 產品系列A700s</block>
-  <block id="049e978eaf17ad2f7d9e7561d653c22f" category="inline-link">《Se A700s Platform Documentation》（《Se A700 AFF</block>
   <block id="6b1a2fb636318f0f5c51b7506abc53ad" category="cell">NetApp AFF 產品-A400</block>
-  <block id="b9866313cde2044a8dd77a6b0e794e61" category="inline-link">VMware平台文件AFF</block>
   <block id="25297dbc8df2aecff2fa2e9e47638d35" category="cell">NetApp AFF 產品-A250</block>
-  <block id="3ac00041ac1bd123acdee59cdfc05a50" category="inline-link">VA250平台文件AFF</block>
-  <block id="107d17c23965093bdabe46bc6b6ba610" category="section-title">A系列AFF ASA</block>
-  <block id="dbb86a37ca706fad417eb540ecf9bff8" category="paragraph">支援所有目前的NetApp AFF ASA 解決方案A系列儲存控制器機型、可在FlexPod 支援中使用。如需更多資訊、請參閱All SAN Array文件資源ONTAP AFF 、《完整SAN陣列系統》技術報告、以及《NetApp Hardware Universe 效益管理系統》。請參閱下表所列的平台專屬文件、以瞭解特定AFF 的《某些特定的功能表》的詳細資訊。</block>
-  <block id="8edae448eb4c721effbdf809fd185881" category="cell">NetApp AFF ASA 產品-A800</block>
-  <block id="4a7b86ad78c8ba8757536489d20f9502" category="inline-link">解答A800平台文件AFF ASA</block>
-  <block id="f57218ceec3975958769e7ef8d88662f" category="cell"><block ref="f57218ceec3975958769e7ef8d88662f" category="inline-link-rx"></block></block>
-  <block id="76230c3a7bd329c3a04a86fbc92976bd" category="cell">NetApp AFF ASA 解決方案</block>
-  <block id="c53631b035c05bd428821e22dd6f2419" category="inline-link">VMware平台文件AFF ASA</block>
-  <block id="2ae12155440a384dd9d1153571d45471" category="cell"><block ref="2ae12155440a384dd9d1153571d45471" category="inline-link-rx"></block></block>
-  <block id="aafe0e1c53b524c9bed54653f1c4a0a6" category="cell">NetApp AFF ASA 產品-A400</block>
-  <block id="11c182a198b8ae3b16428bc673141058" category="inline-link">VMware平台文件AFF ASA</block>
-  <block id="86d7eaf61ea8b8d4697e7ce4c2c5e96f" category="cell"><block ref="86d7eaf61ea8b8d4697e7ce4c2c5e96f" category="inline-link-rx"></block></block>
-  <block id="6cea84fb4efd66ee16d7e9ec06547f0b" category="cell">NetApp AFF ASA 產品-A250</block>
-  <block id="527843652c5ccaf5877107bbb3b5c75f" category="inline-link">VA250平台文件AFF ASA</block>
-  <block id="642dbf17c3fc84fac2bf46864ba46956" category="cell"><block ref="642dbf17c3fc84fac2bf46864ba46956" category="inline-link-rx"></block></block>
-  <block id="bcafb16f83e5ee87f9a5f2dfa7e154eb" category="cell">NetApp AFF ASA 解決方案-A220</block>
-  <block id="0fe164f47d43f2cbfd102d0aa1d2dfb9" category="inline-link">VA220平台文件AFF ASA</block>
-  <block id="35e833762d254950955265d789112b72" category="cell"><block ref="35e833762d254950955265d789112b72" category="inline-link-rx"></block></block>
   <block id="7dbc5f6da442475259fb94ac160fd4f0" category="section-title">NetApp磁碟櫃</block>
-  <block id="b0318f7a50c45231a138f7fe1f7ff669" category="inline-link">NetApp磁碟櫃與儲存媒體技術規格</block>
   <block id="7f0e76e050a690f383ba518e5dc386f3" category="cell">NetApp FAS/AFF磁碟櫃文件</block>
   <block id="e76c07915a60bfdaf4c9dd87979fa449" category="cell">NetApp DS212C磁碟櫃</block>
   <block id="b539e925204802559371bf5b81d79954" category="inline-link">DS212C磁碟櫃文件</block>
@@ -382,7 +230,6 @@
   <block id="2a23643eed53b0879cb9ffff0a404bfb" category="inline-link">DS224C磁碟櫃文件</block>
   <block id="d7592745d562764dea1fb30de121bb8a" category="cell">NetApp DS460C磁碟櫃</block>
   <block id="cc65918bd28bab6767cc0d37580a9bd0" category="inline-link">DS460C磁碟櫃文件</block>
-  <block id="a3cf3a1f214dd05382c45e1c59088a60" category="cell">NetApp NS224 NVMe SSD磁碟櫃</block>
   <block id="87db9ffbb33e8796f7f110bc6b8b591d" category="inline-link">NS224磁碟櫃文件</block>
   <block id="16f17b706ba2e29ed39978b26d5efd75" category="section-title">NetApp推動</block>
   <block id="1db61abeed53a1e4b952c0d4bae14ca3" category="paragraph">NetApp磁碟機的技術規格包括尺寸規格、磁碟容量、磁碟RPM、支援控制器及ONTAP 版本要求。這些規格可在的「磁碟機」區段中找到<block ref="afd6b1daca313ab42848776252cb3eb9" category="inline-link-rx"></block>。</block>
@@ -394,8 +241,6 @@
   <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">NetApp互通性對照表工具IMT （不含）</block>
   <block id="7501c5e58e67ce758d854a0f76243785" category="doc">支援各種平台FlexPod</block>
   <block id="056341ce6698d2ac20eb4372437840eb" category="paragraph">共有兩FlexPod 個支援平台：</block>
-  <block id="636457f24ee3c090c70b60896394af32" category="list-text">*《資料中心》*。此平台是可大幅擴充的虛擬資料中心基礎架構、適用於企業工作負載應用程式、虛擬化、虛擬桌面基礎架構（VDI）、以及公有雲、私有雲和混合雲工作負載。FlexPod</block>
-  <block id="6c045cd5d8130cec6f0d8aeb7cb9798f" category="inline-link">部分技術規格。FlexPod</block>
   <block id="363516c7d28783cb5332db685b125e9f" category="paragraph">本文件提供FlexPod 《不完整資料中心》平台的技術規格。</block>
   <block id="42419c0e478fd6f7bbffe6b8974833ca" category="summary">NetApp儲存控制器為FlexPod 支援開機和應用程式資料儲存的功能、提供了在《不可靠的資料保護技術（NetApp Express）」架構中的儲存基礎。本節列出FlexPod 了NetApp在《不只是用作解決方案的基礎架構」中的不同選項。</block>
   <block id="2ca7c673d212fe0aac08f9e41ac63265" category="doc">NetApp元件</block>
@@ -409,18 +254,14 @@
   <block id="9111f621282fe2ae515f50178407689b" category="cell">DS460C</block>
   <block id="391fe0d4864f4c09c2d64335983c2f05" category="section-title">NetApp軟體授權選項</block>
   <block id="96246effc3080bfc941225e2e5109fbf" category="cell">NetApp軟體授權</block>
-  <block id="1fe3c9d0657c143dd35fa09974da425b" category="cell">產品編號</block>
   <block id="3e6e5e67314fd12a909a8973cb5f14fc" category="cell">技術規格</block>
   <block id="c7e8b7d7c123ac400c6d68b7843b0b6b" category="cell">如需更多授權資訊、請洽詢您的NetApp銷售團隊。</block>
-  <block id="201a759313c041bb34fef6573e5f716f" category="cell">NetApp軟體授權</block>
   <block id="1663bc309b0a1ddf5774db5075160041" category="section-title">NetApp支援授權選項</block>
   <block id="f263fbecd68ad30f21b5919fbdf5376c" category="paragraph">需要使用支援、而這些授權的零件編號會根據所選的選項而有所不同。SupportEdge Premium FlexPod</block>
   <block id="c453f553d73c506df5a01e3bd8ff03e0" category="cell">NetApp支援授權</block>
-  <block id="34ff3e9936bccd6963e8de9dc3992201" category="cell">CS -O2 - 4小時</block>
   <block id="767945ca8f676ff25ce389fce1df6c41" category="summary">Cisco是FlexPod 對此解決方案的運算和網路層做出重大貢獻的不二選擇。</block>
   <block id="db9522af2119f167ded30369ddb56248" category="doc">Cisco元件</block>
   <block id="ae19f05a830d151c2615c3f564dbf6e4" category="paragraph">Cisco是FlexPod 對此解決方案的運算和網路層做出重大貢獻的不二選擇。本節說明FlexPod 適用於Express的Cisco UCS和Cisco Nexus元件。</block>
-  <block id="6040e3d7bd65cad2d7a7ff96eb5d75a0" category="section-title">Cisco UCS B系列刀鋒伺服器選項</block>
   <block id="8c037680764aed3286d169f4dc48e6c9" category="cell">Cisco UCS B200 M5</block>
   <block id="0adca13cab777a69d4b054794aadc650" category="section-title">Cisco UCS C系列機架伺服器選項</block>
   <block id="a06b1914f736d12f90cd77c9af669070" category="cell">Cisco UCS C系列機架伺服器</block>
@@ -431,12 +272,6 @@
   <block id="b33eb2786fac85b1eee28de1d30760e6" category="cell">授權指南</block>
   <block id="1886a81b09b23ca47cd6f82505f6abb8" category="summary">此架構具有下列額外的互通性與支援相關需求FlexPod</block>
   <block id="8293f6bcd4201a597ff59371ddd65240" category="doc">其他需求</block>
-  <block id="91dc4bf3fa1913f70d7454cd22c9ee84" category="paragraph">這個架構具有下列額外的互通性與支援相關要求：FlexPod</block>
-  <block id="a6a9297dbac63058ed30dee682bd1ed3" category="list-text">NetApp必須列出並支援所有硬體與軟體元件<block ref="af8f174925a8fa1af2321b8d8c2fd047" category="inline-link-rx"></block>、<block ref="61c091fce51d2baac5905f12dd7d74cc" category="inline-link-rx"></block>和Cisco UCS硬體與軟體互通性對照表工具。</block>
-  <block id="50db735fd2ca91e20999ba15fc078612" category="list-text">所有設備都需要有效的支援合約、包括：</block>
-  <block id="90f32bd276bc840822daf44cfae64c18" category="list-text">Cisco設備的Smart Net Total Care（SmartNet）支援</block>
-  <block id="69f069c4c370b3ec1c58983efd30432c" category="list-text">支援NetApp設備的支援SupportEdge Advisor SupportEdge Premium</block>
-  <block id="e8334fc5affbcef2562719b53c247664" category="paragraph">如需詳細資訊、請參閱NetApp<block ref="af8f174925a8fa1af2321b8d8c2fd047" category="inline-link-rx"></block>。</block>
   <block id="28b69efdba58f83101dca273e330e519" category="summary">此產品的設計可提供靈活的基礎架構、涵蓋許多不同的元件和軟體版本。FlexPod</block>
   <block id="5eac17db957622119d1b18a268d7c299" category="doc">範例FlexPod</block>
   <block id="2415fc49fbe847187613f58fe7ec0149" category="paragraph">使用規則集做為建置或組裝有效FlexPod 的5.2組態的指南。本文所列的數字和規則、是FlexPod 進行列舉的最低需求。可視不同環境和使用案例的需求、在隨附的產品系列中加以擴充。</block>
@@ -445,86 +280,29 @@
   <block id="ec16d244107eb1b39aae2c83633061e7" category="summary">NetApp支援多種選用元件、以進一步強化FlexPod 「資料中心架構」。以下小節將概述選用元件。</block>
   <block id="010a6cb0eccdea35662ad711d443f2ec" category="doc">選用功能</block>
   <block id="1749d12df3df2319d3eee218a277ff83" category="section-title">MetroCluster</block>
-  <block id="1cc86d2d4461432b3b903fda17791ec4" category="paragraph">支援兩種不同的NetApp支援功能、可在雙節點或四節點叢集組態中持續提供可用度。FlexPod MetroCluster支援同步複寫以處理關鍵工作負載。MetroCluster它需要雙站台組態、並與Cisco交換器相連。站台之間的最大支援距離約為186英里（300公里）MetroCluster 、MetroCluster 而若為景點、則可增加至約435英里（700公里）。下圖分別說明FlexPod 採用NetApp MetroCluster 技術的「資料中心」、FlexPod 以及採用NetApp MetroCluster 產品介紹的「資料中心」、以及採用NetApp產品介紹的「資料中心」。</block>
-  <block id="0656baab6b20856ac35525618612d0a6" category="paragraph">下圖說明FlexPod 採用NetApp MetroCluster 技術的「資料中心」。</block>
-  <block id="ba2830cdd34f42264ebedc2885654b49" category="paragraph">下圖說明FlexPod 採用NetApp MetroCluster RID IP架構的「資料中心」。</block>
-  <block id="0a3ce874fb8892a0ef377541f9e22ae0" category="paragraph">從推出支援功能時起、即可在第三個站台部署支援程式、以監控整個流程、並在發生站台災難時、協助自動化非計畫性切換。ONTAP ONTAP MetroCluster</block>
-  <block id="31f3e5f374c9981c7f755a62df9aa5f7" category="paragraph">若要部署支援擴充第2層站台對站台連線功能的靜態IP解決方案、只要網路頻寬和交換器符合下圖所示的需求、您就可以將ISL和使用符合需求的交換器當作符合需求的可靠性IP交換器來節省成本。FlexPod MetroCluster FlexPod MetroCluster 說明FlexPod MetroCluster 採用ISL共享和相容交換器的靜態IP解決方案。</block>
   <block id="dcef946275e6f1b48b1149dd3ce50394" category="paragraph">下圖說明VXLAN Multi-Site架構和MetroCluster 支援FlexPod MetroCluster VXLAN Multi-Site架構部署的支援功能、以利實現一套支援整個IP解決方案的功能。</block>
   <block id="19fbeb4208b5ee6112e7e9897e7b98c6" category="list-text">VXLAN Multi-Site Fabric for FlexPod MetroCluster FeXIP解決方案</block>
   <block id="8b8fc1f77a77033a4f875b9d3c41cba0" category="list-text">適用於整個IP解決方案的IP儲存架構MetroCluster FlexPod MetroCluster</block>
   <block id="ab2679ebd7bb85b68b87dac6f34ef516" category="section-title">端點對端點FC-NVMe</block>
-  <block id="2ab8f358a48c3adedd1b97e6666780f8" category="paragraph">端點對端點FC-NVMe可無縫延伸客戶現有的SAN基礎架構、以利即時應用程式、同時提供更高的IOPS與處理量、並減少延遲。</block>
-  <block id="8dd9321868b043ece197778143e64bbf" category="paragraph">現有的32G FC SAN傳輸可用於同時傳輸NVMe和SCSI工作負載。</block>
-  <block id="a152d851b543a6ecd1fe98d32802053d" category="inline-link">推出端點對端點NVMe for FlexPod 《支援不全》白皮書。</block>
-  <block id="866ad53e2454a700c7d99a0f7dec80e8" category="paragraph">如需FlexPod 更多有關「效能優勢」的詳細資訊、請參閱<block ref="04abdacba4c78c835f0c4c4ee5dcd30c" category="inline-link-rx"></block></block>
-  <block id="37baea605e04392e4eb7f7acb8348221" category="inline-link">TR-4684：使用NVMe實作及設定現代化SAN</block>
-  <block id="5c951adc7211c25ede0a0809548d1c04" category="section-title">FC SAN透過Cisco MDS開機</block>
-  <block id="fb29d3ee85e306f56ff802135b3407c0" category="paragraph">為了使用專屬的SAN網路來提升擴充性、FlexPod 透過Cisco MDS交換器和Nexus交換器支援FC、例如Cisco Nexus 93108Tc-FX。Cisco MDS的FC SAN開機選項具有下列授權與硬體需求：</block>
   <block id="363c90b1f8508b80dbb831bafb51f838" category="list-text">每個NetApp儲存控制器至少有兩個FC連接埠；每個SAN架構有一個連接埠</block>
-  <block id="60246519d6b5e71db9f0f46abd978c9d" category="list-text">每個NetApp儲存控制器上都有FC授權</block>
-  <block id="8ac48ba22005335c0251a5d0227b2628" category="list-text">NetApp支援的Cisco MDS交換器和韌體版本<block ref="af8f174925a8fa1af2321b8d8c2fd047" category="inline-link-rx"></block></block>
-  <block id="3d5fa0462622cd686e658bba2fc20c1a" category="inline-link">《VMware vSphere 6.7U1 Fibre Channel and iSCSI Deployment Guide》（VMware vSphere 6.7U1資料中心光纖通道與iSCSI部署指南）FlexPod</block>
-  <block id="3b3d1d2f7abd63954a15688e8a4e24d3" category="paragraph">如需MDS型設計的詳細指引、請參閱CVD<block ref="ad9a7677aad1b48bdd387a9d948f5366" category="inline-link-rx"></block>。</block>
-  <block id="b3189dc5112e1aea00e1b38212c38c3c" category="paragraph">下圖顯示FlexPod 採用MDS連線功能的FC的「資料中心」範例、FlexPod 以及使用Cisco Nexus 93180YC-FX的「FC的「資料中心」。</block>
   <block id="59a38bf60b7f9be1f0dfe6745f368906" category="section-title">使用Cisco Nexus開機FC SAN</block>
-  <block id="2adeb65903030be4bec92c766879aba2" category="paragraph">傳統FC SAN開機選項具有下列授權與硬體需求：</block>
-  <block id="e0da445b4eff94bccbea104ee702f3a7" category="list-text">在Cisco Nexus 5000系列交換器中執行FC分區時、需要Cisco Nexus 5000系列交換器的儲存傳輸協定服務套件授權（FC_feature_pkg）。</block>
-  <block id="a4cf0dd9ef1ca40c4fde9a6f91921ed3" category="list-text">在Cisco Nexus 5000系列交換器中執行FC分區時、網路互連與Cisco Nexus 5000系列交換器之間需要SAN連結。如需額外的備援、建議在連結之間使用SAN連接埠通道。</block>
-  <block id="16fca890289b8efd728604b87c588123" category="list-text">Cisco Nexus 5010、5020和5548P交換器需要獨立的FC或通用連接埠（UP）模組、才能連線至Cisco UCS Fabric互連和NetApp儲存控制器。</block>
-  <block id="9be1aecdadd58d81725cb339cca08603" category="list-text">Cisco Nexus 93180YC-FX需要FC功能授權、才能啟用FC。</block>
-  <block id="b8e41dffc8e7dd9ec74f6eb5dcc910b8" category="list-text">每個NetApp儲存控制器至少需要兩個8/16/32GB FC連接埠才能連線。</block>
-  <block id="8dd283494dac26aa50ab84109f74508e" category="list-text">NetApp儲存控制器需要FC授權。</block>
-  <block id="62e88fb8a63dd111a743e5c19ae1096e" category="admonition">除非在光纖互連中執行FC分區、否則使用Cisco Nexus 7000或9000系列交換器會排除傳統FC的使用。在這種情況下、不支援連接至交換器的SAN上行鏈路。</block>
-  <block id="f8713304927020ea347060aec580ea35" category="paragraph">下圖顯示FC連線組態。</block>
-  <block id="97330b96eaa974833304345551079dba" category="section-title">FCoE SAN開機選項</block>
-  <block id="da358d196e032939c1d6e05d24a49bba" category="paragraph">FCoE SAN開機選項具有下列授權與硬體需求：</block>
-  <block id="9102b25e784f2c3b25669254eb376f6e" category="list-text">在交換器中執行FC分區時、需要Cisco Nexus 5000或7000系列交換器的儲存傳輸協定服務套件授權（FC_feature_pkag）。</block>
-  <block id="78cda1d3ea0448a1ab8846e3ac4bd8d8" category="list-text">在交換器中執行FC分區時、Fabric互連和Cisco Nexus 5000或7000系列交換器之間需要FCoE上行鏈路。如需額外的備援、也建議在連結之間使用FCoE連接埠通道。</block>
-  <block id="c3562a028f7b510125d4f5e9fa651d31" category="list-text">除非有內建統一化目標介面卡2（UTA2）連接埠、否則每個NetApp儲存控制器都需要至少一個雙埠統一化目標介面卡（UTA）附加卡來進行FCoE連線。</block>
-  <block id="b427afc364b735d889b393781144c90c" category="list-text">此選項需要NetApp儲存控制器上的FC授權。</block>
-  <block id="83441ec61ed6ad88ab91bb7e6082ee51" category="list-text">如果您在交換器中使用Cisco Nexus 7000系列交換器、並執行FC分區、則需要能夠支援FCoE的線路卡。</block>
-  <block id="261ba80bb386c72aed6ba527853b21b7" category="admonition">除非在光纖互連中執行FC分區、且儲存設備連接至光纖與應用裝置連接埠互連、否則使用Cisco Nexus 9000系列交換器將無法使用FCoE。在這種情況下、不支援連接至交換器的FCoE上行鏈路。</block>
-  <block id="05e409ebf046f9a40ca60388a2be0076" category="paragraph">下圖顯示FCoE開機案例。</block>
   <block id="710a236c4f9d25ef81dee7911c0555af" category="section-title">iSCSI開機選項</block>
-  <block id="2c7548f97e48c911bcbb3e0130d15f86" category="paragraph">iSCSI開機選項具有下列授權與硬體需求：</block>
-  <block id="36b511e831f42b982c85c690747e2e4f" category="list-text">NetApp儲存控制器需要iSCSI授權。</block>
-  <block id="ed7796b1cf578fb04111fb233c0aae03" category="list-text">Cisco UCS伺服器中需要能夠開機iSCSI的介面卡。</block>
-  <block id="f534904d62956c1645ab9932e9b1cb3d" category="list-text">需要在NetApp儲存控制器上使用雙埠10Gbps乙太網路介面卡。</block>
-  <block id="404ed1c1ed1702d82d12363a0e392c05" category="paragraph">下圖顯示使用iSCSI開機的純乙太網路組態。</block>
-  <block id="d2f6446b6b3f47632f1deaf2d8c221b0" category="section-title">Cisco UCS直接連接NetApp儲存設備</block>
-  <block id="c0ef32cad3749dcf0d6c8b47df5109ec" category="paragraph">NetApp AFF 的功能與FAS 功能不需使用任何上游SAN交換器、即可直接連接至Cisco UCS網路互連。</block>
-  <block id="142dc1854652e6695ce6b217ad1f2b80" category="paragraph">四種Cisco UCS連接埠類型可用於直接連線至NetApp儲存設備：</block>
-  <block id="acaf96168cee434e28ce5d2b1571a4fa" category="list-text">*儲存FC連接埠。*直接將此連接埠連接至NetApp儲存設備上的FC連接埠。</block>
-  <block id="88dafad8f46be7584d5b048563d89eca" category="list-text">*儲存FCoE連接埠。*直接將此連接埠連接至NetApp儲存設備上的FCoE連接埠。</block>
-  <block id="6e7ee3849033bd5894be028837d883d9" category="list-text">*設備連接埠。*直接將此連接埠連接至NetApp儲存設備上的10GbE連接埠。</block>
-  <block id="03d413de73b73340cf039e596b5d1b38" category="list-text">*統一化儲存連接埠。*直接將此連接埠連接至NetApp UTA。</block>
   <block id="8eeb61085c2875d10d1313ceec3b6e11" category="paragraph">授權與硬體需求如下：</block>
   <block id="5f5f0468ba7ae0249bf86ad607d1d19b" category="list-text">需要NetApp儲存控制器上的傳輸協定授權。</block>
-  <block id="ce5aecd21f88655e2c57985f81a92313" category="list-text">伺服器需要Cisco UCS介面卡（啟動器）。如需支援的Cisco UCS介面卡清單、請參閱NetApp<block ref="af8f174925a8fa1af2321b8d8c2fd047" category="inline-link-rx"></block>。</block>
   <block id="3fc4ac0d90bc615e6c3de1bfea95738f" category="list-text">需要NetApp儲存控制器上的目標介面卡。</block>
-  <block id="ec0c846d2a1dea3ac8359dd242fcdd7b" category="paragraph">下圖顯示FC直接連線組態。</block>
   <block id="fcbd19b726fdd6160dfe2ab43f285a55" category="paragraph">* 附註： *</block>
   <block id="4fd0477d8b5a56d0dee7234ecb79a7a4" category="list-text">Cisco UCS配置為FC交換模式。</block>
-  <block id="1ba2efab5627ca14b795be8462054b47" category="list-text">從目標到架構互連的FCoE連接埠、均設定為FCoE儲存連接埠。</block>
   <block id="f9a730a3794fd2933304db4fafe54be5" category="list-text">從目標到架構互連的FC連接埠會設定為FC儲存連接埠。</block>
-  <block id="152f4ff3e916a45e510773937ae7ee72" category="paragraph">下圖顯示iSCSI/Unified IP直接連線組態。</block>
   <block id="bbbb91a0e5cabb6ca355b82a91b464f1" category="list-text">Cisco UCS配置為乙太網路交換模式。</block>
   <block id="28145f137c79e8bafa2cfce3aa095b77" category="list-text">從目標到光纖互連的iSCSI連接埠、會設定為iSCSI資料的乙太網路儲存連接埠。</block>
-  <block id="038cbaf96928fa185557eb89b7e24b51" category="list-text">從目標到架構互連的乙太網路連接埠、會設定為CIFS/NFS資料的乙太網路儲存連接埠。</block>
   <block id="d1ee504272be66b0e2c5503627e6ba8a" category="summary">以下列出FlexPod 有關整合功能組態的連線需求。</block>
   <block id="77495e745fe2123250999bee6aa73027" category="doc">連線需求</block>
   <block id="9fa25f8311910b1006f80d391d0a3536" category="paragraph">這個組態具有下列連線需求：FlexPod</block>
-  <block id="e795892d600814d6840b0ee7736d41f5" category="list-text">所有元件都需要個別的100Mbps乙太網路/1Gb乙太網路頻外管理網路。</block>
   <block id="5b779adbc97d83ba730345c0da406e99" category="list-text">NetApp建議您在整個環境中啟用巨型框架支援、但不需要。</block>
   <block id="402b72870e5c312873b1fff0d32a5515" category="list-text">核心FlexPod 不需在核心不整組件之間放置額外的設備。</block>
   <block id="36f60790070b535bbd9bc08abb34d9ac" category="paragraph">上行鏈路連線：</block>
-  <block id="489d802b7e6f447e30c1735cd6577bac" category="list-text">NetApp儲存控制器上的連接埠必須連接至Cisco Nexus 5000、7000或9000系列交換器、才能支援虛擬連接埠通道（VPC）。</block>
-  <block id="5b7a4e6e88cd460d8c69be00a540d9d1" category="list-text">從Cisco Nexus 5000、7000或9000系列交換器、到NetApp儲存控制器、都需要VPC。</block>
-  <block id="f9f759bb93d54018355434b3c45e38e0" category="list-text">從Cisco Nexus 5000、7000或9000系列交換器到光纖互連、均需要VPC。</block>
   <block id="b2469591d6211e059240da0b795c9505" category="list-text">VPC至少需要兩個連線。vPC內的連線數量可根據應用程式負載和效能需求來增加。</block>
   <block id="ee04d510d23f99eb7cd14e2c4655c7ab" category="paragraph">直接連線：</block>
-  <block id="6c22993a11431c3c2cff3a49d925a3cf" category="list-text">可將直接連接至光纖互連的NetApp儲存控制器連接埠分組、以啟用連接埠通道。此組態不支援VPC。</block>
   <block id="e16cf64a7d57cdeabb90fba537f98951" category="list-text">建議使用FCoE連接埠通道來進行端點對端點FCoE設計。</block>
   <block id="98ec4d626ba45dc556ab2fc703f27f3c" category="paragraph">SAN開機：</block>
   <block id="9629f8da11dca6bad461709c5940ef48" category="list-text">支援使用iSCSI、FC或FCoE傳輸協定的SAN開機架構為設計核心。FlexPod使用從SAN開機技術、可為資料中心基礎架構提供最靈活的組態、並在每個基礎架構元件中提供豐富的功能。雖然從SAN開機是最有效率的組態、但從本機伺服器儲存設備開機是有效且受支援的組態。</block>
@@ -543,7 +321,6 @@
   <block id="7a4e9cb5597c0c38152cde29a5ffea15" category="list-text">NetApp文件</block>
   <block id="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link"><block ref="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link-rx"></block></block>
   <block id="2e85fc867cab94d246e0bf6043b361cd" category="paragraph"><block ref="2e85fc867cab94d246e0bf6043b361cd" category="inline-link-rx"></block></block>
-  <block id="bab7ecc6925e954c51d985d3cfebfa4b" category="summary">NetApp ONTAP 支援軟體安裝在每FAS 個NetApp功能或AFF 功能完善的系統上。通過驗證、可搭配使用支援不中斷營運、不中斷營運升級、以及敏捷資料基礎架構的支援、藉以提供可高度擴充的儲存架構。FlexPod ONTAP</block>
   <block id="9c58e11f96200548fd2f5932b391509a" category="inline-link">資料管理軟體ONTAP</block>
   <block id="0abcd1fb272492f917788b846dcc6151" category="summary">本文件所述的一套規則定義了這個架構。FlexPod硬體元件和軟體組態必須由Cisco硬體相容清單（HCL）和NetApp IMT 支援。</block>
   <block id="4751485bb758a4c3a478dcfdc8a7c2d3" category="paragraph">例如、如果軟體、硬體和組態符合本文件所定義的準則、則完全支援新增額外的儲存控制器或Cisco UCS伺服器、以及將軟體升級至較新版本。</block>
@@ -556,327 +333,79 @@
   <block id="d0d06eda407421af033b4dafae914606" category="list-text">NetApp支援通訊</block>
   <block id="533151e66e5b86712b1ed364dae80201" category="inline-link"><block ref="533151e66e5b86712b1ed364dae80201" category="inline-link-rx"></block></block>
   <block id="7f4487add763f6d79d0fc6c55e24c297" category="paragraph"><block ref="7f4487add763f6d79d0fc6c55e24c297" category="inline-link-rx"></block></block>
-  <block id="9efbc1b64cbf1bbaf08130fd4c478321" category="inline-link"><block ref="9efbc1b64cbf1bbaf08130fd4c478321" category="inline-link-rx"></block></block>
-  <block id="7c0a7683f465ed7a12ac2e6625ed7e01" category="paragraph"><block ref="7c0a7683f465ed7a12ac2e6625ed7e01" category="inline-link-rx"></block></block>
-  <block id="edd1ab4aa75a5fec969c05a8b30f7159" category="inline-link"><block ref="edd1ab4aa75a5fec969c05a8b30f7159" category="inline-link-rx"></block></block>
-  <block id="6fd7e3db6d378aee0323936946aaa53e" category="paragraph"><block ref="6fd7e3db6d378aee0323936946aaa53e" category="inline-link-rx"></block></block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="list-text">NetApp支援</block>
   <block id="d9403ab754cbeedf8a7935bb3403a21c" category="inline-link"><block ref="d9403ab754cbeedf8a7935bb3403a21c" category="inline-link-rx"></block></block>
   <block id="b1eccea304be099b9f384b356732b4bb" category="paragraph"><block ref="b1eccea304be099b9f384b356732b4bb" category="inline-link-rx"></block></block>
   <block id="265cb1cb36b45d56ecabc1a7ae1d9999" category="doc">電源和纜線需求</block>
   <block id="8705e6260a0e655d556905051823c279" category="section-title">電力需求</block>
-  <block id="f323497706a6894e56c4fb31bf24ee1f" category="cell">Cisco UCS機箱</block>
-  <block id="8812cde5e908177e098dc3cdf6a43018" category="cell">Cisco UCS 5108</block>
-  <block id="4613e4d447f1eb6eb41bf7bda7e1c9d2" category="cell">NetApp FAS 產品控制器</block>
   <block id="83f119142847adbdca70cbff3603d283" category="cell">FAS8020</block>
-  <block id="b8e3a6e95fb205edec4a059d7799613b" category="section-title">最低纜線需求</block>
-  <block id="7d9af27db9bccf9d6b3189d0a3bd7654" category="cell">需要纜線</block>
   <block id="2d58d545f486dcbdc0b85f8c785313de" category="paragraph">NetApp是一款靈活的解決方案、可讓客戶同時使用Cisco和NetApp目前銷售的現有設備和新設備。FlexPod有時、Cisco和NetApp的特定設備機型會被指定為停產。</block>
   <block id="0378229cf8788dc6084fd2764ea5edb6" category="paragraph">即使這些機型已經不再提供、在銷售結束日期之前購買這些機型的客戶仍可在FlexPod 不支援的情況下使用該設備。</block>
-  <block id="d85ed2758872ba6dd40165ac11bdd1b4" category="summary">各種Cisco Nexus產品可做為特定FlexPod 功能部署的交換元件。這些選項大多採用傳統的Cisco Nexus OS或NX-OS軟體。Cisco Nexus系列交換器在產品線內提供各種功能。本文件稍後將詳細說明這些功能。</block>
   <block id="bb6b688677f4a73a78a8f4156d7547be" category="doc">Cisco Nexus交換操作模式</block>
-  <block id="4e46bfde21354f6f7576fe20388d6cf7" category="paragraph">Cisco在軟體定義網路空間提供的產品稱為以應用程式為中心的基礎架構（ACI）。Cisco Nexus產品線支援ACI模式、也稱為Fabric模式、是Cisco Nexus 9300系列。這些交換器也可以部署在NX-OS或獨立模式。</block>
   <block id="2d69fbe8f695cb624ffa9d6ef64df3d1" category="paragraph">Cisco ACI的目標對象是著重於特定應用程式需求的資料中心部署。應用程式是透過一系列的設定檔和合約進行個體化、這些設定檔和合約允許從主機或虛擬機器（VM）一路透過網路連線到儲存設備。</block>
-  <block id="25fe53a84257a2f58d9af2fd1a63ffb4" category="paragraph">通過Cisco Nexus交換器兩種操作模式的驗證。FlexPod如需ACI和NX-OS模式的詳細資訊、請參閱下列Cisco頁面：</block>
   <block id="33be136ba88311dd15cb9308e6930766" category="inline-link">以Cisco應用程式為中心的基礎架構</block>
   <block id="a13cc5afeaa62ed39840c636da4e69a8" category="list-text"><block ref="a13cc5afeaa62ed39840c636da4e69a8" category="inline-link-rx"></block></block>
   <block id="c38f85f1f24f1064b7379d7e2dcc56e1" category="inline-link">Cisco NX-OS軟體</block>
-  <block id="7bf3f23054089d5e369cd3c3705f1519" category="list-text"><block ref="7bf3f23054089d5e369cd3c3705f1519" category="inline-link-rx"></block></block>
   <block id="fdcc3f708755fca6b29fa368ab162e64" category="summary">本節將說明FlexPod 選用的功能以供選用。</block>
   <block id="3fbddd58f80c4f4429699e25eb1b4a26" category="doc">選用功能</block>
   <block id="9d1d327b4caeac1693e74653e587a692" category="list-text">在NetApp儲存控制器上啟動的iSCSI授權/功能</block>
   <block id="823d1f95cdc3fc760dea851e9b5a841e" category="list-text">NetApp儲存控制器HA配對中每個節點上都有一個雙埠10Gbps乙太網路介面卡</block>
   <block id="2eaca8361e7a9c8e1b1a8befa3010f93" category="list-text">Cisco UCS伺服器中能夠開機的介面卡</block>
   <block id="2fe9f1b02d69ad8ef2e636eb4f330189" category="summary">本文件提供FlexPod 有關《不支援不支援的技術規格》。</block>
-  <block id="d0ed65e54397020ba99377dad07d0960" category="inline-link">TR-4036：FlexPod 《資料中心技術規格》</block>
   <block id="ec80c81f43eaed2db319aaaddeb1b47c" category="list-text">*《Express》*此平台是一款精巧的融合式基礎架構、專為遠端辦公室和邊緣使用案例而設計。FlexPod</block>
-  <block id="2a86267621fe34bc25574c8470106b4d" category="summary">供應電源和纜線的需求最低。FlexPod</block>
   <block id="4e3a8a01051fe088c7981d79c5a6a919" category="paragraph">根據安裝「支援資料中心」組態的位置、FlexPod 對「支援資料中心」的電源需求各有不同FlexPod 。</block>
   <block id="8e1b6aff03f733f3b26f0e7b61593417" category="inline-link-macro">技術規格與參考資料：硬體元件</block>
   <block id="2276f42196426e7ffa841b60288ac750" category="paragraph">如需所需最大電力的詳細資料、以及其他詳細電力資訊、請參閱本節所列每個硬體元件的技術規格 <block ref="9a2a697585fdef77754c86c0a60b419a" category="inline-link-macro-rx"></block>。</block>
   <block id="26ec0e98e62ca21a95a0b2133cb60dbc" category="inline-link">Cisco UCS電源計算機</block>
-  <block id="5154769badca7c76401420b48040f9ec" category="paragraph">如需詳細的Cisco UCS電源資料、請參閱<block ref="c31447871707541abd4f309341ace6d4" category="inline-link-rx"></block>。</block>
-  <block id="cccbde82a4af24fd37fd545850d2367e" category="paragraph">如需NetApp儲存控制器電源資料、請參閱<block ref="f1e26811435ae68dfeade1ff7af15f19" category="inline-link-rx"></block>。在「Platforms（平台）」下、選取您要用於組態的儲存平台（FAS/V系列或AFF VMware）。選取ONTAP 「版本與儲存控制器」、然後按一下「顯示結果」按鈕。</block>
-  <block id="2442a4697c099db44d3103a71e53ae39" category="paragraph">每FlexPod 次部署「Datacenter」時、所需的纜線和介面卡數量和類型會有所不同。纜線類型、收發器類型和編號是在設計過程中根據您的需求而決定。下表列出所需的最低纜線數量。</block>
   <block id="3c02a379965ab0dfcd77b1c484450433" category="cell">硬體</block>
-  <block id="aa6391029dac576e33b6ec5bc7a4dc68" category="cell">機型編號</block>
-  <block id="ecca4a2f92a07ce49322f868487c9cff" category="cell">每個Cisco UCS 2104XP、2204XP或2208XP模組至少兩條雙軸纜線</block>
-  <block id="848f615d47278af40684859458856ea6" category="cell">Cisco UCS Fabric互連</block>
-  <block id="d9f5921440887fd1a4cfc0e622e6bea2" category="list-text">兩條Cat5e纜線、用於管理連接埠</block>
-  <block id="832774fb74c32893b8c0810d5f1eb19c" category="list-text">兩條Cat5e纜線、適用於每對光纖互連的L1、L2互連</block>
-  <block id="9d19f2a4224bf1d201de01672d473627" category="list-text">每個光纖互連至少四條雙軸纜線</block>
-  <block id="53482f0901716b952f44e22748f1fba5" category="list-text">每個光纖互連至少四條FC纜線</block>
-  <block id="c8e951e468e777780ce5eba004b6b12b" category="cell">Cisco UCS 6332-16UP</block>
-  <block id="b3c448c477485c2f3621684c6ef9ecd6" category="cell">Cisco UCS 6332</block>
-  <block id="61e0ce3cfc67ce731c66b7d2a8af702d" category="list-text">兩個10/100/1000Mbps管理連接埠</block>
-  <block id="9fbb0e24b4abcf564a865275b9d66f03" category="list-text">每個光纖互連至少兩條雙軸纜線</block>
-  <block id="db4325a4078ac076ae37adbc28b8a5f8" category="cell">Cisco Nexus 5000與7000系列交換器</block>
-  <block id="f41b139a23cfe5eb6c2e2addd9b9f449" category="cell">Cisco Nexus 5000系列</block>
-  <block id="f40b61715e5aeff7c0f9a8fddf2df8bf" category="list-text">每個交換器至少有兩條10GbE光纖或雙軸纜線</block>
-  <block id="9b87ad536589ff66863f945fb07a3c0a" category="list-text">每個交換器至少有兩條FC纜線（如果需要FC/FCoE連線）</block>
-  <block id="e797733958b15118f5082ef142650c52" category="cell">Cisco Nexus 7000系列</block>
-  <block id="8bc869d935cafeabb0db373b1df89a7e" category="cell">每個交換器至少有兩條10GbE纜線</block>
-  <block id="bda08b0a800dd4af3db2fe0f0634b257" category="list-text">每個儲存控制器一對SAS或SATA纜線</block>
-  <block id="9ca54d8270a7d0e507f04fb111ce77a6" category="list-text">每個控制器至少有兩條FC纜線（如果使用舊FC）</block>
-  <block id="19a5fa9dc6b6afa23392586259192953" category="list-text">每個控制器至少兩條10GbE纜線</block>
-  <block id="c6f3f098824fe6a9f2aadf1973613020" category="list-text">每個控制器至少有一條GbE纜線可供管理</block>
-  <block id="49597b464af86a4f02bc4aa78b26e0c4" category="list-text">對於零組件、每對叢集互連交換器需要八條短雙軸纜線ONTAP</block>
-  <block id="98f0c2f32953481ae499f480eb9d209b" category="cell">每個磁碟櫃有兩條SAS、SATA或FC纜線</block>
   <block id="0a10ffb3d8f2b29b2aed44120c4b52ee" category="cell">NS224</block>
-  <block id="93e9704c9fe702dc293e36aa0c961785" category="cell">每個磁碟櫃兩條100Gbps銅線</block>
   <block id="9498c273a77b43c31823b8399ab32e23" category="summary">「資料中心」組態具有最低的硬體需求、包括但不限於交換器、網路互連、伺服器和NetApp儲存控制器。FlexPod</block>
-  <block id="69c265fd63403bd4b4f765be99701902" category="paragraph">您必須使用Cisco UCS伺服器。C系列和B系列伺服器均已用於通過驗證的設計。Cisco Nexus Fabric延伸器（FEXs）可搭配C系列伺服器選用。</block>
   <block id="00e96d7fed5b7baaf08becae2e06f046" category="paragraph">下列最低硬體需求為基礎：FlexPod</block>
-  <block id="1d18f927dff15e13fe42492b6d1509bd" category="list-text">備援組態中的兩個Cisco Nexus交換器。此組態可由Cisco Nexus 5000、7000或9000系列的兩個備援交換器組成。這兩個交換器應為同一機型、且應設定為相同的操作模式。</block>
-  <block id="ef10518f46eae617bee81f1ae0e1250b" category="paragraph">如果您要部署ACI架構、則必須遵守下列額外要求：</block>
-  <block id="780d235b18d05a8793ad5c2f0fa0b32a" category="list-text">將Cisco Nexus 9000系列交換器部署在分葉式拓撲中。</block>
-  <block id="f7281f7e17f7a347c138229d7ae5bcd1" category="list-text">使用三個Cisco應用程式原則基礎架構控制器（APIC）。</block>
-  <block id="b6fd2efcbbc178dbfb5a4daf614c2ed8" category="list-text">兩個Cisco UCS 6200、6300或6400系列光纖互連、採用備援組態。</block>
-  <block id="317fff2f4edcb6e959632b26edbdf95f" category="list-text">Cisco UCS伺服器：</block>
-  <block id="b94f640a0f8304b34cec24e1f5f0bafa" category="list-text">如果解決方案使用B系列伺服器、則一個Cisco UCS 5108 B系列刀鋒伺服器機箱、外加兩個Cisco UCS B系列刀鋒伺服器、外加兩個2104、2204/8、2408或2304 I/O模組（IOM）。</block>
-  <block id="1887d9d6b7314b8c1dd849fca8e56223" category="list-text">如果解決方案使用C系列伺服器、則有兩部Cisco UCS C系列機架伺服器。</block>
-  <block id="99c0ea390e48259a4fbf2269863d83b2" category="paragraph">對於Cisco UCS C系列機架伺服器的大型部署、您可以選擇一對2232PP FEX模組。然而、2232PP並不是硬體需求。</block>
-  <block id="bb649be95dbc5df4aef3ad2ccb562f87" category="list-text">高可用度（HA）配對組態中的兩個NetApp儲存控制器：</block>
-  <block id="b84c25a0a6333d1b6ec82954312075f9" category="paragraph">此組態可由任何支援的NetApp FAS 功能、AFF 功能區或ASA系列儲存控制器所組成。請參閱<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 申請取得支援FAS 的功能完整的功能表、包括支援的功能完整、AFF 功能完整、功能完整、功能完整ASA 、功能完整、功能完整。</block>
-  <block id="49f8002032516f551341370d8bbb87c4" category="list-text">HA組態需要每個控制器兩個備援介面才能存取資料；介面可以是FCoE、FC或10/25/100Gb乙太網路（GbE）。</block>
-  <block id="0052efad5d260a806d52bfcfe640936f" category="inline-link">交換器</block>
-  <block id="6f13026c20a1afa20a978290723178d9" category="list-text">如果解決方案使用NetApp ONTAP 解決方案、則需要NetApp核准的叢集互連拓撲。如需詳細資訊、請參閱<block ref="8e1fea0ef6ffd9e11ab75b3d4af03217" category="inline-link-rx"></block> NetApp Hardware Universe 解決方案索引標籤。</block>
-  <block id="1e43cedc7bbfa39913e13dd030f51171" category="list-text">如果解決方案使用ONTAP 支援功能、則每個控制器至少需要兩個額外的10/25/100GbE連接埠、才能存取資料。</block>
-  <block id="e3313d2a580d4ea7c09b15c5c979da6a" category="list-text">對於具有兩個節點的叢集、您可以設定雙節點無交換器叢集。ONTAP</block>
-  <block id="5482261cd927b97915d0cb11f2a92148" category="list-text">對於具有兩個以上節點的叢集、需要一對叢集互連交換器。ONTAP</block>
-  <block id="9ae783a3ab636618c5130cf4e28efd11" category="list-text">一個具有任何支援磁碟類型的NetApp磁碟櫃。請參閱的「磁碟櫃」索引標籤 <block ref="910181e0dcbc3888beac11d697ebd30b" category="inline-link-macro-rx"></block> 以取得目前支援的磁碟櫃模型清單。</block>
-  <block id="1ef185e46b13bb104f42d1fb9f826d23" category="summary">Cisco在FlexPod 整個解決方案運算和網路層的設計與架構上、貢獻良多。本節說明FlexPod 適用於下列項目的Cisco UCS和Cisco Nexus選項：支援Cisco UCS B系列和C系列伺服器。FlexPod</block>
   <block id="de60a3b6d2d9d01bbfeab52fc594ec67" category="section-title">Cisco UCS網路互連選項</block>
   <block id="ef0f0838a1b496d4fea848aea1698da9" category="paragraph">在整個架構中、需要備援架構互連FlexPod 。當您將多個Cisco UCS機箱新增至一對架構互連時、請記住、環境中的機箱數量上限取決於架構和連接埠限制。</block>
   <block id="471ff51c89daf6e35e8e2b5111039744" category="inline-link">NetApp IMT</block>
-  <block id="318f138fa0264ac83bccdadb9a741c74" category="paragraph">下表所示的零件編號適用於基礎架構互連。不包括電源供應器（PSU）或SFP+、QSFP+或擴充模組。支援其他網路互連、請參閱<block ref="9276805d6b0dd5ecb28d9ad89af92eab" category="inline-link-rx"></block> 以取得完整清單。</block>
   <block id="db0e4adb6b14fca144bc17c464895b9a" category="cell">Cisco UCS網路互連</block>
-  <block id="39693a717a804a8e913fda9c1dab3212" category="cell">Cisco UCS 6332UP</block>
-  <block id="423106031bb6694f75117461e6db60c7" category="cell">UCS FI-6332 UP</block>
-  <block id="9776a64d1b608fa1151b36f27fcc7f10" category="inline-link">Cisco UCS 6332光纖互連</block>
-  <block id="a3633b49213780f42ef900742f0218e1" category="cell"><block ref="a3633b49213780f42ef900742f0218e1" category="inline-link-rx"></block></block>
   <block id="8c9d4136a33f808a19d3c13be2e5d457" category="cell">UUCS FI-6454.U</block>
   <block id="73cb18685196dda6a7d92edad4502238" category="inline-link">Cisco UCS 6454光纖互連</block>
-  <block id="597028805d5fc29eb8fc0b0fe4a042a6" category="cell"><block ref="597028805d5fc29eb8fc0b0fe4a042a6" category="inline-link-rx"></block></block>
-  <block id="3863e759ee73a049ebf755a3e0b6024b" category="paragraph">Cisco UCS 6454系列提供線路速率、低延遲、無損10/25/40/100GbE乙太網路與FCoE連線、以及能夠以太網路或FC運作的統一化連接埠。44個10/25Gbps連接埠可運作為10Gbps或25Gbps整合式乙太網路、其中8個是統一化連接埠、可在FC上以8/16/32Gbps的速度運作。四個連接埠以1/10/25Gbps的速度運作、以提供傳統連線功能、六個QSFP連接埠則可做為40/100Gbps上行鏈路連接埠或中斷連接埠。您可以與支援100Gbps介面卡的NetApp儲存控制器建立100Gbps端點對端點網路連線。如需介面卡與平台支援、請參閱<block ref="ad8f1191d953a17400c53bce24cbde3e" category="inline-link-rx"></block>。</block>
-  <block id="98438418cdaae5063d71a0ac3c1ba54c" category="paragraph">如需連接埠的詳細資訊、請參閱<block ref="4bd8fc9b1d6bda80f88dfb2546309bcb" category="inline-link-rx"></block> 資料表：</block>
-  <block id="f861c6faa03ab5a91c9162af941f6f2f" category="inline-link">Cisco 100GBASE-QSFP模組資料表</block>
-  <block id="9a0d430638996c3cedd643e64ad98961" category="paragraph">如需100GB QSFP資料模組的技術規格、請參閱<block ref="31cadc2c30bc37057ce536aab7d70124" category="inline-link-rx"></block>。</block>
-  <block id="3e37f9beefaff96ae0e21d0fd1d100ff" category="section-title">Cisco UCS B系列機箱選項</block>
-  <block id="f85105fc4cfadc7cf91b4863b97980f2" category="paragraph">若要使用Cisco UCS B系列刀鋒、您必須擁有Cisco UCS B系列機箱。下表說明Cisco UCS B系列機箱選項。</block>
-  <block id="401ed71e08074d66f30d569c7c0e14a6" category="cell">Cisco UCS B系列機箱</block>
-  <block id="e9f91f6c582fc9c06492922408255841" category="cell">N20-C508</block>
   <block id="808b1571f5756e4a697697421e6df46d" category="inline-link">Cisco UCS 5100系列刀鋒伺服器機箱</block>
-  <block id="2f81ceda3b0bfc238f7f690e7473830e" category="cell"><block ref="2f81ceda3b0bfc238f7f690e7473830e" category="inline-link-rx"></block></block>
-  <block id="a6838277329036ad65d76f3631b28615" category="paragraph">每個Cisco UCS 5108刀鋒機箱必須有兩個Cisco UCS 2200/2300/2400系列IOM、才能提供與光纖互連的備援連線。</block>
-  <block id="a657b94e4c9e579fa82aa858106b19f3" category="paragraph">Cisco UCS B系列刀鋒伺服器提供半寬和全寬型、並提供各種CPU、記憶體和I/O選項。下表所列的產品編號適用於基礎伺服器。它們不包括CPU、記憶體、磁碟機或夾層卡。有多種組態選項可供使用FlexPod 、而且支援在架構中使用。</block>
-  <block id="58f718ee214b0714734639e81128fbb3" category="cell">Cisco UCS B系列刀鋒伺服器</block>
-  <block id="909bf134633f8636fb0e6c6fc6a76084" category="cell">UCSB-B200-M6.</block>
-  <block id="afdbf5a2581f3aef46bbb083b10290e8" category="paragraph">舊有幾代Cisco UCS B系列刀鋒伺服器FlexPod 可在支援的情況下用於整個架構<block ref="61c091fce51d2baac5905f12dd7d74cc" category="inline-link-rx"></block>。Cisco UCS B系列刀鋒伺服器也必須擁有有效的SmartNet支援合約。</block>
   <block id="758a54dd9d8861be843cf6331b44fb65" category="section-title">Cisco UCS X系列機箱選項</block>
   <block id="20d19d58ae8a642ec1baf9555bf92a68" category="paragraph">若要使用Cisco UCS X系列運算節點、您必須擁有Cisco UCS X系列機箱。下表說明Cisco UCS X系列機箱選項。</block>
   <block id="6f1e9e46dcfc04fdcfdc63db9a3862ba" category="cell">Cisco UCS X系列刀鋒伺服器</block>
-  <block id="0d94aa8c894a9392de95561a747c3f8d" category="cell">Cisco UCS 9508 M6.</block>
   <block id="626ee8db46c2bef8f7dc7795bf3e8a6c" category="cell">UCSX-9508</block>
-  <block id="128c814ce3d1759186f82cec57b15de7" category="inline-link">Cisco UCX9508 X系列機箱</block>
-  <block id="98a1917383cfb85332df0d8a642289d9" category="cell"><block ref="98a1917383cfb85332df0d8a642289d9" category="inline-link-rx"></block></block>
   <block id="f98d4abf9bc30951a4da536e87687de6" category="paragraph">每個Cisco UCS 9508機箱必須有兩個Cisco UCS 9108智慧型光纖模組（IFMS）、才能提供與光纖互連的備援連線。</block>
   <block id="96d0dfe3cbacf24246bfd66c4391d8f7" category="section-title">Cisco UCS X系列裝置選項</block>
   <block id="3379b58b81e9e3c511e6860933c77cca" category="paragraph">Cisco UCS X系列運算節點可搭配各種CPU、記憶體和I/O選項使用。下表所列的零件編號適用於基礎節點。它們不包括CPU、記憶體、磁碟機或夾層卡。有多種組態選項可供使用FlexPod 、而且支援在架構中使用。</block>
   <block id="a16230a8b7edeb7b04b868db68434bcc" category="cell">Cisco UCS X系列運算節點</block>
-  <block id="82991af31b2132bc4a6ba87666258cb9" category="cell">UCSX-210 C-M6.</block>
-  <block id="e3eb2e0fd35e41702e0f6e027c500376" category="paragraph">Cisco UCS C系列機架伺服器提供一種和兩種機架單元（RU）機型、提供各種CPU、記憶體和I/O選項。下表第二個表格中所列的零件編號適用於基礎伺服器。不包括CPU、記憶體、磁碟機、周邊元件互連Express（PCIe）卡或Cisco Fabric Extender。有多種組態選項可供使用FlexPod 、而且支援在架構中使用。</block>
   <block id="64c9c8cddf853b7d2b17bf45b55a730d" category="paragraph">下表列出Cisco UCS C系列機架伺服器選項。</block>
-  <block id="80c61fef5189a71aa18f9f292a24d3bb" category="cell">UCSC-C220-M6.</block>
-  <block id="fe65f70f0945480ff0b503d4f47673a7" category="cell">UCSC-C225-M6.</block>
-  <block id="310990c9d5d8dd38730d0c584fda1a1a" category="cell">UCSC-C240-M6.</block>
-  <block id="b88aeccf539f84628e5459c2a7e1d725" category="cell">UCSC-C245-M6.</block>
-  <block id="04383030436c933f07cb0d8227122679" category="paragraph">舊有幾代Cisco UCS C系列伺服器FlexPod 可在支援的情況下用於支援的支援架構<block ref="61c091fce51d2baac5905f12dd7d74cc" category="inline-link-rx"></block>。Cisco UCS C系列伺服器也必須擁有有效的SmartNet支援合約。</block>
-  <block id="fb5c950fd99dc759dc80fc0f8f731db7" category="section-title">Cisco Nexus 5000系列交換器選項</block>
-  <block id="20e1d0ec1fa7b7b29470f35d7d948530" category="paragraph">在這個架構中、需要備援Cisco Nexus 5000、7000或9000系列交換器FlexPod 。下表所列的零件編號適用於Cisco Nexus 5000系列機箱、不含SFP模組、附加FC或乙太網路模組。</block>
-  <block id="c0068eb0b76a67d78d80d1924cbbe326" category="cell">Cisco Nexus 5000系列交換器</block>
-  <block id="7306aff2815331a4edce1f858470385a" category="cell">N5K-C5612128</block>
-  <block id="4723d26f1b66d85d107ea4a6b603660a" category="inline-link">Cisco Nexus 5600平台交換器</block>
-  <block id="fdeb62ff4ff108bb4a41513a111ba0cf" category="cell"><block ref="fdeb62ff4ff108bb4a41513a111ba0cf" category="inline-link-rx"></block></block>
-  <block id="10f6a9a9421c4807289ebd7c8caa6ef0" category="cell">Cisco Nexus 5672UP-16G</block>
-  <block id="86549e6c3f4f2723d62beee143b36ef2" category="cell">N5K-C5672UP-16G</block>
-  <block id="0effdeffb425467d988456e0b00eae69" category="cell">Cisco Nexus 5596UP</block>
-  <block id="76b4043ba1ac44e2b1bb2133102d521b" category="cell">N5K-C5596UP-FA</block>
-  <block id="1cba59dcef07286100de8b8da6ddcc8b" category="inline-link">Cisco Nexus 5548與5596交換器</block>
-  <block id="5642c5827638a5b68181c97169a4abbc" category="cell"><block ref="5642c5827638a5b68181c97169a4abbc" category="inline-link-rx"></block></block>
-  <block id="50aa69bc0f625f5366ccbf81c216efe1" category="cell">N5K-C5548UP-FA</block>
-  <block id="1512bf710a2c35fb74a7ab2fd740a037" category="section-title">Cisco Nexus 7000系列交換器選項</block>
-  <block id="9f5e0d84ae11adad7e4d7c3865a7152e" category="paragraph">在這個架構中、需要備援Cisco Nexus 5000、7000或9000系列交換器FlexPod 。下表所列的零件編號適用於Cisco Nexus 7000系列機箱、不含SFP模組、線路卡或電源供應器、但包含風扇托架。</block>
-  <block id="ca30d8a859a6ff19744e5c406144dd49" category="cell">Cisco Nexus 7000系列交換器</block>
-  <block id="657cde36332f940ee9ba8fb1d3c68bec" category="cell">N700-C7004</block>
-  <block id="c6df908323ab2b4c0708a083fe8a1562" category="inline-link">Cisco Nexus 7000 4插槽交換器</block>
-  <block id="879282c27c384dfdccf005eee3778bdc" category="cell"><block ref="879282c27c384dfdccf005eee3778bdc" category="inline-link-rx"></block></block>
-  <block id="a27d35e307399440483231f4520996b4" category="cell">N700-C7009</block>
-  <block id="7598aa4b49b131b8109a0cd3bffe70d7" category="inline-link">Cisco Nexus 7000 9插槽交換器</block>
-  <block id="009b4a3d346980f1dfbf338779742865" category="cell"><block ref="009b4a3d346980f1dfbf338779742865" category="inline-link-rx"></block></block>
-  <block id="a328db73fae764759cc24b0370e5ad66" category="cell">N77-C7702</block>
-  <block id="60d934f1b9e5e400985237d62dcf9624" category="inline-link">Cisco Nexus 7700雙插槽交換器</block>
-  <block id="78bdb785a5aaf8ce46922340a26a00f1" category="cell"><block ref="78bdb785a5aaf8ce46922340a26a00f1" category="inline-link-rx"></block></block>
-  <block id="78b47d70dda6390b08b722ac4cb18e34" category="cell">N77-C7706</block>
-  <block id="6209bd2804d64fc3fe41639b41d4b00e" category="inline-link">Cisco Nexus 7700 6插槽交換器</block>
-  <block id="64faa6fa3658b501251bb89247041099" category="cell"><block ref="64faa6fa3658b501251bb89247041099" category="inline-link-rx"></block></block>
   <block id="6f8acbb8a50b2f5203672b333d45bf13" category="section-title">Cisco Nexus 9000系列交換器選項</block>
-  <block id="b3a971f5b62fb606af48fdb57fd892e2" category="paragraph">在這個架構中、需要備援Cisco Nexus 5000、7000或9000系列交換器FlexPod 。下表所列的零件編號適用於Cisco Nexus 9000系列機箱、不含SFP模組或乙太網路模組。</block>
-  <block id="4f9fe9ce9e932f6cbc347ad1684a30f8" category="cell">Cisco Nexus 9000系列交換器</block>
-  <block id="b6db9ff733d886e58596ce098f00a851" category="cell">Cisco Nexus 93180YC-FX</block>
-  <block id="8bb0495d7087a3b8849f345d9d419f33" category="cell">N9K-C93180YC-FX</block>
-  <block id="72d25d3d7f282cf18e0826e0bbe7d684" category="cell">Cisco Nexus 93180YC-EX</block>
-  <block id="b3c501045c47664c7685c5f4e7240e50" category="cell">N9K-93180YC-EX</block>
-  <block id="72c258cb43ce88ae83a7f029b68de2bc" category="cell">Cisco Nexus 9336PQ ACI Spine</block>
-  <block id="37e21cbdc2829a8bd7c4025967c33141" category="cell">N9K-C9336PQ</block>
-  <block id="9397546d4aba3daa8b21f01552194ca6" category="cell">Cisco Nexus 9332PQ</block>
-  <block id="524a1d4668881c48ed910c133fd23590" category="cell">N9K-C9332PQ</block>
   <block id="5aec304982416461faa5bf9b3a0b2cf3" category="cell">Cisco Nexus 9336C-FX2</block>
-  <block id="dd3b72d505d752f0747faf40a87713d2" category="cell">N9K-C9336C-FX2</block>
-  <block id="f7172124e378cb9a2b5c528cb24fa67a" category="cell">Cisco Nexus 92304Qc</block>
-  <block id="b93d9f81d1e72590063b85c516798fd7" category="cell">N9K-C92304Qc</block>
   <block id="4bfc38775a4d9e022e5a0d25261048fb" category="inline-link">Cisco Nexus 9200系列交換器</block>
-  <block id="7a90e8adadff49e4680c58a455b06906" category="cell"><block ref="7a90e8adadff49e4680c58a455b06906" category="inline-link-rx"></block></block>
-  <block id="d245b5e41860debf12c35bf06d5ac21c" category="cell">Cisco Nexus 9236C</block>
-  <block id="4d0b620063e0bee8a8109ad5b17517d5" category="cell">N9K-9236C</block>
-  <block id="1f3fe27d9a30e0d9aa4ed44a579f1db1" category="admonition">部分Cisco Nexus 9000系列交換器有其他變體。這些變體是FlexPod 支援的解決方案之一。如需Cisco Nexus 9000系列交換器的完整清單、請參閱<block ref="502e9bd8b2d8a805b5511c628eca0fa4" category="inline-link-rx"></block> 在Cisco網站上。</block>
   <block id="ee3d18d76f98e7dd7b2f0c3ddab5ddc6" category="section-title">Cisco APIC選項</block>
-  <block id="bfc6c8f2ff3dc5bcf247bb16ad89b975" category="inline-link">Cisco應用程式導向基礎架構產品型錄。</block>
-  <block id="b25f2523ac62b747771898c4e2241731" category="paragraph">部署Cisco ACI時、除了本節中的項目之外、您還必須設定三個Cisco APIC <block ref="a22aed988bc8d4ed05ef770b259766da" category="inline-link-macro-rx"></block>。如需Cisco APIC大小的詳細資訊、請參閱<block ref="a51aa53e4c427f88fa41fb19d6c0ae8e" category="inline-link-rx"></block></block>
   <block id="457af287a34b1198e77811798578cf33" category="inline-link">Cisco應用程式原則基礎架構控制器資料表</block>
-  <block id="dd265f4b318cec12e079b3b87dd8f52d" category="paragraph">如需APIC產品規格的詳細資訊、請參閱上的表1至表3<block ref="810caa612213807f8cb9ff928f57e2d9" category="inline-link-rx"></block>。</block>
-  <block id="29335ecd3e233be800d6294a2ba28ab3" category="section-title">Cisco Nexus Fabric extender選項</block>
-  <block id="e8d9f020442cfdb74e39b91f37ccff84" category="paragraph">對於FlexPod 使用C系列伺服器的大型架構、建議使用備援Cisco Nexus 2000系列機架安裝FEXs。下表說明幾個Cisco Nexus FEX選項。也支援替代的FEX機型。如需詳細資訊、請參閱<block ref="61c091fce51d2baac5905f12dd7d74cc" category="inline-link-rx"></block>。</block>
-  <block id="f9c237840e81ed0030baa801aa187131" category="cell">Cisco Nexus機架安裝型FEX</block>
-  <block id="cbbb3a02e97f89a10d273922c9396dd9" category="cell">Cisco Nexus 2232PP</block>
-  <block id="3681a9a052249bd1d36a2f47a51d6153" category="cell">N2K-C2232PP</block>
-  <block id="1fbe7c1212450e12da0ac0d8d02b9231" category="cell"><block ref="1fbe7c1212450e12da0ac0d8d02b9231" category="inline-link-rx"></block></block>
-  <block id="c14ec8c1b934d285e0f8f4e299f9117c" category="cell">Cisco Nexus 2232TM-E</block>
-  <block id="fae0c2c4766de8f1c4b490b6a0bdc619" category="cell">N2K-C2232TM-E</block>
-  <block id="ff818f55e79df5f642b378ba71e95ab0" category="cell">Cisco Nexus 2348UPQ</block>
-  <block id="370fb5678a615258d79098fe5e2837cb" category="cell">N2K-C2348UPQ</block>
-  <block id="c4b6b5af7c3d83d094779d95660c84d7" category="inline-link">Cisco Nexus 2300平台架構延伸器</block>
-  <block id="144810a750baa0d305bc9c3539ede365" category="cell"><block ref="144810a750baa0d305bc9c3539ede365" category="inline-link-rx"></block></block>
-  <block id="5a7c027fe3ca400bd080d7b80fd76ead" category="cell">Cisco Nexus 2348TQCisco Nexus 2348TQ-E</block>
-  <block id="107ca5a56d9a08dddf60ab308ae9adbb" category="cell">N2K-C2348TQN2K-C2348TQ-E</block>
   <block id="274688443ac34c917678b7b628c5b512" category="section-title">Cisco MDS選項</block>
   <block id="30eb737afd41377396cc58578102c2ac" category="inline-link">Cisco硬體與軟體相容清單</block>
-  <block id="36a2306b3095c81b46c24104965041f4" category="paragraph">Cisco MDS交換器是FlexPod 整個架構中的選用元件。在FC SAN上實作Cisco MDS交換器時、需要備援SAN交換器架構。下表列出了所支援Cisco MDS交換器子集的零件編號和詳細資料。請參閱<block ref="9276805d6b0dd5ecb28d9ad89af92eab" category="inline-link-rx"></block> 和<block ref="9663e16401acc5458c2d08f12e7ec029" category="inline-link-rx"></block> 以取得受支援SAN交換器的完整清單。</block>
-  <block id="5c96133a26757099e80de89593bb625c" category="cell">Cisco MDS 9000系列交換器</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">說明</block>
-  <block id="bf72cca2779641416d284b1e8ee5427a" category="cell">Cisco MDS 91487T</block>
-  <block id="3e83023a0f84503f711174ab836bc5f6" category="cell">DS-C9148 T-24IK</block>
   <block id="a37f857822ec74b75bf8902aae6bb8df" category="inline-link">Cisco MDS 9100系列交換器</block>
-  <block id="7ca6ab9a205cfffc1d76cf49426a5b25" category="cell"><block ref="7ca6ab9a205cfffc1d76cf49426a5b25" category="inline-link-rx"></block></block>
-  <block id="01c21798d46d4bbdffba1d22b8345c42" category="cell">Cisco MDS 9132T</block>
-  <block id="3ffed5896f92296628207bb230acf486" category="cell">DS-C9132T-MEK9</block>
-  <block id="6870d595073e673216037c3b55e13b20" category="cell">Cisco MDS 9396S</block>
-  <block id="460a3e96b1f7f445843a360a643450a3" category="cell">DS-C9396S-K9</block>
   <block id="508c17ecf7e16316c9dbcb94e230c135" category="inline-link">Cisco MDS 9300系列交換器</block>
-  <block id="c95dbeddba7a1b8d5d2c5e8be899f7aa" category="cell"><block ref="c95dbeddba7a1b8d5d2c5e8be899f7aa" category="inline-link-rx"></block></block>
-  <block id="3488a30adb5a45f67cad610315ba0e41" category="section-title">Cisco軟體授權選項</block>
-  <block id="f08c535efbf1193c3550b84ec55cddc7" category="paragraph">需要授權才能在Cisco Nexus交換器上啟用儲存傳輸協定。Cisco Nexus 5000和7000系列交換器都需要儲存服務授權、才能啟用FC或FCoE傳輸協定來執行SAN開機。Cisco Nexus 9000系列交換器目前不支援FC或FCoE。</block>
-  <block id="4d1cb3a5ab9cbd0aef39bb97472265c6" category="paragraph">這些授權所需的授權和零件編號會因FlexPod 您針對整個解決方案的每個元件所選擇的選項而有所不同。例如、軟體授權零件編號會因連接埠數量和您選擇的Cisco Nexus 5000或7000系列交換器而異。如需確切的產品編號、請洽詢您的銷售代表。下表列出Cisco軟體授權選項。</block>
-  <block id="62c4c61269bf26e51613d51c2dead184" category="cell">Cisco軟體授權</block>
-  <block id="ce5808700ccdf70beb0a74688ea58ba9" category="cell">授權資訊</block>
-  <block id="f97361f56bf767f0ccc78577a330d193" category="cell">Cisco Nexus 5500儲存授權、8埠、48埠及96埠</block>
-  <block id="246ace6bb9fcf97f22e1533e7c0ffe8a" category="cell">N55-8P-SSK9/N55-48P-SSK9/N55-96P-SSK9</block>
-  <block id="eca4933c511f6101bd282b747af58e40" category="inline-link">Cisco NX-OS軟體功能授權</block>
-  <block id="5ecbe6bd969bc3a2f3388a8bc1544488" category="cell"><block ref="5ecbe6bd969bc3a2f3388a8bc1544488" category="inline-link-rx"></block></block>
-  <block id="e72bd4f8123f32a63392fbafe5d21793" category="cell">Cisco Nexus 5010/5020儲存傳輸協定授權</block>
-  <block id="98647aa50a5c20a171a8e2d7d312194f" category="cell">N5010-SSK9/N5020-SSK9</block>
-  <block id="3d1596f571d76579d636a9acb4036514" category="cell">Cisco Nexus 5600儲存傳輸協定授權</block>
-  <block id="56d16c25c811993e5d29ac3b63cd5e4b" category="cell">N56 - 16p-SSK9/N5672 - 72p-SSK9/N56128 - 128 P-SSK9</block>
-  <block id="38f5d223284bb0de3a89af0fa6b3974d" category="cell">Cisco Nexus 7000儲存企業授權</block>
-  <block id="f95dee78c2ea94a3a5b5a047960d18c2" category="cell">N7K - SAN1K9</block>
-  <block id="c1b90858b26b478b955ff9b531978a3e" category="cell">Cisco Nexus 9000企業服務授權</block>
-  <block id="548bd596a3d7a210d3ea3ed937166ef0" category="cell">N95-LAN1K9/N93-LAN1K9/</block>
   <block id="cbf8cd2adbdfbf5a11c0eac34221c54a" category="section-title">Cisco支援授權選項</block>
-  <block id="413f85c9bd7e3c0018e2c7bf879c4e77" category="paragraph">所有採用此功能的Cisco設備均需簽訂有效的SmartNet支援合約FlexPod 。</block>
-  <block id="f6cedd1051b6f42b744daa513913fc1f" category="paragraph">您的銷售代表必須驗證這些授權所需的授權與零件編號、因為這些授權可能因不同產品而異。下表列出Cisco支援授權選項。</block>
-  <block id="ecacb69937d0ec015311dfbba5db3e58" category="cell">Smart Net Total Care現場優質服務</block>
-  <block id="151b84dd746a82fd198c86d961b42f44" category="inline-link">Cisco Smart Net Total Care服務</block>
-  <block id="d1ecfe25c39e743125266078c3c7565e" category="cell"><block ref="d1ecfe25c39e743125266078c3c7565e" category="inline-link-rx"></block></block>
-  <block id="160f9594439a5c252e567ca5fa56f9aa" category="summary">此平台是一種預先設計的最佳實務資料中心架構、建置於Cisco Unified Computing System（Cisco UCS）、Cisco Nexus系列交換器及NetApp儲存控制器（NetApp UC2或NetApp系統）上。FlexPod AFF FAS</block>
-  <block id="ed4bde4fa0721113bfb61cca4c8d0b99" category="paragraph">Arvind Ramakrishnan和NetApp的Jyh-sen CHEN</block>
-  <block id="aa2f8bc486f5931602b4fd5aa1b0bde8" category="paragraph">此平台是一種預先設計的最佳實務資料中心架構、建置於Cisco Unified Computing System（Cisco UCS）、Cisco Nexus系列交換器及NetApp儲存控制器（例如：NetApp、NetApp、FlexPod AFF ASA FAS</block>
   <block id="44449d841c637b73894538d1cb10ad73" category="paragraph">適用於執行各種虛擬化Hypervisor、裸機作業系統和企業工作負載的平台。FlexPod不僅提供基礎組態、還能靈活調整規模及最佳化、以因應多種不同的使用案例和需求。FlexPod</block>
-  <block id="0f9b398b73c49f27eb0e6ce88a41a230" category="inline-link">融合式基礎架構FlexPod</block>
-  <block id="823b3b69aad760899b67dee8091a03a3" category="admonition">在您訂購完整FlexPod 的資訊完整組態之前、請參閱<block ref="4d4c2ccc5cc5a93d3d89d2afd9d2f8a7" category="inline-link-rx"></block> 如需這些技術規格的最新版本、請參閱netapp.com網頁。</block>
   <block id="73cbafda498a06bae0ca1f5a7714be30" category="inline-link-macro">下一步：FlexPod 支援各種平台。</block>
   <block id="ffe6ecde43ed5c7ff2182a101c0d2390" category="paragraph"><block ref="ffe6ecde43ed5c7ff2182a101c0d2390" category="inline-link-macro-rx"></block></block>
   <block id="e6426bd86d0d3af225952b63c263f83d" category="summary">以下列出更多FlexPod 關於此功能的要求。</block>
   <block id="99850d99c802817315214eb8be6522a3" category="paragraph">其他關於Express的要求FlexPod 包括：</block>
   <block id="37dca77319b34332b146930ec37563f5" category="inline-link">Cisco HCL</block>
   <block id="2abc157d263e35282dcd9b561414fc09" category="summary">NetApp儲存控制器為FlexPod 支援開機和應用程式資料儲存的功能、提供了整個架構的儲存基礎。NetApp元件包括儲存控制器、叢集互連交換器、磁碟機和磁碟櫃、以及授權選項。</block>
-  <block id="fbebe2a055b4dcf362a0493004ef468f" category="paragraph">在整個架構中、需要備援NetApp FAS 的功能性、AFF 功能性和AFF ASA 功能性。FlexPod控制器執行ONTAP 的是功能不均的軟體。訂購儲存控制器時、可在控制器上預先載入偏好的軟體版本。針對整個叢集、我們會訂購完整的叢集。ONTAP完整的叢集包括一對儲存控制器和叢集互連（交換器或無交換器）。</block>
   <block id="f3d1ddd3608cc33b94186096baefa680" category="paragraph">視所選的儲存平台而定、有不同的選項和組態可供選擇。如需這些額外元件的詳細資訊、請洽詢您的銷售代表。</block>
   <block id="0801ff54af9cce0b9f0f9dc6d4f359d8" category="paragraph">下表所列的控制器系列適合FlexPod 用於「解決方案不整合」、因為它們與Cisco Nexus交換器的連線是無縫的。請參閱<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 以取得每種控制器機型的特定相容性詳細資料。</block>
-  <block id="ab55821a5158bbae88cc564fe08c13bb" category="cell">儲存控制器系列</block>
   <block id="e8408b8a9a06ecb844060afd912f6328" category="inline-link">A系列文件AFF</block>
-  <block id="82ca9c991b17b65f55a3d84b80312c6d" category="cell"><block ref="82ca9c991b17b65f55a3d84b80312c6d" category="inline-link-rx"></block></block>
-  <block id="cf5bd5fc9c0cc6da411822bc35fd08db" category="inline-link">A系列文件AFF ASA</block>
-  <block id="e9c5cbf5c293a99accdc40c5466598b6" category="cell"><block ref="e9c5cbf5c293a99accdc40c5466598b6" category="inline-link-rx"></block></block>
-  <block id="398f9e30ff0bd016ab27d169e7118e2d" category="inline-link">支援的支援FAS</block>
-  <block id="fef5355cae9a773f4459a7d0de27939e" category="cell"><block ref="fef5355cae9a773f4459a7d0de27939e" category="inline-link-rx"></block></block>
   <block id="b9697496d09a09579329bde0eb5c9178" category="section-title">叢集互連交換器選項</block>
-  <block id="643ccfec845d77bd902162df9edcdcbf" category="paragraph">下表列出FlexPod 適用於各種架構的Nexus叢集互連交換器。此外FlexPod 、只ONTAP 要與ONTAP 正在部署的版本不一致、支援所有支援的叢集交換器（包括非Cisco交換器）。請參閱<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 以取得特定交換器機型的其他相容性詳細資料。</block>
   <block id="a44c62f2e89581c2cf4b405ac4bc48d1" category="cell">叢集互連交換器</block>
-  <block id="1d8bdbbecd2a7992d9b2c5314cbc8da8" category="cell">Cisco Nexus 3132Q-V</block>
-  <block id="1d9f38092927f6d65753edab7ca3d039" category="inline-link">NetApp文件：Cisco Nexus 3132Q-V交換器</block>
-  <block id="392fceb5a4d064176abe344715627cfb" category="cell"><block ref="bc5b55d95c18c102e8300585910ae029" category="inline-link-rx"></block></block>
   <block id="0bc97a80630d922e5e5de8dd8689bcaa" category="inline-link">NetApp文件：Cisco Nexus 9336C-FX2交換器</block>
   <block id="bfdd18e32fc0e9981825376863beb7a1" category="section-title">NetApp磁碟櫃與磁碟機選項</block>
-  <block id="ce9c0b8b6c23f9fbba191e4d302b977e" category="paragraph">所有儲存控制器至少需要一個NetApp磁碟櫃。</block>
-  <block id="c590db225b3b8f81ea877e347416fc4b" category="paragraph">所選的NetApp機櫃類型決定該機櫃中可用的磁碟機類型。</block>
   <block id="4565123671fd7bba4b48587da9afe9f8" category="admonition">如需所有磁碟櫃和磁碟零件編號、請洽詢您的銷售代表。</block>
-  <block id="d5740ca99d65dda0f0c3f535ec3113ea" category="paragraph">下表列出FlexPod 適用於「Datacenter」架構的NetApp軟體授權選項。NetApp軟體是FAS 以功能性和AFF 功能性控制器層級授權。</block>
-  <block id="aa2dd17a631a9e61bcaf69515584e135" category="cell">軟體、完整套件（控制器）、-C</block>
-  <block id="82624737d7fd71e77981f1121d913833" category="cell">SW-8XXX-COMP套件C</block>
-  <block id="50a081a4fa49e5a9855e81bcc7ce357e" category="inline-link">產品庫A–Z</block>
-  <block id="b447b736a39c94527aeb3a39f28b0e75" category="cell"><block ref="b447b736a39c94527aeb3a39f28b0e75" category="inline-link-rx"></block></block>
-  <block id="33eedc8ab3db6163ff138615749fa595" category="cell">軟體ONTAP 、《程式集（控制器）》、-C</block>
-  <block id="8c469324485cfad84a578dda518b6645" category="cell">SW-8XXX-ONTAP9-C</block>
-  <block id="be0da08a70d0dd6118668f4e3a6d8d83" category="section-title">NetApp支援授權選項</block>
-  <block id="ec4fe660e645fc89ac9c5af7a5e66abb" category="paragraph">NetApp支援是要求使用的功能、但這些授權的零件編號會因您在該功能設計中選擇的選項而有所不同。SupportEdge Premium FlexPod FlexPod例如、軟體授權零件編號會因FAS 您選擇的哪個功能不同而有所差異。如需個別支援授權的確切零件編號資訊、請洽詢您的銷售代表。下表顯示SupportEdge 一個關於不含功能的使用許可範例。</block>
-  <block id="380203967a0105599049a7700ae373be" category="cell">NetApp支援授權</block>
-  <block id="5f408e62c550710129b96eefc5ab1131" category="cell">現場4小時—月：SupportEdge Premium 36</block>
-  <block id="9731e37c3f8c90801e32b462b8a858c7" category="inline-link">NetApp SupportEdge Premium</block>
-  <block id="ace4f258b1158aaecc4956820cff19d9" category="summary">支援靈活的解決方案、可讓您使用目前由Cisco與NetApp銷售的現有設備與新設備。FlexPod有時、Cisco和NetApp的某些設備機型會被指定為停產（EOL）。</block>
-  <block id="4a3c82ab9192292131c0c77dfcf82cf8" category="doc">老舊設備</block>
-  <block id="aaf1713523b3f62782576f85f1b53c67" category="inline-link">NetApp服務與支援產品方案終止供應指數</block>
-  <block id="4a138f32773adf9d491c3710c14ad1c2" category="paragraph">即使這些設備機型已不再提供、如果您在終止供應（EOA）日期之前購買了其中一款機型、您仍可將該設備用在FlexPod 一個不間斷的組態中。如需不再銷售的完整清單、請參閱FlexPod<block ref="3e40e861a0b71edb4cd45a2371459ce7" category="inline-link-rx"></block>。</block>
   <block id="74ef034873be6e75908e22616e82181f" category="inline-link">Cisco UCS C系列機架伺服器</block>
   <block id="2e7d6ca4c634e2d63e6eae3ebadba090" category="inline-link">Cisco UCS B系列刀鋒伺服器</block>
   <block id="2b1579a2d6cf27f65e656647acb7ff4a" category="inline-link">Nexus交換器</block>
-  <block id="c3512c91d867ed70f8a9ffc95df27301" category="paragraph">如需舊版Cisco設備的詳細資訊、請參閱的Cisco EOL和EOA注意事項<block ref="2a67199065f43e4e326749e33aa8be8b" category="inline-link-rx"></block>、<block ref="414b4ee7dce7061325f597e3373dfbd2" category="inline-link-rx"></block>和<block ref="6a308db9a02770052bc6014308bea2dd" category="inline-link-rx"></block>。</block>
-  <block id="9ccb6400131938383ea27748815ea1f8" category="paragraph">傳統FC Fabric支援包括下列項目：</block>
-  <block id="64eb9909a47515f0df8d6b38f2802eb1" category="list-text">2GB Fabric</block>
-  <block id="8966d6875d976808f24af329088e430e" category="list-text">4GB Fabric</block>
-  <block id="f0e9c3507cf3bf5c8f0745ec34a5ab93" category="paragraph">舊版軟體包括下列項目：</block>
-  <block id="032101998672754d0daf2e5a8355201e" category="list-text">NetApp Data ONTAP 支援7-Mode、7.3.5及更新版本</block>
-  <block id="53aad9f4dda1bcb1323f9d1bc455d340" category="list-text">從8.1.x到9.1.x ONTAP</block>
-  <block id="15ab29174d6d1b9479a10e258ec85aa2" category="list-text">Cisco UCS Manager 1.3及更新版本</block>
-  <block id="066334bc34bcf800127675c2831d0fc4" category="list-text">Cisco UCS Manager 2.1至2.2.7</block>
-  <block id="5e984544a43af85ba364cc4a2904b9f4" category="summary">下列資訊說明FlexPod 了有關功能不完整的基本軟體需求。</block>
-  <block id="9622697348706033bae0d471463ce58d" category="doc">最低軟體需求</block>
-  <block id="514525e87a20f97644f98d1b8fce7cc6" category="paragraph">下列最低軟體需求為基礎：FlexPod</block>
-  <block id="d721189a656d599cc202811dfb77a80b" category="list-text">NetApp ONTAP 產品：</block>
-  <block id="80fa1582f2d12aa9a6ffb7e01c9fe01a" category="list-text">不含更新版本的軟體需要使用更新版本的版本ONTAP ONTAP</block>
-  <block id="be3ef459e2a4d0374bddebe77ec64a53" category="list-text">Cisco UCS Manager版本：</block>
-  <block id="f67c2cafd87dd9ed76ddf0ce27c84cd9" category="list-text">Cisco UCS 6200系列光纖互連—2.2（8a）</block>
-  <block id="cd7576f8e3edb3034d6daac0e10de6c5" category="list-text">Cisco UCS 6300系列光纖互連—3.1（1e）</block>
-  <block id="23e344d8e569573e8b41449b51adf0ef" category="list-text">Cisco UCS 6400系列光纖互連—4.0(1)</block>
-  <block id="69f41216a6f701dbadf4920121ca1d1c" category="list-text">Cisco Intersight託管模式：</block>
-  <block id="bec37368cdee36a2d40b5acd316c52ac" category="list-text">Cisco UCS 6400系列光纖互連–4.1(2)</block>
-  <block id="ec376eb482bc655ad388479a5a2eb23a" category="list-text">對於Cisco Nexus 5000系列交換器、Cisco NX-OS軟體版本5.0（3）N1（1c）或更新版本、包括NX-OS 5.1.x</block>
-  <block id="e178299b7d9656e358b9655ee8547e08" category="list-text">對於Cisco Nexus 7000系列交換器：</block>
-  <block id="030ee8e436a4fc0a1a8aff2c6496e9f1" category="list-text">4插槽機箱需要Cisco NX-OS軟體6.1（2）版或更新版本</block>
-  <block id="9c0ecce9bef97564d70e8d66f8f82e3d" category="list-text">9插槽機箱需要Cisco NX-OS軟體5.2版或更新版本</block>
-  <block id="ea3575010b8ffe49889fdcc785fc51a0" category="list-text">10插槽機箱需要Cisco NX-OS軟體版本4.0或更新版本</block>
-  <block id="9ac9f43b2d1efee6b973631a390ad4e7" category="list-text">18插槽機箱需要Cisco NX-OS軟體4.1版或更新版本</block>
-  <block id="a6f23c0ade23c5ca643ce8bc1a079ffb" category="list-text">對於Cisco Nexus 9000系列交換器、Cisco NX-OS軟體版本6.1（2）或更新版本</block>
-  <block id="1e770a345ddd07125ec0d9d9a3af0940" category="admonition">NetApp必須列出並支援在支援中使用的軟體FlexPod<block ref="af8f174925a8fa1af2321b8d8c2fd047" category="inline-link-rx"></block>。某些功能可能需要比所列版本更新的軟體版本。</block>
   <block id="64253ff18621f1451be7a39f52dd1ca0" category="summary">本節說明FlexPod 不同版本的《不一樣》的連線需求。</block>
   <block id="c74efeb9e8a209000cc3750e2028fe8e" category="list-text">核心FlexPod 不需在核心不整元件之間放置額外設備。</block>
   <block id="dbf427db07f695dc99a56e396fa4671e" category="list-text">雖然這不是必要的、但建議在整個環境中啟用巨型框架支援。</block>
@@ -7314,13 +6843,6 @@
   <block id="7aded478e040680a86b887b45835ff10" category="paragraph"><block ref="7aded478e040680a86b887b45835ff10" category="inline-link-rx"></block></block>
   <block id="9ae079c2b84f43248569fa03c43167f1" category="paragraph"><block ref="9ae079c2b84f43248569fa03c43167f1" category="inline-link-rx"></block></block>
   <block id="b9497e961f697589c97d8a8f98848fe6" category="paragraph"><block ref="b9497e961f697589c97d8a8f98848fe6" category="inline-link-rx"></block></block>
-  <block id="e8f274cf2265901d297ffd8b266203a2" category="list-text">* FlexPod Express.*此平台是一種精簡的融合式基礎架構、專為遠端辦公室和邊緣使用案例所設計。FlexPod Express 有其本身的規格、詳見<block ref="e054700ae8d5d968503b308670e7157d" category="inline-link-rx"></block></block>
-  <block id="d956bf5f6c667ff127e0c3ff6feecfb6" category="cell"><block ref="d956bf5f6c667ff127e0c3ff6feecfb6" category="inline-link-rx"></block></block>
-  <block id="cfa5d92901acec81c21a74f2a2cfa04a" category="cell"><block ref="cfa5d92901acec81c21a74f2a2cfa04a" category="inline-link-rx"></block></block>
-  <block id="7a81fad05ef4ac2757196543d961289e" category="cell"><block ref="7a81fad05ef4ac2757196543d961289e" category="inline-link-rx"></block></block>
-  <block id="60b8d1929c1be86e68be5739ba1e2623" category="cell"><block ref="60b8d1929c1be86e68be5739ba1e2623" category="inline-link-rx"></block></block>
-  <block id="87999ea405e8cbf573787e42355d009b" category="cell"><block ref="87999ea405e8cbf573787e42355d009b" category="inline-link-rx"></block></block>
-  <block id="e24871162f3d5f5273548d063adf8b97" category="paragraph">支援所有目前的NetApp AFF 解決方案A系列儲存控制器機型、可在FlexPod 支援中使用。您可以在<block ref="35d9a84b4b8d2a66a391ad866cc52c10" category="inline-link-rx"></block>資料工作表和中找到其他<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>資訊。請參閱下表所列的平台專屬文件、以瞭解特定AFF 的《某些特定的功能表》的詳細資訊。</block>
   <block id="70cdaed33c7671907d6873604121f641" category="list-text">* 儲存平台的智慧運用 *採用 ONTAP 自動分層和 NetApp Fabric Pool 技術的 FlexPod 可簡化資料管理。可協助降低儲存成本、而不會影響效能、效率、安全性或保護。FabricPool不需重新建構應用程式基礎架構、即可降低儲存TCO、使企業應用程式透明化、並善用雲端效率。FabricPool利用NetApp的儲存分層功能、更有效率地使用介紹性快閃儲存設備、讓您受益匪淺。FlexPod FabricPool ONTAP如需更多資訊、請參閱<block ref="5990a183ff0805566d6969a955233353" category="inline-link-rx"></block>。下圖提供FabricPool 關於支援及其效益的高階概述。</block>
   <block id="c1ce49ba0731ebdda7a23def6af6524c" category="paragraph">如需更多<block ref="3a5fb54428c5bbfb56410ad7faac9135" category="inline-link-rx"></block>資訊、請參閱。</block>
   <block id="a803988872277d7b7735c41bd2549a35" category="paragraph">放射科醫師通常會使用高階且具備圖形功能的診斷檢視器、這些診斷檢視器會在實體或虛擬桌面基礎架構的一部分高階運算和圖形工作站上執行。如果您即將開始虛擬桌面基礎架構之旅，請參閱更多資訊<block ref="ce4545af06c636587be8a01fe6045e1b" category="inline-link-rx"></block>。</block>
@@ -7339,9 +6861,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="43876a7baad9b163422baffbc251343e" category="list-text">銷售訂單中需要包含的相關銷售屬性：</block>
-  <block id="dd67a759871b4a5f3afa8f25d59b8886" category="list-text">FlexPod權益</block>
-  <block id="05ca7330784d84200d4a867bf1e7f701" category="list-text">FlexPod解決方案支援權限</block>
   <block id="0662382e873bd21e2208226491d8dde5" category="summary">本節介紹如何安裝和設定Cloud Volumes ONTAP、 FlexPod、 ONTAP儲存和NetApp Console。</block>
   <block id="e1e90293550a157b4304d07e50558a74" category="list-text">存取NetApp Console。</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="inline-link">NetApp Console</block>
@@ -7383,7 +6902,6 @@
   <block id="0d6e5faf80b288a1d3277954d0b55ae8" category="inline-link"><block ref="0d6e5faf80b288a1d3277954d0b55ae8" category="inline-link-rx"></block></block>
   <block id="17a7b956a1673e2b7eed84e47e417df1" category="paragraph"><block ref="17a7b956a1673e2b7eed84e47e417df1" category="inline-link-rx"></block></block>
   <block id="f1c50a66fa0c1697f61a708311b1b73c" category="list-text">建議僅將獨立式 Cisco UCS Fabric Interconnect 應用裝置連接埠用於 iSCSI 連線。當 NAS 連線與應用裝置連接埠搭配使用時，在某些故障情況下需要額外的 Nexus / 相容交換器。</block>
-  <block id="fefa97ce70467bf33d6e5e77d6b7e1ce" category="paragraph">下圖展示了採用 Cisco MDS 的 FlexPod Datacenter for FC。</block>
   <block id="f63c99bc92f7bc3f7b439ecf41cac3e8" category="paragraph">FabricPool 需要 ONTAP 9.2 或更新版本。其他 FabricPool 要求取決於所使用的 ONTAP 版本以及所連接的雲端層級。在 ONTAP 9.8 之前的版本中，FabricPool 僅支援 SSD 本地層級。對 HDD 聚合的支援已於 ONTAP 9.8 中新增。對於像 NetApp AFF C190 這類具有固定且相對較小容量的入門級 AFF 平台，FabricPool 能夠非常有效地將非活躍資料移至雲端層級。</block>
   <block id="d468c66669ca3541addf2625862a45c3" category="list-text">除了以下平台外，所有能夠運行 ONTAP 9.2 的平台都支援 NetApp FAS FabricPool：</block>
   <block id="0ef00e20c875ece8831080e8f1bbb3c2" category="list-text">FAS2554 、 FAS2552 、 FAS2520</block>
@@ -7417,12 +6935,6 @@
   <block id="479ab8e92c9bac02359037d3bcc3b88b" category="list-text"><block ref="479ab8e92c9bac02359037d3bcc3b88b" category="inline-link-rx"></block></block>
   <block id="77792692000223d564fe9c4202e6912a" category="inline-link"><block ref="77792692000223d564fe9c4202e6912a" category="inline-link-rx"></block></block>
   <block id="637d31c7df418f03993d74ecc50deacf" category="paragraph"><block ref="637d31c7df418f03993d74ecc50deacf" category="inline-link-rx"></block></block>
-  <block id="cc910127c1a0f3009d24973fab296857" category="paragraph">NetApp ONTAP 軟體安裝於所有 NetApp FAS、AFF 和 AFF All SAN Array （ASA） 系統上。FlexPod 已通過 ONTAP 軟體驗證，提供高度可擴充的儲存架構，實現不中斷營運、不中斷升級及靈活的資料基礎架構。</block>
-  <block id="739cf53af4853827057722abde32c3cf" category="cell"><block ref="739cf53af4853827057722abde32c3cf" category="inline-link-rx"></block></block>
-  <block id="ced9b756e7f783d951a40abd247b9d8b" category="cell"><block ref="ced9b756e7f783d951a40abd247b9d8b" category="inline-link-rx"></block></block>
-  <block id="8ee7373db859b7cc6585ca3318999cc0" category="cell"><block ref="8ee7373db859b7cc6585ca3318999cc0" category="inline-link-rx"></block></block>
-  <block id="1ac623e46f5ff04e5081a3242f25e551" category="cell"><block ref="1ac623e46f5ff04e5081a3242f25e551" category="inline-link-rx"></block></block>
-  <block id="6ae41a6d5ab9be50ac1fd70e15a3605b" category="cell"><block ref="6ae41a6d5ab9be50ac1fd70e15a3605b" category="inline-link-rx"></block></block>
   <block id="af112978bf9cee28fb168e71aab3d4ae" category="list-text">NetApp MongoDB 解決方案簡介（需要 NetApp 登入）</block>
   <block id="9072e73f90a3122db465943dc5f6d767" category="paragraph">NetApp MetroCluster 配置被全球數千家企業用於實現高可用性 （HA）、零資料遺失以及資料中心內外不間斷的運作。MetroCluster 是 ONTAP 軟體的一項免費功能，可在位於不同位置或故障網域的兩個 ONTAP 叢集之間同步鏡像資料和組態。MetroCluster 透過自動處理兩個目標，為應用程式提供持續可用的儲存：透過同步鏡像寫入叢集的資料，實現零復原點目標 （RPO）。透過鏡像組態並自動存取第二個站台的資料，實現接近零復原時間目標 （RTO）。MetroCluster 透過在兩個站台的兩個獨立叢集之間自動鏡像資料和組態，提供簡便性。在一個叢集中佈建儲存時，它會自動鏡像到第二個站台的第二個叢集。NetApp SyncMirror 技術提供所有資料的完整副本，實現零 RPO。因此，一個站台的工作負載可以隨時切換到另一個站台，並在不遺失資料的情況下繼續提供資料服務。更多資訊請參閱<block ref="252ef593d9bf7568715463e2b3001bf8" category="inline-link-rx"></block>。</block>
   <block id="f6ffd6bf62da0ce01cbe488ec1418d21" category="paragraph">我們所熟知的醫療保健體系圍繞著醫療服務提供者（醫生、護士、放射科醫生、醫療器材技術人員等）和病人。隨著病患和醫療服務提供者之間的聯繫日益緊密，地理位置僅成為一個資料點，底層平台在醫患雙方需要時能否及時可用就顯得尤為重要。該平台必須兼具高效性和長期成本效益。對於致力於進一步降低病患照護成本的醫療服務<block ref="ab98a32d34bc836c52b92cfa7414def8" category="inline-link-rx"></block>組織（ACOs）而言，高效率的平台將發揮至關重要的作用。</block>
@@ -8082,18 +7594,6 @@
   <block id="5fa567fc77b630f1a2741c72cff172ac" category="paragraph"><block ref="5fa567fc77b630f1a2741c72cff172ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c39187a7546f6236f30310b00063ae4" category="paragraph"><block ref="0c39187a7546f6236f30310b00063ae4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c01c38c43e01a6b26f6ea2a3afec47d" category="paragraph"><block ref="1c01c38c43e01a6b26f6ea2a3afec47d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a5ed373f9bc24ab8d92422cc8431fa93" category="paragraph"><block ref="a5ed373f9bc24ab8d92422cc8431fa93" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7a60db512e91c86bcb896eb6d807795a" category="paragraph"><block ref="7a60db512e91c86bcb896eb6d807795a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c2c8968280fff50c3edd445b8736ed34" category="paragraph"><block ref="c2c8968280fff50c3edd445b8736ed34" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7a53dd3f27648d8e11d5b5ca77324f1d" category="paragraph"><block ref="7a53dd3f27648d8e11d5b5ca77324f1d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8d1af3622e0e44d6542eeaf19e8577dc" category="paragraph"><block ref="8d1af3622e0e44d6542eeaf19e8577dc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c23cf1e992119ccbd36a94a49b0c74cd" category="paragraph"><block ref="c23cf1e992119ccbd36a94a49b0c74cd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7d08be945f0d9149698942d5217e2be4" category="paragraph"><block ref="7d08be945f0d9149698942d5217e2be4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="877613857a9738f56c36a8186b1bb524" category="paragraph"><block ref="877613857a9738f56c36a8186b1bb524" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="445129f5333287627c7c4fdcd7523131" category="paragraph"><block ref="445129f5333287627c7c4fdcd7523131" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d00216dccd9d6946bf180321214747e3" category="paragraph"><block ref="d00216dccd9d6946bf180321214747e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="85434d2b093f311040ca006f8177c7ba" category="paragraph"><block ref="85434d2b093f311040ca006f8177c7ba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e7e659cd9252e3813efba04c71d06915" category="paragraph"><block ref="e7e659cd9252e3813efba04c71d06915" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b9c51d58018b9be464ac41f630f5e92b" category="paragraph"><block ref="b9c51d58018b9be464ac41f630f5e92b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0d9f26071d9bf170b9b008eb5af72d19" category="paragraph"><block ref="0d9f26071d9bf170b9b008eb5af72d19" category="inline-image-macro-rx" type="image"></block></block>
   <block id="425dd3ef9cc34beb1ccc83a52fc364b3" category="paragraph"><block ref="425dd3ef9cc34beb1ccc83a52fc364b3" category="inline-image-macro-rx" type="image"></block></block>
@@ -8242,8 +7742,6 @@
   <block id="c93de18088f202964b302c299371f447" category="cell">+&lt;&lt; switch-b-ntp-ip &gt;&gt;+</block>
   <block id="950b29028f5077cacae319f7ad6294ec" category="cell"><block ref="950b29028f5077cacae319f7ad6294ec" category="inline-link-rx"></block></block>
   <block id="df7608fec077c8036a60e059d13ccb5c" category="paragraph">如需 ONTAP 的詳細資訊，請參閱<block ref="d4d46a1efab17e9b442654f23d03b317" category="inline-link-rx"></block>產品頁面。</block>
-  <block id="09f54f084d01fd099b66e39c53c62efd" category="paragraph">有關 ONTAP 實作的詳細資訊，請參閱<block ref="ae1bde5f7e3b1fedbbc99c274d4be2c8" category="inline-link-rx"></block>。</block>
-  <block id="f6d60fde875ebafa17013bc65360b5f7" category="paragraph">NetApp 磁碟機櫃的技術規格包括尺寸規格大小、每個機箱的磁碟機數量以及機櫃 I/O 模組；這些文件可在下表中找到。如需更多資訊，請參閱<block ref="46a7ca34fc5c1635563f1b54fd36ba0c" category="inline-link-rx"></block>和<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。</block>
   <block id="4aeeffd6249244b72becdd8abb4b91b8" category="section-title">Cisco UCS 伺服器的停售和停止支援訊息</block>
   <block id="077dcb6cb8c7743fcd866caad2504246" category="section-title">Cisco Nexus 交換器停售和停止支援資訊</block>
   <block id="276b19f07e935494e35cb8ce4ab0b89e" category="admonition">上述範例拓撲指的是使用 NetApp AFF 的儲存解決方案。但是，相同的拓撲也可用於 NetApp ASA 和 FAS。</block>
@@ -8307,9 +7805,6 @@
   <block id="d11030d759cf8db4404491611b16f7b9" category="list-text">NetApp ONTAP 與 SnapMirror active sync （前身為 SM-BC）搭配 VMware vSphere Metro Storage Cluster (vMSC)</block>
   <block id="50bb0628da6c26cb935a8bff810b58ef" category="inline-link"><block ref="50bb0628da6c26cb935a8bff810b58ef" category="inline-link-rx"></block></block>
   <block id="6a75508e103dc5c21a8907f0d27151c1" category="paragraph"><block ref="6a75508e103dc5c21a8907f0d27151c1" category="inline-link-rx"></block></block>
-  <block id="e4613e8cb67b47c815182efcb2addff3" category="paragraph">有關磁碟機櫃和儲存媒體的詳細資訊，請參閱下表中的「磁碟櫃和儲存媒體技術規格」連結。</block>
-  <block id="a502ba2e14f433f612cfb7a8c2ab4fda" category="inline-link">磁碟櫃和儲存媒體技術規格</block>
-  <block id="fb89f6fa4beb71b5f4515f1d61cd3ac7" category="cell"><block ref="fb89f6fa4beb71b5f4515f1d61cd3ac7" category="inline-link-rx"></block></block>
   <block id="73fb97d8b411c3ab96bb7d5e7cacdcbb" category="list-text">此命令會在 ESXi 中安裝<block ref="bfe054ce9a0ac3d24a225d16ac8489a9" category="inline-link-rx"></block>。</block>
   <block id="8255476c22d06ed95ba1918cb6fb1dbd" category="list-text">人工智慧在醫療和醫學領域的應用（NetApp）</block>
   <block id="e91541d759de63fcaf617f7fb7713601" category="inline-link"><block ref="e91541d759de63fcaf617f7fb7713601" category="inline-link-rx"></block></block>
@@ -8328,4 +7823,357 @@
   <block id="8e3f611ec9b924865f33f23c985d0acf" category="paragraph">此 FlexPod 架構由本文件中所述的一系列規則定義。硬體元件和軟體組態必須受到<block ref="55be3385fd2442b96520f981204722ea" category="inline-link-rx"></block>和<block ref="2c0e67bb1b88b1727e7f20c152d8cab5" category="inline-link-rx"></block>的支援。</block>
   <block id="df2c7d0b4082997a23a9cf8653006120" category="paragraph">Cisco UCS C 系列機架式伺服器的技術規格包括處理器支援、最大記憶體容量、PCIe 插槽數量和外形尺寸。有關相容 UCS 伺服器型號的更多詳細資訊，請參閱<block ref="f892b8b8b30da287dc033705b38fc8ba" category="inline-link-rx"></block>清單。</block>
   <block id="b3c3d20adfc10a1ff5bd9bd86265ca92" category="paragraph">NetApp 硬碟的技術規格包括尺寸規格、磁碟容量、磁碟轉速、支援的控制器以及 ONTAP 版本要求。這些規格可以在<block ref="46a2fd508bb35aee53f0a28201754188" category="inline-link-rx"></block>的「磁碟機」部分找到。</block>
+  <block id="3a022495f271920d142fe5dd6b960986" category="summary">FlexPod Datacenter 的自動化部署可透過包含 Ansible playbook 和相關基礎架構即程式碼資產的 GitHub 儲存庫來實現。</block>
+  <block id="1ecbdb0613ff083c6b98bdefc73fea8d" category="doc">自動化部署</block>
+  <block id="8228e0dcb201ce87ceee088ad1c2af03" category="inline-link-macro">GitHub 儲存庫</block>
+  <block id="99b3ea1c4388797719dc788e8e5c77a3" category="paragraph">透過 FlexPod Datacenter <block ref="d21874331b2423995eb92e4b0534409d" category="inline-link-macro-rx"></block>，可自動化部署 FlexPod Datacenter。這些儲存庫包含 Ansible playbook 和相關文件，以簡化 FlexPod Datacenter 基礎架構即程式碼 （IaC） 的部署。</block>
+  <block id="52f58b9b6f3734776d57928b9895ae50" category="paragraph">這些 GitHub 儲存庫提供了一種結構化的方法來部署 FlexPod Datacenter 組態，讓使用者能夠自動化設定和管理其基礎架構。其中包括 FlexPod Datacenter 設計各個元件的腳本，確保使用者能夠有效率且一致、可靠地部署和維護其環境。</block>
+  <block id="99d885daf6b8c7231e8d279c6fdc280d" category="list-text">使用基礎組態自動部署 FlexPod Datacenter</block>
+  <block id="ec816be4fe7295ec75b403644f41f0ed" category="inline-link-macro">FlexPod Datacenter 基礎組態，包含 Cisco IMM 和 NetApp ONTAP GitHub 儲存庫</block>
+  <block id="8bad3c96ba76eb7cd158411dca241433" category="list-text">若要自動化部署包含 Cisco Nexus 交換器、Cisco UCS C-Series 伺服器或具有 IMM 的 Cisco UCS X-Series Direct 以及 NetApp ONTAP 的基礎 FlexPod Datacenter 組態，請參閱 <block ref="6e8c2742abc744774f904e2682831f4f" category="inline-link-macro-rx"></block> 與對應的 <block ref="bfc601d57e7863cb48608c41016951d8" category="inline-link-macro-rx"></block>。</block>
+  <block id="20a9806b9dd2e0d100bc0a5fd39a107e" category="list-text">此儲存庫包含 Ansible playbook 和相關文件，以方便部署基礎 FlexPod Datacenter 組態。然後可以在 FlexPod Base 之上設定各種 Hypervisor、裸機作業系統和應用程式的租用戶。</block>
+  <block id="c2097c6a2665850e882697681826c7f2" category="list-text">使用 VMware vSphere 和 Cisco IMM 自動化部署 FlexPod Datacenter</block>
+  <block id="60a92d0a4d4d73db2e482d736bc511cd" category="inline-link-macro">FlexPod Datacenter with VMware vSphere and Cisco IMM GitHub 儲存庫</block>
+  <block id="2c2367d8f5f30d9d6ef485de7925c8a4" category="list-text">若要使用 Cisco Nexus 交換器、Cisco UCS C 系列伺服器或 Cisco UCS X 系列 Direct （含 IMM）自動部署 FlexPod Datacenter 組態，並搭配 NetApp ONTAP 與 VMware vSphere，請參閱 <block ref="952c9b08f985ed9f82166e8211b5f6fe" category="inline-link-macro-rx"></block> 及對應的 <block ref="48c881fa567448be6b5f7b543cbb9aa4" category="inline-link-macro-rx"></block>。</block>
+  <block id="bf02b5d226fc05f30947a8d5ca9e91a0" category="list-text">Ansible playbook 中定義的 VMware 角色可用於 VMware 相關組態。</block>
+  <block id="de01b8d207b155cd5b990f07f30dc3df" category="admonition">在本儲存庫中，變數檔案中預設組態了使用 FC-NVMe 和 NFS 的 FC 開機，但也可以使用 iSCSI 開機和使用 NFS 的 NVMe-TCP。</block>
+  <block id="f1e8a19ef2a9d553caa2cc6dfa65da5d" category="list-text">搭配 Red Hat OpenShift 和 Cisco IMM 的 FlexPod Datacenter 自動化部署</block>
+  <block id="30e0d41551396c0294d6e545abf609de" category="inline-link-macro">FlexPod Datacenter with Red Hat OpenShift and Cisco IMM GitHub 儲存庫</block>
+  <block id="7a118072147383faf4d5775934156952" category="list-text">若要自動化部署配備 Cisco Nexus 交換器、搭載 IMM 的 Cisco UCS X-Series Direct 以及搭配 Red Hat OpenShift 的 NetApp ONTAP 之 FlexPod Datacenter 組態，請參閱 <block ref="2df563d224079c5d5cc4e7edde12bc88" category="inline-link-macro-rx"></block>。</block>
+  <block id="cde62abce3225f8e2b23811809305018" category="list-text">本儲存庫可用於設定 Cisco 設備和 NetApp ONTAP 儲存設備，為安裝 Red Hat OpenShift 做準備，如 <block ref="a048172c192c398b6bbb0a7ba15e5285" category="inline-link-macro-rx"></block> 所述。</block>
+  <block id="fd549a8826cdf448efdc54df6441fa26" category="admonition">此儲存庫提供使用 NFS、iSCSI、NVMe-TCP 和 ONTAP S3 儲存設備協定設定本機開機的選項。</block>
+  <block id="53b91b21fd7855f7f8c42d460609b3d8" category="summary">Cisco 對 FlexPod 的設計和架構做出了重大貢獻，涵蓋解決方案的運算層和連網層。本節將介紹可用於 FlexPod 的 Cisco UCS 和 Cisco Nexus 選項。</block>
+  <block id="4ee0fb1483594c0b7c40296d0416a262" category="paragraph">Cisco 對 FlexPod 解決方案的設計和架構做出了重大貢獻，涵蓋了運算層和連網層。本節將介紹可用於 FlexPod 的 Cisco UCS、Nexus 和 MDS 選項。</block>
+  <block id="3414fe93a7cd5c8b447f3ebde8c01bf7" category="paragraph">下表所示的零件號碼為基礎架構互聯的零件號碼。不包括電源供應單元 (PSU)、SFP+、QSFP+ 或擴充模組。</block>
+  <block id="dc5db2cd15e1c7e69a5b4e8f811f817c" category="cell">Cisco UCS 6664</block>
+  <block id="98825ee2530291a794981417c7d48432" category="cell">UCS-FI-6664-U</block>
+  <block id="05872f807bf86e4d46c0857d077fdd9a" category="inline-link">Cisco UCS 6600 系列交換矩陣互連</block>
+  <block id="342b83e0939e1105f340736fdf4d150f" category="cell"><block ref="342b83e0939e1105f340736fdf4d150f" category="inline-link-rx"></block></block>
+  <block id="08bae3ea37a774433d2bf47219cd03f2" category="cell">Cisco UCS 6652</block>
+  <block id="e480b60c522cf1625e48a52cc2b8b8b8" category="cell">UCS-FI-6652-U</block>
+  <block id="0a4904dbfb8c52cd235e27ee7f75c557" category="cell">Cisco UCS 6536</block>
+  <block id="cc801511ec0fe9f7a48c743b659722f1" category="cell">UCSX-FI-6536-U</block>
+  <block id="d0dc72e33010c3d02781d803574eb282" category="inline-link">Cisco UCS 6536 Fabric Interconnect</block>
+  <block id="34eb9d2cd24931b0b0c54987b095cb88" category="cell"><block ref="34eb9d2cd24931b0b0c54987b095cb88" category="inline-link-rx"></block></block>
+  <block id="17e9f960e1bcc1ed8ae0d0ca136a3265" category="inline-link">Cisco UCS 6400 系列交換矩陣互連</block>
+  <block id="c7a9063a6aed6ac99830aee9b64a626d" category="cell"><block ref="c7a9063a6aed6ac99830aee9b64a626d" category="inline-link-rx"></block></block>
+  <block id="cbda0a9e52c8b67dd6c14b6120a3298d" category="cell">Cisco UCS 64108</block>
+  <block id="d155e1d331f809a8395d31bc6c690dc0" category="cell">UCS-FI-64108-U</block>
+  <block id="3a921d7b1dc3f86e255092de3e22c969" category="cell">UCS 9108 100G Fabric Interconnect（Cisco UCS X-Series Direct）</block>
+  <block id="429720accf1a409f0a56cc6aff920691" category="paragraph">下表列出了可用於 Cisco UCS X 系列機箱的 PCI Express 節點。</block>
+  <block id="36441ac59f9966baa4b0eb1c4acfb932" category="cell">Cisco UCS X 系列 PCIe 節點</block>
+  <block id="af90655893b706e0d29e2e36f48a8c47" category="cell">Cisco UCS X580p PCIe 節點</block>
+  <block id="96cb505c33ca500b6a336f90986e2e3b" category="cell">UCSX-580P-U</block>
+  <block id="9675c916bc490ed6468791f2e49f63ac" category="cell"><block ref="9675c916bc490ed6468791f2e49f63ac" category="inline-link-rx"></block></block>
+  <block id="2d430101dc45f62b3445f2f2782e7f45" category="paragraph">下表列出了可用於 Cisco UCS X 系列機箱的 X-Fabric 模組。</block>
+  <block id="e3901cb419c92cee544fb74b9476b212" category="cell">Cisco UCS X-Series X-Fabric 模組</block>
+  <block id="033b7fd69c0efbd849f830986d5a238a" category="cell">Cisco UCS X9516 X-Fabric 模組</block>
+  <block id="93f609c9836071de030ad98eb9986168" category="cell">UCSX-FS-9516</block>
+  <block id="093c482cedd34b9160b239bf45baa595" category="cell"><block ref="093c482cedd34b9160b239bf45baa595" category="inline-link-rx"></block></block>
+  <block id="f6c5976cb526d6a6b098fa88c0d9c8c8" category="cell">UCSX-F-9416</block>
+  <block id="34a2a54377801e2a790ac574382fbbfc" category="section-title">Cisco UCS X 系列模組化系統</block>
+  <block id="447513e416214c97c4d3986cce9169c5" category="paragraph">Cisco UCS X 系列模組化系統以 Cisco UCS X9508 伺服器機箱為基礎，機箱設計靈活，符合未來需求的。機箱採用統一的乙太網路架構，配備 Cisco UCS Intelligent Fabric Modules 和 Cisco UCS X-Fabric Technology，可與其他技術相容。機箱頂部後方有兩個至能架構模組，用於將機箱連接到上游的 Cisco UCS 6400、6500 和 UCS 6600 系列 Fabric Interconnects。</block>
+  <block id="ed8d3ca38dbf036741e40502b06539f7" category="inline-link-macro">Cisco UCS X 系列模組化系統概覽</block>
+  <block id="ae8756a8171e0d02136133b79c6eb6ba" category="paragraph">有關 Cisco UCS X 系列功能和特性的快速概述，請參閱<block ref="a4868f6e39c342bac8d99d2d8e9f1844" category="inline-link-macro-rx"></block>。</block>
+  <block id="1792729a3b06f561c3bc28b2e3444405" category="paragraph">Cisco UCS X215c M8、Cisco UCS X210c 和 Cisco UCS X410c 運算節點在單一尺寸規格中提供運算密度、儲存容量和可擴充性，因此兼具刀鋒伺服器和機架伺服器的功能。</block>
+  <block id="9c4a7b4aa13e1f057ba1839047ae4e48" category="paragraph">Cisco UCS X440p PCIe 節點支援透過 Cisco UCS X9416 X-Fabric 模組新增 PCIe Gen 4.0 GPU。Cisco UCS X580p PCIe 節點支援透過 Cisco UCS X9516 X-Fabric 模組新增 PCIe Gen 5.0 GPU。</block>
+  <block id="f6910074355089d2ec496321e3f248d0" category="paragraph">如需 Cisco UCS X-Series 模組化系統解決方案元件的詳細資訊，請參閱以上各節中每個元件的技術規格。</block>
+  <block id="47aead422b486ea633e9e47b4a4567ce" category="admonition">有關 Cisco UCS X 系列模組化系統的完整技術規格，請參閱以下連結：<block ref="4c3774965254ea5aa39602d69482cfd2" category="inline-link-macro-rx"></block></block>
+  <block id="a7f22915a8c1c83436bee5503e3bae70" category="section-title">Cisco UCS X-Series Direct 選項</block>
+  <block id="ceb486461c32bddd51e0c0bc07feaa85" category="paragraph">有關 Cisco UCS X 系列 Direct 解決方案元件的詳細資訊，請參閱以上各節中每個元件的技術規格。</block>
+  <block id="4a6fd28b83fb9a37baf2b59e4956338f" category="admonition">有關 Cisco UCS X-Series Direct 的完整技術規格，請參閱以下連結：<block ref="c6d158517f0137b0ee0fc81034309271" category="inline-link-rx"></block>。</block>
+  <block id="368f84a273ab8ae4d2e1e39cdf881115" category="section-title">Cisco UCS C-Series 機架式伺服器選項</block>
+  <block id="4f1cbc019ce022ab51e47fea74a5849c" category="paragraph">Cisco UCS C 系列機架式伺服器提供 1、2 和 4 個機架單元 (RU) 的規格，並配備多種 CPU、記憶體容量和 I/O 選項。下表二所列的零件號碼為基礎伺服器的零件號碼。不包含 CPU、記憶體容量、硬碟和週邊元件互連快速匯流排 (PCIe) 卡。FlexPod 架構支援並提供多種組態選項。</block>
+  <block id="60a8b0f4cc09f04bbf68f8d68f1c8a4b" category="cell">Cisco UCS C系列機架式伺服器</block>
+  <block id="978113be0135d9ff6ac2e8fc28834308" category="paragraph">下表列出了針對 AI 使用案例最佳化的 Cisco UCS C 系列機架伺服器：</block>
+  <block id="66ce419d20c6ca45695cb62044894df7" category="cell">Cisco UCS C845A M8</block>
+  <block id="ddea627ff65e68fbf46170e688c12169" category="cell">UCSC-C845A-M8</block>
+  <block id="61b7fd830388c747ed4ddb3afeb61f97" category="inline-link">Cisco UCS C845A M8 機架式伺服器</block>
+  <block id="9f57046390e6423c78fb6aacdd67b87d" category="cell"><block ref="9f57046390e6423c78fb6aacdd67b87d" category="inline-link-rx"></block></block>
+  <block id="f55a716864ebcdba571ec336a234e429" category="cell">Cisco UCS C880A M8</block>
+  <block id="10611dff3afec97d0a94f14a60c82c60" category="cell">UCSC-C880A-M8</block>
+  <block id="23397aca8d4c16a8fa17f2fce1c52af2" category="inline-link">Cisco UCS C880A M8 機架式伺服器</block>
+  <block id="d9b57f834adc335aa8c715d19cad7292" category="cell"><block ref="d9b57f834adc335aa8c715d19cad7292" category="inline-link-rx"></block></block>
+  <block id="e61688df66c7a93486af6e50dffeefe1" category="paragraph">如果先前幾代的 Cisco UCS C-Series 伺服器受到<block ref="61c091fce51d2baac5905f12dd7d74cc" category="inline-link-rx"></block>支援，則可在 FlexPod 架構中使用。</block>
+  <block id="32e6947295fb9a903405669cf50b545d" category="paragraph">在 FlexPod 架構中需要備援的 Cisco Nexus 9000 系列交換器。下表所列的零件號碼適用於 Cisco Nexus 9000 系列機箱；不包含 SFP 模組或乙太網路模組。</block>
+  <block id="5c203f40ee6fdc286242872865154728" category="cell">Cisco Nexus 交換器 - Fixed</block>
+  <block id="2d32dfff6f2c668ba9a7075c2d963105" category="cell">Cisco Nexus 交換器 - 模組化</block>
+  <block id="42ed6acd90102ee533680e6ab12bedd8" category="cell">Cisco Nexus 9400 系列交換器</block>
+  <block id="100b241ecddb47d2d21a554e374fbf8e" category="inline-link">Cisco Nexus 9400 系列交換器</block>
+  <block id="9c8a2ed2ca982c00a88f8251cb14e5de" category="cell"><block ref="dcdedf77332fa97f464dac18882c1c07" category="inline-link-rx"></block></block>
+  <block id="24a79c910da39cc8afd79575b63c51dc" category="cell">Cisco Nexus 9500 系列交換器</block>
+  <block id="0c2ecc2e887b992011012362171fd05e" category="cell"><block ref="0c2ecc2e887b992011012362171fd05e" category="inline-link-rx"></block></block>
+  <block id="53f6c8e305cf2d8a22551189da9b74be" category="cell">Cisco Nexus 9800 系列交換器</block>
+  <block id="95e6b4c50676c9987fc6faae212201a7" category="inline-link">Cisco Nexus 9800 系列交換器</block>
+  <block id="13096a79dbffe0bd12f3b7bac5626599" category="cell"><block ref="53c6548e0b5fa96b9ec7742883711c22" category="inline-link-rx"></block></block>
+  <block id="62eb2272b1e766dd7058723579e90073" category="paragraph">Cisco APIC 是 Cisco ACI 的主要架構元件。也是 Cisco ACI 架構的統一自動化與管理點。</block>
+  <block id="9abc347443c2133b61aebb85e15b8060" category="paragraph">有關 APIC 產品規格的詳細資訊，請參閱<block ref="810caa612213807f8cb9ff928f57e2d9" category="inline-link-rx"></block>上的表 1 至表 3。</block>
+  <block id="698f5594b6202c1321b25dad23cf685e" category="paragraph">雖然 Cisco MDS 交換器是 FlexPod 架構中的選用組件，但若要利用 Fibre Channel SAN 連接實現更高效能的儲存設備存取，則必須實作備援的 Cisco MDS 交換器架構，以交付高可用度的 SAN 基礎架構。下表列出了受支援的 Cisco MDS 交換器。請參閱<block ref="31e25e06072fc647a14615c7a66045a3" category="inline-link-rx"></block>和<block ref="9663e16401acc5458c2d08f12e7ec029" category="inline-link-rx"></block>以取得受支援的 SAN 交換器完整清單。</block>
+  <block id="40e616d67e949ea2760c7d6ef35d8a30" category="cell">Cisco MDS 交換器</block>
+  <block id="b1a648a48cb0ebd2ce6a66f1662db225" category="cell">Cisco MDS 9100 多層架構交換器</block>
+  <block id="3beb51bee6d526fdc711f427f2c43f37" category="cell"><block ref="3beb51bee6d526fdc711f427f2c43f37" category="inline-link-rx"></block></block>
+  <block id="486b978ab30a8ef8bf80c9b83d5a525e" category="cell">Cisco MDS 9200 多業務交換器</block>
+  <block id="9bf6b77ce0f98a57ad539d2beb0e5631" category="inline-link">Cisco MDS 9200 系列交換器</block>
+  <block id="82bdfac9be09db06d8c046db34f36b61" category="cell"><block ref="82bdfac9be09db06d8c046db34f36b61" category="inline-link-rx"></block></block>
+  <block id="3889c6ea8f907a000c5276f641332e66" category="cell">Cisco MDS 9300 多層架構交換器</block>
+  <block id="242cf9a74b089d56d43fa3a5ea74b4cf" category="cell"><block ref="242cf9a74b089d56d43fa3a5ea74b4cf" category="inline-link-rx"></block></block>
+  <block id="ba3034d4e0e9c9b5c84808851528cff4" category="cell">Cisco MDS 9700 Multilayer Directors</block>
+  <block id="c898280a8d796c7f4928a00f7ec6b902" category="inline-link">Cisco MDS 9700 系列交換器</block>
+  <block id="a71a984a44ebf56d6947c6a56b324777" category="cell"><block ref="a71a984a44ebf56d6947c6a56b324777" category="inline-link-rx"></block></block>
+  <block id="0798c50c92fb46ccc12cdb18d2d0b597" category="admonition">建議在訂購前與您的 Cisco 或 NetApp 銷售代表確認授權需求。</block>
+  <block id="6945453477cc2b5487e94147cc3b466a" category="inline-link-macro">Cisco 解決方案支援</block>
+  <block id="9327facc8481b0cb31f744041b8e2c77" category="paragraph"><block ref="33f3b35be59346462ea51bb6bd5cef3d" category="inline-link-macro-rx"></block> 是一項技術支援服務產品，適用於 Cisco 解決方案，包括僅來自 Cisco 或來自 Cisco 和解決方案支援聯盟合作夥伴的硬體和軟體，並且僅由 Cisco 產品和協力廠商廠商（解決方案支援聯盟合作夥伴）提供的產品組成。</block>
+  <block id="ab74426b6fffb7f4cc5cb531223b69b9" category="inline-link-macro">技術援助中心</block>
+  <block id="c2e98c160e3b831489e21210475c1b33" category="paragraph">Cisco 透過其 <block ref="69e94520c1f78762e4802f52b5782f45" category="inline-link-macro-rx"></block> 為複雜的客戶環境提供支援。Cisco Solution Support 使客戶能夠存取一支 TAC 工程師團隊，該團隊作為解決解決方案中所發現問題的主要聯絡點，並為構成該解決方案的硬體和軟體提供產品支援。</block>
+  <block id="f15d30701c70d576f08b27b99971621a" category="inline-link-macro">TSANet 合作夥伴方案</block>
+  <block id="18ba914359571efe7910ffa268767902" category="paragraph">Cisco 利用該<block ref="a5c1c71f566a8ac6352d6e7587da6b34" category="inline-link-macro-rx"></block>架構，將解決方案支援合作夥伴就職至 TSANet Connect 系統上的私有群組。TSANet Connect 為支援工程師與合作夥伴的技術團隊提供一致的協同作業方式，確保高效通訊並加速問題解決，避免非正式合作方式所帶來的摩擦。</block>
+  <block id="e57f09bd31b8a8291c094d8c3e042287" category="summary">多種 Cisco Nexus 產品可作為特定 FlexPod 部署的交換器組件。其中大多數產品運用 Cisco NX-OS 軟體。Cisco Nexus 系列交換器在其產品線中提供不同的功能。這些功能將在本文件後續部分詳細介紹。</block>
+  <block id="84186e2aab7cde483e7b58c4c818d22d" category="paragraph">Cisco 在軟體定義連網空間的產品稱為應用中心基礎架構 (ACI)。支援 ACI 模式（架構模式）的 Cisco Nexus 產品線也可以部署在 NX-OS 模式下。</block>
+  <block id="8372d9b4f312c2f904c76d29ac73ea51" category="paragraph">FlexPod Datacenter 已通過 Cisco Nexus 交換器的兩種運作模式驗證。如需有關 ACI 和 NX-OS 模式的詳細資訊，請參閱以下 Cisco 頁面：</block>
+  <block id="860d464adba56b824b234c216e926463" category="list-text"><block ref="860d464adba56b824b234c216e926463" category="inline-link-rx"></block></block>
+  <block id="b3f0a35e106920c0e98dde71960289b7" category="list-text">所有元件都需要一個獨立的 1Gb 乙太網路帶外管理網路。</block>
+  <block id="9e6590327e387d3a09c7d64044ac7bd1" category="list-text">NetApp 儲存控制器上的連接埠必須連接到 Cisco Nexus 9000 系列交換器，才能支援虛擬連接埠通道 （vPC）。</block>
+  <block id="208f021c817d1019d8bf46de5e5a7ad8" category="list-text">Cisco Nexus 9000 系列交換器與 NetApp 儲存控制器之間需要 vPC。</block>
+  <block id="6bae8cd18ce9f8e6e6996086e11bf7f2" category="list-text">Cisco Nexus 9000 系列交換器與架構互連之間需要 vPC。</block>
+  <block id="ff2cff4932f6505b10b95429a3a0beb0" category="list-text">NetApp 直接連接到架構互連的儲存控制器埠（例如 X 系列 Direct）可以分組以啟用連接埠通路。此組態不支援 vPC。</block>
+  <block id="e28399b512acc1ad205113a838bceeb4" category="inline-link-macro">FlexPod Datacenter 拓撲結構</block>
+  <block id="347e80e699972662e002ccd3850c0327" category="paragraph">請參閱 <block ref="7478793b4a260babf5b186092a01137b" category="inline-link-macro-rx"></block> 章節，以了解每種拓樸的特定連線需求。</block>
+  <block id="c9aa34e2d4401308ab43a3f8515bb73b" category="doc">設備支援狀態</block>
+  <block id="c545eea8049a470c24089f1d333d7e3d" category="paragraph">此外，FlexPod Datacenter 架構會定期更新，以將 Cisco 和 NetApp 的最新硬體和軟體引入 FlexPod Datacenter 解決方案。</block>
+  <block id="baaa1a9c431633fffc7e33e30b34d768" category="paragraph">在部署或維護 FlexPod Datacenter 設備之前，請確認所有元件仍受廠商支援。本節說明如何查看 Cisco 及 NetApp 元件的停售和停止支援資訊。</block>
+  <block id="e9bac861b1f336ea0f53fa88207faa24" category="section-title">檢查 NetApp 設備支援</block>
+  <block id="fcef5ab3e50cc09c0f22fb37ddb010b7" category="list-text">選擇 *Products &gt; Platforms*，然後選擇您的平台（例如：*AFF A-Series*）和型號（例如：*AFF A800*）。</block>
+  <block id="baa95c6dfcdf3f73dbc67a2ac019e800" category="list-text">請查看*系統可用性和支援*部分中列出的設備停止支援日期。</block>
+  <block id="aec82c3996a87eb3924a46e8385e0b4e" category="section-title">檢查 Cisco 設備支援</block>
+  <block id="4e011c5839c4cbf8cd4762ccce88a074" category="list-text">在 *Product Categories* 下，選取 *Servers - UCS and HCI*，然後按一下您的伺服器類型（例如：*UCS C-Series Rack Servers*）。找到您的特定型號（例如：*UCS C220 M5*），並查看停售日期和停止支援日期。</block>
+  <block id="48af643810110afff3b97a47950093f5" category="list-text">在「產品類別」下，選擇「交換器」，然後點擊您的交換器類型（例如：*Nexus 9000*）。找到您的特定型號（例如：*9236C*），並尋找停售日期和停止支援日期。</block>
+  <block id="850feb92c81b2a267b69a79f7ab139e1" category="list-text">*FlexPod Datacenter。*該平台是一個易擴充的資料中心基礎架構，適用於企業工作負載和應用程式、虛擬化、人工智慧/機器學習、資料庫、SAP HANA、虛擬桌面基礎架構 （VDI） 以及公有雲、私有雲和混合雲工作負載。</block>
+  <block id="b0ffe926f3e58306815c9f2d97f7f4df" category="list-text">*FlexPod Express。*該平台是一個緊湊型融合式基礎架構，面向遠端辦公和邊緣應用場景。FlexPod Express 有其自身的規範，這些規範已記錄在<block ref="c85d287d3297bfdda3562debf3f595af" category="inline-link-rx"></block>。</block>
+  <block id="9bf6845d267e4fcdf748e77ec3c2a1cb" category="list-text">兩台 Cisco Nexus 交換器採用備援組態。此組態可由兩台前面提到的 Cisco Nexus 9000 系列備援交換器組成。這兩台交換器應為同一型號，並設定為相同的操作模式。</block>
+  <block id="aefa50533b802fc91194ba800f53150d" category="admonition">如果您要部署 ACI 架構，則必須遵守下列附加要求：* 將 Cisco Nexus 9000 系列交換器部署在葉脊拓撲中。* 使用三個 Cisco Application Policy Infrastructure Controllers （APIC）。</block>
+  <block id="dc91faa7f2c0c0da05bf76753ccd5590" category="list-text">如果使用 UCS C 系列機架伺服器或 X 系列模組化系統，則需要兩台 Cisco UCS 6400、6500 或 6600 系列 Fabric Interconnect，並採用備援組態。</block>
+  <block id="bd982ea9de89c2dd0911a653299fd7f0" category="list-text">兩台 Cisco UCS C 系列機架伺服器，具備 FI 連線和 Intersight 管理組態 （IMM）；或 Cisco UCS X-Series Direct，具備 Cisco IMM；或 Cisco UCS X-Series Modular，具備 Cisco Intersight 管理組態 （IMM）。</block>
+  <block id="3d0698b931ce88845ec144459be52e06" category="admonition">如果您使用的是沒有 FI 連線的 UCS 機架伺服器，則可以使用 CIMC 或 Intersight 獨立式模式進行管理。</block>
+  <block id="d01c849f8138ba01e3ea51bf8fc568c0" category="list-text">兩台 NetApp AFF、NetApp ASA 或 NetApp FAS 控制器以高可用度 （HA） 配對組態部署為雙節點叢集。如果使用 NetApp AFX，則至少需要四台 NetApp AFX 控制器，並部署為四節點 HA 叢集，同時還需要一對叢集互連交換器。</block>
+  <block id="3afa03d41b253b7c552fbb522539999e" category="list-text">對於沒有內建磁碟架的儲存控制器，至少需要一個 NetApp 磁碟架。</block>
+  <block id="3701e2b366e74c954f95853294163129" category="paragraph">備援的 NetApp FAS、AFF、ASA 或 AFX 控制器是 FlexPod 架構中的必要元件。這些控制器執行 ONTAP 軟體。訂購儲存控制器時，可以在控制器上預先載入所需的軟體版本。對於 ONTAP，需訂購完整的叢集。完整的叢集包含一對儲存控制器及一個叢集互連（交換器或無交換器式）。</block>
+  <block id="ac8e3f23d8f53a59374b4497937b0588" category="admonition">無交換器式叢集組態僅支援雙節點組態。四個或更多節點的組態需要叢集互連交換器，而雙節點組態則為選用。</block>
+  <block id="abd181dea223e1afebda8612664c19a7" category="cell">NetApp 儲存設備系列，適用於 FlexPod Datacenter</block>
+  <block id="9d9de1698f7e401c78687204de906ee5" category="cell">AFF A20</block>
+  <block id="d96ad697e360eb76c58b1f3712398b2a" category="inline-link">AFF A 系列資料表</block>
+  <block id="d9382f76af8a295815c8de3633a39af6" category="cell"><block ref="d9382f76af8a295815c8de3633a39af6" category="inline-link-rx"></block></block>
+  <block id="f8f6ba2d572ef729148f2d89d8ff810a" category="cell">AFF A30</block>
+  <block id="cc6089132b9a5e4af29a76834480cc1a" category="cell">AFF A50</block>
+  <block id="c61e96543ff55077f64d8dd03940c2c6" category="cell">AFF A70</block>
+  <block id="50c089c00eacadfe94238545067e1673" category="cell">AFF A90</block>
+  <block id="0be7ecaeb710959e64858a36fa1f8783" category="cell">AFF A1K</block>
+  <block id="bab1b59b0a2ad746796448276777fdbd" category="cell">AFF C30</block>
+  <block id="5780b86afe87f3e9e9bd049be9d0ab02" category="inline-link">AFF C-Series 規格書</block>
+  <block id="2d07c4c0099c7d3de0c79d86a0f87bb2" category="cell"><block ref="2d07c4c0099c7d3de0c79d86a0f87bb2" category="inline-link-rx"></block></block>
+  <block id="7a1f08f539146079eaeae8f4a563cce2" category="cell">AFF C60</block>
+  <block id="724bf3ae18d86521a5b9d77a13fcfddb" category="cell">AFF C80</block>
+  <block id="3c609b480f1311eaec9774146ac50e79" category="cell">ASA A20</block>
+  <block id="bf3d04e06bca9c07b61d9230b36bd4ed" category="inline-link">ASA 規格書</block>
+  <block id="d8ba261149ef84e6f2b53e25324f1c39" category="cell"><block ref="d8ba261149ef84e6f2b53e25324f1c39" category="inline-link-rx"></block></block>
+  <block id="e21bdbd552261278be0a5ad02fbc6fa7" category="cell">ASA A30</block>
+  <block id="14a1b02d9ac34f22a362671d392a3852" category="cell">ASA C30</block>
+  <block id="3ee9bc9a210bd85fa921ca63bdeef612" category="cell">ASA A50</block>
+  <block id="cd527b2aadf2bebf28ba082002724ab0" category="cell">ASA A70</block>
+  <block id="009f19d7e9e80eda1c7dbf7374519e58" category="cell">ASA A90</block>
+  <block id="5d6a7459a3583d9e29f4b486d809b6a1" category="cell">ASA A1K</block>
+  <block id="3eab1bbd4a3f05ea0803f3bcf5fac9e5" category="cell">FAS2750</block>
+  <block id="203ce1c7934424c70dc6a7efc6054b75" category="inline-link">FAS 規格書</block>
+  <block id="1c171a54ce05919ead6e3b51de2ab431" category="cell"><block ref="1c171a54ce05919ead6e3b51de2ab431" category="inline-link-rx"></block></block>
+  <block id="cac76ada4fbfca68ed190eb21810e1af" category="cell">FAS2820</block>
+  <block id="d85e5cacacd757755e3d09416d2a8bf8" category="cell">FAS50</block>
+  <block id="017db3debbf4b1ed577798b78fd96b66" category="cell">FAS70</block>
+  <block id="649e9f4912bcf4af7efe489c6866eb1d" category="cell">FAS90</block>
+  <block id="e9d7397e9772df2e11071d57657f4b22" category="cell">AFX</block>
+  <block id="03a70507b7d040ed5990e474d0b55688" category="cell">AFX 1K</block>
+  <block id="0b177bc573a406d57588f5636aee8329" category="inline-link">AFX 規格書</block>
+  <block id="041aa0b3f16a0fb1b96335a739998c28" category="cell"><block ref="041aa0b3f16a0fb1b96335a739998c28" category="inline-link-rx"></block></block>
+  <block id="23b43ede4557b73e6fa354124a73ba91" category="cell">AFX 2K</block>
+  <block id="28552c4be2093fe3218d18540fa3ef71" category="paragraph">下表列出了適用於 FlexPod 架構的 Nexus 叢集互連交換器。FlexPod 支援所有 ONTAP 支援的叢集交換器，包括非 Cisco 交換器，前提是它們與正在部署的 ONTAP 版本相容。</block>
+  <block id="2d10769ef7f1c7fd66e7a9bbbaa93a17" category="paragraph">若要查看支援的叢集互連交換器清單，請前往<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>，點選 *Products &gt; Networking &gt; Switches*，然後選擇 *Cluster InterConnect Switch*。您可以按廠商類型篩選，選擇交換器，然後點擊 *Show results* 以查看有關該交換器的詳細資訊。</block>
+  <block id="a056b5154896d8baeea7ea1aabd1c3c2" category="paragraph">下表列出了可用作叢集互連交換器的 Cisco 交換器。</block>
+  <block id="78304750479e085ffe5c8dd104c32361" category="paragraph">下表列出 NetApp 磁碟櫃選項（適用於 FlexPod Datacenter），以及其技術規格的連結。</block>
+  <block id="15101bf433e70359bb0cf5163348d1c3" category="paragraph">若要取得磁碟櫃支援的磁碟機清單，請前往 <block ref="41f66f34b3a905f864500c9319fdff8f" category="inline-link-macro-rx"></block>，在 *產品 &gt; 儲存設備 &gt; 機櫃* 下選擇 *ONTAP （AFF、ASA、FAS）或 ONTAP （AFX）*，選擇您正在使用的 ONTAP 版本，然後選擇機櫃類型（例如：*DS212C*），並按一下 *顯示結果*。按一下 *支援的磁碟機*，即可查看特定 ONTAP 版本和磁碟櫃所支援的磁碟機。</block>
+  <block id="ce10d24d102f61248a1ca7225202165a" category="cell">NX224</block>
+  <block id="17ae9d48bbb480e41afcadffa2b22959" category="cell">ONTAP One 適用於 AFF、FAS 和 AFX</block>
+  <block id="c5f90ddc2cc0bfc4a4deef7af3301d5d" category="paragraph">如需 NetApp 軟體授權的詳細資訊，請參閱以下連結：<block ref="1cff7a048fc5dd60eeb82c1be9d38836" category="inline-link-rx"></block>。</block>
+  <block id="56ad023e1d0ffbf92c16bff5162eea14" category="paragraph">SupportEdge Premium 授權為必要項目，這些授權的零件編號會根據 FlexPod Datacenter 設計中所選擇的選項而有所不同。</block>
+  <block id="8093ddfb30317fbace8f1fffae5fb3e8" category="paragraph">下表列出了 NetApp AFF、ASA、FAS 和 AFX 儲存系統的 NetApp 支援授權選項。</block>
+  <block id="8d44b279c2737f8e05fa179ff40c3c4e" category="summary">NetApp ONTAP 軟體安裝在每個 NetApp AFF、ASA、FAS 和 AFX 系統上。FlexPod 透過 ONTAP 軟體驗證，提供易擴充的儲存架構，進而實現無中斷操作、無中斷升級和敏捷的資料基礎架構。</block>
+  <block id="892038d2cb9ab5a784a58000294746fe" category="paragraph">NetApp ONTAP 軟體是在 AFF、ASA、FAS 和 AFX 儲存系統上執行的作業系統。ONTAP 提供易擴充的儲存架構，支援無中斷運作、無中斷升級和敏捷的資料基礎架構。透過 ONTAP One 授權模式，所有企業資料服務均包含在單一套件中，簡化部署與管理，同時提供對進階功能的完整存取。ONTAP 透過 SnapMirror 複寫與災難恢復，以及 SnapCenter 應用程式一致性備份與恢復等技術，提供強大的資料保護。此外，ONTAP 還整合了內建安全功能，包括自主勒索軟體防護和加密，以保護資料免受現代威脅的侵害。ONTAP 還可透過 SnapMirror Cloud 和 S3 型複寫等功能實現無縫混合雲整合，讓資料能夠在地端與雲端環境之間移動，同時維持一致性與控制。</block>
+  <block id="baac9dd6ef99ddd7e99775d7ada477c2" category="paragraph">以下圖示為 FlexPod Datacenter 採用 X 系列模組化系統和 C 系列機架伺服器的範例，用於基於 IP 的 iSCSI 組態。</block>
+  <block id="f66bc5529fa1389e5d6845c843e52c59" category="inline-image-macro">FlexPod Datacenter 適用於以 IP 為基礎的 iSCSI 連線</block>
+  <block id="74b2545a1f2d18fe6c66f8f4e20e4b92" category="paragraph"><block ref="74b2545a1f2d18fe6c66f8f4e20e4b92" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a40e3ff4994cf24d76ee53280cf467db" category="inline-link-macro">FlexPod Datacenter with Cisco UCS M7 IMM、VMware vSphere 8.0 和 NetApp ONTAP 9.12 設計指南</block>
+  <block id="442951babb669afa6e165b07f2dfb60f" category="paragraph">有關此組態的詳細資訊，請參閱<block ref="c70e981f4e45b095dbd7261af2f37013" category="inline-link-macro-rx"></block>。</block>
+  <block id="9fb7223025afc779fa8ec87848798323" category="section-title">使用 Cisco MDS 進行 FC 開機</block>
+  <block id="d122e1e64f2fa88f3e64e2df451c177a" category="paragraph">為了透過使用專用 SAN 網路來提高擴充性，FlexPod 支援透過 Cisco MDS 交換器進行 FC 連線。透過 Cisco MDS 進行 FC SAN 開機的選項具有以下授權和硬體需求：</block>
+  <block id="e9c20d0787d2797990d7f9c171c6eb3e" category="list-text">每個 NetApp 儲存控制器上都有一個 FC 授權。</block>
+  <block id="a80d719401887cfd97aefad44f1146ea" category="list-text">Cisco UCS 伺服器中能夠進行 FC 開機的介面卡。</block>
+  <block id="f14496b2de870123b7c6ecb5892b58c1" category="paragraph">下圖展示了 FlexPod Datacenter 採用 X 系列模組化系統和 C 系列機架伺服器的範例，用於搭配 MDS 交換器的 FC 型 SAN 組態。</block>
+  <block id="1fce04e100a33fdb0c31f271274382f0" category="inline-image-macro">FlexPod Datacenter 適用於 FC 型 SAN 連線</block>
+  <block id="5a99beb6d6ea2f1eeab4e51111788e1c" category="paragraph"><block ref="5a99beb6d6ea2f1eeab4e51111788e1c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="143d7fbe42a05f2cbe323d9e1351892b" category="paragraph">Cisco Nexus 93180YC-FX、93360YC-FX2 或 9336C-FX2-E 交換器可用於為 LAN 和 SAN 提供交換架構。</block>
+  <block id="7cb8f119750347b314888345c94388e9" category="paragraph">下圖展示了 FlexPod Datacenter 採用 X 系列模組化系統和 C 系列機架伺服器的範例，用於以 FC 為基礎的 SAN 組態，並採用 Cisco Nexus SAN 交換器。</block>
+  <block id="946917a87b49076e1f026e7fdf1b6e62" category="admonition">若要使用 Cisco Nexus 交換器進行 FC SAN 連線，需要在 Cisco Nexus 交換器上安裝儲存設備附加授權。</block>
+  <block id="3db816ab71302c12215a2613ae24d3ba" category="inline-image-macro">FlexPod Datacenter 採用 Cisco Nexus 的 FC 型 SAN 連接</block>
+  <block id="ea422a34eb4990edc4aeff3303b9ebcf" category="paragraph"><block ref="ea422a34eb4990edc4aeff3303b9ebcf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="225b3c244f4ddf8a9082bc0fbbed038e" category="paragraph">端對端的 FC-NVMe 無縫地擴展客戶現有的 SAN 基礎架構，以支援即時應用，同時提升 IOPS 和處理量，並降低延遲。現有的 32G FC SAN 傳輸可用於同時傳輸 NVMe 和 SCSI 工作負載。</block>
+  <block id="a6cde27e06862be4d5dc7ce3e78e6437" category="section-title">Cisco UCS X-Series Direct 和直接連接 AFF/ ASA/ FAS，適用於 FC 和 IP 為基礎的 SAN</block>
+  <block id="e60bce47d148c73046939fce4344d73e" category="paragraph">NetApp 儲存控制器可直接連接到 Cisco UCS 架構互連，無需任何上游 SAN 交換器。FlexPod 支援搭配 UCS X-Series Direct 的 FC 和 iSCSI 開機。</block>
+  <block id="29e99f4dc6b7aa7d80af85934559027d" category="paragraph"><block ref="29e99f4dc6b7aa7d80af85934559027d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9944a1fa533e5570c54a2faa066667a7" category="paragraph"><block ref="9944a1fa533e5570c54a2faa066667a7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5f19edf77e124f6650ee5a02c81c8dbe" category="paragraph">FlexPod MetroCluster IP with VXLAN Multi-Site fabric 解決方案由兩個 FlexPods 組成，分別位於相距一定距離的兩個站台，但透過連接與配對，提供高可用度、高靈活性且高可靠性的資料中心解決方案，即使發生站台故障，也能確保業務持續運作。站台之間的最大支援距離約為 435 英里（700 公里）。</block>
+  <block id="ce9857be254d1b78092d179993c67730" category="paragraph">在 FlexPod MetroCluster IP 解決方案中，Cisco VXLAN 多站台解決方案可讓您互連並集中管理部署在地理位置遍布世界各地的分隔資料中心中的 VXLAN 架構。NetApp MetroCluster IP 在兩個 NetApp 儲存叢集之間提供同步複寫解決方案，從而在園區或都會區實現儲存設備高可用度和災難恢復。此解決方案可讓您在分散式整合基礎架構上建置基於 VMware vSphere 的私有雲，並交付統一的解決方案，使多個站台能夠以與單一站台大致相同的方式運作，同時保護資料服務免受各種單點故障情境（包括完整站台故障）的影響。</block>
+  <block id="c598db43d26e36c0fccec3661081fd8c" category="paragraph"><block ref="c598db43d26e36c0fccec3661081fd8c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94b2f51f95a1f268b17ee9ebba529351" category="paragraph"><block ref="94b2f51f95a1f268b17ee9ebba529351" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4b1892a1277aaca38acb466035614767" category="inline-link">FlexPod MetroCluster IP 與 VXLAN 多站台 FrontendFabric</block>
+  <block id="b140eec502e7be04476cd7b021ae15bf" category="paragraph">有關此組態的詳細資訊，請參閱<block ref="ead2e55579ec615565c09c493aa1425f" category="inline-link-rx"></block>。</block>
+  <block id="ded030b8ed2c9b7e464ae4daef659ecc" category="section-title">SnapMirror 主動同步解決方案適用於 FlexPod MetroCluster IP 解決方案</block>
+  <block id="1b6153190a1aa7f1e0590ba4b9e74700" category="paragraph">利用 NetApp ONTAP 軟體中的 NetApp Snapshot 快照技術，可以利用基於快照的備份資料快速復原關鍵任務 SAN 資料服務。</block>
+  <block id="2125212fa0e6b41424b0b0054527214b" category="list-text">部署在兩個不同站台的兩個 ONTAP 叢集已完成對等連接，並配置了 SnapMirror 主動同步功能，以實現同步資料複寫和災難恢復。</block>
+  <block id="066f765c4e3c886951dae9afa297762e" category="list-text">如下圖所示，ONTAP 中介器部署在第三個故障域中。ONTAP 中介器與叢集一起，構成了 SnapMirror 作用中同步解決方案的仲裁。</block>
+  <block id="bcdecbde87be8143a554c342035419be" category="list-text">ONTAP 中介器從對等連接的 ONTAP 叢集和節點接收健全狀況資訊，並在它們之間進行協調以確定其狀態。健全狀況資料有助於叢集區分各種類型的故障，並決定是否執行自動容錯移轉。</block>
+  <block id="4ed47827541136c3c052231204912880" category="inline-image-macro">SnapMirror 主動同步解決方案元件，適用於 FlexPod MetroCluster IP 解決方案</block>
+  <block id="cd8be28c85aa637560f547a38f44e5b4" category="paragraph"><block ref="cd8be28c85aa637560f547a38f44e5b4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac5bc11842c3dd39e18c18079e952e3e" category="section-title">支援對稱雙主動式多路徑的 FlexPod MetroCluster IP 解決方案</block>
+  <block id="d8f238970f32d1caa7851c3d6a0e0ed8" category="paragraph">若要允許主機/用戶端使用複製的 LUN，請在遠端叢集中建立 igroup，將複製的 LUN 指派給對應的 igroup，並設定主機/用戶端，以便它們可以從遠端叢集找到 iSCSI 目標和 LUN 作為附加路徑。</block>
+  <block id="05c75d02e85cc223cbf50ccc9ce7d3d6" category="paragraph">如下圖所示，企業應用程式可以部署在儲存設備用戶端上，該用戶端使用基於 iSCSI 的 LUN，這些 LUN 由兩個設定為在站台間進行同步資料複寫的 ONTAP ASA 叢集託管。圖中所示的一致性群組包含三個應用程式專用的 LUN，資料透過 SnapMirror 主動同步同步複寫至對等叢集。</block>
+  <block id="969c460a1fb10a27de40cf70cfc029ba" category="inline-image-macro">SnapMirror 作用中同步對稱雙主動式 SAN 多路徑</block>
+  <block id="1b03d750c7d22daa23d3c5a824f4d571" category="paragraph"><block ref="1b03d750c7d22daa23d3c5a824f4d571" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b9d3ec3e9cab85f787e33ecbd4a55003" category="inline-link">利用 SnapMirror active sync 提升 FlexPod SAN 解決方案的儲存恢復能力</block>
+  <block id="ccd905ee4c47ef39fedcee6f87f0d974" category="paragraph">如需更多資訊，請參閱<block ref="f881f96b120b5d122b4f9f9abd142917" category="inline-link-rx"></block>。</block>
+  <block id="30d78d69f01a93b73985f3108aad4923" category="paragraph">FlexPod Datacenter 的其他要求包括以下幾點：</block>
+  <block id="2accd7b6f75b389c0529424bea41deab" category="list-text">對於以 OpenShift 為基礎的部署，請確保您擁有與 OpenShift 相容的必要硬體和軟體元件。如需更多資訊，請參閱 <block ref="46742752b769c4b6fa0ecbd4f6ebe77f" category="inline-link-macro-rx"></block>。</block>
+  <block id="cd86569148947461a44592d7da2c3b78" category="summary">本節說明 FlexPod Datacenter 設計的電源需求和磁碟櫃佈線指南。</block>
+  <block id="473fa5f85ddb48d285e7dbe17907c618" category="paragraph">本節介紹 FlexPod Datacenter 設計的電源需求和佈線指南。</block>
+  <block id="7852905fbb7ca5593b3c6a527ed25cd8" category="paragraph">如需 NetApp 儲存控制器電源資料，請參閱<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。在 *Platforms* 下，選擇您要使用的儲存平台（例如 AFF A90），選擇 ONTAP 版本，然後按一下 *Show Results*。電源線資料列於 *Supported Power Cords* 區段。如需尺寸、重量、功率等詳細資訊，請參閱 *Size, Weight, Acoustic, Power* 區段。</block>
+  <block id="9cc1c37dddcda992f0ed1292dd509aaa" category="paragraph">本節提供 FlexPod Datacenter 設計的一般佈線指南。</block>
+  <block id="2db9caa87c1677171d316aed439f5952" category="list-text">有關特定拓撲結構的其他佈線指南，請參閱 <block ref="7478793b4a260babf5b186092a01137b" category="inline-link-macro-rx"></block> 章節。</block>
+  <block id="a16617a9f0adc71877025a3c6840cc92" category="paragraph">下表提供了可用於 FlexPod Datacenter 設計中的 NetApp 磁碟櫃的纜線連接指南。</block>
+  <block id="e9ce6870eceb1eff7cc71d739793de47" category="inline-link-macro">NS224 和 NX224 機櫃需求與最佳實務做法</block>
+  <block id="35696ca35beeb4b5ccf173c552bc84cb" category="cell"><block ref="35696ca35beeb4b5ccf173c552bc84cb" category="inline-link-macro-rx"></block></block>
+  <block id="ea36b7283dfb7129b06d40472d4486f3" category="summary">以下資訊描述了 FlexPod 組態的軟體版本建議。</block>
+  <block id="18b536f73814589955acfb746b33bdbd" category="doc">軟體版本建議</block>
+  <block id="bf94aae954c6c5257b24456d46d5477f" category="paragraph">此 FlexPod 組態具有以下軟體版本建議：</block>
+  <block id="8db6db24943a7d2ffd08be986666650c" category="list-text">ONTAP 版本：建議所有 FlexPod Datacenter 組態均使用最新 ONTAP 版本。請參閱 <block ref="a572ecec09575c7250d1bdbf3b293d81" category="inline-link-macro-rx"></block> 以取得最新 ONTAP 版本。</block>
+  <block id="e46759749fcbf788ed19cb7407907649" category="list-text">Cisco NX-OS 版本：有關 Cisco 9000 系列交換器的 Cisco NX-OS 版本的一般建議，請參閱<block ref="15a404350a9c325c9f6ded2f64ecaa40" category="inline-link-macro-rx"></block>。</block>
+  <block id="b5ccd15ffb19c6d481a9a3b58d056949" category="list-text">請參考此連結以取得 <block ref="96023dfc35aca322ee97bb49ea64a936" category="inline-link-macro-rx"></block> 的最新版本。</block>
+  <block id="981372b50973be40991e3a8463b815dd" category="list-text">請參考此連結以取得 <block ref="159389d00e7441b1c53d85747f17d0eb" category="inline-link-macro-rx"></block> 的最新版本。</block>
+  <block id="5fd7a04c3e732bc730e68fe43c543348" category="admonition">所有軟體元件必須在<block ref="31e25e06072fc647a14615c7a66045a3" category="inline-link-rx"></block>中列出並受到支援，所有 NetApp 硬體元件和 ONTAP 版本必須在<block ref="6a8cef5b71adde6301ea0984592ea5c1" category="inline-link-rx"></block>中列出並受到支援，所有 Cisco 硬體元件必須在<block ref="243ee419838ead03039b3c014c885e78" category="inline-link-rx"></block>中列出並受到支援。</block>
+  <block id="27a865e7dc0fe1c9137db6931148551b" category="summary">FlexPod 平台是一個預先設計、符合最佳實務做法的資料中心架構，以 Cisco Unified Computing System （Cisco UCS）、Cisco Nexus 系列交換器和 NetApp 儲存控制器（NetApp AFF、ASA、FAS 或 AFX 系統）為基礎。</block>
+  <block id="4e66cd63de64d3a844d2fda6dc825500" category="paragraph">該 FlexPod 平台是預先設計、最佳實務做法的資料中心架構，它基於 Cisco Unified Computing System（Cisco UCS）、Cisco Nexus 和 MDS（適用於 FC）系列交換器以及 NetApp 儲存控制器（AFF、ASA、FAS 或 AFX 系統）。</block>
+  <block id="4f1c3b94131a4d44f8816f875a51d9c1" category="admonition">在您訂購完整的 FlexPod 組態之前，請參閱<block ref="01a8b28afe6f20d4d467302d134f4834" category="inline-link-rx"></block>頁面以取得這些技術規格的最新版本。</block>
+  <block id="e2c14471e399a4e70a986d395a809ca1" category="doc">支援的組態與已驗證的 FlexPod 組態</block>
+  <block id="14ea08d4a36a9e093a2a404337332ea0" category="paragraph">每個 Cisco 驗證的設計 （CVD） 或 NetApp 驗證架構 （NVA） 都代表一種經過驗證的 FlexPod 組態。Cisco 和 NetApp 會記錄這些組態組合，並透過廣泛的端對端測試加以驗證。FlexPod 部署若偏離這些組態，只要遵循本文件中的指南，且所有元件均在 Cisco HCL 和 NetApp IMT 中列為相容，即可獲得完整支援。</block>
+  <block id="e2bf83d4cba851d15175186517d7bb5e" category="paragraph">例如，如果軟體、硬體和組態符合本文件中定義的準則，則完全支援新增儲存控制器或 Cisco UCS 伺服器以及將軟體升級至更新版本。</block>
+  <block id="a6918643e4992643fe73dfeaa8263621" category="summary">技術規格提供 FlexPod 解決方案中硬體組件的詳細資訊，例如機箱、伺服器、交換器和儲存控制器。</block>
+  <block id="12e74a05369e7bf3cd2d089941d50c84" category="paragraph">Cisco UCS 架構互連的技術規格包括尺寸規格、連接埠和擴充槽總數以及處理量。請參閱下表中的 Cisco UCS 架構互連資料表。</block>
+  <block id="4f9c0e704807ee5cfe824fd204b21c29" category="inline-link">Cisco UCS 6600 系列交換矩陣互連</block>
+  <block id="34358b3cb4f11bc47e471da088110fba" category="cell"><block ref="34358b3cb4f11bc47e471da088110fba" category="inline-link-rx"></block></block>
+  <block id="ac2b361901e33c0f870ff0332d05f435" category="cell"><block ref="ac2b361901e33c0f870ff0332d05f435" category="inline-link-rx"></block></block>
+  <block id="0186fe1b394374f3f11c7bcbbc429cea" category="inline-link">Cisco UCS 9108 100G Fabric Interconnect，適用於 Cisco UCS X-Series Direct</block>
+  <block id="20e9cbcf552e524b481f0358670ba8fc" category="cell"><block ref="20e9cbcf552e524b481f0358670ba8fc" category="inline-link-rx"></block></block>
+  <block id="af4251c0857aeda05ead49bde92dd797" category="paragraph">有關 Cisco UCS X 系列運算節點的技術規格，請參閱下表。</block>
+  <block id="682a7264c9b56e8c0fc15a778aaf4962" category="paragraph">Cisco UCS C 系列機架式伺服器的技術規格包括處理器支援、最大記憶體容量、PCIe 插槽數量和外形尺寸。有關相容 UCS 伺服器型號的更多詳細資訊，請參閱<block ref="1420345f3000e0fcdfadf0c24d8bc000" category="inline-link-rx"></block>清單。</block>
+  <block id="08f90c3f9daaa88b26f047dc5d0cf3b2" category="cell"><block ref="08f90c3f9daaa88b26f047dc5d0cf3b2" category="inline-link-rx"></block></block>
+  <block id="fbf3f8d4623d9c4266b5e270ab5a0ee9" category="cell"><block ref="fbf3f8d4623d9c4266b5e270ab5a0ee9" category="inline-link-rx"></block></block>
+  <block id="7219df433f029fdee2c0a735be7fb3e6" category="paragraph">有關針對 AI 使用案例最佳化的 Cisco UCS C 系列機架伺服器的技術規格和 GPU 選項，請參閱下表。</block>
+  <block id="40de3149ca15c46df4a8f3388558d758" category="cell">Cisco UCS C885A M8</block>
+  <block id="0d2e2eb100dee2a6cb001e0d0a6b9bb1" category="inline-link">Cisco UCS C885A M8 機架式伺服器</block>
+  <block id="a09e0f5e3722c6602828716fadbca53c" category="cell"><block ref="a09e0f5e3722c6602828716fadbca53c" category="inline-link-rx"></block></block>
+  <block id="f4714e751132b7e856f80d454cf4e83d" category="section-title">Cisco UCS VIC 轉接器</block>
+  <block id="747d92c9aa09f9a071dcb5d056ecee1c" category="paragraph">Cisco UCS 虛擬介面卡 (VIC) 轉接器的技術規格適用於 Cisco 伺服器，其中包含下列元件：</block>
+  <block id="7adf01c6b3d7284eb822483746c707db" category="cell"><block ref="7adf01c6b3d7284eb822483746c707db" category="inline-link-rx"></block></block>
+  <block id="516c7932443f5b393415c891cd43f206" category="cell">Cisco Nexus 9400 系列</block>
+  <block id="7337c93b77d6a4b7b2ae194248954d06" category="cell"><block ref="7337c93b77d6a4b7b2ae194248954d06" category="inline-link-rx"></block></block>
+  <block id="fa99e140f5670bc2913d872566532d21" category="cell">Cisco Nexus 9800 系列</block>
+  <block id="b18d3da737b1a6de351d1d457e1bae25" category="cell"><block ref="b18d3da737b1a6de351d1d457e1bae25" category="inline-link-rx"></block></block>
+  <block id="273df010b6b762b0233d13a17cef7a8e" category="paragraph">Cisco Nexus 交換器的技術規格包含在各型號的產品型錄中，如下表所示。</block>
+  <block id="eb26056e24a379c0df1d5e5f6d7e1416" category="cell">Cisco MDS 9700 系列導向器</block>
+  <block id="fca30792930656870d7294a601c2d283" category="paragraph">部署 Cisco ACI 時，必須設定三個 Cisco APIC。下表列出 Cisco APIC 的產品型錄。</block>
+  <block id="1d056c0567217101986998500c219974" category="inline-link">Cisco 200G QSFP56 模組產品型錄</block>
+  <block id="d344e5293fc7172448b7a7a77f6e77aa" category="list-text">有關 Cisco 200GB QSFP 的資訊，請參閱<block ref="be93093aee3e6f8247901f984b1aebc3" category="inline-link-rx"></block>。</block>
+  <block id="884d3263ab74fe377f92dc01a21b99c8" category="inline-link">Cisco 400G QSFP56 模組產品型錄</block>
+  <block id="6f8f8c10407cbc00e63787ad65fe17cf" category="list-text">有關 Cisco 400GB QSFP 的資訊，請參閱<block ref="0500eef9c1f20c5a1191d8560b8544ce" category="inline-link-rx"></block>。</block>
+  <block id="5544331c64bea308357d9a03bb68c11e" category="paragraph">NetApp AFF A 系列儲存設備控制器支援在 FlexPod Datacenter 中使用。更多資訊請參閱<block ref="4d7832f31319f7704de635742e7fc4df" category="inline-link-rx"></block>產品型錄及<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。如需特定 AFF 型號的詳細資訊，請參閱下表所列的平台專屬文件。</block>
+  <block id="3d53e46a1096c76baddcf43eb6a6e764" category="cell"><block ref="3d53e46a1096c76baddcf43eb6a6e764" category="inline-link-rx"></block></block>
+  <block id="406fb1982edbefcf4d6756d9413f2fc2" category="cell"><block ref="406fb1982edbefcf4d6756d9413f2fc2" category="inline-link-rx"></block></block>
+  <block id="e306612e21ef0f7645efced8c3bc1c99" category="cell">NetApp AFF A50</block>
+  <block id="8426b996996e8957b5236f33822dd544" category="inline-link">AFF A50 主要規格</block>
+  <block id="80ef6d8d8c2d0780b553c604db5f7f13" category="cell"><block ref="80ef6d8d8c2d0780b553c604db5f7f13" category="inline-link-rx"></block></block>
+  <block id="61f9bfc3852f946b4d7d02c951beb314" category="cell">NetApp AFF A70</block>
+  <block id="818e31757a80cdbe1c239a58660a7885" category="inline-link">AFF A70 主要規格</block>
+  <block id="a73a5ab4fb841d6d0b41475b8d8cf82f" category="cell"><block ref="a73a5ab4fb841d6d0b41475b8d8cf82f" category="inline-link-rx"></block></block>
+  <block id="3eb4233634d4c27ee1a1ddf72619b98d" category="cell">NetApp AFF A90</block>
+  <block id="8b28f0fb14ddbea248ae3076cdfab1a9" category="inline-link">AFF A90 主要規格</block>
+  <block id="199b56a3d0e27135d065a1d323816cc3" category="cell"><block ref="199b56a3d0e27135d065a1d323816cc3" category="inline-link-rx"></block></block>
+  <block id="29cfc97c8417ca3cc5fe7dd29a7ad7f1" category="cell">NetApp AFF A1K</block>
+  <block id="cfaefef91ea45a0a3097b19bc55dcc35" category="inline-link">AFF A1K 主要規格</block>
+  <block id="e53e901832e1b02cf1dd30095f57b935" category="cell"><block ref="e53e901832e1b02cf1dd30095f57b935" category="inline-link-rx"></block></block>
+  <block id="290d5f3f8595a3361fcb6d12c81c4559" category="paragraph">NetApp AFF C 系列儲存設備控制器支援在 FlexPod Datacenter 中使用。更多資訊請參閱<block ref="280dfbc3de8e7f733455704810939f1b" category="inline-link-rx"></block>產品型錄及<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。如需特定 AFF 型號的詳細資訊，請參閱下表所列的平台專屬文件。</block>
+  <block id="59314a13f47d6db964fc2dec1b8c91da" category="cell">NetApp AFF C60</block>
+  <block id="62faabd0beef71556080c100a011bed9" category="inline-link">AFF C60 主要規格</block>
+  <block id="cc584a1fcc3821846a58475dfea8abf9" category="cell"><block ref="cc584a1fcc3821846a58475dfea8abf9" category="inline-link-rx"></block></block>
+  <block id="22c39f34ab16ad4fcd3d273536eae513" category="cell">NetApp AFF C80</block>
+  <block id="a8e4ae380812ec76f122dd5f15867b24" category="inline-link">AFF C80 主要規格</block>
+  <block id="9acd6fb6c60b18ca7bccb665bf97b24d" category="cell"><block ref="9acd6fb6c60b18ca7bccb665bf97b24d" category="inline-link-rx"></block></block>
+  <block id="f2ba8e60442c9736c4538e0fcd9463c3" category="paragraph">NetApp ASA 儲存設備控制器支援在 FlexPod Datacenter 中使用。更多資訊請參閱<block ref="0121d7eee41574793aaf62f464ee106c" category="inline-link-rx"></block>產品型錄及<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。如需特定 ASA 型號的詳細資訊，請參閱下表所列的平台專屬文件。</block>
+  <block id="1c49eec6d5eacbe5ecd52529d10aa373" category="cell">NetApp ASA A50</block>
+  <block id="e6123cccf14266201bae1d8ee3fc4bf8" category="inline-link">ASA A50 主要規格</block>
+  <block id="b758ff5206a15c29fd95bddb4b024a1c" category="cell"><block ref="b758ff5206a15c29fd95bddb4b024a1c" category="inline-link-rx"></block></block>
+  <block id="505085c1159df2dce07e7e40ddfde339" category="cell">NetApp ASA A70</block>
+  <block id="b2036bcd5af47117cd77846818541f75" category="inline-link">ASA A70 主要規格</block>
+  <block id="d40230ab48e48abb25a156ed816c2fd8" category="cell"><block ref="d40230ab48e48abb25a156ed816c2fd8" category="inline-link-rx"></block></block>
+  <block id="63a09d53ae774b395997cbaaa77a2f93" category="cell">NetApp ASA A90</block>
+  <block id="78163a8cfe4a7d021a562891f5e4801a" category="inline-link">ASA A90 主要規格</block>
+  <block id="f07607d7f18b23598967ec8a14c0e1bc" category="cell"><block ref="f07607d7f18b23598967ec8a14c0e1bc" category="inline-link-rx"></block></block>
+  <block id="add39609920905a47f09bcb16e61df41" category="cell">NetApp ASA A1K</block>
+  <block id="6ed1f87abab2f12a96f08ad9b24c4b71" category="inline-link">ASA A1K 主要規格</block>
+  <block id="44dd45b95916b62b82fb79d5aaeefd48" category="cell"><block ref="44dd45b95916b62b82fb79d5aaeefd48" category="inline-link-rx"></block></block>
+  <block id="37b34fbd3e16548a50af9764af647e1b" category="inline-link-macro">NetApp FAS 技術規範</block>
+  <block id="f7a45a0a3b3772334deb5a8af3a67bd3" category="paragraph">FAS 儲存設備控制器支援在 FlexPod Datacenter 中使用。更多資訊請參閱 <block ref="b76dbf9f1c8cadde3604cb93acccd451" category="inline-link-macro-rx"></block> 和 <block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。如需特定 FAS 機型的詳細資訊，請參閱下表所列的平台專屬文件。</block>
+  <block id="4e37e1d1fa653bfadbd161def3891524" category="cell">NetApp FAS2750</block>
+  <block id="d8baa3d8ce850f6c084d71355a659cb2" category="cell">NetApp FAS2820</block>
+  <block id="a4fe5f671744e9a9d27aaa1d22d6b5f6" category="cell">NetApp FAS50</block>
+  <block id="04da2898d7a5d12f8dc732ee818c0a12" category="cell">NetApp FAS70</block>
+  <block id="1f3949b7878530d5ee20e78ea2847e2f" category="inline-link">FAS70 主要規格</block>
+  <block id="473d328a1604e1c37bb536d50e21524e" category="cell"><block ref="473d328a1604e1c37bb536d50e21524e" category="inline-link-rx"></block></block>
+  <block id="ece0205043b5832d9a240eee85e5f44f" category="cell">NetApp FAS90</block>
+  <block id="700919c924a6244f485747782c93c9ad" category="inline-link">FAS90 主要規格</block>
+  <block id="929034619836c531724d1407814511eb" category="cell"><block ref="929034619836c531724d1407814511eb" category="inline-link-rx"></block></block>
+  <block id="4d4bcd00dec0ee009c6a6c831d33fda4" category="section-title">NetApp AFX</block>
+  <block id="766f2ce67352d90609b4dd68811961ba" category="inline-link">NetApp AFX 技術規範</block>
+  <block id="efdccdeb3bf9f53d6ef9eb8c81ab24b8" category="paragraph">NetApp AFX 儲存設備控制器支援在 FlexPod Datacenter 中使用。更多資訊請參閱<block ref="3e0e42f2ac6a310c33b5dfa2d9e860c6" category="inline-link-rx"></block>產品型錄及<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。有關特定 AFX 型號的詳細資訊，請參閱下表列出的平台專屬文件。</block>
+  <block id="6764e8befcc2f33737282754e8f9ffb5" category="cell">NetApp AFX 控制器平台文件</block>
+  <block id="501665dc32a33e6deb7f88eeafd9b93b" category="cell">NetApp AFX 1K</block>
+  <block id="767092dcdf5577793227ee48ead41fdf" category="inline-link">AFX 說明文件</block>
+  <block id="86b03bc02e05d0ab52b725f7b489d274" category="cell"><block ref="86b03bc02e05d0ab52b725f7b489d274" category="inline-link-rx"></block></block>
+  <block id="6610266d00e4e1d411f8edcedb1e3f67" category="cell">NetApp AFX 2K</block>
+  <block id="adc11ca9e5e5e0142cde3542ff135bad" category="inline-link">NetApp 磁碟架文件</block>
+  <block id="ebebd0209ef6831aa96c49d901351ded" category="cell"><block ref="ebebd0209ef6831aa96c49d901351ded" category="inline-link-rx"></block></block>
+  <block id="330b1e634334c841b0a7f6edbf719d13" category="cell">NetApp NS224 附 NSM 100B 磁碟架</block>
+  <block id="ac64f722fda26907aec3dc2aadfe6703" category="cell">NetApp NX224 磁碟架</block>
+  <block id="d5c8eba782330d98b42f84023ab8f13e" category="summary">本節介紹 FlexPod Datacenter 的範例拓撲。</block>
+  <block id="a512016efc15680ab743e2272da9c672" category="section-title">Cisco UCS X 系列模組化系統和 C 系列機架伺服器，支援基於 FC 和 IP 的 SAN</block>
+  <block id="7015fc3688193749ab52213e57d6f556" category="paragraph">下圖展示了採用 X 系列模組化系統和 C 系列機架伺服器的 FlexPod Datacenter 範例，適用於以 IP 為基礎的 iSCSI 組態。此拓撲也支援 NFS 和 NVMe-TCP。</block>
+  <block id="8e0f1e05a5f397a70e903a8ea8d66701" category="paragraph">下圖展示了 FlexPod Datacenter 範例，該資料中心採用 X 系列模組化系統和 C 系列機架伺服器，建構基於 FC 的 SAN 組態，並配備 MDS 交換器。上述拓撲也支援 NFS 和 FC-NVMe。</block>
+  <block id="f16a3164306bf238ac9d044da6f91a29" category="paragraph">上述拓撲的連線需求包括：</block>
+  <block id="b1bd828531442358640eaba77cbdb3c8" category="list-text">Cisco UCS X9508 機箱使用 Cisco UCSX-I-9108-100G IFM 連接到架構互連。Cisco UCSX-I-9108-25G IFM 也可與 4x25G 分支電纜搭配使用，將機箱連接到架構互連。</block>
+  <block id="e4ece53eaf94e72ddb8285b8cf3c06d0" category="list-text">Cisco UCS X 系列模組化運算節點包含 Cisco VIC，可與任一 IFM 搭配使用。</block>
+  <block id="7422d702e5adba7466eea6b43fb146c8" category="list-text">Cisco UCS C 系列機架伺服器包含 Cisco VIC 並連接到架構互連。</block>
+  <block id="d9d05a56025adb5fb6c6b50241a5411c" category="list-text">需要使用虛擬連接埠通道 (vPC) 將 Cisco Nexus 交換器連接到 NetApp 儲存設備控制器，以及將 Cisco UCS Fabric Interconnects 連接到 Cisco Nexus 交換器。</block>
+  <block id="7b93f112174318e013e23a9f02ff0a44" category="list-text">FC 連線需求：</block>
+  <block id="51cefbc1744063108815253f0221cc47" category="list-text">NetApp 儲存設備控制器透過 32 Gbps FC 連接與 Cisco MDS 交換器連接，以實現 SAN 連線。</block>
+  <block id="665e3181dfe1563317553439006aec24" category="list-text">Cisco UCS 架構互連透過 32 Gbps FC 連線連接至 Cisco MDS 交換機，設定為單一連接埠通路以實現 SAN 連線。</block>
+  <block id="83e8f4357274f9e84bb22a5aee60cc5e" category="paragraph">您可以選擇僅實作基於 IP 的 SAN、僅實作基於 FC 的 SAN，或同時實作兩者，以根據工作負載的延遲和處理量需求採用不同的協定。基於架構的 NVMe 協定由於設備連接、命令集效率更高以及 CPU 使用率更低，因此能夠提供更低的延遲和更高的每秒輸入 / 輸出作業次數 （IOPS）。</block>
+  <block id="ef20f18bfdcd3b5d8799c0951b742131" category="admonition">上述拓撲指的是使用 NetApp AFF 的 X 系列模組化伺服器和 C 系列機架伺服器解決方案組態。但是，相同的拓撲也可用於 NetApp ASA 和 FAS。</block>
+  <block id="da94777890ffe1ba40d755e95dc40b79" category="section-title">Cisco UCS X-Series Direct 搭配直連 FC 和 IP 型 SAN</block>
+  <block id="9143bfbd99c3697754545eda73f27ea5" category="paragraph">下圖顯示 UCS X-Series Direct 和直接連接 ASA 範例拓撲，適用於 FlexPod Datacenter 基於 IP 和 FC 的 SAN。</block>
+  <block id="b96b67c8f24ba7e03c49dcef0bb74844" category="list-text">FI 網路上行鏈路連接：對於基於 IP 的 SAN 連接，上行鏈路 Nexus 交換器不參與 SAN 資料路徑。SAN I/O 直接從 UCS 運算節點經由其與 FI A 或 FI B 的連線到達 ASA 儲存設備。因此，現有的支援 VLAN 和 vPC 的機架頂部交換器可用於為 FlexPod SAN 解決方案環境提供外部網路存取。</block>
+  <block id="78821464786159ae7904e29344969146" category="list-text">對於基於 FC 的 SAN 連線，需要將 UCS FI (FC) 連接埠設定為分支連接埠。</block>
 </blocks>

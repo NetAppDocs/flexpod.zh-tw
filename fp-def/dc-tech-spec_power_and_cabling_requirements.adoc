@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/dc-tech-spec_power_and_cabling_requirements.html 
-keywords: power, cabling, requirements, minimum, techincal, datacenter, specifications 
-summary: 供應電源和纜線的需求最低。FlexPod 
+keywords: power, cabling, requirements, flexpod, datacenter, netapp, cisco, ucs, disk shelves 
+summary: 本節說明 FlexPod Datacenter 設計的電源需求和磁碟櫃佈線指南。 
 ---
-= 電源和纜線需求
+= 電源和佈線指南
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 供應電源和纜線的需求最低。FlexPod
 
 
 [role="lead"]
-供應電源和纜線的需求最低。FlexPod
+本節介紹 FlexPod Datacenter 設計的電源需求和佈線指南。
 
 
 
@@ -25,84 +25,31 @@ summary: 供應電源和纜線的需求最低。FlexPod
 
 如需所需最大電力的詳細資料、以及其他詳細電力資訊、請參閱本節所列每個硬體元件的技術規格 link:dc-tech-spec_technical_specifications_and_references.html["技術規格與參考資料：硬體元件"]。
 
-如需詳細的Cisco UCS電源資料、請參閱 http://www.cisco.com/assets/cdc_content_elements/flash/dataCenter/cisco_ucs_power_calculator/["Cisco UCS電源計算機"^]。
+有關 Cisco UCS 電源資料的詳細說明，請參閱 https://ucspowercalculator.cisco.com/["Cisco UCS電源計算機"^]。
 
-如需NetApp儲存控制器電源資料、請參閱 http://hwu.netapp.com/Controller/Index?platformTypeId=6780858["NetApp Hardware Universe"^]。在「Platforms（平台）」下、選取您要用於組態的儲存平台（FAS/V系列或AFF VMware）。選取ONTAP 「版本與儲存控制器」、然後按一下「顯示結果」按鈕。
+如需 NetApp 儲存控制器電源資料，請參閱 https://hwu.netapp.com/["NetApp Hardware Universe"^]。在 *Platforms* 下，選擇您要使用的儲存平台（例如 AFF A90），選擇 ONTAP 版本，然後按一下 *Show Results*。電源線資料列於 *Supported Power Cords* 區段。如需尺寸、重量、功率等詳細資訊，請參閱 *Size, Weight, Acoustic, Power* 區段。
 
 
 
-[[minimum-cable-requirements]]
-== 最低纜線需求
+[[cabling-guidelines]]
+== 佈線指南
 
-每FlexPod 次部署「Datacenter」時、所需的纜線和介面卡數量和類型會有所不同。纜線類型、收發器類型和編號是在設計過程中根據您的需求而決定。下表列出所需的最低纜線數量。
+本節提供 FlexPod Datacenter 設計的一般佈線指南。
+
+* 確保運算和儲存連線的備援連線能力。
+* 連接速度必須與所連接的組件相容。
+* 有關特定拓撲結構的其他佈線指南，請參閱 link:https://docs.netapp.com/us-en/flexpod/fp-def/dc-tech-spec_topologies.html["FlexPod Datacenter 拓撲結構"^] 章節。
+
+
+下表提供了可用於 FlexPod Datacenter 設計中的 NetApp 磁碟櫃的纜線連接指南。
 
 |===
-| 硬體 | 機型編號 | 需要纜線 
 
 
-| Cisco UCS機箱 | Cisco UCS 5108 | 每個Cisco UCS 2104XP、2204XP或2208XP模組至少兩條雙軸纜線 
+| 磁碟櫃 | 佈線指南 
 
 
-.6+| Cisco UCS Fabric互連 | Cisco UCS 6248UP  a| 
-* 兩條Cat5e纜線、用於管理連接埠
-* 兩條Cat5e纜線、適用於每對光纖互連的L1、L2互連
-* 每個光纖互連至少四條雙軸纜線
-* 每個光纖互連至少四條FC纜線
-
-
-
-
-| Cisco UCS 6296UP 
-
-
-| Cisco UCS 6332-16UP 
-
-
-| Cisco UCS 6454. 
-
-
-| Cisco UCS 6332  a| 
-* 兩條Cat5e纜線、用於管理連接埠
-* 兩條Cat5e纜線、適用於每對光纖互連的L1、L2互連
-* 每個光纖互連至少四條雙軸纜線
-
-
-
-
-| Cisco UCS 6324  a| 
-* 兩個10/100/1000Mbps管理連接埠
-* 每個光纖互連至少兩條雙軸纜線
-
-
-
-
-.2+| Cisco Nexus 5000與7000系列交換器 | Cisco Nexus 5000系列  a| 
-* 每個交換器至少有兩條10GbE光纖或雙軸纜線
-* 每個交換器至少有兩條FC纜線（如果需要FC/FCoE連線）
-
-
-
-
-| Cisco Nexus 7000系列 
-
-
-| Cisco Nexus 9000系列交換器 | Cisco Nexus 9000系列 | 每個交換器至少有兩條10GbE纜線 
-
-
-.2+| NetApp FAS 產品控制器 | A系列AFF  a| 
-* 每個儲存控制器一對SAS或SATA纜線
-* 每個控制器至少有兩條FC纜線（如果使用舊FC）
-* 每個控制器至少兩條10GbE纜線
-* 每個控制器至少有一條GbE纜線可供管理
-* 對於零組件、每對叢集互連交換器需要八條短雙軸纜線ONTAP
-
-
-
-
-| 支援FAS 
-
-
-.4+| NetApp磁碟櫃 | DS212C .3+| 每個磁碟櫃有兩條SAS、SATA或FC纜線 
+| DS212C .3+| link:https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html#configuration-rules["SAS 佈線規則"^] 
 
 
 | DS224C 
@@ -111,5 +58,11 @@ summary: 供應電源和纜線的需求最低。FlexPod
 | DS460C 
 
 
-| NS224 | 每個磁碟櫃兩條100Gbps銅線 
+| NS224 .3+| link:https://docs.netapp.com/us-en/ontap-systems/drive-shelves/index.html["NS224 和 NX224 機櫃需求與最佳實務做法"^] 
+
+
+| NS224 搭配 NSM100B 
+
+
+| NX224 
 |===

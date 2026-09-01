@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_automation.html 
+keywords: flexpod datacenter, automation, IaC, GitHub repository, Ansible 
+summary: FlexPod Datacenter 的自動化部署可透過包含 Ansible playbook 和相關基礎架構即程式碼資產的 GitHub 儲存庫來實現。 
+---
+= 自動化部署
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+透過 FlexPod Datacenter link:https://github.com/ucs-compute-solutions["GitHub 儲存庫"^]，可自動化部署 FlexPod Datacenter。這些儲存庫包含 Ansible playbook 和相關文件，以簡化 FlexPod Datacenter 基礎架構即程式碼 （IaC） 的部署。
+
+這些 GitHub 儲存庫提供了一種結構化的方法來部署 FlexPod Datacenter 組態，讓使用者能夠自動化設定和管理其基礎架構。其中包括 FlexPod Datacenter 設計各個元件的腳本，確保使用者能夠有效率且一致、可靠地部署和維護其環境。
+
+* 使用基礎組態自動部署 FlexPod Datacenter
++
+** 若要自動化部署包含 Cisco Nexus 交換器、Cisco UCS C-Series 伺服器或具有 IMM 的 Cisco UCS X-Series Direct 以及 NetApp ONTAP 的基礎 FlexPod Datacenter 組態，請參閱 link:https://github.com/ucs-compute-solutions/FlexPod-Base-IMM["FlexPod Datacenter 基礎組態，包含 Cisco IMM 和 NetApp ONTAP GitHub 儲存庫"^] 與對應的 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_base_imm_m7_iac.html["CVD"^]。
+** 此儲存庫包含 Ansible playbook 和相關文件，以方便部署基礎 FlexPod Datacenter 組態。然後可以在 FlexPod Base 之上設定各種 Hypervisor、裸機作業系統和應用程式的租用戶。
+
+
+* 使用 VMware vSphere 和 Cisco IMM 自動化部署 FlexPod Datacenter
++
+** 若要使用 Cisco Nexus 交換器、Cisco UCS C 系列伺服器或 Cisco UCS X 系列 Direct （含 IMM）自動部署 FlexPod Datacenter 組態，並搭配 NetApp ONTAP 與 VMware vSphere，請參閱 link:https://github.com/ucs-compute-solutions/FlexPod-IMM-VMware["FlexPod Datacenter with VMware vSphere and Cisco IMM GitHub 儲存庫"^] 及對應的 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_imm_m7_iac.html["CVD"^]。
+** Ansible playbook 中定義的 VMware 角色可用於 VMware 相關組態。
+
+
+
+
+
+NOTE: 在本儲存庫中，變數檔案中預設組態了使用 FC-NVMe 和 NFS 的 FC 開機，但也可以使用 iSCSI 開機和使用 NFS 的 NVMe-TCP。
+
+* 搭配 Red Hat OpenShift 和 Cisco IMM 的 FlexPod Datacenter 自動化部署
++
+** 若要自動化部署配備 Cisco Nexus 交換器、搭載 IMM 的 Cisco UCS X-Series Direct 以及搭配 Red Hat OpenShift 的 NetApp ONTAP 之 FlexPod Datacenter 組態，請參閱 link:https://github.com/ucs-compute-solutions/FlexPod-IMM-OpenShift["FlexPod Datacenter with Red Hat OpenShift and Cisco IMM GitHub 儲存庫"^]。
+** 本儲存庫可用於設定 Cisco 設備和 NetApp ONTAP 儲存設備，為安裝 Red Hat OpenShift 做準備，如 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_rh_openshift_bm_iac_deploy.html["CVD"^] 所述。
+
+
+
+
+
+NOTE: 此儲存庫提供使用 NFS、iSCSI、NVMe-TCP 和 ONTAP S3 儲存設備協定設定本機開機的選項。

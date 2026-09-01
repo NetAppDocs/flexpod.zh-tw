@@ -16,8 +16,8 @@ summary:
 [role="lead"]
 共有兩FlexPod 個支援平台：
 
-* *《資料中心》*。此平台是可大幅擴充的虛擬資料中心基礎架構、適用於企業工作負載應用程式、虛擬化、虛擬桌面基礎架構（VDI）、以及公有雲、私有雲和混合雲工作負載。FlexPod
-* * FlexPod Express.*此平台是一種精簡的融合式基礎架構、專為遠端辦公室和邊緣使用案例所設計。FlexPod Express 有其本身的規格、詳見 https://docs.netapp.com/us-en/flexpod/fp-def/fp-express-tech-spec_overview.html["部分技術規格。FlexPod"^]
+* *FlexPod Datacenter。*該平台是一個易擴充的資料中心基礎架構，適用於企業工作負載和應用程式、虛擬化、人工智慧/機器學習、資料庫、SAP HANA、虛擬桌面基礎架構 （VDI） 以及公有雲、私有雲和混合雲工作負載。
+* *FlexPod Express。*該平台是一個緊湊型融合式基礎架構，面向遠端辦公和邊緣應用場景。FlexPod Express 有其自身的規範，這些規範已記錄在 https://docs.netapp.com/us-en/flexpod/fp-def/fp-express-tech-spec_overview.html["部分技術規格FlexPod"^]。
 
 
 本文件提供FlexPod 《不完整資料中心》平台的技術規格。

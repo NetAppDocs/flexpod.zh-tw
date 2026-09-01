@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/dc-tech-spec_netapp_components.html 
-keywords: storage, controllers, cluster, interconnect, switches, drives, disk, shelves, licensing, options 
+keywords: storage, controllers, cluster, aff, asa, fas, afx, ontap, interconnect switches, drives, disk, shelves, licensing, options 
 summary: NetApp儲存控制器為FlexPod 支援開機和應用程式資料儲存的功能、提供了整個架構的儲存基礎。NetApp元件包括儲存控制器、叢集互連交換器、磁碟機和磁碟櫃、以及授權選項。 
 ---
 = NetApp元件
@@ -21,38 +21,100 @@ NetApp儲存控制器為FlexPod 支援開機和應用程式資料儲存的功能
 [[netapp-storage-controller-options]]
 == NetApp儲存控制器選項
 
-在整個架構中、需要備援NetApp FAS 的功能性、AFF 功能性和AFF ASA 功能性。FlexPod控制器執行ONTAP 的是功能不均的軟體。訂購儲存控制器時、可在控制器上預先載入偏好的軟體版本。針對整個叢集、我們會訂購完整的叢集。ONTAP完整的叢集包括一對儲存控制器和叢集互連（交換器或無交換器）。
+備援的 NetApp FAS、AFF、ASA 或 AFX 控制器是 FlexPod 架構中的必要元件。這些控制器執行 ONTAP 軟體。訂購儲存控制器時，可以在控制器上預先載入所需的軟體版本。對於 ONTAP，需訂購完整的叢集。完整的叢集包含一對儲存控制器及一個叢集互連（交換器或無交換器式）。
+
+
+NOTE: 無交換器式叢集組態僅支援雙節點組態。四個或更多節點的組態需要叢集互連交換器，而雙節點組態則為選用。
 
 視所選的儲存平台而定、有不同的選項和組態可供選擇。如需這些額外元件的詳細資訊、請洽詢您的銷售代表。
 
 下表所列的控制器系列適合FlexPod 用於「解決方案不整合」、因為它們與Cisco Nexus交換器的連線是無縫的。請參閱 https://hwu.netapp.com/["NetApp Hardware Universe"^] 以取得每種控制器機型的特定相容性詳細資料。
 
 |===
-| 儲存控制器系列 | 技術規格 
+| NetApp 儲存設備系列，適用於 FlexPod Datacenter | 模型 | 技術規格 
 
 
-| A系列AFF | https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62247["A系列文件AFF"] 
+.6+| A系列AFF | AFF A20 .6+| https://www.netapp.com/pdf.html?item=/media/7828-ds-3582-aff-a-series-ai-era.pdf["AFF A 系列資料表"] 
 
 
-| A系列AFF ASA | https://www.netapp.com/data-storage/san-storage-area-network/documentation/["A系列文件AFF ASA"] 
+| AFF A30 
 
 
-| 支援FAS | https://mysupport.netapp.com/documentation/productsatoz/index.html#F["支援的支援FAS"] 
+| AFF A50 
+
+
+| AFF A70 
+
+
+| AFF A90 
+
+
+| AFF A1K 
+
+
+.3+| AFF C 系列 | AFF C30 .3+| https://www.netapp.com/pdf.html?item=/media/81583-ds-4240-aff-c-series.pdf["AFF C-Series 規格書"] 
+
+
+| AFF C60 
+
+
+| AFF C80 
+
+
+.7+| ASA | ASA A20 .7+| https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["ASA 規格書"] 
+
+
+| ASA A30 
+
+
+| ASA C30 
+
+
+| ASA A50 
+
+
+| ASA A70 
+
+
+| ASA A90 
+
+
+| ASA A1K 
+
+
+.5+| FAS | FAS2750 .5+| https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS 規格書"] 
+
+
+| FAS2820 
+
+
+| FAS50 
+
+
+| FAS70 
+
+
+| FAS90 
+
+
+.2+| AFX | AFX 1K .2+| https://www.netapp.com/pdf.html?item=/media/142853-ds-3466-netapp-afx-datasheet.pdf["AFX 規格書"] 
+
+
+| AFX 2K 
 |===
 
 
 [[cluster-interconnect-switch-options]]
 == 叢集互連交換器選項
 
-下表列出FlexPod 適用於各種架構的Nexus叢集互連交換器。此外FlexPod 、只ONTAP 要與ONTAP 正在部署的版本不一致、支援所有支援的叢集交換器（包括非Cisco交換器）。請參閱 https://hwu.netapp.com/["NetApp Hardware Universe"^] 以取得特定交換器機型的其他相容性詳細資料。
+下表列出了適用於 FlexPod 架構的 Nexus 叢集互連交換器。FlexPod 支援所有 ONTAP 支援的叢集交換器，包括非 Cisco 交換器，前提是它們與正在部署的 ONTAP 版本相容。
+
+若要查看支援的叢集互連交換器清單，請前往 https://hwu.netapp.com/["NetApp Hardware Universe"^]，點選 *Products > Networking > Switches*，然後選擇 *Cluster InterConnect Switch*。您可以按廠商類型篩選，選擇交換器，然後點擊 *Show results* 以查看有關該交換器的詳細資訊。
+
+下表列出了可用作叢集互連交換器的 Cisco 交換器。
 
 |===
-
-
 | 叢集互連交換器 | 技術規格 
-
-
-| Cisco Nexus 3132Q-V | https://mysupport.netapp.com/documentation/docweb/index.html?productID=62377&language=en-US["NetApp文件：Cisco Nexus 3132Q-V交換器"] 
 
 
 | Cisco Nexus 9336C-FX2 | https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/configure-switch-overview-9336c-cluster.html["NetApp文件：Cisco Nexus 9336C-FX2交換器"^] 
@@ -62,56 +124,66 @@ NetApp儲存控制器為FlexPod 支援開機和應用程式資料儲存的功能
 [[netapp-disk-shelf-and-drive-options]]
 == NetApp磁碟櫃與磁碟機選項
 
-所有儲存控制器至少需要一個NetApp磁碟櫃。
-
-所選的NetApp機櫃類型決定該機櫃中可用的磁碟機類型。
+對於沒有內建磁碟架的儲存控制器，至少需要一個 NetApp 磁碟架。所選的 NetApp 磁碟架類型決定了該磁碟架內可用的磁碟機類型。
 
 
 NOTE: 如需所有磁碟櫃和磁碟零件編號、請洽詢您的銷售代表。
 
-有關磁碟機櫃和儲存媒體的詳細資訊，請參閱下表中的「磁碟櫃和儲存媒體技術規格」連結。
+下表列出 NetApp 磁碟櫃選項（適用於 FlexPod Datacenter），以及其技術規格的連結。
+
+若要取得磁碟櫃支援的磁碟機清單，請前往 link:https://hwu.netapp.com/["NetApp Hardware Universe"^]，在 *產品 > 儲存設備 > 機櫃* 下選擇 *ONTAP （AFF、ASA、FAS）或 ONTAP （AFX）*，選擇您正在使用的 ONTAP 版本，然後選擇機櫃類型（例如：*DS212C*），並按一下 *顯示結果*。按一下 *支援的磁碟機*，即可查看特定 ONTAP 版本和磁碟櫃所支援的磁碟機。
 
 |===
 | 磁碟櫃 | 技術規格 
 
 
-| DS224C .4+| https://www.netapp.com/data-storage/disk-shelves-storage-media/["磁碟櫃和儲存媒體技術規格"] 
+| DS212C .6+| https://www.netapp.com/data-storage/disk-shelves-storage-media/["磁碟架和儲存媒體"] 
 
 
-| DS212C 
+| DS224C 
 
 
 | DS460C 
 
 
 | NS224 
+
+
+| NS224 搭配 NSM100B 
+
+
+| NX224 
 |===
 
 
 [[netapp-software-licensing-options]]
 == NetApp軟體授權選項
 
-下表列出FlexPod 適用於「Datacenter」架構的NetApp軟體授權選項。NetApp軟體是FAS 以功能性和AFF 功能性控制器層級授權。
+下表列出 NetApp 軟體授權選項。
 
 |===
-| NetApp軟體授權 | 產品編號 | 技術規格 
+| NetApp軟體授權 | 技術規格 
 
 
-| 軟體、完整套件（控制器）、-C | SW-8XXX-COMP套件C .2+| http://mysupport.netapp.com/documentation/productsatoz/index.html["產品庫A–Z"] 
+| ONTAP One 適用於 AFF、FAS 和 AFX .2+| 如需更多授權資訊、請洽詢您的NetApp銷售團隊。 
 
 
-| 軟體ONTAP 、《程式集（控制器）》、-C | SW-8XXX-ONTAP9-C 
+| 適用於 ASA 的 ONTAP One for SAN 
 |===
+如需 NetApp 軟體授權的詳細資訊，請參閱以下連結： https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one["NetApp軟體授權"^]。
+
 
 
 [[netapp-support-licensing-options]]
 == NetApp支援授權選項
 
-NetApp支援是要求使用的功能、但這些授權的零件編號會因您在該功能設計中選擇的選項而有所不同。SupportEdge Premium FlexPod FlexPod例如、軟體授權零件編號會因FAS 您選擇的哪個功能不同而有所差異。如需個別支援授權的確切零件編號資訊、請洽詢您的銷售代表。下表顯示SupportEdge 一個關於不含功能的使用許可範例。
+SupportEdge Premium 授權為必要項目，這些授權的零件編號會根據 FlexPod Datacenter 設計中所選擇的選項而有所不同。
+
+下表列出了 NetApp AFF、ASA、FAS 和 AFX 儲存系統的 NetApp 支援授權選項。
 
 |===
-| NetApp支援授權 | 產品編號 | 技術規格 
+| NetApp支援授權 | 技術規格 
 
 
-| 現場4小時—月：SupportEdge Premium 36 | CS -O2 - 4小時 | https://www.netapp.com/pdf.html?item=/media/8745-supportedge-premium-product-description.pdf["NetApp SupportEdge Premium"^] 
+| NetApp SupportEdge | https://www.netapp.com/netapp-services/[] 
 |===
