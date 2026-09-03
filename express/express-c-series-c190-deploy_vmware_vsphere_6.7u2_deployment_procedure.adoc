@@ -41,7 +41,7 @@ NOTE: 對於新增至叢集的任何其他節點、必須完成此程序。
 . 在主功能表中、選取伺服器索引標籤。
 . 按一下啟動KVM主控台。
 +
-image:express-c-series-c190-deploy_image17.png[""]
+image:express-c-series-c190-deploy_image17.png["Cisco CIMC 伺服器 BIOS 頁面快照，頂部選單中含有「啟動 KVM」連結"]
 
 . 從虛擬KVM主控台選取虛擬媒體索引標籤。
 . 選取地圖CD / DVD。
@@ -74,7 +74,7 @@ NOTE: 您可能需要先按一下「啟動虛擬裝置」。如果出現提示�
 . 閱讀完終端使用者授權合約後、請接受該合約、然後按F11繼續安裝。
 . 選取先前設定為ESXi安裝磁碟的NetApp LUN、然後按Enter繼續安裝。
 +
-image:express-c-series-c190-deploy_image18.png[""]
+image:express-c-series-c190-deploy_image18.png["ESXi 安裝程式選擇容量為 15.00 GiB 的 NETAPP LUN C 模式儲存設備的螢幕截圖"]
 
 . 選取適當的鍵盤配置、然後按Enter。
 . 輸入並確認root密碼、然後按Enter。
@@ -100,7 +100,7 @@ image:express-c-series-c190-deploy_image18.png[""]
 . 為vSwitch0選取所需的連接埠。按Enter。
 . 在CIMC中選取對應於eth0和eth1的連接埠。
 +
-image:express-c-series-c190-deploy_image19.png[""]
+image:express-c-series-c190-deploy_image19.png["ESXi 網路介面卡畫面的螢幕截圖，其中已選擇 vmnic2 和 vmnic4 用於管理連網。"]
 
 . 選取「VLAN（選用）」、然後按Enter。
 . 輸入VLAN ID：\<<mgmt_vlan_id>>'。按Enter。
@@ -215,7 +215,7 @@ esxcli network vswitch standard policy failover set -v vSwitch0 -a vmnic2,vmnic4
 . 選取左側的「Networking（網路）」。
 . 在右側、選取「Virtual Switches（虛擬交換器）」索引標籤。
 +
-image:express-c-series-c190-deploy_image20.png[""]
+image:express-c-series-c190-deploy_image20.png["ESXi 網路頁面的快照，其中「虛擬交換器」標籤顯示了 vSwitch0 和 iScsiBootvSwitch"]
 
 . 按一下「iScsiBootvSwitch」。
 . 選取「編輯設定」。
@@ -248,7 +248,7 @@ NOTE: 將iScsiBootPG-A上的MTU設為9000
 .. 按一下iSCSIBootPG-A上的Edit Settings（編輯設定）> Tiering and Failover（分層與容錯移轉）> Failover Order（容錯移轉順序）> vmnic3。vmnic3應為作用中、vmnic5應未使用。
 .. 按一下iSCSIBootPG-B上的Edit Settings（編輯設定）> Teaming and Failover（群組與容錯移轉）> Failover Order（容錯移轉順序）> vmnic5。vmnic5應為作用中、vmnic3應未使用。
 +
-image:express-c-series-c190-deploy_image21.png[""]
+image:express-c-series-c190-deploy_image21.png["這是 iSCSIBootPG-A 組隊和故障轉移設定的快照，其中 vmnic3 作用中，vmnic5 未使用。"]
 
 
 
@@ -264,18 +264,18 @@ image:express-c-series-c190-deploy_image21.png[""]
 . 在左側導覽窗格中選取儲存設備。按一下介面卡。
 . 選取iSCSI軟體介面卡、然後按一下「Configure iSCSI（設定iSCSI）」。
 +
-image:express-c-series-c190-deploy_image22.png[""]
+image:express-c-series-c190-deploy_image22.png["ESXi 儲存設備介面卡索引標籤的快照，其中已選取 iSCSI 軟體介面卡 vmhba64。"]
 
 . 按一下「動態目標」下的「新增動態目標」。
 +
-image:express-c-series-c190-deploy_image23.png[""]
+image:express-c-series-c190-deploy_image23.png["快照顯示已設定四個 IP 位址和連接埠 3260 的 iSCSI 動態目標。"]
 
 . 輸入IP位址「iSCSI_lif01a」。
 +
 .. 重複執行IP位址「iSCSI_lif01b」、「iSCSI_lif02a」和「iSCSI_lif02b」。
 .. 按一下儲存組態。
 +
-image:express-c-series-c190-deploy_image24.png[""]
+image:express-c-series-c190-deploy_image24.png["快照顯示四個使用連接埠 3260 的 iSCSI 動態目標位址以及「儲存配置」按鈕。"]
 
 +
 
@@ -295,7 +295,7 @@ NOTE: 您可以在NetApp叢集上執行network interface show命令、或查看S
 . 在左側導覽窗格中、選取「Networking（網路）」。
 . 選取vSwitch0。
 +
-image:express-c-series-c190-deploy_image25.png[""]
+image:express-c-series-c190-deploy_image25.png["ESXi vSwitch0 頁面快照，顯示 MTU 9000 及作用中的 vmnic2 和 vmnic4 介面卡"]
 
 . 選取編輯設定。
 . 將MTU變更為9000。
@@ -316,7 +316,7 @@ NOTE: 負載平衡的IP雜湊方法需要使用具有靜態（模式-開啟）�
 . 在左側導覽窗格中、選取「Networking（網路）」。
 . 以滑鼠右鍵按一下「連接埠群組」索引標籤
 +
-image:express-c-series-c190-deploy_image26.png[""]
+image:express-c-series-c190-deploy_image26.png["ESXi 網路頁面的快照，其中「連接埠群組」標籤已選取，「新增連接埠群組」可用。"]
 
 . 在VM Network上按一下滑鼠右鍵、然後選取Edit（編輯）。將VLAN ID變更為「」。
 . 按一下新增連接埠群組。
@@ -329,7 +329,7 @@ image:express-c-series-c190-deploy_image26.png[""]
 
 . 單擊[VMkernel NIC（VMkernel NIC）]選項卡
 +
-image:express-c-series-c190-deploy_image27.png[""]
+image:express-c-series-c190-deploy_image27.png["ESXi 網路 VMkernel NIC 標籤中列出 vmk0 和 vmk1 介面的畫面快照"]
 
 . 選取新增VMkernel NIC。
 +
@@ -357,7 +357,7 @@ image:express-c-series-c190-deploy_image27.png[""]
 .. 輸入「」<<var_hosta_vMotion遮罩>>'作為子網路遮罩。
 .. 確保在「IPv4設定」之後選取「vMotion」核取方塊。
 +
-image:express-c-series-c190-deploy_image28.png[""]
+image:express-c-series-c190-deploy_image28.png["具有靜態 IPv4 設定和已選取 vMotion 的「新增 VMkernel 網路卡」對話方塊快照"]
 
 +
 
@@ -376,11 +376,11 @@ NOTE: 有許多方法可以設定ESXi網路、包括在授權允許的情況下�
 
 . 按一下左導覽窗格中的「Storage（儲存設備）」、然後按一下「New Datastore（新增
 +
-image:express-c-series-c190-deploy_image29.png[""]
+image:express-c-series-c190-deploy_image29.png["VMware ESXi 儲存設備頁面快照，可見「新資料儲存」按鈕。"]
 
 . 選取「掛載NFS資料存放區」。
 +
-image:express-c-series-c190-deploy_image30.png[""]
+image:express-c-series-c190-deploy_image30.png["這是「新資料儲存」精靈的快照，其中已選擇「掛載 NFS 資料儲存」作為建立類型。"]
 
 . 在「提供NFS掛載詳細資料」頁面中輸入下列資訊：
 +
@@ -414,7 +414,7 @@ image:express-c-series-c190-deploy_image30.png[""]
 . 輸入「\<<var_ntp >>」作為NTP伺服器。您可以設定多個NTP伺服器。
 . 按一下儲存。
 +
-image:express-c-series-c190-deploy_image31.png[""]
+image:express-c-series-c190-deploy_image31.png["快照顯示 ESXi 時間與日期設定，NTP 服務正在執行，且有三部 NTP 伺服器。"]
 
 
 
@@ -427,11 +427,11 @@ image:express-c-series-c190-deploy_image31.png[""]
 
 . 按一下左側導覽窗格中的「Manage（管理）」。在右窗格中選取「系統」、然後按一下「交換」。
 +
-image:express-c-series-c190-deploy_image32.png[""]
+image:express-c-series-c190-deploy_image32.png["VMware ESXi 管理系統交換頁面快照，顯示交換設定。"]
 
 . 按一下「編輯設定」。從資料存放區選項中選取「infra_swap」。
 +
-image:express-c-series-c190-deploy_image33.png[""]
+image:express-c-series-c190-deploy_image33.png["快照顯示「編輯交換組態」對話框，其中已選擇 infra_swap 作為資料存放區，並顯示「儲存」和「取消」按鈕。"]
 
 . 按一下儲存。
 

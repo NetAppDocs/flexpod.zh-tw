@@ -18,11 +18,11 @@ link:flexpod-genomics-benefits-of-deploying-genomic-workloads-on-flexpod.html["�
 [role="lead"]
 下圖說明FlexPod 用於網關設定與驗證的「不二」系統。我們使用 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html["採用VMware vSphere 7.0與NetApp的解決方案資料中心9.7 Cisco驗證設計（CVD）FlexPod ONTAP"^] 在設定過程中。
 
-image:flexpod-genomics-image6.png[""]
+image:flexpod-genomics-image6.png["一張圖表展示了 FlexPod 基因組學與 Cisco UCS、Nexus、MDS 和 NetApp AFF A700 的連結情況"]
 
 下圖說明FlexPod 了有關纜線的資訊。
 
-image:flexpod-genomics-image7.png[""]
+image:flexpod-genomics-image7.png["一張圖表顯示 FlexPod 基因組學在 UCS、Nexus、NetApp AFF 和 MDS 交換器之間的佈線情況"]
 
 下表列出在FlexPod 啟用功能的網關測試期間所使用的硬體元件。以下是 https://mysupport.netapp.com/matrix/["NetApp 互通性對照表工具"^] （部分）IMT 和 https://ucshcltool.cloudapps.cisco.com/public/["Cisco硬體相容清單（HCL）"^]。
 

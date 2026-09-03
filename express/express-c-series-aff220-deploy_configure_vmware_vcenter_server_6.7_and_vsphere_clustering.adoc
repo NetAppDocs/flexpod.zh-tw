@@ -35,7 +35,7 @@ summary: 您可以完成下列步驟、設定VMware vCenter Server 6.7和vSphere
 . 選取核取方塊以啟用DR和vSphere HA。
 . 按一下「確定」。
 +
-image:express-c-series-aff220-deploy_image49.png[""]
+image:express-c-series-aff220-deploy_image49.png["已為叢集 Tiger3 啟用 DRS 和 vSphere HA 的 New Cluster 對話方塊快照"]
 
 
 
@@ -46,7 +46,7 @@ image:express-c-series-aff220-deploy_image49.png[""]
 
 . 在叢集上按一下滑鼠右鍵、然後選取新增主機。
 +
-image:express-c-series-aff220-deploy_image50.png[""]
+image:express-c-series-aff220-deploy_image50.png["vSphere Web Client 的快照，顯示 FlexPod 叢集動作選單，其中已選取「新增主機」。"]
 
 . 若要將ESXi主機新增至叢集、請完成下列步驟：
 +

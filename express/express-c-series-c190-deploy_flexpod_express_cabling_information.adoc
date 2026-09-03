@@ -18,7 +18,7 @@ summary: 此參考驗證的纜線連接方式如下圖與表格所示。
 
 此圖顯示參考驗證纜線。
 
-image:express-c-series-c190-deploy_image3.png[""]
+image:express-c-series-c190-deploy_image3.png["一張示意圖，顯示兩台 Nexus 交換器、兩台 Cisco UCS 伺服器和 AFF C190 控制器的後視圖。"]
 
 下表列出Cisco Nexus交換器31108PC-V-A的纜線資訊
 

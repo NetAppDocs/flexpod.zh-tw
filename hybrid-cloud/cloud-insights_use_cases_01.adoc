@@ -39,15 +39,15 @@ Cloud Insights 已完全整合至 Digital Advisor 儲存監控平台中。部署
 
 . 按一下左側「管理」功能表下的「資料收集器」選項。
 +
-image:cloud-insights_image13.png[""]
+image:cloud-insights_image13.png["快照顯示 Cloud Insights 中已選擇「Data Collectors」的「Admin」選單。"]
 
 . 篩選環境中的特定資料收集器。在此範例中、我們會依術語FlexPod 「不知道」進行篩選。
 +
-image:cloud-insights_image23.png[""]
+image:cloud-insights_image23.png["一張快照顯示了按 FlexPod Datacenter 篩選的「資料收集器」頁面。"]
 
 . 按一下資料收集器、即可取得該收集器所監控的環境和裝置摘要。
 +
-image:cloud-insights_image24.png[""]
+image:cloud-insights_image24.png["FlexPod Datacenter 資料收集器摘要的快照，包含事件時間軸和已報告的儲存設備"]
 
 +
 在靠近底部的裝置清單下、按一下ONTAP 所監控的功能表儲存系統名稱。這會顯示收集到的系統相關資訊儀表板、包括下列詳細資料：
@@ -61,19 +61,19 @@ image:cloud-insights_image24.png[""]
 ** 平均延遲
 ** 平均處理量
 +
-image:cloud-insights_image25.png[""]
+image:cloud-insights_image25.png["aa14-a800 儲存設備儀表板的快照，包含總結、風險、使用者資料和延遲圖表"]
 
 +
 此外，在本頁面的「效能原則」部分，您可以找到 NetApp Digital Advisor 的連結。
 
 +
-image:cloud-insights_image26.png[""]
+image:cloud-insights_image26.png["顯示 Performance Policies 的快照，其中 Active IQ 偵測到 35 項風險，以及一個外部連結圖示"]
 
 
 
 . 若要開啟新的瀏覽器索引標籤並前往風險緩解頁面（該頁面會顯示哪些節點受到影響、風險的嚴重程度，以及需要採取哪些適當措施來修正已識別的問題），請按一下 Digital Advisor 的連結。
 +
-image:cloud-insights_image27.png[""]
+image:cloud-insights_image27.png["Active IQ Digital Advisor 的螢幕擷取畫面，列出儲存系統的健全狀況風險和修正措施。"]
 
 
 
@@ -90,15 +90,15 @@ image:cloud-insights_image27.png[""]
 
 您可以從儲存系統儀表板查看資料收集器上次更新資訊的時間。下圖顯示此範例。
 
-image:cloud-insights_image28.png[""]
+image:cloud-insights_image28.png["一張 Cloud Insights 資料收集器詳細資料的快照，顯示資料擷取已於 3 分鐘前（下午 1:21）成功完成。"]
 
 根據預設、儲存系統儀表板會顯示數個互動式圖表、顯示正在輪詢之儲存系統或每個個別節點的全系統度量、包括「Expert View（專家檢視）」區段中的延遲、IOPS和處理量。下圖顯示這些預設圖表的範例。
 
-image:cloud-insights_image29.png[""]
+image:cloud-insights_image29.png["Cloud Insights Expert View 的快照，其中包含延遲、IOPS 和處理量圖表以及資源詳細資訊"]
 
 根據預設、圖形會顯示過去三小時的資訊、但您可以將其設定為儲存系統儀表板右上角附近的下拉式清單中的數個不同值或自訂值。如下圖所示。
 
-image:cloud-insights_image30.png[""]
+image:cloud-insights_image30.png["儲存設備儀表板的快照，時間範圍下拉選單顯示「最近 15 分鐘」至「自訂」。"]
 
 
 
@@ -115,21 +115,21 @@ image:cloud-insights_image30.png[""]
 
 . 若要建立自訂儀表板、請將游標移至Cloud Insights 「資訊功能」主功能表上的「儀表板」、然後在下拉式清單中按一下「+ New Dashboard（+新儀表板）」。
 +
-image:cloud-insights_image31.png[""]
+image:cloud-insights_image31.png["Cloud Insights 儀表板選單的快照，其中「+ New Dashboard」已醒目提示。"]
 
 +
 「新儀表板」視窗隨即開啟。
 
 . 命名儀表板、然後選取用於顯示資料的小工具類型。您可以從多種圖表類型、甚至是備註或表格類型中選取、以顯示所收集的資料。
 +
-image:cloud-insights_image32.png[""]
+image:cloud-insights_image32.png["新儀表板 widget 類型選擇圖塊的快照，包括圖表、量測計、附註和表格。"]
 
 . 從「新增變數」功能表中選擇自訂變數。
 +
 如此一來、所呈現的資料就能集中顯示更多特定或專業因素。
 
 +
-image:cloud-insights_image33.png[""]
+image:cloud-insights_image33.png["一張快照顯示新儀表板上的「新增變數」選單，其中包含搜尋欄位和變數清單。"]
 
 . 若要建立自訂儀表板、請選取您想要使用的小工具類型、例如圓形圖、以依磁碟區顯示儲存使用率：
 +
@@ -140,13 +140,13 @@ image:cloud-insights_image33.png[""]
 .. 自訂要顯示的資訊。依預設、此選項會顯示ONTAP 「不實資料量」、並列出前10名。
 .. 若要儲存自訂儀表板、請按一下「儲存」。
 +
-image:cloud-insights_image34.png[""]
+image:cloud-insights_image34.png["快照顯示為儲存設備 Volume 容量使用量所設定的容量使用量圓餅圖小工具"]
 
 +
 儲存自訂Widget之後、瀏覽器會返回「新儀表板」頁面、顯示新建立的Widget、並允許採取互動式動作、例如修改資料輪詢期間。
 
 +
-image:cloud-insights_image35.png[""]
+image:cloud-insights_image35.png["快照顯示 Cloud Insights 儀表板，其中包含「容量使用情況」圓餅圖元件。"]
 
 
 

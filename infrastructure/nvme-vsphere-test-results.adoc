@@ -20,31 +20,31 @@ link:nvme-vsphere-testing-approach.html["上一篇：測試方法。"]
 
 下圖說明使用8KB區塊大小執行100%隨機讀取工作負載時的發現結果。
 
-image:nvme-vsphere-image3.png[""]
+image:nvme-vsphere-image3.png["FlexPod AFF A800 8KB 隨機讀取 IOPS 與延遲的關係圖，在 0.76 毫秒延遲時達到 125 萬 IOPS。"]
 
 在我們的測試中、我們發現系統的IOPS超過120萬次、但伺服器端延遲僅低於0.35毫秒。
 
 下圖說明使用8KB區塊大小執行100%隨機寫入工作負載時的發現結果。
 
-image:nvme-vsphere-image4.png[""]
+image:nvme-vsphere-image4.png["圖表顯示 FlexPod AFF A800 8KB 隨機寫入延遲隨 IOPS 的增加而增加。"]
 
 在我們的測試中、我們發現系統達到將近300k IOPS、同時維持不到1毫秒的伺服器端延遲。
 
 對於8KB區塊大小、80%隨機讀取和20%寫入、我們觀察到下列結果：
 
-image:nvme-vsphere-image5.png[""]
+image:nvme-vsphere-image5.png["FlexPod AFF A800 8KB 80:20 延遲上升至 1M IOPS 時 0.95 毫秒的圖表"]
 
 在我們的測試中、我們發現系統達到超過100萬IOPS、同時維持不到1毫秒的伺服器端延遲。
 
 對於64KB區塊大小和100%循序讀取、我們觀察到下列結果：
 
-image:nvme-vsphere-image6.png[""]
+image:nvme-vsphere-image6.png["圖表顯示 FlexPod AFF A800 64KB 連續讀取延遲隨著 IOPS 增加從 0.2 毫秒上升至 0.78 毫秒。"]
 
 在我們的測試中、我們發現系統達到約250k IOPS、同時維持不到1毫秒的伺服器端延遲。
 
 對於64KB區塊大小和100%循序寫入、我們觀察到下列結果：
 
-image:nvme-vsphere-image7.png[""]
+image:nvme-vsphere-image7.png["圖表顯示 FlexPod AFF A800 64KB 連續寫入延遲隨 IOPS 的增加而增加。"]
 
 在我們的測試中、我們發現系統達到約120k IOPS、同時維持不到1毫秒的伺服器端延遲。
 

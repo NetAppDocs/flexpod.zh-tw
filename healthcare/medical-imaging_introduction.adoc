@@ -103,7 +103,7 @@ NetApp公司Jaya Kishore Esanakula和Atul Bhaludia
 
 
 
-image:medical-imaging_image2.png[""]
+image:medical-imaging_image2.png["顯示客戶、Cisco 與 NetApp 之間 FlexPod 協同支援模型的圖表"]
 
 
 

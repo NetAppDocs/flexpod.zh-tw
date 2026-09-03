@@ -34,11 +34,11 @@ NOTE: VMware vCenter Server Appliance（VCSA）是由VMware vCenter Express提�
 . 按一下「安裝」。
 . 按一下「簡介」頁面上的「下一步」。
 +
-image:express-c-series-c190-deploy_image34.png[""]
+image:express-c-series-c190-deploy_image34.png["vCenter 伺服器應用裝置安裝程式最終使用者授權合約頁面的快照，已選取驗收選項"]
 
 . 選取「內嵌平台服務控制器」作為部署類型。
 +
-image:express-c-series-c190-deploy_image35.png[""]
+image:express-c-series-c190-deploy_image35.png["這是 vCenter Server 應用裝置安裝程式部署類型頁面的快照，其中已選擇嵌入式平台服務控制器。"]
 
 +
 
@@ -46,15 +46,15 @@ NOTE: 如有需要、FlexPod 也支援外部平台服務控制器部署、作為
 
 . 在設備部署目標中、輸入您已部署ESXi主機的IP位址、root使用者名稱和root密碼。
 +
-image:express-c-series-c190-deploy_image36.png[""]
+image:express-c-series-c190-deploy_image36.png["vCenter 伺服器應用裝置安裝程式應用裝置部署目標表單的快照，其中包含 ESXi 主機憑證"]
 
 . 輸入VCSA做為VM名稱、並輸入要用於VCSA的root密碼、即可設定應用裝置VM。
 +
-image:express-c-series-c190-deploy_image37.png[""]
+image:express-c-series-c190-deploy_image37.png["vCenter 伺服器應用裝置安裝程式「設定應用裝置 VM」頁面的快照，包含 VM 名稱和 root 密碼欄位。"]
 
 . 選擇最適合您環境的部署規模。按一下「下一步」
 +
-image:express-c-series-c190-deploy_image38.png[""]
+image:express-c-series-c190-deploy_image38.png["vCenter 伺服器應用裝置安裝程式選擇部署大小頁面的快照，其中已選擇「微型」。"]
 
 . 選取「infra_datastore」資料存放區。按一下「下一步」
 . 在「Configure network settings（設定網路設定）」頁面中輸入下列資訊、然後按「Next（下一步）」。
@@ -69,11 +69,11 @@ image:express-c-series-c190-deploy_image38.png[""]
 
 . 在「準備完成階段1」頁面上、確認您輸入的設定正確無誤。按一下「完成」。
 +
-image:express-c-series-c190-deploy_image39.png[""]
+image:express-c-series-c190-deploy_image39.png["vCenter 伺服器應用裝置安裝程式「設定網路設定」頁面的快照，已選取「MGMT-Network」。"]
 
 . 在開始部署應用裝置之前、請先檢閱階段1的設定。
 +
-image:express-c-series-c190-deploy_image40.png[""]
+image:express-c-series-c190-deploy_image40.png["vCenter 伺服器應用裝置安裝程式準備完成第 1 階段設定審查頁面的螢幕截圖"]
 
 +
 VCSA現已安裝。此程序需要幾分鐘的時間。
@@ -81,13 +81,13 @@ VCSA現已安裝。此程序需要幾分鐘的時間。
 . 階段1完成後、會出現一則訊息、表示已完成。按一下「Continue（繼續）」以開始階段2組態。
 . 在「第2階段簡介」頁面上、按「下一步」。
 +
-image:express-c-series-c190-deploy_image41.png[""]
+image:express-c-series-c190-deploy_image41.png["vCenter 伺服器應用裝置安裝程式第二階段介紹頁面的快照，其中包含「下一步」按鈕"]
 
 . 輸入「<<var_ntP_id>>'作為NTP伺服器位址。您可以輸入多個NTP IP位址。
 . 如果您打算使用vCenter Server高可用度（HA）、請確定已啟用SSH存取。
 . 設定SSO網域名稱、密碼和網站名稱。按一下「下一步」
 +
-image:express-c-series-c190-deploy_image42.png[""]
+image:express-c-series-c190-deploy_image42.png["vCenter Server Appliance 安裝程式第二階段 SSO 組態的快照，其中已選擇新的 SSO 網域"]
 
 +
 
@@ -95,12 +95,12 @@ NOTE: 請記錄這些值以供參考、尤其是當您偏離「vSphere.local」�
 
 . 如有需要、請參加VMware客戶體驗方案。按一下「下一步」
 +
-image:express-c-series-c190-deploy_image43.png[""]
+image:express-c-series-c190-deploy_image43.png["vCenter 伺服器應用裝置安裝程式設定 CEIP 頁面的快照，其中已選擇 CEIP 選項。"]
 
 . 檢視設定摘要。按一下「Finish（完成）」或使用「Back（上一步）」按鈕編輯設定。
 . 此時會出現一則訊息、表示您無法在安裝啟動後暫停或停止完成安裝。按一下「確定」以繼續。
 +
-image:express-c-series-c190-deploy_image44.png[""]
+image:express-c-series-c190-deploy_image44.png["vCenter Server Appliance Installer 的快照，警告安裝無法暫停或停止，並附有「取消」和「確定」按鈕"]
 
 +
 應用裝置設定會繼續進行。這需要幾分鐘的時間。

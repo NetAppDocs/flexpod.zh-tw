@@ -48,7 +48,7 @@ NOTE: 本驗證所使用的CIMC版本為CIMC 3.1.3（g）。
 . 將Cisco鍵盤、視訊和滑鼠（KVM）硬體鎖（伺服器隨附）連接至伺服器正面的KVM連接埠。將VGA監視器和USB鍵盤插入適當的KVM硬體鎖連接埠。
 . 開啟伺服器電源、並在提示輸入CIMC組態時按F8。
 +
-image:express-c-series-aff220-deploy_image8.png[""]
+image:express-c-series-aff220-deploy_image8.png["一張 Cisco 伺服器開機畫面的快照，提示使用者按 F8 鍵進行 CIMC 設定。"]
 
 . 在CIMC組態公用程式中、設定下列選項：
 +
@@ -71,7 +71,7 @@ image:express-c-series-aff220-deploy_image8.png[""]
 *** NIC備援
 *** 無：[x]
 +
-image:express-c-series-aff220-deploy_image9.png[""]
+image:express-c-series-aff220-deploy_image9.png["Cisco IMC 網路卡屬性的快照，其中包含 IPv4 設定，但未選擇網路卡備援。"]
 
 
 
@@ -93,7 +93,7 @@ image:express-c-series-aff220-deploy_image9.png[""]
 *** 連接埠內容：使用預設值。
 *** 連接埠設定檔：保持清除狀態。
 +
-image:express-c-series-aff220-deploy_image10.png[""]
+image:express-c-series-aff220-deploy_image10.png["Cisco IMC 組態公用程式的快照，顯示常用屬性和連接埠設定"]
 
 
 
@@ -167,7 +167,7 @@ NOTE: 斜體字型表示每個ESXi主機的唯一變數。
 . 在CIMC介面瀏覽器視窗中、按一下伺服器索引標籤、然後選取BIOS。
 . 按一下「設定開機順序」、然後按一下「確定」。
 +
-image:express-c-series-aff220-deploy_image11.png[""]
+image:express-c-series-aff220-deploy_image11.png["已選擇「設定開機順序」的 Cisco Integrated Management Controller BIOS 設定快照。"]
 
 . 按一下「Add Boot Device（新增開機裝置）」下方的裝置、然後前往「Advanced（進階）」索引標籤、即可設定下列裝置。
 +
@@ -202,7 +202,7 @@ image:express-c-series-aff220-deploy_image11.png[""]
 . 按一下新增裝置。
 . 按一下[儲存變更]，然後按一下[關閉]。
 +
-image:express-c-series-aff220-deploy_image12.png[""]
+image:express-c-series-aff220-deploy_image12.png["已啟用 KVM-MAPPED-DVD、iSCSI-A 和 iSCSI-B 的進階開機順序組態快照"]
 
 . 重新啟動伺服器、以新的開機順序開機。
 
@@ -219,7 +219,7 @@ image:express-c-series-aff220-deploy_image12.png[""]
 . 向下捲動至PCIe插槽：HBA Option ROM。
 . 如果該值尚未停用、請將其設為停用。
 +
-image:express-c-series-aff220-deploy_image13.png[""]
+image:express-c-series-aff220-deploy_image13.png["快照顯示 CIMC BIOS 設定，其中 PCIe Slot 1 和 Slot 2 的 Option ROM 已停用。"]
 
 
 
@@ -244,7 +244,7 @@ image:express-c-series-aff220-deploy_image13.png[""]
 ** VLAN模式：主幹
 ** 啟用PXE開機：檢查
 +
-image:express-c-series-aff220-deploy_image14.png[""]
+image:express-c-series-aff220-deploy_image14.png["快照顯示 iSCSI-vNIC-A 設定，MTU 9000、VLAN 3439、主幹連線模式，以及已啟用 PXE 開機。"]
 
 
 
@@ -258,7 +258,7 @@ image:express-c-series-aff220-deploy_image14.png[""]
 
 . 選取左側的vNIC「iSCSI-vNIC - A」。
 +
-image:express-c-series-aff220-deploy_image15.png[""]
+image:express-c-series-aff220-deploy_image15.png["快照顯示已選取 iSCSI-vNIC-A，並在 vNIC 索引標籤上展開 iSCSI 開機屬性。"]
 
 . 在「iSCSI開機內容」下、輸入啟動器詳細資料：
 +
@@ -267,7 +267,7 @@ image:express-c-series-aff220-deploy_image15.png[""]
 ** 子網路遮罩：<<var_esxi_Hosta_iscsia_mask>>
 ** 閘道：\<<var_esxi_hosta_iscsia_gateway>>
 +
-image:express-c-series-aff220-deploy_image16.png[""]
+image:express-c-series-aff220-deploy_image16.png["Cisco UCS iSCSI 開機屬性的快照，顯示啟動器名稱、IP 位址、子網路遮罩和閘道欄位。"]
 
 
 
@@ -291,7 +291,7 @@ image:express-c-series-aff220-deploy_image16.png[""]
 NOTE: 請務必記錄每個vNIC的IQN名稱。您需要這些資訊以供日後使用。
 
 +
-image:express-c-series-aff220-deploy_image17.png[""]
+image:express-c-series-aff220-deploy_image17.png["顯示具有主要和次要 NetApp 目標的 iSCSI vNIC 啟動器設定的快照"]
 
 
 
@@ -339,16 +339,16 @@ NOTE: 請務必記錄每個vNIC的IQN名稱。您需要這些資訊以供日後�
 . 在CIMC介面瀏覽器視窗中、按一下「Inventory」（資源清冊）、然後按一下右窗格上的Cisco VIC介面卡。
 . 在「Adapter Card（介面卡）」下、選取「Cisco UCS VIC 1387（Cisco UCS VIC 1387）」、然後選取下方的vNIC。
 +
-image:express-c-series-aff220-deploy_image18.png[""]
+image:express-c-series-aff220-deploy_image18.png["Cisco VIC vNICs 索引標籤的螢幕擷取畫面，其中列出了 eth0、eth1 和兩個 iSCSI vNIC。"]
 
 . 選取eth0、然後按一下「內容」。
 . 將MTU設為9000。按一下儲存變更。
 +
-image:express-c-series-aff220-deploy_image19.png[""]
+image:express-c-series-aff220-deploy_image19.png["Cisco VIC eth0 vNIC 屬性的快照，其中 MTU 欄位設定為 9000"]
 
 . 對eth1重複步驟3和4、確認上行鏈路連接埠對eth1設定為「1」。
 +
-image:express-c-series-aff220-deploy_image20.png[""]
+image:express-c-series-aff220-deploy_image20.png["快照顯示 vNIC 索引標籤，其中 eth0 和 eth1 的 MTU 設定為 9000，上行連結連接埠為 0 和 1。"]
 
 +
 

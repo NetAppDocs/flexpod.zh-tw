@@ -24,7 +24,7 @@ summary: 取得NetApp授權檔案後、您可以使用OnCommand NetApp System Ma
 . 按一下「新增」
 
 
-image:cloud-fabricpool_image8.png[""]
+image:cloud-fabricpool_image8.png["OnCommand System Manager「新增授權套件」對話方塊的螢幕截圖，包含「選擇檔案」和「新增」按鈕"]
 
 
 
@@ -43,7 +43,7 @@ system license show-status
 . 按一下「詳細資料」索引標籤。
 
 
-image:cloud-fabricpool_image9.png[""]
+image:cloud-fabricpool_image9.png["ONTAP System Manager 授權詳細資料的快照顯示，FabricPool 授權容量為 10 TB，目前容量為 0 位元組。"]
 
 最大容量和目前容量會列在FabricPool 「不含資源的授權」列中。
 

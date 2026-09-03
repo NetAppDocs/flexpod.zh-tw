@@ -18,7 +18,7 @@ summary: 此架構的設計旨在FlexPod 在在整個運算、網路和儲存堆
 
 下圖說明醫療影像系統解決方案部署的16GB FC/40Gb乙太網路（40GbE）拓撲。
 
-image:medical-imaging_image3.png[""]
+image:medical-imaging_image3.png["一張展示 FlexPod 包含 UCS、Nexus、AFF 和 MDS 交換器的醫學影像基礎架構的示意圖"]
 
 
 
@@ -137,7 +137,7 @@ Snapshot技術是以重新導向寫入技術為基礎。它最初只包含中繼
 |===
 下圖顯示SnapCenter 了這個架構。
 
-image:medical-imaging_image4.png[""]
+image:medical-imaging_image4.png["一張展示 SnapCenter 伺服器、VMware 整合、複製的中繼資料儲存庫及應用程式外掛程式的圖表"]
 
 NetApp MetroCluster 配置被全球數千家企業用於實現高可用性 （HA）、零資料遺失以及資料中心內外不間斷的運作。MetroCluster 是 ONTAP 軟體的一項免費功能，可在位於不同位置或故障網域的兩個 ONTAP 叢集之間同步鏡像資料和組態。MetroCluster 透過自動處理兩個目標，為應用程式提供持續可用的儲存：透過同步鏡像寫入叢集的資料，實現零復原點目標 （RPO）。透過鏡像組態並自動存取第二個站台的資料，實現接近零復原時間目標 （RTO）。MetroCluster 透過在兩個站台的兩個獨立叢集之間自動鏡像資料和組態，提供簡便性。在一個叢集中佈建儲存時，它會自動鏡像到第二個站台的第二個叢集。NetApp SyncMirror 技術提供所有資料的完整副本，實現零 RPO。因此，一個站台的工作負載可以隨時切換到另一個站台，並在不遺失資料的情況下繼續提供資料服務。更多資訊請參閱 https://fieldportal.netapp.com/s/article/tr4705-netapp-metrocluster-solution-architecture-and-design-1693982882873["請按這裡"^]。
 
@@ -210,7 +210,7 @@ VMware ESXi主機叢集可執行工作負載VM。叢集包含在Cisco UCS刀鋒�
 
 下圖顯示病患、社區診所及大型醫院的醫療影像系統。
 
-image:medical-imaging_image5.png[""]
+image:medical-imaging_image5.png["一張示意圖，展示透過企業服務匯流排連接至醫院系統的社區診所。"]
 
 . 病患前往社區診所就診時會出現症狀。在諮詢期間、社群醫師會以「HL7 Order（HL7醫令）」訊息的形式、將影像醫令傳送至較大的醫院。
 . 社群醫師的EHR系統會將「HL7 ORP/ORD」訊息傳送至大型醫院。
@@ -250,11 +250,11 @@ image:medical-imaging_image5.png[""]
 
 下圖顯示分層架構檢視中的邏輯應用程式元件。
 
-image:medical-imaging_image6.png[""]
+image:medical-imaging_image6.png["一張圖表，展示了 FlexPod 上的分層醫療成像組件以及複製的災難恢復"]
 
 下圖顯示實體應用程式元件。
 
-image:medical-imaging_image7.png[""]
+image:medical-imaging_image7.png["顯示配備 NetApp ONTAP 儲存設備與醫療影像伺服器的作用中與待命 FlexPod 資料中心圖表"]
 
 邏輯應用程式元件需要基礎架構支援多種傳輸協定和檔案系統。NetApp ONTAP 支援領先業界的傳輸協定與檔案系統組合。
 

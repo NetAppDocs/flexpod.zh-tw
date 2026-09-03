@@ -29,7 +29,7 @@ summary: 此解決方案屬於「融合式基礎架構方案」的一部分。Fl
 * *《Datacenter》*提供最佳的多用途基礎、適用於各種工作負載和應用程式。FlexPod
 
 
-image:express-c-series-c190-deploy_image1.png[""]
+image:express-c-series-c190-deploy_image1.png["一張圖表展示了 FlexPod Express 和 FlexPod Datacenter 產品組合選項及其使用案例。"]
 
 
 
@@ -53,7 +53,7 @@ NetApp認證架構方案為客戶提供通過驗證的NetApp解決方案架構�
 
 本解決方案採用NetApp、Cisco及VMware的最新技術。本解決方案採用AFF 全新NetApp的VMware解決方案C190 ONTAP 、執行VMware vSphere 6.7U2的功能為9.6、雙Cisco Nexus 31108交換器、以及Cisco UCS C220 M5機架伺服器。這套經過驗證的解決方案採用10GbE技術。同時新增兩個Hypervisor節點、FlexPod 以使該支援架構能夠因應組織不斷演變的業務需求、進而提供擴充運算容量的指引。
 
-image:express-c-series-c190-deploy_image2.png[""]
+image:express-c-series-c190-deploy_image2.png["一張顯示 FlexPod Express 交換器、C220 M5 伺服器和 AFF C190 儲存設備連線的圖表"]
 
 
 NOTE: 若要有效使用VIC 1457上的四個實體10GbE連接埠、請在每個伺服器與機架頂端交換器之間建立兩個額外連結。

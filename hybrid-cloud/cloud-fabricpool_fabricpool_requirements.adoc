@@ -90,7 +90,7 @@ NOTE: 停用或刪除叢集間LIF會中斷與雲端層的通訊。
 
 NOTE: 在低效能環境中使用FabricPool VMware時、必須持續滿足用戶端應用程式的最低效能要求、並應據此調整恢復時間目標。
 
-image:cloud-fabricpool_image6.png[""]
+image:cloud-fabricpool_image6.png["一張示意圖，顯示兩個 NetApp AFF A300 控制器如何將叢集間 LIF 連接到 AWS S3。"]
 
 
 
@@ -114,7 +114,7 @@ storage aggregate object-store profiler show
 ....
 雲端層的效能與效能層的效能並不類似（通常是每秒GB）。雖然能夠輕鬆提供SATA級的效能、但對於不需要SATA級效能的分層解決方案、它們也能承受高達10秒的延遲和低處理量。FabricPool
 
-image:cloud-fabricpool_image7.png[""]
+image:cloud-fabricpool_image7.png["ONTAP CLI 物件存放區分析器結果的快照，顯示 PUT 和 GET 的延遲和處理量"]
 
 
 

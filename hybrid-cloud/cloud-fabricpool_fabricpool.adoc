@@ -76,7 +76,7 @@ NOTE: 如果檢測到連續讀取的商機、就會在讀取前要求從雲端�
 
 下圖所示的純Snapshot分層原則、可將冷磁碟區快照資料和SnapCenter VMware for vSphere備份用於佔用空間但未與作用中檔案系統共用區塊的VM、移至雲端物件存放區。純Snapshot分層原則可將冷資料區塊移至雲端層。如果需要還原、雲端中的冷區塊會變熱、並移回內部部署的效能Flash層。
 
-image:cloud-fabricpool_image4.png[""]
+image:cloud-fabricpool_image4.png["此圖顯示僅 Snapshot 分層如何將 Snapshot 複本從主要叢集移至雲端儲存設備。"]
 
 
 
@@ -90,7 +90,7 @@ image:cloud-fabricpool_image4.png[""]
 
 NOTE: 物件存放區檔案探查器應先用於測試物件存放區的延遲和處理量、再將其附加至FabricPool 物件存放區。
 
-image:cloud-fabricpool_image5.png[""]
+image:cloud-fabricpool_image5.png["一張圖表展示了自動分層如何將非作用中資料從主叢集儲存設備移動至雲端儲存。"]
 
 
 

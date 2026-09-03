@@ -1653,7 +1653,7 @@ Cisco強烈建議您在Cisco UCS Manager中設定「呼叫首頁」。設定「�
 . 在IP Pool ext-mgmt上按一下滑鼠右鍵、然後選取Create Block of ipv4 Addresses。
 . 輸入區塊的起始IP位址、所需的IP位址數目、以及子網路遮罩和閘道資訊。
 +
-image:express-direct-attach-aff220-deploy_image7.png[""]
+image:express-direct-attach-aff220-deploy_image7.png["建立 IPv4 位址區塊對話方塊的快照，其中包含 IP 位址、子網路、閘道和 DNS 欄位"]
 
 . 按一下「確定」以建立區塊。
 . 在確認訊息中按一下「OK（確定）」。
@@ -1674,12 +1674,12 @@ image:express-direct-attach-aff220-deploy_image7.png[""]
 . 按一下新增NTP伺服器。
 . 輸入「<switch-A-ntp-ip>或<Nexus A-mgmt-ip>'」、然後按一下「OK（確定）」。按一下「確定」。
 +
-image:express-direct-attach-aff220-deploy_image8.png[""]
+image:express-direct-attach-aff220-deploy_image8.png["「新增 NTP 伺服器」對話方塊的螢幕截圖，其中 NTP 伺服器設定為 10.1.156.4"]
 
 . 按一下新增NTP伺服器。
 . 輸入「<switch-b-ntp-ip>'或<Nexus B-mgmt-ip>'、然後按一下「OK（確定）」。按一下確認上的「OK（確定）」。
 +
-image:express-direct-attach-aff220-deploy_image9.png[""]
+image:express-direct-attach-aff220-deploy_image9.png["Cisco UCS Manager NTP 設定的快照，其中列出了兩個 NTP 伺服器，並選擇了 America/New_York 時區。"]
 
 
 
@@ -1717,7 +1717,7 @@ image:express-direct-attach-aff220-deploy_image9.png[""]
 . 在左窗格中、選取「Fabric Interconnect A（光纖互連A）」下的「固定模組」 
 . 在「Ethernet Portes（乙太網路連接埠）」索引標籤中、確認「If role（如果角色）」欄中的連接埠已正確設定。如果擴充性連接埠上已設定任何連接埠C系列伺服器、請按一下該連接埠以驗證連接埠的連線能力。
 +
-image:express-direct-attach-aff220-deploy_image10.png[""]
+image:express-direct-attach-aff220-deploy_image10.png["快照顯示已設定上行鏈路和應用裝置儲存設備角色的 Fabric Interconnect A 乙太網路連接埠。"]
 
 . 展開「Equipment（設備）」>「Fabric Interconnects（光纖互連）」>「Fabric Interconnect B（光纖互連
 . 展開乙太網路連接埠。
@@ -1730,7 +1730,7 @@ image:express-direct-attach-aff220-deploy_image10.png[""]
 . 在左窗格中、選取「Fabric Interconnect B（光纖互連B）」下的「固定模組」 
 . 在「Ethernet Portes（乙太網路連接埠）」索引標籤中、確認「If role（如果角色）」欄中的連接埠已正確設定。如果擴充性連接埠上已設定任何連接埠C系列伺服器、請按一下該連接埠來驗證連接埠的連線能力。
 +
-image:express-direct-attach-aff220-deploy_image11.png[""]
+image:express-direct-attach-aff220-deploy_image11.png["快照顯示已設定網路和應用裝置儲存設備角色的 Fabric Interconnect B 乙太網路連接埠。"]
 
 
 
@@ -1753,7 +1753,7 @@ NOTE: 在此程序中、建立了兩個連接埠通道：一個從Fabric A連接
 . 輸入vPC-13-Nexus作為連接埠通道名稱。
 . 按一下「下一步」
 +
-image:express-direct-attach-aff220-deploy_image12.png[""]
+image:express-direct-attach-aff220-deploy_image12.png["輸入了 ID 為 1、名稱為 vPC-13-Nexus 的「建立連接埠通道」對話方塊的快照"]
 
 . 選取要新增至連接埠通道的下列連接埠：
 +
@@ -1818,7 +1818,7 @@ NOTE: 雖然本文件並未假設組織使用、但本程序提供建立組織�
 . 輸入「」<<var_nfs_vlan_id>>作為VLAN ID。
 . 將「Sharing Type（共用類型）」設為「None（無
 +
-image:express-direct-attach-aff220-deploy_image13.jpeg[""]
+image:express-direct-attach-aff220-deploy_image13.jpeg["建立 VLAN 對話方塊的螢幕擷取畫面，其中輸入了 NFS-VLAN 和 VLAN ID 3170"]
 
 . 按一下「確定」、然後再按一下「確定」以建立VLAN。
 . 在應用裝置雲端下的VLAN上按一下滑鼠右鍵。
@@ -1840,14 +1840,14 @@ image:express-direct-attach-aff220-deploy_image13.jpeg[""]
 . 在VLAN ID中輸入「」。
 . 按一下「確定」、然後再按一下「確定」以建立VLAN。
 +
-image:express-direct-attach-aff220-deploy_image14.png[""]
+image:express-direct-attach-aff220-deploy_image14.png["一張快照，顯示 Cisco UCS Manager 中的 VLAN 表，其中包含 VLAN 名稱和 ID。"]
 
 . 在導覽窗格的「LAN」>「Policies」下、展開「Appliance」、然後在「Network Control Policies」（網路控制原則）上按一下滑鼠右鍵。
 . 選取「建立網路控制原則」。
 . 將原則命名為「Enable_CDP_LLPD」、然後選取CDP旁的「已啟用」。
 . 啟用LLDP的傳輸和接收功能。
 +
-image:express-direct-attach-aff220-deploy_image15.png[""]
+image:express-direct-attach-aff220-deploy_image15.png["快照顯示啟用 CDP 和 LLDP 傳送與接收的 Enable_CDP 網路控制原則。"]
 
 . 按一下「確定」、然後再按一下「確定」以建立原則。
 . 在導覽窗格的「LAN」>「應用裝置雲端」下、展開「Fabric A」樹狀結構。
@@ -1858,7 +1858,7 @@ image:express-direct-attach-aff220-deploy_image15.png[""]
 . 在VLAN下、選取isciSCSI-A-VLAN、NFS VLAN和原生VLAN。將Native VLAN設為原生VLAN。清除預設的VLAN選擇。
 . 按一下「Save changes and OK（儲存變更並確定
 +
-image:express-direct-attach-aff220-deploy_image16.png[""]
+image:express-direct-attach-aff220-deploy_image16.png["啟用 CDP 並選擇儲存設備 VLAN 後，裝置介面 1/3 屬性的快照。"]
 
 . 在「Fabric A（結構A）」下選取「Appliance介面1/4
 . 在「User Label（使用者標籤）」欄位中、輸入指出儲存控制器連接埠的資訊、例如「<storage _controller _02_name>:e0e」。按一下「Save changes and OK（儲存變更並確定
@@ -1874,7 +1874,7 @@ image:express-direct-attach-aff220-deploy_image16.png[""]
 . 選取「Enable（啟用）CDP網路控制原則」、然後選取「Save changes（儲存變更）」和「OK（確定）」。
 . 在「VLAN」下、選取「iSCSI-B-VLAN」、「NFS VLAN」和「原生VLAN」。將Native VLAN設為原生VLAN。取消選取預設VLAN。
 +
-image:express-direct-attach-aff220-deploy_image17.png[""]
+image:express-direct-attach-aff220-deploy_image17.png["已選擇 iSCSI-B、NFS 和原生 VLAN 的應用裝置介面 1/3 VLAN 設定快照"]
 
 . 按一下「Save changes and OK（儲存變更並確定
 . 在「Fabric B」下選取「Appliance介面1/4」
@@ -1896,7 +1896,7 @@ image:express-direct-attach-aff220-deploy_image17.png[""]
 . 在右窗格中、按一下「General（一般）」索引標籤。
 . 在「盡力」列的MTU欄下方方塊中、輸入9216。
 +
-image:express-direct-attach-aff220-deploy_image18.png[""]
+image:express-direct-attach-aff220-deploy_image18.png["Cisco UCS Manager QoS 系統類別設定的快照，其中盡力而為 MTU 設定為 9216"]
 
 . 按一下儲存變更。
 . 按一下「確定」。
@@ -1939,7 +1939,7 @@ image:express-direct-attach-aff220-deploy_image18.png[""]
 . 在「動作」窗格中、選取「修改套件版本」。
 . 為兩個刀鋒封裝選取版本4.0(1b)。
 +
-image:express-direct-attach-aff220-deploy_image19.png[""]
+image:express-direct-attach-aff220-deploy_image19.png["「修改套件版本」對話方塊的快照，其中已選擇 Blade 套件 4.0(1b)B"]
 
 . 按一下「確定」、然後再按一下「確定」以修改主機韌體套件。
 
@@ -1969,7 +1969,7 @@ NOTE: 對於此解決方案、建議將0A放在起始MAC位址的下一個到最
 
 . 指定一個足以支援可用刀鋒伺服器或伺服器資源的MAC位址集區大小。按一下「確定」。
 +
-image:express-direct-attach-aff220-deploy_image20.png[""]
+image:express-direct-attach-aff220-deploy_image20.png["建立 MAC 位址區塊對話框的快照，MAC 位址為 00:25:B5:32:0A:00，大小為 64"]
 
 . 按一下「完成」。
 . 在確認訊息中、按一下確定。
@@ -2013,7 +2013,7 @@ NOTE: 如果使用多個Cisco UCS網域、可能需要使用更具體的IQN後�
 . 在「寄件者」欄位中輸入1。
 . 指定IQN區塊的大小、足以支援可用的伺服器資源。按一下「確定」。
 +
-image:express-direct-attach-aff220-deploy_image21.png[""]
+image:express-direct-attach-aff220-deploy_image21.png["建立 IQN 後綴塊對話框的快照，後綴為 ucs-host，起始值為 1，大小為 16"]
 
 . 按一下「完成」。
 
@@ -2109,7 +2109,7 @@ NOTE: 請考慮建立獨特的伺服器集區、以達到環境所需的精細�
 . 對於LLDP、向下捲動並選取「已啟用」以同時傳輸和接收。
 . 按一下「確定」以建立網路控制原則。按一下「確定」。
 +
-image:express-direct-attach-aff220-deploy_image22.png[""]
+image:express-direct-attach-aff220-deploy_image22.png["啟用 CDP 和 LLDP 後，「建立網路控制原則」對話方塊的快照。"]
 
 
 
@@ -2128,7 +2128,7 @@ image:express-direct-attach-aff220-deploy_image22.png[""]
 . 將電源上限設定變更為無上限。
 . 按一下「確定」以建立電源控制原則。按一下「確定」。
 +
-image:express-direct-attach-aff220-deploy_image23.png[""]
+image:express-direct-attach-aff220-deploy_image23.png["建立電源控制原則對話方塊的快照，其中已選擇「No-Power-Cap」和「No Cap」。"]
 
 
 
@@ -2153,7 +2153,7 @@ NOTE: 此範例為採用Intel E2660 v4 Xeon Broadwell處理器的Cisco UCS B系�
 . 按一下「確定」以建立「CPU /核心」限制條件。
 . 按一下「確定」建立原則、然後按一下「確定」進行確認。
 +
-image:express-direct-attach-aff220-deploy_image24.png[""]
+image:express-direct-attach-aff220-deploy_image24.png["Cisco UCS Manager 建立 CPU/核心資格認證對話方塊的快照，顯示 Xeon 處理器架構和 CPU PID 欄位"]
 
 
 
@@ -2172,7 +2172,7 @@ image:express-direct-attach-aff220-deploy_image24.png[""]
 . 將Quiet Boot設定變更為停用。
 . 將「一致的裝置命名」變更為「已啟用」。
 +
-image:express-direct-attach-aff220-deploy_image25.png[""]
+image:express-direct-attach-aff220-deploy_image25.png["建立 BIOS 原則對話框的快照，其中已啟用 VM 主機名稱和一致性裝置命名。"]
 
 . 選取「處理器」索引標籤、然後設定下列參數：
 +
@@ -2181,7 +2181,7 @@ image:express-direct-attach-aff220-deploy_image25.png[""]
 ** 處理器C3報告：已停用
 ** 處理器C7報告：已停用
 +
-image:express-direct-attach-aff220-deploy_image26.png[""]
+image:express-direct-attach-aff220-deploy_image26.png["建立 BIOS 原則處理器標籤的快照，其中處理器 C 狀態和 C1E 已停用。"]
 
 
 
@@ -2191,7 +2191,7 @@ image:express-direct-attach-aff220-deploy_image26.png[""]
 ** 頻率地板置換：已啟用
 ** DRAM時鐘節流：效能
 +
-image:express-direct-attach-aff220-deploy_image27.png[""]
+image:express-direct-attach-aff220-deploy_image27.png["快照顯示 BIOS 處理器選項，其中「能耗效能」和「DRAM 時脈節流」均設定為「效能」。"]
 
 
 
@@ -2199,7 +2199,7 @@ image:express-direct-attach-aff220-deploy_image27.png[""]
 +
 ** 低電壓DDR模式：效能模式
 +
-image:express-direct-attach-aff220-deploy_image28.png[""]
+image:express-direct-attach-aff220-deploy_image28.png["建立 BIOS Policy RAS Memory 頁面的快照，其中 LV DDR Mode 設定為 Performance Mode"]
 
 
 
@@ -2220,7 +2220,7 @@ image:express-direct-attach-aff220-deploy_image28.png[""]
 . 將重新開機原則變更為使用者Ack。
 . 選取「下次開機時」、將維護時間委派給伺服器管理員。
 +
-image:express-direct-attach-aff220-deploy_image29.png[""]
+image:express-direct-attach-aff220-deploy_image29.png["Cisco UCS Manager 預設維護原則的快照，其中已選擇「使用者確認」和「下次開機時」選項。"]
 
 . 按一下儲存變更。
 . 按一下「確定」以接受變更。
@@ -2264,7 +2264,7 @@ NOTE: 總共會建立四個vNIC範本。
 . 按一下「確定」以建立vNIC範本。
 . 按一下「確定」。
 +
-image:express-direct-attach-aff220-deploy_image30.png[""]
+image:express-direct-attach-aff220-deploy_image30.png["Cisco UCS Manager 中 Fabric A 上 vNIC_Template_A 的 vNIC 範本屬性畫面截圖"]
 
 
 
@@ -2296,7 +2296,7 @@ NOTE: 選取容錯移轉是改善連結容錯移轉時間的關鍵步驟、方�
 . 按一下「確定」以建立vNIC範本。
 . 按一下「確定」。
 +
-image:express-direct-attach-aff220-deploy_image31.png[""]
+image:express-direct-attach-aff220-deploy_image31.png["Cisco UCS Manager vNIC 範本 B 設定的快照，其中選擇了 Fabric B、MTU 9000 和 MAC 池 B"]
 
 
 
@@ -2324,7 +2324,7 @@ image:express-direct-attach-aff220-deploy_image31.png[""]
 . 按一下「確定」以完成vNIC範本的建立。
 . 按一下「確定」。
 +
-image:express-direct-attach-aff220-deploy_image32.png[""]
+image:express-direct-attach-aff220-deploy_image32.png["已選擇 Fabric A、MTU 9000 和 MAC Pool A56/64 的 Site_01_iSCSI-A vNIC 範本的螢幕擷取畫面"]
 
 . 選取左側的LAN。
 . 選取「原則」>「根」。
@@ -2344,7 +2344,7 @@ image:express-direct-attach-aff220-deploy_image32.png[""]
 . 按一下「確定」以完成vNIC範本的建立。
 . 按一下「確定」。
 +
-image:express-direct-attach-aff220-deploy_image33.png[""]
+image:express-direct-attach-aff220-deploy_image33.png["Cisco UCS Manager vNIC 範本 Site_01_iSCSI-B 設定的快照，適用於 MTU 為 9000 的 Fabric B"]
 
 
 
@@ -2369,7 +2369,7 @@ image:express-direct-attach-aff220-deploy_image33.png[""]
 . 從介面卡原則下拉式清單中、選取VMware。
 . 按一下「確定」、將此vNIC新增至原則。
 +
-image:express-direct-attach-aff220-deploy_image34.png[""]
+image:express-direct-attach-aff220-deploy_image34.png["快照顯示使用 vNIC_Template_A 和 VMware 介面卡原則修改 Site-01-vNIC-A 的 vNIC 對話框"]
 
 . 按一下上方的「Add（新增）」選項以新增vNIC。
 . 在Create vNIC（建立vNIC）對話方塊中、輸入「ite-01-vNIC - B」作為vNIC的名稱。
@@ -2398,7 +2398,7 @@ image:express-direct-attach-aff220-deploy_image34.png[""]
 . 選取「無」（預設使用）作為MAC位址指派。
 . 按一下「確定」、將iSCSI vNIC新增至原則。
 +
-image:express-direct-attach-aff220-deploy_image35.png[""]
+image:express-direct-attach-aff220-deploy_image35.png["Site-01-iSCSI-A 的「修改 iSCSI vNIC」對話方塊快照，其中包含 VLAN 和 MAC 位址設定"]
 
 . 按一下「Add iSCSI vNIC（新增iSCSI vNIC）」空間中的「Add（新增）」選項、以新增iSCSI vNIC。
 . 在Create iSCSI vNIC（建立iSCSI vNIC）對話方塊中、輸入「ite-01-iscsit-B」作為vNIC的名稱。
@@ -2409,7 +2409,7 @@ image:express-direct-attach-aff220-deploy_image35.png[""]
 . 按一下「確定」、將iSCSI vNIC新增至原則。
 . 按一下儲存變更。
 +
-image:express-direct-attach-aff220-deploy_image36.png[""]
+image:express-direct-attach-aff220-deploy_image36.png["一張顯示 Site-01-iSCSIBoot LAN 連線原則的快照，其中列出兩個 iSCSI vNIC。"]
 
 
 
@@ -2446,7 +2446,7 @@ NOTE: DNS伺服器IP未早於KVM IP輸入、因此必須輸入Web伺服器的IP�
 對於新增至Cisco UCS環境的任何新伺服器、可使用vMedia服務設定檔範本來安裝ESXi主機。首次開機時、主機會開機進入ESXi安裝程式、因為SAN掛載的磁碟是空的。安裝ESXi之後、只要開機磁碟可供存取、就不會參考vMedia。
 
 +
-image:express-direct-attach-aff220-deploy_image37.png[""]
+image:express-direct-attach-aff220-deploy_image37.png["建立 vMedia 裝載對話方塊的快照，其中已設定 HTTP ESXi 安裝程式 ISO 遠端檔案和路徑"]
 
 
 
@@ -2477,7 +2477,7 @@ NOTE: 在此程序中設定一個開機原則。原則會將主要目標設定�
 . 在Add iSCSI Boot（新增iSCSI開機）對話方塊中、輸入「ite-01-isciSCSI-B」。按一下「確定」。
 . 按一下「確定」以建立原則。
 +
-image:express-direct-attach-aff220-deploy_image38.png[""]
+image:express-direct-attach-aff220-deploy_image38.png["Cisco UCS Manager 開機原則 Site-01-Fabric-A 的快照，其中已設定兩個 iSCSI 開機項目。"]
 
 
 
@@ -2498,7 +2498,7 @@ image:express-direct-attach-aff220-deploy_image38.png[""]
 . 選取更新範本選項。
 . 在UUID下、選取「UUUID_Pool」作為UUID資源池。按一下「下一步」
 +
-image:express-direct-attach-aff220-deploy_image39.png[""]
+image:express-direct-attach-aff220-deploy_image39.png["建立 Service Profile Template 精靈的快照，包含名稱、更新範本和 UUID 資源池欄位。"]
 
 
 
@@ -2523,7 +2523,7 @@ image:express-direct-attach-aff220-deploy_image39.png[""]
 . 從「LAN連線原則」下拉式功能表中選取「iSCSI開機」。
 . 在「啟動器名稱指派」中選取「IQN_Pool」。按一下「下一步」
 +
-image:express-direct-attach-aff220-deploy_image40.png[""]
+image:express-direct-attach-aff220-deploy_image40.png["建立 Service Profile Template 連網設定的快照，其中已選擇 iSCSI-Boot 連線和 IQN_Pool。"]
 
 
 
@@ -2571,7 +2571,7 @@ image:express-direct-attach-aff220-deploy_image40.png[""]
 
 . 選取「Boot-Fabric - A」作為開機原則。
 +
-image:express-direct-attach-aff220-deploy_image41.png[""]
+image:express-direct-attach-aff220-deploy_image41.png["建立 Service Profile Template 伺服器開機順序頁面的快照，其中已選擇 Boot-Fabric-A。"]
 
 . 在Boor訂單中、選取「ite-01 - iscsi - a」。
 . 按一下「設定iSCSI開機參數」。
@@ -2582,22 +2582,22 @@ image:express-direct-attach-aff220-deploy_image41.png[""]
 . 按一下「新增」
 . 輸入iSCSI目標名稱。若要取得Infra-SVM的iSCSI目標名稱、請登入儲存叢集管理介面、然後執行「iSCSI show」命令。
 +
-image:express-direct-attach-aff220-deploy_image42.png[""]
+image:express-direct-attach-aff220-deploy_image42.png["iscsi show 命令輸出的快照，其中列出 Infra-SVM 目標 IQN、別名和運作狀態"]
 
 . 在「IPV4位址」欄位中輸入「iscsit_lif_02A」的IP位址。
 +
-image:express-direct-attach-aff220-deploy_image43.png[""]
+image:express-direct-attach-aff220-deploy_image43.png["建立 iSCSI 靜態目標對話方塊的快照，其中輸入了 IPv4 位址 192.168.10.62"]
 
 . 按一下「確定」以新增iSCSI靜態目標。
 . 按一下「新增」
 . 輸入iSCSI目標名稱。
 . 在「IPV4位址」欄位中輸入IP位址「iSCSI_Lif_01a」。
 +
-image:express-direct-attach-aff220-deploy_image44.png[""]
+image:express-direct-attach-aff220-deploy_image44.png["建立 iSCSI 靜態目標對話方塊的快照，IPv4 位址為 192.168.10.61，LUN ID 為 0。"]
 
 . 按一下「確定」以新增iSCSI靜態目標。
 +
-image:express-direct-attach-aff220-deploy_image45.png[""]
+image:express-direct-attach-aff220-deploy_image45.png["已選擇 iSCSI 靜態目標介面的「設定 iSCSI 開機參數」對話方塊快照。"]
 
 +
 
@@ -2612,22 +2612,22 @@ NOTE: 將目標IP放入儲存節點02 IP為優先、儲存節點01為IP秒。這
 . 按一下「新增」
 . 輸入iSCSI目標名稱。若要取得Infra-SVM的iSCSI目標名稱、請登入儲存叢集管理介面、然後執行「iSCSI show」命令。
 +
-image:express-direct-attach-aff220-deploy_image42.png[""]
+image:express-direct-attach-aff220-deploy_image42.png["iscsi show 命令輸出的快照，其中列出 Infra-SVM 目標 IQN、別名和運作狀態"]
 
 . 在「IPV4位址」欄位中輸入「iscsit_lif_02B」的IP位址。
 +
-image:express-direct-attach-aff220-deploy_image46.png[""]
+image:express-direct-attach-aff220-deploy_image46.png["建立 iSCSI 靜態目標對話框的快照，其中 IPv4 位址設定為 192.168.20.62"]
 
 . 按一下「確定」以新增iSCSI靜態目標。
 . 按一下「新增」
 . 輸入iSCSI目標名稱。
 . 在「IPV4位址」欄位中輸入「iscsit_lif_01b」的IP位址。
 +
-image:express-direct-attach-aff220-deploy_image47.png[""]
+image:express-direct-attach-aff220-deploy_image47.png["建立 iSCSI 靜態目標對話方塊的快照，IPv4 位址為 192.168.20.61，LUN ID 為 0"]
 
 . 按一下「確定」以新增iSCSI靜態目標。
 +
-image:express-direct-attach-aff220-deploy_image48.png[""]
+image:express-direct-attach-aff220-deploy_image48.png["快照顯示在「設定 iSCSI 開機參數」中選擇了兩個 iSCSI 靜態目標介面。"]
 
 . 按一下「下一步」
 
@@ -2640,7 +2640,7 @@ image:express-direct-attach-aff220-deploy_image48.png[""]
 
 . 將維護原則變更為預設值。
 +
-image:express-direct-attach-aff220-deploy_image49.png[""]
+image:express-direct-attach-aff220-deploy_image49.png["建立 Service Profile Template 維護原則步驟的快照，其中已選擇預設原則。"]
 
 . 按一下「下一步」
 
@@ -2655,7 +2655,7 @@ image:express-direct-attach-aff220-deploy_image49.png[""]
 . 選取「關機」作為設定檔與伺服器相關聯時要套用的電源狀態。
 . 展開頁面底部的「韌體管理」、然後選取預設原則。
 +
-image:express-direct-attach-aff220-deploy_image50.png[""]
+image:express-direct-attach-aff220-deploy_image50.png["建立 Service Profile Template 伺服器指派的快照，已選取 Infra-Pool、Down 電源狀態及預設韌體套件。"]
 
 . 按一下「下一步」
 
@@ -2669,7 +2669,7 @@ image:express-direct-attach-aff220-deploy_image50.png[""]
 . 從BIOS原則下拉式清單中、選取VM主機。
 . 展開電源控制原則組態、然後從「電源控制原則」下拉式清單中選取「無電源上限」。
 +
-image:express-direct-attach-aff220-deploy_image51.png[""]
+image:express-direct-attach-aff220-deploy_image51.png["建立 Service Profile Template Operational Policies 頁面的快照，其中已選擇 VM-Host BIOS 和 No-Power-Cap。"]
 
 . 按一下「完成」以建立服務設定檔範本。
 . 在確認訊息中按一下「OK（確定）」。
@@ -2708,7 +2708,7 @@ image:express-direct-attach-aff220-deploy_image51.png[""]
 .. 選取root作為組織。
 .. 按一下「確定」以建立服務設定檔。
 +
-image:express-direct-attach-aff220-deploy_image52.png[""]
+image:express-direct-attach-aff220-deploy_image52.png["「從範本建立服務設定檔」對話方塊的快照，前綴為 Site-01-Infra-0，編號為 2，根目錄組織"]
 
 
 
@@ -2867,7 +2867,7 @@ ESXi主機VM-Host-Infra-01和VM-Host-Infra-02
 . 確認「硬體標籤」欄位中的數字與「裝置名稱」欄位中的數字相符。
 . 按Enter。
 +
-image:express-direct-attach-aff220-deploy_image53.png[""]
+image:express-direct-attach-aff220-deploy_image53.png["ESXi 網路介面卡畫面的螢幕截圖，其中已選取並連接 vmnic0 和 vmnic1。"]
 
 . 選取「VLAN（選用）」選項、然後按Enter。
 . 輸入「<IB-mgmt-vlan-id>'」、然後按Enter。
@@ -3054,11 +3054,11 @@ NOTE: 為了避免IP位址衝突、如果Cisco UCS iSCSI IP集區位址應重新
 . 按一下「建立」。
 . 選取虛擬交換器索引標籤、然後選取vSwitch0。vSwitch0 VMkernel NIC的內容應類似於下列範例：
 +
-image:express-direct-attach-aff220-deploy_image54.png[""]
+image:express-direct-attach-aff220-deploy_image54.png["快照顯示 vSwitch0 的詳細資訊和拓撲，包括 VMkernel 介面卡和兩個實體介面卡。"]
 
 . 選取[VMkernel NIC（VMkernel NIC）]索引標籤以確認已設定的虛擬介面卡。列出的介面卡應類似下列範例：
 +
-image:express-direct-attach-aff220-deploy_image55.png[""]
+image:express-direct-attach-aff220-deploy_image55.png["ESXi VMkernel NIC 索引標籤的快照，其中列出了五個 VMkernel 介面卡及其連接埠群組"]
 
 
 
@@ -3074,14 +3074,14 @@ ESXi裝載VM主機-Infra-01和VM主機-Infra-02
 . 在中央窗格中、按一下「介面卡」。
 . 選取iSCSI軟體介面卡、然後按一下「Configure iSCSI（設定iSCSI）」。
 +
-image:express-direct-attach-aff220-deploy_image56.png[""]
+image:express-direct-attach-aff220-deploy_image56.png["ESXi 儲存設備介面卡索引標籤的快照，其中已選取 iSCSI 軟體介面卡 vmhba64。"]
 
 . 按一下[動態目標]底下的[新增動態目標]。
 . 輸入IP位址「iSCSI_lif01a」。
 . 重複輸入下列IP位址：「iscsa_lif01b」、「iscsa_lif02a」和「iscsiscs_lif02b」。
 . 按一下儲存組態。
 +
-image:express-direct-attach-aff220-deploy_image57.png[""]
+image:express-direct-attach-aff220-deploy_image57.png["「Configure iSCSI」對話方塊的快照，顯示了連接埠 3260 上的四個動態和靜態 iSCSI 目標"]
 
 +
 若要取得所有「iscsa_lif' IP位址、請登入NetApp儲存叢集管理介面、然後執行「network interface show」命令。
@@ -3105,7 +3105,7 @@ ESXi裝載VM主機-Infra-01和VM主機-Infra-02
 . 在中央窗格中、選取新增資料存放區以新增資料存放區。
 . 在「New datastore（新資料存放區）」對話方塊中、選取「Mount NFS datastore（掛載NFS資料存放
 +
-image:express-direct-attach-aff220-deploy_image58.png[""]
+image:express-direct-attach-aff220-deploy_image58.png["這是「新資料儲存」精靈的快照，其中已選擇「掛載 NFS 資料儲存」作為建立類型。"]
 
 . 在「提供NFS掛載詳細資料」頁面上、完成下列步驟：
 +
@@ -3115,7 +3115,7 @@ image:express-direct-attach-aff220-deploy_image58.png[""]
 .. 將NFS版本設為NFS 3。
 .. 按一下「下一步」
 +
-image:express-direct-attach-aff220-deploy_image59.png[""]
+image:express-direct-attach-aff220-deploy_image59.png["提供 NFS 裝載詳細資訊頁面的快照，其中包含 infra_datastore_1 和 NFS 伺服器 192.168.104.3"]
 
 
 
@@ -3133,7 +3133,7 @@ image:express-direct-attach-aff220-deploy_image59.png[""]
 
 . 按一下「完成」。資料存放區現在應該會出現在資料存放區清單中。
 +
-image:express-direct-attach-aff220-deploy_image60.jpeg[""]
+image:express-direct-attach-aff220-deploy_image60.jpeg["ESXi 儲存資料儲存清單的快照，顯示 infra_datastore_2 已裝載為 NFS 資料儲存。"]
 
 . 在兩個ESXi主機上裝載兩個資料存放區。
 
@@ -3153,7 +3153,7 @@ ESXi裝載VM主機-Infra-01和VM主機-Infra-02
 . 使用下拉式功能表選取「Start（開始）」、然後「Stop with Host（停止主機）」。
 . 在NTP伺服器方塊中輸入兩個Nexus交換器NTP位址、並以英文分隔。
 +
-image:express-direct-attach-aff220-deploy_image61.png[""]
+image:express-direct-attach-aff220-deploy_image61.png["啟用 NTP 並輸入兩個 NTP 伺服器位址的「編輯時間組態」對話方塊快照"]
 
 . 按一下「儲存」以儲存組態變更。
 . 選取「動作」>「NTP服務」>「啟動」。
@@ -3174,11 +3174,11 @@ ESXi裝載VM主機-Infra-01和VM主機-Infra-02
 
 . 按一下左側導覽窗格中的「Manage（管理）」。在右窗格中選取「System（系統）」、然後按一下「Swap（
 +
-image:express-direct-attach-aff220-deploy_image62.png[""]
+image:express-direct-attach-aff220-deploy_image62.png["VMware ESXi 管理系統交換頁面的快照，顯示交換設定和編輯設定"]
 
 . 按一下「編輯設定」。從資料存放區選項中選取「infra_swap」。
 +
-image:express-direct-attach-aff220-deploy_image63.png[""]
+image:express-direct-attach-aff220-deploy_image63.png["已選取 infra_swap 資料儲存的「編輯交換組態」對話方塊快照，其中包含「儲存」和「取消」按鈕"]
 
 . 按一下儲存。
 
@@ -3221,7 +3221,7 @@ NOTE: VMware vCenter Server Appliance（VCSA）是由VMware vCenter Express提�
 
 . 下載VCSA。管理ESXi主機時、按一下「Get vCenter Server（取得vCenter伺服器）」圖示、即可存取下載連結。
 +
-image:express-direct-attach-aff220-deploy_image64.png[""]
+image:express-direct-attach-aff220-deploy_image64.png["ESXi 主機導覽器快照，其中「取得 vCenter 伺服器」按鈕已醒目提示"]
 
 . 從VMware網站下載VCSA。
 +
@@ -3235,26 +3235,26 @@ NOTE: 雖然支援可安裝Microsoft Windows vCenter Server、但VMware建議新
 . 接受EULA。
 . 選取「內嵌平台服務控制器」作為部署類型。
 +
-image:express-direct-attach-aff220-deploy_image65.png[""]
+image:express-direct-attach-aff220-deploy_image65.png["vCenter 伺服器設備安裝程式選擇部署類型頁面的快照，其中已選擇嵌入式平台服務控制器。"]
 
 +
 如有需要、FlexPod 也支援外部平台服務控制器部署、作為支援的部分。
 
 . 在「設備部署目標」頁面上、輸入您已部署ESXi主機的IP位址、root使用者名稱和root密碼。按一下「下一步」
 +
-image:express-direct-attach-aff220-deploy_image66.png[""]
+image:express-direct-attach-aff220-deploy_image66.png["已輸入 ESXi 主機憑證的 vCenter Server Appliance 安裝程式 Appliance 部署目標頁面的快照"]
 
 . 輸入VCSA做為VM名稱、並輸入要用於VCSA的root密碼、即可設定應用裝置VM。按一下「下一步」
 +
-image:express-direct-attach-aff220-deploy_image67.png[""]
+image:express-direct-attach-aff220-deploy_image67.png["vCenter 伺服器應用裝置安裝程式「設定應用裝置 VM」頁面的快照，包含 VM 名稱和 root 密碼欄位。"]
 
 . 選擇最適合您環境的部署規模。按一下「下一步」
 +
-image:express-direct-attach-aff220-deploy_image68.png[""]
+image:express-direct-attach-aff220-deploy_image68.png["vCenter 伺服器應用裝置安裝程式選擇部署大小頁面的快照，其中已選擇「微型」。"]
 
 . 選取「infra_datastore_1」資料存放區。按一下「下一步」
 +
-image:express-direct-attach-aff220-deploy_image69.png[""]
+image:express-direct-attach-aff220-deploy_image69.png["vCenter 伺服器設備安裝程式選擇資料存放區頁面的螢幕截圖，其中三個資料存放區中列出了 infra_datastore_1。"]
 
 . 在「Configure Network Settings（設定網路設定）」頁面中輸入下列資訊、然後按「Next（下一步）」。
 +
@@ -3265,7 +3265,7 @@ image:express-direct-attach-aff220-deploy_image69.png[""]
 .. 輸入預設閘道。
 .. 輸入DNS伺服器。
 +
-image:express-direct-attach-aff220-deploy_image70.png[""]
+image:express-direct-attach-aff220-deploy_image70.png["vCenter 伺服器設備安裝程式「設定網路設定」頁面的快照，包含靜態 IPv4 詳細資訊"]
 
 
 
@@ -3275,7 +3275,7 @@ VCSA現已安裝。此程序需要幾分鐘的時間。
 
 . 階段1完成後、會出現一則訊息、表示已完成。按一下「Continue（繼續）」以開始階段2組態。
 +
-image:express-direct-attach-aff220-deploy_image71.png[""]
+image:express-direct-attach-aff220-deploy_image71.png["快照顯示第一階段 vCenter Server 部署成功，並帶有「繼續」按鈕。"]
 
 . 在「第2階段簡介」頁面上、按「下一步」。
 . 輸入「<<var_ntP_id>>'作為NTP伺服器位址。您可以輸入多個NTP IP位址。
@@ -3323,7 +3323,7 @@ NOTE: 安裝程式可點選用來存取vCenter Server的連結。
 . 選取並啟用DRS和vSphere HA選項。
 . 按一下「確定」。
 +
-image:express-direct-attach-aff220-deploy_image72.png[""]
+image:express-direct-attach-aff220-deploy_image72.png["已為 Express 叢集啟用 DRS 和 vSphere HA 的「新建叢集」對話框的快照"]
 
 
 
@@ -3333,7 +3333,7 @@ image:express-direct-attach-aff220-deploy_image72.png[""]
 
 . 在叢集的「動作」功能表中選取「新增主機」。
 +
-image:express-direct-attach-aff220-deploy_image73.png[""]
+image:express-direct-attach-aff220-deploy_image73.png["vSphere Client 操作選單的快照，顯示 Express 叢集已選取「新增主機」"]
 
 . 若要將ESXi主機新增至叢集、請完成下列步驟：
 +

@@ -21,7 +21,7 @@ summary: 以Cisco驗證設計或NetApp驗證架構的形式提供的參考架構
 * *《資料中心》*為各種工作負載與應用程式提供最佳的多用途基礎。FlexPod
 
 
-image:express-c-series-c190-design_image1.png[""]
+image:express-c-series-c190-design_image1.png["一張圖表，比較 FlexPod Express 部門部署與 FlexPod Datacenter 關鍵任務工作負載。"]
 
 
 
@@ -47,7 +47,7 @@ NetApp認證架構方案為客戶提供通過驗證的NetApp解決方案架構�
 
 下圖顯示FlexPod 包含在《ExExpress解決方案」中的硬體元件。
 
-image:express-c-series-c190-design_image2.png[""]
+image:express-c-series-c190-design_image2.png["一張圖表，展示了 FlexPod Express 儲存設備、交換器和伺服器的硬體選項"]
 
 
 
@@ -63,6 +63,6 @@ image:express-c-series-c190-design_image2.png[""]
 
 本解決方案採用NetApp、Cisco及VMware的最新技術。它採用全新的NetApp AFF C190系統、執行ONTAP VMware vSphere 6.7U2的VMware vCenter 9.6軟體、雙Cisco Nexus 31108交換器、以及Cisco UCS C220 M5機架伺服器。下圖所示的這項通過驗證的解決方案、使用10 Gigabit乙太網路（10GbE）技術。同時新增兩個Hypervisor節點、FlexPod 以配合組織不斷演變的業務需求、同時提供擴充指南。
 
-image:express-c-series-c190-design_image3.png[""]
+image:express-c-series-c190-design_image3.png["一張顯示 FlexPod Express 交換器、C220 M5 伺服器和 AFF C190 儲存設備連線的圖表"]
 
 link:express-c-series-c190-design_technology_requirements.html["下一步：技術需求。"]

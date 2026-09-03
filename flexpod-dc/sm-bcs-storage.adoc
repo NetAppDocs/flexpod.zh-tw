@@ -25,7 +25,7 @@ link:sm-bcs-network.html["先前版本：解決方案驗證-網路。"]
 
 本機站台的Nexus交換器可提供本機UCS FI和刀鋒伺服器的儲存連線功能。透過站台之間的Nexus交換器連線、遠端UCS刀鋒伺服器也能存取儲存設備。下圖和表格顯示每個站台儲存控制器的儲存連線圖和連線清單。
 
-image:sm-bcs-image22.png[""]
+image:sm-bcs-image22.png["示意圖顯示 AFF A250 連接至兩個站台的 Nexus A 和 Nexus B 交換器。"]
 
 |===
 | 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
@@ -75,7 +75,7 @@ image:sm-bcs-image22.png[""]
 
 頻內管理、叢集間及NFS/iSCSI資料儲存傳輸協定均使用VLAN。在介面群組上建立VLAN連接埠、以隔離不同類型的流量。各個功能的邏輯介面（LIF）會建立在對應的VLAN連接埠之上。下圖顯示實體連線、介面群組、VLAN連接埠和邏輯介面之間的關係。
 
-image:sm-bcs-image23.png[""]
+image:sm-bcs-image23.png["一張顯示 Nexus 連接的 AFF A250 控制器連接埠、介面群組、VLAN 連接埠和 LIF 的圖表"]
 
 
 
@@ -88,7 +88,7 @@ NetApp建議FlexPod 在整個解決方案中為Cisco UCS伺服器實作SAN開機
 
 每個iSCSI開機LUN都會對應至透過iSCSI LIF從其開機的伺服器、方法是將開機LUN與其開機igroup中的伺服器iSCSI合格名稱（IQN）建立關聯。伺服器的開機igroup包含兩個IQN、每個VNIC / SAN架構一個IQN。此功能只能讓授權伺服器存取專為該伺服器所建立的開機LUN。
 
-image:sm-bcs-image24.png[""]
+image:sm-bcs-image24.png["一張圖表，顯示從 B200 M5 伺服器到 AFF A250 控制器的備援 iSCSI SAN 開機連線。"]
 
 
 
@@ -97,21 +97,21 @@ image:sm-bcs-image24.png[""]
 
 透過叢集間生命體進行通訊的叢集對等端點。ONTAP使用適用於這兩個叢集的「系統管理程式」、您可以在「保護」>「總覽」窗格下建立所需的叢集間生命體。ONTAP
 
-image:sm-bcs-image25.png[""]
+image:sm-bcs-image25.png["ONTAP System Manager「新增叢集間 LIF」對話方塊的快照，其中包含兩個 IP 位址欄位"]
 
 若要將兩個叢集對齊在一起、請完成下列步驟：
 
 . 在第一個叢集中產生叢集對等複雜密碼。
 +
-image:sm-bcs-image26.png[""]
+image:sm-bcs-image26.png["產生複雜密碼對話框的快照，其中包含叢集對等端點權限、有效期和已複製的複雜密碼。"]
 
 . 在第二個叢集中叫用對等叢集選項、並提供通關密碼和叢集間LIF資訊。
 +
-image:sm-bcs-image27.png[""]
+image:sm-bcs-image27.png["顯示 ONTAP System Manager 對等叢集對話框（含密碼及叢集間 LIF 位址）的快照。"]
 
 . System Manager Protection（系統管理員保護）> Overview（概觀）窗格會顯示叢集對等端點資訊。
 +
-image:sm-bcs-image28.png[""]
+image:sm-bcs-image28.png["ONTAP System Manager 保護概覽的快照，顯示叢集對等端點和中介節點的狀態"]
 
 
 
@@ -126,11 +126,11 @@ image:sm-bcs-image28.png[""]
 
 安裝完這個功能後、您可以將這個功能的安全證書新增到整個叢集、然後在System Manager Protection（系統管理員保護）> Overview（總覽）窗格中設定這個功能。ONTAP ONTAP ONTAP ONTAP下列螢幕快照顯示ONTAP 了「畫面資訊」組態GUI。
 
-image:sm-bcs-image29.png[""]
+image:sm-bcs-image29.png["ONTAP System Manager「Configure Mediator」對話方塊的快照，其中包含中介器連線欄位"]
 
 提供必要資訊後、設定ONTAP 的「功能不全」便會出現在「系統管理員保護」>「總覽」窗格中。
 
-image:sm-bcs-image30.png[""]
+image:sm-bcs-image30.png["ONTAP System Manager 保護概覽窗格的快照，顯示已設定的 Mediator 狀態"]
 
 
 
@@ -148,7 +148,7 @@ image:sm-bcs-image30.png[""]
 
 針對驗證組態、ONTAP 使用VMware System Manager建立一致性群組、以保護ESXi開機LUN和兩個站台的共享資料存放區LUN。若要存取一致性群組建立對話方塊、請前往「Protection（保護）」>「Overview（概觀）」>「Protect for Business Continuity（保護營運不中斷）」>「Protect Consistency若要建立一致性群組、請提供所需的來源磁碟區、目的地叢集及目的地儲存虛擬機器資訊、以供建立。
 
-image:sm-bcs-image31.png[""]
+image:sm-bcs-image31.png["保護一致性群組對話框的快照，來源 Volume 為 esxi_a，目的地叢集為 aff-a250-b"]
 
 下表列出所建立的四個一致性群組、以及驗證測試所需的每個一致性群組所包含的磁碟區。
 
@@ -171,15 +171,15 @@ image:sm-bcs-image31.png[""]
 
 此快照顯示站台A的一致性群組關係
 
-image:sm-bcs-image32.png[""]
+image:sm-bcs-image32.png["ONTAP System Manager 關係的螢幕擷取畫面，顯示站台 A 上兩個狀況良好且同步的一致性群組。"]
 
 此螢幕快照顯示站台B的一致性群組關係
 
-image:sm-bcs-image33.png[""]
+image:sm-bcs-image33.png["站台 B 的 ONTAP System Manager 關係快照，顯示兩個健全且同步的一致性群組。"]
 
 此螢幕快照顯示CG_infra_datastore_b群組的一致性群組關係詳細資料。
 
-image:sm-bcs-image34.png[""]
+image:sm-bcs-image34.png["ONTAP System Manager 的快照，顯示 cg_infra_datastore_b 一致性群組關係詳情"]
 
 
 
@@ -190,20 +190,20 @@ image:sm-bcs-image34.png[""]
 
 此螢幕快照顯示站台A的Volume資訊
 
-image:sm-bcs-image35.png[""]
+image:sm-bcs-image35.png["顯示 Infra-SVM-a 的 ONTAP Volume 資訊的快照，包括 RW、DP 和 LS Volume。"]
 
 此螢幕快照顯示站台B的Volume資訊
 
-image:sm-bcs-image36.png[""]
+image:sm-bcs-image36.png["ONTAP volume show 輸出的快照，列出 Infra-SVM-b 的九個 Volume，包括目的地 DP Volume"]
 
 為了便於透明的應用程式容錯移轉、鏡射的SM至BC LUN也必須從目的地叢集對應至主機。如此一來、主機就能從來源叢集和目的地叢集正確查看LUN的路徑。以下兩個螢幕擷取畫面會擷取站台A和站台B的「igroup show」和「LUN show」輸出。使用建立的對應、叢集中的每個ESXi主機都會將自己的SAN開機LUN視為ID 0、以及所有四個共享iSCSI資料存放區LUN。
 
 此快照顯示站台A叢集的主機igroup和LUN對應。
 
-image:sm-bcs-image37.png[""]
+image:sm-bcs-image37.png["顯示 ONTAP CLI 輸出中站台 A iSCSI igroup 和 LUN 對應的快照"]
 
 此快照顯示站台B叢集的主機igroup和LUN對應。
 
-image:sm-bcs-image38.png[""]
+image:sm-bcs-image38.png["站台 B 的 igroup 和 LUN 對應命令輸出快照，適用於 iSCSI VMware 主機"]
 
 link:sm-bcs-virtualization.html["下一步：解決方案驗證-虛擬化。"]

@@ -45,7 +45,7 @@ summary: 物件存放區必須先新增至集合體、ONTAP 並由資訊技術�
 . 按一下「儲存並附加Aggregate」。
 
 
-image:cloud-fabricpool_image13.png[""]
+image:cloud-fabricpool_image13.png["這是為 Amazon S3 分層供應商配置的「新增雲端分層」表單的快照。"]
 
 
 

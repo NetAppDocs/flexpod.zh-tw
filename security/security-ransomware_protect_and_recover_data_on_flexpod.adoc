@@ -34,15 +34,15 @@ summary: 本節說明當攻擊發生時、如何恢復終端使用者的資料�
 
 VM的「文件」資料夾中有一組尚未被WannaCry惡意軟體加密的PDF檔案。
 
-image:security-ransomware_image3.png[""]
+image:security-ransomware_image3.png["Windows 文件資料夾的快照，其中列出了未加密的 WorkDoc PDF 文件"]
 
 下列螢幕快照顯示已對應至VM的CIFS共用區。
 
-image:security-ransomware_image4.png[""]
+image:security-ransomware_image4.png["快照顯示在 Windows 檔案總管中，fpolicy_share CIFS 網路磁碟機已對應為 Z: 磁碟機。"]
 
 下列螢幕快照顯示CIFS共用區「fpolicy_share」上尚未被WannaCry惡意軟體加密的檔案。
 
-image:security-ransomware_image5.png[""]
+image:security-ransomware_image5.png["檔案總管快照，顯示映射為 Z 磁碟機的 fpolicy_share CIFS 共用區上的未加密檔案。"]
 
 
 
@@ -53,19 +53,19 @@ image:security-ransomware_image5.png[""]
 
 在託管VM的磁碟區上執行重複資料刪除技術、可節省19%的儲存空間。
 
-image:security-ransomware_image6.png[""]
+image:security-ransomware_image6.png["infra_datastore1 儲存效率的快照，顯示 5.84 GB （19%） 的重複資料刪除節省量"]
 
 CIFS共用區「fpolicy_share'」上的重複資料刪除技術可節省45%的儲存空間。
 
-image:security-ransomware_image7.png[""]
+image:security-ransomware_image7.png["cifS_volume 儲存效率快照顯示節省了 5.05 GB （45%） 的重複資料刪除空間"]
 
 針對裝載VM的磁碟區、觀察到Snapshot複本大小為456KB。
 
-image:security-ransomware_image8.png[""]
+image:security-ransomware_image8.png["infra_datastore1 Snapshot 複本的快照，顯示攻擊前的快照，總大小為 456 KB"]
 
 CIFS共用區的Snapshot複本大小為160KB。
 
-image:security-ransomware_image9.png[""]
+image:security-ransomware_image9.png["cifS_volume 的 Snapshot 複本索引標籤快照，顯示 before_attack_cifs Snapshot 複本，總大小為 160 KB。"]
 
 
 
@@ -78,11 +78,11 @@ image:security-ransomware_image9.png[""]
 
 . 已擷取安全的惡意軟體。
 +
-image:security-ransomware_image10.png[""]
+image:security-ransomware_image10.png["一個名為 Ransomware.WannaCry 的壓縮資料夾圖示"]
 
 . 執行二進位檔。
 +
-image:security-ransomware_image11.png[""]
+image:security-ransomware_image11.png["Windows 檔案總管的快照，顯示了選取的 WannaCry 執行檔以及「以系統管理員執行」功能表選項。"]
 
 
 
@@ -95,11 +95,11 @@ WannaCry惡意軟體已加密本機檔案系統和對應的CIFS共用區。
 
 惡意軟體開始使用WNCRY副檔名加密檔案。
 
-image:security-ransomware_image12.png[""]
+image:security-ransomware_image12.png["Windows 檔案總管的快照，顯示「文件」資料夾中的 PDF 檔案和加密的 WNCRY 檔案。"]
 
 惡意軟體會加密本機VM和對應共用區中的所有檔案。
 
-image:security-ransomware_image13.png[""]
+image:security-ransomware_image13.png["快照顯示使用 WNCRY 副檔名加密的本機和映射 CIFS 共用區檔案。"]
 
 
 
@@ -109,15 +109,15 @@ image:security-ransomware_image13.png[""]
 
 我們偵測到、在攻擊期間、託管CIFS共用區的磁碟區的Snapshot大小大幅增加至820.98MB。
 
-image:security-ransomware_image14.png[""]
+image:security-ransomware_image14.png["快照顯示 cifs_volume Snapshot 複本索引標籤，Snapshot 複本大小為 820.98 MB"]
 
 我們偵測到裝載VM的磁碟區的Snapshot複本大小增加到404.3MB。
 
-image:security-ransomware_image15.png[""]
+image:security-ransomware_image15.png["infra_datastore1 Snapshot 複本索引標籤的快照，顯示一個 404.3 MB 的 before_attack Snapshot 複本。"]
 
 託管CIFS共享區的Volume儲存效率降低至34%。
 
-image:security-ransomware_image16.png[""]
+image:security-ransomware_image16.png["cifsv_volume 儲存效率快照顯示，總共節省了 5 GB 空間，效率為 34%。"]
 
 
 
@@ -131,23 +131,23 @@ image:security-ransomware_image16.png[""]
 
 . 使用SnapCenter 您使用NetApp建立的Snapshot複本來還原VM。
 +
-image:security-ransomware_image17.png[""]
+image:security-ransomware_image17.png["vSphere 針對 WannaCry-2016-1 的行動選單快照，其中已選取 NetApp SnapCenter 還原"]
 
 . 選取所需的VMware一致Snapshot複本進行還原。
 +
-image:security-ransomware_image18.png[""]
+image:security-ransomware_image18.png["還原精靈的快照，其中列出了可用的 VMware Snapshot 快照技術備份，並已選擇一個備份。"]
 
 . 整個VM都會還原並重新啟動。
 +
-image:security-ransomware_image19.png[""]
+image:security-ransomware_image19.png["復原精靈選擇整個 WannaCry-2016-1 虛擬機器，並在 ESXi 主機上重新啟動它。"]
 
 . 按一下「Finish（完成）」以開始還原程序。
 +
-image:security-ransomware_image20.png[""]
+image:security-ransomware_image20.png["虛擬機器 WannaCry-2016-1 的還原精靈總結，包含「完成」按鈕和關機警告"]
 
 . VM及其檔案將會還原。
 +
-image:security-ransomware_image21.png[""]
+image:security-ransomware_image21.png["Windows 檔案總管快照，顯示「文件」資料夾中已還原的 PDF 文件"]
 
 
 
@@ -157,15 +157,15 @@ image:security-ransomware_image21.png[""]
 
 . 使用攻擊前所取得磁碟區的Snapshot複本來還原共用區。
 +
-image:security-ransomware_image22.png[""]
+image:security-ransomware_image22.png["顯示 cifs_volume 之 Snapshot 複本索引標籤的快照，其中已選取「還原」行動。"]
 
 . 按一下「確定」以啟動還原作業。
 +
-image:security-ransomware_image23.png[""]
+image:security-ransomware_image23.png["用於從 Snapshot 複本還原 cif_volume 的「還原磁碟區」確認對話框，包含「確定」和「取消」按鈕。"]
 
 . 還原後檢視CIFS共用區。
 +
-image:security-ransomware_image24.png[""]
+image:security-ransomware_image24.png["Windows 檔案總管的快照，顯示對應 fpolicy_share 的 CIFS 磁碟機，其中包含資料夾、磁碟\"映像\"和 PDF 檔案。"]
 
 
 
@@ -192,8 +192,8 @@ vserver fpolicy enable -vserver infra_svm -policy-name Ransomware_policy -sequen
 
 在遭受攻擊之前檢視檔案狀態、這些檔案未加密且位於乾淨的系統中。
 
-image:security-ransomware_image25.png[""]
+image:security-ransomware_image25.png["快照顯示「文件」和 fpolicy_share 磁碟機中未加密的 WorkDoc PDF 檔案。"]
 
 VM上的檔案已加密。WannaCry惡意軟體嘗試加密CIFS共用區中的檔案、但FPolicy可防止其影響檔案。
 
-image:security-ransomware_image26.png[""]
+image:security-ransomware_image26.png["FPolicy CIFS 共用區中加密的虛擬機器檔案與未受影響的 PDF 檔案並排顯示的快照"]

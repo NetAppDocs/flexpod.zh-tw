@@ -35,7 +35,7 @@ summary: 若要設定VMware vCenter Server 6.7和vSphere叢集、請完成本頁
 . 選取核取方塊以啟用DR和vSphere HA。
 . 按一下「確定」。
 +
-image:express-c-series-c190-deploy_image45.png[""]
+image:express-c-series-c190-deploy_image45.png["啟用 DRS 和 vSphere HA 但停用 vSAN 的「新叢集」對話方塊快照"]
 
 
 
@@ -48,7 +48,7 @@ image:express-c-series-c190-deploy_image45.png[""]
 
 . 在叢集上按一下滑鼠右鍵、然後選取新增主機。
 +
-image:express-c-series-c190-deploy_image46.png[""]
+image:express-c-series-c190-deploy_image46.png["vSphere Client 新增主機精靈的快照，其中包含主機 FQDN 輸入欄位和「下一步」按鈕。"]
 
 . 若要將ESXi主機新增至叢集、請完成下列步驟：
 +
@@ -84,7 +84,7 @@ NOTE: 若有任何額外的主機新增FlexPod 至不完整的功能組態、則
 . 按一下「服務」、然後選取「VMware vSphere ESXi傾印收集器」。
 . 啟動VMware vSphere ESXi傾印收集器服務。
 +
-image:express-c-series-c190-deploy_image47.png[""]
+image:express-c-series-c190-deploy_image47.png["裝置管理服務的快照，其中已選擇 VMware vSphere ESXi Dump Collector，並且「啟動」可用。"]
 
 . 使用SSH連線至管理IP ESXi主機、輸入root作為使用者名稱、然後輸入root密碼。
 . 執行下列命令：
@@ -96,7 +96,7 @@ esxcli system coredump network check
 ....
 . 輸入最終命令後、會出現「已驗證已設定的netdump伺服器正在執行」訊息。
 +
-image:express-c-series-c190-deploy_image48.png[""]
+image:express-c-series-c190-deploy_image48.png["終端機顯示 ESXi coredump 組態指令和 netdump 伺服器驗證"]
 
 +
 

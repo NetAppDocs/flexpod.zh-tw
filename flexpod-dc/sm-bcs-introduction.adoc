@@ -33,7 +33,7 @@ NetApp是融合式基礎架構資料中心架構的最佳實務做法、包含Ci
 
 下圖說明用來建立FlexPod 解決方案的部分元件。這些元件是根據Cisco和NetApp的最佳實務做法來連線和設定、提供理想的平台、讓您安心執行各種企業工作負載。
 
-image:sm-bcs-image2.png[""]
+image:sm-bcs-image2.png["一張展示 FlexPod Datacenter 元件的圖表：Cisco UCS、Nexus/MDS 交換器以及 NetApp AFF/FAS/ASA 儲存設備"]
 
 提供大量Cisco驗證設計（CVD）與NetApp驗證架構（NVA）產品組合。這些CVD和NVA涵蓋所有主要的資料中心工作負載、是NetApp與Cisco持續合作與創新FlexPod 的成果、適用於各種解決方案。
 
@@ -76,6 +76,6 @@ SMBC解決方案透過IP網路使用SnapMirror同步技術來複寫資料。它�
 
 如下圖所示、一致性群組中的資料會複寫到第二ONTAP 個支援災難恢復和營運不中斷的叢集。應用程式可連線至ONTAP 兩個支援叢集中的LUN。I/O通常由主叢集提供服務、如果主要叢集發生災難、則會自動從次要叢集恢復。在設計SMBC解決方案時、必須觀察支援的物件對CG關係的計數（例如、最多20個CGS、最多200個端點）、以避免超出支援的限制。
 
-image:sm-bcs-image3.png[""]
+image:sm-bcs-image3.png["一張展示 SnapMirror 主資料中心和輔助資料中心之間同步複寫和自動故障轉移的圖表"]
 
 link:sm-bcs-flexpod-sm-bc-solution.html["下一步：FlexPod 《解決方案："]

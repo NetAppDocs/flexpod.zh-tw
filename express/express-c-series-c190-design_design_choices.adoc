@@ -40,11 +40,11 @@ summary: 本節所列的技術是在架構設計階段選擇的。每項技術�
 
 下圖說明可插入SFP+模組的UTA 2連接埠。
 
-image:express-c-series-c190-design_image4.png[""]
+image:express-c-series-c190-design_image4.png["圖示為兩台 AFF C190 控制器的後視圖，控制器具有用於 SFP+ 模組的 UTA 2 連接埠"]
 
 下圖說明透過傳統RJ-45乙太網路纜線進行連線的10GBASE-T連接埠。
 
-image:express-c-series-c190-design_image5.png[""]
+image:express-c-series-c190-design_image5.png["圖示為具有 10GBASE-T RJ-45 連接埠的 AFF C190 系統後面板。"]
 
 
 NOTE: 若為10GBASE-T連接埠選項、您必須擁有10GBASE-T型上行鏈路交換器。
@@ -68,7 +68,7 @@ NetApp AFF 功能完善的C190系統使用全新ONTAP 的功能完善的資料�
 
 部分功能適用於《不只是用作解決方案的不只是用作解決方案的用作解決方案的用作解決方案。ONTAP FlexPod最重要的是NetApp對儲存效率的承諾、這可能是小型部署最重要的功能之一。特色NetApp儲存效率功能、例如重複資料刪除、壓縮、壓實及精簡配置、可在ONTAP 《支援資料的實作與精簡配置技術（NetApp Storage Eff間 效率）」中找到。NetApp WAFL 432KB系統一律會寫入4KB區塊、因此當區塊未使用其分配空間4KB時、壓實功能會將多個區塊合併成4KB區塊。下圖說明此程序。
 
-image:express-c-series-c190-design_image6.png[""]
+image:express-c-series-c190-design_image6.png["一張圖表，展示了多個 4KB 邏輯區塊壓縮成一個 4KB 實體區塊的過程。"]
 
 現在、支援NVMe Volume選用512位元組區塊大小。ONTAP這項功能與VMware虛擬機器檔案系統（VMFS）搭配運作良好、而VMware虛擬機器檔案系統（VMFS）原生使用512位元組區塊。您可以保留預設的4K大小、也可以選擇設定512位元組區塊大小。
 
@@ -95,7 +95,7 @@ Cisco Nexus 31108PC-V規格包含下列元件：
 
 下圖說明Cisco Nexus 31108PC-V交換器。
 
-image:express-c-series-c190-design_image7.png[""]
+image:express-c-series-c190-design_image7.png["Cisco Nexus 31108PC-V 交換器的正面檢視，配備 48 個 SFP+ 連接埠和 6 個 QSFP28 連接埠"]
 
 如需Cisco Nexus 31108PC-V交換器的詳細資訊、請參閱 https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html["Cisco Nexus 3172PQ、3172TQ、3172TQ-332T、3172PQ-XL及3172TQ-XL交換器資料表"^]。
 
@@ -116,7 +116,7 @@ Cisco UCS C系列機架伺服器具備下列優點：
 * 以熟悉的機架套件提供獨特優勢、提升客戶選擇
 
 
-image:express-c-series-c190-design_image8.png[""]
+image:express-c-series-c190-design_image8.png["Cisco UCS C220 M5 機架伺服器正面檢視，配備雙磁碟機托架和 Cisco 品牌標識"]
 
 上圖所示的Cisco UCS C220 M5機架伺服器、是業界用途最廣泛的通用企業基礎架構與應用程式伺服器之一。它是高密度的雙插槽機架伺服器、可為各種工作負載（包括虛擬化、協同作業和裸機應用程式）提供領先業界的效能與效率。Cisco UCS C系列機架伺服器可部署為獨立式伺服器或Cisco UCS的一部分、以充分利用Cisco標準化的統一化運算創新技術、協助客戶降低TCO並提高業務敏捷度。
 
@@ -129,7 +129,7 @@ image:express-c-series-c190-design_image8.png[""]
 
 下圖所示的Cisco UCS VIC 1457介面卡為四埠小型可插拔（SFP28）模組化主機板LAN（mLOM）卡、專為M5系列Cisco UCS C系列伺服器所設計。此卡支援10/25Gbps乙太網路或FCoE。此卡可向主機顯示符合PCIe標準的介面、並可動態設定為NIC或HBA。
 
-image:express-c-series-c190-design_image9.png[""]
+image:express-c-series-c190-design_image9.png["一張 Cisco UCS VIC 1457 介面卡的快照，該介面卡帶有四個 SFP28 連接埠和一個散熱風扇。"]
 
 如需Cisco UCS VIC 1457介面卡的完整資訊、請參閱 https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.html["Cisco UCS虛擬介面卡1400系列資料表"^]。
 
@@ -186,6 +186,6 @@ Cisco UCS VIC 1457有四個實體連接埠。此解決方案驗證包括使用ES
 
 在iSCSI開機實作中、iSCSI開機需要獨立的虛擬網路介面卡（vNIC）才能進行iSCSI開機。這些vNIC使用適當的光纖iSCSI VLAN做為原生VLAN、並附加至iSCSI開機VSwitches、如下圖所示。
 
-image:express-c-series-c190-design_image10.png[""]
+image:express-c-series-c190-design_image10.png["一張示意圖，顯示了四個 vNIC 連接到 VMware ESXi 6.7 U2 主機上的 FlexPod 和 iSCSI 開機 vSwitches"]
 
 link:express-c-series-c190-design_conclusion.html["下一步：結論。"]

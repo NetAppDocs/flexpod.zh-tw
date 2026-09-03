@@ -27,10 +27,10 @@ link:flexpod-genomics-appendix-c.html["上一篇：使用Cromwell引擎執行網
 
 . 我們在UCS B200 M5伺服器的夾層插槽中使用PCIe NVIDIA Tesla P6 GPU。
 +
-image:flexpod-genomics-image18.png[""]
+image:flexpod-genomics-image18.png["Cisco UCS Manager Inventory GPU 標籤的快照，顯示處於運算模式的 P6 顯示卡。"]
 
 +
-image:flexpod-genomics-image19.png[""]
+image:flexpod-genomics-image19.png["Cisco UCS Manager 的螢幕擷取畫面，顯示 GPU 清單，其中 UCSB-GPU-P6-R 處於運算模式。"]
 
 . 在此設定中、我們已在NVIDIA合作夥伴入口網站上註冊、並取得評估授權（也稱為授權）、以便在運算模式下使用GPU。
 . 我們已從NVIDIA合作夥伴網站下載所需的NVIDIA vGPU軟體。
@@ -75,32 +75,32 @@ Wed Aug 18 21:37:19 2021
 ....
 . 使用vCenter、 https://blogs.vmware.com/apps/2018/09/using-gpus-with-virtual-machines-on-vsphere-part-2-vmdirectpath-i-o.html["設定"^] 圖形裝置設定為「Shared Direct（共享直接）」。
 +
-image:flexpod-genomics-image20.png[""]
+image:flexpod-genomics-image20.png["vSphere Client 的快照，顯示已設定為共享直接模式的 NVIDIA Tesla P6 圖形裝置"]
 
 +
-image:flexpod-genomics-image21.png[""]
+image:flexpod-genomics-image21.png["已選取「共用直接」選項並勾選「重新啟動 X.Org 伺服器」的「編輯圖形裝置設定」畫面截圖"]
 
 . 確定RedHat VM已停用安全開機。
 . 確定VM Boot Options韌體已設定為EFI.. https://docs.vmware.com/en/VMware-vSphere-Bitfusion/3.0/Install-Guide/GUID-2005A8C6-4FDC-46DF-BB6B-989F6E91F3E2.html["參考資料"^]）。
 +
-image:flexpod-genomics-image22.png[""]
+image:flexpod-genomics-image22.png["vCenter VM 開機選項的螢幕截圖，顯示 EFI 韌體和安全開機已停用"]
 
 . 請確定下列「PARAMS」已新增至「VM選項」進階「編輯組態」。「pciPassThree.64bitMMIOSIezeGB」參數的值取決於GPU記憶體和指派給VM的GPU數量。例如：
 +
 .. 如果VM被指派4 x 32GB V100 GPU、則此值應為128。
 .. 如果VM被指派4 x 16GB p6 GPU、則此值應為64。
 +
-image:flexpod-genomics-image23.png[""]
+image:flexpod-genomics-image23.png["顯示 vCenter 編輯設定進階區段與編輯組態連結的螢幕擷取畫面"]
 
 +
-image:flexpod-genomics-image24.png[""]
+image:flexpod-genomics-image24.png["Configuration Parameters 對話框的螢幕擷取畫面，其中列出了 pciPassthru.64bitMMIOSizeGB 和 pciPassthru.use64bitMMIO 值"]
 
 
 
 . 在vCenter中將vGPU新增為新的PCI裝置至虛擬機器時、請務必選取NVIDIA GRID vGPU作為PCI裝置類型。
 . 選擇適合使用GPU、GPU記憶體及使用目的的正確GPU設定檔：例如、圖形與運算。
 +
-image:flexpod-genomics-image25.png[""]
+image:flexpod-genomics-image25.png["vCenter 編輯設定的快照，顯示為 PCI 裝置選取了 NVIDIA GRID vGPU 設定檔 grid_p6-16c"]
 
 . 在RedHat Linux VM上、您可以執行下列命令來安裝NVIDIA驅動程式：
 +
@@ -159,7 +159,7 @@ Wed Aug 18 20:30:56 2021
 
 . 重新啟動VM之後、您應該會在授權伺服器的授權用戶端下看到一個項目、如下所示。
 +
-image:flexpod-genomics-image26.png[""]
+image:flexpod-genomics-image26.png["NVIDIA License Server「已授權用戶端」頁面快照，其中列出一個虛擬乙太網路用戶端"]
 
 . 如需下載網關軟體的詳細資訊、請參閱解決方案設定一節。
 . 在GK能夠在內部部署使用GPU之後、工作流程說明語言為*。WDL具有如下所示的執行時間屬性。

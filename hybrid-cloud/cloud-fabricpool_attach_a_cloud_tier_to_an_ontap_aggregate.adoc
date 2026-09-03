@@ -31,13 +31,13 @@ NOTE: 將雲端層附加至Aggregate是一項永久性行動。雲端層無法�
 . 啟動OnCommand 《系統管理程式》。
 . 按一下「應用程式與層級」。
 +
-image:cloud-fabricpool_image14.png[""]
+image:cloud-fabricpool_image14.png["快照顯示 OnCommand System Manager 導覽選單，其中已選取「應用程式與分層」。"]
 
 . 按一下儲存層。
 . 按一下Aggregate。
 . 按一下「動作」、然後選取「附加雲端層」。
 +
-image:cloud-fabricpool_image15.png[""]
+image:cloud-fabricpool_image15.png["快照顯示「更多動作」功能表，其中已選取「附加雲端分層」。"]
 
 . 選取雲端層。
 . 檢視及更新集合體上磁碟區的分層原則（選用）。根據預設、磁碟區分層原則設為「僅Snapshot」。

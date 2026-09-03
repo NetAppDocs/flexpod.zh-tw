@@ -34,11 +34,11 @@ NetApp AFF 推出全新ONTAP 的《NetApp產品介紹：NetApp產品介紹：全
 
 適用於此解決方案的部分功能、可說是適用於此解決方案的功能。ONTAP FlexPod最重要的是NetApp對儲存效率的承諾、這可能是小型部署最重要的功能之一。以NetApp儲存效率為特色的功能、例如重複資料刪除、壓縮及精簡配置等、在ONTAP 更新的功能中、可在更新的實作中使用。由於NetApp WAFL 元數據系統一律會寫入4KB區塊、因此當區塊未使用所分配的4KB空間時、壓縮功能會將多個區塊合併成4KB區塊。下圖說明此程序。
 
-image:express-c-series-aff220-design_image5.png[""]
+image:express-c-series-aff220-design_image5.png["一張圖表，展示了多個 4KB 邏輯區塊壓縮成一個 4KB 實體區塊的過程。"]
 
 此外AFF 、root資料分割功能也可在整個過程中使用。此分割區可讓根Aggregate和兩個資料Aggregate在系統中的磁碟之間進行等量分佈。因此、雙節點AFF 的Ar套 用式A220叢集中的兩個控制器都能充分發揮集合體中所有磁碟的效能。請參閱下圖。
 
-image:express-c-series-aff220-design_image6.png[""]
+image:express-c-series-aff220-design_image6.png["一張顯示磁碟分割情況的圖表，分割區分為根目錄、控制器 1 分割區和控制器 2 分割區。"]
 
 以上僅列舉了幾項補充 FlexPod Express 解決方案的重要功能。有關 ONTAP 9.4 其他特性和功能的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/7413-ds-3231-ontap-unified-data-storage-management.pdf["資料管理軟體資料表ONTAP"^]。另請參閱 NetApp http://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"^]，其中已更新以納入 ONTAP 9.4。
 
@@ -57,7 +57,7 @@ Cisco Nexus 3172P是一款功能強大且具成本效益的交換器、可提供
 * 可設定的最大傳輸單位（MTU）上限為9216位元組（巨型框架）
 
 
-image:express-c-series-aff220-design_image7.png[""]
+image:express-c-series-aff220-design_image7.png["一張快照顯示了 Cisco Nexus 3172 交換器的正面檢視及其網路連接埠。"]
 
 如需Cisco Nexus 3172交換器的詳細資訊、請參閱 https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html["Cisco Nexus 3172PQ、3172TQ、3172TQ-332T、3172PQ-XL及3172TQ-XL交換器資料表"^]。
 
@@ -78,7 +78,7 @@ Cisco UCS C系列機架伺服器具備下列優點：
 * 以熟悉的機架套件提供獨特優勢、提升客戶選擇
 
 
-image:express-c-series-aff220-design_image8.png[""]
+image:express-c-series-aff220-design_image8.png["Cisco UCS C220 M5 機架伺服器正面檢視，配備雙磁碟機托架和 Cisco 品牌標識"]
 
 Cisco UCS C220 M5機架伺服器（上圖）是業界用途最廣泛的通用企業基礎架構與應用程式伺服器之一。它是高密度的雙插槽機架伺服器、可為各種工作負載（包括虛擬化、協同作業和裸機應用程式）提供領先業界的效能與效率。Cisco UCS C系列機架伺服器可部署為獨立式伺服器或Cisco UCS的一部分、以充分利用Cisco標準化的統一化運算創新技術、協助降低客戶的TCO並提高企業敏捷度。
 
@@ -97,7 +97,7 @@ Cisco UCS VIC 1387（下圖）採用模組化的主機板上LAN（mLOM）尺寸�
 
 
 
-image:express-c-series-aff220-design_image9.png[""]
+image:express-c-series-aff220-design_image9.png["一款 Cisco UCS VIC 1387 介面卡，配備雙 QSFP+ 連接埠和散熱風扇"]
 
 如需Cisco UCS VIC 1387介面卡的詳細資訊、請參閱 https://www.cisco.com/c/en/us/products/interfaces-modules/ucs-virtual-interface-card-1387/index.html["Cisco UCS虛擬介面卡1387"^] 資料表。
 
@@ -107,7 +107,7 @@ Cisco QSA模組可將QSFP連接埠轉換成SFP或SFP+連接埠。有了這款介
 
 
 
-image:express-c-series-aff220-design_image10.png[""]
+image:express-c-series-aff220-design_image10.png["Cisco CVR-QSFP-SFP10G QSFP 轉 SFP 介面卡模組的照片"]
 
 
 

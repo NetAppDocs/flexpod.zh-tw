@@ -62,6 +62,6 @@ NetApp與Cisco十FlexPod 多年來一直努力在整個過程中、逐步將改�
 
 典型的醫院擁有多元化的IT系統。這類系統大多是向廠商購買、但很少是由內部的醫院系統所建置。因此、醫院系統必須管理資料中心內的多元化基礎架構環境。當醫院將系統統一化為FlexPod 融合式基礎架構平台（例如、Solided Infrastructure）時、組織就能將其資料中心作業標準化。有了這個功能、醫療組織就能在同一個平台上實作臨床和非臨床系統、進而統一化資料中心的營運。FlexPod
 
-image:flexpod-genomics-image2.png[""]
+image:flexpod-genomics-image2.png["一張圖表展示了醫院應用程式如何在 FlexPod 上與協定、儲存設備和雲端連接統一。"]
 
 link:flexpod-genomics-benefits-of-deploying-genomic-workloads-on-flexpod.html["下一步：將基因工作負載部署在FlexPod 架構上的優點。"]

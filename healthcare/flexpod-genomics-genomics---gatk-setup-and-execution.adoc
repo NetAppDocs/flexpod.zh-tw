@@ -46,7 +46,7 @@ link:flexpod-genomics-solution-infrastructure-hardware-and-software-components.h
 
 下圖顯示從取樣到變體識別、註釋和預測的程序。
 
-image:flexpod-genomics-image8.png[""]
+image:flexpod-genomics-image8.png["此圖展示從樣本採集到定序、變異分析、電子病歷整合和預測模型的基因組學工作流程。"]
 
 人類基因組項目於2003年4月完成、該項目對公共領域的人類基因組序列進行了非常高質量的模擬。這種參考基因組在基因組能力的研究與開發方面、開始爆炸性發展。幾乎每個人的基因都有其特徵。直到最近、醫師仍利用基因來預測和判斷生兒缺陷、例如單一基因改變所造成的特定繼承模式、例如：粗細胞性貧血。人類基因組專案所提供的寶貴資料、導致基因組功能的現況出現。
 
@@ -95,40 +95,40 @@ GAT是以資料科學平台的形式開發 https://www.broadinstitute.org/about-
 
 . 支援下列IP4保留與VLAN、以進行內部測試設定與驗證。FlexPod
 +
-image:flexpod-genomics-image10.png[""]
+image:flexpod-genomics-image10.png["VLAN IP 位址預留表，顯示位址範圍、子網路遮罩以及管理、虛擬機器、NFS 和 iSCSI 用途"]
 
 . 在ONTAP SVM上設定iSCSI型開機LUN。
 +
-image:flexpod-genomics-image9.png[""]
+image:flexpod-genomics-image9.png["ONTAP System Manager 的螢幕擷取畫面，顯示 Healthcare_SVM 儲存設備 VM 中的六個 ESXi 開機 LUN。"]
 
 . 將LUN對應至iSCSI啟動器群組。
 +
-image:flexpod-genomics-image11.png[""]
+image:flexpod-genomics-image11.png["快照顯示 ESXi_Boot_Lun_1 映射到 GenomicsESXi_1 iSCSI 啟動器群組"]
 
 +
-image:flexpod-genomics-image12.png[""]
+image:flexpod-genomics-image12.png["ONTAP System Manager 的快照，顯示映射到 GenomicsESXi_2 啟動器群組的 ESXi 開機 LUN 詳細資訊。"]
 
 . 安裝vSphere 7.0搭配iSCSI開機。
 . 向vCenter登錄ESXi主機。
 +
-image:flexpod-genomics-image13.png[""]
+image:flexpod-genomics-image13.png["vSphere Client 清單的快照，顯示包含 ESXi 主機和虛擬機器的 Genomics 資料夾。"]
 
 . 將NFS資料存放區「infra_datastore_nfs」配置到ONTAP 整個儲存區。
 +
-image:flexpod-genomics-image14.png[""]
+image:flexpod-genomics-image14.png["ONTAP System Manager 的螢幕擷取畫面，顯示所選的 Healthcare_Workload_NFS_Vol NFS Volume 處於線上狀態"]
 
 . 將資料存放區新增至vCenter。
 +
-image:flexpod-genomics-image16.png[""]
+image:flexpod-genomics-image16.png["vSphere Client 的快照，顯示 infra_datastore_nfs NFS 3 資料儲存區總結"]
 
 . 使用vCenter將NFS資料存放區新增至ESXi主機。
 +
-image:flexpod-genomics-image15.png[""]
+image:flexpod-genomics-image15.png["vSphere Client 的快照，顯示 infra_datastore_nfs 主機已連接且狀態正常"]
 
 . 使用vCenter建立Red Hat Enterprise Linux（RHEL）8.3 VM來執行網關。
 . NFS資料存放區會顯示給VM、並掛載於「/mnt/genomics」、用於儲存網關執行檔、指令碼、二進位對齊對應（BAM）檔案、參考檔案、索引檔案、字典檔案及輸出檔案、以供進行變式呼叫。
 +
-image:flexpod-genomics-image17.png[""]
+image:flexpod-genomics-image17.png["Linux 終端機快照顯示 /dev/sdb 掛載在 /mnt/genomics 目錄下，使用率為 2%。"]
 
 
 

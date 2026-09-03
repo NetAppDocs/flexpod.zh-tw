@@ -53,7 +53,7 @@ summary:
 . 選取要套用至磁碟區的分層原則。
 . 按一下儲存。
 +
-image:cloud-fabricpool_image16.png[""]
+image:cloud-fabricpool_image16.png["快照顯示「變更 Volume 分層原則」對話方塊，其中分層原則選項已展開。"]
 
 
 

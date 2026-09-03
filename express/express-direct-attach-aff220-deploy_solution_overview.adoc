@@ -32,7 +32,7 @@ summary: 此解決方案屬於融合式基礎架構方案的一部分。FlexPod 
 
 下圖顯示解決方案的技術元件。
 
-image:express-direct-attach-aff220-deploy_image2.png[""]
+image:express-direct-attach-aff220-deploy_image2.png["一張比較 FlexPod Express、FlexPod Datacenter 和 FlexPod Select 解決方案的圖表"]
 
 
 
@@ -81,7 +81,7 @@ NVA方案為客戶提供通過驗證的NetApp解決方案架構。NVA提供具�
 
 下圖說明FlexPod 採用VMware vSphere 6.7U1 IP型Direct Connect架構的VMware Express。
 
-image:express-direct-attach-aff220-deploy_image3.png[""]
+image:express-direct-attach-aff220-deploy_image3.png["此圖展示了 FlexPod Express 伺服器、Nexus 交換器和 AFF 儲存設備的佈線，包括管理、資料、IP、叢集互連和 vPC 對等網路。"]
 
 
 

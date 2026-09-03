@@ -25,11 +25,11 @@ link:sm-bcs-solution-validation_overview.html["前置作業：解決方案驗證
 
 UCS VIC卡可透過UCS 5108機箱背板連線、提供UCS B200刀鋒伺服器與IOM之間的連線能力。用於驗證的UCS 2204XP Fabric延伸器各有16個10G連接埠、可連接至八個半寬刀鋒伺服器、例如每個伺服器兩個。若要增加伺服器連線頻寬、可新增額外的夾層式VIC、將伺服器連線至另一種UCS 2408 IOM、以提供四個10G連線至每個伺服器。
 
-image:sm-bcs-image17.png[""]
+image:sm-bcs-image17.png["圖示為 UCS 2204XP A 和 B 透過 10GBASE-KR 連接到 B200 M5 VIC。"]
 
 UCS 5108機箱與用於驗證的UCS 6454 FIs之間的連線能力、是由使用四個10G連線的IOM 2204XP所提供。這些連線的FI連接埠1到4均設定為伺服器連接埠。將FI連接埠25至28設定為網路上行鏈路連接埠、連接至本機站台的Nexus交換器A和B。下圖與表格提供UCS 6454 FIs連接UCS 5108機箱與Nexus交換器的連線圖與連接埠連線詳細資料。
 
-image:sm-bcs-image18.png[""]
+image:sm-bcs-image18.png["圖示顯示連接到 FI 6454 交換器以及 Nexus A 和 B 交換器的 UCS 5108 IOM。"]
 
 |===
 | 本機裝置 | 本機連接埠 | 遠端裝置 | 遠端連接埠 
@@ -132,7 +132,7 @@ NOTE: 您可以使用支援較高速連線或更多連線的元件來增加頻�
 
 iSCSI靜態目標可在「設定iSCSI開機參數」對話方塊下的服務設定檔範本開機原則中設定、如下圖所示。建議的iSCSI開機參數設定組態如下表所示、可實作上述的開機策略以達到高可用度。
 
-image:sm-bcs-image19.png[""]
+image:sm-bcs-image19.png["快照顯示 Cisco UCS Manager「設定 iSCSI 開機參數」對話框，其中已設定兩個靜態目標。"]
 
 |===
 | iSCSI架構 | 優先順序 | iSCSI目標 | iSCSI LIF 

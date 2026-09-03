@@ -50,7 +50,7 @@ NOTE: 本驗證所使用的CIMC版本為CIMC 4.0.（4）。
 開啟伺服器電源、並在提示輸入CIMC組態時按F8。
 
 +
-image:express-c-series-c190-deploy_image5.png[""]
+image:express-c-series-c190-deploy_image5.png["快照顯示 Cisco 伺服器開機畫面，提示使用者按 F8 進入 CIMC 設定。"]
 
 . 在CIMC組態公用程式中、設定下列選項：
 +
@@ -82,7 +82,7 @@ NIC備援
 無：「X」
 
 +
-image:express-c-series-c190-deploy_image6.png[""]
+image:express-c-series-c190-deploy_image6.png["Cisco IMC 組態公用程式 NIC 屬性的快照，其中已選擇專用 NIC 且未選擇備援。"]
 
 
 
@@ -181,7 +181,7 @@ NOTE: 斜體字型表示每個ESXi主機的唯一變數。
 . 在CIMC介面瀏覽器視窗中、按一下「運算」索引標籤、然後選取「BIOS」。
 . 按一下「設定開機順序」、然後按一下「確定」。
 +
-image:express-c-series-c190-deploy_image7.png[""]
+image:express-c-series-c190-deploy_image7.png["Cisco Integrated Management Controller BIOS 設定開機順序頁面的快照"]
 
 . 按一下「Add Boot Device（新增開機裝置）」下方的裝置、然後前往「Advanced（進階）」索引標籤、即可設定下列裝置：
 +
@@ -235,7 +235,7 @@ image:express-c-series-c190-deploy_image7.png[""]
 . 按一下新增裝置。
 . 按一下[儲存變更]，然後按一下[關閉]。
 +
-image:express-c-series-c190-deploy_image8.png[""]
+image:express-c-series-c190-deploy_image8.png["已啟用 KVM-MAPPED-DVD、iSCSI-A 和 iSCSI-B 的進階開機順序組態快照"]
 
 . 重新啟動伺服器、以新的開機順序開機。
 
@@ -252,7 +252,7 @@ image:express-c-series-c190-deploy_image8.png[""]
 . 向下捲動至PCIe插槽：HBA Option ROM。
 . 如果該值尚未停用、請將其設為停用。
 +
-image:express-c-series-c190-deploy_image9.png[""]
+image:express-c-series-c190-deploy_image9.png["快照顯示 CIMC BIOS 設定，其中 PCIe Slot 1 和 Slot 2 的 Option ROM 已停用。"]
 
 
 
@@ -270,7 +270,7 @@ NOTE: 必須先關閉連接埠0、1、2和3之間的預設連接埠通道、才�
 . 在「General（一般）」索引標籤下、取消核取連接埠通道。
 . 儲存變更並重新啟動CIMC。
 +
-image:express-c-series-c190-deploy_image10.png[""]
+image:express-c-series-c190-deploy_image10.png["Cisco Integrated Management Controller 介面卡 MLOM「一般」標籤的快照，其中「連接埠通道」未選取。"]
 
 
 
@@ -301,13 +301,13 @@ image:express-c-series-c190-deploy_image10.png[""]
 ** 輸入「<<var_iscse_vla_b>>」作為VLAN。
 ** 將上行鏈路連接埠設定為3。
 +
-image:express-c-series-c190-deploy_image11.png[""]
+image:express-c-series-c190-deploy_image11.png["快照顯示 VLAN 3439 和上行連接埠 1 的 iSCSI 虛擬網路卡 eth1 的一般設定。"]
 
 
 
 . 選取左側的vNIC eth1。
 +
-image:express-c-series-c190-deploy_image12.png[""]
+image:express-c-series-c190-deploy_image12.png["快照顯示 vNIC eth1 的 iSCSI 開機屬性啟動器設定。"]
 
 . 在「iSCSI開機內容」下、輸入啟動器詳細資料：
 +
@@ -316,7 +316,7 @@ image:express-c-series-c190-deploy_image12.png[""]
 ** 子網路遮罩：`\<<var_esxi_hosta_iscsia_mask>>.'
 ** 閘道：`\<<var_esxi_hosta_iscsia_gateway>>.'
 +
-image:express-c-series-c190-deploy_image13.png[""]
+image:express-c-series-c190-deploy_image13.png["包含啟動器、主要目標和次要目標詳細資料的 iSCSI 開機屬性快照"]
 
 
 
@@ -352,7 +352,7 @@ NOTE: 請務必記錄每個vNIC的IQN名稱。您需要這些資訊以供日後�
 ** 子網路遮罩：`\<<var_esxi_hostb_iscsib_mask>>>.'
 ** 閘道：`\<<var_esxi_hostb_iscsib_gateway>>_`
 +
-image:express-c-series-c190-deploy_image14.png[""]
+image:express-c-series-c190-deploy_image14.png["快照顯示 vNIC eth3 的 iSCSI 開機屬性，包括啟動器和目標設定。"]
 
 
 
@@ -395,11 +395,11 @@ NOTE: 請務必記錄每個vNIC的IQN名稱。您需要這些資訊以供日後�
 . 將MTU設為9000。按一下儲存變更。
 . 將VLAN設定為原生VLAN 2。
 +
-image:express-c-series-c190-deploy_image15.png[""]
+image:express-c-series-c190-deploy_image15.png["Cisco Integrated Management Controller vNIC eth0 屬性的快照，MTU 為 9000，預設 VLAN 為 2。"]
 
 . 對eth1重複步驟3和4、確認上行鏈路連接埠對eth1設定為1。
 +
-image:express-c-series-c190-deploy_image16.png[""]
+image:express-c-series-c190-deploy_image16.png["Cisco Integrated Management Controller 虛擬網路卡 （vNIC） 的快照，列出 eth0 至 eth3 的 MTU、上行鏈路連接埠和 VLAN 設定"]
 
 +
 
