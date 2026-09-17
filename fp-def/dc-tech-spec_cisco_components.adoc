@@ -232,7 +232,7 @@ Cisco UCS C 系列機架式伺服器提供 1、2 和 4 個機架單元 (RU) 的�
 [[cisco-apic-options]]
 == Cisco APIC選項
 
-Cisco APIC 是 Cisco ACI 的主要架構元件。也是 Cisco ACI 架構的統一自動化與管理點。
+Cisco APIC 是 Cisco ACI 的主要架構元件。它為 Cisco ACI 架構提供集中管理、原則控制和自動化。
 
 有關 APIC 產品規格的詳細資訊，請參閱 https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/application-policy-infrastructure-controller-apic/datasheet-c78-739715.html["Cisco應用程式原則基礎架構控制器資料表"^]上的表 1 至表 3。
 

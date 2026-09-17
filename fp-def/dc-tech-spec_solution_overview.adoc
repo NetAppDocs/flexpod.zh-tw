@@ -16,9 +16,9 @@ summary: FlexPod 平台是一個預先設計、符合最佳實務做法的資料
 [role="lead"]
 該 FlexPod 平台是預先設計、最佳實務做法的資料中心架構，它基於 Cisco Unified Computing System（Cisco UCS）、Cisco Nexus 和 MDS（適用於 FC）系列交換器以及 NetApp 儲存控制器（AFF、ASA、FAS 或 AFX 系統）。
 
-適用於執行各種虛擬化Hypervisor、裸機作業系統和企業工作負載的平台。FlexPod不僅提供基礎組態、還能靈活調整規模及最佳化、以因應多種不同的使用案例和需求。FlexPod
+FlexPod 是一個適用於執行各種虛擬化管理程式、裸機作業系統、容器化環境和企業工作負載的平台。FlexPod 不僅提供基礎組態，還具備可調整規模與最佳化的靈活度，以容納許多不同的使用案例和需求。
 
 
-NOTE: 在您訂購完整的 FlexPod 組態之前，請參閱 http://www.netapp.com/us/technology/flexpod["NetApp FlexPod 首頁"^]頁面以取得這些技術規格的最新版本。
+NOTE: 在您訂購完整的 FlexPod 組態之前，請參閱 http://www.netapp.com/us/technology/flexpod["NetApp FlexPod 首頁"^]以取得這些技術規格的最新版本。
 
 link:dc-tech-spec_flexpod_platforms.html["下一步：FlexPod 支援各種平台。"]

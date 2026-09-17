@@ -174,16 +174,11 @@ FlexPod 架構需要備援 Cisco Nexus 交換器。
 [[cisco-support-licensing-options]]
 == Cisco支援授權選項
 
-在 FlexPod Express 架構中的所有 Cisco 設備都需要有效的 TSANet 支援合約。
 
+NOTE: 建議在訂購前與您的 Cisco 或 NetApp 銷售代表確認授權需求。
 
-NOTE: 所需的授權和相應的零件編號可能因產品和組態而異。建議在訂購前與您的 Cisco 或 NetApp 銷售代表確認授權需求。
+link:https://www.cisco.com/c/dam/en_us/about/doing_business/legal/service_descriptions/docs/solution-support-smart-total-care.pdf["Cisco 解決方案支援"^] 是一項技術支援服務產品，適用於 Cisco 解決方案，包括僅來自 Cisco 或來自 Cisco 和解決方案支援聯盟合作夥伴的硬體和軟體，並且僅由 Cisco 產品和協力廠商廠商（解決方案支援聯盟合作夥伴）提供的產品組成。
 
-下表列出Cisco支援授權選項。
+Cisco 透過其 link:https://www.cisco.com/c/en/us/support/web/tac/technical-services-resource-guide.html["技術援助中心"] 為複雜的客戶環境提供支援。Cisco Solution Support 使客戶能夠存取一支 TAC 工程師團隊，該團隊作為解決解決方案中所發現問題的主要聯絡點，並為構成該解決方案的硬體和軟體提供產品支援。
 
-|===
-| Cisco支援授權 | 授權指南 
-
-
-| TSANet | https://www.tsanet.org/cisco-tsanet-case-study/[] 
-|===
+Cisco 利用 link:https://www.tsanet.org/cisco-tsanet-case-study/["TSANet 合作夥伴方案"^] 架構將解決方案支援合作夥伴就職於 TSANet Connect 系統的私有群組中。TSANet Connect 為支援工程師提供與合作夥伴技術團隊協同作業的一致方法，確保高效率的通訊並加速解決問題，而不會因為非正式的合作夥伴合作方式而產生摩擦。

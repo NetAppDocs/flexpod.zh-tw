@@ -25,12 +25,12 @@ summary: 「資料中心」組態具有最低的硬體需求、包括但不限�
 NOTE: 如果您要部署 ACI 架構，則必須遵守下列附加要求：* 將 Cisco Nexus 9000 系列交換器部署在葉脊拓撲中。* 使用三個 Cisco Application Policy Infrastructure Controllers （APIC）。
 
 * 如果使用 UCS C 系列機架伺服器或 X 系列模組化系統，則需要兩台 Cisco UCS 6400、6500 或 6600 系列 Fabric Interconnect，並採用備援組態。
-* 兩台 Cisco UCS C 系列機架伺服器，具備 FI 連線和 Intersight 管理組態 （IMM）；或 Cisco UCS X-Series Direct，具備 Cisco IMM；或 Cisco UCS X-Series Modular，具備 Cisco Intersight 管理組態 （IMM）。
+* 兩台 Cisco UCS C 系列機架伺服器，具備 FI 連線功能與 Intersight Managed Mode 組態（IMM），或 Cisco UCS X-Series Direct 搭配 Cisco IMM，或 Cisco UCS X-Series Modular 搭配 Cisco IMM。
 
 
 
-NOTE: 如果您使用的是沒有 FI 連線的 UCS 機架伺服器，則可以使用 CIMC 或 Intersight 獨立式模式進行管理。
+NOTE: 如果您使用的是沒有 FI 連線的 UCS 機架伺服器，則可以使用 CIMC 或 Intersight 獨立式模式進行管理（ISM）。
 
-* 兩台 NetApp AFF、NetApp ASA 或 NetApp FAS 控制器以高可用度 （HA） 配對組態部署為雙節點叢集。如果使用 NetApp AFX，則至少需要四台 NetApp AFX 控制器，並部署為四節點 HA 叢集，同時還需要一對叢集互連交換器。
+* 兩台 NetApp AFF、NetApp ASA 或 NetApp FAS 控制器以高可用性（HA）組態部署為雙節點叢集。如果使用 NetApp AFX，則至少需要四個 NetApp AFX 控制器，並且必須部署為四節點叢集，其中包含 2 組 HA 對以及一對叢集互連交換器。
 * 對於沒有內建磁碟架的儲存控制器，至少需要一個 NetApp 磁碟架。
 
