@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: ontap-select-cisco-unified-edge/ontap-select-cisco-unified-edge-deployment-methodology.html 
+keywords: ontap select, cisco unified edge, deployment, methodology, flexpod 
+summary: 描述在 Cisco Unified Edge 上進行 ONTAP Select 授權、規模、設定本機儲存設備和部署的高階步驟。 
+---
+= 高階部署方法論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+本節介紹在 Cisco Unified Edge 上授權、規模、配置本機儲存設備和部署 ONTAP Select 的高階步驟。
+
+
+
+[[1-ontap-select-licensing]]
+== 1.ONTAP Select 授權
+
+使用 NVMe 磁碟機時需要 Premium XL 授權。客戶可以選擇在多個站台之間共用容量的靈活容量資源池授權，或是綁定到特定節點的永久授權。如需其他詳細資料，請參閱 link:https://docs.netapp.com/us-en/ontap-select/concept_lic_workflow.html["ONTAP Select 的授權購買工作流程"]。
+
+
+
+[[2-obtain-ontap-select-deploy-software]]
+== 2.取得 ONTAP Select Deploy 軟體
+
+ONTAP Select Deploy 是用於部署和管理 ONTAP Select 叢集的管理公用程式。Deploy 被封裝為 Linux 虛擬機器，您必須在建立 ONTAP Select 叢集之前安裝它。它可以從 link:https://stackautomation.cisco.com/["Cisco 堆疊自動化"] 安裝，或從 link:https://mysupport.netapp.com/site/["NetApp 支援網站"] 下載為 .ova 檔案。
+
+
+
+[[3-choose-ontap-select-virtual-machine-size]]
+== 3.選擇 ONTAP Select 虛擬機器大小
+
+具備 Premium XL 授權的 ONTAP Select 可部署為小型、中型或大型虛擬機器執行個體大小，以滿足儲存效能需求。具備 12 核心的 XE130c 或 XE150c 運算節點可支援小型或中型執行個體大小，而大型執行個體則需要 20 或 32 核心節點。請參閱 link:https://docs.netapp.com/us-en/ontap-select/reference_plan_ots_hardware.html#basic-hardware-requirements["ONTAP Select VMware 虛擬機器管理程式和硬體注意事項"] 以取得有關執行個體規模需求的詳細資訊。
+
+
+
+[[4-prepare-local-storage]]
+== 4.準備本地儲存設備
+
+VMDirectPath I/O 直通功能用於 NVMe 磁碟機，以最大化效率。此設定將磁碟機暴露給虛擬機器，使 ONTAP 能夠直接透過 PCI 存取裝置。請參閱 link:https://docs.netapp.com/us-en/ontap-select/task_chk_nvme_configure.html["配置 ONTAP Select 主機以使用 NVMe 驅動器"] 以取得啟用 NVMe 直通的詳細資料。
+
+四個 NVMe 磁碟機中，有一個用作系統磁碟，包含虛擬機器的開機磁碟機、核心和 NVRAM。其餘三個磁碟機設定為資料磁碟，並採用軟體 RAID 4 提供基於同位元的保護，以防止單一磁碟機故障。每個資料磁碟被劃分為三個分割區：一個較小的根目錄分割區和兩個大小相等的分割區，以建立在 ONTAP Select 虛擬機器中可見的兩個資料磁碟。如需其他詳細資料，請參閱 link:https://docs.netapp.com/us-en/ontap-select/concept_stor_swraid_local.html#ontap-select-virtual-and-physical-disks["ONTAP Select 軟體 RAID 組態服務，適用於本機附加儲存設備"]。
+
+為了降低解決方案的整體儲存設備成本，系統磁碟的儲存容量可以低於三個資料磁碟。一部 1.6TB 的高效能、高耐用磁碟機（UCSXE-NVE11T6K1P）即已足夠。
+
+
+
+[[5-deploy-the-ontap-select-instance]]
+== 5.部署 ONTAP Select 執行個體
+
+ONTAP Select 使用 ONTAP Select Deploy 工具和支援的 Hypervisor 環境以虛擬機器的形式部署。部署期間，系統管理員定義節點、管理介面、資料介面、容量和本機磁碟分配。在 ONTAP Select 運作後，系統管理員應為本機應用程式建立磁碟區或 LUN ，並套用適當的原則、共用、啟動器群組或存取控制。

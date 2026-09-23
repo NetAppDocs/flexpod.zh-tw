@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: ontap-select-cisco-unified-edge/ontap-select-cisco-unified-edge-conclusion.html 
+keywords: ontap select, cisco unified edge, conclusion, flexpod 
+summary: FlexPod Edge 將 Cisco Unified Edge 和 ONTAP Select 結合，在邊緣的單一緊湊型機箱內交付軟體定義儲存設備和企業資料服務。 
+---
+= 結論
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+部署搭配軟體定義儲存設備的 FlexPod Edge，為客戶提供了一條在邊緣實現企業資料服務的實用途徑。該架構將 Cisco 緊湊、集中代管的 Unified Edge 平台與 ONTAP 成熟的資料服務相結合，在單一機箱內即可實現軟體定義儲存設備，從而支援在建立和處理資料的地方執行本機工作負載。

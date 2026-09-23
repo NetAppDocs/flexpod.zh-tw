@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: ontap-select-cisco-unified-edge/ontap-select-cisco-unified-edge-overview.html 
+keywords: ontap select, cisco unified edge, overview, flexpod 
+summary: ONTAP Select 作為 Cisco Unified Edge 運算節點上的虛擬機器運作，為邊緣站台交付整合的單一控制器儲存架構，但客戶必須針對營運上的取捨進行規劃。 
+---
+= 在 Cisco Unified Edge 上部署 ONTAP Select
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+作為專用 NetApp 應用裝置的軟體定義儲存設備替代方案， ONTAP Select 在受支援的 Hypervisor （KVM 或 VMware vSphere）上以虛擬機器的形式運作，並使用本機附加的儲存設備來提供 NAS 和 SAN 服務。ONTAP Select 非常適合遠端辦公室、後勤辦公室地點、專為特定用途所打造的邊緣部署、行動環境，以及客戶需要完整 ONTAP 資料服務功能的其他情境。
+
+
+NOTE: 在 Cisco Unified Edge 上部署的 ONTAP Select （OTS） 是單一節點執行個體，不具備高可用度（HA）。
+
+ONTAP Select 和 Cisco Unified Edge 協同部署，可建置統一的邊緣架構。儲存最佳化運算節點提供本機 NVMe 媒體。Hypervisor 將相應的資源呈現給 ONTAP Select 虛擬機器。ONTAP Select 隨後將本機媒體組織成 ONTAP 集合體和磁碟區，將儲存設備提供給在同一機箱內或邊緣站台其他位置本機執行的應用程式工作負載。這種設計使資料靠近應用程式，降低了日常營運對 WAN 連線的依賴性，並符合集中式管理和資料保護實務。
+
+image::ots-on-cue.png[基於 Cisco Unified Edge 架構的 ONTAP Select]
+
+XE130c 和 XE150c 運算節點的四磁碟機限制以及對軟體 RAID 的依賴，使得 ONTAP Select 部署只能採用單一控制器架構。與具有控制器容錯移轉的多節點儲存架構不同，單一儲存控制器無法在不影響其所承載的本機儲存設備服務的情況下離線進行控制器層級維護。
+
+此限制並非否定架構的價值，但必須在營運模式中加以體現。適當的工作負載應能容忍計畫內的儲存設備中斷，依賴應用程式層級的彈性，或使用複寫到中央 ONTAP 環境進行恢復。客戶應制定維護行事曆，將服務時段告知應用程式擁有者，在進行中斷性作業之前驗證目前的備份或複本，並以文件記錄復原程序。如果工作負載需要在控制器維護期間保持持續的儲存可用度，客戶應評估使用外部 ONTAP 儲存陣列，而不是單一控制器 ONTAP Select 組態。
