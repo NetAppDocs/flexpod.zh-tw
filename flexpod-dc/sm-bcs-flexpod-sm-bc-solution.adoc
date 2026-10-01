@@ -174,7 +174,7 @@ image:sm-bcs-image11.png["圖中顯示了 NetApp AFF 和 ASA 控制器以及 DS 
 | 產品系列AFF | link:https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62247["系列文件AFF"^] 
 
 
-| 產品系列ASA | link:https://docs.netapp.com/allsan/index.jsp["系列文件ASA"^] 
+| ASA r2 系統 | link:https://docs.netapp.com/us-en/ontap-systems/asa-r2/index.html["ASA r2 系統文件"^] 
 |===
 請參閱 https://www.netapp.com/data-storage/disk-shelves-storage-media/["NetApp磁碟櫃與儲存媒體文件"^] 和 https://hwu.netapp.com/["NetApp Hardware Universe"^] 以取得每種儲存控制器機型的磁碟櫃和支援磁碟櫃詳細資料。
 

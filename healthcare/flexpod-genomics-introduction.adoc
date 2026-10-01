@@ -37,7 +37,7 @@ NetApp的JayaKishore Esanakula
 
 對醫師而言、基因組學的真正價值包括精準醫學和根據病患基因組資料的個人化治療計畫。過去、臨床醫師與資料科學家之間從來沒有這樣的協同作用、基因組學也從近期的技術創新中獲益、同時也從醫療組織與產業技術領導者之間建立真正的合作關係中獲益。
 
-學術醫療中心和其他醫療與生命科學組織正準時建立基因組科學卓越中心（COE）。根據Dr.查理·格斯巴赫博士Greg Crawford和杜克大學的Tim E Reddy表示：「我們知道基因並非透過簡單的二進位交換器來開啟或關閉、而是因為多個基因管制交換器共同運作。」他們也認定「基因組的這些部分都無法獨立運作。基因組是一種複雜的網路、進化過程已經交織在一起」（ https://genome.duke.edu/news/thu-09242020-1054/multimillion-dollar-nih-grant-creates-first-duke-center-excellence-genome["參考資料"^]）。
+學術醫療中心和其他醫療及生命科學機構正在穩步建立基因組科學卓越中心（ COE ）。根據 Duke University 的 Dr. Charlie Gersbach 、 Dr. Greg Crawford 和 Dr. Tim E Reddy 表示：“我們知道基因的開啟或關閉並非由簡單的二元交換器決定，而是由多個基因調控交換器協同作用的結果。” 他們還確定，“基因組的任何部分都不是隔離運作的。基因組是進化所編織的一張極其複雜的網絡”（  https://biostat.duke.edu/blog/multimillion-dollar-nih-grant-creates-first-duke-cegs["參考資料"^] ）。
 
 NetApp與Cisco十FlexPod 多年來一直努力在整個過程中、逐步將改良功能導入到這個解決方案平台。所有客戶的意見都會被傾聽、評估、並與FlexPod 資訊流和功能集緊密連結在一起。正是這種持續循環的意見回饋、協同作業、改善和慶祝活動、FlexPod 讓整個世界都能將其視為值得信賴的融合式基礎架構平台。它經過全新的簡化設計、是醫療組織最可靠、最強大、功能豐富、最靈活的平台。
 

@@ -1027,7 +1027,6 @@
   <block id="9398ce508a1919ed9d2cd31d7f763f43" category="inline-link">《採用Cisco UCS X系列的資料中心》白皮書FlexPod</block>
   <block id="a291263aa15053c9578aebe401317fca" category="paragraph">基因研究的成本降低、正以前所未有的速度推動基因測試與研究。這三個PS是一個轉折點：電腦能力、資料隱私權及醫療個人化。到2025年、研究人員預估將有1億至20億個人類基因組進行排序。基因組學要想發揮效用並提出寶貴的主張、基因組學功能必須是照護工作流程的無縫環節；在病患造訪期間、應能輕鬆存取並採取行動。同樣重要的是、病患電子病歷資料必須與病患基因組學資料整合。隨著FlexPod 先進的融合式基礎架構（例如：）問世、組織可以將其基因組學功能融入醫師、護士和診所經理的日常工作流程。如需FlexPod 最新的版次資訊、請參閱<block ref="e723cbaec8a2516b620ce8cf798a650f" category="inline-link-rx"></block>。</block>
   <block id="45120dfc407a95d7bf9f7d47cd021154" category="paragraph">對醫師而言、基因組學的真正價值包括精準醫學和根據病患基因組資料的個人化治療計畫。過去、臨床醫師與資料科學家之間從來沒有這樣的協同作用、基因組學也從近期的技術創新中獲益、同時也從醫療組織與產業技術領導者之間建立真正的合作關係中獲益。</block>
-  <block id="0dc7e3e442836d1e3cc5c4940a0fe22d" category="paragraph">學術醫療中心和其他醫療與生命科學組織正準時建立基因組科學卓越中心（COE）。根據Dr.查理·格斯巴赫博士Greg Crawford和杜克大學的Tim E Reddy表示：「我們知道基因並非透過簡單的二進位交換器來開啟或關閉、而是因為多個基因管制交換器共同運作。」他們也認定「基因組的這些部分都無法獨立運作。基因組是一種複雜的網路、進化過程已經交織在一起」（<block ref="a54d9319136da135232b356df7a6e3a9" category="inline-link-rx"></block>）。</block>
   <block id="54da275b9838dab5f699c9b89602a7fb" category="paragraph">NetApp與Cisco十FlexPod 多年來一直努力在整個過程中、逐步將改良功能導入到這個解決方案平台。所有客戶的意見都會被傾聽、評估、並與FlexPod 資訊流和功能集緊密連結在一起。正是這種持續循環的意見回饋、協同作業、改善和慶祝活動、FlexPod 讓整個世界都能將其視為值得信賴的融合式基礎架構平台。它經過全新的簡化設計、是醫療組織最可靠、最強大、功能豐富、最靈活的平台。</block>
   <block id="5f97ce6e439f0ccc4c58201215eae1b5" category="paragraph">利用融合式基礎架構平台、醫療機構可以託管一或多個基因組學工作負載、以及其他臨床和非臨床醫療應用程式。FlexPod本技術報告使用開放原始碼的產業標準基因組學工具、稱為網關FlexPod 驗證平台期間的網關。然而、更深入討論基因組學或網關不屬於本文件的範圍。</block>
   <block id="4b83abb1081797d58557ffdc1a5a86df" category="paragraph">本文適用於醫療產業的技術領導者、以及Cisco與NetApp合作夥伴解決方案工程師與專業服務人員。NetApp假設讀者已充分瞭解運算與儲存規模的概念、以及對醫療威脅、醫療安全、醫療IT系統、Cisco UCS及NetApp儲存系統的技術熟悉度。</block>
@@ -2763,9 +2762,6 @@
   <block id="8fcb4cf909a1e717c8e14cba12717e1d" category="cell">產品系列AFF</block>
   <block id="0f8dd7cba67dcc47444d804a7106cd3c" category="inline-link-macro">系列文件AFF</block>
   <block id="15da6d8626b1765a984b122772587fc9" category="cell"><block ref="15da6d8626b1765a984b122772587fc9" category="inline-link-macro-rx"></block></block>
-  <block id="7c108156e35361e38bd149e0cd5192f0" category="cell">產品系列ASA</block>
-  <block id="d97374ec4f5cfe9d6dc727396402521d" category="inline-link-macro">系列文件ASA</block>
-  <block id="3fc681e7694b642c59733ee9ee571332" category="cell"><block ref="3fc681e7694b642c59733ee9ee571332" category="inline-link-macro-rx"></block></block>
   <block id="029f6f3d6d94376868a542dc9f992a86" category="inline-link">NetApp磁碟櫃與儲存媒體文件</block>
   <block id="c25fd9b70494845a20dd21814241524d" category="paragraph">請參閱<block ref="dad413ffea13e60f46bf0b7da6acba7e" category="inline-link-rx"></block> 和<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 以取得每種儲存控制器機型的磁碟櫃和支援磁碟櫃詳細資料。</block>
   <block id="8b68a94e939becf799000e74594ceec1" category="section-title">解決方案拓撲</block>
@@ -7342,7 +7338,6 @@
   <block id="93227a3c59a6f0dd8e3e3d2920c96a7c" category="cell">NetApp ASA 控制器平台文件</block>
   <block id="dc1eaa4ad2490a09527da2689ed82474" category="paragraph">如需 AFF A220 硬體系統的詳細資訊，請參閱<block ref="c5716267ac07278f14a57d5364f0e236" category="inline-link-rx"></block>。</block>
   <block id="bced4e004278ae3f8fe2d0860e3a5c88" category="paragraph">以上僅列舉了幾項補充 FlexPod Express 解決方案的重要功能。有關 ONTAP 9.4 其他特性和功能的詳細資訊，請參閱<block ref="801da968bbc9c8d2b52141795afbca8c" category="inline-link-rx"></block>。另請參閱 NetApp<block ref="acaccc868f6222e64c0f11237becafd9" category="inline-link-rx"></block>，其中已更新以納入 ONTAP 9.4。</block>
-  <block id="8e68a890bb357beef5baec0f26a86f89" category="list-text">導航至<block ref="fd22f8e1577c596611eb5eba6e2d91df" prefix=" " category="inline-code"></block>。</block>
   <block id="4173ba8445cafde255576d64c1ba2aff" category="cell">+&lt;&lt; switch-a-ntp-ip &gt;&gt;+</block>
   <block id="c93de18088f202964b302c299371f447" category="cell">+&lt;&lt; switch-b-ntp-ip &gt;&gt;+</block>
   <block id="950b29028f5077cacae319f7ad6294ec" category="cell"><block ref="950b29028f5077cacae319f7ad6294ec" category="inline-link-rx"></block></block>
@@ -8565,4 +8560,8 @@
   <block id="f3f262e890d15106f03ef390bf2977d6" category="paragraph">XE130c 和 XE150c 運算節點的四磁碟機限制以及對軟體 RAID 的依賴，使得 ONTAP Select 部署只能採用單一控制器架構。與具有控制器容錯移轉的多節點儲存架構不同，單一儲存控制器無法在不影響其所承載的本機儲存設備服務的情況下離線進行控制器層級維護。</block>
   <block id="090f6553626b1e67379b39fa8c32a7e1" category="paragraph">此限制並非否定架構的價值，但必須在營運模式中加以體現。適當的工作負載應能容忍計畫內的儲存設備中斷，依賴應用程式層級的彈性，或使用複寫到中央 ONTAP 環境進行恢復。客戶應制定維護行事曆，將服務時段告知應用程式擁有者，在進行中斷性作業之前驗證目前的備份或複本，並以文件記錄復原程序。如果工作負載需要在控制器維護期間保持持續的儲存可用度，客戶應評估使用外部 ONTAP 儲存陣列，而不是單一控制器 ONTAP Select 組態。</block>
   <block id="952538e1301be0b79740f458942b061f" category="sidebar">Cisco Unified Edge 上的 ONTAP Select</block>
+  <block id="fde1abb5537b55c34521d414267b3f70" category="cell">ASA r2 系統</block>
+  <block id="22d05c38a6e8032e35e9ff8d6b826ee0" category="inline-link-macro">ASA r2 系統文件</block>
+  <block id="5a043bdfd29a9c2a632078901fc0d525" category="cell"><block ref="5a043bdfd29a9c2a632078901fc0d525" category="inline-link-macro-rx"></block></block>
+  <block id="a04fde0f303f9cefcbd34e8be1810d1e" category="paragraph">學術醫療中心和其他醫療及生命科學機構正在穩步建立基因組科學卓越中心（ COE ）。根據 Duke University 的 Dr. Charlie Gersbach 、 Dr. Greg Crawford 和 Dr. Tim E Reddy 表示：“我們知道基因的開啟或關閉並非由簡單的二元交換器決定，而是由多個基因調控交換器協同作用的結果。” 他們還確定，“基因組的任何部分都不是隔離運作的。基因組是進化所編織的一張極其複雜的網絡”（ <block ref="7e5e4c153f3bad20a8e4230a913e554e" category="inline-link-rx"></block> ）。</block>
 </blocks>
