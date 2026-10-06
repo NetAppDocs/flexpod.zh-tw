@@ -258,7 +258,6 @@
   <block id="1663bc309b0a1ddf5774db5075160041" category="section-title">NetApp支援授權選項</block>
   <block id="f263fbecd68ad30f21b5919fbdf5376c" category="paragraph">需要使用支援、而這些授權的零件編號會根據所選的選項而有所不同。SupportEdge Premium FlexPod</block>
   <block id="c453f553d73c506df5a01e3bd8ff03e0" category="cell">NetApp支援授權</block>
-  <block id="767945ca8f676ff25ce389fce1df6c41" category="summary">Cisco是FlexPod 對此解決方案的運算和網路層做出重大貢獻的不二選擇。</block>
   <block id="db9522af2119f167ded30369ddb56248" category="doc">Cisco元件</block>
   <block id="ae19f05a830d151c2615c3f564dbf6e4" category="paragraph">Cisco是FlexPod 對此解決方案的運算和網路層做出重大貢獻的不二選擇。本節說明FlexPod 適用於Express的Cisco UCS和Cisco Nexus元件。</block>
   <block id="8c037680764aed3286d169f4dc48e6c9" category="cell">Cisco UCS B200 M5</block>
@@ -8564,4 +8563,6 @@
   <block id="22d05c38a6e8032e35e9ff8d6b826ee0" category="inline-link-macro">ASA r2 系統文件</block>
   <block id="5a043bdfd29a9c2a632078901fc0d525" category="cell"><block ref="5a043bdfd29a9c2a632078901fc0d525" category="inline-link-macro-rx"></block></block>
   <block id="a04fde0f303f9cefcbd34e8be1810d1e" category="paragraph">學術醫療中心和其他醫療及生命科學機構正在穩步建立基因組科學卓越中心（ COE ）。根據 Duke University 的 Dr. Charlie Gersbach 、 Dr. Greg Crawford 和 Dr. Tim E Reddy 表示：“我們知道基因的開啟或關閉並非由簡單的二元交換器決定，而是由多個基因調控交換器協同作用的結果。” 他們還確定，“基因組的任何部分都不是隔離運作的。基因組是進化所編織的一張極其複雜的網絡”（ <block ref="7e5e4c153f3bad20a8e4230a913e554e" category="inline-link-rx"></block> ）。</block>
+  <block id="a9100704d09dc0243e72fa3e969a3376" category="doc">部署流程總覽</block>
+  <block id="c94f9bfe6b4fcd272eb296a929c3be2f" category="summary">Cisco 提供了 FlexPod Express 設計和架構的運算與連網層，包括 UCS 伺服器和 Nexus 交換器。</block>
 </blocks>

@@ -10,7 +10,7 @@ summary: 本節說明如何驗證 Cisco 和 NetApp 元件的設備支援狀態�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

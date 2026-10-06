@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: fp-def/fp-express-tech-spec_cisco_components.html 
 keywords: cisco, components, server, options, rack, ucs, nexus, switches, x-series-direct, c-series 
-summary: Cisco是FlexPod 對此解決方案的運算和網路層做出重大貢獻的不二選擇。 
+summary: Cisco 提供了 FlexPod Express 設計和架構的運算與連網層，包括 UCS 伺服器和 Nexus 交換器。 
 ---
 = Cisco元件
 :hardbreaks:

@@ -4,7 +4,7 @@ permalink: express/express-c-series-aff220-deploy_deployment_procedures_overview
 keywords: vmware, vcenter, server, appliance, download 
 summary: 本文件詳細說明如何設定完全備援、高可用FlexPod 度的支援功能、以及配置多個Cisco UCS主機。 
 ---
-= 部署程序
+= 部署流程總覽
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
