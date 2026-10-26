@@ -158,7 +158,7 @@ image:flexpod-genomics-image17.png["Linux 終端機快照顯示 /dev/sdb 掛載�
 
 Cromwell是開放原始碼引擎、專為科學工作流程所設計、可實現工作流程管理。克倫威爾引擎可在兩個引擎中執行 https://cromwell.readthedocs.io/en/stable/Modes/["模式"^]、伺服器模式或單一工作流程執行模式。您可以使用來控制Cromwell引擎的行為 https://github.com/broadinstitute/cromwell/blob/develop/cromwell.example.backends/cromwell.examples.conf["Cromwell引擎組態檔"^]。
 
-* *伺服器模式。*啟用 https://cromwell.readthedocs.io/en/stable/api/RESTAPI/["休闲的"^] 在Cromwell引擎中執行工作流程。
+* *伺服器模式。*啟用 https://cromwell.readthedocs.io/en/stable/Modes/["休闲的"^]在 Cromwell 引擎中執行工作流程。
 * *執行模式。*執行模式最適合在Cromwell中執行單一工作流程、 https://cromwell.readthedocs.io/en/stable/CommandLine/["參考資料"^] 以取得執行模式的完整可用選項集。
 
 
