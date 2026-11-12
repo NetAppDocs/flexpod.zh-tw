@@ -5397,11 +5397,7 @@
   <block id="b9a6d65bed31fdf5f2527866fa0dfd9d" category="section-title">疑難排解問題</block>
   <block id="303e96f80576360d0c7b07ae7528fa4b" category="section-title">Terraform</block>
   <block id="2286ccbf59b9435994947e88725c76e8" category="list-text">Terraform Cloud</block>
-  <block id="e07006e711ecd6f73bd7048090b7e2ab" category="inline-link"><block ref="e07006e711ecd6f73bd7048090b7e2ab" category="inline-link-rx"></block></block>
-  <block id="98ca9412177a5814dfc1273e93b809e8" category="paragraph"><block ref="98ca9412177a5814dfc1273e93b809e8" category="inline-link-rx"></block></block>
   <block id="fb6bb9990406d2b2738dce70c36fb9f5" category="list-text">Terraform文件</block>
-  <block id="1ed30a4b55ba790efa401b303c8c37f4" category="inline-link"><block ref="1ed30a4b55ba790efa401b303c8c37f4" category="inline-link-rx"></block></block>
-  <block id="3a05ef5172fb9c6f0659f46f7acb6e1a" category="paragraph"><block ref="3a05ef5172fb9c6f0659f46f7acb6e1a" category="inline-link-rx"></block></block>
   <block id="844506467bd58ba94370953ce011170b" category="list-text">NetApp Cloud Manager登錄</block>
   <block id="3820325f9ee4ef1564a4956854301751" category="inline-link"><block ref="3820325f9ee4ef1564a4956854301751" category="inline-link-rx"></block></block>
   <block id="99bdab1ba48d99c6b9acd194ae1eb5df" category="paragraph"><block ref="99bdab1ba48d99c6b9acd194ae1eb5df" category="inline-link-rx"></block></block>
@@ -6368,9 +6364,6 @@
   <block id="097c03e3ba31f579d1760a9d90ea079b" category="list-text">SnapMirror複寫</block>
   <block id="5d7b0c343e4b15b75f70b6700c47321d" category="inline-link"><block ref="5d7b0c343e4b15b75f70b6700c47321d" category="inline-link-rx"></block></block>
   <block id="21073a4d69b5b782b0cf6aa2b9adc218" category="paragraph"><block ref="21073a4d69b5b782b0cf6aa2b9adc218" category="inline-link-rx"></block></block>
-  <block id="5128bb0d027b38f6218a48454a1a237e" category="list-text">TR-3928：NetApp Epic最佳實務做法</block>
-  <block id="eb9eaf88569464540b215c4e99e34ec7" category="inline-link"><block ref="eb9eaf88569464540b215c4e99e34ec7" category="inline-link-rx"></block></block>
-  <block id="75d67ff7fa2b524a6937cc0b53f012c7" category="paragraph"><block ref="75d67ff7fa2b524a6937cc0b53f012c7" category="inline-link-rx"></block></block>
   <block id="ecb1e944e8a3d37434536fd21a2927ae" category="list-text">TR-4693：FlexPod 《Epic EHR資料中心部署指南》</block>
   <block id="947d5e988e248845b68b0aa208a03aa4" category="paragraph"><block ref="947d5e988e248845b68b0aa208a03aa4" category="inline-link-rx"></block></block>
   <block id="01fb4b2a1d3f1a83162ef92c61b6a364" category="list-text">Epic適用的解決方案FlexPod</block>
@@ -8565,4 +8558,11 @@
   <block id="a9100704d09dc0243e72fa3e969a3376" category="doc">部署流程總覽</block>
   <block id="c94f9bfe6b4fcd272eb296a929c3be2f" category="summary">Cisco 提供了 FlexPod Express 設計和架構的運算與連網層，包括 UCS 伺服器和 Nexus 交換器。</block>
   <block id="ee30ff13e36cbab9bf29c33fd526cd18" category="list-text">*伺服器模式。*啟用<block ref="623098b3a5eec7dedbf57209eff0066d" category="inline-link-rx"></block>在 Cromwell 引擎中執行工作流程。</block>
+  <block id="53f102b306ab1aba43e9e20701dc32f2" category="list-text">ONTAP 上的 Epic</block>
+  <block id="3b65fbed861c7cd209eb750b16160298" category="inline-link"><block ref="3b65fbed861c7cd209eb750b16160298" category="inline-link-rx"></block></block>
+  <block id="558c01986706dcece27d68ceac68c235" category="paragraph"><block ref="558c01986706dcece27d68ceac68c235" category="inline-link-rx"></block></block>
+  <block id="d8f1db52afb6a6d337366bc9c15ab1a4" category="inline-link"><block ref="d8f1db52afb6a6d337366bc9c15ab1a4" category="inline-link-rx"></block></block>
+  <block id="10480bf08cf3d3a87559226148a63bb2" category="paragraph"><block ref="10480bf08cf3d3a87559226148a63bb2" category="inline-link-rx"></block></block>
+  <block id="9cb27d9a3417da2b8084e0287767f907" category="inline-link"><block ref="9cb27d9a3417da2b8084e0287767f907" category="inline-link-rx"></block></block>
+  <block id="4f3f8befc34a04da143d39ae3da96026" category="paragraph"><block ref="4f3f8befc34a04da143d39ae3da96026" category="inline-link-rx"></block></block>
 </blocks>

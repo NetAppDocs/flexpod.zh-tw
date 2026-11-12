@@ -164,11 +164,11 @@ https://kb.netapp.com/Cloud/ncds/nds/cvo/cvo_kbs["https://kb.netapp.com/Cloud/nc
 
 * Terraform Cloud
 +
-https://www.terraform.io/cloud["https://www.terraform.io/cloud"^]
+https://www.hashicorp.com/en/products/terraform["https://www.hashicorp.com/en/products/terraform"^]
 
 * Terraform文件
 +
-https://www.terraform.io/docs/["https://www.terraform.io/docs/"^]
+https://developer.hashicorp.com/terraform/docs["https://developer.hashicorp.com/terraform/docs"^]
 
 * NetApp Cloud Manager登錄
 +

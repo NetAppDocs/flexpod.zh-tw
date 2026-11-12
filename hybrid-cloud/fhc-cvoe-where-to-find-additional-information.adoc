@@ -42,9 +42,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-sta
 +
 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html"^]
 
-* TR-3928：NetApp Epic最佳實務做法
+* ONTAP 上的 Epic
 +
-https://www.netapp.com/pdf.html?item=/media/17137-tr3928pdf.pdf["https://www.netapp.com/pdf.html?item=/media/17137-tr3928pdf.pdf"^]
+https://docs.netapp.com/us-en/ontap-apps-dbs/pdfs/sidebar/Epic.pdf["https://docs.netapp.com/us-en/ontap-apps-dbs/pdfs/sidebar/Epic.pdf"^]
 
 * TR-4693：FlexPod 《Epic EHR資料中心部署指南》
 +
