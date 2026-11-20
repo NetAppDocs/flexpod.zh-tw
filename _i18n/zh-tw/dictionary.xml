@@ -234,7 +234,6 @@
   <block id="1db61abeed53a1e4b952c0d4bae14ca3" category="paragraph">NetApp磁碟機的技術規格包括尺寸規格、磁碟容量、磁碟RPM、支援控制器及ONTAP 版本要求。這些規格可在的「磁碟機」區段中找到<block ref="afd6b1daca313ab42848776252cb3eb9" category="inline-link-rx"></block>。</block>
   <block id="245c499a8eb2230fa27979a452c776e5" category="summary">本節所列的儲存作業系統可在FlexPod 《支援的資訊之速覽系統（All Flash Array Platform）」中獲得支援。</block>
   <block id="a64c8d59be31b09362634dedf23d4e86" category="doc">儲存軟體</block>
-  <block id="1e3274a40d2751f8442f3b15fddb1f21" category="inline-link">產品頁面ONTAP</block>
   <block id="fe82ba76fe70a6f0f9c5f3d28aeec7af" category="doc">支援FlexPod 的或已驗證的支援的支援的</block>
   <block id="9c935488ffd9d690797737609e542dc0" category="inline-link">Cisco UCS硬體與軟體相容清單</block>
   <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">NetApp互通性對照表工具IMT （不含）</block>
@@ -315,7 +314,6 @@
   <block id="7a4e9cb5597c0c38152cde29a5ffea15" category="list-text">NetApp文件</block>
   <block id="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link"><block ref="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link-rx"></block></block>
   <block id="2e85fc867cab94d246e0bf6043b361cd" category="paragraph"><block ref="2e85fc867cab94d246e0bf6043b361cd" category="inline-link-rx"></block></block>
-  <block id="9c58e11f96200548fd2f5932b391509a" category="inline-link">資料管理軟體ONTAP</block>
   <block id="0abcd1fb272492f917788b846dcc6151" category="summary">本文件所述的一套規則定義了這個架構。FlexPod硬體元件和軟體組態必須由Cisco硬體相容清單（HCL）和NetApp IMT 支援。</block>
   <block id="4751485bb758a4c3a478dcfdc8a7c2d3" category="paragraph">例如、如果軟體、硬體和組態符合本文件所定義的準則、則完全支援新增額外的儲存控制器或Cisco UCS伺服器、以及將軟體升級至較新版本。</block>
   <block id="e88a70d67e9de42d391fd019f2d06484" category="summary">若要深入瞭解本文所述資訊、請檢閱下列文件與網站。</block>
@@ -7202,7 +7200,6 @@
   <block id="45daa6ca74d4e8647074c8bec564a3cb" category="list-text">請參考此連結以取得 <block ref="159389d00e7441b1c53d85747f17d0eb" category="inline-link-macro-rx"></block> 的最新版本</block>
   <block id="2a409f1fa2a150f2253ac127248488e4" category="paragraph">FlexPod Express 支援執行 NetApp ONTAP 作業系統的儲存系統。</block>
   <block id="ef7609bdef2cdaafd40275f9e5433c35" category="paragraph">NetApp ONTAP 軟體是運作在 AFF、ASA 和 FAS 儲存系統上的作業系統。ONTAP 提供高度可擴充的儲存架構，支援無中斷作業、無中斷升級和敏捷的資料基礎架構。透過 ONTAP One 授權模式，所有企業資料服務均包含在單一套件中，簡化部署與管理，同時提供對進階功能的完整存取。ONTAP 透過 SnapMirror 複寫與災難復原，以及 SnapCenter 應用程式一致性備份與還原等技術，提供強大的資料保護。此外，ONTAP 還整合了內建安全功能，包括自主勒索軟體防護和加密，以保護資料免受現代威脅的侵害。ONTAP 亦支援與混合雲的無縫整合，提供 SnapMirror Cloud 和 S3 型複寫等功能，實現資料在內部部署與雲端環境之間的移動，同時維持一致性與可控性。</block>
-  <block id="bf0ebcdca54fe8f97b947c021c0fc6ba" category="paragraph">如需 ONTAP 的詳細資訊，請參閱<block ref="1438085fbc66bc2984b1f8fc6f5a6806" category="inline-link-rx"></block>。</block>
   <block id="db63719d1199768760c155c55421c914" category="paragraph">每個 Cisco 驗證設計 （CVD） 或 NetApp 驗證架構 （NVA） 都代表經過驗證的 FlexPod 設定。Cisco 和 NetApp 記錄這些設定組合，並透過廣泛的端對端測試進行驗證。偏離這些設定的 FlexPod 部署方案，若遵循本文件中的指南，且所有元件均在 Cisco HCL 和 NetApp IMT 中列為相容元件，則可獲得完整支援。</block>
   <block id="45588e4cce1d335ead36f0585e8b630c" category="section-title">Cisco UCS X 系列直連式機箱</block>
   <block id="fcb60e469fe66f96f526ecaec4c2ae36" category="paragraph">如下表所示，Cisco UCS X-Series Direct 機殼的技術規格包括以下組件：</block>
@@ -7332,7 +7329,6 @@
   <block id="4173ba8445cafde255576d64c1ba2aff" category="cell">+&lt;&lt; switch-a-ntp-ip &gt;&gt;+</block>
   <block id="c93de18088f202964b302c299371f447" category="cell">+&lt;&lt; switch-b-ntp-ip &gt;&gt;+</block>
   <block id="950b29028f5077cacae319f7ad6294ec" category="cell"><block ref="950b29028f5077cacae319f7ad6294ec" category="inline-link-rx"></block></block>
-  <block id="df7608fec077c8036a60e059d13ccb5c" category="paragraph">如需 ONTAP 的詳細資訊，請參閱<block ref="d4d46a1efab17e9b442654f23d03b317" category="inline-link-rx"></block>產品頁面。</block>
   <block id="4aeeffd6249244b72becdd8abb4b91b8" category="section-title">Cisco UCS 伺服器的停售和停止支援訊息</block>
   <block id="077dcb6cb8c7743fcd866caad2504246" category="section-title">Cisco Nexus 交換器停售和停止支援資訊</block>
   <block id="276b19f07e935494e35cb8ce4ab0b89e" category="admonition">上述範例拓撲指的是使用 NetApp AFF 的儲存解決方案。但是，相同的拓撲也可用於 NetApp ASA 和 FAS。</block>
@@ -8565,4 +8561,29 @@
   <block id="10480bf08cf3d3a87559226148a63bb2" category="paragraph"><block ref="10480bf08cf3d3a87559226148a63bb2" category="inline-link-rx"></block></block>
   <block id="9cb27d9a3417da2b8084e0287767f907" category="inline-link"><block ref="9cb27d9a3417da2b8084e0287767f907" category="inline-link-rx"></block></block>
   <block id="4f3f8befc34a04da143d39ae3da96026" category="paragraph"><block ref="4f3f8befc34a04da143d39ae3da96026" category="inline-link-rx"></block></block>
+  <block id="1b488ece31152ad90547d1c8054e4d39" category="paragraph">如需 ONTAP 的詳細資訊，請參閱<block ref="14d78d05bf3f1052f297f579c7b5a9f7" category="inline-link-rx"></block>。</block>
+  <block id="f6d7dad872e7855ddff4a639eba6c084" category="section-title">建議的 ONTAP 功能/組態</block>
+  <block id="35e666d02ddbb3775b69b25a512de580" category="paragraph">FlexPod 透過利用以下特性/組態，實現了我們經過驗證的架構中概述的峰值效能、企業級備援和高可用度：</block>
+  <block id="54e12ca53e7e64cfbaa6cf10cfaf6950" category="section-title">多路徑和邏輯介面</block>
+  <block id="8eaa03bcff8d34a557424ce4d04fd160" category="paragraph">ONTAP 中的多路徑 I/O 是透過邏輯介面實現的。LIF（邏輯介面）是一個 IP 位址或 WWPN，具有相關的特徵，例如角色、主連接埠、歸屬節點、容錯移轉連接埠清單和防火牆原則。</block>
+  <block id="fd30a788ad7a1ff123d02ffaf4ac59f5" category="paragraph">下表列出 HA 配對中每個節點上每種協定需要建立的最小邏輯介面數量。</block>
+  <block id="eb0ed0ff1f9dfef689849f295b3e99db" category="cell">儲存協定</block>
+  <block id="be225138bfbd3a03ef852dfd961b11f9" category="cell">HA 配對中每個節點的邏輯介面數量</block>
+  <block id="47422d7cebc0ae77b7db7193e28454b4" category="cell">每個 HA 配對的邏輯介面數量</block>
+  <block id="fd1b59cf98cc96b4373113606394bfdb" category="cell">NFS / CIFS / S3</block>
+  <block id="254366c4c57d61d41b18fefc84c6b770" category="cell">iSCSI / NVMe Over TCP</block>
+  <block id="6b6eb16a34725f213ce49527918a4622" category="cell">FC / NVMe over FC</block>
+  <block id="6f5ada5bb36cfda0ae73355b4062ae84" category="section-title">ONTAP Snapshot 快照技術，SnapMirror 以及 SnapCenter</block>
+  <block id="ae11a4a0e3027b0d0c24dfbbf964f5c2" category="paragraph">快照是 Volume 的唯讀、時間點映像。建立快照後，作用中檔案系統和快照指向相同的磁碟區塊；因此，快照不使用額外的磁碟空間。隨著時間的推移，該映像佔用的儲存空間極少，且效能負荷也微乎其微，因為它只記錄自上次建立快照以來檔案發生的變更。您可以使用快照來恢復個別檔案或 LUN ，也可以還原整個 Volume 的內容。ONTAP 將快照中的指標資訊與磁碟上的資料進行比較，從而重建遺失或損壞的物件，而無需停機或顯著的效能損失。</block>
+  <block id="66f750852471d915fd6d798383cc6946" category="paragraph">SnapMirror 是一種災難恢復技術，旨在從主儲存設備容錯移轉至地理位置遠端站台的次要儲存設備。顧名思義， SnapMirror 會在次要儲存設備中建立工作資料的複本或鏡射，以便在主站台發生災難時，您可以繼續從中提供資料。</block>
+  <block id="0344fda8fff2d8c5a125ffa5ba5f19a7" category="paragraph">SnapCenter 軟體是一個簡單、集中、易擴充的平台，可為混合雲中任何位置的 ONTAP 系統上執行的應用程式、資料庫、主機檔案系統和虛擬機器提供應用程式一致的資料保護。</block>
+  <block id="a689e45bd1ad0e1753a9aed2e0ce6b76" category="paragraph">我們建議客戶將資料保護納入其 FlexPod 架構中，利用 SnapMirror 進行複寫和災難恢復，以及 SnapCenter 進行應用程式一致性備份與恢復等技術。</block>
+  <block id="8a936bd7d2e92511e2a1ad28613add8d" category="section-title">安全的多租戶</block>
+  <block id="34123ddca689cf104eada3c3539932b0" category="paragraph">安全多租戶是指在共享的實體儲存設備環境中使用安全的虛擬分區，以便多個不同的租戶共享該實體環境。例如，儲存設備服務供應商可以設定儲存陣列，為三個不同的客戶分別分配陣列的磁碟容量和網路資源。在安全的多租戶環境中，每個客戶只能存取明確分配給該客戶的資源。客戶無法存取其他客戶的資料，甚至不感知其他客戶的存在，也不知道他們共享同一個實體陣列。安全多租戶環境也應提供一種機制，確保沒有單一租戶會佔用過多的共享的效能功能，進而影響其他租戶。</block>
+  <block id="bb3cb15d27e197d093dd8fc46a54b1d3" category="paragraph">ONTAP 中的多租戶是透過儲存設備虛擬機器（SVM）和 IP Spaces 實現的。</block>
+  <block id="d2fef5ad720d53952f9c68f3146adf13" category="paragraph">就像在 Hypervisor 上執行的虛擬機器一樣，SVM 是一種抽象化實體資源的邏輯實體。SVM 透過一個或多個網路邏輯介面（LIF），從一個或多個 Volume 提供資料給用戶端與主機。</block>
+  <block id="250b84af23e8c31f102d2f91015f87b6" category="paragraph">IPspaces 可讓您設定單一 ONTAP 叢集，以便來自多個管理上分隔之網路網域的用戶端能夠存取，即使這些用戶端使用相同的 IP 位址子網路範圍。這有助於分隔用戶端流量，以保障隱私和安全性。</block>
+  <block id="8ffee59c66ae91354332b26c81d3fd04" category="inline-link">FlexPod CVD：NetApp ONTAP 儲存設備組態</block>
+  <block id="3e6e011fe808e181e74a6c4df9d5906d" category="admonition">有關 FlexPod ONTAP 組態的最佳實務，請參閱<block ref="e65c49069e72bd027a57d6376fc074e8" category="inline-link-rx"></block>。</block>
+  <block id="64f2b3152ebfd989b2d5c419da9cbf90" category="paragraph">有關 ONTAP 的詳細資訊，請參閱<block ref="14d78d05bf3f1052f297f579c7b5a9f7" category="inline-link-rx"></block>。</block>
 </blocks>
